@@ -14,7 +14,7 @@ public class DBGFileChecker {
 	
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static ArrayList<String> sysOutput = new ArrayList<String>();
-	private static final String VERSION = "0.3.1.2";
+	private static final String VERSION = "0.3.1.3";
 	
 	/**
 	 * Get all files from an given path
