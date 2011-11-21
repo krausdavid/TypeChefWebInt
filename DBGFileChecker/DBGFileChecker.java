@@ -14,7 +14,7 @@ public class DBGFileChecker {
 	
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static ArrayList<String> sysOutput = new ArrayList<String>();
-	private static final String VERSION = "0.3.1.3";
+	private static final String VERSION = "0.3.1.4";
 	
 	/**
 	 * Get all files from an given path
@@ -49,6 +49,7 @@ public class DBGFileChecker {
 	 * A simply help output
 	 */
 	public static void help(){
+		out("");
 		out("Help - DBGFileChecker "+VERSION+" - by EifX");
 		out("------------------------------------");
 		out("Usage: DBGFileChecker [PATH]");
@@ -470,7 +471,7 @@ public class DBGFileChecker {
 		try {	
 			String[] outStr = new String[4];
 			if(args.length>0){
-				if(args[0]=="--help"||args[0]=="-h"){
+				if((args[0].equals("--help"))||(args[0].equals("-h"))){
 					help();
 					System.exit(1);
 				}
