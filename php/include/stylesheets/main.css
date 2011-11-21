@@ -1,0 +1,39 @@
+﻿@import url("/include/stylesheets/links.css");
+@import url("/include/stylesheets/form.css");
+@import url("/include/stylesheets/table.css");
+
+.body
+{
+	color: #111111;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
+	font-weight:none;
+}
+.body_core
+{
+	background-color: #dcf3fc;
+}
+.body_border
+{
+	border-width:5px;
+	border-style:solid;
+	border-color:black;
+	padding:0;
+}
+.body_header
+{
+	color: #111111;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+.error_header
+{
+	color: #CC0000;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
