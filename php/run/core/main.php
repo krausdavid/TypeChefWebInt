@@ -18,9 +18,8 @@
  */
 
 require("./run/core/tools.php");
-require("./run/_lib/mysql/mysql.php");
+//require("./run/_lib/mysql/mysql.php");
 require("./run/_lib/smarty/Smarty.class.php");
-
 // $database = new mysql();
 // $database->host = DATABASE_HOST;
 // $database->user = DATABASE_USER;
@@ -37,7 +36,6 @@ $template->cache_dir = "./templates/tmp";
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
 	$template->assign("browser", "MSIE");
 }
-
 switch ($_GET['root']) {
 	case "":
 		//TODO!
@@ -56,7 +54,7 @@ switch ($_GET['root']) {
 		require("./run/pages/404_not_found.php");
 		break;
 }
-$database->disconnect();
+//$database->disconnect();
 
 $template->assign("_website_name", WEBSITE_NAME);
 $template->assign("_website_version", WEBSITE_VERSION);
