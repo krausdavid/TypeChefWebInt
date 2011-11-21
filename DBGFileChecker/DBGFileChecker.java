@@ -14,7 +14,7 @@ public class DBGFileChecker {
 	
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static ArrayList<String> sysOutput = new ArrayList<String>();
-	private static final String VERSION = "0.3.1.2";
+	private static final String VERSION = "0.3.1.4";
 	
 	/**
 	 * Get all files from an given path
@@ -49,10 +49,20 @@ public class DBGFileChecker {
 	 * A simply help output
 	 */
 	public static void help(){
+		out("");
 		out("Help - DBGFileChecker "+VERSION+" - by EifX");
 		out("------------------------------------");
+		out("Usage: DBGFileChecker [PATH]");
 		out("");
-		out("No help needed now ;)");
+		out("");
+		out("[PATH] (Optional):");
+		out("");
+		out("     Path for scan. Work with absolute paths. ");
+		out("");
+		out("--help || -h");
+		out("");
+		out("    This help helps you ;)");
+		out("");
 		/*out("Usage: DBGFileChecker [PATH] ([TXT-FILE]) [NORMAL_ERROR_OPTIONS] [TYPE_ERROR_OPTIONS]");
 		out("");
 		out("[PATH]:");
@@ -458,28 +468,13 @@ public class DBGFileChecker {
 	
 
 	public static void main(String[] args) {
-		try {
-/*			String[] outStr = new String[4];
-			if(args.length==3){
-				outStr[0] = args[0];
-				outStr[1] = "";
-				outStr[2] = args[1];
-				outStr[3] = args[2];
-			}
-			if(args.length==4){
-				outStr[0] = args[0];
-				outStr[1] = args[1];
-				outStr[2] = args[2];
-				outStr[3] = args[3];
-			}
-			
-			if(args.length!=3&&args.length!=4){
-				outStr = doDisplay();
-			}
-			
-*/			
+		try {	
 			String[] outStr = new String[4];
 			if(args.length>0){
+				if((args[0].equals("--help"))||(args[0].equals("-h"))){
+					help();
+					System.exit(1);
+				}
 				outStr[0] = args[0];
 				outStr[1] = "";
 				outStr[2] = "a";
