@@ -14,7 +14,7 @@ public class DBGFileChecker {
 	
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static ArrayList<String> sysOutput = new ArrayList<String>();
-	private static final String VERSION = "0.3.1.1";
+	private static final String VERSION = "0.3.1.2";
 	
 	/**
 	 * Get all files from an given path
@@ -431,6 +431,7 @@ public class DBGFileChecker {
 		}
 		
 		if(emptyFiles.size()>0){
+			out("");
 			out("Now the empty files without any content:");
 			out("------------------------");
 			out("");
@@ -475,7 +476,17 @@ public class DBGFileChecker {
 			if(args.length!=3&&args.length!=4){
 				outStr = doDisplay();
 			}
-*/			String[] outStr = doDisplay();
+			
+*/			
+			String[] outStr = new String[4];
+			if(args.length>0){
+				outStr[0] = args[0];
+				outStr[1] = "";
+				outStr[2] = "a";
+				outStr[3] = "a";
+			}else{
+				outStr = doDisplay();
+			}
 			long time = System.currentTimeMillis();
 			if(!doWork(outStr)){
 				System.out.println("UNKNOWN ERROR IN NAVIGATION!");
