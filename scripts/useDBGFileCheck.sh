@@ -20,21 +20,23 @@ fi
 args1=$1
 srcPath=$2
 
-echo "$args1 <--arg1"
-echo "$srcPath <-- SRC"
 
 export outCSV=boa.csv
 ## Reset output
 #echo -n -> "$outCSV"
+
 func_filesToProcess|while read i; do
-rm $tcFolder/$srcPath/$i.dbg
+  rm $tcFolder/$srcPath/$i.dbg
+done
+
+func_filesToProcess|while read i; do
   if [ ! -f $tcFolder/$srcPath/$i.dbg ]; then
     touch $tcFolder/$srcPath/$i.dbg
     oldPath=$(pwd)
     cd $tcFolder
     ./jcpp.sh $srcPath/$i.c
-    cd $oldPath
-  else
+    cd - 
+ else
     echo "Skipping $srcPath/$i.c"
   fi
 done
