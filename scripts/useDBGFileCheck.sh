@@ -2,18 +2,39 @@
 #!/bin/bash -vxe
 
 func_filesToProcess(){
-  folder="fileLists"  
-  location="fileLists/$args1"
-echo $location
+  folder="fileLists"
+  local listFile="fileLists/$args1"
+  cat $listFile
+
+  #awk -F: '$1 ~ /.c$/ {print gensub(/\.c$/, "", "", $1)}' < linux_2.6.33.3_pcs.txt
 }
 func_help(){
 echo "HELP!!"
 }
-
-if [ $# -eq 0 ];
-then 
-func_help
-else
-args1=$1
-func_filesToProcess
+tcFolder="/app/archive/kos/share/TypeChef"
+if [ ! $# -eq 2 ]; then 
+	func_help
+	exit 1
 fi
+
+args1=$1
+srcPath=$2
+
+echo "$args1 <--arg1"
+echo "$srcPath <-- SRC"
+
+export outCSV=boa.csv
+## Reset output
+#echo -n -> "$outCSV"
+func_filesToProcess|while read i; do
+rm $tcFolder/$srcPath/$i.dbg
+  if [ ! -f $tcFolder/$srcPath/$i.dbg ]; then
+    touch $tcFolder/$srcPath/$i.dbg
+    oldPath=$(pwd)
+    cd $tcFolder
+    ./jcpp.sh $srcPath/$i.c
+    cd $oldPath
+  else
+    echo "Skipping $srcPath/$i.c"
+  fi
+done
