@@ -2,8 +2,8 @@ ErrorDocument 403 /403_forbidden
 ErrorDocument 404 /404_not_found
 ErrorDocument 501 /501_not_implemented
 
-#RewriteEngine On
-#RewriteRule !index\.php - [C]
-#RewriteRule !include(.*) - [C]
+RewriteEngine On
+RewriteRule !index\.php - [C]
+RewriteRule !include(.*) - [C]
 
-#RewriteRule ^(.*)$ /index.php?root=$1 [QSA,L]
+RewriteRule ^(.*)$ /~eifx/TypeChefWebInt/php/index.php?root=$1 [QSA,L]

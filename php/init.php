@@ -28,6 +28,7 @@ define("WEBSITE_403_PAGE", "/403_forbidden");
 define("WEBSITE_404_PAGE", "/404_not_found");
 define("WEBSITE_501_PAGE", "/501_not_implemented");
 define("WEBSITE_TEMP_DIRECTORY", "/tmp");
+define("WEBSITE_DEFAULT_URI","http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php");
 
 // define("DATABASE_NAME", "NONAME");
 // define("DATABASE_HOST", "localhost");

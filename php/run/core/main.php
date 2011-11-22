@@ -20,6 +20,7 @@
 require("./run/core/tools.php");
 //require("./run/_lib/mysql/mysql.php");
 require("./run/_lib/smarty/Smarty.class.php");
+
 // $database = new mysql();
 // $database->host = DATABASE_HOST;
 // $database->user = DATABASE_USER;
@@ -36,10 +37,13 @@ $template->cache_dir = "./templates/tmp";
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
 	$template->assign("browser", "MSIE");
 }
+
 switch ($_GET['root']) {
 	case "":
-		//TODO!
-		//require("./run/book/main.php");
+		require("./run/site/main.php");
+		break;
+	case "book":
+		require("./run/pages/501_not_implemented.php");
 		break;
 	case "403_forbidden":
 		require("./run/pages/403_forbidden.php");
@@ -60,5 +64,6 @@ $template->assign("_website_name", WEBSITE_NAME);
 $template->assign("_website_version", WEBSITE_VERSION);
 $template->assign("_website_autor", WEBSITE_AUTOR);
 $template->assign("_website_year", date("Y",time()));
+$template->assign("_wud", WEBSITE_DEFAULT_URI);
 $template->display("./core/main.tpl");
 ?>

@@ -1,8 +1,4 @@
-﻿@import url("/include/stylesheets/links.css");
-@import url("/include/stylesheets/form.css");
-@import url("/include/stylesheets/table.css");
-
-.body
+﻿.body
 {
 	color: #111111;
 	text-decoration: none;

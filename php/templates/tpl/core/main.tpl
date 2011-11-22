@@ -11,8 +11,11 @@
 		<meta name="description" content="Adressbuch">
 		<meta name="keywords" content="Adressbuch, AdressbooX">
 		<meta name="robots" content="all">
-		<link rel="stylesheet" type="text/css" href="/include/stylesheets/main.css">
-		<link rel="shortcut icon" type="image/ico" href="/include/icons/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="{$_wud}/include/stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="{$_wud}/include/stylesheets/form.css">
+		<link rel="stylesheet" type="text/css" href="{$_wud}/include/stylesheets/table.css">
+		<link rel="stylesheet" type="text/css" href="{$_wud}/include/stylesheets/links.css">
+		<link rel="shortcut icon" type="image/ico" href="{$_wud}/include/icons/favicon.ico"/>
 	</head>
 
 	<body class="body">
@@ -20,8 +23,8 @@
 	<table align="left" border="0" cellpadding="0" cellspacing="0">
 		<tr>
 			<td align="center">
-				<img src="/include/images/style/header.png" border="0"><br>
-				<a href="/book" class="link">Adressbuch</a> - <a href="/person" class="link">Person</a> - <a href="/search" class="link">Suche</a> - <a href="/edit" class="link">Einstellungen</a>
+				<img src="{$_wud}/include/images/style/header.png" border="0"><br>
+				<a href="{$_wud}/book" class="link">Adressbuch</a> - <a href="{$_wud}/person" class="link">Person</a> - <a href="{$_wud}/search" class="link">Suche</a> - <a href="{$_wud}/edit" class="link">Einstellungen</a>
 			</td>
 		</tr>
 		<tr>
@@ -37,7 +40,6 @@
 			</td>
 		</tr>
 	</table>
-	
 	</body>
 </html>
 {/strip}
