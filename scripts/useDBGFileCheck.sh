@@ -1,12 +1,19 @@
 #!/bin/bash -e
 #!/bin/bash -vxe
 
-filesToProcess(){
+func_filesToProcess(){
   folder="fileLists"  
-  location=$folder+$1
-echo $#
-echo $1  
+  location="fileLists/$args1"
 echo $location
 }
+func_help(){
+echo "HELP!!"
+}
 
-filesToProcess
+if [ $# -eq 0 ];
+then 
+func_help
+else
+args1=$1
+func_filesToProcess
+fi
