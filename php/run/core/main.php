@@ -42,9 +42,6 @@ switch ($_GET['root']) {
 	case "":
 		require("./run/site/main.php");
 		break;
-	case "book":
-		require("./run/pages/501_not_implemented.php");
-		break;
 	case "403_forbidden":
 		require("./run/pages/403_forbidden.php");
 		break;

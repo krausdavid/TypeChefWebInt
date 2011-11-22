@@ -1,3 +1,3 @@
 {strip}
-Hallo Welt!
+Tree
 {/strip}

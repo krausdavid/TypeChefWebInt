@@ -19,6 +19,7 @@
 
 class tools
 {
+	
 	function login_exists()
 	{
 		global $session;
