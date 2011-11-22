@@ -3,7 +3,7 @@
 
 filesToProcess(){
   folder="fileLists"  
-  location="fileLists/$1"
+  location="fileLists+$1"
   echo $location
 }
 
