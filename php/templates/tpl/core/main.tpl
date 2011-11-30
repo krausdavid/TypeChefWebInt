@@ -2,7 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 	<head>
-		<title>AdressBooX: {$title}</title>
+		<title>TypeChefWebInt: {$title}</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="expires" content="0">
 		<meta name="language" content="de">
