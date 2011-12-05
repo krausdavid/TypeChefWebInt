@@ -2,23 +2,41 @@
 #!/bin/bash -vxe
 
 func_filesToProcess(){
-  folder="fileLists"
-  local listFile="fileLists/$args1"
+  local listFile="fileLists/$fileCheckList"
   cat $listFile
 
   #awk -F: '$1 ~ /.c$/ {print gensub(/\.c$/, "", "", $1)}' < linux_2.6.33.3_pcs.txt
 }
 func_help(){
-echo "HELP!!"
+echo ""
+echo "---------------MAN for useJCCPFileChecker-----------"
+echo ""
+echo ""
+echo "useJCCPFileChecker is a script for using the TypeChef Programm including some extras"
+echo ""
+echo "useJCCPFileChecker [NAME OF FILE CHECK LIST] [PATH OF THE PROGRAMM OUTGOING FROM THE tcFolder] [NAME OF THE FLAG LIST]"
+echo ""
+echo "    - File Check Lists have the ending *.lst"
+echo "    - Flag Lists have the ending *.flag"
+echo ""
+echo ""
+echo "----------------------------------------------------"
+exit 1
 }
+
+func_getFlags(){
+echo "getFlags"
+}
+
 tcFolder="/app/archive/kos/share/TypeChef"
-if [ ! $# -eq 2 ]; then 
+if [ ! $# -eq 3 ]; then 
 	func_help
-	exit 1
 fi
 
-args1=$1
+fileCheckList=$1
+flagList=$3
 srcPath=$2
+
 
 
 export outCSV=boa.csv
