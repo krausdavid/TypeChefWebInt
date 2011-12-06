@@ -8,13 +8,15 @@ func_flagsToProcess(){
 }
 
 out=""
-func_flagsToProcess|while read i; do
-    out="$out $i";
-done;
+#func_flagsToProcess|
+while read i; do
+    out="$out $i"
+    echo $out
+done < params/flags_ex.flags
 
 echo ""
 echo ""
 echo "FINISHED"
 
-echo "$test <--END"
+echo "$out <--END"
 echo "WHY NOT???"
