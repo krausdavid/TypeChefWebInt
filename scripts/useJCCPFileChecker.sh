@@ -43,10 +43,23 @@ export outCSV=boa.csv
 ## Reset output
 #echo -n -> "$outCSV"
 
+echo "remove *.dbg files			[START]"
 func_filesToProcess|while read i; do
   rm $tcFolder/$srcPath/$i.dbg
+  echo "remove $i.dbg 				[OK]"
 done
+echo "remove *.dbg files			[OK]"
 
+echo "reading flags				[START]"
+flags=""
+while read i; do
+    flags="$flags $i"
+echo "flag $i					[OK]"
+done < params/$flagList
+echo "reading flags				[OK]"
+
+
+echo "using jcpp				[START]"
 func_filesToProcess|while read i; do
   if [ ! -f $tcFolder/$srcPath/$i.dbg ]; then
     touch $tcFolder/$srcPath/$i.dbg
@@ -54,7 +67,10 @@ func_filesToProcess|while read i; do
     cd $tcFolder
     ./jcpp.sh $srcPath/$i.c
     cd - 
+    echo "working on file $i.c			[OK]"
  else
     echo "Skipping $srcPath/$i.c"
   fi
 done
+
+echo "all done					[DONE]"
