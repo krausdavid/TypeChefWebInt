@@ -23,32 +23,41 @@ echo ""
 echo "----------------------------------------------------"
 exit 1
 }
-
 tcFolder="/app/archive/kos/share/TypeChef"
-if [ ! $# -eq 3 ]; then 
-	func_help
+if [ ! $# -eq 4 ]; then 
+  if [ ! $# -eq 3]; then	
+    func_help
+  else
+    noRemove=0
+  fi
+else
+  noRemove=$4
 fi
+
 
 fileCheckList=$1
 flagList=$3
 srcPath=$2
 
 
-
 export outCSV=boa.csv
 ## Reset output
 #echo -n -> "$outCSV"
 
-echo "remove *.dbg files			[START]"
+if [ $noRemove -eq 1 ]; then
+echo "continue without remove"
+else 
+echo "remove *.dbg files                        [START]"
 func_filesToProcess|while read i; do
- if [ ! -f $tcFolder/$srcPath/$i.dbg ]; then
+if [ ! -f $tcFolder/$srcPath/$i.dbg ]; then
   echo "nothing to remove"
  else
-  rm $tcFolder/$srcPath/$i.dbg
-  echo "remove $i.dbg 				[OK]"
- fi
+     rm $tcFolder/$srcPath/$i.dbg
+     echo "remove $i.dbg 				[OK]"
+     echo "remove *.dbg files                        [OK]" 
+  fi
 done
-echo "remove *.dbg files			[OK]"
+fi
 
 
 export partialPreprocFlags="-x CONFIG_ --include $tcFolder/busybox/config.h -I $tcFolder/$srcPath/include"
