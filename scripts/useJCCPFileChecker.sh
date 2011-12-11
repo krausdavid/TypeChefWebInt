@@ -24,10 +24,6 @@ echo "----------------------------------------------------"
 exit 1
 }
 
-func_getFlags(){
-echo "getFlags"
-}
-
 tcFolder="/app/archive/kos/share/TypeChef"
 if [ ! $# -eq 3 ]; then 
 	func_help
@@ -67,7 +63,7 @@ func_filesToProcess|while read i; do
     cd $tcFolder
     ./jcpp.sh $srcPath/$i.c
     cd - 
-    echo "working on file $i.c			[OK]"
+    echo "working on file $srcPath/ $i.c			[OK]"
  else
     echo "Skipping $srcPath/$i.c"
   fi
