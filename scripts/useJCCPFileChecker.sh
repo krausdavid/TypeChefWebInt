@@ -45,10 +45,17 @@ export outCSV=boa.csv
 
 echo "remove *.dbg files			[START]"
 func_filesToProcess|while read i; do
+ if [ ! -f $tcFolder/$srcPath/$i.dbg ]; then
+  echo "nothing to remove"
+ else
   rm $tcFolder/$srcPath/$i.dbg
   echo "remove $i.dbg 				[OK]"
+ fi
 done
 echo "remove *.dbg files			[OK]"
+
+
+export partialPreprocFlags="-x CONFIG_ --include $tcFolder/busybox/config.h -I $tcFolder/$srcPath/include"
 
 echo "reading flags				[START]"
 flags=""
