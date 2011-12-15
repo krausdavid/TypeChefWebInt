@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /*
  * #####################################################
@@ -33,6 +33,8 @@ $template->template_dir = "./templates/tpl";
 $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
+
+//echo "->".tools::read_settings("typechef_path")."<-";
 
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
 	$template->assign("browser", "MSIE");
