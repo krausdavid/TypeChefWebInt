@@ -21,7 +21,7 @@
 		<SCRIPT src="{$_wud}/include/javascripts/treeview/ftiens4.js"></SCRIPT>
 
 		{* TODO: Muss generisch werden!!! *}
-		<SCRIPT src="{$_wud}/generics/treeview/sample.js"></SCRIPT>
+		<SCRIPT src="{$_wud}/generics/treeview/busybox.js"></SCRIPT>
 		<!--[if lt IE 7.]>
 			<script defer type="text/javascript" src="{$_wud}/include/javascripts/pngfix/pngfix.js"></script>
 		<![endif]-->
@@ -46,7 +46,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td>{include file=$template}</td>
+			<td valign="top">{include file=$template}</td>
 		</tr>
 		<tr>
 			<td align="center" colspan="2"><br>
