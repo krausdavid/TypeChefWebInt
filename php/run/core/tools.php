@@ -37,6 +37,10 @@ class tools
 		}
 		return "ERR";
 	}
+
+  function reload_tree(){
+		return shell_exec("java -jar ../java/web_TreeViewInitializator/web_TreeViewInitializator.jar /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5 busybox /app/home/eifx/public_html/TypeChefWebInt/global_settings.xml");
+  }
 	
 	function login_exists()
 	{

@@ -10,14 +10,14 @@ import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
 public class web_TreeViewInitializator {
-	
+
 	private static final String VERSION = "0.0.2.8";
 	private static final String AUTHORS = "EifX";
 	private static String GLOBAL_SETTINGS_FILE;
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static String folderSeparator;
-	
+
 	/**
 	 * This method navigates through a XML-File by given path <tt>settings</tt><br>
 	 * Only inline attributes are excepted (Ex.: &lt;node val="test" /&gt;)
@@ -32,7 +32,7 @@ public class web_TreeViewInitializator {
 	    DocumentBuilder builder = factory.newDocumentBuilder();
 	    Document document = builder.parse( new File(GLOBAL_SETTINGS_FILE) );
 	    NodeList list = document.getChildNodes();
-	    
+
 	    //Go to a deeper path
 	    for(int i=0;i<settings.length;i++){
 	    	if(settings.length-2>i){
@@ -56,10 +56,10 @@ public class web_TreeViewInitializator {
 	    		}
 	    	}
 	    }
-	    
+
 		return "";
 	}
-	
+
 	/**
 	 * Get all files from an given path. If failureTest is set, this method said, if an path have an error file
 	 * @param path
@@ -102,11 +102,11 @@ public class web_TreeViewInitializator {
 		}
 		return true;
 	}
-	
+
 	/**
 	 * Write the output filefalse
 	 * @param path
-	 * @param prettyOutput 
+	 * @param prettyOutput
 	 */
 	public static void writeTxt(String path){
 		try{
@@ -121,7 +121,7 @@ public class web_TreeViewInitializator {
 			System.out.println("ERROR! Javascript write error in path : "+path);
 		}
 	}
-	
+
 	/**
 	 * This method cleans a string. Only letters and numbers are excepted in a string, all other
 	 * values are replaced by an underscore.
@@ -139,7 +139,7 @@ public class web_TreeViewInitializator {
 		}
 		return newStr;
 	}
-	
+
 	/**
 	 * Test a given file if it is a failure file
 	 * @param path
@@ -152,7 +152,7 @@ public class web_TreeViewInitializator {
 			file.close();
 			return false;
 		}
-		
+
 		String str = file.readLine();
 		boolean trueSucc = false;
 		while(str!=null){
@@ -165,17 +165,17 @@ public class web_TreeViewInitializator {
 			}
 			str = file.readLine();
 		}
-		
-		
+
+
 		file.close();
 		return false;
 	}
-	
+
 	/**
 	 * This Method create the javascript-path
 	 * @param path
 	 */
-	public static void js_tree(String path){
+	public static void js_tree(String path, String projectName){
 		String[] oldArr = {""};
 		int notEqual = -1;
 		Double dsize = new Double(files.size());
@@ -186,14 +186,14 @@ public class web_TreeViewInitializator {
 			//Get the file
 			notEqual = -1;
 			String newPath = files.get(i).getPath().substring(path.length()+1);
-			
+
 			String[] pathArr;
 			if(folderSeparator=="\\"){
 				pathArr = newPath.split(folderSeparator+folderSeparator);
 			}else{
 				pathArr = newPath.split(folderSeparator);
 			}
-			
+
 			//Search for differences between the new and the last file
 			for(int j=0;j<pathArr.length;j++){
 				if(oldArr.length>j){
@@ -206,7 +206,7 @@ public class web_TreeViewInitializator {
 					break;
 				}
 			}
-			
+
 			//If a file is exist, do nothing
 			if(notEqual==-1){
 				break;
@@ -235,17 +235,19 @@ public class web_TreeViewInitializator {
 					}
 				}
 			}
-			
-			
-			
-			
+
+			newPath = newPath.replace("\\", "/");
+			newPath = newPath.replace(" ", "_");
+
 			//Print the files!
 			if(pathArr.length==1){
-				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"noLinkInserted\"))");
+				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"files/"+projectName+"/"+newPath+"\"))");
+				//javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"noLinkInserted\"))");
 			}else{
-				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"noLinkInserted\"))");
+				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"files/"+projectName+"/"+newPath+"\"))");
+				//javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"noLinkInserted\"))");
 			}
-			
+
 			//Draw fileicons
 			try {
 				if(isNotAFailFile(files.get(i).getPath())){
@@ -257,14 +259,14 @@ public class web_TreeViewInitializator {
 				System.out.println("ERROR! DBG-File read error : "+files.get(i).getPath());
 				System.exit(-1);
 			}
-			
+
 			oldArr = pathArr;
-			
+
 			//Graphical representation
 			Double di = new Double(i);
-			
+
 			calc = (di.doubleValue() / dsize.doubleValue())*100;
-			
+
 			if(calc>=0&&percent==0){System.out.print("|");percent=percent+5;}
 			if(calc>=5&&percent==5){System.out.print("|");percent=percent+5;}
 			if(calc>=10&&percent==10){System.out.print("|");percent=percent+5;}
@@ -288,7 +290,7 @@ public class web_TreeViewInitializator {
 			if(calc>=100&&percent==100){System.out.print("|");percent=percent+5;}
 		}
 	}
-	
+
 	/**
 	 * This Method draws the javascript-header
 	 * @param projectName
@@ -300,7 +302,7 @@ public class web_TreeViewInitializator {
 		javascript.add("ICONPATH = '"+iconPath+"'");
 		javascript.add("foldersTree = gFld(\"<i>"+projectName+"</i>\", \"\")");
 		javascript.add("foldersTree.treeID = \"Frameset\"");
-		
+
 		if(getAllFiles(projectPath,true)){
 			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
 			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
@@ -309,7 +311,7 @@ public class web_TreeViewInitializator {
 			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
 		}
 	}
-	
+
 	/**
 	 * Main function
 	 * @param args
@@ -334,28 +336,28 @@ public class web_TreeViewInitializator {
 				}else{
 					folderSeparator = "/";
 				}
-				
+
 				GLOBAL_SETTINGS_FILE = args[2];
-				
+
 				if(args[0].substring(args[0].length()-1).equals(folderSeparator)){
 					args[0] = args[0].substring(0,args[0].length()-1);
 				}
-				
+
 				String[] xpath = {"settings","website","generic","treeview","icons"};
-				
+
 				System.out.println("Read folder tree...");
 				getAllFiles(args[0],false);
-				
-				
+
+
 				System.out.println("Sort folder tree...");
 
 				String[] sortArr = new String[files.size()];
 				for(int i=0;i<sortArr.length;i++){
 					sortArr[i] = files.get(i).getAbsolutePath();
 				}
-				
+
 				Arrays.sort(sortArr);
-				
+
 				while(files.size()!=0){
 					files.remove(0);
 				}
@@ -363,13 +365,13 @@ public class web_TreeViewInitializator {
 					files.add(new File(sortArr[i]));
 				}
 
-				
+
 				System.out.println("Build header...");
 				js_header(args[1],read_setting(xpath),args[0]);
-				
+
 				System.out.println("Build folder tree...");
-				js_tree(args[0]);
-				
+				js_tree(args[0],args[1]);
+
 				System.out.println("\nSave folder tree...");
 				xpath = new String[]{"settings","global","webint","path"};
 				String readedPath = read_setting(xpath);
@@ -380,8 +382,8 @@ public class web_TreeViewInitializator {
 
 				writeTxt(readedPath+folderSeparator+args[1]+".js");
 				System.out.println("DONE!");
-				
-				
+
+
 			} catch (Exception e) {
 				System.out.println("ERROR! File not exists, read error or XML not well-formed!\n\n");
 				e.printStackTrace();
