@@ -11,7 +11,7 @@ import org.xml.sax.SAXException;
 
 public class web_TreeViewInitializator {
 
-	private static final String VERSION = "0.0.2.8";
+	private static final String VERSION = "0.0.2.9";
 	private static final String AUTHORS = "EifX";
 	private static String GLOBAL_SETTINGS_FILE;
 	private static ArrayList<String> javascript = new ArrayList<String>();
