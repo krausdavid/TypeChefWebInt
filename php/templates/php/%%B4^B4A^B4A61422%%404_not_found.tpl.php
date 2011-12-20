@@ -1,3 +1,3 @@
-<?php /* Smarty version 2.6.26, created on 2011-12-15 22:51:10
+<?php /* Smarty version 2.6.26, created on 2011-12-20 11:38:05
          compiled from ./pages/404_not_found.tpl */ ?>
-﻿<?php echo '<div class="error_header">ERROR 404 : SEITE NICHT GEFUNDEN</div><br><div class="body">Entschuldigung, aber die von Ihnen gewählte Seite ist nicht verfügbar.<br><br>Wenn Sie von dieser Seite via Link auf diese Seite geführt worden,<br>so ist dies ein interner Fehler. Bitte wenden Sie sich dann an <a href="mailto:website@eifx.de" class="link">Alex Eifler</a>.</div>'; ?>
+﻿<?php echo '<div class="error_header">ERROR 404 : SEITE NICHT GEFUNDEN</div><br><div class="body">Entschuldigung, aber die von Ihnen gewählte Seite ist nicht verfügbar.<br><br>Vermutlich ist ein Fehler im aufgerufendem Link oder der Bereich ist temporär nicht verfügbar.</div>'; ?>
