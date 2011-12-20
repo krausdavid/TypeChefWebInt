@@ -11,7 +11,7 @@ import org.xml.sax.SAXException;
 
 public class web_TreeViewInitializator {
 
-	private static final String VERSION = "0.0.2.9";
+	private static final String VERSION = "0.0.2.10";
 	private static final String AUTHORS = "EifX";
 	private static String GLOBAL_SETTINGS_FILE;
 	private static ArrayList<String> javascript = new ArrayList<String>();
@@ -175,7 +175,7 @@ public class web_TreeViewInitializator {
 	 * This Method create the javascript-path
 	 * @param path
 	 */
-	public static void js_tree(String path, String projectName){
+	public static void js_tree(String path, String projectName, String defaultURI){
 		String[] oldArr = {""};
 		int notEqual = -1;
 		Double dsize = new Double(files.size());
@@ -241,10 +241,10 @@ public class web_TreeViewInitializator {
 
 			//Print the files!
 			if(pathArr.length==1){
-				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"files/"+projectName+"/"+newPath+"\"))");
+				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/files/"+projectName+"/"+newPath+"\"))");
 				//javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"noLinkInserted\"))");
 			}else{
-				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"files/"+projectName+"/"+newPath+"\"))");
+				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/files/"+projectName+"/"+newPath+"\"))");
 				//javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"noLinkInserted\"))");
 			}
 
@@ -343,8 +343,6 @@ public class web_TreeViewInitializator {
 					args[0] = args[0].substring(0,args[0].length()-1);
 				}
 
-				String[] xpath = {"settings","website","generic","treeview","icons"};
-
 				System.out.println("Read folder tree...");
 				getAllFiles(args[0],false);
 
@@ -367,10 +365,13 @@ public class web_TreeViewInitializator {
 
 
 				System.out.println("Build header...");
+
+				String[] xpath = {"settings","website","generic","treeview","icons"};
 				js_header(args[1],read_setting(xpath),args[0]);
 
 				System.out.println("Build folder tree...");
-				js_tree(args[0],args[1]);
+				xpath = new String[]{"settings","global","website","defaultURI"};
+				js_tree(args[0],args[1],read_setting(xpath));
 
 				System.out.println("\nSave folder tree...");
 				xpath = new String[]{"settings","global","webint","path"};

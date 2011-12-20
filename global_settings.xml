@@ -2,7 +2,7 @@
 <settings>
 	<global>
 		<dbgfilechecker path="/DBGFileCheker" />
-		<website path="/php" />
+		<website path="/php" defaultURI="http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php" />
 		<shellscripts path="/scripts" />
 		<typechef path="/app/archive/kos/share/TypeChef" />
 		<webint path="/app/home/eifx/public_html/TypeChefWebInt" />
