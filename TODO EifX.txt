@@ -1,0 +1,16 @@
+TODO:
+- settings.ini -> settings.xml
+- Vorbereitungen für MultiUser-Anwendung
+- Einstellungen und Admin-Bereich erstellen
+- init.php ebenfalls in global_settings.xml oder in settings.xml auslagern
+- generische Einbindung des Baumes
+- Projektauswahlmöglichkeit
+- "Startknopf" für die ersten Initialisierungen
+- Möglichkeit, einen gewählten Pfad geöffnet zu lassen
+- Auswahlhaken im TreeView anzeigen
+- Beim Laden eines Projektes sollte der Dateibaum mit diversen Informationen über die Dateien in eine Datei abgespeichert werden
+  Es wird sehr viel Zeit beim TreeViewer, DBGFileChecker etc. damit verbraucht
+- TreeView: Überarbeiten und Ressourcenschonender gestallten
+- DBGFileChecker: Überarbeiten und Ressourcenschonender gestallten
+- WebIntLib.java: Eine Bibliothek für gemeinsam genutzte Funktionen in allen Java Programmen
+- Java Programme sollten im Ordner "Java" sein
