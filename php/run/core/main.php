@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /*
  * #####################################################
@@ -34,12 +34,18 @@ $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
+//echo "->".tools::read_settings("typechef_path")."<-";
+
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
 	$template->assign("browser", "MSIE");
 }
 
 switch ($_GET['root']) {
 	case "":
+		require("./run/site/main.php");
+		break;
+	case "reload_tree":
+		echo tools::reload_tree();
 		require("./run/site/main.php");
 		break;
 	case "403_forbidden":

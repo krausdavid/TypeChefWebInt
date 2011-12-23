@@ -5,6 +5,7 @@ ErrorDocument 501 /501_not_implemented
 RewriteEngine On
 RewriteRule !index\.php - [C]
 RewriteRule !include(.*) - [C]
+RewriteRule !generics(.*) - [C]
 RewriteRule !settings\.ini - [C]
 
 RewriteRule ^(.*)$ /~eifx/TypeChefWebInt/php/index.php?root=$1 [QSA,L]

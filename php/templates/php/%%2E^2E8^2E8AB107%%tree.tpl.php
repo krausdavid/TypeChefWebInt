@@ -1,3 +1,3 @@
-<?php /* Smarty version 2.6.26, created on 2011-11-22 17:42:56
+<?php /* Smarty version 2.6.26, created on 2011-12-17 14:34:12
          compiled from ./core/tree.tpl */ ?>
-<?php echo 'Tree'; ?>
+<?php echo ''; ?><?php echo '<DIV style="position:absolute; top:20; left:0;"><TABLE border=0><TR><TD><FONT size=-2><A style="font-size:0pt;text-decoration:none;color:white" href="http://www.treemenu.net/" target=_blank>Javascript Tree Menu</A></FONT></TD></TR></TABLE></DIV><div class="treeview"><SCRIPT>initializeDocument()</SCRIPT><NOSCRIPT>Bitte aktivieren Sie JavaScript!</NOSCRIPT></div>'; ?>

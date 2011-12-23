@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<global>
+		<dbgfilechecker path="/DBGFileCheker" />
+		<website path="/php" defaultURI="http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php" />
+		<shellscripts path="/scripts" />
+		<typechef path="/app/archive/kos/share/TypeChef" />
+		<webint path="/app/home/eifx/public_html/TypeChefWebInt" />
+	</global>
+	<website>
+		<generic>
+			<treeview path="/generics/treeview" icons="/~eifx/TypeChefWebInt/php/include/images/treeview/"/>
+		</generic>
+	</website>
+</settings>

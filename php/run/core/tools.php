@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /*
  * #####################################################
@@ -19,6 +19,28 @@
 
 class tools
 {
+	
+	function read_settings($setting){
+		$handle = fopen(SETTING_FILE,"r");
+		$fcontent = "";
+		if($handle){
+			while(!feof($handle)){
+				$setting_arr = explode("=",fgets($handle));
+				if(count($setting_arr)>1){
+					if($setting_arr[0] == $setting){
+						fclose($handle);
+						return $setting_arr[1];
+					}
+				}
+			}
+			fclose($handle);
+		}
+		return "ERR";
+	}
+
+  function reload_tree(){
+		return shell_exec("java -jar ../java/web_TreeViewInitializator/web_TreeViewInitializator.jar /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5 busybox /app/home/eifx/public_html/TypeChefWebInt/global_settings.xml");
+  }
 	
 	function login_exists()
 	{
