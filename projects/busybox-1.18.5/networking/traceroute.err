@@ -1,3 +1,1 @@
-Jan 5, 2012 5:54:55 PM de.fosd.typechef.lexer.PreprocessorListener print
-WARNING: busybox-1.18.5/networking/traceroute.c:1116:27: warning: inline expansion of macro ICMP6_DST_UNREACH_NOROUTE is not exaustive. assuming 0 for !def(CONFIG_FEATURE_IPV6)
-busybox-1.18.5/networking/traceroute.c:1116:27: warning: inline expansion of macro ICMP6_DST_UNREACH_NOROUTE is not exaustive. assuming 0 for !def(CONFIG_FEATURE_IPV6)
+bash: /app/archive/kos/share/TypeChef/TypeChef/typechef.sh: Permission denied

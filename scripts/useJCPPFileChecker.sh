@@ -85,7 +85,7 @@ func_filesToProcess|while read i; do
   if [ ! -f $srcPath/$i.dbg ]; then
     touch $srcPath/$i.dbg
     oldPath=$(pwd)
-    cd $tcFolder
+    cd /app/home/krausdavid/TypeChefWebInt/TypeChefWebInt/projects
     ./jcpp.sh $srcPath/$i.c
     cd - 
     echo "#######################"
