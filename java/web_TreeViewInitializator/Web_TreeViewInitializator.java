@@ -7,10 +7,10 @@ import java.util.Arrays;
 import tcwi.xml.*;
 import tcwi.fileHandler.*;
 
-public class web_TreeViewInitializator {
+public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.0.2.12";
-	private static final String AUTHORS = "EifX";
+	private static final String VERSION = "0.0.2.13";
+	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static String folderSeparator;
@@ -254,7 +254,7 @@ public class web_TreeViewInitializator {
 			System.out.println("\n[PROJECTNAME]");
 			System.out.println("\n     Project name\n");
 			System.out.println("\n[GLOBAL_SETTINGS]");
-			System.out.println("\n     Absolute Path for the global_settings.xml\n");
+			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
 			try {
 				check = new Check();
