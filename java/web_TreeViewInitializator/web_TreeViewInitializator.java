@@ -5,14 +5,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import tcwi.xml.*;
+import tcwi.fileHandler.*;
 
 public class web_TreeViewInitializator {
 
-	private static final String VERSION = "0.0.2.11";
+	private static final String VERSION = "0.0.2.12";
 	private static final String AUTHORS = "EifX";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static String folderSeparator;
+	private static Check check;
 
 	/**
 	 * Get all files from an given path. If failureTest is set, this method said, if an path have an error file
@@ -36,7 +38,7 @@ public class web_TreeViewInitializator {
 						if(fileList[i].canRead()){
 							if(failureTest){
 								try {
-									if(!(isNotAFailFile(fileList[i].getAbsolutePath()))){
+									if(!(check.isNotAFailFile(fileList[i].getAbsolutePath()))){
 										return false;
 									}
 								} catch (IOException e) {
@@ -92,37 +94,6 @@ public class web_TreeViewInitializator {
 			}
 		}
 		return newStr;
-	}
-
-	/**
-	 * Test a given file if it is a failure file
-	 * @param path
-	 * @return
-	 * @throws IOException
-	 */
-	public static boolean isNotAFailFile(String path) throws IOException{
-		RandomAccessFile file = new RandomAccessFile(path,"r");
-		if(file.length()==0){
-			file.close();
-			return false;
-		}
-
-		String str = file.readLine();
-		boolean trueSucc = false;
-		while(str!=null){
-			if(str.contains("True\tsucceeded")){
-				trueSucc = true;
-			}
-			if(str.contains("No type errors found.")&&trueSucc){
-				file.close();
-				return true;
-			}
-			str = file.readLine();
-		}
-
-
-		file.close();
-		return false;
 	}
 
 	/**
@@ -202,7 +173,7 @@ public class web_TreeViewInitializator {
 
 			//Draw fileicons
 			try {
-				if(isNotAFailFile(files.get(i).getPath())){
+				if(check.isNotAFailFile(files.get(i).getPath())){
 					javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileok.gif\"");
 				}else{
 					javascript.add("doc"+i+".iconSrc = ICONPATH + \"filefail.gif\"");
@@ -257,14 +228,6 @@ public class web_TreeViewInitializator {
 		javascript.add("BUILDALL = 1");
 		javascript.add("ICONPATH = '"+iconPath+"'");
 
-/*		javascript.add("function generateCheckBox(parentfolderObject, itemLabel, checkBoxDOMId, linkPath) {");
-		javascript.add("     var newObj;");
-		javascript.add("     newObj = insDoc(parentfolderObject, gLnk(\"R\", itemLabel, linkPath))");
-		javascript.add("     newObj.prependHTML = \"<td valign=middle><input type=checkbox id=\"+checkBoxDOMId+\"></td>\"");
-		javascript.add("     return newObj");
-		javascript.add("}");		
-	*/	
-		
 		javascript.add("foldersTree = gFld(\"<i>"+projectName+"</i>\", \"\")");
 		javascript.add("foldersTree.treeID = \"Frameset\"");
 
@@ -294,6 +257,7 @@ public class web_TreeViewInitializator {
 			System.out.println("\n     Absolute Path for the global_settings.xml\n");
 		}else{
 			try {
+				check = new Check();
 				System.out.println("\nRead needed variables...");
 				//Windows or Unix OS?
 				if(args[0].indexOf('\\')!=-1){
