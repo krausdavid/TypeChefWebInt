@@ -1,0 +1,56 @@
+fm True
+features (0)
+	
+imports (50)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_ARP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72889:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_ARP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72836:8
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79091:2, file busybox-1.18.5/networking/arp.c:79055:3, file busybox-1.18.5/networking/arp.c:79048:3, file busybox-1.18.5/networking/arp.c:78989:2, file busybox-1.18.5/networking/arp.c:78957:3, file busybox-1.18.5/networking/arp.c:78941:3, file busybox-1.18.5/networking/arp.c:78903:3, file busybox-1.18.5/networking/arp.c:78896:3
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79299:3, file busybox-1.18.5/networking/arp.c:79292:2, file busybox-1.18.5/networking/arp.c:79288:3, file busybox-1.18.5/networking/arp.c:79281:2, file busybox-1.18.5/networking/arp.c:79275:3, file busybox-1.18.5/networking/arp.c:79270:3, file busybox-1.18.5/networking/arp.c:79262:2, file busybox-1.18.5/networking/arp.c:79021:3, file busybox-1.18.5/networking/arp.c:79015:2, file busybox-1.18.5/networking/arp.c:78980:2
+	bb_herror_msg_and_die: (*char, ...) => void		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79174:3, file busybox-1.18.5/networking/arp.c:79071:5, file busybox-1.18.5/networking/arp.c:79008:2, file busybox-1.18.5/networking/arp.c:78919:5, file busybox-1.18.5/networking/arp.c:78864:2
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:78963:3, file busybox-1.18.5/networking/arp.c:78950:3
+	bb_show_usage: (void) => void		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79079:3, file busybox-1.18.5/networking/arp.c:79067:4, file busybox-1.18.5/networking/arp.c:79061:4, file busybox-1.18.5/networking/arp.c:78927:3, file busybox-1.18.5/networking/arp.c:78915:4, file busybox-1.18.5/networking/arp.c:78909:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_ARP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72861:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_ARP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72886:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_ARP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72858:9
+	bb_xioctl: (signed int, unsigned int, *void) => signed int		if (!def(CONFIG_IOCTL_HEX2STR_ERROR)&def(CONFIG_ARP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:79094:39
+	bb_xioctl: (signed int, unsigned int, *void, *char) => signed int		if (def(CONFIG_IOCTL_HEX2STR_ERROR)&def(CONFIG_ARP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:79094:39
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79238:2, file busybox-1.18.5/networking/arp.c:79238:2
+	fgets: (*char, signed int, *struct _IO_FILE) => *char		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79183:8, file busybox-1.18.5/networking/arp.c:79180:1
+	free: (*void) => void		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79237:2, file busybox-1.18.5/networking/arp.c:79237:2
+	get_aftype: (*char) => *struct aftype		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79268:7, file busybox-1.18.5/networking/arp.c:79260:6
+	get_hwntype: (signed int) => *struct hwtype		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79131:7, file busybox-1.18.5/networking/arp.c:78987:9, file busybox-1.18.5/networking/arp.c:78985:8
+	get_hwtype: (*char) => *struct hwtype		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79286:7, file busybox-1.18.5/networking/arp.c:79273:7, file busybox-1.18.5/networking/arp.c:79133:8
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79264:8
+	index_in_strings: (*char, *char) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79028:10, file busybox-1.18.5/networking/arp.c:78876:10
+	ioctl: (signed int, unsigned long, ...) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:78958:6, file busybox-1.18.5/networking/arp.c:78942:8
+	ioctl_or_perror_and_die: (signed int, unsigned int, *void, *char, ...) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:78977:1
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79073:4, file busybox-1.18.5/networking/arp.c:79011:1, file busybox-1.18.5/networking/arp.c:78982:1, file busybox-1.18.5/networking/arp.c:78921:4, file busybox-1.18.5/networking/arp.c:78868:1
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79004:1, file busybox-1.18.5/networking/arp.c:78859:1
+	print_flags_separated: (*signed int, *char, signed int, *char) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79149:1
+	printf: (*char, ...) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79227:3, file busybox-1.18.5/networking/arp.c:79222:2, file busybox-1.18.5/networking/arp.c:79150:1, file busybox-1.18.5/networking/arp.c:79147:2, file busybox-1.18.5/networking/arp.c:79143:2, file busybox-1.18.5/networking/arp.c:79141:3, file busybox-1.18.5/networking/arp.c:79139:3, file busybox-1.18.5/networking/arp.c:79135:1, file busybox-1.18.5/networking/arp.c:78960:4, file busybox-1.18.5/networking/arp.c:78947:4
+	sscanf: (*char, *char, ...) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79189:8
+	strcmp: (*char, *char) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79215:7, file busybox-1.18.5/networking/arp.c:79204:19, file busybox-1.18.5/networking/arp.c:79200:14, file busybox-1.18.5/networking/arp.c:79068:7, file busybox-1.18.5/networking/arp.c:78916:7
+	strcpy: (*char, *char) => *char		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:78976:1
+	strncpy: (*char, *char, unsigned long) => *char		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79087:1, file busybox-1.18.5/networking/arp.c:78934:1
+	xatoll: (*char) => signed long long		if def(CONFIG_ARP)		at string literal: xatoll:72817:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_ARP)		at string literal: xatoll_range:72817:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ARP)		at string literal: xatoll_range_sfx:72817:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_ARP)		at string literal: xatoll_sfx:72817:0
+	xatou: (*char) => unsigned int		if def(CONFIG_ARP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72833:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_ARP)		at string literal: xatoull:72817:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ARP)		at string literal: xatoull_range:72817:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ARP)		at string literal: xatoull_range_sfx:72817:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_ARP)		at string literal: xatoull_sfx:72817:0
+	xfopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79178:6
+	xmove_fd: (signed int, signed int) => void		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79259:1
+	xsocket: (signed int, signed int, signed int) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79259:10
+	xstrdup: (*char) => *char		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79176:9
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_ARP)		at string literal: xstrtoll:72817:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_ARP)		at string literal: xstrtoll_range:72817:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ARP)		at string literal: xstrtoll_range_sfx:72817:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_ARP)		at string literal: xstrtoull:72817:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ARP)		at string literal: xstrtoull_range:72817:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ARP)		at string literal: xstrtoull_range_sfx:72817:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_ARP)		at string literal: xstrtoull_sfx:72817:0
+exports (1)
+	arp_main: (signed int, **char) => signed int		if def(CONFIG_ARP)		at file busybox-1.18.5/networking/arp.c:79251:0

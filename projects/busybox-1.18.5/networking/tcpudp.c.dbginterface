@@ -1,0 +1,75 @@
+fm True
+features (0)
+	
+imports (69)
+	BB_EXECVP_or_die: (**char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73064:1
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70864:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70811:8
+	accept: (signed int, *struct sockaddr, *unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72877:9
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73012:3, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73008:4, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72984:5, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72858:3, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72855:3, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72695:2, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72667:1, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72649:2
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73000:6
+	bb_lookup_port: (*char, *char, unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72829:14
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72953:2, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72888:3
+	bb_sanitize_stdio: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72793:1
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72769:4
+	bb_signals: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72823:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70836:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72766:17, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70861:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70833:9
+	bb_unsetenv_and_free: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72641:2
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72872:1
+	close_on_exec_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72839:2
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73050:2, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73049:2, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73048:2, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73047:2, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73032:4, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72901:3, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72859:2
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72760:8
+	getpid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73006:9
+	getsockname: (signed int, *struct sockaddr, *unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72992:4
+	getsockopt: (signed int, signed int, signed int, *void, *unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73029:14
+	ipsvd_perhost_add: (*char, unsigned int, **struct hcc) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72897:17
+	ipsvd_perhost_init: (unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72827:2
+	ipsvd_perhost_remove: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72705:3
+	kill_myself_with_sig: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72650:1
+	putenv: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72633:1, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72626:1
+	recv_from_to: (signed int, *void, unsigned long, signed int, *struct sockaddr, *struct sockaddr, unsigned int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72882:9
+	send: (signed int, *void, unsigned long, signed int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72904:4
+	setsockopt_reuseaddr: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72920:2, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72834:1
+	sig_block: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72885:1, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72821:1
+	sig_unblock: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73058:1, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72874:1
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73055:1, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72824:1, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72822:1
+	socket_want_pktinfo: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72930:2, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72841:2
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72771:18
+	utoa: (unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73045:36
+	vfork: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72951:7
+	wait_any_nohang: (*signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72703:15
+	wait_for_any_sig: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72868:2
+	xasprintf: (*char, ...) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72631:13, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72624:13
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70792:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70792:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70792:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70792:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70808:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70792:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70792:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70792:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70792:0
+	xbind: (signed int, *struct sockaddr, unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72929:2, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72836:1
+	xconnect: (signed int, *struct sockaddr, unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72924:2
+	xdup2: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73053:1
+	xget_uidgid: (*struct bb_uidgid_t, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72777:2
+	xhost2sockaddr: (*char, signed int) => *struct len_and_sockaddr		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72830:7
+	xlisten: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72838:2
+	xmalloc_sockaddr2dotted: (*struct sockaddr) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:73030:17, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72994:16, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72980:29, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72853:15
+	xmalloc_sockaddr2dotted_noport: (*struct sockaddr) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72896:16
+	xmalloc_sockaddr2host_noport: (*struct sockaddr) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72998:33, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72982:33
+	xmove_fd: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72891:1
+	xsetgid: (unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72848:2
+	xsetuid: (unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72849:2
+	xsocket: (signed int, signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72919:9, file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72833:8
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70792:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70792:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70792:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70792:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70792:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70792:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70792:0
+exports (1)
+	tcpudpsvd_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/tcpudp.c:72723:0

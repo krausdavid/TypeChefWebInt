@@ -1,0 +1,37 @@
+fm True
+features (0)
+	
+imports (31)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_WHICH)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72886:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_WHICH)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72833:8
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_WHICH)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72858:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_WHICH)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_WHICH)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	execable_file: (*char) => signed int		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74241:7, file busybox-1.18.5/debianutils/which.c:74210:7
+	fflush_stdout_and_exit: (signed int) => void		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74260:1
+	find_execable: (*char, **char) => *char		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74248:7, file busybox-1.18.5/debianutils/which.c:74229:10, file busybox-1.18.5/debianutils/which.c:74219:7
+	free: (*void) => void		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74252:4, file busybox-1.18.5/debianutils/which.c:74249:3, file busybox-1.18.5/debianutils/which.c:74235:3, file busybox-1.18.5/debianutils/which.c:74225:4
+	getenv: (*char) => *char		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74199:8
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74189:12, file busybox-1.18.5/debianutils/which.c:74194:19
+	putenv: (*char) => signed int		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74202:2
+	puts: (*char) => signed int		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74251:4, file busybox-1.18.5/debianutils/which.c:74242:4, file busybox-1.18.5/debianutils/which.c:74224:4, file busybox-1.18.5/debianutils/which.c:74211:4
+	strchr: (*char, signed int) => *char		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74240:6, file busybox-1.18.5/debianutils/which.c:74209:6
+	xatoll: (*char) => signed long long		if def(CONFIG_WHICH)		at string literal: xatoll:72814:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_WHICH)		at string literal: xatoll_range:72814:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_WHICH)		at string literal: xatoll_range_sfx:72814:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_WHICH)		at string literal: xatoll_sfx:72814:0
+	xatou: (*char) => unsigned int		if def(CONFIG_WHICH)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_WHICH)		at string literal: xatoull:72814:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_WHICH)		at string literal: xatoull_range:72814:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_WHICH)		at string literal: xatoull_range_sfx:72814:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_WHICH)		at string literal: xatoull_sfx:72814:0
+	xstrdup: (*char) => *char		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74246:17, file busybox-1.18.5/debianutils/which.c:74216:17
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_WHICH)		at string literal: xstrtoll:72814:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_WHICH)		at string literal: xstrtoll_range:72814:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_WHICH)		at string literal: xstrtoll_range_sfx:72814:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_WHICH)		at string literal: xstrtoull:72814:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_WHICH)		at string literal: xstrtoull_range:72814:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_WHICH)		at string literal: xstrtoull_range_sfx:72814:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_WHICH)		at string literal: xstrtoull_sfx:72814:0
+exports (1)
+	which_main: (signed int, **char) => signed int		if def(CONFIG_WHICH)		at file busybox-1.18.5/debianutils/which.c:74172:0

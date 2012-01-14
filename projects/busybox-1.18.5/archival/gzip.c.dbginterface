@@ -1,0 +1,42 @@
+fm True
+features (0)
+	
+imports (35)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70872:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70819:8
+	append_ext: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74500:34, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74500:34
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:73992:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70844:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70869:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70841:9
+	bbunpack: (**char, *(*struct unpack_info_t) => signed int, *(*char, *char) => *char, *char) => signed int		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74500:8, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74500:8
+	bbunpack: (**char, *(*struct unpack_info_t) => signed long long, *(*char, *char) => *char, *char) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74500:8, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74500:8
+	crc32_block_endian0: (unsigned int, *void, unsigned int, *unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:72796:10
+	crc32_filltable: (*unsigned int, signed int) => *unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74498:22, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74498:22
+	fstat: (signed int, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74413:1
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74469:7, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74469:7
+	gunzip_main: (signed int, **char) => signed int		if def(CONFIG_GUNZIP)		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74479:9
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:72936:2
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74389:1, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74205:1
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:72811:7
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70800:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70800:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70800:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70800:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70816:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70800:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70800:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70800:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70800:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70800:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70800:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70800:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70800:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70800:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70800:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70800:0
+	xwrite: (signed int, *void, unsigned long) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:72757:1
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74495:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74494:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74493:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74492:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74491:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74487:28, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74495:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74494:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74493:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74492:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74491:42, file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74487:28
+exports (2)
+	gzip_main: (signed int, **char) => signed int		if !def(CONFIG_GUNZIP)		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74457:0
+	gzip_main: (signed int, **char) => signed int		if def(CONFIG_GUNZIP)		at file cprojects/busybox/busybox-1.18.5/archival/gzip.c:74457:0

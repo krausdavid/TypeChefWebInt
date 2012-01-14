@@ -1,0 +1,64 @@
+fm True
+features (0)
+	
+imports (58)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70850:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70797:8
+	alarm: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73220:1
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73503:5
+	bb_putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72824:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72770:1
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73481:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73458:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70822:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70847:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70819:9
+	fclose: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73388:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73207:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73181:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73088:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73065:1
+	fgets: (*char, signed int, *struct _IO_FILE) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73380:8, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73201:5, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73144:8, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73130:8, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73080:8, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73014:8
+	fopen_for_read: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73372:6, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73198:6, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73121:6, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73076:6
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73539:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73538:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73536:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73535:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73534:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73533:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73539:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73538:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73536:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73535:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73534:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73533:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73389:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73182:1
+	get_cpu_count: (void) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73432:12
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73447:7
+	index_in_strings: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73479:6
+	localtime_r: (*signed long, *struct tm) => *struct tm		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73214:1
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73274:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73272:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73271:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73270:1
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73498:4, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73471:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73284:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73254:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73253:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73252:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73251:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73036:2
+	pause: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73281:2
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73358:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72964:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72958:5, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72951:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72939:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72925:5, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72895:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72878:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72845:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72820:5, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72817:5, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72778:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72765:19, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72751:1
+	safe_strncpy: (*char, *char, unsigned long) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73162:2
+	setbuf: (*struct _IO_FILE, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73425:1
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73219:1
+	skip_whitespace: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72765:51
+	sscanf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73202:6, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73084:3, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73037:2, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73026:7
+	starts_with_cpu: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73019:7
+	strchr: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73152:7
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73496:7, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72811:8, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72803:9, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72796:8, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72742:8
+	strcspn: (*char, *char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73383:10
+	strftime: (*char, unsigned long, *char, *struct tm) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73356:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72994:1, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:72993:1
+	strncmp: (*char, *char, unsigned long) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73082:6
+	strstr: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73133:15
+	strtok: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73495:44, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73495:11
+	strtoul: (*char, **char, signed int) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73170:20, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73136:9
+	sysconf: (signed int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73332:8
+	time: (*signed long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73213:1
+	uname: (*struct utsname) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73354:1
+	xatoi_positive: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73501:17, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73459:13, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73452:15
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70778:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70778:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70778:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70778:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70794:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70778:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70778:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70778:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70778:0
+	xfopen_for_read: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73012:6
+	xmalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73377:8, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73126:7
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70778:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70778:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70778:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70778:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70778:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70778:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70778:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73427:42, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73345:16, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73342:23, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73341:19, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73340:16, file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73339:16
+exports (1)
+	mpstat_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/mpstat.c:73412:0

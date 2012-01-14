@@ -1,0 +1,35 @@
+fm True
+features (0)
+	
+imports (29)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70865:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70812:8
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72651:2, file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72642:2, file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72619:1
+	bb_simple_perror_msg_and_die: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72674:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70837:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70862:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70834:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72703:2, file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72703:2
+	ioctl: (signed int, unsigned long, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72673:5
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72691:2, file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72685:2
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72614:7
+	xatoi_positive: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72648:8
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70793:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70793:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70793:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70793:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70809:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70793:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70793:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70793:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70793:0
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72652:6
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70793:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70793:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70793:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70793:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70793:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70793:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70793:0
+exports (1)
+	blockdev_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/blockdev.c:72630:0

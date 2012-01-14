@@ -1,0 +1,1 @@
+(definedEx(CONFIG_MKFIFO) || definedEx(CONFIG_MKNOD))

@@ -1,0 +1,53 @@
+fm True
+features (0)
+	
+imports (47)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70843:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70790:8
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72217:80
+	bb_simple_perror_msg_and_die: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72334:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70815:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70840:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70812:9
+	cfmakeraw: (*struct termios) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72206:1
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72318:1, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72316:1
+	execl: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72333:1
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72273:6, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72273:6
+	fsync: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72279:6
+	full_write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72305:3, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72304:3, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72290:5, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72277:5, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72276:5
+	getenv: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72194:9
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72171:7
+	gettimeofday: (*struct timeval, *struct timezone) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72271:6, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72271:6
+	ioctl: (signed int, unsigned long, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72329:1, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72326:2, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72203:12
+	ndelay_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72239:2
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72247:7
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72311:3, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72192:2
+	record_signo: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72213:17
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72303:28, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72284:12, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72254:12
+	setsid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72328:1
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72213:1
+	tcgetattr: (signed int, *struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72202:11
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72324:2, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72309:3, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72208:1
+	time: (*signed long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72231:41, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72231:41
+	vfork: (void) => signed int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72217:44
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70771:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70771:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70771:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70771:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70787:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70771:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70771:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70771:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70771:0
+	xdup2: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72321:1, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72320:1
+	xgetpty: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72199:7
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72319:1, file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72234:10
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70771:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70771:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70771:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70771:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70771:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70771:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70771:0
+exports (1)
+	script_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/script.c:72129:0

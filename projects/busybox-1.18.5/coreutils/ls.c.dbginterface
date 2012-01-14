@@ -1,0 +1,66 @@
+fm True
+features (0)
+	
+imports (60)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70864:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70811:8
+	bb_basename: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77825:26
+	bb_mode_string: (unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77459:38
+	bb_putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77722:4
+	bb_simple_perror_msg: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77135:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77124:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70836:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70861:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70833:9
+	closedir: (*struct __dirstream) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77835:1
+	concat_path_file: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77824:13
+	ctime: (*signed long) => *char		if (def(CONFIG_FTPD)|def(CONFIG_FEATURE_LS_TIMESTAMPS))		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77513:13
+	fputs: (*char, *struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77403:2
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78167:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78167:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78147:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78147:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77827:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77773:5, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77773:5, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77586:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77264:1, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77262:2, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77261:3
+	freecon: (*char) => void		if def(CONFIG_SELINUX)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77534:2
+	get_cached_groupname: (unsigned int) => *char		if def(CONFIG_FEATURE_LS_USERNAME)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77470:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77466:4
+	get_cached_username: (unsigned int) => *char		if def(CONFIG_FEATURE_LS_USERNAME)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77469:4
+	get_terminal_width_height: (signed int, *unsigned int, *unsigned int) => signed int		if def(CONFIG_FEATURE_AUTOWIDTH)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77941:1
+	getenv: (*char) => *char		if def(CONFIG_FEATURE_LS_COLOR)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78009:12, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78009:12
+	getfilecon: (*char, **char) => signed int		if def(CONFIG_SELINUX)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77120:4
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77967:7, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77956:7
+	gnu_dev_major: (unsigned long long) => unsigned int		if True		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h:77485:20
+	gnu_dev_minor: (unsigned long long) => unsigned int		if True		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h:77486:20
+	index_in_substrings: (*char, *char) => signed int		if def(CONFIG_FEATURE_LS_COLOR)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78017:15
+	init_unicode: (void) => void		if ((def(CONFIG_UNICODE_SUPPORT)&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&(!def(CONFIG_UNICODE_SUPPORT)|def(CONFIG_UNICODE_USING_LOCALE)|!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)|(def(CONFIG_UNICODE_SUPPORT)&def(CONFIG_UNICODE_USING_LOCALE)))&def(CONFIG_UNICODE_USING_LOCALE))|(!def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)&(!def(CONFIG_UNICODE_SUPPORT)|!def(CONFIG_UNICODE_USING_LOCALE))&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&def(CONFIG_UNICODE_SUPPORT)))		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/unicode.h:77922:24, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/unicode.h:77922:24
+	is_selinux_enabled: (void) => signed int		if def(CONFIG_SELINUX)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77130:6, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77119:6
+	isatty: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78075:14, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78021:7, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78008:43, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78008:43
+	lgetfilecon: (*char, **char) => signed int		if def(CONFIG_SELINUX)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77131:3
+	lstat: (*char, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77541:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77134:6
+	make_human_readable_str: (unsigned long long, unsigned long, unsigned long) => *char		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77491:5
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77887:71
+	printable_string: (*struct uni_stat_t, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77400:8, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77370:8
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77729:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77724:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77663:5, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77584:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77584:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77571:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77560:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77555:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77555:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77542:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77533:12, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77525:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77523:4, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77520:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77516:13, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77494:14, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77489:14, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77484:13, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77478:13, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77476:13, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77468:13, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77465:13, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77461:12, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77459:12, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77450:12, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77448:12
+	putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77670:2, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77592:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77417:1, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77414:2, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77411:3, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77408:1
+	qsort: (*void, unsigned long, unsigned long, *(*void, *void) => signed int) => void		if def(CONFIG_FEATURE_LS_SORTFILES)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77358:1
+	readdir: (*struct __dirstream) => *struct dirent		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77811:17
+	stat: (*char, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77565:7, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77123:6
+	strcmp: (*char, *char) => signed int		if (def(CONFIG_FEATURE_LS_COLOR)|(def(CONFIG_FEATURE_LS_SORTFILES)&!def(CONFIG_LOCALE_SUPPORT))|(def(CONFIG_FEATURE_LS_SORTFILES)&def(CONFIG_LOCALE_SUPPORT)))		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78011:21, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:78011:21, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77341:9, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77341:9
+	strcoll: (*char, *char) => signed int		if def(CONFIG_FEATURE_LS_SORTFILES)		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77339:9, file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77339:9
+	time: (*signed long) => signed long		if (def(CONFIG_FTPD)|def(CONFIG_FEATURE_LS_TIMESTAMPS))		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77913:225
+	warn_opendir: (*char) => *struct __dirstream		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77804:7
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70792:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70792:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70792:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70792:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70808:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70792:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70792:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70792:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70792:0
+	xmalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77141:7
+	xmalloc_readlink_or_warn: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77445:11
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70792:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70792:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70792:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70792:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70792:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70792:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70792:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77247:8
+exports (1)
+	ls_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/ls.c:77856:0

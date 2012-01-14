@@ -1,0 +1,36 @@
+fm True
+features (0)
+	
+imports (28)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70862:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70809:8
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74540:2
+	bb_signals: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74552:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70834:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70859:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70831:9
+	close_on_exec_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74567:2, file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74550:1, file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74549:1
+	ndelay_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74551:1
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74583:5
+	write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74539:5
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70790:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70790:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70790:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70790:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70806:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70790:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70790:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70790:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70790:0
+	xpipe: (signed int[]) => void		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74548:26
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70790:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70790:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70790:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70790:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70790:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70790:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70790:0
+exports (3)
+	udhcp_sp_fd_set: (*struct {Map(__fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74562:0
+	udhcp_sp_read: (*struct {Map(__fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74576:0
+	udhcp_sp_setup: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/signalpipe.c:74545:0

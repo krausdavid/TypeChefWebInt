@@ -1,0 +1,1 @@
+(definedEx(CONFIG_INSTALL) || definedEx(CONFIG_CP) || definedEx(CONFIG_MV))

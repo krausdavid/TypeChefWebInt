@@ -1,0 +1,65 @@
+fm True
+features (0)
+	
+imports (59)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71131:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71078:8
+	__builtin_alloca: (unsigned long) => *void		if (def(CONFIG_FEATURE_FIND_EXEC)&def(CONFIG_USE_PORTABLE_CODE))		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/alloca.h:73610:22
+	alloc_action: (signed int, *(*char, *struct stat, *void) => signed int) => *struct {Map(f -> List((True,CPointer(CFunction(List(CPointer(CSignUnspecified(CChar())), CPointer(CStruct(stat,false)), CPointer(CVoid())),CSigned(CInt()))))), invert -> List((def(CONFIG_FEATURE_FIND_NOT),CSigned(CInt()))))}		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74553:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74543:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74528:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74499:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74490:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74483:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74475:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74466:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74458:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74447:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74435:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74428:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74421:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74414:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74406:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74362:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74346:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74339:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74321:43, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74308:43
+	bb_basename: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73513:19
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74559:3
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74452:4, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74398:5, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74382:4, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74367:5, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74250:4, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73805:2
+	bb_parse_mode: (*char, *unsigned int) => signed int		if def(CONFIG_FEATURE_FIND_PERM)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74451:8
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74773:4, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74560:3
+	bb_simple_perror_msg: (*char) => void		if (def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_FEATURE_FIND_DELETE)|def(CONFIG_FEATURE_FIND_EXEC))		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74547:4, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73691:2, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73621:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71103:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74500:13, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74491:13, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71128:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71100:9
+	fnmatch: (*char, *char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73532:8, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73526:8
+	free: (*void) => void		if def(CONFIG_FEATURE_FIND_EXEC)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73625:2
+	freecon: (*char) => void		if (def(CONFIG_FEATURE_FIND_CONTEXT)&def(CONFIG_SELINUX))		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73709:1
+	getfilecon: (*char, **char) => signed int		if (def(CONFIG_FEATURE_FIND_CONTEXT)&def(CONFIG_SELINUX))		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73702:7
+	index_in_strings: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74747:12, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74244:13
+	lgetfilecon: (*char, **char) => signed int		if (def(CONFIG_FEATURE_FIND_CONTEXT)&def(CONFIG_SELINUX))		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73704:7
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_FEATURE_FIND_EXEC)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73455:2, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73452:2
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74713:154
+	printf: (*char, ...) => signed int		if def(CONFIG_FEATURE_FIND_PRINT0)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73644:1
+	puts: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73754:2, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73650:1
+	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74786:7
+	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((def(CONFIG_FEATURE_FIND_REGEX),CSigned(CInt()))), rm_eo -> List((def(CONFIG_FEATURE_FIND_REGEX),CSigned(CInt()))))}[], signed int) => signed int		if def(CONFIG_FEATURE_FIND_REGEX)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73539:5
+	rmdir: (*char) => signed int		if def(CONFIG_FEATURE_FIND_DELETE)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73686:7
+	selinux_raw_to_trans_context: (*char, **char) => signed int		if (def(CONFIG_FEATURE_FIND_CONTEXT)&def(CONFIG_SELINUX))		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74546:7
+	spawn_and_wait: (**char) => signed int		if def(CONFIG_FEATURE_FIND_EXEC)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73619:6
+	stat: (*char, *struct stat) => signed int		if def(CONFIG_FEATURE_FIND_XDEV)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74761:9
+	strcmp: (*char, *char) => signed int		if def(CONFIG_FEATURE_FIND_CONTEXT)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73708:6
+	strcpy: (*char, *char) => *char		if def(CONFIG_FEATURE_FIND_EXEC)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73458:1
+	strlen: (*char) => unsigned long		if def(CONFIG_FEATURE_FIND_EXEC)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73450:21, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73448:15
+	strstr: (*char, *char) => *char		if def(CONFIG_FEATURE_FIND_EXEC)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73451:15, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73437:15
+	time: (*signed long) => signed long		if (def(CONFIG_FEATURE_FIND_MMIN)|def(CONFIG_FEATURE_FIND_MTIME))		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73583:19, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73570:19
+	unlink: (*char) => signed int		if def(CONFIG_FEATURE_FIND_DELETE)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:73688:7
+	xatoi_positive: (*char) => signed int		if def(CONFIG_FEATURE_FIND_MAXDEPTH)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74774:37
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:71059:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:71059:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:71059:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:71059:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71075:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:71059:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:71059:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:71059:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74532:18, string literal: xatoull_sfx:71059:0
+	xgroup2gid: (*char) => signed long		if def(CONFIG_FEATURE_FIND_GROUP)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74502:14
+	xmalloc: (unsigned long) => *void		if def(CONFIG_FEATURE_FIND_EXEC)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74383:21, file cprojects/busybox/busybox-1.18.5/findutils/find.c:73450:13
+	xrealloc: (*void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74278:10, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74201:20
+	xregcomp: (*struct re_pattern_buffer, *char, signed int) => void		if def(CONFIG_FEATURE_FIND_REGEX)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74429:3
+	xstat: (*char, *struct stat) => void		if def(CONFIG_FEATURE_FIND_NEWER)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74476:3
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:71059:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:71059:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:71059:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:71059:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:71059:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:71059:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:71059:0
+	xuname2uid: (*char) => signed long		if def(CONFIG_FEATURE_FIND_USER)		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74493:14
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74757:17, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74226:8, file cprojects/busybox/busybox-1.18.5/findutils/find.c:74202:39
+exports (1)
+	find_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/find.c:74663:0

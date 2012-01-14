@@ -1,0 +1,54 @@
+fm True
+features (0)
+	
+imports (48)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_NAMEIF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72886:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_NAMEIF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72833:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79356:2, file busybox-1.18.5/networking/nameif.c:79341:4, file busybox-1.18.5/networking/nameif.c:79348:2, file busybox-1.18.5/networking/nameif.c:79341:4
+	bb_show_usage: (void) => void		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79408:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_NAMEIF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72858:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_NAMEIF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_NAMEIF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	config_close: (*struct parser_t) => void		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79497:2, file busybox-1.18.5/networking/nameif.c:79497:2, file busybox-1.18.5/networking/nameif.c:79419:2
+	config_open2: (*char, *(*char) => *struct _IO_FILE) => *struct parser_t		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79423:10
+	config_open: (*char) => *struct parser_t		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79416:11
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if def(CONFIG_NAMEIF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:79425:59, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:79417:59
+	delete_eth_table: (*struct ethtable_s) => void		if (!def(CONFIG_FEATURE_CLEAN_UP)&def(CONFIG_NAMEIF))		at file busybox-1.18.5/networking/nameif.c:79496:3, file busybox-1.18.5/networking/nameif.c:79496:3, file busybox-1.18.5/networking/nameif.c:79485:3, file busybox-1.18.5/networking/nameif.c:79485:3
+	ether_aton_r: (*char, *struct ether_addr) => *struct ether_addr		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79339:13, file busybox-1.18.5/networking/nameif.c:79339:13
+	free: (*void) => void		if (def(CONFIG_FEATURE_CLEAN_UP)&def(CONFIG_NAMEIF))		at file busybox-1.18.5/networking/nameif.c:79375:1, file busybox-1.18.5/networking/nameif.c:79374:1, file busybox-1.18.5/networking/nameif.c:79372:1, file busybox-1.18.5/networking/nameif.c:79371:1, file busybox-1.18.5/networking/nameif.c:79369:1
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79398:9
+	ioctl: (signed int, unsigned long, ...) => signed int		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79445:2, file busybox-1.18.5/networking/nameif.c:79443:2
+	ioctl_or_perror_and_die: (signed int, unsigned int, *void, *char, ...) => signed int		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79466:3
+	memcmp: (*void, *void, unsigned long) => signed int		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79455:18
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79439:2, file busybox-1.18.5/networking/nameif.c:79434:2
+	openlog: (*char, signed int, signed int) => void		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79399:2
+	skip_non_whitespace: (*char) => *char		if (def(CONFIG_FEATURE_NAMEIF_EXTENDED)&def(CONFIG_NAMEIF))		at file busybox-1.18.5/networking/nameif.c:79326:9
+	skip_whitespace: (*char) => *char		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79321:13, file busybox-1.18.5/networking/nameif.c:79321:13
+	strcmp: (*char, *char) => signed int		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79464:6, file busybox-1.18.5/networking/nameif.c:79452:21, file busybox-1.18.5/networking/nameif.c:79450:23
+	strcpy: (*char, *char) => *char		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79465:3
+	strlen: (*char) => unsigned long		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79355:5
+	strncmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79339:38, file busybox-1.18.5/networking/nameif.c:79339:38, file busybox-1.18.5/networking/nameif.c:79333:13, file busybox-1.18.5/networking/nameif.c:79330:6
+	strncpy_IFNAMSIZ: (*char, *char) => *char		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79435:2
+	xatoll: (*char) => signed long long		if def(CONFIG_NAMEIF)		at string literal: xatoll:72814:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_NAMEIF)		at string literal: xatoll_range:72814:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_NAMEIF)		at string literal: xatoll_range_sfx:72814:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_NAMEIF)		at string literal: xatoll_sfx:72814:0
+	xatou: (*char) => unsigned int		if def(CONFIG_NAMEIF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_NAMEIF)		at string literal: xatoull:72814:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_NAMEIF)		at string literal: xatoull_range:72814:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_NAMEIF)		at string literal: xatoull_range_sfx:72814:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_NAMEIF)		at string literal: xatoull_sfx:72814:0
+	xfopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79423:40
+	xmalloc: (unsigned long) => *void		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79338:10, file busybox-1.18.5/networking/nameif.c:79338:10
+	xsocket: (signed int, signed int, signed int) => signed int		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79422:10
+	xstrdup: (*char) => *char		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79412:18, file busybox-1.18.5/networking/nameif.c:79358:14, file busybox-1.18.5/networking/nameif.c:79334:16, file busybox-1.18.5/networking/nameif.c:79331:18
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_NAMEIF)		at string literal: xstrtoll:72814:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_NAMEIF)		at string literal: xstrtoll_range:72814:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_NAMEIF)		at string literal: xstrtoll_range_sfx:72814:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_NAMEIF)		at string literal: xstrtoull:72814:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_NAMEIF)		at string literal: xstrtoull_range:72814:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_NAMEIF)		at string literal: xstrtoull_range_sfx:72814:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_NAMEIF)		at string literal: xstrtoull_sfx:72814:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79357:6
+exports (1)
+	nameif_main: (signed int, **char) => signed int		if def(CONFIG_NAMEIF)		at file busybox-1.18.5/networking/nameif.c:79389:0

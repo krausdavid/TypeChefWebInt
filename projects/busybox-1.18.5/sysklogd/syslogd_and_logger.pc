@@ -1,0 +1,1 @@
+(definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD))

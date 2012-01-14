@@ -1,0 +1,37 @@
+fm True
+features (0)
+	
+imports (31)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_CHMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72890:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_CHMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72837:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74202:2
+	bb_mode_string: (unsigned int) => *char		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74237:21, file busybox-1.18.5/coreutils/chmod.c:74237:21
+	bb_parse_mode: (*char, *unsigned int) => signed int		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74201:6
+	bb_simple_perror_msg: (*char) => void		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74257:2, file busybox-1.18.5/coreutils/chmod.c:74257:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_CHMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72862:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_CHMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72887:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_CHMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72859:9
+	chmod: (*char, unsigned int) => signed int		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74204:5
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74301:1
+	printf: (*char, ...) => signed int		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74236:3, file busybox-1.18.5/coreutils/chmod.c:74236:3
+	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74317:7
+	stat: (*char, *struct stat) => signed int		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74193:6
+	strchr: (*char, signed int) => *char		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74286:17
+	xatoll: (*char) => signed long long		if def(CONFIG_CHMOD)		at string literal: xatoll:72818:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_CHMOD)		at string literal: xatoll_range:72818:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_CHMOD)		at string literal: xatoll_range_sfx:72818:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_CHMOD)		at string literal: xatoll_sfx:72818:0
+	xatou: (*char) => unsigned int		if def(CONFIG_CHMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72834:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_CHMOD)		at string literal: xatoull:72818:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_CHMOD)		at string literal: xatoull_range:72818:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHMOD)		at string literal: xatoull_range_sfx:72818:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHMOD)		at string literal: xatoull_sfx:72818:0
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_CHMOD)		at string literal: xstrtoll:72818:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_CHMOD)		at string literal: xstrtoll_range:72818:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_CHMOD)		at string literal: xstrtoll_range_sfx:72818:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_CHMOD)		at string literal: xstrtoull:72818:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_CHMOD)		at string literal: xstrtoull_range:72818:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHMOD)		at string literal: xstrtoull_range_sfx:72818:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHMOD)		at string literal: xstrtoull_sfx:72818:0
+exports (1)
+	chmod_main: (signed int, **char) => signed int		if def(CONFIG_CHMOD)		at file busybox-1.18.5/coreutils/chmod.c:74269:0

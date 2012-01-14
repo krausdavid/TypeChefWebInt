@@ -1,0 +1,77 @@
+fm True
+features (0)
+	
+imports (71)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72472:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72419:8
+	access: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75508:5
+	bb_cat: (**char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76144:9, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76130:9, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76113:9
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76118:3
+	bb_putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75766:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75713:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75658:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75490:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75084:2
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76119:3
+	bb_signals: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76148:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72444:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75718:7, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72469:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72441:9
+	exit: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74747:1
+	fclose: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75849:2
+	fflush_all: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75411:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74713:1
+	fopen_for_write: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75842:7
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75848:3
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76166:3, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75854:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75672:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75669:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75661:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75647:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75531:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75512:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75505:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75369:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75368:3, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75215:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75196:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74892:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74822:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74806:2
+	get_terminal_width_height: (signed int, *unsigned int, *unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76159:3, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76141:1
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76097:1
+	isatty: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76116:6, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76112:6
+	kill_myself_with_sig: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74746:2
+	memcpy: (*void, *void, unsigned long) => *void		if (def(CONFIG_FEATURE_LESS_WINCH)|(def(CONFIG_FEATURE_LESS_DASHCMD)&def(CONFIG_FEATURE_LESS_LINENUMS))|def(CONFIG_FEATURE_LESS_REGEXP))		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75168:3, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74790:4
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75173:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75134:3
+	ndelay_off: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74907:4
+	ndelay_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76131:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74905:4
+	open: (*char, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76128:10
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if def(CONFIG_FEATURE_LESS_WINCH)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75418:7
+	print_found: (*char) => void		if !def(CONFIG_FEATURE_LESS_REGEXP)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75272:3, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75272:3
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75704:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75483:3, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75235:3, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75229:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75214:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75211:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75091:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75063:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75059:3, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75057:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75053:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75052:2, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75050:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74737:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74731:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74726:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74721:1
+	puts: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75254:1
+	read_key: (signed int, *char, signed int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75431:6
+	regcomp_or_errmsg: (*struct re_pattern_buffer, *char, signed int) => *char		if def(CONFIG_FEATURE_LESS_REGEXP)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75667:7
+	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((def(CONFIG_FEATURE_LESS_REGEXP),CSigned(CInt()))), rm_eo -> List((def(CONFIG_FEATURE_LESS_REGEXP),CSigned(CInt()))))}[], signed int) => signed int		if def(CONFIG_FEATURE_LESS_REGEXP)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75631:6, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75203:17
+	regfree: (*struct re_pattern_buffer) => void		if def(CONFIG_FEATURE_LESS_REGEXP)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75652:2
+	safe_poll: (*struct pollfd, unsigned long, signed int) => signed int		if !def(CONFIG_FEATURE_LESS_WINCH)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75415:2
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74906:16
+	sched_yield: (void) => signed int		if def(CONFIG_FEATURE_LESS_REGEXP)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75007:4
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if def(CONFIG_FEATURE_LESS_WINCH)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76150:1
+	sprintf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75145:2
+	strchr: (*char, signed int) => *char		if def(CONFIG_FEATURE_LESS_BRACKETS)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75946:6, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75939:5, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75927:6, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75921:5
+	strcpy: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75177:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74890:2
+	strcspn: (*char, *char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75232:6, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75165:6
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74957:60, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74891:7
+	strspn: (*char, *char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75238:6, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75172:6
+	tcgetattr: (signed int, *struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76133:1
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75390:1, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74714:1
+	time: (*signed long) => signed long		if def(CONFIG_FEATURE_LESS_REGEXP)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75001:15
+	xasprintf: (*char, ...) => *char		if def(CONFIG_FEATURE_LESS_REGEXP)		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75191:14
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72400:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72400:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72400:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:72400:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72416:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:72400:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:72400:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:72400:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:72400:0
+	xmalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76167:12, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76152:10, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75013:25, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74886:28, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74788:16
+	xmove_fd: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75348:2
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75348:11
+	xrealloc: (*void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75492:11, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:74957:29
+	xrealloc_vector_helper: (*void, unsigned int, signed int) => *void		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:75635:45, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74955:45, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74791:45
+	xstrdup: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76122:13, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75532:13, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75352:13
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:72400:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:72400:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:72400:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:72400:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:72400:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:72400:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:72400:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76080:42, file cprojects/busybox/busybox-1.18.5/miscutils/less.c:75469:16
+exports (1)
+	less_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/less.c:76076:0

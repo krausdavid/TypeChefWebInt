@@ -1,0 +1,55 @@
+fm True
+features (0)
+	
+imports (49)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70850:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70797:8
+	bb_daemonize_or_rexec: (signed int) => void		if !def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73315:44
+	bb_daemonize_or_rexec: (signed int, **char) => void		if def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73315:44
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73355:3, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73351:3, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73337:2, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73266:3, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73258:2, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73183:2, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73179:2, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72917:3, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72912:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70822:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70847:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70819:9
+	config_close: (*struct parser_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72939:1
+	config_open: (*char) => *struct parser_t		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72906:10
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72907:59
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73338:2
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73303:8
+	htonl: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73243:40
+	htons: (unsigned short) => unsigned short		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73276:15, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73264:19, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73261:15, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73259:14, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73245:40, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73236:15, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73225:24, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73211:37, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73211:13, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73206:14, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73201:20, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73187:14, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73182:19, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72962:14
+	inet_aton: (*char, *struct in_addr) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72911:6
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73348:2, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73247:1, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73241:1
+	ntohl: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72929:8
+	openlog: (*char, signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73321:2
+	recv_from_to: (signed int, *void, unsigned long, signed int, *struct sockaddr, *struct sockaddr, unsigned int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73349:6
+	send_to_from: (signed int, *void, unsigned long, signed int, *struct sockaddr, *struct sockaddr, unsigned int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73360:2
+	socket_want_pktinfo: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73330:1
+	sprintf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72931:2
+	strcasecmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72974:8
+	strcpy: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72926:2
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73227:14, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73193:13, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72987:36, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72920:27
+	strncmp: (*char, *char, unsigned long) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72987:6
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70778:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70778:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70778:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70778:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70794:9
+	xatou_range: (*char, unsigned int, unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73311:9, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73309:13
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70778:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70778:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70778:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70778:0
+	xbind: (signed int, *struct sockaddr, unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73329:1
+	xdotted2sockaddr: (*char, signed int) => *struct len_and_sockaddr		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73327:7
+	xmalloc_sockaddr2dotted: (*struct sockaddr) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73336:12
+	xsocket: (signed int, signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73328:8
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70778:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70778:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70778:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70778:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70778:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70778:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70778:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73333:6, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73332:8, file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:72920:6
+exports (1)
+	dnsd_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/dnsd.c:73289:0

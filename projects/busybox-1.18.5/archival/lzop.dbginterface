@@ -1,0 +1,53 @@
+fm True
+features (0)
+	
+imports (47)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_LZOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72901:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_LZOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72848:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75515:2, file busybox-1.18.5/archival/lzop.c:75500:1, file busybox-1.18.5/archival/lzop.c:75389:2, file busybox-1.18.5/archival/lzop.c:75322:4, file busybox-1.18.5/archival/lzop.c:75269:3, file busybox-1.18.5/archival/lzop.c:75264:3, file busybox-1.18.5/archival/lzop.c:75261:3, file busybox-1.18.5/archival/lzop.c:75229:2, file busybox-1.18.5/archival/lzop.c:75183:5, file busybox-1.18.5/archival/lzop.c:75174:3, file busybox-1.18.5/archival/lzop.c:75171:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_LZOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72873:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_LZOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72898:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_LZOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72870:9
+	bbunpack: (**char, *(*struct unpack_info_t) => signed int, *(*char, *char) => *char, *char) => signed int		if (!def(CONFIG_DESKTOP)&def(CONFIG_LZOP))		at file busybox-1.18.5/archival/lzop.c:75616:8
+	bbunpack: (**char, *(*struct unpack_info_t) => signed long long, *(*char, *char) => *char, *char) => signed int		if (def(CONFIG_DESKTOP)&def(CONFIG_LZOP))		at file busybox-1.18.5/archival/lzop.c:75616:8
+	crc32_block_endian0: (unsigned int, *void, unsigned int, *unsigned int) => unsigned int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75001:9
+	crc32_filltable: (*unsigned int, signed int) => *unsigned int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75615:22
+	free: (*void) => void		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75346:1, file busybox-1.18.5/archival/lzop.c:75273:4, file busybox-1.18.5/archival/lzop.c:75213:1, file busybox-1.18.5/archival/lzop.c:75212:1, file busybox-1.18.5/archival/lzop.c:75211:1
+	full_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75144:6
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75606:1
+	htonl: (unsigned int) => unsigned int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75085:5, file busybox-1.18.5/archival/lzop.c:75035:5
+	htons: (unsigned short) => unsigned short		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75072:5
+	lzo1x_1_15_compress: (*unsigned char, unsigned int, *unsigned char, *unsigned int, *void) => signed int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75164:7
+	lzo1x_1_compress: (*unsigned char, unsigned int, *unsigned char, *unsigned int, *void) => signed int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75162:7
+	lzo1x_999_compress_level: (*unsigned char, unsigned int, *unsigned char, *unsigned int, *void, signed int) => signed int		if (def(CONFIG_LZOP_COMPR_HIGH)&def(CONFIG_LZOP))		at file busybox-1.18.5/archival/lzop.c:75167:7
+	lzo1x_decompress_safe: (*unsigned char, unsigned int, *unsigned char, *unsigned int, *void) => signed int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75319:8
+	memcmp: (*void, *void, unsigned long) => signed int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75388:5
+	memmove: (*void, *void, unsigned long) => *void		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:74809:7, file busybox-1.18.5/archival/lzop.c:74711:6
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75538:1, file busybox-1.18.5/archival/lzop.c:75427:1
+	ntohl: (unsigned int) => unsigned int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75080:8, file busybox-1.18.5/archival/lzop.c:75030:8
+	ntohs: (unsigned short) => unsigned short		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75067:8
+	strcmp: (*char, *char) => signed int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75574:20
+	strlen: (*char) => unsigned long		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75413:11
+	strrchr: (*char, signed int) => *char		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75573:20
+	xasprintf: (*char, ...) => *char		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75579:8, file busybox-1.18.5/archival/lzop.c:75575:10
+	xatoll: (*char) => signed long long		if def(CONFIG_LZOP)		at string literal: xatoll:72829:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_LZOP)		at string literal: xatoll_range:72829:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_LZOP)		at string literal: xatoll_range_sfx:72829:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_LZOP)		at string literal: xatoll_sfx:72829:0
+	xatou: (*char) => unsigned int		if def(CONFIG_LZOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72845:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_LZOP)		at string literal: xatoull:72829:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_LZOP)		at string literal: xatoull_range:72829:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_LZOP)		at string literal: xatoull_range_sfx:72829:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_LZOP)		at string literal: xatoull_sfx:72829:0
+	xread: (signed int, *void, unsigned long) => void		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75387:1, file busybox-1.18.5/archival/lzop.c:75298:2, file busybox-1.18.5/archival/lzop.c:75047:1, file busybox-1.18.5/archival/lzop.c:75029:1
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_LZOP)		at string literal: xstrtoll:72829:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_LZOP)		at string literal: xstrtoll_range:72829:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_LZOP)		at string literal: xstrtoll_range_sfx:72829:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_LZOP)		at string literal: xstrtoull:72829:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_LZOP)		at string literal: xstrtoull_range:72829:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_LZOP)		at string literal: xstrtoull_range_sfx:72829:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_LZOP)		at string literal: xstrtoull_sfx:72829:0
+	xwrite: (signed int, *void, unsigned long) => void		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75399:1, file busybox-1.18.5/archival/lzop.c:75343:2, file busybox-1.18.5/archival/lzop.c:75207:3, file busybox-1.18.5/archival/lzop.c:75204:3, file busybox-1.18.5/archival/lzop.c:75041:1, file busybox-1.18.5/archival/lzop.c:75036:1
+	xzalloc: (unsigned long) => *void		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75295:8, file busybox-1.18.5/archival/lzop.c:75140:12, file busybox-1.18.5/archival/lzop.c:75138:12, file busybox-1.18.5/archival/lzop.c:75136:12, file busybox-1.18.5/archival/lzop.c:75127:21, file busybox-1.18.5/archival/lzop.c:75126:21
+exports (1)
+	lzop_main: (signed int, **char) => signed int		if def(CONFIG_LZOP)		at file busybox-1.18.5/archival/lzop.c:75604:0

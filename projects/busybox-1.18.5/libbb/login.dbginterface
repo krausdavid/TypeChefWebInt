@@ -1,0 +1,46 @@
+fm True
+features (0)
+	
+imports (38)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72885:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72832:8
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72857:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72854:9
+	fclose: (*struct _IO_FILE) => signed int		if True		at file busybox-1.18.5/libbb/login.c:74685:1
+	fflush_all: (void) => signed int		if True		at file busybox-1.18.5/libbb/login.c:74695:1, file busybox-1.18.5/libbb/login.c:74686:1
+	fgetc: (*struct _IO_FILE) => signed int		if True		at file busybox-1.18.5/libbb/login.c:74645:7, file busybox-1.18.5/libbb/login.c:74636:13
+	fopen_for_read: (*char) => *struct _IO_FILE		if True		at file busybox-1.18.5/libbb/login.c:74633:6
+	fputs: (*char, *struct _IO_FILE) => signed int		if True		at file busybox-1.18.5/libbb/login.c:74694:1, file busybox-1.18.5/libbb/login.c:74693:1, file busybox-1.18.5/libbb/login.c:74683:2
+	free: (*void) => void		if True		at file busybox-1.18.5/libbb/login.c:74696:1
+	geteuid: (void) => unsigned int		if True		at file busybox-1.18.5/libbb/login.c:74719:17
+	getuid: (void) => unsigned int		if True		at file busybox-1.18.5/libbb/login.c:74719:5
+	localtime: (*signed long) => *struct tm		if True		at file busybox-1.18.5/libbb/login.c:74674:41, file busybox-1.18.5/libbb/login.c:74671:41
+	putenv: (*char) => signed int		if True		at file busybox-1.18.5/libbb/login.c:74727:1
+	puts: (*char) => signed int		if True		at file busybox-1.18.5/libbb/login.c:74631:1
+	safe_gethostname: (void) => *char		if True		at file busybox-1.18.5/libbb/login.c:74691:18
+	strftime: (*char, unsigned long, *char, *struct tm) => unsigned long		if True		at file busybox-1.18.5/libbb/login.c:74674:4, file busybox-1.18.5/libbb/login.c:74671:4
+	strlen: (*char) => unsigned long		if True		at file busybox-1.18.5/libbb/login.c:74725:7
+	time: (*signed long) => signed long		if True		at file busybox-1.18.5/libbb/login.c:74628:1
+	uname: (*struct utsname) => signed int		if True		at file busybox-1.18.5/libbb/login.c:74629:1
+	unsetenv: (*char) => signed int		if True		at file busybox-1.18.5/libbb/login.c:74724:2
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72813:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72813:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72813:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:72813:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72829:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:72813:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:72813:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:72813:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:72813:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:72813:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:72813:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:72813:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:72813:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:72813:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:72813:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:72813:0
+exports (3)
+	print_login_issue: (*char, *char) => void		if True		at file busybox-1.18.5/libbb/login.c:74619:0
+	print_login_prompt: (void) => void		if True		at file busybox-1.18.5/libbb/login.c:74689:0
+	sanitize_env_if_suid: (void) => signed int		if True		at file busybox-1.18.5/libbb/login.c:74715:0

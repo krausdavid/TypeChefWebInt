@@ -1,0 +1,31 @@
+fm True
+features (0)
+	
+imports (25)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72887:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72834:8
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file busybox-1.18.5/libbb/fflush_stdout_and_exit.c:74168:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72859:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72884:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72856:9
+	exit: (signed int) => void		if True		at file busybox-1.18.5/libbb/fflush_stdout_and_exit.c:74184:1
+	fflush: (*struct _IO_FILE) => signed int		if True		at file busybox-1.18.5/libbb/fflush_stdout_and_exit.c:74167:5
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72815:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72815:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72815:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:72815:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72831:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:72815:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:72815:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:72815:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:72815:0
+	xfunc_die: (void) => void		if True		at file busybox-1.18.5/libbb/fflush_stdout_and_exit.c:74181:2, file busybox-1.18.5/libbb/fflush_stdout_and_exit.c:74181:2
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:72815:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:72815:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:72815:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:72815:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:72815:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:72815:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:72815:0
+exports (1)
+	fflush_stdout_and_exit: (signed int) => void		if True		at file busybox-1.18.5/libbb/fflush_stdout_and_exit.c:74165:0

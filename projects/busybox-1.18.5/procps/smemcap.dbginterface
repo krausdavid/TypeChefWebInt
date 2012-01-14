@@ -1,0 +1,41 @@
+fm True
+features (0)
+	
+imports (35)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_SMEMCAP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72895:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_SMEMCAP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72842:8
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_SMEMCAP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72867:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_SMEMCAP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72892:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_SMEMCAP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72864:9
+	close: (signed int) => signed int		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74538:1
+	closedir: (*struct __dirstream) => signed int		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74600:2, file busybox-1.18.5/procps/smemcap.c:74600:2
+	free: (*void) => void		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74547:2
+	fstat: (signed int, *struct stat) => signed int		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74537:1
+	full_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74531:6
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74583:3, file busybox-1.18.5/procps/smemcap.c:74492:1
+	readdir: (*struct __dirstream) => *struct dirent		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74580:14
+	sprintf: (*char, *char, ...) => signed int		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74554:1, file busybox-1.18.5/procps/smemcap.c:74512:1, file busybox-1.18.5/procps/smemcap.c:74499:1, file busybox-1.18.5/procps/smemcap.c:74498:1, file busybox-1.18.5/procps/smemcap.c:74497:1, file busybox-1.18.5/procps/smemcap.c:74496:1, file busybox-1.18.5/procps/smemcap.c:74494:1
+	strcpy: (*char, *char) => *char		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74501:1, file busybox-1.18.5/procps/smemcap.c:74493:1
+	xatoll: (*char) => signed long long		if def(CONFIG_SMEMCAP)		at string literal: xatoll:72823:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_SMEMCAP)		at string literal: xatoll_range:72823:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SMEMCAP)		at string literal: xatoll_range_sfx:72823:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_SMEMCAP)		at string literal: xatoll_sfx:72823:0
+	xatou: (*char) => unsigned int		if def(CONFIG_SMEMCAP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72839:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_SMEMCAP)		at string literal: xatoull:72823:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SMEMCAP)		at string literal: xatoull_range:72823:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SMEMCAP)		at string literal: xatoull_range_sfx:72823:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_SMEMCAP)		at string literal: xatoull_sfx:72823:0
+	xchdir: (*char) => void		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74575:1
+	xopen: (*char, signed int) => signed int		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74526:6
+	xopendir: (*char) => *struct __dirstream		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74576:5
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_SMEMCAP)		at string literal: xstrtoll:72823:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_SMEMCAP)		at string literal: xstrtoll_range:72823:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SMEMCAP)		at string literal: xstrtoll_range_sfx:72823:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_SMEMCAP)		at string literal: xstrtoull:72823:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SMEMCAP)		at string literal: xstrtoull_range:72823:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SMEMCAP)		at string literal: xstrtoull_range_sfx:72823:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_SMEMCAP)		at string literal: xstrtoull_sfx:72823:0
+	xwrite: (signed int, *void, unsigned long) => void		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74544:2, file busybox-1.18.5/procps/smemcap.c:74514:1
+	xzalloc: (unsigned long) => *void		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74528:8
+exports (1)
+	smemcap_main: (signed int, **char) => signed int		if def(CONFIG_SMEMCAP)		at file busybox-1.18.5/procps/smemcap.c:74570:0

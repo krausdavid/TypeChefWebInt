@@ -1,0 +1,48 @@
+fm True
+features (0)
+	
+imports (42)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72608:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72555:8
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75455:3
+	bb_simple_perror_msg: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75499:5, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75294:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72580:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72605:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72577:9
+	exit: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75104:5, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75104:5
+	fclose: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75300:1
+	fclose_if_not_stdin: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75505:2
+	fopen_for_read: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75496:10, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75291:14
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75528:3, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75527:3, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75524:4, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75528:3, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75527:3, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75524:4, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75270:2, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75208:2, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75098:4, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75197:4, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75142:6, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75098:4
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75376:1, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75339:8
+	llist_add_to: (**struct llist_t, *void) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75464:2, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75273:3
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75226:2, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75225:3, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:74977:2, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:74975:2
+	puts: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75234:2, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75108:5, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75108:5, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:74981:2, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:74968:2
+	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75307:1
+	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((True,CSigned(CInt()))), rm_eo -> List((True,CSigned(CInt()))))}[], signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75173:10, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75173:10, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75064:5
+	regfree: (*struct re_pattern_buffer) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75526:4, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75526:4
+	stat: (*char, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75488:8
+	strcasestr: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75044:7
+	strstr: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75045:7
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72536:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72536:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72536:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:72536:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72552:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:72536:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:72536:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:72536:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:72536:0
+	xfopen_stdin: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75271:6
+	xmalloc_fgetline: (*struct _IO_FILE) => *char		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75272:17, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75031:10
+	xregcomp: (*struct re_pattern_buffer, *char, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75051:5
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:72536:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:72536:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:72536:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:72536:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:72536:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:72536:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:72536:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75368:15, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75249:24, file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75249:24
+exports (1)
+	grep_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/findutils/grep.c:75326:0

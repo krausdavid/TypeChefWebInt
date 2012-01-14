@@ -1,0 +1,43 @@
+fm True
+features (0)
+	
+imports (37)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71514:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71461:8
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72877:2, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72873:2, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72866:3, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72860:3, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72807:2, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72805:2, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72803:2, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72801:2, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72799:2, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72793:3, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72789:3, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72783:2
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72881:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71486:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71511:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71483:9
+	context_new: (*char) => *struct {Map(ptr -> List((True,CPointer(CVoid()))))}		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72864:8, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72797:7
+	context_range_set: (*struct {Map(ptr -> List((True,CPointer(CVoid()))))}, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72804:14
+	context_role_set: (*struct {Map(ptr -> List((True,CPointer(CVoid()))))}, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72806:13
+	context_str: (*struct {Map(ptr -> List((True,CPointer(CVoid()))))}) => *char		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72878:9, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72876:16, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72874:9, file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72872:28
+	context_type_set: (*struct {Map(ptr -> List((True,CPointer(CVoid()))))}, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72802:13
+	context_user_set: (*struct {Map(ptr -> List((True,CPointer(CVoid()))))}, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72800:13
+	execvp: (*char, *char[]) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72880:1
+	getcon: (**char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72782:5
+	getfilecon: (*char, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72788:6
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72854:8
+	security_check_context: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72872:5
+	security_compute_create: (*char, *char, unsigned short, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72791:6
+	selinux_or_die: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72848:1
+	setexeccon: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72876:5
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:71442:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:71442:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:71442:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:71442:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71458:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:71442:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:71442:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:71442:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:71442:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:71442:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:71442:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:71442:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:71442:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:71442:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:71442:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:71442:0
+exports (1)
+	runcon_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/runcon.c:72838:0

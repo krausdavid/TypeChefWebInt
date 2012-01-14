@@ -1,0 +1,1 @@
+(definedEx(CONFIG_NANDWRITE) || definedEx(CONFIG_NANDDUMP))

@@ -1,0 +1,58 @@
+fm True
+features (0)
+	
+imports (52)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72887:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72834:8
+	bb_copyfd_eof: (signed int, signed int) => signed long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74319:3, file busybox-1.18.5/printutils/lpr.c:74284:3
+	bb_copyfd_size: (signed int, signed int, signed long) => signed long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74392:6
+	bb_error_msg: (*char, ...) => void		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74410:3, file busybox-1.18.5/printutils/lpr.c:74380:3, file busybox-1.18.5/printutils/lpr.c:74365:3, file busybox-1.18.5/printutils/lpr.c:74294:2, file busybox-1.18.5/printutils/lpr.c:74181:2
+	bb_error_msg_and_die: (*char, ...) => void		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74394:3
+	bb_putchar: (signed int) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74275:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72859:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72884:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72856:9
+	close: (signed int) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74404:2
+	create_and_connect_stream_or_die: (*char, signed int) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74258:6
+	dprintf: (signed int, *char, ...) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:74383:18, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:74368:18, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:74303:18, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:74283:18, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:74273:18, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:74271:18
+	free: (*void) => void		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74406:2, file busybox-1.18.5/printutils/lpr.c:74405:2
+	fstat: (signed int, *struct stat) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74382:2
+	full_read: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74180:7
+	full_write: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74375:2
+	getenv: (*char) => *char		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74240:10
+	getopt32: (**char, *char, ...) => unsigned int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74231:8
+	getpid: (void) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74296:7
+	getuid: (void) => unsigned int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74224:31
+	memmove: (*void, *void, unsigned long) => *void		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74356:4
+	safe_gethostname: (void) => *char		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74297:12
+	safe_read: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74175:6
+	safe_write: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74187:3
+	strchr: (*char, signed int) => *char		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74353:14, file busybox-1.18.5/printutils/lpr.c:74249:12
+	strcpy: (*char, *char) => *char		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74317:3
+	strlen: (*char) => unsigned long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74352:20
+	unlink: (*char) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74401:3
+	write: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74396:2
+	xasprintf: (*char, ...) => *char		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74334:16, file busybox-1.18.5/printutils/lpr.c:74330:20
+	xatoll: (*char) => signed long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xatoll:72815:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xatoll_range:72815:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xatoll_range_sfx:72815:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xatoll_sfx:72815:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72831:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xatoull:72815:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xatoull_range:72815:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xatoull_range_sfx:72815:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xatoull_sfx:72815:0
+	xfunc_die: (void) => void		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74189:2
+	xlseek: (signed int, signed long, signed int) => signed long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74320:3
+	xmkstemp: (*char) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74318:9
+	xopen: (*char, signed int) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74323:9
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xstrtoll:72815:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xstrtoll_range:72815:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xstrtoll_range_sfx:72815:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xstrtoull:72815:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xstrtoull_range:72815:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xstrtoull_range_sfx:72815:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at string literal: xstrtoull_sfx:72815:0
+	xuid2uname: (unsigned int) => *char		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74224:20
+exports (1)
+	lpqr_main: (signed int, *char[]) => signed int		if (def(CONFIG_LPR)|def(CONFIG_LPQ))		at file busybox-1.18.5/printutils/lpr.c:74201:0

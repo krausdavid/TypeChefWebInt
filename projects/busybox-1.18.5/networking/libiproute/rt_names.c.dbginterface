@@ -1,0 +1,46 @@
+fm True
+features (0)
+	
+imports (31)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70838:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70785:8
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72162:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70810:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72191:5, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72160:16, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70835:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70807:9
+	config_close: (*struct parser_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72168:1
+	config_open2: (*char, *(*char) => *struct _IO_FILE) => *struct parser_t		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72157:20
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72159:59
+	fopen_for_read: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72157:39
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72222:1
+	sprintf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72379:1, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72370:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72342:1, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72333:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72316:1, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72307:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72276:1, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72267:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72238:1, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72229:2
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72182:6, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72175:24
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70766:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70766:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70766:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70766:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70782:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70766:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70766:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70766:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70766:0
+	xstrdup: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72166:12
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70766:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70766:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70766:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70766:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70766:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70766:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70766:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72359:20, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72325:22, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72292:20, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72255:20, file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72221:19
+exports (10)
+	rtnl_dsfield_a2n: (*unsigned int, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72346:0
+	rtnl_dsfield_n2a: (signed int, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72330:0
+	rtnl_rtprot_a2n: (*unsigned int, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72242:0
+	rtnl_rtprot_n2a: (signed int, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72226:0
+	rtnl_rtrealm_a2n: (*unsigned int, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72297:0
+	rtnl_rtrealm_n2a: (signed int, *char) => *char		if def(CONFIG_FEATURE_IP_RULE)		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72304:0
+	rtnl_rtscope_a2n: (*unsigned int, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72280:0
+	rtnl_rtscope_n2a: (signed int, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72264:0
+	rtnl_rttable_a2n: (*unsigned int, *char) => signed int		if def(CONFIG_FEATURE_IP_RULE)		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72383:0
+	rtnl_rttable_n2a: (signed int, *char) => *char		if def(CONFIG_FEATURE_IP_RULE)		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/rt_names.c:72367:0

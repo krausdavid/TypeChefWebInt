@@ -1,0 +1,38 @@
+fm True
+features (0)
+	
+imports (32)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70844:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70791:8
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70816:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70841:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70813:9
+	fflush_all: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72189:2
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72178:4
+	get_terminal_width_height: (signed int, *unsigned int, *unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72175:3
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72155:7
+	localtime: (*signed long) => *struct tm		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72184:26
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72187:3, file cprojects/busybox/busybox-1.18.5/procps/watch.c:72168:2
+	sleep: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72194:2
+	strftime: (*char, unsigned long, *char, *struct tm) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72183:4
+	system: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72193:2
+	time: (*signed long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72181:3
+	xasprintf: (*char, ...) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72179:13, file cprojects/busybox/busybox-1.18.5/procps/watch.c:72162:8
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70772:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70772:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70772:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70772:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70788:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70772:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70772:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70772:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70772:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70772:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70772:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70772:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70772:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70772:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70772:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70772:0
+exports (1)
+	watch_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/watch.c:72140:0

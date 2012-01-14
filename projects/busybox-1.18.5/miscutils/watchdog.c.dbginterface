@@ -1,0 +1,40 @@
+fm True
+features (0)
+	
+imports (34)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70840:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70787:8
+	_exit: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72475:1
+	bb_daemonize_or_rexec: (signed int) => void		if !def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72512:44
+	bb_daemonize_or_rexec: (signed int, **char) => void		if def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72512:44
+	bb_ioctl_or_warn: (signed int, unsigned int, *void) => signed int		if !def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72549:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72539:39
+	bb_ioctl_or_warn: (signed int, unsigned int, *void, *char) => signed int		if def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72549:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72539:39
+	bb_signals: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72525:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70812:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70837:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70809:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72474:2, file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72474:2
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72501:8
+	usleep: (unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72567:2
+	write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72566:2, file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72465:1
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70768:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70768:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70768:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70768:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70784:9
+	xatou_sfx: (*char, *struct suffix_mult) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72523:20, file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72520:20
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70768:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70768:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70768:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70768:0
+	xmove_fd: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72528:1
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72528:10
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70768:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70768:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70768:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70768:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70768:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70768:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70768:0
+exports (1)
+	watchdog_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/watchdog.c:72486:0

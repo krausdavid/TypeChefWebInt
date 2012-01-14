@@ -1,0 +1,73 @@
+fm True
+features (0)
+	
+imports (67)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71562:8
+	BUG_need_to_implement_gettimeofday_ns: (void) => void		if !def(CONFIG_MONOTONIC_SYSCALL)		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74028:2
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71509:8
+	__builtin_constant_p: (...) => signed int		if True		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h:74199:118
+	_exit: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74642:4
+	bb_bswap_64: (unsigned long) => unsigned long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h:74198:22
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74094:1
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74128:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74099:1
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74084:1
+	bb_signals_recursive_norestart: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74456:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74454:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71534:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71559:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71531:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74648:4, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74647:4, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74601:6, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74520:4, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74327:4, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74324:4, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74214:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74190:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74149:2
+	close_on_exec_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74554:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74550:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74545:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74543:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74538:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74536:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74531:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74507:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74487:3, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74486:3, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74449:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74448:1
+	dup2: (signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74244:18
+	execl: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74246:4
+	execv: (*char, *char[]) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74338:2
+	fchdir: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74518:8
+	flock: (signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74529:6, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74505:5
+	gettimeofday: (*struct timeval, *struct timezone) => signed int		if !def(CONFIG_MONOTONIC_SYSCALL)		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74024:2
+	kill: (signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74424:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74392:3, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74386:3, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74381:3, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74276:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74271:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74266:2
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74197:1
+	mkdir: (*char, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74517:4, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74509:6, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74497:3, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74491:5
+	mkfifo: (*char, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74552:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74548:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74541:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74534:1
+	ndelay_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74451:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74450:1
+	open: (*char, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74599:10, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74126:10
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74577:2
+	read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74632:7, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74629:6, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74581:9
+	readlink: (*char, *char, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74510:7, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74492:6
+	rename_or_warn: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74220:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74193:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74150:6
+	safe_waitpid: (signed int, *signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74250:7
+	sig_block: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74579:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74578:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74455:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74453:1
+	sig_unblock: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74576:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74575:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74337:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74336:2
+	single_argv: (**char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74445:7
+	sleep: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74625:6, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74612:5, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74316:2
+	sprintf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74146:14
+	stat: (*char, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74483:7, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74469:5, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74466:5, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74235:5
+	strcpy: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74233:1
+	syscall: (signed long, ...) => signed long		if def(CONFIG_MONOTONIC_SYSCALL)		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74014:1
+	unlink: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74217:2
+	utoa: (unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74303:12
+	utoa_to_buf: (unsigned int, *char, unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74298:4
+	vfork: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74314:13, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74237:9
+	wait_any_nohang: (*signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74588:11
+	write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74213:6, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74189:2, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74147:3, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74110:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74104:1
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:71490:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:71490:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:71490:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:71490:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71506:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:71490:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:71490:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:71490:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:71490:0
+	xchdir: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74516:4, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74458:1, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74323:4
+	xdup2: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74328:4, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74325:4
+	xopen3: (*char, signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74527:18, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74503:17
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74553:7, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74549:6, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74544:26, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74542:21, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74537:25, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74535:20, file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74515:9
+	xpipe: (signed int[]) => void		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74485:26, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74447:26
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:71490:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:71490:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:71490:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:71490:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:71490:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:71490:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:71490:0
+exports (1)
+	runsv_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsv.c:74436:0

@@ -1,0 +1,45 @@
+fm True
+features (0)
+	
+imports (39)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_ADDGROUP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72885:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_ADDGROUP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72832:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_ADDGROUP)		at file busybox-1.18.5/loginutils/addgroup.c:74313:2, file busybox-1.18.5/loginutils/addgroup.c:74219:3, file busybox-1.18.5/loginutils/addgroup.c:74214:3, file busybox-1.18.5/loginutils/addgroup.c:74183:2, file busybox-1.18.5/loginutils/addgroup.c:74183:2
+	bb_internal_getgrgid: (unsigned int) => *struct group		if (def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDGROUP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74204:21
+	bb_internal_getgrnam: (*char) => *struct group		if (def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDGROUP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74177:21
+	bb_show_usage: (void) => void		if (def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&def(CONFIG_ADDGROUP))		at file busybox-1.18.5/loginutils/addgroup.c:74336:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_ADDGROUP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72857:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_ADDGROUP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_ADDGROUP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72854:9
+	die_if_bad_username: (*char) => void		if (def(CONFIG_FEATURE_CHECK_NAMES)&def(CONFIG_ADDGROUP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74360:34, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74360:34
+	exit: (signed int) => void		if def(CONFIG_ADDGROUP)		at file busybox-1.18.5/loginutils/addgroup.c:74247:2, file busybox-1.18.5/loginutils/addgroup.c:74247:2
+	free: (*void) => void		if def(CONFIG_ADDGROUP)		at file busybox-1.18.5/loginutils/addgroup.c:74256:2, file busybox-1.18.5/loginutils/addgroup.c:74256:2
+	geteuid: (void) => unsigned int		if def(CONFIG_ADDGROUP)		at file busybox-1.18.5/loginutils/addgroup.c:74312:5
+	getgrgid: (unsigned int) => *struct group		if (!def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDGROUP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74204:21
+	getgrnam: (*char) => *struct group		if (!def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDGROUP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74177:21
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_ADDGROUP)		at file busybox-1.18.5/loginutils/addgroup.c:74324:8
+	itoa: (signed int) => *char		if def(CONFIG_ADDGROUP)		at file busybox-1.18.5/loginutils/addgroup.c:74214:49
+	strcmp: (*char, *char) => signed int		if (def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&def(CONFIG_ADDGROUP))		at file busybox-1.18.5/loginutils/addgroup.c:74344:8
+	update_passwd: (*char, *char, *char) => signed int		if (def(CONFIG_ADDGROUP)&((!def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&!def(CONFIG_FEATURE_DEL_USER_FROM_GROUP))|(!def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&!def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)&def(CONFIG_FEATURE_SHADOWPASSWDS))))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74276:57, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74241:57
+	update_passwd: (*char, *char, *char, *char) => signed int		if (def(CONFIG_ADDGROUP)&(def(CONFIG_FEATURE_ADDUSER_TO_GROUP)|(def(CONFIG_FEATURE_SHADOWPASSWDS)&(def(CONFIG_FEATURE_ADDUSER_TO_GROUP)|def(CONFIG_FEATURE_DEL_USER_FROM_GROUP))&(def(CONFIG_FEATURE_ADDUSER_TO_GROUP)|def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)|!def(CONFIG_FEATURE_SHADOWPASSWDS)))|def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)))		at file busybox-1.18.5/loginutils/addgroup.c:74353:2, file busybox-1.18.5/loginutils/addgroup.c:74349:6, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74276:57, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74241:57
+	xasprintf: (*char, ...) => *char		if def(CONFIG_ADDGROUP)		at file busybox-1.18.5/loginutils/addgroup.c:74238:5
+	xatoll: (*char) => signed long long		if def(CONFIG_ADDGROUP)		at string literal: xatoll:72813:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_ADDGROUP)		at string literal: xatoll_range:72813:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ADDGROUP)		at string literal: xatoll_range_sfx:72813:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_ADDGROUP)		at string literal: xatoll_sfx:72813:0
+	xatou: (*char) => unsigned int		if def(CONFIG_ADDGROUP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72829:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_ADDGROUP)		at string literal: xatoull:72813:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ADDGROUP)		at string literal: xatoull_range:72813:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ADDGROUP)		at string literal: xatoull_range_sfx:72813:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_ADDGROUP)		at string literal: xatoull_sfx:72813:0
+	xgetgrnam: (*char) => *struct group		if (def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&def(CONFIG_ADDGROUP))		at file busybox-1.18.5/loginutils/addgroup.c:74341:7
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_ADDGROUP)		at string literal: xstrtoll:72813:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_ADDGROUP)		at string literal: xstrtoll_range:72813:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ADDGROUP)		at string literal: xstrtoll_range_sfx:72813:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_ADDGROUP)		at string literal: xstrtoull:72813:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ADDGROUP)		at string literal: xstrtoull_range:72813:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ADDGROUP)		at string literal: xstrtoull_range_sfx:72813:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_ADDGROUP)		at string literal: xstrtoull_sfx:72813:0
+	xuname2uid: (*char) => signed long		if (def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&def(CONFIG_ADDGROUP))		at file busybox-1.18.5/loginutils/addgroup.c:74340:2
+exports (1)
+	addgroup_main: (signed int, **char) => signed int		if def(CONFIG_ADDGROUP)		at file busybox-1.18.5/loginutils/addgroup.c:74306:0

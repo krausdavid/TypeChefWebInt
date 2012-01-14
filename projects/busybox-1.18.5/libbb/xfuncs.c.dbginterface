@@ -1,0 +1,55 @@
+fm True
+features (0)
+	
+imports (32)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70857:8
+	BUG_sizeof: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72181:3
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70804:8
+	atoi: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72343:11
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70829:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70854:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70826:9
+	fcntl: (signed int, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72148:8, file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72143:27, file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72143:8, file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72138:27, file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72138:8
+	full_write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72335:8, file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72330:8
+	getenv: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72341:12
+	ioctl: (signed int, unsigned long, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72366:7
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72335:39, file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72330:39
+	strncpy: (*char, *char, unsigned long) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72156:8
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72376:8
+	waitpid: (signed int, *signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72384:6
+	write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72325:8
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70785:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70785:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70785:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70785:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70801:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70785:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70785:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70785:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70785:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70785:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70785:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70785:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70785:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70785:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70785:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70785:0
+exports (18)
+	bb_putchar_stderr: (char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72323:0
+	bin2hex: (*char, *char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72235:0
+	close_on_exec_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72146:0
+	full_write1_str: (*char) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72328:0
+	full_write2_str: (*char) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72333:0
+	get_terminal_width_height: (signed int, *unsigned int, *unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72357:0
+	hex2bin: (*char, *char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72248:0
+	itoa: (signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72227:0
+	itoa_to_buf: (signed int, *char, unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72197:0
+	ndelay_off: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72141:0
+	ndelay_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72136:0
+	safe_waitpid: (signed int, *signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72379:0
+	strncpy_IFNAMSIZ: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72151:0
+	tcsetattr_stdin_TCSANOW: (*struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72374:0
+	utoa: (unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72219:0
+	utoa_to_buf: (unsigned int, *char, unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72165:0
+	wait4pid: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72395:0
+	wait_any_nohang: (*signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/xfuncs.c:72389:0

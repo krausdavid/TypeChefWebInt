@@ -1,0 +1,44 @@
+fm True
+features (0)
+	
+imports (38)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:74628:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:74575:8
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75994:2
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76083:3
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75949:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:74600:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:74625:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:74597:9
+	bb_xioctl: (signed int, unsigned int, *void) => signed int		if !def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:76092:39
+	bb_xioctl: (signed int, unsigned int, *void, *char) => signed int		if def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:76092:39
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76118:2, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76118:2
+	ether_aton_r: (*char, *struct ether_addr) => *struct ether_addr		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75941:7
+	ether_hostton: (*char, *struct ether_addr) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75945:12
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76030:9
+	ioctl_or_perror_and_die: (signed int, unsigned int, *void, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76055:2
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76104:2, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76074:2, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76057:2, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75973:2, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75963:1, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75960:2
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76098:2, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75969:1, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75958:1
+	setsockopt_broadcast: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76082:6
+	sscanf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75991:13, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:75985:12
+	strncpy_IFNAMSIZ: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76089:2, file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76054:2
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:74556:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:74556:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:74556:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:74556:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:74572:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:74556:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:74556:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:74556:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:74556:0
+	xsendto: (signed int, *void, unsigned long, *struct sockaddr, unsigned int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76109:1
+	xsocket: (signed int, signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76036:23
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:74556:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:74556:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:74556:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:74556:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:74556:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:74556:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:74556:0
+exports (1)
+	ether_wake_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ether-wake.c:76014:0

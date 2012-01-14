@@ -1,0 +1,35 @@
+fm True
+features (0)
+	
+imports (28)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73892:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73839:8
+	bb_error_msg: (*char, ...) => void		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file busybox-1.18.5/networking/libiproute/ll_addr.c:77666:3, file busybox-1.18.5/networking/libiproute/ll_addr.c:77648:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73864:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73889:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73861:9
+	get_addr_1: (*struct {Map(family -> List((True,CUnsigned(CChar()))), bytelen -> List((True,CUnsigned(CChar()))), bitlen -> List((True,CIgnore())), data -> List((True,CArray(CUnsigned(CInt()),-1))))}, *char, signed int) => signed int		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file busybox-1.18.5/networking/libiproute/ll_addr.c:77647:6
+	inet_ntop: (signed int, *void, *char, unsigned int) => *char		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file busybox-1.18.5/networking/libiproute/ll_addr.c:77624:9
+	memcpy: (*void, *void, unsigned long) => *void		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file busybox-1.18.5/networking/libiproute/ll_addr.c:77654:2
+	snprintf: (*char, unsigned long, *char, ...) => signed int		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file busybox-1.18.5/networking/libiproute/ll_addr.c:77633:3, file busybox-1.18.5/networking/libiproute/ll_addr.c:77629:3
+	sscanf: (*char, *char, ...) => signed int		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file busybox-1.18.5/networking/libiproute/ll_addr.c:77665:6
+	strchr: (*char, signed int) => *char		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file busybox-1.18.5/networking/libiproute/ll_addr.c:77660:13, file busybox-1.18.5/networking/libiproute/ll_addr.c:77645:5
+	xatoll: (*char) => signed long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xatoll:73820:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xatoll_range:73820:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xatoll_range_sfx:73820:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xatoll_sfx:73820:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73836:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xatoull:73820:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xatoull_range:73820:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xatoull_range_sfx:73820:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xatoull_sfx:73820:0
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xstrtoll:73820:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xstrtoll_range:73820:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xstrtoll_range_sfx:73820:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xstrtoull:73820:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xstrtoull_range:73820:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xstrtoull_range_sfx:73820:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at string literal: xstrtoull_sfx:73820:0
+exports (2)
+	ll_addr_a2n: (*unsigned char, signed int, *char) => signed int		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file busybox-1.18.5/networking/libiproute/ll_addr.c:77641:0
+	ll_addr_n2a: (*unsigned char, signed int, signed int, *char, signed int) => *char		if (def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_IP))		at file busybox-1.18.5/networking/libiproute/ll_addr.c:77616:0

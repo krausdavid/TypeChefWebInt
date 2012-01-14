@@ -1,0 +1,63 @@
+fm True
+features (0)
+	
+imports (57)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_UNZIP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72895:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_UNZIP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72842:8
+	bb_copyfd_exact_size: (signed int, signed int, signed long) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74691:3, file busybox-1.18.5/archival/unzip.c:74672:2
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74705:3
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75090:6, file busybox-1.18.5/archival/unzip.c:75064:6, file busybox-1.18.5/archival/unzip.c:75060:6, file busybox-1.18.5/archival/unzip.c:74978:3, file busybox-1.18.5/archival/unzip.c:74972:3, file busybox-1.18.5/archival/unzip.c:74968:3, file busybox-1.18.5/archival/unzip.c:74962:3, file busybox-1.18.5/archival/unzip.c:74894:3, file busybox-1.18.5/archival/unzip.c:74699:3, file busybox-1.18.5/archival/unzip.c:74696:3, file busybox-1.18.5/archival/unzip.c:74680:2, file busybox-1.18.5/archival/unzip.c:74645:1
+	bb_make_directory: (*char, signed long, signed int) => signed int		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75059:9, file busybox-1.18.5/archival/unzip.c:74679:5
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75129:4, file busybox-1.18.5/archival/unzip.c:75085:8, file busybox-1.18.5/archival/unzip.c:75073:6, file busybox-1.18.5/archival/unzip.c:75053:6
+	bb_show_usage: (void) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74874:2, file busybox-1.18.5/archival/unzip.c:74869:3, file busybox-1.18.5/archival/unzip.c:74854:3, file busybox-1.18.5/archival/unzip.c:74836:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_UNZIP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72867:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_UNZIP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72892:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_UNZIP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72864:9
+	chomp: (*char) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75133:3
+	close: (signed int) => signed int		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75114:4
+	dirname: (*char) => *char		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74679:23
+	fgets: (*char, signed int, *struct _IO_FILE) => *char		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75128:8, file busybox-1.18.5/archival/unzip.c:75084:12
+	find_list_entry: (*struct llist_t, *char) => *struct llist_t		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75007:19, file busybox-1.18.5/archival/unzip.c:75006:6
+	free: (*void) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75131:3, file busybox-1.18.5/archival/unzip.c:74998:2, file busybox-1.18.5/archival/unzip.c:74682:1, file busybox-1.18.5/archival/unzip.c:74641:2
+	full_read: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_DESKTOP)&def(CONFIG_UNZIP))		at file busybox-1.18.5/archival/unzip.c:74624:1
+	getopt: (signed int, **char, *char) => signed int		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74793:15
+	inflate_unzip: (*struct inflate_unzip_result, signed long, signed int, signed int) => signed int		if (!def(CONFIG_DESKTOP)&def(CONFIG_UNZIP))		at file busybox-1.18.5/archival/unzip.c:74695:6
+	inflate_unzip: (*struct inflate_unzip_result, signed long, signed int, signed int) => signed long long		if (def(CONFIG_DESKTOP)&def(CONFIG_UNZIP))		at file busybox-1.18.5/archival/unzip.c:74695:6
+	last_char_is: (*char, signed int) => *char		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75050:14
+	llist_add_to: (**struct llist_t, *void) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74858:4, file busybox-1.18.5/archival/unzip.c:74842:4
+	lseek: (signed int, signed long, signed int) => signed long		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74671:5
+	memcpy: (*void, *void, unsigned long) => *void		if (def(CONFIG_DESKTOP)&def(CONFIG_UNZIP))		at file busybox-1.18.5/archival/unzip.c:74639:2
+	open: (*char, signed int, ...) => signed int		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74890:12
+	printf: (*char, ...) => signed int		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75158:3, file busybox-1.18.5/archival/unzip.c:75148:3, file busybox-1.18.5/archival/unzip.c:75137:3, file busybox-1.18.5/archival/unzip.c:75127:3, file busybox-1.18.5/archival/unzip.c:75109:4, file busybox-1.18.5/archival/unzip.c:75083:7, file busybox-1.18.5/archival/unzip.c:75056:6, file busybox-1.18.5/archival/unzip.c:75033:5, file busybox-1.18.5/archival/unzip.c:75017:5, file busybox-1.18.5/archival/unzip.c:74905:3
+	puts: (*char) => signed int		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74907:3
+	stat: (*char, *struct stat) => signed int		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75071:8, file busybox-1.18.5/archival/unzip.c:75051:8
+	strcpy: (*char, *char) => *char		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74889:3, file busybox-1.18.5/archival/unzip.c:74831:4
+	strlen: (*char) => unsigned long		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74885:24, file busybox-1.18.5/archival/unzip.c:74830:21
+	xatoll: (*char) => signed long long		if def(CONFIG_UNZIP)		at string literal: xatoll:72823:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_UNZIP)		at string literal: xatoll_range:72823:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_UNZIP)		at string literal: xatoll_range_sfx:72823:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_UNZIP)		at string literal: xatoll_sfx:72823:0
+	xatou: (*char) => unsigned int		if def(CONFIG_UNZIP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72839:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_UNZIP)		at string literal: xatoull:72823:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_UNZIP)		at string literal: xatoull_range:72823:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_UNZIP)		at string literal: xatoull_range_sfx:72823:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_UNZIP)		at string literal: xatoull_sfx:72823:0
+	xchdir: (*char) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74901:2
+	xdup2: (signed int, signed int) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74879:2
+	xlseek: (signed int, signed long, signed int) => signed long		if (def(CONFIG_DESKTOP)&def(CONFIG_UNZIP))		at file busybox-1.18.5/archival/unzip.c:74665:1, file busybox-1.18.5/archival/unzip.c:74657:1, file busybox-1.18.5/archival/unzip.c:74652:7, file busybox-1.18.5/archival/unzip.c:74623:1, file busybox-1.18.5/archival/unzip.c:74619:7
+	xmalloc: (unsigned long) => *void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74830:13
+	xmove_fd: (signed int, signed int) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74896:2
+	xopen3: (*char, signed int, signed int) => signed int		if (def(CONFIG_DESKTOP)&def(CONFIG_UNZIP))		at file busybox-1.18.5/archival/unzip.c:75102:12
+	xopen: (*char, signed int) => signed int		if (!def(CONFIG_DESKTOP)&def(CONFIG_UNZIP))		at file busybox-1.18.5/archival/unzip.c:75105:12
+	xread: (signed int, *void, unsigned long) => void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75000:2, file busybox-1.18.5/archival/unzip.c:74965:2, file busybox-1.18.5/archival/unzip.c:74949:2, file busybox-1.18.5/archival/unzip.c:74658:1
+	xstrdup: (*char) => *char		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:75132:12, file busybox-1.18.5/archival/unzip.c:74678:14
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_UNZIP)		at string literal: xstrtoll:72823:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_UNZIP)		at string literal: xstrtoll_range:72823:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_UNZIP)		at string literal: xstrtoll_range_sfx:72823:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_UNZIP)		at string literal: xstrtoull:72823:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_UNZIP)		at string literal: xstrtoull_range:72823:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_UNZIP)		at string literal: xstrtoull_range_sfx:72823:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_UNZIP)		at string literal: xstrtoull_sfx:72823:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74999:11, file busybox-1.18.5/archival/unzip.c:74617:22
+exports (1)
+	unzip_main: (signed int, **char) => signed int		if def(CONFIG_UNZIP)		at file busybox-1.18.5/archival/unzip.c:74718:0

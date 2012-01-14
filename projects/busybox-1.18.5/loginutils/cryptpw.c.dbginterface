@@ -1,0 +1,38 @@
+fm True
+features (0)
+	
+imports (32)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70843:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70790:8
+	bb_ask_stdin: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72236:5, file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72225:5
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70815:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70840:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70812:9
+	crypt_make_salt: (*char, signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72215:2
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72190:1
+	isatty: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72235:4, file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72224:4
+	puts: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72219:1
+	pw_encrypt: (*char, *char) => *char		if !def(CONFIG_USE_BB_CRYPT)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72221:41
+	pw_encrypt: (*char, *char, signed int) => *char		if def(CONFIG_USE_BB_CRYPT)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72221:41
+	safe_strncpy: (*char, *char, unsigned long) => *char		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72213:2
+	strcmp: (*char, *char) => signed int		if (!def(CONFIG_USE_BB_CRYPT)|def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72207:20
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70771:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70771:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70771:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70771:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70787:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70771:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70771:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70771:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70771:0
+	xmalloc_fgetline: (*struct _IO_FILE) => *char		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72237:5, file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72226:5
+	xmove_fd: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72217:1
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70771:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70771:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70771:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70771:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70771:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70771:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70771:0
+exports (1)
+	cryptpw_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/cryptpw.c:72167:0

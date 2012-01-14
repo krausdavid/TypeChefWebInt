@@ -1,0 +1,61 @@
+fm True
+features (0)
+	
+imports (55)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72886:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72833:8
+	_exit: (signed int) => void		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74221:1
+	bb_cat: (**char) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74313:10
+	bb_copyfd_eof: (signed int, signed int) => signed long		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74338:3, file busybox-1.18.5/miscutils/crontab.c:74326:3
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74369:2, file busybox-1.18.5/miscutils/crontab.c:74342:3
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74293:4, file busybox-1.18.5/miscutils/crontab.c:74269:3
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74207:80, file busybox-1.18.5/miscutils/crontab.c:74199:1, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74171:80
+	bb_show_usage: (void) => void		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74289:3, file busybox-1.18.5/miscutils/crontab.c:74283:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72858:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	change_identity: (*struct passwd) => void		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74218:1, file busybox-1.18.5/miscutils/crontab.c:74180:1
+	close: (signed int) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74365:2, file busybox-1.18.5/miscutils/crontab.c:74339:3, file busybox-1.18.5/miscutils/crontab.c:74327:3
+	close_on_exec_on: (signed int) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74330:2
+	dprintf: (signed int, *char, ...) => signed int		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:74358:18
+	execlp: (*char, *char, ...) => signed int		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74193:33, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74193:33
+	fchown: (signed int, unsigned int, unsigned int) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74323:2
+	find_applet_by_name: (*char) => signed int		if (def(CONFIG_FEATURE_PREFER_APPLETS)&def(CONFIG_CRONTAB))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74193:41
+	fstat: (signed int, *struct stat) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74359:6
+	getenv: (*char) => *char		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74186:8, file busybox-1.18.5/miscutils/crontab.c:74184:7
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74263:11
+	getpid: (void) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74319:56
+	getuid: (void) => unsigned int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74275:18
+	open: (*char, signed int, ...) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74355:14, file busybox-1.18.5/miscutils/crontab.c:74336:7, file busybox-1.18.5/miscutils/crontab.c:74324:7, file busybox-1.18.5/miscutils/crontab.c:74211:10
+	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74221:7
+	sanitize_env_if_suid: (void) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74266:5
+	setup_environment: (*char, signed int, *struct passwd) => void		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74181:1
+	unlink: (*char) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74346:3, file busybox-1.18.5/miscutils/crontab.c:74307:2
+	vfork: (void) => signed int		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74207:44, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74171:44
+	wait4pid: (signed int) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74209:6, file busybox-1.18.5/miscutils/crontab.c:74174:2
+	xasprintf: (*char, ...) => *char		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74335:14, file busybox-1.18.5/miscutils/crontab.c:74319:14
+	xatoll: (*char) => signed long long		if def(CONFIG_CRONTAB)		at string literal: xatoll:72814:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_CRONTAB)		at string literal: xatoll_range:72814:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_CRONTAB)		at string literal: xatoll_range_sfx:72814:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_CRONTAB)		at string literal: xatoll_sfx:72814:0
+	xatou: (*char) => unsigned int		if def(CONFIG_CRONTAB)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_CRONTAB)		at string literal: xatoull:72814:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_CRONTAB)		at string literal: xatoull_range:72814:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_CRONTAB)		at string literal: xatoull_range_sfx:72814:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_CRONTAB)		at string literal: xatoull_sfx:72814:0
+	xchdir: (*char) => void		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74299:1
+	xgetpwnam: (*char) => *struct passwd		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74273:8
+	xgetpwuid: (unsigned int) => *struct passwd		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74275:8
+	xlseek: (signed int, signed long, signed int) => signed long		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74328:3
+	xopen3: (*char, signed int, signed int) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74322:11
+	xopen: (*char, signed int) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74221:17
+	xrename: (*char, *char) => void		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74340:3
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_CRONTAB)		at string literal: xstrtoll:72814:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_CRONTAB)		at string literal: xstrtoll_range:72814:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_CRONTAB)		at string literal: xstrtoll_range_sfx:72814:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_CRONTAB)		at string literal: xstrtoull:72814:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_CRONTAB)		at string literal: xstrtoull_range:72814:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_CRONTAB)		at string literal: xstrtoull_range_sfx:72814:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_CRONTAB)		at string literal: xstrtoull_sfx:72814:0
+exports (1)
+	crontab_main: (signed int, **char) => signed int		if def(CONFIG_CRONTAB)		at file busybox-1.18.5/miscutils/crontab.c:74232:0

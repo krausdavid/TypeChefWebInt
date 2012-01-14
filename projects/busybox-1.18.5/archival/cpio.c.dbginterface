@@ -1,0 +1,64 @@
+fm True
+features (0)
+	
+imports (58)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70844:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70791:8
+	bb_copyfd_exact_size: (signed int, signed int, signed long) => void		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72741:4
+	bb_get_chunk_from_file: (*struct _IO_FILE, *signed int) => *char		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72626:6
+	bb_putchar: (signed int) => signed int		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72598:2
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72890:2, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72879:3, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72831:3
+	bb_simple_perror_msg_and_die: (*char) => void		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72645:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70816:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70841:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70813:9
+	close: (signed int) => signed int		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72870:2, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72864:3, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72848:3, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72847:3, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72743:4
+	data_extract_all: (*struct archive_handle_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72899:32
+	data_extract_to_stdout: (*struct archive_handle_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72901:33
+	fflush_all: (void) => signed int		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72739:4
+	filter_accept_list: (*struct archive_handle_t) => char		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72922:27
+	fork_or_rexec: (**char) => signed int		if (def(CONFIG_FEATURE_CPIO_O)&def(CONFIG_NOMMU))		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72857:44
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72935:2
+	free: (*void) => void		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72755:2, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72736:4, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72679:4, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72637:4
+	get_header_cpio: (*struct archive_handle_t) => char		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72929:8
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72814:7, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72807:7
+	gnu_dev_major: (unsigned long long) => unsigned int		if def(CONFIG_FEATURE_CPIO_O)		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h:72724:20, file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h:72722:20
+	gnu_dev_minor: (unsigned long long) => unsigned int		if def(CONFIG_FEATURE_CPIO_O)		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h:72725:20, file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h:72723:20
+	header_list: (*struct file_header_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72911:35, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72908:39, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72896:34
+	header_verbose_list: (*struct file_header_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72909:35
+	init_handle: (void) => *struct archive_handle_t		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72797:18
+	llist_add_to: (**struct llist_t, *void) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72923:2
+	lstat: (*char, *struct stat) => signed int		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72642:7
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72704:4
+	mkdir: (*char, unsigned int) => signed int		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72833:3
+	printf: (*char, ...) => signed int		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72735:13, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72709:11
+	stat: (*char, *struct stat) => signed int		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72641:7
+	strcpy: (*char, *char) => *char		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72675:4
+	strlen: (*char) => unsigned long		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72726:29, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72674:29
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70772:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70772:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70772:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70772:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70788:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70772:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70772:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70772:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70772:0
+	xchdir: (*char) => void		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72869:2
+	xfork: (void) => signed int		if (def(CONFIG_FEATURE_CPIO_O)&!def(CONFIG_NOMMU))		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72857:44
+	xmalloc: (unsigned long) => *void		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72674:8
+	xmalloc_fgetline: (*struct _IO_FILE) => *char		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72627:6
+	xmalloc_readlink_or_warn: (*char) => *char		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72732:18
+	xmove_fd: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72881:3, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72871:2, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72865:3, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72824:2, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72810:2
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72881:12, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72824:11, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72810:11, file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72738:13
+	xpipe: (signed int[]) => void		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72846:2, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72849:26
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70772:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70772:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70772:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70772:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70772:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70772:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70772:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_FEATURE_CPIO_O)		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72661:10
+exports (1)
+	cpio_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/archival/cpio.c:72767:0

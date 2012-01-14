@@ -1,0 +1,31 @@
+fm True
+features (0)
+	
+imports (25)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70839:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70786:8
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/console-tools/setkeycodes.c:72139:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70811:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70836:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70808:9
+	get_console_fd_or_die: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/console-tools/setkeycodes.c:72142:6
+	ioctl_or_perror_and_die: (signed int, unsigned int, *void, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/console-tools/setkeycodes.c:72152:2
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70767:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70767:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70767:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70767:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70783:9
+	xatou_range: (*char, unsigned int, unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/console-tools/setkeycodes.c:72151:14
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70767:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70767:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70767:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70767:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70767:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70767:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70767:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70767:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70767:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70767:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70767:0
+exports (1)
+	setkeycodes_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/console-tools/setkeycodes.c:72133:0

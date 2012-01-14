@@ -1,0 +1,44 @@
+fm True
+features (0)
+	
+imports (38)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70929:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70876:8
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74549:2, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74504:3, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74430:2
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74672:2, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74668:2, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74591:2, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74410:2
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74732:4, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74724:4, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74714:4, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74706:4, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74475:4, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74460:3, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74452:3, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74446:3, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74356:2, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74348:2
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74690:3, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74661:2, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74586:2, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74417:2
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74628:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70901:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74589:11, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70926:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70898:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74747:2, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74747:2
+	display_interfaces: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74655:2, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74649:3, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74634:2
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74625:7
+	ioctl: (signed int, unsigned long, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74295:8
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74324:1
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74577:1, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74393:3, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74365:1
+	strcpy: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74582:1, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74581:1
+	strncpy_IFNAMSIZ: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74553:1, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74521:1, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74413:1, file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74300:1
+	utoa: (unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74582:25
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70857:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70857:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70857:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70857:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70873:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70857:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70857:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70857:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70857:0
+	xmove_fd: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74639:1
+	xsocket: (signed int, signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74639:10
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70857:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70857:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70857:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70857:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70857:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70857:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70857:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74623:42
+exports (1)
+	ifenslave_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ifenslave.c:74602:0

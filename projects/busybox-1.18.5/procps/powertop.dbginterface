@@ -1,0 +1,72 @@
+fm True
+features (0)
+	
+imports (66)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_POWERTOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72898:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_POWERTOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72845:8
+	_exit: (signed int) => void		if (def(CONFIG_FEATURE_USE_TERMIOS)&def(CONFIG_POWERTOP))		at file busybox-1.18.5/procps/powertop.c:74251:1
+	atexit: (*(void) => void) => signed int		if (def(CONFIG_FEATURE_USE_TERMIOS)&def(CONFIG_POWERTOP))		at file busybox-1.18.5/procps/powertop.c:74865:1
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74852:2, file busybox-1.18.5/procps/powertop.c:74796:2
+	bb_putchar: (signed int) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:75003:1, file busybox-1.18.5/procps/powertop.c:74795:2
+	bb_signals: (signed int, *(signed int) => void) => void		if (def(CONFIG_FEATURE_USE_TERMIOS)&def(CONFIG_POWERTOP))		at file busybox-1.18.5/procps/powertop.c:74866:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_POWERTOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72870:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74574:9, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72895:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74494:12, file busybox-1.18.5/procps/powertop.c:74343:22, file busybox-1.18.5/procps/powertop.c:74338:19, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72867:9
+	closedir: (*struct __dirstream) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74353:1
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74632:2, file busybox-1.18.5/procps/powertop.c:74532:1, file busybox-1.18.5/procps/powertop.c:74351:2, file busybox-1.18.5/procps/powertop.c:74260:1
+	fflush: (*struct _IO_FILE) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74989:2
+	fgets: (*char, signed int, *struct _IO_FILE) => *char		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74563:9, file busybox-1.18.5/procps/powertop.c:74457:8, file busybox-1.18.5/procps/powertop.c:74333:9
+	fopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74550:7, file busybox-1.18.5/procps/powertop.c:74320:7
+	fopen_for_write: (*char) => *struct _IO_FILE		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74256:12
+	fputs: (*char, *struct _IO_FILE) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74966:4, file busybox-1.18.5/procps/powertop.c:74259:1
+	free: (*void) => void		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74274:2, file busybox-1.18.5/procps/powertop.c:74273:3
+	get_cpu_count: (void) => unsigned int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74855:16
+	get_terminal_width_height: (signed int, *unsigned int, *unsigned int) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74765:1
+	geteuid: (void) => unsigned int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74851:5
+	index_in_strings: (*char, *char) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74615:9, file busybox-1.18.5/procps/powertop.c:74473:7
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:75000:2, file busybox-1.18.5/procps/powertop.c:74999:2, file busybox-1.18.5/procps/powertop.c:74877:1, file busybox-1.18.5/procps/powertop.c:74876:1, file busybox-1.18.5/procps/powertop.c:74861:1
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74993:2, file busybox-1.18.5/procps/powertop.c:74992:2, file busybox-1.18.5/procps/powertop.c:74930:2, file busybox-1.18.5/procps/powertop.c:74912:2, file busybox-1.18.5/procps/powertop.c:74911:2
+	opendir: (*char) => *struct __dirstream		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74305:7
+	printf: (*char, ...) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74981:2, file busybox-1.18.5/procps/powertop.c:74927:2, file busybox-1.18.5/procps/powertop.c:74857:1, file busybox-1.18.5/procps/powertop.c:74787:4
+	puts: (*char) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74775:2
+	qsort: (*void, unsigned long, unsigned long, *(*void, *void) => signed int) => void		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74296:1
+	readdir: (*struct __dirstream) => *struct dirent		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74309:13
+	safe_poll: (*struct pollfd, unsigned long, signed int) => signed int		if (def(CONFIG_FEATURE_USE_TERMIOS)&def(CONFIG_POWERTOP))		at file busybox-1.18.5/procps/powertop.c:74895:6
+	safe_read: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_FEATURE_USE_TERMIOS)&def(CONFIG_POWERTOP))		at file busybox-1.18.5/procps/powertop.c:74897:7
+	skip_non_whitespace: (*char) => *char		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74575:14
+	skip_whitespace: (*char) => *char		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74594:7, file busybox-1.18.5/procps/powertop.c:74587:7, file busybox-1.18.5/procps/powertop.c:74569:11, file busybox-1.18.5/procps/powertop.c:74506:7, file busybox-1.18.5/procps/powertop.c:74491:7
+	sleep: (unsigned int) => unsigned int		if (!def(CONFIG_FEATURE_USE_TERMIOS)&def(CONFIG_POWERTOP))		at file busybox-1.18.5/procps/powertop.c:74892:2
+	smart_ulltoa5: (unsigned long long, char[], *char) => void		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74786:4
+	sprintf: (*char, *char, ...) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74956:5, file busybox-1.18.5/procps/powertop.c:74946:3, file busybox-1.18.5/procps/powertop.c:74944:3, file busybox-1.18.5/procps/powertop.c:74627:4, file busybox-1.18.5/procps/powertop.c:74579:5, file busybox-1.18.5/procps/powertop.c:74515:3, file busybox-1.18.5/procps/powertop.c:74513:3, file busybox-1.18.5/procps/powertop.c:74319:2
+	strchr: (*char, signed int) => *char		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74590:7, file busybox-1.18.5/procps/powertop.c:74585:7, file busybox-1.18.5/procps/powertop.c:74570:7, file busybox-1.18.5/procps/powertop.c:74503:7, file busybox-1.18.5/procps/powertop.c:74465:6
+	strchrnul: (*char, signed int) => *char		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74620:3, file busybox-1.18.5/procps/powertop.c:74510:2
+	strcmp: (*char, *char) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74575:7, file busybox-1.18.5/procps/powertop.c:74361:6
+	strcpy: (*char, *char) => *char		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74934:3
+	strlen: (*char) => unsigned long		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74315:8
+	strncmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74610:7, file busybox-1.18.5/procps/powertop.c:74608:7
+	strstr: (*char, *char) => *char		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74410:5, file busybox-1.18.5/procps/powertop.c:74339:7, file busybox-1.18.5/procps/powertop.c:74334:13
+	strtoul: (*char, **char, signed int) => unsigned long		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74479:8
+	tcgetattr: (signed int, *struct termios) => signed int		if (def(CONFIG_FEATURE_USE_TERMIOS)&def(CONFIG_POWERTOP))		at file busybox-1.18.5/procps/powertop.c:74860:1
+	tcsetattr_stdin_TCSANOW: (*struct termios) => signed int		if (def(CONFIG_FEATURE_USE_TERMIOS)&def(CONFIG_POWERTOP))		at file busybox-1.18.5/procps/powertop.c:74867:1, file busybox-1.18.5/procps/powertop.c:74245:1
+	xatoll: (*char) => signed long long		if def(CONFIG_POWERTOP)		at string literal: xatoll:72826:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_POWERTOP)		at string literal: xatoll_range:72826:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_POWERTOP)		at string literal: xatoll_range_sfx:72826:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_POWERTOP)		at string literal: xatoll_sfx:72826:0
+	xatou: (*char) => unsigned int		if def(CONFIG_POWERTOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72842:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_POWERTOP)		at string literal: xatoull:72826:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_POWERTOP)		at string literal: xatoull_range:72826:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_POWERTOP)		at string literal: xatoull_range_sfx:72826:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_POWERTOP)		at string literal: xatoull_sfx:72826:0
+	xfopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74456:6
+	xrealloc_vector_helper: (*void, unsigned int, signed int) => *void		if def(CONFIG_POWERTOP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74369:45
+	xstrdup: (*char) => *char		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74370:31
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_POWERTOP)		at string literal: xstrtoll:72826:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_POWERTOP)		at string literal: xstrtoll_range:72826:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_POWERTOP)		at string literal: xstrtoll_range_sfx:72826:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_POWERTOP)		at string literal: xstrtoull:72826:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_POWERTOP)		at string literal: xstrtoull_range:72826:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_POWERTOP)		at string literal: xstrtoull_range_sfx:72826:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_POWERTOP)		at string literal: xstrtoull_sfx:72826:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74844:42
+exports (1)
+	powertop_main: (signed int, **char) => signed int		if def(CONFIG_POWERTOP)		at file busybox-1.18.5/procps/powertop.c:74832:0

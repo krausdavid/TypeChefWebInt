@@ -1,0 +1,51 @@
+fm True
+features (0)
+	
+imports (43)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70842:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70789:8
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70814:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73216:8, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70839:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70811:9
+	free: (*void) => void		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:73468:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:73467:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73427:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73426:1
+	getpid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:72140:6
+	md5_begin: (*struct md5_ctx_t) => void		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73113:2, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73093:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73079:1
+	md5_end: (*struct md5_ctx_t, *void) => void		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73129:2, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73106:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73097:1
+	md5_hash: (*struct md5_ctx_t, *void, unsigned long) => void		if def(CONFIG_USE_BB_CRYPT)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73244:20, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73128:3, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73126:3, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73123:3, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73120:3, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73117:3, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73115:3, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73104:2, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73099:2, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73096:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73095:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73094:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73084:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73081:1
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73318:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73315:7, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73300:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73297:7, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73087:1
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73425:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73424:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73423:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73144:1, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73102:1
+	ntohl: (unsigned int) => unsigned int		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_des.c:72686:11, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_des.c:72685:11
+	sha1_end: (*struct md5_ctx_t, *void) => void		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_USE_BB_CRYPT_SHA))		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73245:20
+	sha256_begin: (*struct md5_ctx_t) => void		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73243:20
+	sha512_begin: (*struct sha512_ctx_t) => void		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73248:21
+	sha512_end: (*struct sha512_ctx_t, *void) => void		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73250:19
+	sha512_hash: (*struct sha512_ctx_t, *void, unsigned long) => void		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73249:20
+	sprintf: (*char, *char, ...) => signed int		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73225:13
+	strcpy: (*char, *char) => *char		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73235:1
+	strlen: (*char) => unsigned long		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73239:11, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73203:7, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_md5.c:73080:10
+	strncmp: (*char, *char, unsigned long) => signed int		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73213:5
+	time: (*signed long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:72140:17
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70770:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70770:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70770:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70770:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70786:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70770:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70770:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70770:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70770:0
+	xmalloc: (unsigned long) => *void		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_des.c:72531:8, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_des.c:72445:8
+	xstrdup: (*char) => *char		if (!def(CONFIG_USE_BB_CRYPT)|def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:73489:8, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73240:12
+	xstrndup: (*char, signed int) => *char		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_USE_BB_CRYPT_SHA))		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73233:13
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70770:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70770:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70770:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70770:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70770:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70770:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70770:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:73461:27, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:73451:20, file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt_sha.c:73207:19
+exports (3)
+	crypt_make_salt: (*char, signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:72138:0
+	pw_encrypt: (*char, *char) => *char		if !def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:73473:0
+	pw_encrypt: (*char, *char, signed int) => *char		if def(CONFIG_USE_BB_CRYPT)		at file cprojects/busybox/busybox-1.18.5/libbb/pw_encrypt.c:73473:0

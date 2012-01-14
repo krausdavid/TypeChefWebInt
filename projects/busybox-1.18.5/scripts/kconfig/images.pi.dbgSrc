@@ -1,0 +1,11 @@
+push file host/platform-redhat.h -- True (True)
+pop file host/platform-redhat.h
+push file busybox/config.h -- True (True)
+pop file busybox/config.h
+push file cprojects/busybox/busybox-1.18.5/scripts/kconfig/images.c -- True (True)
+pop file cprojects/busybox/busybox-1.18.5/scripts/kconfig/images.c
+
+
+
+Statistics (max_nesting,header_count,distinct files):
+1;3;3

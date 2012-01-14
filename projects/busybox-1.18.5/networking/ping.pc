@@ -1,0 +1,1 @@
+(definedEx(CONFIG_PING) || definedEx(CONFIG_PING6))

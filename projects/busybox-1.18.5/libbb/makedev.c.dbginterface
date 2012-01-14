@@ -1,0 +1,7 @@
+fm True
+features (0)
+	
+imports (1)
+	gnu_dev_makedev: (unsigned int, unsigned int) => unsigned long long		if True		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h:12500:27
+exports (1)
+	bb_makedev: (unsigned int, unsigned int) => unsigned long long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/makedev.c:12498:0

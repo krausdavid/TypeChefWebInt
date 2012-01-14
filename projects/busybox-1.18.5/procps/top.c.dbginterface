@@ -1,0 +1,72 @@
+fm True
+features (0)
+	
+imports (66)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70864:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70811:8
+	_exit: (signed int) => void		if def(CONFIG_FEATURE_USE_TERMIOS)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73077:1
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73398:3
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72322:2
+	bb_putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73554:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:73227:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:73039:1
+	bb_signals: (signed int, *(signed int) => void) => void		if def(CONFIG_FEATURE_USE_TERMIOS)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73329:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70836:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70861:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70833:9
+	clear_username_cache: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73049:1
+	div: (signed int, signed int) => struct {Map(quot -> List((True,CSigned(CInt()))), rem -> List((True,CSigned(CInt()))))}		if def(CONFIG_FEATURE_TOP_DECIMALS)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72952:43, file cprojects/busybox/busybox-1.18.5/procps/top.c:72943:43
+	fclose: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72775:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72365:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72330:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:72325:1
+	fflush_all: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73228:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:73040:1
+	fgets: (*char, signed int, *struct _IO_FILE) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72744:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:72298:6
+	fputs: (*char, *struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73033:2
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73537:5, file cprojects/busybox/busybox-1.18.5/procps/top.c:73536:5, file cprojects/busybox/busybox-1.18.5/procps/top.c:73523:4, file cprojects/busybox/busybox-1.18.5/procps/top.c:73069:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:73069:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:73050:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72415:1
+	fscanf: (*struct _IO_FILE, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72771:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:72770:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:72767:6, file cprojects/busybox/busybox-1.18.5/procps/top.c:72761:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:72746:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:72743:5
+	get_cached_username: (unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72997:21
+	get_terminal_width_height: (signed int, *unsigned int, *unsigned int) => signed int		if def(CONFIG_FEATURE_USE_TERMIOS)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73347:2
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73295:7
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_FEATURE_USE_TERMIOS)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73325:1
+	open_read_close: (*char, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73154:6, file cprojects/busybox/busybox-1.18.5/procps/top.c:72801:1
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73224:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:73205:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:73184:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:73179:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:73174:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72829:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72784:1
+	procps_scan: (*struct procps_status_t, signed int) => *struct procps_status_t		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73357:14
+	puts: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72805:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72711:3, file cprojects/busybox/busybox-1.18.5/procps/top.c:72711:3
+	qsort: (*void, unsigned long, unsigned long, *(*void, *void) => signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73412:3, file cprojects/busybox/busybox-1.18.5/procps/top.c:73412:3, file cprojects/busybox/busybox-1.18.5/procps/top.c:73420:3, file cprojects/busybox/busybox-1.18.5/procps/top.c:73412:3, file cprojects/busybox/busybox-1.18.5/procps/top.c:73412:3
+	read_cmdline: (*char, signed int, unsigned int, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73222:3, file cprojects/busybox/busybox-1.18.5/procps/top.c:73032:3
+	safe_poll: (*struct pollfd, unsigned long, signed int) => signed int		if def(CONFIG_FEATURE_USE_TERMIOS)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73443:11
+	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_FEATURE_USE_TERMIOS)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73444:7
+	skip_non_whitespace: (*char) => *char		if def(CONFIG_FEATURE_TOPMEM)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73164:8
+	skip_whitespace: (*char) => *char		if def(CONFIG_FEATURE_TOPMEM)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73163:14
+	sleep: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73442:3, file cprojects/busybox/busybox-1.18.5/procps/top.c:73437:2, file cprojects/busybox/busybox-1.18.5/procps/top.c:73349:3
+	smart_ulltoa5: (unsigned long long, char[], *char) => void		if def(CONFIG_FEATURE_TOPMEM)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73192:1
+	snprintf: (*char, unsigned long, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73181:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:73176:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:73171:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72964:8, file cprojects/busybox/busybox-1.18.5/procps/top.c:72804:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72780:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72550:3, file cprojects/busybox/busybox-1.18.5/procps/top.c:72550:3
+	sprintf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72962:3, file cprojects/busybox/busybox-1.18.5/procps/top.c:72960:3
+	sscanf: (*char, *char, ...) => signed int		if def(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72300:7
+	strchr: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72803:2
+	strcpy: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73373:4, file cprojects/busybox/busybox-1.18.5/procps/top.c:73372:4, file cprojects/busybox/busybox-1.18.5/procps/top.c:73385:4, file cprojects/busybox/busybox-1.18.5/procps/top.c:73373:4, file cprojects/busybox/busybox-1.18.5/procps/top.c:73372:4, file cprojects/busybox/busybox-1.18.5/procps/top.c:73203:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:72427:2
+	strstr: (*char, *char) => *char		if def(CONFIG_FEATURE_TOPMEM)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73160:17
+	tcgetattr: (signed int, *struct termios) => signed int		if def(CONFIG_FEATURE_USE_TERMIOS)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73324:1
+	tcsetattr_stdin_TCSANOW: (*struct termios) => signed int		if def(CONFIG_FEATURE_USE_TERMIOS)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73330:1, file cprojects/busybox/busybox-1.18.5/procps/top.c:73058:1
+	usleep: (unsigned int) => signed int		if def(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73406:4, file cprojects/busybox/busybox-1.18.5/procps/top.c:73406:4, file cprojects/busybox/busybox-1.18.5/procps/top.c:72350:2
+	utoa: (unsigned int) => *char		if (def(CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS)&def(CONFIG_FEATURE_TOP_SMP_CPU))		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72603:20
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70792:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70792:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70792:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70792:0
+	xatou16: (*char) => unsigned short		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73313:13
+	xatou: (*char) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73318:15, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70808:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70792:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70792:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70792:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70792:0
+	xchdir: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73322:1
+	xfopen_for_read: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72731:6, file cprojects/busybox/busybox-1.18.5/procps/top.c:72316:12
+	xmalloc: (unsigned long) => *void		if def(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72378:12
+	xrealloc_vector_helper: (*void, unsigned int, signed int) => *void		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73364:45, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73384:45, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73364:45, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72339:45
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70792:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70792:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70792:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70792:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70792:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70792:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70792:0
+	xzalloc: (unsigned long) => *void		if (def(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)&def(CONFIG_FEATURE_TOP_SMP_CPU))		at file cprojects/busybox/busybox-1.18.5/procps/top.c:72347:17
+exports (1)
+	top_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/top.c:73267:0

@@ -1,0 +1,55 @@
+fm True
+features (0)
+	
+imports (49)
+	BB_EXECVP_or_die: (**char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72746:1
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70863:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70810:8
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72442:5
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72736:3, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72728:3, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72486:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72471:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72452:3, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72446:3, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72432:4
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72612:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72568:3, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72568:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70835:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70860:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70832:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72744:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72742:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72740:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72472:1, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72450:2
+	closedir: (*struct __dirstream) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72469:1
+	fchdir: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72470:5
+	full_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72449:9
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72539:8, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72539:8
+	getrlimit: (signed int, *struct rlimit) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72480:1
+	nice: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72735:6
+	open: (*char, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72438:7
+	readdir: (*struct __dirstream) => *struct dirent		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72429:6
+	setgroups: (unsigned long, *unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72727:6
+	setrlimit: (signed int, *struct rlimit) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72485:5
+	setsid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72703:2
+	strchr: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72459:9
+	unsetenv: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72455:3
+	utoa: (unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72714:17, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72713:17
+	xatoi: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72735:11
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70791:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70791:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70791:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70791:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70807:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70791:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70791:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70791:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70791:0
+	xchdir: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72722:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72421:1
+	xchroot: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72723:2
+	xget_uidgid: (*struct bb_uidgid_t, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72718:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72712:2
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72420:8
+	xopendir: (*char) => *struct __dirstream		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72422:7
+	xsetenv: (*char, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72714:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72713:2, file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72467:2
+	xsetgid: (unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72729:2
+	xsetuid: (unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72730:2
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70791:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70791:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70791:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70791:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70791:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70791:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70791:0
+exports (1)
+	chpst_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/chpst.c:72497:0

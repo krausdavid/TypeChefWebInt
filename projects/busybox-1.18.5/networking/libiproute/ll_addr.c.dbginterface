@@ -1,0 +1,35 @@
+fm True
+features (0)
+	
+imports (28)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71847:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71794:8
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75621:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75603:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71819:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71844:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71816:9
+	get_addr_1: (*struct {Map(family -> List((True,CUnsigned(CChar()))), bytelen -> List((True,CUnsigned(CChar()))), bitlen -> List((True,CIgnore())), data -> List((True,CArray(CUnsigned(CInt()),-1))))}, *char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75602:6
+	inet_ntop: (signed int, *void, *char, unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75579:9
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75609:2
+	snprintf: (*char, unsigned long, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75588:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75584:3
+	sscanf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75620:6
+	strchr: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75615:13, file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75600:5
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:71775:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:71775:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:71775:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:71775:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71791:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:71775:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:71775:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:71775:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:71775:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:71775:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:71775:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:71775:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:71775:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:71775:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:71775:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:71775:0
+exports (2)
+	ll_addr_a2n: (*unsigned char, signed int, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75596:0
+	ll_addr_n2a: (*unsigned char, signed int, signed int, *char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/ll_addr.c:75571:0

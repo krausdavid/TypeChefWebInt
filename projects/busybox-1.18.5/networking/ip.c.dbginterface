@@ -1,0 +1,40 @@
+fm True
+features (0)
+	
+imports (29)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70840:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70787:8
+	bb_show_usage: (void) => void		if (def(CONFIG_FEATURE_IP_ROUTE)|def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_FEATURE_IP_TUNNEL)|def(CONFIG_FEATURE_IP_RULE))		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77061:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70812:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70837:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70809:9
+	do_ipaddr: (**char) => signed int		if def(CONFIG_FEATURE_IP_ADDRESS)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77083:14
+	do_iplink: (**char) => signed int		if def(CONFIG_FEATURE_IP_LINK)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77097:14
+	do_iproute: (**char) => signed int		if def(CONFIG_FEATURE_IP_ROUTE)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77111:14
+	do_iprule: (**char) => signed int		if def(CONFIG_FEATURE_IP_RULE)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77125:14
+	do_iptunnel: (**char) => signed int		if def(CONFIG_FEATURE_IP_TUNNEL)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77139:14
+	index_in_substrings: (*char, *char) => signed int		if (def(CONFIG_FEATURE_IP_ROUTE)|def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_FEATURE_IP_TUNNEL)|def(CONFIG_FEATURE_IP_RULE))		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77273:15
+	ip_parse_common_args: (**char) => **char		if (def(CONFIG_FEATURE_IP_ROUTE)|def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_FEATURE_IP_TUNNEL)|def(CONFIG_FEATURE_IP_RULE))		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77272:8, file cprojects/busybox/busybox-1.18.5/networking/ip.c:77068:8
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70768:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70768:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70768:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70768:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70784:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70768:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70768:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70768:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70768:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70768:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70768:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70768:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70768:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70768:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70768:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70768:0
+exports (6)
+	ip_main: (signed int, **char) => signed int		if (def(CONFIG_FEATURE_IP_ROUTE)|def(CONFIG_FEATURE_IP_ADDRESS)|def(CONFIG_FEATURE_IP_LINK)|def(CONFIG_FEATURE_IP_TUNNEL)|def(CONFIG_FEATURE_IP_RULE))		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77150:0
+	ipaddr_main: (signed int, **char) => signed int		if def(CONFIG_FEATURE_IP_ADDRESS)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77081:0
+	iplink_main: (signed int, **char) => signed int		if def(CONFIG_FEATURE_IP_LINK)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77095:0
+	iproute_main: (signed int, **char) => signed int		if def(CONFIG_FEATURE_IP_ROUTE)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77109:0
+	iprule_main: (signed int, **char) => signed int		if def(CONFIG_FEATURE_IP_RULE)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77123:0
+	iptunnel_main: (signed int, **char) => signed int		if def(CONFIG_FEATURE_IP_TUNNEL)		at file cprojects/busybox/busybox-1.18.5/networking/ip.c:77137:0

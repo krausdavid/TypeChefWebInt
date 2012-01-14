@@ -1,0 +1,42 @@
+fm True
+features (0)
+	
+imports (36)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70834:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70781:8
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72101:2
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72147:3, file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72143:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70806:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70831:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70803:9
+	freecon: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72172:3, file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72109:1
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72135:8
+	lgetfilecon: (*char, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72167:8
+	lgetfilecon_raw: (*char, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72165:8
+	matchpathcon: (*char, unsigned int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72099:10
+	matchpathcon_fini: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72178:1
+	matchpathcon_init: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72142:6
+	matchpathcon_init_prefix: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72146:6
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72175:2, file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72170:3, file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72160:3, file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72105:2
+	puts: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72107:2
+	selinux_file_context_verify: (*char, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72159:6
+	set_matchpathcon_flags: (unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72139:2
+	strerror: (signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72175:51
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70762:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70762:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70762:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70762:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70778:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70762:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70762:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70762:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70762:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70762:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70762:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70762:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70762:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70762:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70762:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70762:0
+exports (1)
+	matchpathcon_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/matchpathcon.c:72127:0

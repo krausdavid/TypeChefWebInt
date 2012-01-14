@@ -1,0 +1,44 @@
+fm True
+features (0)
+	
+imports (38)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_MODINFO)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73410:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_MODINFO)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73357:8
+	bb_putchar: (signed int) => signed int		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76549:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_MODINFO)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73382:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_MODINFO)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73407:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_MODINFO)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73379:9
+	config_close: (*struct parser_t) => void		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76676:2, file busybox-1.18.5/modutils/modinfo.c:76676:2
+	config_open2: (*char, *(*char) => *struct _IO_FILE) => *struct parser_t		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76650:10
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if def(CONFIG_MODINFO)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76655:59
+	filename2modname: (*char, *char) => *char		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76660:2
+	fnmatch: (*char, *char, signed int) => signed int		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76662:7
+	free: (*void) => void		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76609:1, file busybox-1.18.5/modutils/modinfo.c:76583:2
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76645:8
+	last_char_is: (*char, signed int) => *char		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76656:10
+	memchr: (*void, signed int, unsigned long) => *void		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76599:9
+	printf: (*char, ...) => signed int		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76551:8, file busybox-1.18.5/modutils/modinfo.c:76547:10
+	strlen: (*char) => unsigned long		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76596:11
+	strncmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76602:7
+	uname: (*struct utsname) => signed int		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76649:1
+	xasprintf: (*char, ...) => *char		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76651:2, file busybox-1.18.5/modutils/modinfo.c:76581:9
+	xatoll: (*char) => signed long long		if def(CONFIG_MODINFO)		at string literal: xatoll:73338:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_MODINFO)		at string literal: xatoll_range:73338:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MODINFO)		at string literal: xatoll_range_sfx:73338:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_MODINFO)		at string literal: xatoll_sfx:73338:0
+	xatou: (*char) => unsigned int		if def(CONFIG_MODINFO)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73354:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_MODINFO)		at string literal: xatoull:73338:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MODINFO)		at string literal: xatoull_range:73338:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MODINFO)		at string literal: xatoull_range_sfx:73338:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_MODINFO)		at string literal: xatoull_sfx:73338:0
+	xfopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76652:2
+	xmalloc_open_zipped_read_close: (*char, *unsigned long) => *void		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76582:15, file busybox-1.18.5/modutils/modinfo.c:76576:14
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_MODINFO)		at string literal: xstrtoll:73338:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_MODINFO)		at string literal: xstrtoll_range:73338:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MODINFO)		at string literal: xstrtoll_range_sfx:73338:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_MODINFO)		at string literal: xstrtoull:73338:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MODINFO)		at string literal: xstrtoull_range:73338:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MODINFO)		at string literal: xstrtoull_range_sfx:73338:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_MODINFO)		at string literal: xstrtoull_sfx:73338:0
+exports (1)
+	modinfo_main: (signed int, **char) => signed int		if def(CONFIG_MODINFO)		at file busybox-1.18.5/modutils/modinfo.c:76633:0

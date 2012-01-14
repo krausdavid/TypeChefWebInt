@@ -1,0 +1,42 @@
+fm True
+features (0)
+	
+imports (36)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72880:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72827:8
+	bb_error_msg_and_die: (*char, ...) => void		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74510:2, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74500:2, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74493:2
+	bb_makedev: (unsigned int, unsigned int) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74571:21
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72852:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72877:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72849:9
+	data_align: (*struct archive_handle_t, unsigned int) => void		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74533:1, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74486:1
+	data_skip: (*struct archive_handle_t) => void		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74581:2
+	free: (*void) => void		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74639:2, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74621:4, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74595:1, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74594:1, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74587:1, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74586:1
+	full_read: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74488:8
+	memset: (*void, signed int, unsigned long) => *void		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74603:2
+	overlapping_strcpy: (*char, *char) => void		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74528:2
+	sscanf: (*char, *char, ...) => signed int		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74503:5
+	strcmp: (*char, *char) => signed int		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74535:5
+	strcpy: (*char, *char) => *char		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74560:2
+	strncmp: (*char, *char, unsigned long) => signed int		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74497:5
+	xatoll: (*char) => signed long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xatoll:72808:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xatoll_range:72808:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xatoll_range_sfx:72808:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xatoll_sfx:72808:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72824:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xatoull:72808:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xatoull_range:72808:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xatoull_range_sfx:72808:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xatoull_sfx:72808:0
+	xmalloc: (unsigned long) => *void		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74554:21
+	xread: (signed int, *void, unsigned long) => void		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74545:2, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74520:1
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xstrtoll:72808:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xstrtoll_range:72808:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xstrtoll_range_sfx:72808:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xstrtoull:72808:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xstrtoull_range:72808:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xstrtoull_range_sfx:72808:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at string literal: xstrtoull_sfx:72808:0
+	xzalloc: (unsigned long) => *void		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74544:29, file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74518:21
+exports (1)
+	get_header_cpio: (*struct archive_handle_t) => char		if (def(CONFIG_RPM2CPIO)|def(CONFIG_RPM)|def(CONFIG_CPIO))		at file busybox-1.18.5/archival/libarchive/get_header_cpio.c:74477:0

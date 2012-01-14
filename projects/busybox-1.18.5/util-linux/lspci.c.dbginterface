@@ -1,0 +1,40 @@
+fm True
+features (0)
+	
+imports (34)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70839:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70786:8
+	bb_putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72188:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70811:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70836:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70808:9
+	concat_path_file: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72137:25
+	config_close: (*struct parser_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72169:1
+	config_open2: (*char, *(*char) => *struct _IO_FILE) => *struct parser_t		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72138:10
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72141:59
+	fopen_for_read: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72138:40
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72191:1, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72190:1, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72139:1
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72206:1
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72185:3, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72183:3, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72177:2, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72173:2
+	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72208:1
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72164:6, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72158:6, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72152:6, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72147:6, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72142:6
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70767:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70767:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70767:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70767:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70783:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70767:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70767:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70767:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70767:0
+	xstrdup: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72165:19, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72143:12
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70767:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70767:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70767:0
+	xstrtou: (*char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72160:20, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72159:20, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72154:13, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72153:13, file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72148:15
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70767:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70767:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70767:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70767:0
+exports (1)
+	lspci_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/lspci.c:72204:0

@@ -1,0 +1,52 @@
+fm True
+features (0)
+	
+imports (44)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_UDHCPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:76108:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_UDHCPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:76055:8
+	add_lease: (*unsigned char, unsigned int, unsigned int, *char, signed int) => *struct dyn_lease		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80088:7
+	add_static_lease: (**struct static_lease, *unsigned char, unsigned int) => void		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79938:1
+	bb_bswap_64: (unsigned long) => unsigned long		if def(CONFIG_UDHCPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:80071:22, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:80022:22
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80093:4, file busybox-1.18.5/networking/udhcp/files.c:79994:5
+	bb_info_msg: (*char, ...) => void		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/common.h:80101:47
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_UDHCPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:76080:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_UDHCPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:76105:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_UDHCPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:76077:9
+	close: (signed int) => signed int		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80103:1, file busybox-1.18.5/networking/udhcp/files.c:80046:1
+	config_close: (*struct parser_t) => void		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80003:1
+	config_open: (*char) => *struct parser_t		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79989:10
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if def(CONFIG_UDHCPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:79990:59
+	ether_aton_r: (*char, *struct ether_addr) => *struct ether_addr		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79930:21
+	free: (*void) => void		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79908:1
+	full_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80079:8, file busybox-1.18.5/networking/udhcp/files.c:80069:5
+	full_write: (signed int, *void, unsigned long) => signed long		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80041:2, file busybox-1.18.5/networking/udhcp/files.c:80023:1
+	htonl: (unsigned int) => unsigned int		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80037:24
+	log_static_leases: (**struct static_lease) => void		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79940:1
+	ntohl: (unsigned int) => unsigned int		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80083:32, file busybox-1.18.5/networking/udhcp/files.c:80081:15, file busybox-1.18.5/networking/udhcp/files.c:80006:24, file busybox-1.18.5/networking/udhcp/files.c:80005:26
+	open_or_warn: (*char, signed int) => signed int		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80065:6, file busybox-1.18.5/networking/udhcp/files.c:80016:6
+	spawn_and_wait: (**char) => signed int		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80053:2
+	strcasecmp: (*char, *char) => signed int		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79992:7
+	strtok_r: (*char, *char, **char) => *char		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79934:13, file busybox-1.18.5/networking/udhcp/files.c:79929:14
+	time: (*signed long) => signed long		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80073:15, file busybox-1.18.5/networking/udhcp/files.c:80020:21
+	udhcp_str2nip: (*char, *void) => signed int		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79935:20
+	xatoll: (*char) => signed long long		if def(CONFIG_UDHCPD)		at string literal: xatoll:76036:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_UDHCPD)		at string literal: xatoll_range:76036:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_UDHCPD)		at string literal: xatoll_range_sfx:76036:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_UDHCPD)		at string literal: xatoll_sfx:76036:0
+	xatou: (*char) => unsigned int		if def(CONFIG_UDHCPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:76052:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_UDHCPD)		at string literal: xatoull:76036:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_UDHCPD)		at string literal: xatoull_range:76036:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_UDHCPD)		at string literal: xatoull_range_sfx:76036:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_UDHCPD)		at string literal: xatoull_sfx:76036:0
+	xstrdup: (*char) => *char		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79909:9
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_UDHCPD)		at string literal: xstrtoll:76036:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_UDHCPD)		at string literal: xstrtoll_range:76036:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_UDHCPD)		at string literal: xstrtoll_range_sfx:76036:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_UDHCPD)		at string literal: xstrtoull:76036:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_UDHCPD)		at string literal: xstrtoull_range:76036:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_UDHCPD)		at string literal: xstrtoull_range_sfx:76036:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_UDHCPD)		at string literal: xstrtoull_sfx:76036:0
+exports (3)
+	read_config: (*char) => void		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:79979:0
+	read_leases: (*char) => void		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80057:0
+	write_leases: (void) => void		if def(CONFIG_UDHCPD)		at file busybox-1.18.5/networking/udhcp/files.c:80009:0

@@ -1,0 +1,53 @@
+fm True
+features (0)
+	
+imports (47)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70854:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70801:8
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74113:3, file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74100:2, file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74088:2
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74133:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70826:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70851:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70823:9
+	bb_xioctl: (signed int, unsigned int, *void) => signed int		if !def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74141:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74017:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74009:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73998:39
+	bb_xioctl: (signed int, unsigned int, *void, *char) => signed int		if def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74141:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74017:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74006:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73998:39
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74156:2, file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74156:2
+	ctime: (*signed long) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74120:45, file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74113:58
+	fflush_all: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74121:1
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74070:7
+	localtime: (*signed long) => *struct tm		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:73979:7
+	open_read_close: (*char, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:73956:7
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74120:1
+	rtc_adjtime_is_utc: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74091:8
+	rtc_read_tm: (*struct tm, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74106:2
+	rtc_tm2time: (*struct tm, signed int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74107:13
+	rtc_xopen: (**char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74097:6
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74131:17
+	skip_dev_pfx: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:73953:11
+	snprintf: (*char, unsigned long, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:73955:1
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74124:5, file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74099:5
+	strncmp: (*char, *char, unsigned long) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:73961:8
+	sync: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74119:1
+	time: (*signed long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74103:12
+	usleep: (unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74122:1
+	xatoi: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74082:12
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70782:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70782:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70782:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70782:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70798:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70782:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70782:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70782:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70782:0
+	xchdir: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74094:1
+	xopen_xwrite_close: (*char, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74125:2
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70782:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70782:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70782:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70782:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70782:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70782:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70782:0
+exports (1)
+	rtcwake_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/rtcwake.c:74042:0

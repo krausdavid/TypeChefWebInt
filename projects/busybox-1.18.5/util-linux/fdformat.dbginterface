@@ -1,0 +1,39 @@
+fm True
+features (0)
+	
+imports (33)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_FDFORMAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72881:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_FDFORMAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72828:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74297:4, file busybox-1.18.5/util-linux/fdformat.c:74215:2
+	bb_perror_msg: (*char, ...) => void		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74295:5
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_FDFORMAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72853:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_FDFORMAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72878:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_FDFORMAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72850:9
+	bb_xioctl: (signed int, unsigned int, *void) => signed int		if (!def(CONFIG_IOCTL_HEX2STR_ERROR)&def(CONFIG_FDFORMAT))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74275:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74264:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74253:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74240:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74225:39
+	bb_xioctl: (signed int, unsigned int, *void, *char) => signed int		if (def(CONFIG_IOCTL_HEX2STR_ERROR)&def(CONFIG_FDFORMAT))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74275:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74264:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74253:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74240:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74225:39
+	close: (signed int) => signed int		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74331:30, file busybox-1.18.5/util-linux/fdformat.c:74331:30
+	free: (*void) => void		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74319:31, file busybox-1.18.5/util-linux/fdformat.c:74319:31
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74210:11
+	printf: (*char, ...) => signed int		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74321:2, file busybox-1.18.5/util-linux/fdformat.c:74304:6, file busybox-1.18.5/util-linux/fdformat.c:74291:3, file busybox-1.18.5/util-linux/fdformat.c:74289:2, file busybox-1.18.5/util-linux/fdformat.c:74281:1, file busybox-1.18.5/util-linux/fdformat.c:74259:2, file busybox-1.18.5/util-linux/fdformat.c:74237:1, file busybox-1.18.5/util-linux/fdformat.c:74232:1
+	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74292:16
+	xatoll: (*char) => signed long long		if def(CONFIG_FDFORMAT)		at string literal: xatoll:72809:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_FDFORMAT)		at string literal: xatoll_range:72809:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FDFORMAT)		at string literal: xatoll_range_sfx:72809:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_FDFORMAT)		at string literal: xatoll_sfx:72809:0
+	xatou: (*char) => unsigned int		if def(CONFIG_FDFORMAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72825:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_FDFORMAT)		at string literal: xatoull:72809:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FDFORMAT)		at string literal: xatoull_range:72809:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FDFORMAT)		at string literal: xatoull_range_sfx:72809:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_FDFORMAT)		at string literal: xatoull_sfx:72809:0
+	xmalloc: (unsigned long) => *void		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74288:9
+	xopen: (*char, signed int) => signed int		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74220:6
+	xstat: (*char, *struct stat) => void		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74213:1
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_FDFORMAT)		at string literal: xstrtoll:72809:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_FDFORMAT)		at string literal: xstrtoll_range:72809:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FDFORMAT)		at string literal: xstrtoll_range_sfx:72809:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_FDFORMAT)		at string literal: xstrtoull:72809:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FDFORMAT)		at string literal: xstrtoull_range:72809:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FDFORMAT)		at string literal: xstrtoull_range_sfx:72809:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_FDFORMAT)		at string literal: xstrtoull_sfx:72809:0
+exports (1)
+	fdformat_main: (signed int, **char) => signed int		if def(CONFIG_FDFORMAT)		at file busybox-1.18.5/util-linux/fdformat.c:74201:0

@@ -1,0 +1,41 @@
+fm True
+features (0)
+	
+imports (35)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_CHPASSWD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72881:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_CHPASSWD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72828:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74245:3, file busybox-1.18.5/loginutils/chpasswd.c:74200:3, file busybox-1.18.5/loginutils/chpasswd.c:74184:2
+	bb_info_msg: (*char, ...) => void		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74247:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_CHPASSWD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72853:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_CHPASSWD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72878:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_CHPASSWD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72850:9
+	crypt_make_salt: (*char, signed int, signed int) => signed int		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74209:10, file busybox-1.18.5/loginutils/chpasswd.c:74206:9
+	free: (*void) => void		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74251:3, file busybox-1.18.5/loginutils/chpasswd.c:74249:2
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74195:7
+	getuid: (void) => unsigned int		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74183:5
+	pw_encrypt: (*char, *char) => *char		if (!def(CONFIG_USE_BB_CRYPT)&def(CONFIG_CHPASSWD))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74213:41
+	pw_encrypt: (*char, *char, signed int) => *char		if (def(CONFIG_USE_BB_CRYPT)&def(CONFIG_CHPASSWD))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74213:41
+	strchr: (*char, signed int) => *char		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74198:9
+	strcpy: (*char, *char) => *char		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74208:4
+	update_passwd: (*char, *char, *char) => signed int		if (def(CONFIG_CHPASSWD)&((!def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&!def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)&!def(CONFIG_FEATURE_SHADOWPASSWDS))|(!def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&!def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)&def(CONFIG_FEATURE_SHADOWPASSWDS))))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74236:57, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74236:57, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74226:57
+	update_passwd: (*char, *char, *char, *char) => signed int		if (def(CONFIG_CHPASSWD)&(def(CONFIG_FEATURE_ADDUSER_TO_GROUP)|def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)|(def(CONFIG_FEATURE_SHADOWPASSWDS)&(def(CONFIG_FEATURE_ADDUSER_TO_GROUP)|def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)))))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74236:57, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74236:57, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74226:57
+	xatoll: (*char) => signed long long		if def(CONFIG_CHPASSWD)		at string literal: xatoll:72809:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_CHPASSWD)		at string literal: xatoll_range:72809:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_CHPASSWD)		at string literal: xatoll_range_sfx:72809:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_CHPASSWD)		at string literal: xatoll_sfx:72809:0
+	xatou: (*char) => unsigned int		if def(CONFIG_CHPASSWD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72825:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_CHPASSWD)		at string literal: xatoull:72809:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_CHPASSWD)		at string literal: xatoull_range:72809:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHPASSWD)		at string literal: xatoull_range_sfx:72809:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHPASSWD)		at string literal: xatoull_sfx:72809:0
+	xmalloc_fgetline: (*struct _IO_FILE) => *char		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74197:16
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_CHPASSWD)		at string literal: xstrtoll:72809:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_CHPASSWD)		at string literal: xstrtoll_range:72809:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_CHPASSWD)		at string literal: xstrtoll_range_sfx:72809:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_CHPASSWD)		at string literal: xstrtoull:72809:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_CHPASSWD)		at string literal: xstrtoull_range:72809:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHPASSWD)		at string literal: xstrtoull_range_sfx:72809:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHPASSWD)		at string literal: xstrtoull_sfx:72809:0
+	xuname2uid: (*char) => signed long		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74203:2
+exports (1)
+	chpasswd_main: (signed int, **char) => signed int		if def(CONFIG_CHPASSWD)		at file busybox-1.18.5/loginutils/chpasswd.c:74176:0

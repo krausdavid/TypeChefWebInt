@@ -1,0 +1,51 @@
+fm True
+features (0)
+	
+imports (45)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_ID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72891:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_ID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72838:8
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74211:5, file busybox-1.18.5/coreutils/id.c:74211:5
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74402:3, file busybox-1.18.5/coreutils/id.c:74370:4, file busybox-1.18.5/coreutils/id.c:74370:4
+	bb_internal_getgrouplist: (*char, unsigned int, *unsigned int, *signed int) => signed int		if (def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ID))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74244:21
+	bb_putchar: (signed int) => signed int		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74418:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_ID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72863:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_ID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72888:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_ID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72860:9
+	fflush_stdout_and_exit: (signed int) => void		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74419:1
+	fputs: (*char, *struct _IO_FILE) => signed int		if (def(CONFIG_ID)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/id.c:74405:2
+	free: (*void) => void		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74382:3, file busybox-1.18.5/coreutils/id.c:74382:3
+	freecon: (*char) => void		if (def(CONFIG_ID)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/id.c:74416:2, file busybox-1.18.5/coreutils/id.c:74416:2
+	getcon: (**char) => signed int		if (def(CONFIG_ID)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/id.c:74401:18, file busybox-1.18.5/coreutils/id.c:74385:7
+	getegid: (void) => unsigned int		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74316:9
+	geteuid: (void) => unsigned int		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74318:9
+	getgid: (void) => unsigned int		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74317:9
+	getgrouplist: (*char, unsigned int, *unsigned int, *signed int) => signed int		if (!def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ID))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74244:21
+	getgroups: (signed int, unsigned int[]) => signed int		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74258:11
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74301:7
+	getuid: (void) => unsigned int		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74319:9
+	gid2group: (unsigned int) => *char		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74221:25
+	is_selinux_enabled: (void) => signed int		if (def(CONFIG_ID)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/id.c:74384:6
+	printf: (*char, ...) => signed int		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74386:4, file busybox-1.18.5/coreutils/id.c:74199:3, file busybox-1.18.5/coreutils/id.c:74195:2, file busybox-1.18.5/coreutils/id.c:74192:2
+	selinux_or_die: (void) => void		if (def(CONFIG_ID)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/id.c:74400:2
+	uid2uname: (unsigned int) => *char		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74226:25
+	xatoll: (*char) => signed long long		if def(CONFIG_ID)		at string literal: xatoll:72819:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_ID)		at string literal: xatoll_range:72819:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ID)		at string literal: xatoll_range_sfx:72819:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_ID)		at string literal: xatoll_sfx:72819:0
+	xatou: (*char) => unsigned int		if def(CONFIG_ID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72835:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_ID)		at string literal: xatoull:72819:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ID)		at string literal: xatoull_range:72819:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ID)		at string literal: xatoull_range_sfx:72819:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_ID)		at string literal: xatoull_sfx:72819:0
+	xgetpwnam: (*char) => *struct passwd		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74312:21
+	xmalloc: (unsigned long) => *void		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74345:11
+	xrealloc: (*void, unsigned long) => *void		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74349:12
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_ID)		at string literal: xstrtoll:72819:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_ID)		at string literal: xstrtoll_range:72819:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ID)		at string literal: xstrtoll_range_sfx:72819:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_ID)		at string literal: xstrtoull:72819:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ID)		at string literal: xstrtoull_range:72819:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ID)		at string literal: xstrtoull_range_sfx:72819:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_ID)		at string literal: xstrtoull_sfx:72819:0
+exports (1)
+	id_main: (signed int, **char) => signed int		if def(CONFIG_ID)		at file busybox-1.18.5/coreutils/id.c:74276:0

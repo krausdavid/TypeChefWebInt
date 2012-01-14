@@ -1,0 +1,52 @@
+fm True
+features (0)
+	
+imports (46)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_IOSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72893:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_IOSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72840:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74762:3
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74704:2
+	bb_putchar: (signed int) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75186:1, file busybox-1.18.5/procps/iostat.c:75182:2, file busybox-1.18.5/procps/iostat.c:75161:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_IOSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72865:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_IOSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72890:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_IOSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72862:9
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75033:1, file busybox-1.18.5/procps/iostat.c:74974:1, file busybox-1.18.5/procps/iostat.c:74764:1, file busybox-1.18.5/procps/iostat.c:74749:1
+	fgets: (*char, signed int, *struct _IO_FILE) => *char		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75019:8, file busybox-1.18.5/procps/iostat.c:74932:8, file busybox-1.18.5/procps/iostat.c:74760:5, file busybox-1.18.5/procps/iostat.c:74737:8
+	free: (*void) => void		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75198:2, file busybox-1.18.5/procps/iostat.c:75197:2, file busybox-1.18.5/procps/iostat.c:75196:2, file busybox-1.18.5/procps/iostat.c:75198:2, file busybox-1.18.5/procps/iostat.c:75197:2, file busybox-1.18.5/procps/iostat.c:75196:2
+	get_cpu_count: (void) => unsigned int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75087:16
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75094:7
+	localtime_r: (*signed long, *struct tm) => *struct tm		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74717:1
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75081:1, file busybox-1.18.5/procps/iostat.c:74735:1
+	printf: (*char, ...) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74867:1, file busybox-1.18.5/procps/iostat.c:74845:1, file busybox-1.18.5/procps/iostat.c:74844:1, file busybox-1.18.5/procps/iostat.c:74819:1, file busybox-1.18.5/procps/iostat.c:74724:1, file busybox-1.18.5/procps/iostat.c:74708:1
+	puts: (*char) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74874:2, file busybox-1.18.5/procps/iostat.c:74872:2, file busybox-1.18.5/procps/iostat.c:74870:2, file busybox-1.18.5/procps/iostat.c:74859:1
+	sleep: (unsigned int) => unsigned int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75183:2
+	sscanf: (*char, *char, ...) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75020:7, file busybox-1.18.5/procps/iostat.c:74933:7, file busybox-1.18.5/procps/iostat.c:74761:6, file busybox-1.18.5/procps/iostat.c:74740:3
+	starts_with_cpu: (*char) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74739:6
+	strcmp: (*char, *char) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75111:6, file busybox-1.18.5/procps/iostat.c:75043:6, file busybox-1.18.5/procps/iostat.c:74997:6, file busybox-1.18.5/procps/iostat.c:74909:6
+	strftime: (*char, unsigned long, *char, *struct tm) => unsigned long		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74723:1, file busybox-1.18.5/procps/iostat.c:74706:1
+	strncmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74991:5
+	strncpy: (*char, *char, unsigned long) => *char		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75002:1
+	sysconf: (signed int) => signed long		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74690:8
+	time: (*signed long) => signed long		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74716:1
+	uname: (*struct utsname) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:74703:5
+	xatoi_positive: (*char) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75127:11, file busybox-1.18.5/procps/iostat.c:75122:13
+	xatoll: (*char) => signed long long		if def(CONFIG_IOSTAT)		at string literal: xatoll:72821:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_IOSTAT)		at string literal: xatoll_range:72821:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_IOSTAT)		at string literal: xatoll_range_sfx:72821:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_IOSTAT)		at string literal: xatoll_sfx:72821:0
+	xatou: (*char) => unsigned int		if def(CONFIG_IOSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72837:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_IOSTAT)		at string literal: xatoull:72821:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_IOSTAT)		at string literal: xatoull_range:72821:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_IOSTAT)		at string literal: xatoull_range_sfx:72821:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_IOSTAT)		at string literal: xatoull_sfx:72821:0
+	xfopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75017:6, file busybox-1.18.5/procps/iostat.c:74929:6, file busybox-1.18.5/procps/iostat.c:74758:6, file busybox-1.18.5/procps/iostat.c:74733:6
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_IOSTAT)		at string literal: xstrtoll:72821:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_IOSTAT)		at string literal: xstrtoll_range:72821:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_IOSTAT)		at string literal: xstrtoll_range_sfx:72821:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_IOSTAT)		at string literal: xstrtoull:72821:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_IOSTAT)		at string literal: xstrtoull_range:72821:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_IOSTAT)		at string literal: xstrtoull_range_sfx:72821:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_IOSTAT)		at string literal: xstrtoull_sfx:72821:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75132:22, file busybox-1.18.5/procps/iostat.c:75107:12, file busybox-1.18.5/procps/iostat.c:75079:42
+exports (1)
+	iostat_main: (signed int, **char) => signed int		if def(CONFIG_IOSTAT)		at file busybox-1.18.5/procps/iostat.c:75069:0

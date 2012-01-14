@@ -1,0 +1,61 @@
+fm True
+features (0)
+	
+imports (37)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_USE_BB_PWD_GRP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72893:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_USE_BB_PWD_GRP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72840:8
+	__assert_fail: (*char, *char, unsigned int, *char) => void		if def(CONFIG_USE_BB_PWD_GRP)		at file systems/redhat/usr/include/assert.h:75644:83
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_USE_BB_PWD_GRP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72865:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_USE_BB_PWD_GRP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72890:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_USE_BB_PWD_GRP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72862:9
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75655:2, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75495:2, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75426:2, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:75220:1, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:75144:1, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:75068:1, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:74998:1, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:74922:1
+	feof: (*struct _IO_FILE) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:76054:7
+	fgets: (*char, signed int, *struct _IO_FILE) => *char		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:76053:7
+	fopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75640:10, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75518:8, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75450:8, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:75203:10, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:75127:10, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:75051:10, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:74981:10, file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:74905:10
+	free: (*void) => void		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75696:1, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75674:1
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75692:2
+	rewind: (*struct _IO_FILE) => void		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75479:2, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75410:2
+	setgroups: (unsigned long, *unsigned int) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75673:11
+	strchr: (*char, signed int) => *char		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:76002:10, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75900:10, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75849:10
+	strcmp: (*char, *char) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75648:8, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75057:34, file busybox-1.18.5/libpwdgrp/pwd_grp.c:74987:34, file busybox-1.18.5/libpwdgrp/pwd_grp.c:74911:34
+	strlen: (*char) => unsigned long		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:76061:18
+	strtoul: (*char, **char, signed int) => unsigned long		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:76007:19, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75907:20, file busybox-1.18.5/libpwdgrp/pwd_grp.c:75854:21
+	xatoll: (*char) => signed long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xatoll:72821:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xatoll_range:72821:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xatoll_range_sfx:72821:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xatoll_sfx:72821:0
+	xatou: (*char) => unsigned int		if def(CONFIG_USE_BB_PWD_GRP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72837:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xatoull:72821:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xatoull_range:72821:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xatoull_range_sfx:72821:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xatoull_sfx:72821:0
+	xmalloc: (unsigned long) => *void		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75636:14
+	xrealloc_vector_helper: (*void, unsigned int, signed int) => *void		if def(CONFIG_USE_BB_PWD_GRP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75650:45
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xstrtoll:72821:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xstrtoll_range:72821:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xstrtoll_range_sfx:72821:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xstrtoull:72821:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xstrtoull_range:72821:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xstrtoull_range_sfx:72821:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_USE_BB_PWD_GRP)		at string literal: xstrtoull_sfx:72821:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:74695:19
+exports (19)
+	bb_internal_endgrent: (void) => void		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75484:0
+	bb_internal_endpwent: (void) => void		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75415:0
+	bb_internal_fgetgrent_r: (*struct _IO_FILE, *struct group, *char, unsigned long, **struct group) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:74742:0
+	bb_internal_fgetpwent_r: (*struct _IO_FILE, *struct passwd, *char, unsigned long, **struct passwd) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:74719:0
+	bb_internal_getgrent_r: (*struct group, *char, unsigned long, **struct group) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75501:0
+	bb_internal_getgrgid: (unsigned int) => *struct group		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75263:0
+	bb_internal_getgrgid_r: (unsigned int, *struct group, *char, unsigned long, **struct group) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:75186:0
+	bb_internal_getgrnam: (*char) => *struct group		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75350:0
+	bb_internal_getgrnam_r: (*char, *struct group, *char, unsigned long, **struct group) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:74964:0
+	bb_internal_getgrouplist: (*char, unsigned int, *unsigned int, *signed int) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75678:0
+	bb_internal_getpwent_r: (*struct passwd, *char, unsigned long, **struct passwd) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75433:0
+	bb_internal_getpwnam: (*char) => *struct passwd		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75324:0
+	bb_internal_getpwnam_r: (*char, *struct passwd, *char, unsigned long, **struct passwd) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:74888:0
+	bb_internal_getpwuid: (unsigned int) => *struct passwd		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75237:0
+	bb_internal_getpwuid_r: (unsigned int, *struct passwd, *char, unsigned long, **struct passwd) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:75110:0
+	bb_internal_getspnam_r: (*char, *struct spwd, *char, unsigned long, **struct spwd) => signed int		if (def(CONFIG_USE_BB_SHADOW)&def(CONFIG_USE_BB_PWD_GRP))		at file busybox-1.18.5/libpwdgrp/pwd_grp_internal.c:75041:0
+	bb_internal_initgroups: (*char, unsigned int) => signed int		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75661:0
+	bb_internal_setgrent: (void) => void		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75468:0
+	bb_internal_setpwent: (void) => void		if def(CONFIG_USE_BB_PWD_GRP)		at file busybox-1.18.5/libpwdgrp/pwd_grp.c:75399:0

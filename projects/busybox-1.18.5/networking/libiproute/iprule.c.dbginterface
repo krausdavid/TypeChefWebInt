@@ -1,0 +1,57 @@
+fm True
+features (0)
+	
+imports (51)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72950:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72897:8
+	addattr32: (*struct nlmsghdr, signed int, signed int, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77712:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77693:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77687:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77676:3
+	addattr_l: (*struct nlmsghdr, signed int, signed int, *void, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77707:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77668:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77662:3
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77751:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77656:3
+	bb_putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77581:1, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77526:1
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77721:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72922:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72947:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72919:9
+	bb_warn_ignoring_args: (*char) => void		if def(CONFIG_DESKTOP)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:77599:36
+	fputs: (*char, *struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77579:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77517:3
+	get_addr32: (*char) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77712:47
+	get_prefix: (*struct {Map(family -> List((True,CUnsigned(CChar()))), bytelen -> List((True,CUnsigned(CChar()))), bitlen -> List((True,CSigned(CShort()))), data -> List((True,CArray(CUnsigned(CInt()),-1))))}, *char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77666:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77660:3
+	get_rt_realms: (*unsigned int, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77691:7
+	get_u32: (*char, *char) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77686:12, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77675:10
+	incomplete_command: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77718:38, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77711:38, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77706:38, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77698:38, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77690:38, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77685:38, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77679:38, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77674:38, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77665:38, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77659:38
+	index_in_substrings: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77749:18, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77654:8
+	invarg: (*char, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77723:4, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77700:4, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77692:4, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77681:4
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77637:1, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77493:1
+	parse_rtattr: (*struct rtattr[], signed int, *struct rtattr, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77494:1
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77577:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77572:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77566:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77563:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77556:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77552:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77548:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77545:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77541:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77536:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77530:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77524:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77522:2, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77511:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77508:1, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77505:1
+	rt_addr_n2a: (signed int, *void, *char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77573:49, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77536:49, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77530:23, file cprojects/busybox/busybox-1.18.5/networking/libiproute/utils.h:77517:49, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77511:19
+	rtnl_dsfield_a2n: (*unsigned int, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77680:7
+	rtnl_dsfield_n2a: (signed int, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77545:20
+	rtnl_rtntype_a2n: (*signed int, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77722:7
+	rtnl_rtntype_n2a: (signed int, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77579:8
+	rtnl_rtrealm_n2a: (signed int, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77567:3, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77564:4
+	rtnl_rttable_a2n: (*unsigned int, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77699:7
+	rtnl_rttable_n2a: (signed int, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77556:23
+	rtnl_talk: (*struct rtnl_handle, *struct nlmsghdr, *struct nlmsghdr) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/libnetlink.h:77737:62
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77707:50
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72878:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72878:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72878:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:72878:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72894:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:72878:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:72878:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:72878:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:72878:0
+	xrtnl_dump_filter: (*struct rtnl_handle, *(*struct sockaddr_nl, *struct nlmsghdr, *void) => signed int, *void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77611:1
+	xrtnl_open: (*struct rtnl_handle) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77735:1, file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77608:1
+	xrtnl_wilddump_request: (*struct rtnl_handle, signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77610:1
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:72878:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:72878:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:72878:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:72878:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:72878:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:72878:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:72878:0
+exports (1)
+	do_iprule: (**char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/libiproute/iprule.c:77744:0

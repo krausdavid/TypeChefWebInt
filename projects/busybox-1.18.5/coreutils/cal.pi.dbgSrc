@@ -1,0 +1,599 @@
+push file host/platform-redhat.h -- True (True)
+pop file host/platform-redhat.h
+push file /app/archive/kos/share/TypeChef/busybox/config.h -- True (True)
+pop file /app/archive/kos/share/TypeChef/busybox/config.h
+push file cprojects/busybox/busybox-1.18.5/coreutils/cal.c -- True (True)
+	push file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h -- True (True)
+		push file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/limits.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/cdefs.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/cdefs.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs-64.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs-64.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/limits.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/limits.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix1_lim.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/local_lim.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/limits.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/limits.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/local_lim.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix1_lim.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix2_lim.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix2_lim.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/limits.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/byteswap.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/byteswap.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/endian.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/endian.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wchar.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wchar.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdbool.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdbool.h
+		pop file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/ctype.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/typesizes.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/typesizes.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/ctype.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/dirent.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/dirent.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/dirent.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix1_lim.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix1_lim.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/dirent.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/errno.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/errno.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/errno.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/errno.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/errno.h -- True (True)
+							push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/errno-base.h -- True (True)
+							pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/errno-base.h
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/errno.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/errno.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/errno.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/errno.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/errno.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/fcntl.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/fcntl.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/select.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/select.h -- True (True)
+							push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+							pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/select.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigset.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigset.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h -- True (True)
+							push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+							pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/time.h -- True (True)
+							push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+							pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/time.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/select.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/pthreadtypes.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/pthreadtypes.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/fcntl.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/stat.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/stat.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/fcntl.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/inttypes.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/inttypes.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/netdb.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/netinet/in.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/socket.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/uio.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/uio.h -- True (True)
+							push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h -- True (True)
+							pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/uio.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/uio.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/socket.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sockaddr.h -- True (True)
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sockaddr.h
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/socket.h -- True (True)
+							push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/socket.h -- True (True)
+								push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/sockios.h -- True (True)
+									push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/sockios.h -- True (True)
+									pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/sockios.h
+								pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/sockios.h
+							pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/socket.h
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/socket.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/socket.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/socket.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/in.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/in.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/netinet/in.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/rpc/netdb.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/rpc/netdb.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/netdb.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/netdb.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/netdb.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/setjmp.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/setjmp.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/setjmp.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigset.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigset.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/setjmp.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/signal.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigset.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigset.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/signum.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/signum.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/siginfo.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/siginfo.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigaction.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigaction.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigcontext.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigcontext.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigstack.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigstack.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/ucontext.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/signal.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/signal.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigcontext.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigcontext.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/ucontext.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/pthreadtypes.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/pthreadtypes.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigthread.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sigthread.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/signal.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h -- True (True)
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/libio.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/_G_config.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/wchar.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/wchar.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/_G_config.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/libio.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/stdio_lim.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/stdio_lim.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sys_errlist.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/sys_errlist.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdlib.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/waitflags.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/waitflags.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/waitstatus.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/waitstatus.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/alloca.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/alloca.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdlib.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h -- True (True)
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/string.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/string.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/poll.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/poll.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/poll.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/poll.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/ioctl.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/ioctls.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/ioctls.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/ioctls.h -- True (True)
+						push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/ioctl.h -- True (True)
+							push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/ioctl.h -- True (True)
+								push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/ioctl.h -- True (True)
+								pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/ioctl.h
+							pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/ioctl.h
+						pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/ioctl.h
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/ioctls.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/ioctls.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/ioctls.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/ioctl-types.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/ioctls.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/ioctls.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/ioctls.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/ioctls.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/ioctl-types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/ttydefaults.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/ttydefaults.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/ioctl.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/mman.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/mman.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/mman.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/mman.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/socket.h -- True (True)
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/socket.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/stat.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/stat.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/stat.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/stat.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/time.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/time.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/time.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/select.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/select.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/time.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h -- True (True)
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/wait.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/signal.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/signal.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/resource.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/resource.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/time.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/time.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/resource.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/resource.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/siginfo.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/siginfo.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/wait.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/termios.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/termios.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/termios.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/ttydefaults.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/ttydefaults.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/termios.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/time.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/time.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/time.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/unistd.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix_opt.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix_opt.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/environments.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/environments.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/confname.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/confname.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/getopt.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/getopt.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/unistd.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/param.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/limits.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix1_lim.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix1_lim.h
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix2_lim.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix2_lim.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/limits.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/limits.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/limits.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/param.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/param.h -- True (True)
+					push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/param.h -- True (True)
+					pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/param.h
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/param.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/param.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/param.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/mntent.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/paths.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/paths.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/mntent.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/statfs.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/statfs.h -- True (True)
+				push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+				pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/statfs.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/statfs.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/selinux/selinux.h -- def(CONFIG_SELINUX) (def(CONFIG_SELINUX))
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h -- True (def(CONFIG_SELINUX))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h -- True (def(CONFIG_SELINUX))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/selinux/selinux.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/selinux/context.h -- def(CONFIG_SELINUX) (def(CONFIG_SELINUX))
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/selinux/context.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/selinux/flask.h -- def(CONFIG_SELINUX) (def(CONFIG_SELINUX))
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/selinux/flask.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/selinux/av_permissions.h -- def(CONFIG_SELINUX) (def(CONFIG_SELINUX))
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/selinux/av_permissions.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/locale.h -- def(CONFIG_LOCALE_SUPPORT) (def(CONFIG_LOCALE_SUPPORT))
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (def(CONFIG_LOCALE_SUPPORT))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (def(CONFIG_LOCALE_SUPPORT))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/locale.h -- True (def(CONFIG_LOCALE_SUPPORT))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/locale.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h -- True (def(CONFIG_LOCALE_SUPPORT))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/locale.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/pwd.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/pwd.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/grp.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/grp.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/shadow.h -- !def(CONFIG_USE_BB_SHADOW) ((def(CONFIG_FEATURE_SHADOWPASSWDS)&!def(CONFIG_USE_BB_SHADOW)))
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True ((def(CONFIG_FEATURE_SHADOWPASSWDS)&!def(CONFIG_USE_BB_SHADOW)))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/paths.h -- True ((def(CONFIG_FEATURE_SHADOWPASSWDS)&!def(CONFIG_USE_BB_SHADOW)))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/paths.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h -- True ((def(CONFIG_FEATURE_SHADOWPASSWDS)&!def(CONFIG_USE_BB_SHADOW)))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- True ((def(CONFIG_FEATURE_SHADOWPASSWDS)&!def(CONFIG_USE_BB_SHADOW)))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/shadow.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/arpa/inet.h -- True (True)
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/netinet/in.h -- True (True)
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/netinet/in.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/arpa/inet.h
+		push file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/pwd_.h -- def(CONFIG_USE_BB_PWD_GRP) (def(CONFIG_USE_BB_PWD_GRP))
+		pop file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/pwd_.h
+		push file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/grp_.h -- def(CONFIG_USE_BB_PWD_GRP) (def(CONFIG_USE_BB_PWD_GRP))
+		pop file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/grp_.h
+		push file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/shadow_.h -- def(CONFIG_USE_BB_SHADOW) ((def(CONFIG_FEATURE_SHADOWPASSWDS)&def(CONFIG_USE_BB_SHADOW)))
+		pop file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/shadow_.h
+		push file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h -- True (True)
+		pop file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h
+	pop file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h
+	push file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/unicode.h -- True (True)
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/wchar.h -- def(CONFIG_UNICODE_USING_LOCALE) (def(CONFIG_UNICODE_USING_LOCALE))
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h -- def(CONFIG_UNICODE_USING_LOCALE) (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdio.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h -- def(CONFIG_UNICODE_USING_LOCALE) (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wchar.h -- def(CONFIG_UNICODE_USING_LOCALE) (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wchar.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h -- def(CONFIG_UNICODE_USING_LOCALE) (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stddef.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h -- True (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/wchar.h
+		push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/wctype.h -- def(CONFIG_UNICODE_USING_LOCALE) (def(CONFIG_UNICODE_USING_LOCALE))
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h -- True (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h -- True (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/types.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/wchar.h -- True (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/wchar.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h -- True (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h
+			push file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h -- True (def(CONFIG_UNICODE_USING_LOCALE))
+			pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/xlocale.h
+		pop file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/wctype.h
+	pop file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/unicode.h
+pop file cprojects/busybox/busybox-1.18.5/coreutils/cal.c
+
+
+
+Statistics (max_nesting,header_count,distinct files):
+10;297;133

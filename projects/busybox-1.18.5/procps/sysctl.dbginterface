@@ -1,0 +1,52 @@
+fm True
+features (0)
+	
+imports (46)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_BB_SYSCTL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72887:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_BB_SYSCTL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72834:8
+	access: (*char, signed int) => signed int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74207:7
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74261:4, file busybox-1.18.5/procps/sysctl.c:74245:3, file busybox-1.18.5/procps/sysctl.c:74238:3
+	bb_perror_msg: (*char, ...) => void		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74287:3, file busybox-1.18.5/procps/sysctl.c:74264:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_BB_SYSCTL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72859:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_BB_SYSCTL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72884:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_BB_SYSCTL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72856:9
+	close: (signed int) => signed int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74285:2, file busybox-1.18.5/procps/sysctl.c:74277:2
+	closedir: (*struct __dirstream) => signed int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74336:2
+	concat_subpath_file: (*char, *char) => *char		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74328:10
+	config_close: (*struct parser_t) => void		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74380:2, file busybox-1.18.5/procps/sysctl.c:74380:2
+	config_open: (*char) => *struct parser_t		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74355:10
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if def(CONFIG_BB_SYSCTL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74365:59
+	fputc: (signed int, *struct _IO_FILE) => signed int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74298:4
+	free: (*void) => void		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74370:2, file busybox-1.18.5/procps/sysctl.c:74340:2, file busybox-1.18.5/procps/sysctl.c:74334:3, file busybox-1.18.5/procps/sysctl.c:74310:1, file busybox-1.18.5/procps/sysctl.c:74307:2
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74397:7
+	open: (*char, signed int, ...) => signed int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74254:7, file busybox-1.18.5/procps/sysctl.c:74252:7
+	opendir: (*char) => *struct __dirstream		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74324:9
+	printf: (*char, ...) => signed int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74296:4, file busybox-1.18.5/procps/sysctl.c:74279:3
+	puts: (*char) => signed int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74280:2
+	readdir: (*struct __dirstream) => *struct dirent		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74327:18
+	stat: (*char, *struct stat) => signed int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74322:1
+	strchr: (*char, signed int) => *char		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74236:9
+	strlen: (*char) => unsigned long		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74197:14
+	xasprintf: (*char, ...) => *char		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74368:7
+	xatoll: (*char) => signed long long		if def(CONFIG_BB_SYSCTL)		at string literal: xatoll:72815:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_BB_SYSCTL)		at string literal: xatoll_range:72815:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_BB_SYSCTL)		at string literal: xatoll_range_sfx:72815:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_BB_SYSCTL)		at string literal: xatoll_sfx:72815:0
+	xatou: (*char) => unsigned int		if def(CONFIG_BB_SYSCTL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72831:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_BB_SYSCTL)		at string literal: xatoull:72815:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_BB_SYSCTL)		at string literal: xatoull_range:72815:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_BB_SYSCTL)		at string literal: xatoull_range_sfx:72815:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_BB_SYSCTL)		at string literal: xatoull_sfx:72815:0
+	xchdir: (*char) => void		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74407:1, file busybox-1.18.5/procps/sysctl.c:74357:1
+	xmalloc_read: (signed int, *unsigned long) => *void		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74284:17
+	xstrdup: (*char) => *char		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74338:15, file busybox-1.18.5/procps/sysctl.c:74226:11
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_BB_SYSCTL)		at string literal: xstrtoll:72815:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_BB_SYSCTL)		at string literal: xstrtoll_range:72815:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_BB_SYSCTL)		at string literal: xstrtoll_range_sfx:72815:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_BB_SYSCTL)		at string literal: xstrtoull:72815:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_BB_SYSCTL)		at string literal: xstrtoull_range:72815:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_BB_SYSCTL)		at string literal: xstrtoull_range_sfx:72815:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_BB_SYSCTL)		at string literal: xstrtoull_sfx:72815:0
+	xwrite_str: (signed int, *char) => void		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74276:2
+exports (1)
+	sysctl_main: (signed int, **char) => signed int		if def(CONFIG_BB_SYSCTL)		at file busybox-1.18.5/procps/sysctl.c:74392:0

@@ -1,0 +1,53 @@
+fm True
+features (0)
+	
+imports (47)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_SCRIPT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72886:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_SCRIPT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72833:8
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_SCRIPT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74260:80
+	bb_simple_perror_msg_and_die: (*char) => void		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74377:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_SCRIPT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72858:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_SCRIPT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_SCRIPT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	cfmakeraw: (*struct termios) => void		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74249:1
+	close: (signed int) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74361:1, file busybox-1.18.5/util-linux/script.c:74359:1
+	execl: (*char, *char, ...) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74376:1
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74316:6, file busybox-1.18.5/util-linux/script.c:74316:6
+	fsync: (signed int) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74322:6
+	full_write: (signed int, *void, unsigned long) => signed long		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74348:3, file busybox-1.18.5/util-linux/script.c:74347:3, file busybox-1.18.5/util-linux/script.c:74333:5, file busybox-1.18.5/util-linux/script.c:74320:5, file busybox-1.18.5/util-linux/script.c:74319:5
+	getenv: (*char) => *char		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74237:9
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74214:7
+	gettimeofday: (*struct timeval, *struct timezone) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74314:6, file busybox-1.18.5/util-linux/script.c:74314:6
+	ioctl: (signed int, unsigned long, ...) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74372:1, file busybox-1.18.5/util-linux/script.c:74369:2, file busybox-1.18.5/util-linux/script.c:74246:12
+	ndelay_on: (signed int) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74282:2
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74290:7
+	printf: (*char, ...) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74354:3, file busybox-1.18.5/util-linux/script.c:74235:2
+	record_signo: (signed int) => void		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74256:17
+	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74346:28, file busybox-1.18.5/util-linux/script.c:74327:12, file busybox-1.18.5/util-linux/script.c:74297:12
+	setsid: (void) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74371:1
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74256:1
+	tcgetattr: (signed int, *struct termios) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74245:11
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74367:2, file busybox-1.18.5/util-linux/script.c:74352:3, file busybox-1.18.5/util-linux/script.c:74251:1
+	time: (*signed long) => signed long		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74274:41, file busybox-1.18.5/util-linux/script.c:74274:41
+	vfork: (void) => signed int		if def(CONFIG_SCRIPT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74260:44
+	xatoll: (*char) => signed long long		if def(CONFIG_SCRIPT)		at string literal: xatoll:72814:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_SCRIPT)		at string literal: xatoll_range:72814:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SCRIPT)		at string literal: xatoll_range_sfx:72814:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_SCRIPT)		at string literal: xatoll_sfx:72814:0
+	xatou: (*char) => unsigned int		if def(CONFIG_SCRIPT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_SCRIPT)		at string literal: xatoull:72814:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SCRIPT)		at string literal: xatoull_range:72814:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SCRIPT)		at string literal: xatoull_range_sfx:72814:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_SCRIPT)		at string literal: xatoull_sfx:72814:0
+	xdup2: (signed int, signed int) => void		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74364:1, file busybox-1.18.5/util-linux/script.c:74363:1
+	xgetpty: (*char) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74242:7
+	xopen: (*char, signed int) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74362:1, file busybox-1.18.5/util-linux/script.c:74277:10
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_SCRIPT)		at string literal: xstrtoll:72814:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_SCRIPT)		at string literal: xstrtoll_range:72814:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SCRIPT)		at string literal: xstrtoll_range_sfx:72814:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_SCRIPT)		at string literal: xstrtoull:72814:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SCRIPT)		at string literal: xstrtoull_range:72814:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SCRIPT)		at string literal: xstrtoull_range_sfx:72814:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_SCRIPT)		at string literal: xstrtoull_sfx:72814:0
+exports (1)
+	script_main: (signed int, **char) => signed int		if def(CONFIG_SCRIPT)		at file busybox-1.18.5/util-linux/script.c:74172:0

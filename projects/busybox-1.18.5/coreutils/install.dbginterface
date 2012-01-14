@@ -1,0 +1,55 @@
+fm True
+features (0)
+	
+imports (49)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_INSTALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_INSTALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72829:8
+	bb_basename: (*char) => *char		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74371:34
+	bb_make_directory: (*char, signed long, signed int) => signed int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74365:4, file busybox-1.18.5/coreutils/install.c:74358:7
+	bb_parse_mode: (*char, *unsigned int) => signed int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74335:2
+	bb_perror_msg: (*char, ...) => void		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74404:3, file busybox-1.18.5/coreutils/install.c:74393:3, file busybox-1.18.5/coreutils/install.c:74384:5, file busybox-1.18.5/coreutils/install.c:74221:3
+	bb_show_usage: (void) => void		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74349:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_INSTALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72854:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_INSTALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72879:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_INSTALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72851:9
+	chmod: (*char, unsigned int) => signed int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74392:6
+	concat_path_file: (*char, *char) => *char		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74371:11
+	copy_file: (*char, *char, signed int) => signed int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74372:7
+	dirname: (*char) => *char		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74365:22
+	free: (*void) => void		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74416:3, file busybox-1.18.5/coreutils/install.c:74416:3, file busybox-1.18.5/coreutils/install.c:74368:4
+	freecon: (*char) => void		if (def(CONFIG_INSTALL)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/install.c:74227:1
+	get_ug_id: (*char, *(*char) => signed long) => unsigned long		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74337:28, file busybox-1.18.5/coreutils/install.c:74336:28
+	getgid: (void) => unsigned int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74337:61
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74296:8
+	getuid: (void) => unsigned int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74336:61
+	is_selinux_enabled: (void) => signed int		if (def(CONFIG_INSTALL)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/install.c:74205:6
+	lchown: (*char, unsigned int, unsigned int) => signed int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74402:6
+	lsetfilecon: (*char, *char) => signed int		if (def(CONFIG_INSTALL)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/install.c:74219:5
+	lstat: (*char, *struct stat) => signed int		if (def(CONFIG_INSTALL)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/install.c:74208:5
+	matchpathcon: (*char, unsigned int, **char) => signed int		if (def(CONFIG_INSTALL)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/install.c:74212:5
+	selinux_or_die: (void) => void		if (def(CONFIG_INSTALL)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/install.c:74317:2
+	setfscreatecon_or_die: (*char) => void		if (def(CONFIG_INSTALL)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/install.c:74323:3
+	spawn_and_wait: (**char) => signed int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74383:8
+	stat: (*char, *struct stat) => signed int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74345:10
+	strcmp: (*char, *char) => signed int		if (def(CONFIG_INSTALL)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_SELINUX)))		at file busybox-1.18.5/coreutils/install.c:74215:5
+	xatoll: (*char) => signed long long		if def(CONFIG_INSTALL)		at string literal: xatoll:72810:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_INSTALL)		at string literal: xatoll_range:72810:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_INSTALL)		at string literal: xatoll_range_sfx:72810:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_INSTALL)		at string literal: xatoll_sfx:72810:0
+	xatou: (*char) => unsigned int		if def(CONFIG_INSTALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72826:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_INSTALL)		at string literal: xatoull:72810:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_INSTALL)		at string literal: xatoull_range:72810:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_INSTALL)		at string literal: xatoull_range_sfx:72810:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_INSTALL)		at string literal: xatoull_sfx:72810:0
+	xgroup2gid: (*char) => signed long		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74337:47
+	xstrdup: (*char) => *char		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74364:17
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_INSTALL)		at string literal: xstrtoll:72810:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_INSTALL)		at string literal: xstrtoll_range:72810:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_INSTALL)		at string literal: xstrtoll_range_sfx:72810:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_INSTALL)		at string literal: xstrtoull:72810:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_INSTALL)		at string literal: xstrtoull_range:72810:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_INSTALL)		at string literal: xstrtoull_range_sfx:72810:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_INSTALL)		at string literal: xstrtoull_sfx:72810:0
+	xuname2uid: (*char) => signed long		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74336:47
+exports (1)
+	install_main: (signed int, **char) => signed int		if def(CONFIG_INSTALL)		at file busybox-1.18.5/coreutils/install.c:74239:0

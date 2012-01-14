@@ -1,0 +1,1 @@
+(definedEx(CONFIG_ADDGROUP) || definedEx(CONFIG_DELGROUP) || definedEx(CONFIG_CHPASSWD) || definedEx(CONFIG_ADDUSER) || definedEx(CONFIG_DELUSER) || definedEx(CONFIG_PASSWD))

@@ -1,0 +1,42 @@
+fm True
+features (0)
+	
+imports (36)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70842:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70789:8
+	bb_bswap_64: (unsigned long) => unsigned long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h:79212:22
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70814:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70839:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70811:9
+	ctime: (*signed long) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79252:9
+	fputs: (*char, *struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79252:3
+	free: (*void) => void		if def(CONFIG_UNICODE_SUPPORT)		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79228:3
+	full_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79217:8
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79203:7
+	inet_ntoa: (struct in_addr) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79234:24, file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79227:23
+	init_unicode: (void) => void		if ((def(CONFIG_UNICODE_SUPPORT)&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&(!def(CONFIG_UNICODE_SUPPORT)|def(CONFIG_UNICODE_USING_LOCALE)|!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)|(def(CONFIG_UNICODE_SUPPORT)&def(CONFIG_UNICODE_USING_LOCALE)))&def(CONFIG_UNICODE_USING_LOCALE))|((def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)&def(CONFIG_UNICODE_SUPPORT)&(!def(CONFIG_UNICODE_SUPPORT)|!def(CONFIG_UNICODE_USING_LOCALE))&!def(CONFIG_UNICODE_USING_LOCALE)))		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/unicode.h:79195:24, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/unicode.h:79195:24
+	ntohl: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79236:16
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79249:3, file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79248:4, file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79225:2, file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79227:3, file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79220:3, file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79207:1
+	puts: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79238:3
+	time: (*signed long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79213:8
+	unicode_conv_to_printable_fixedwidth: (*struct uni_stat_t, *char, unsigned int) => *char		if def(CONFIG_UNICODE_SUPPORT)		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79226:20
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70770:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70770:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70770:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70770:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70786:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70770:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70770:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70770:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70770:0
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79205:6
+	xread: (signed int, *void, unsigned long) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79211:1
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70770:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70770:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70770:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70770:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70770:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70770:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70770:0
+exports (1)
+	dumpleases_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/dumpleases.c:79169:0

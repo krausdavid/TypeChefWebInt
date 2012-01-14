@@ -1,0 +1,77 @@
+fm True
+features (0)
+	
+imports (71)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_LESS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74515:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_LESS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74462:8
+	access: (*char, signed int) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77551:5
+	bb_cat: (**char) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78187:9, file busybox-1.18.5/miscutils/less.c:78173:9, file busybox-1.18.5/miscutils/less.c:78156:9
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78161:3
+	bb_putchar: (signed int) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77809:1, file busybox-1.18.5/miscutils/less.c:77756:2, file busybox-1.18.5/miscutils/less.c:77701:1, file busybox-1.18.5/miscutils/less.c:77533:2, file busybox-1.18.5/miscutils/less.c:77127:2
+	bb_show_usage: (void) => void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78162:3
+	bb_signals: (signed int, *(signed int) => void) => void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78191:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_LESS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74487:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77761:7, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74512:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_LESS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74484:9
+	exit: (signed int) => void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:76790:1
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77892:2
+	fflush_all: (void) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77454:1, file busybox-1.18.5/miscutils/less.c:76756:1
+	fopen_for_write: (*char) => *struct _IO_FILE		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77885:7
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77891:3
+	free: (*void) => void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78209:3, file busybox-1.18.5/miscutils/less.c:77897:1, file busybox-1.18.5/miscutils/less.c:77715:2, file busybox-1.18.5/miscutils/less.c:77712:1, file busybox-1.18.5/miscutils/less.c:77704:2, file busybox-1.18.5/miscutils/less.c:77690:1, file busybox-1.18.5/miscutils/less.c:77574:2, file busybox-1.18.5/miscutils/less.c:77555:1, file busybox-1.18.5/miscutils/less.c:77548:2, file busybox-1.18.5/miscutils/less.c:77412:2, file busybox-1.18.5/miscutils/less.c:77411:3, file busybox-1.18.5/miscutils/less.c:77258:1, file busybox-1.18.5/miscutils/less.c:77239:2, file busybox-1.18.5/miscutils/less.c:76935:2, file busybox-1.18.5/miscutils/less.c:76865:1, file busybox-1.18.5/miscutils/less.c:76849:2
+	get_terminal_width_height: (signed int, *unsigned int, *unsigned int) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78202:3, file busybox-1.18.5/miscutils/less.c:78184:1
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78140:1
+	isatty: (signed int) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78159:6, file busybox-1.18.5/miscutils/less.c:78155:6
+	kill_myself_with_sig: (signed int) => void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:76789:2
+	memcpy: (*void, *void, unsigned long) => *void		if (def(CONFIG_LESS)&(def(CONFIG_FEATURE_LESS_WINCH)|(def(CONFIG_FEATURE_LESS_DASHCMD)&def(CONFIG_FEATURE_LESS_LINENUMS))|def(CONFIG_FEATURE_LESS_REGEXP)))		at file busybox-1.18.5/miscutils/less.c:77211:3, file busybox-1.18.5/miscutils/less.c:76833:4
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77216:2, file busybox-1.18.5/miscutils/less.c:77177:3
+	ndelay_off: (signed int) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:76950:4
+	ndelay_on: (signed int) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78174:1, file busybox-1.18.5/miscutils/less.c:76948:4
+	open: (*char, signed int, ...) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78171:10
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if (def(CONFIG_FEATURE_LESS_WINCH)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77461:7
+	print_found: (*char) => void		if (!def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77315:3, file busybox-1.18.5/miscutils/less.c:77315:3
+	printf: (*char, ...) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77747:1, file busybox-1.18.5/miscutils/less.c:77526:3, file busybox-1.18.5/miscutils/less.c:77278:3, file busybox-1.18.5/miscutils/less.c:77272:1, file busybox-1.18.5/miscutils/less.c:77257:1, file busybox-1.18.5/miscutils/less.c:77254:2, file busybox-1.18.5/miscutils/less.c:77134:2, file busybox-1.18.5/miscutils/less.c:77106:1, file busybox-1.18.5/miscutils/less.c:77102:3, file busybox-1.18.5/miscutils/less.c:77100:2, file busybox-1.18.5/miscutils/less.c:77096:1, file busybox-1.18.5/miscutils/less.c:77095:2, file busybox-1.18.5/miscutils/less.c:77093:1, file busybox-1.18.5/miscutils/less.c:76780:1, file busybox-1.18.5/miscutils/less.c:76774:1, file busybox-1.18.5/miscutils/less.c:76769:1, file busybox-1.18.5/miscutils/less.c:76764:1
+	puts: (*char) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77297:1
+	read_key: (signed int, *char, signed int) => signed long		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77474:6
+	regcomp_or_errmsg: (*struct re_pattern_buffer, *char, signed int) => *char		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77710:7
+	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((def(CONFIG_FEATURE_LESS_REGEXP),CSigned(CInt()))), rm_eo -> List((def(CONFIG_FEATURE_LESS_REGEXP),CSigned(CInt()))))}[], signed int) => signed int		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77674:6, file busybox-1.18.5/miscutils/less.c:77246:17
+	regfree: (*struct re_pattern_buffer) => void		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77695:2
+	safe_poll: (*struct pollfd, unsigned long, signed int) => signed int		if (!def(CONFIG_FEATURE_LESS_WINCH)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77458:2
+	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:76949:16
+	sched_yield: (void) => signed int		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77050:4
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if (def(CONFIG_FEATURE_LESS_WINCH)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:78193:1
+	sprintf: (*char, *char, ...) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77188:2
+	strchr: (*char, signed int) => *char		if (def(CONFIG_FEATURE_LESS_BRACKETS)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77989:6, file busybox-1.18.5/miscutils/less.c:77982:5, file busybox-1.18.5/miscutils/less.c:77970:6, file busybox-1.18.5/miscutils/less.c:77964:5
+	strcpy: (*char, *char) => *char		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77220:1, file busybox-1.18.5/miscutils/less.c:76933:2
+	strcspn: (*char, *char) => unsigned long		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77275:6, file busybox-1.18.5/miscutils/less.c:77208:6
+	strlen: (*char) => unsigned long		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77000:60, file busybox-1.18.5/miscutils/less.c:76934:7
+	strspn: (*char, *char) => unsigned long		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77281:6, file busybox-1.18.5/miscutils/less.c:77215:6
+	tcgetattr: (signed int, *struct termios) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78176:1
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77433:1, file busybox-1.18.5/miscutils/less.c:76757:1
+	time: (*signed long) => signed long		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77044:15
+	xasprintf: (*char, ...) => *char		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77234:14
+	xatoll: (*char) => signed long long		if def(CONFIG_LESS)		at string literal: xatoll:74443:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_LESS)		at string literal: xatoll_range:74443:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_LESS)		at string literal: xatoll_range_sfx:74443:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_LESS)		at string literal: xatoll_sfx:74443:0
+	xatou: (*char) => unsigned int		if def(CONFIG_LESS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74459:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_LESS)		at string literal: xatoull:74443:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_LESS)		at string literal: xatoull_range:74443:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_LESS)		at string literal: xatoull_range_sfx:74443:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_LESS)		at string literal: xatoull_sfx:74443:0
+	xmalloc: (unsigned long) => *void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78210:12, file busybox-1.18.5/miscutils/less.c:78195:10, file busybox-1.18.5/miscutils/less.c:77056:25, file busybox-1.18.5/miscutils/less.c:76929:28, file busybox-1.18.5/miscutils/less.c:76831:16
+	xmove_fd: (signed int, signed int) => void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77391:2
+	xopen: (*char, signed int) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77391:11
+	xrealloc: (*void, unsigned long) => *void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77535:11, file busybox-1.18.5/miscutils/less.c:77000:29
+	xrealloc_vector_helper: (*void, unsigned int, signed int) => *void		if def(CONFIG_LESS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:77678:45, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76998:45, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76834:45
+	xstrdup: (*char) => *char		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78165:13, file busybox-1.18.5/miscutils/less.c:77575:13, file busybox-1.18.5/miscutils/less.c:77395:13
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_LESS)		at string literal: xstrtoll:74443:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_LESS)		at string literal: xstrtoll_range:74443:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_LESS)		at string literal: xstrtoll_range_sfx:74443:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_LESS)		at string literal: xstrtoull:74443:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_LESS)		at string literal: xstrtoull_range:74443:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_LESS)		at string literal: xstrtoull_range_sfx:74443:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_LESS)		at string literal: xstrtoull_sfx:74443:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78123:42, file busybox-1.18.5/miscutils/less.c:77512:16
+exports (1)
+	less_main: (signed int, **char) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:78119:0

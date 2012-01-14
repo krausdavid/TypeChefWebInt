@@ -1,0 +1,35 @@
+fm True
+features (0)
+	
+imports (29)
+	BB_EXECVP_or_die: (**char) => signed int		if def(CONFIG_NICE)		at file busybox-1.18.5/coreutils/nice.c:74301:1
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_NICE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72979:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_NICE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72926:8
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_NICE)		at file busybox-1.18.5/coreutils/nice.c:74297:3
+	bb_show_usage: (void) => void		if def(CONFIG_NICE)		at file busybox-1.18.5/coreutils/nice.c:74287:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_NICE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72951:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_NICE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72976:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_NICE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72948:9
+	fflush_stdout_and_exit: (signed int) => void		if def(CONFIG_NICE)		at file busybox-1.18.5/coreutils/nice.c:74273:2
+	getpriority: (signed int, unsigned int) => signed int		if def(CONFIG_NICE)		at file busybox-1.18.5/coreutils/nice.c:74269:16
+	printf: (*char, ...) => signed int		if def(CONFIG_NICE)		at file busybox-1.18.5/coreutils/nice.c:74272:2
+	setpriority: (signed int, unsigned int, signed int) => signed int		if def(CONFIG_NICE)		at file busybox-1.18.5/coreutils/nice.c:74296:6
+	xatoi_range: (*char, signed int, signed int) => signed int		if def(CONFIG_NICE)		at file busybox-1.18.5/coreutils/nice.c:74289:15
+	xatoll: (*char) => signed long long		if def(CONFIG_NICE)		at string literal: xatoll:72907:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_NICE)		at string literal: xatoll_range:72907:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_NICE)		at string literal: xatoll_range_sfx:72907:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_NICE)		at string literal: xatoll_sfx:72907:0
+	xatou: (*char) => unsigned int		if def(CONFIG_NICE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72923:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_NICE)		at string literal: xatoull:72907:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_NICE)		at string literal: xatoull_range:72907:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_NICE)		at string literal: xatoull_range_sfx:72907:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_NICE)		at string literal: xatoull_sfx:72907:0
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_NICE)		at string literal: xstrtoll:72907:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_NICE)		at string literal: xstrtoll_range:72907:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_NICE)		at string literal: xstrtoll_range_sfx:72907:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_NICE)		at string literal: xstrtoull:72907:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_NICE)		at string literal: xstrtoull_range:72907:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_NICE)		at string literal: xstrtoull_range_sfx:72907:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_NICE)		at string literal: xstrtoull_sfx:72907:0
+exports (1)
+	nice_main: (signed int, **char) => signed int		if def(CONFIG_NICE)		at file busybox-1.18.5/coreutils/nice.c:74265:0

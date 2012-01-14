@@ -1,0 +1,48 @@
+fm True
+features (0)
+	
+imports (41)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72886:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72833:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74286:1, file busybox-1.18.5/coreutils/uudecode.c:74223:1, file busybox-1.18.5/coreutils/uudecode.c:74197:3
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_BASE64)		at file busybox-1.18.5/coreutils/uudecode.c:74344:4
+	bb_putchar: (signed int) => signed int		if def(CONFIG_BASE64)		at file busybox-1.18.5/coreutils/uudecode.c:74348:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72858:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file busybox-1.18.5/coreutils/uudecode.c:74268:9, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	bb_uuencode: (*char, *void, signed int, *char) => void		if def(CONFIG_BASE64)		at file busybox-1.18.5/coreutils/uudecode.c:74346:3
+	fchmod: (signed int, unsigned int) => signed int		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74279:3
+	fflush: (*struct _IO_FILE) => signed int		if def(CONFIG_BASE64)		at file busybox-1.18.5/coreutils/uudecode.c:74349:3
+	fflush_stdout_and_exit: (signed int) => void		if def(CONFIG_BASE64)		at file busybox-1.18.5/coreutils/uudecode.c:74353:1
+	fileno: (*struct _IO_FILE) => signed int		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file busybox-1.18.5/coreutils/uudecode.c:74338:15, file busybox-1.18.5/coreutils/uudecode.c:74279:10
+	free: (*void) => void		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74281:2, file busybox-1.18.5/coreutils/uudecode.c:74263:3, file busybox-1.18.5/coreutils/uudecode.c:74221:2, file busybox-1.18.5/coreutils/uudecode.c:74193:3
+	full_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_BASE64)		at file busybox-1.18.5/coreutils/uudecode.c:74340:17
+	fwrite: (*void, unsigned long, unsigned long, *struct _IO_FILE) => unsigned long		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74220:2
+	getopt32: (**char, *char, ...) => unsigned int		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file busybox-1.18.5/coreutils/uudecode.c:74323:8, file busybox-1.18.5/coreutils/uudecode.c:74242:1
+	read_base64: (*struct _IO_FILE, *struct _IO_FILE, signed int) => void		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file busybox-1.18.5/coreutils/uudecode.c:74330:2, file busybox-1.18.5/coreutils/uudecode.c:74258:19
+	strchr: (*char, signed int) => *char		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74270:13
+	strcmp: (*char, *char) => signed int		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74173:6
+	strncmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74259:13, file busybox-1.18.5/coreutils/uudecode.c:74256:6
+	xatoll: (*char) => signed long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xatoll:72814:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xatoll_range:72814:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xatoll_range_sfx:72814:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xatoll_sfx:72814:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xatoull:72814:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xatoull_range:72814:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xatoull_range_sfx:72814:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xatoull_sfx:72814:0
+	xfopen_for_write: (*char) => *struct _IO_FILE		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74278:16
+	xfopen_stdin: (*char) => *struct _IO_FILE		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at file busybox-1.18.5/coreutils/uudecode.c:74328:14, file busybox-1.18.5/coreutils/uudecode.c:74247:14
+	xmalloc_fgetline: (*struct _IO_FILE) => *char		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74250:16, file busybox-1.18.5/coreutils/uudecode.c:74169:16
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xstrtoll:72814:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xstrtoll_range:72814:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xstrtoll_range_sfx:72814:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xstrtoull:72814:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xstrtoull_range:72814:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xstrtoull_range_sfx:72814:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_BASE64)|def(CONFIG_UUDECODE))		at string literal: xstrtoull_sfx:72814:0
+	xwrite: (signed int, *void, unsigned long) => void		if def(CONFIG_BASE64)		at file busybox-1.18.5/coreutils/uudecode.c:74347:3
+exports (2)
+	base64_main: (signed int, **char) => signed int		if def(CONFIG_BASE64)		at file busybox-1.18.5/coreutils/uudecode.c:74317:0
+	uudecode_main: (signed int, **char) => signed int		if def(CONFIG_UUDECODE)		at file busybox-1.18.5/coreutils/uudecode.c:74235:0

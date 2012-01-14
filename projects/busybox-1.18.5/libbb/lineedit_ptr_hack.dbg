@@ -1,0 +1,25 @@
+preIncludes: ArraySeq()
+systemIncludes: usr/include
+postIncludes: List(usr/lib/gcc/x86_64-redhat-linux/4.4.4/include)
+parsing.
+True	succeeded
+
+Parsing statistics: 
+  Duration parsing: 217 ms
+  Tokens: 8
+  Tokens Consumed: 10
+  Tokens Backtracked: 2
+  Tokens Repeated: 0
+  Conditional Tokens: 0
+  Distinct Features#: 0
+  Distinct Features: 
+  Distinct Feature Expressions: 1
+  Choice Nodes: 0
+
+type checking.
+No type errors found.
+
+
+inferring interfaces.
+timing (lexer, parser, type system, interface inference)
+1701;258;566;15

@@ -1,0 +1,51 @@
+fm True
+features (0)
+	
+imports (33)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70839:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70786:8
+	__ctype_get_mb_cur_max: (void) => unsigned long		if def(CONFIG_UNICODE_USING_LOCALE)		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdlib.h:77730:20
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70811:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70836:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70808:9
+	getenv: (*char) => *char		if (!def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76677:8
+	iswprint: (unsigned int) => signed int		if def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77684:8
+	mbsrtowcs: (*signed int, **char, unsigned long, *struct {Map(__count -> List((True,CSigned(CInt()))), __value -> List((True,CAnonymousStruct(Map(__wch -> List((True,CUnsigned(CInt()))), __wchb -> List((True,CArray(CSignUnspecified(CChar()),-1)))),true))))}) => unsigned long		if def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77669:16
+	mbstowcs: (*signed int, *char, unsigned long) => unsigned long		if def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76660:9
+	memcpy: (*void, *void, unsigned long) => *void		if !def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76773:2
+	printable_string: (*struct uni_stat_t, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77608:1
+	strstr: (*char, *char) => *char		if (!def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76678:40, file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76678:16
+	wcrtomb: (*char, signed int, *struct {Map(__count -> List((True,CSigned(CInt()))), __value -> List((True,CAnonymousStruct(Map(__wch -> List((True,CUnsigned(CInt()))), __wchb -> List((True,CArray(CSignUnspecified(CChar()),-1)))),true))))}) => unsigned long		if def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77739:14
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70767:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70767:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70767:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70767:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70783:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70767:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70767:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70767:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70767:0
+	xmalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77629:13, file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77629:13
+	xrealloc: (*void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77749:8, file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77728:8
+	xstrndup: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77643:13, file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77643:13
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70767:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70767:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70767:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70767:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70767:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70767:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70767:0
+exports (13)
+	bb_iswalnum: (signed int) => signed int		if !def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76879:0
+	bb_iswpunct: (signed int) => signed int		if !def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76884:0
+	bb_iswspace: (signed int) => signed int		if !def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76874:0
+	bb_mbstowcs: (*signed int, *char, unsigned long) => unsigned long		if !def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76835:0
+	bb_wcrtomb: (*char, signed int, *struct {Map(bogus -> List((!def(CONFIG_UNICODE_USING_LOCALE),CSignUnspecified(CChar()))))}) => unsigned long		if !def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76719:0
+	bb_wcstombs: (*char, *signed int, unsigned long) => unsigned long		if !def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76735:0
+	bb_wcwidth: (unsigned int) => signed int		if !def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77066:0
+	init_unicode: (void) => void		if (!def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76651:0
+	init_unicode: (void) => void		if def(CONFIG_UNICODE_USING_LOCALE)		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:76651:0
+	unicode_conv_to_printable: (*struct uni_stat_t, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77765:0
+	unicode_conv_to_printable_fixedwidth: (*struct uni_stat_t, *char, unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77773:0
+	unicode_conv_to_printable_maxwidth: (*struct uni_stat_t, *char, unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77769:0
+	unicode_strwidth: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/unicode.c:77605:0

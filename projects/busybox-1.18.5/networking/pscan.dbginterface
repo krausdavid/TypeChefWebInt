@@ -1,0 +1,43 @@
+fm True
+features (0)
+	
+imports (37)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_PSCAN)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_PSCAN)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72829:8
+	bb_perror_nomsg_and_die: (void) => void		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74251:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_PSCAN)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72854:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_PSCAN)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72879:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_PSCAN)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72851:9
+	close: (signed int) => signed int		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74299:2
+	connect: (signed int, CIgnore(), unsigned int) => signed int		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74242:6
+	free: (*void) => void		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74308:30, file busybox-1.18.5/networking/pscan.c:74308:30
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74213:7
+	getservbyport: (signed int, *char) => *struct servent		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74171:10
+	htons: (unsigned short) => unsigned short		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74233:18, file busybox-1.18.5/networking/pscan.c:74171:24
+	monotonic_us: (void) => unsigned long long		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74275:34, file busybox-1.18.5/networking/pscan.c:74241:34
+	ndelay_on: (signed int) => signed int		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74237:2
+	printf: (*char, ...) => signed int		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74310:1, file busybox-1.18.5/networking/pscan.c:74285:3, file busybox-1.18.5/networking/pscan.c:74226:1
+	set_nport: (*struct len_and_sockaddr, unsigned int) => void		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74233:2
+	usleep: (unsigned int) => signed int		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74273:3
+	write: (signed int, *void, unsigned long) => signed long		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74277:7
+	xatoll: (*char) => signed long long		if def(CONFIG_PSCAN)		at string literal: xatoll:72810:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_PSCAN)		at string literal: xatoll_range:72810:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_PSCAN)		at string literal: xatoll_range_sfx:72810:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_PSCAN)		at string literal: xatoll_sfx:72810:0
+	xatou: (*char) => unsigned int		if def(CONFIG_PSCAN)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72826:9
+	xatou_range: (*char, unsigned int, unsigned int) => unsigned int		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74219:11, file busybox-1.18.5/networking/pscan.c:74218:11, file busybox-1.18.5/networking/pscan.c:74216:8, file busybox-1.18.5/networking/pscan.c:74215:12
+	xatoull: (*char) => unsigned long long		if def(CONFIG_PSCAN)		at string literal: xatoull:72810:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_PSCAN)		at string literal: xatoull_range:72810:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_PSCAN)		at string literal: xatoull_range_sfx:72810:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_PSCAN)		at string literal: xatoull_sfx:72810:0
+	xhost2sockaddr: (*char, signed int) => *struct len_and_sockaddr		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74225:8
+	xsocket: (signed int, signed int, signed int) => signed int		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74234:6
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_PSCAN)		at string literal: xstrtoll:72810:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_PSCAN)		at string literal: xstrtoll_range:72810:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_PSCAN)		at string literal: xstrtoll_range_sfx:72810:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_PSCAN)		at string literal: xstrtoull:72810:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_PSCAN)		at string literal: xstrtoull_range:72810:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_PSCAN)		at string literal: xstrtoull_range_sfx:72810:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_PSCAN)		at string literal: xstrtoull_sfx:72810:0
+exports (1)
+	pscan_main: (signed int, **char) => signed int		if def(CONFIG_PSCAN)		at file busybox-1.18.5/networking/pscan.c:74188:0

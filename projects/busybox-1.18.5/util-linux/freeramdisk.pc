@@ -1,0 +1,1 @@
+(definedEx(CONFIG_FDFLUSH) || definedEx(CONFIG_FREERAMDISK))

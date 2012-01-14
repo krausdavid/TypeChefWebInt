@@ -1,0 +1,35 @@
+fm True
+features (0)
+	
+imports (29)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_SLEEP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72894:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_SLEEP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72841:8
+	bb_show_usage: (void) => void		if def(CONFIG_SLEEP)		at file busybox-1.18.5/coreutils/sleep.c:74222:4, file busybox-1.18.5/coreutils/sleep.c:74203:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_SLEEP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72866:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_SLEEP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72891:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_SLEEP)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72863:9
+	nanosleep: (*struct timespec, *struct timespec) => signed int		if (def(CONFIG_FEATURE_FLOAT_SLEEP)&def(CONFIG_SLEEP))		at file busybox-1.18.5/coreutils/sleep.c:74242:2
+	setlocale: (signed int, *char) => *char		if (def(CONFIG_FEATURE_FLOAT_SLEEP)&def(CONFIG_LOCALE_SUPPORT)&def(CONFIG_SLEEP))		at file busybox-1.18.5/coreutils/sleep.c:74208:1
+	sleep: (unsigned int) => unsigned int		if (!def(CONFIG_FEATURE_FLOAT_SLEEP)&def(CONFIG_SLEEP))		at file busybox-1.18.5/coreutils/sleep.c:74256:1, file busybox-1.18.5/coreutils/sleep.c:74251:1
+	strchr: (*char, signed int) => *char		if (def(CONFIG_FEATURE_FLOAT_SLEEP)&def(CONFIG_SLEEP))		at file busybox-1.18.5/coreutils/sleep.c:74213:6
+	strspn: (*char, *char) => unsigned long		if (def(CONFIG_FEATURE_FLOAT_SLEEP)&def(CONFIG_SLEEP))		at file busybox-1.18.5/coreutils/sleep.c:74216:13
+	strtod: (*char, **char) => double		if (def(CONFIG_FEATURE_FLOAT_SLEEP)&def(CONFIG_SLEEP))		at file busybox-1.18.5/coreutils/sleep.c:74220:7
+	xatoll: (*char) => signed long long		if def(CONFIG_SLEEP)		at string literal: xatoll:72822:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_SLEEP)		at string literal: xatoll_range:72822:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SLEEP)		at string literal: xatoll_range_sfx:72822:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_SLEEP)		at string literal: xatoll_sfx:72822:0
+	xatou: (*char) => unsigned int		if def(CONFIG_SLEEP)		at file busybox-1.18.5/coreutils/sleep.c:74255:12, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72838:9
+	xatou_range_sfx: (*char, unsigned int, unsigned int, *struct suffix_mult) => unsigned int		if (def(CONFIG_FEATURE_FANCY_SLEEP)&!def(CONFIG_FEATURE_FLOAT_SLEEP)&def(CONFIG_SLEEP))		at file busybox-1.18.5/coreutils/sleep.c:74249:14
+	xatoull: (*char) => unsigned long long		if def(CONFIG_SLEEP)		at string literal: xatoull:72822:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SLEEP)		at string literal: xatoull_range:72822:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SLEEP)		at string literal: xatoull_range_sfx:72822:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_SLEEP)		at string literal: xatoull_sfx:72822:0
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_SLEEP)		at string literal: xstrtoll:72822:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_SLEEP)		at string literal: xstrtoll_range:72822:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SLEEP)		at string literal: xstrtoll_range_sfx:72822:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_SLEEP)		at string literal: xstrtoull:72822:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SLEEP)		at string literal: xstrtoull_range:72822:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SLEEP)		at string literal: xstrtoull_range_sfx:72822:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_SLEEP)		at string literal: xstrtoull_sfx:72822:0
+exports (1)
+	sleep_main: (signed int, **char) => signed int		if def(CONFIG_SLEEP)		at file busybox-1.18.5/coreutils/sleep.c:74192:0

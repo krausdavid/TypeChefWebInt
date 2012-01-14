@@ -1,0 +1,55 @@
+fm True
+features (0)
+	
+imports (49)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_STTY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72897:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_STTY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72844:8
+	__builtin_va_end: (CIgnore()) => void		if def(CONFIG_STTY)		at file systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h:74967:18
+	__builtin_va_start: (CIgnore(), ...) => void		if def(CONFIG_STTY)		at file systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdarg.h:74965:22
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75529:2, file busybox-1.18.5/coreutils/stty.c:75524:2, file busybox-1.18.5/coreutils/stty.c:75516:3, file busybox-1.18.5/coreutils/stty.c:75482:4, file busybox-1.18.5/coreutils/stty.c:75471:4, file busybox-1.18.5/coreutils/stty.c:75446:7, file busybox-1.18.5/coreutils/stty.c:75440:6
+	bb_perror_msg: (*char, ...) => void		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:74953:1
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:74948:1
+	bb_putchar: (signed int) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75120:1, file busybox-1.18.5/coreutils/stty.c:74979:4, file busybox-1.18.5/coreutils/stty.c:74976:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_STTY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72869:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_STTY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72894:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_STTY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72866:9
+	cfgetispeed: (*struct termios) => unsigned int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75129:19
+	cfgetospeed: (*struct termios) => unsigned int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75130:40
+	cfsetispeed: (*struct termios, unsigned int) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:74939:2
+	cfsetospeed: (*struct termios, unsigned int) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:74942:2
+	fputs: (*char, *struct _IO_FILE) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:74982:1
+	get_terminal_width_height: (signed int, *unsigned int, *unsigned int) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75546:2, file busybox-1.18.5/coreutils/stty.c:75021:5
+	index_in_strings: (*char, *char) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75073:9, file busybox-1.18.5/coreutils/stty.c:75046:9, file busybox-1.18.5/coreutils/stty.c:75040:9
+	ioctl: (signed int, unsigned long, ...) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75011:5, file busybox-1.18.5/coreutils/stty.c:74999:5
+	memcmp: (*void, *void, unsigned long) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75663:7, file busybox-1.18.5/coreutils/stty.c:75650:6
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75646:2, file busybox-1.18.5/coreutils/stty.c:75541:1, file busybox-1.18.5/coreutils/stty.c:75003:2
+	ndelay_off: (signed int) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75536:2
+	nth_string: (*char, signed int) => *char		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75193:17, file busybox-1.18.5/coreutils/stty.c:75188:19, file busybox-1.18.5/coreutils/stty.c:75167:20
+	printf: (*char, ...) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75119:2, file busybox-1.18.5/coreutils/stty.c:75115:1
+	sscanf: (*char, *char, ...) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75098:6, file busybox-1.18.5/coreutils/stty.c:75089:5
+	strcmp: (*char, *char) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75368:36, file busybox-1.18.5/coreutils/stty.c:75368:10
+	tcgetattr: (signed int, *struct termios) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75647:6, file busybox-1.18.5/coreutils/stty.c:75542:5
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75634:6
+	tty_baud_to_value: (unsigned int) => unsigned int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75136:43, file busybox-1.18.5/coreutils/stty.c:75136:16
+	tty_value_to_baud: (unsigned int) => unsigned int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75514:7, file busybox-1.18.5/coreutils/stty.c:74936:8
+	vsnprintf: (*char, unsigned long, *char, CIgnore()) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:74966:10
+	xatoll: (*char) => signed long long		if def(CONFIG_STTY)		at string literal: xatoll:72825:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_STTY)		at string literal: xatoll_range:72825:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_STTY)		at string literal: xatoll_range_sfx:72825:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_STTY)		at string literal: xatoll_sfx:72825:0
+	xatou: (*char) => unsigned int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75514:25, file busybox-1.18.5/coreutils/stty.c:74936:26, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72841:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_STTY)		at string literal: xatoull:72825:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_STTY)		at string literal: xatoull_range:72825:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_STTY)		at string literal: xatoull_range_sfx:72825:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_STTY)		at string literal: xatoull_sfx:72825:0
+	xmove_fd: (signed int, signed int) => void		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75535:2
+	xopen_nonblocking: (*char) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75535:11
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_STTY)		at string literal: xstrtoll:72825:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_STTY)		at string literal: xstrtoll_range:72825:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_STTY)		at string literal: xstrtoll_range_sfx:72825:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_STTY)		at string literal: xstrtoull:72825:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_STTY)		at string literal: xstrtoull_range:72825:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_STTY)		at string literal: xstrtoull_range_sfx:72825:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_STTY)		at string literal: xstrtoull_sfx:72825:0
+exports (1)
+	stty_main: (signed int, **char) => signed int		if def(CONFIG_STTY)		at file busybox-1.18.5/coreutils/stty.c:75393:0

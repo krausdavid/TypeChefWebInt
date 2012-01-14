@@ -1,0 +1,50 @@
+fm True
+features (0)
+	
+imports (44)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71438:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71385:8
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72805:2, file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72799:2
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72830:1, file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72814:2
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72792:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71410:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71435:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71407:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72822:2
+	closedir: (*struct __dirstream) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72752:3
+	concat_path_file: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72748:13
+	execv: (*char, *char[]) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72829:1
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72750:4
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72780:1
+	getpid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72789:29
+	lstat: (*char, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72733:5
+	mount: (*char, *char, *char, unsigned long, *void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72812:5
+	opendir: (*char) => *struct __dirstream		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72738:8
+	readdir: (*struct __dirstream) => *struct dirent		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72740:15
+	rmdir: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72755:3
+	stat: (*char, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72798:5
+	statfs: (*char, *struct statfs) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72801:1
+	unlink: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72759:2
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:71366:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:71366:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:71366:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:71366:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71382:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:71366:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:71366:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:71366:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:71366:0
+	xchdir: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72818:1, file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72785:1
+	xchroot: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72816:1
+	xdup2: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72825:2, file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72824:2
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72823:2
+	xstat: (*char, *struct stat) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72788:1, file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72786:1
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:71366:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:71366:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:71366:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:71366:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:71366:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:71366:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:71366:0
+exports (1)
+	switch_root_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/switch_root.c:72771:0

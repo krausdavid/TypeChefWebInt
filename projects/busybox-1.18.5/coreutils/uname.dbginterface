@@ -1,0 +1,34 @@
+fm True
+features (0)
+	
+imports (28)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_UNAME)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72924:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_UNAME)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72871:8
+	bb_putchar: (signed int) => signed int		if def(CONFIG_UNAME)		at file busybox-1.18.5/coreutils/uname.c:74763:1
+	bb_show_usage: (void) => void		if def(CONFIG_UNAME)		at file busybox-1.18.5/coreutils/uname.c:74717:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_UNAME)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72896:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_UNAME)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72921:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_UNAME)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72893:9
+	fflush_stdout_and_exit: (signed int) => void		if def(CONFIG_UNAME)		at file busybox-1.18.5/coreutils/uname.c:74765:1
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_UNAME)		at file busybox-1.18.5/coreutils/uname.c:74714:11
+	printf: (*char, ...) => signed int		if def(CONFIG_UNAME)		at file busybox-1.18.5/coreutils/uname.c:74757:4
+	strcpy: (*char, *char) => *char		if def(CONFIG_UNAME)		at file busybox-1.18.5/coreutils/uname.c:74738:1, file busybox-1.18.5/coreutils/uname.c:74737:1, file busybox-1.18.5/coreutils/uname.c:74736:1
+	uname: (*struct utsname) => signed int		if def(CONFIG_UNAME)		at file busybox-1.18.5/coreutils/uname.c:74729:1
+	xatoll: (*char) => signed long long		if def(CONFIG_UNAME)		at string literal: xatoll:72852:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_UNAME)		at string literal: xatoll_range:72852:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_UNAME)		at string literal: xatoll_range_sfx:72852:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_UNAME)		at string literal: xatoll_sfx:72852:0
+	xatou: (*char) => unsigned int		if def(CONFIG_UNAME)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72868:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_UNAME)		at string literal: xatoull:72852:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_UNAME)		at string literal: xatoull_range:72852:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_UNAME)		at string literal: xatoull_range_sfx:72852:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_UNAME)		at string literal: xatoull_sfx:72852:0
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_UNAME)		at string literal: xstrtoll:72852:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_UNAME)		at string literal: xstrtoll_range:72852:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_UNAME)		at string literal: xstrtoll_range_sfx:72852:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_UNAME)		at string literal: xstrtoull:72852:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_UNAME)		at string literal: xstrtoull_range:72852:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_UNAME)		at string literal: xstrtoull_range_sfx:72852:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_UNAME)		at string literal: xstrtoull_sfx:72852:0
+exports (1)
+	uname_main: (signed int, **char) => signed int		if def(CONFIG_UNAME)		at file busybox-1.18.5/coreutils/uname.c:74680:0

@@ -1,0 +1,1 @@
+(definedEx(CONFIG_IP) || definedEx(CONFIG_FEATURE_IP_ADDRESS) || definedEx(CONFIG_FEATURE_IP_LINK) || definedEx(CONFIG_FEATURE_IP_ROUTE))

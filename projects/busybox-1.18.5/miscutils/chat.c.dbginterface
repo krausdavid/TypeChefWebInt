@@ -1,0 +1,57 @@
+fm True
+features (0)
+	
+imports (51)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70840:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70787:8
+	alarm: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72552:4, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72513:4
+	atoi: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72322:14
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72342:4
+	bb_process_escape_sequence: (**char) => char		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72185:9, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72185:9
+	bb_signals: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72249:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70812:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70837:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70809:9
+	cfmakeraw: (*struct termios) => void		if def(CONFIG_FEATURE_CHAT_TTY_HIFI)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72259:1
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72336:5
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72560:5
+	full_write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72549:12, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72429:6, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72421:6
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_FEATURE_CHAT_SWALLOW_OPTS)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72263:1
+	index_in_strings: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72272:12
+	llist_add_to_end: (**struct llist_t, *void) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72296:4
+	llist_unlink: (**struct llist_t, *struct llist_t) => void		if def(CONFIG_FEATURE_CHAT_CLR_ABORT)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72310:6
+	memcmp: (*void, *void, unsigned long) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72454:23, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72447:24
+	memmove: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72434:6
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72517:11, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72410:10
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72418:8
+	safe_write: (signed int, *void, unsigned long) => signed long		if def(CONFIG_FEATURE_CHAT_SEND_ESCAPES)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72543:9
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72288:4
+	sleep: (unsigned int) => unsigned int		if def(CONFIG_FEATURE_CHAT_SEND_ESCAPES)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72527:7
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72309:9, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72284:22
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72445:18, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72307:18, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72292:17
+	tcgetattr: (signed int, *struct termios) => signed int		if def(CONFIG_FEATURE_CHAT_TTY_HIFI)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72257:1
+	tcsendbreak: (signed int, signed int) => signed int		if def(CONFIG_FEATURE_CHAT_SEND_ESCAPES)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72537:7
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if def(CONFIG_FEATURE_CHAT_TTY_HIFI)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72574:1, file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72260:1
+	trim: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72499:5
+	usleep: (unsigned int) => signed int		if def(CONFIG_FEATURE_CHAT_SEND_ESCAPES)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72532:7
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70768:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70768:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70768:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70768:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70784:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70768:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70768:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70768:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70768:0
+	xmalloc_xopen_read_close: (*char, *unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72500:20
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72338:26
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70768:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70768:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70768:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70768:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70768:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70768:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70768:0
+	xwrite: (signed int, *void, unsigned long) => void		if def(CONFIG_FEATURE_CHAT_IMPLICIT_CR)		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72564:5
+exports (1)
+	chat_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/chat.c:72214:0

@@ -1,0 +1,34 @@
+fm True
+features (0)
+	
+imports (26)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72884:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72831:8
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72856:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72881:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72853:9
+	index_in_substrings: (*char, *char) => signed int		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file busybox-1.18.5/networking/libiproute/rtm_map.c:76653:23
+	rtnl_rtrealm_a2n: (*unsigned int, *char) => signed int		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file busybox-1.18.5/networking/libiproute/rtm_map.c:76704:13, file busybox-1.18.5/networking/libiproute/rtm_map.c:76696:6
+	sprintf: (*char, *char, ...) => signed int		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file busybox-1.18.5/networking/libiproute/rtm_map.c:76636:2
+	strchr: (*char, signed int) => *char		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file busybox-1.18.5/networking/libiproute/rtm_map.c:76691:11
+	strtoul: (*char, **char, signed int) => unsigned long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file busybox-1.18.5/networking/libiproute/rtm_map.c:76680:8
+	xatoll: (*char) => signed long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xatoll:72812:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xatoll_range:72812:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xatoll_range_sfx:72812:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xatoll_sfx:72812:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72828:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xatoull:72812:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xatoull_range:72812:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xatoull_range_sfx:72812:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xatoull_sfx:72812:0
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xstrtoll:72812:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xstrtoll_range:72812:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xstrtoll_range_sfx:72812:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xstrtoull:72812:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xstrtoull_range:72812:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xstrtoull_range_sfx:72812:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at string literal: xstrtoull_sfx:72812:0
+exports (3)
+	get_rt_realms: (*unsigned int, *char) => signed int		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file busybox-1.18.5/networking/libiproute/rtm_map.c:76688:0
+	rtnl_rtntype_a2n: (*signed int, *char) => signed int		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file busybox-1.18.5/networking/libiproute/rtm_map.c:76642:0
+	rtnl_rtntype_n2a: (signed int, *char) => *char		if (def(CONFIG_IP)|def(CONFIG_FEATURE_IP_ROUTE))		at file busybox-1.18.5/networking/libiproute/rtm_map.c:76607:0

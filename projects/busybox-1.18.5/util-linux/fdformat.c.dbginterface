@@ -1,0 +1,39 @@
+fm True
+features (0)
+	
+imports (33)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70836:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70783:8
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72252:4, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72170:2
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72250:5
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70808:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70833:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70805:9
+	bb_xioctl: (signed int, unsigned int, *void) => signed int		if !def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72230:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72219:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72208:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72195:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72180:39
+	bb_xioctl: (signed int, unsigned int, *void, *char) => signed int		if def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72230:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72219:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72208:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72195:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72180:39
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72286:30, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72286:30
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72274:31, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72274:31
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72165:11
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72276:2, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72259:6, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72246:3, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72244:2, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72236:1, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72214:2, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72192:1, file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72187:1
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72247:16
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70764:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70764:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70764:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70764:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70780:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70764:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70764:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70764:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70764:0
+	xmalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72243:9
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72175:6
+	xstat: (*char, *struct stat) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72168:1
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70764:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70764:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70764:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70764:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70764:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70764:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70764:0
+exports (1)
+	fdformat_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/fdformat.c:72156:0

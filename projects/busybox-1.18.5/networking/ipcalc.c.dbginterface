@@ -1,0 +1,39 @@
+fm True
+features (0)
+	
+imports (33)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70844:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70791:8
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72383:3, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72380:3, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72380:3, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72368:2
+	bb_herror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72429:4, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72429:4
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72326:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70816:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70841:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70813:9
+	get_prefix_: (unsigned long) => signed int		if !def(CONFIG_FEATURE_IPCALC_FANCY)		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72421:25, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72421:25
+	gethostbyaddr: (*void, unsigned int, signed int) => *struct hostent		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72427:14, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72427:14
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72310:7
+	htonl: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72356:15, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72356:15, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72253:11, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72235:10
+	inet_aton: (*char, *struct in_addr) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72382:6, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72367:5
+	inet_ntoa: (struct in_addr) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72409:25, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72404:27, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72399:25
+	ntohl: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72242:24, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72240:24, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72238:24
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72433:3, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72421:3, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72433:3, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72421:3, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72409:2, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72404:2, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72399:2
+	str_tolower: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72431:3, file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72431:3
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70772:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70772:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70772:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70772:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70788:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70772:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70772:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70772:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70772:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70772:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70772:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70772:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70772:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70772:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70772:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70772:0
+exports (1)
+	ipcalc_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/ipcalc.c:72292:0

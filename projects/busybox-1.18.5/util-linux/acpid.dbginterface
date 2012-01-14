@@ -1,0 +1,64 @@
+fm True
+features (0)
+	
+imports (58)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_ACPID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_ACPID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72829:8
+	bb_daemonize_or_rexec: (signed int) => void		if (!def(CONFIG_NOMMU)&def(CONFIG_ACPID))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76840:44
+	bb_daemonize_or_rexec: (signed int, **char) => void		if (def(CONFIG_NOMMU)&def(CONFIG_ACPID))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76840:44
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76678:2
+	bb_signals: (signed int, *(signed int) => void) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76861:1, file busybox-1.18.5/util-linux/acpid.c:76860:1
+	bb_simple_perror_msg: (*char) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76688:2
+	bb_simple_perror_msg_and_die: (*char) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76873:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_ACPID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72854:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_ACPID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72879:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_ACPID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72851:9
+	close: (signed int) => signed int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76937:4, file busybox-1.18.5/util-linux/acpid.c:76937:4
+	config_close: (*struct parser_t) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76767:2, file busybox-1.18.5/util-linux/acpid.c:76742:2
+	config_open2: (*char, *(*char) => *struct _IO_FILE) => *struct parser_t		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76754:10, file busybox-1.18.5/util-linux/acpid.c:76733:10
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if def(CONFIG_ACPID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76757:59, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76736:59
+	fopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76754:33, file busybox-1.18.5/util-linux/acpid.c:76733:33
+	free: (*void) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76940:2, file busybox-1.18.5/util-linux/acpid.c:76940:2, file busybox-1.18.5/util-linux/acpid.c:76690:1
+	full_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76912:22
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76803:8
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76896:3
+	open: (*char, signed int, ...) => signed int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76870:7
+	openlog: (*char, signed int, signed int) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76849:2
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76891:8
+	record_signo: (signed int) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76861:27
+	spawn: (**char) => signed int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76686:2
+	stat: (*char, *struct stat) => signed int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76685:10
+	strlen: (*char) => unsigned long		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76907:10, file busybox-1.18.5/util-linux/acpid.c:76708:37
+	strncmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76708:7
+	strstr: (*char, *char) => *char		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76718:7
+	unlink: (*char) => signed int		if (def(CONFIG_FEATURE_PIDFILE)&def(CONFIG_ACPID))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76944:53
+	write_pidfile: (*char) => void		if (def(CONFIG_FEATURE_PIDFILE)&def(CONFIG_ACPID))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76884:29
+	xasprintf: (*char, ...) => *char		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76869:14, file busybox-1.18.5/util-linux/acpid.c:76673:17
+	xatoi_positive: (*char) => signed int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76763:26
+	xatoll: (*char) => signed long long		if def(CONFIG_ACPID)		at string literal: xatoll:72810:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_ACPID)		at string literal: xatoll_range:72810:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ACPID)		at string literal: xatoll_range_sfx:72810:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_ACPID)		at string literal: xatoll_sfx:72810:0
+	xatou16: (*char) => unsigned short		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76762:27
+	xatou: (*char) => unsigned int		if def(CONFIG_ACPID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72826:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_ACPID)		at string literal: xatoull:72810:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ACPID)		at string literal: xatoull_range:72810:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ACPID)		at string literal: xatoull_range_sfx:72810:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_ACPID)		at string literal: xatoull_sfx:72810:0
+	xchdir: (*char) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76858:1
+	xmalloc_reads: (signed int, *char, *unsigned long) => *char		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76905:10
+	xmove_fd: (signed int, signed int) => void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76852:2
+	xopen: (*char, signed int) => signed int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76852:11
+	xrealloc_vector_helper: (*void, unsigned int, signed int) => *void		if def(CONFIG_ACPID)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76876:45, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76758:45, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76737:45
+	xstrdup: (*char) => *char		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76764:25, file busybox-1.18.5/util-linux/acpid.c:76761:27, file busybox-1.18.5/util-linux/acpid.c:76759:27, file busybox-1.18.5/util-linux/acpid.c:76739:27, file busybox-1.18.5/util-linux/acpid.c:76738:24
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_ACPID)		at string literal: xstrtoll:72810:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_ACPID)		at string literal: xstrtoll_range:72810:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ACPID)		at string literal: xstrtoll_range_sfx:72810:0
+	xstrtou: (*char, signed int) => unsigned int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76760:27
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_ACPID)		at string literal: xstrtoull:72810:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ACPID)		at string literal: xstrtoull_range:72810:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ACPID)		at string literal: xstrtoull_range_sfx:72810:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_ACPID)		at string literal: xstrtoull_sfx:72810:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76800:42
+exports (1)
+	acpid_main: (signed int, **char) => signed int		if def(CONFIG_ACPID)		at file busybox-1.18.5/util-linux/acpid.c:76786:0

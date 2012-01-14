@@ -1,0 +1,87 @@
+fm True
+features (0)
+	
+imports (81)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70879:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70826:8
+	atof: (*char) => double		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73502:23, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73502:23
+	bb_copyfd_eof: (signed int, signed int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73207:2
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73572:3, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73568:80, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73564:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73286:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73281:4
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73480:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73468:3
+	bb_signals: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73522:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70851:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73223:17, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70876:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70848:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73237:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73208:2
+	closedir: (*struct __dirstream) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73260:1
+	config_close: (*struct parser_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73504:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73504:2
+	config_open2: (*char, *(*char) => *struct _IO_FILE) => *struct parser_t		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73499:12, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73497:21, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73499:12, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73497:21
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73500:59, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73500:59
+	execl: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73563:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73562:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73561:3
+	execvp: (*char, *char[]) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73571:3
+	fclose: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73413:1
+	fflush: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73206:2
+	fflush_all: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73337:2
+	fileno: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73207:20
+	find_pid_by_name: (*char) => *signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73470:20
+	fopen_for_read: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73499:49, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73497:62, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73499:49, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73497:62
+	fork_or_rexec: (**char) => signed int		if def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73512:44
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73402:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73390:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73377:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73402:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73390:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73377:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73354:2
+	fputc: (signed int, *struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73261:1, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73209:2
+	fputs: (*char, *struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73356:1, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73244:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73219:1, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73205:2
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73411:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73411:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73386:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73386:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73411:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73411:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73386:3, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73386:3
+	getenv: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73559:25, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73538:26
+	getpid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73464:14
+	getppid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73308:31
+	index_in_strings: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73466:8
+	kill: (signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73576:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73555:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73473:5
+	localtime_r: (*signed long, *struct tm) => *struct tm		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73375:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73375:2
+	mkdtemp: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73268:25
+	mount: (*char, *char, *char, unsigned long, *void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73278:9
+	open: (*char, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73231:12, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73203:10
+	open_read_close: (*char, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73313:12
+	opendir: (*char) => *struct __dirstream		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73216:12
+	putenv: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73539:3
+	raise: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73533:3
+	readdir: (*struct __dirstream) => *struct dirent		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73220:17
+	record_signo: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73529:5
+	rmdir: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73424:2
+	safe_gethostname: (void) => *char		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73373:13, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73373:13
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73235:12
+	sprintf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73230:2
+	strchr: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73319:6, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73247:7
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73501:7, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73501:7
+	strftime: (*char, unsigned long, *char, *struct tm) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73376:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73376:2
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73279:14
+	strstr: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73254:7
+	system: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73416:1
+	time: (*signed long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73374:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73374:2
+	umount2: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73285:6
+	uname: (*struct utsname) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73388:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73388:2
+	unlink: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73423:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73421:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73420:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73419:2
+	usleep: (unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73339:2
+	vfork: (void) => signed int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73568:44
+	waitpid: (signed int, *signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73575:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73554:2
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70807:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70807:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70807:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70807:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70823:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70807:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70807:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70807:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70807:0
+	xchdir: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73291:2, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73284:2
+	xfopen: (*char, *char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73351:19, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73307:17, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73305:24, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73304:19
+	xfork: (void) => signed int		if !def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73512:44
+	xmalloc_open_read_close: (*char, *unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73400:13, file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73400:13
+	xstrdup: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73268:17
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70807:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70807:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70807:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70807:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70807:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70807:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70807:0
+exports (1)
+	bootchartd_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/init/bootchartd.c:73450:0

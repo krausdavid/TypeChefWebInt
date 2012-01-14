@@ -1,0 +1,55 @@
+fm True
+features (0)
+	
+imports (49)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70837:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70784:8
+	bb_basename: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72343:8, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72211:29
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72353:1
+	bb_putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72120:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70809:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70834:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70806:9
+	config_close: (*struct parser_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72167:1
+	config_open: (*char) => *struct parser_t		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72151:10
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72152:59
+	find_pid_by_name: (*char) => *signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72211:12
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72232:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72232:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72140:2, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72140:2, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72130:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72130:3
+	freecon: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72285:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72285:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72271:6, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72271:6, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72251:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72251:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72222:4, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72222:4, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72206:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72206:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72193:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72193:3
+	getcon: (**char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72183:5
+	getfilecon: (*char, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72261:8
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72304:8
+	getpidcon: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72212:24, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72196:5
+	is_selinux_enabled: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72307:6
+	lgetfilecon: (*char, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72257:6, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72241:14
+	lstat: (*char, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72259:6
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72342:1, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72336:1, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72329:1, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72323:1, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72316:1, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72310:1, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72274:4, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72262:5, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72242:2, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72213:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72197:2, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72184:2, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72119:3, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72116:2
+	puts: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72240:1, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72236:1, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72180:1, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72107:1
+	security_get_boolean_active: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72110:11
+	security_get_boolean_names: (***char, *signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72104:5
+	security_get_boolean_pending: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72113:12
+	security_getenforce: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72320:6
+	security_policyvers: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72333:6
+	selinux_getenforcemode: (*signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72327:5
+	selinux_policy_root: (void) => *char		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72339:12
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72155:13, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72153:6
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70765:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70765:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70765:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70765:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70781:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70765:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70765:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70765:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70765:0
+	xmalloc_ttyname: (signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72238:9
+	xstrdup: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72162:19, file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72159:19
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70765:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70765:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70765:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70765:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70765:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70765:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70765:0
+exports (1)
+	sestatus_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/selinux/sestatus.c:72297:0

@@ -1,0 +1,45 @@
+fm True
+features (0)
+	
+imports (39)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_DHCPRELAY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72896:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_DHCPRELAY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72843:8
+	bb_perror_msg: (*char, ...) => void		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76731:2
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76821:3
+	bb_show_usage: (void) => void		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76823:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_DHCPRELAY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72868:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_DHCPRELAY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72893:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_DHCPRELAY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72865:9
+	free: (*void) => void		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76640:3, file busybox-1.18.5/networking/udhcp/dhcprelay.c:76612:3
+	htonl: (unsigned int) => unsigned int		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76815:31, file busybox-1.18.5/networking/udhcp/dhcprelay.c:76788:29, file busybox-1.18.5/networking/udhcp/dhcprelay.c:76787:33
+	htons: (unsigned short) => unsigned short		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76816:24
+	inet_aton: (*char, *struct in_addr) => signed int		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76820:7
+	monotonic_sec: (void) => unsigned int		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76607:25, file busybox-1.18.5/networking/udhcp/dhcprelay.c:76596:19
+	recvfrom: (signed int, *void, unsigned long, signed int, CIgnore(), *unsigned int) => signed long		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76871:14
+	select: (signed int, *struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}, *struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}, *struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}, *struct timeval) => signed int		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76850:6
+	sendto: (signed int, *void, unsigned long, signed int, CIgnore(), unsigned int) => signed long		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76728:7
+	udhcp_get_option: (*struct dhcp_packet, signed int) => *unsigned char		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76662:6
+	udhcp_listen_socket: (signed int, *char) => signed int		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76716:11
+	udhcp_read_interface: (*char, *signed int, *unsigned int, *unsigned char) => signed int		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76914:8, file busybox-1.18.5/networking/udhcp/dhcprelay.c:76834:5
+	udhcp_recv_kernel_packet: (*struct dhcp_packet, signed int) => signed int		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76856:14
+	xatoll: (*char) => signed long long		if def(CONFIG_DHCPRELAY)		at string literal: xatoll:72824:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_DHCPRELAY)		at string literal: xatoll_range:72824:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_DHCPRELAY)		at string literal: xatoll_range_sfx:72824:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_DHCPRELAY)		at string literal: xatoll_sfx:72824:0
+	xatou: (*char) => unsigned int		if def(CONFIG_DHCPRELAY)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72840:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_DHCPRELAY)		at string literal: xatoull:72824:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_DHCPRELAY)		at string literal: xatoull_range:72824:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_DHCPRELAY)		at string literal: xatoull_range_sfx:72824:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_DHCPRELAY)		at string literal: xatoull_sfx:72824:0
+	xmalloc: (unsigned long) => *void		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76828:7, file busybox-1.18.5/networking/udhcp/dhcprelay.c:76590:8
+	xstrdup: (*char) => *char		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76693:5
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_DHCPRELAY)		at string literal: xstrtoll:72824:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_DHCPRELAY)		at string literal: xstrtoll_range:72824:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_DHCPRELAY)		at string literal: xstrtoll_range_sfx:72824:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_DHCPRELAY)		at string literal: xstrtoull:72824:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_DHCPRELAY)		at string literal: xstrtoull_range:72824:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_DHCPRELAY)		at string literal: xstrtoull_range_sfx:72824:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_DHCPRELAY)		at string literal: xstrtoull_sfx:72824:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76688:14
+exports (1)
+	dhcprelay_main: (signed int, **char) => signed int		if def(CONFIG_DHCPRELAY)		at file busybox-1.18.5/networking/udhcp/dhcprelay.c:76806:0

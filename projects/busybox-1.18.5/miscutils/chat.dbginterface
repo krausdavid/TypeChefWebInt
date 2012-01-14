@@ -1,0 +1,57 @@
+fm True
+features (0)
+	
+imports (51)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_CHAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_CHAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:8
+	alarm: (unsigned int) => unsigned int		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74595:4, file busybox-1.18.5/miscutils/chat.c:74556:4
+	atoi: (*char) => signed int		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74365:14
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74385:4
+	bb_process_escape_sequence: (**char) => char		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74228:9, file busybox-1.18.5/miscutils/chat.c:74228:9
+	bb_signals: (signed int, *(signed int) => void) => void		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74292:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_CHAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_CHAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72880:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_CHAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72852:9
+	cfmakeraw: (*struct termios) => void		if (def(CONFIG_FEATURE_CHAT_TTY_HIFI)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74302:1
+	close: (signed int) => signed int		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74379:5
+	free: (*void) => void		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74603:5
+	full_write: (signed int, *void, unsigned long) => signed long		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74592:12, file busybox-1.18.5/miscutils/chat.c:74472:6, file busybox-1.18.5/miscutils/chat.c:74464:6
+	getopt32: (**char, *char, ...) => unsigned int		if (def(CONFIG_FEATURE_CHAT_SWALLOW_OPTS)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74306:1
+	index_in_strings: (*char, *char) => signed int		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74315:12
+	llist_add_to_end: (**struct llist_t, *void) => void		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74339:4
+	llist_unlink: (**struct llist_t, *struct llist_t) => void		if (def(CONFIG_FEATURE_CHAT_CLR_ABORT)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74353:6
+	memcmp: (*void, *void, unsigned long) => signed int		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74497:23, file busybox-1.18.5/miscutils/chat.c:74490:24
+	memmove: (*void, *void, unsigned long) => *void		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74477:6
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74560:11, file busybox-1.18.5/miscutils/chat.c:74453:10
+	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74461:8
+	safe_write: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_FEATURE_CHAT_SEND_ESCAPES)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74586:9
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74331:4
+	sleep: (unsigned int) => unsigned int		if (def(CONFIG_FEATURE_CHAT_SEND_ESCAPES)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74570:7
+	strcmp: (*char, *char) => signed int		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74352:9, file busybox-1.18.5/miscutils/chat.c:74327:22
+	strlen: (*char) => unsigned long		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74488:18, file busybox-1.18.5/miscutils/chat.c:74350:18, file busybox-1.18.5/miscutils/chat.c:74335:17
+	tcgetattr: (signed int, *struct termios) => signed int		if (def(CONFIG_FEATURE_CHAT_TTY_HIFI)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74300:1
+	tcsendbreak: (signed int, signed int) => signed int		if (def(CONFIG_FEATURE_CHAT_SEND_ESCAPES)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74580:7
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if (def(CONFIG_FEATURE_CHAT_TTY_HIFI)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74617:1, file busybox-1.18.5/miscutils/chat.c:74303:1
+	trim: (*char) => void		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74542:5
+	usleep: (unsigned int) => signed int		if (def(CONFIG_FEATURE_CHAT_SEND_ESCAPES)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74575:7
+	xatoll: (*char) => signed long long		if def(CONFIG_CHAT)		at string literal: xatoll:72811:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_CHAT)		at string literal: xatoll_range:72811:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_CHAT)		at string literal: xatoll_range_sfx:72811:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_CHAT)		at string literal: xatoll_sfx:72811:0
+	xatou: (*char) => unsigned int		if def(CONFIG_CHAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72827:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_CHAT)		at string literal: xatoull:72811:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_CHAT)		at string literal: xatoull_range:72811:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHAT)		at string literal: xatoull_range_sfx:72811:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHAT)		at string literal: xatoull_sfx:72811:0
+	xmalloc_xopen_read_close: (*char, *unsigned long) => *void		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74543:20
+	xopen: (*char, signed int) => signed int		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74381:26
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_CHAT)		at string literal: xstrtoll:72811:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_CHAT)		at string literal: xstrtoll_range:72811:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_CHAT)		at string literal: xstrtoll_range_sfx:72811:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_CHAT)		at string literal: xstrtoull:72811:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_CHAT)		at string literal: xstrtoull_range:72811:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHAT)		at string literal: xstrtoull_range_sfx:72811:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_CHAT)		at string literal: xstrtoull_sfx:72811:0
+	xwrite: (signed int, *void, unsigned long) => void		if (def(CONFIG_FEATURE_CHAT_IMPLICIT_CR)&def(CONFIG_CHAT))		at file busybox-1.18.5/miscutils/chat.c:74607:5
+exports (1)
+	chat_main: (signed int, **char) => signed int		if def(CONFIG_CHAT)		at file busybox-1.18.5/miscutils/chat.c:74257:0

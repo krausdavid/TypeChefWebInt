@@ -1,0 +1,67 @@
+fm True
+features (0)
+	
+imports (61)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_START_STOP_DAEMON)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73031:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_START_STOP_DAEMON)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72978:8
+	_exit: (signed int) => void		if (def(CONFIG_NOMMU)&def(CONFIG_START_STOP_DAEMON))		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74746:3
+	bb_daemonize_or_rexec: (signed int) => void		if (!def(CONFIG_NOMMU)&def(CONFIG_START_STOP_DAEMON))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74736:44
+	bb_daemonize_or_rexec: (signed int, **char) => void		if (def(CONFIG_NOMMU)&def(CONFIG_START_STOP_DAEMON))		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74752:2
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74557:2, file busybox-1.18.5/debianutils/start_stop_daemon.c:74509:2
+	bb_perror_msg: (*char, ...) => void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74571:3
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74778:1, file busybox-1.18.5/debianutils/start_stop_daemon.c:74773:3, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74741:80, file busybox-1.18.5/debianutils/start_stop_daemon.c:74476:2
+	bb_show_usage: (void) => void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74691:21
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_START_STOP_DAEMON)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73003:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74711:12, file busybox-1.18.5/debianutils/start_stop_daemon.c:74502:8, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73028:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_START_STOP_DAEMON)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73000:9
+	closedir: (*struct __dirstream) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74507:1
+	execvp: (*char, *char[]) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74777:1
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74474:2
+	fopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74470:5
+	free: (*void) => void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74590:2, file busybox-1.18.5/debianutils/start_stop_daemon.c:74590:2
+	fscanf: (*struct _IO_FILE, *char, ...) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74472:6
+	get_signum: (*char) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74690:14
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74660:7
+	getpriority: (signed int, unsigned int) => signed int		if (def(CONFIG_FEATURE_START_STOP_DAEMON_FANCY)&def(CONFIG_START_STOP_DAEMON))		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74771:13
+	kill: (signed int, signed int) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74567:14
+	open_read_close: (*char, *void, unsigned long) => signed long		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74417:5, file busybox-1.18.5/debianutils/start_stop_daemon.c:74402:9
+	parse_chown_usergroup_or_die: (*struct bb_uidgid_t, *char) => void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74764:2
+	printf: (*char, ...) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74725:3, file busybox-1.18.5/debianutils/start_stop_daemon.c:74578:4, file busybox-1.18.5/debianutils/start_stop_daemon.c:74575:2, file busybox-1.18.5/debianutils/start_stop_daemon.c:74562:3
+	puts: (*char) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74579:2
+	readdir: (*struct __dirstream) => *struct dirent		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74495:10
+	setpriority: (signed int, unsigned int, signed int) => signed int		if (def(CONFIG_FEATURE_START_STOP_DAEMON_FANCY)&def(CONFIG_START_STOP_DAEMON))		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74772:6
+	setsid: (void) => signed int		if (def(CONFIG_NOMMU)&def(CONFIG_START_STOP_DAEMON))		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74749:2
+	sprintf: (*char, *char, ...) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74440:1, file busybox-1.18.5/debianutils/start_stop_daemon.c:74416:1, file busybox-1.18.5/debianutils/start_stop_daemon.c:74401:1
+	stat: (*char, *struct stat) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74441:5
+	strchr: (*char, signed int) => *char		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74420:5
+	strcmp: (*char, *char) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74432:8, file busybox-1.18.5/debianutils/start_stop_daemon.c:74405:9
+	strlen: (*char) => unsigned long		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74699:22, file busybox-1.18.5/debianutils/start_stop_daemon.c:74430:5
+	strrchr: (*char, signed int) => *char		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74423:6
+	vfork: (void) => signed int		if (def(CONFIG_NOMMU)&def(CONFIG_START_STOP_DAEMON))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74741:44
+	write_pidfile: (*char) => void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74760:2
+	xasprintf: (*char, ...) => *char		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74555:9, file busybox-1.18.5/debianutils/start_stop_daemon.c:74553:9
+	xatoi_range: (*char, signed int, signed int) => signed int		if (def(CONFIG_FEATURE_START_STOP_DAEMON_FANCY)&def(CONFIG_START_STOP_DAEMON))		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74771:44
+	xatoll: (*char) => signed long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xatoll:72959:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xatoll_range:72959:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xatoll_range_sfx:72959:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xatoll_sfx:72959:0
+	xatou: (*char) => unsigned int		if def(CONFIG_START_STOP_DAEMON)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72975:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xatoull:72959:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xatoull_range:72959:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xatoull_range_sfx:72959:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xatoull_sfx:72959:0
+	xmalloc: (unsigned long) => *void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74700:22, file busybox-1.18.5/debianutils/start_stop_daemon.c:74459:5
+	xopendir: (*char) => *struct __dirstream		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74490:11
+	xsetgid: (unsigned int) => void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74765:30
+	xsetuid: (unsigned int) => void		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74766:30
+	xstrdup: (*char) => *char		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74543:38, file busybox-1.18.5/debianutils/start_stop_daemon.c:74543:38, file busybox-1.18.5/debianutils/start_stop_daemon.c:74526:38, file busybox-1.18.5/debianutils/start_stop_daemon.c:74526:38
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xstrtoll:72959:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xstrtoll_range:72959:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xstrtoll_range_sfx:72959:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xstrtoull:72959:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xstrtoull_range:72959:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xstrtoull_range_sfx:72959:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_START_STOP_DAEMON)		at string literal: xstrtoull_sfx:72959:0
+	xuname2uid: (*char) => signed long		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74713:13
+exports (1)
+	start_stop_daemon_main: (signed int, **char) => signed int		if def(CONFIG_START_STOP_DAEMON)		at file busybox-1.18.5/debianutils/start_stop_daemon.c:74627:0

@@ -1,0 +1,32 @@
+fm True
+features (0)
+	
+imports (26)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72898:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72845:8
+	bb_perror_msg: (*char, ...) => void		if True		at file busybox-1.18.5/libbb/make_directory.c:74268:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72870:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72895:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72867:9
+	chmod: (*char, unsigned int) => signed int		if True		at file busybox-1.18.5/libbb/make_directory.c:74257:24
+	mkdir: (*char, unsigned int) => signed int		if True		at file busybox-1.18.5/libbb/make_directory.c:74235:6
+	stat: (*char, *struct stat) => signed int		if True		at file busybox-1.18.5/libbb/make_directory.c:74240:9
+	umask: (unsigned int) => unsigned int		if True		at file busybox-1.18.5/libbb/make_directory.c:74276:2, file busybox-1.18.5/libbb/make_directory.c:74231:4, file busybox-1.18.5/libbb/make_directory.c:74223:5, file busybox-1.18.5/libbb/make_directory.c:74215:15
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72826:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72826:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72826:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:72826:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72842:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:72826:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:72826:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:72826:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:72826:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:72826:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:72826:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:72826:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:72826:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:72826:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:72826:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:72826:0
+exports (1)
+	bb_make_directory: (*char, signed long, signed int) => signed int		if True		at file busybox-1.18.5/libbb/make_directory.c:74178:0

@@ -1,0 +1,1 @@
+(definedEx(CONFIG_SETFILES) || definedEx(CONFIG_RESTORECON))

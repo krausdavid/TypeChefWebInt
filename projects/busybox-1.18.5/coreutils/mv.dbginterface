@@ -1,0 +1,44 @@
+fm True
+features (0)
+	
+imports (38)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_MV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72889:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_MV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72836:8
+	access: (*char, signed int) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74267:9
+	bb_ask_confirmation: (void) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74273:9
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74299:7, file busybox-1.18.5/coreutils/mv.c:74294:7
+	bb_get_last_path_component_strip: (*char) => *char		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74256:32
+	bb_perror_msg: (*char, ...) => void		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74304:6, file busybox-1.18.5/coreutils/mv.c:74286:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_MV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72861:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_MV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72886:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_MV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72858:9
+	concat_path_file: (*char, *char) => *char		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74256:9
+	copy_file: (*char, *char, signed int) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74315:9
+	cp_mv_stat2: (*char, *struct stat, *(*char, *struct stat) => signed int) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74284:24
+	cp_mv_stat: (*char, *struct stat) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74257:16, file busybox-1.18.5/coreutils/mv.c:74244:16
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74270:8
+	free: (*void) => void		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74326:3
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74238:9
+	isatty: (signed int) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74267:35
+	lstat: (*char, *struct stat) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74284:57
+	remove_file: (*char, signed int) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74316:9
+	rename: (*char, *char) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74279:6
+	unlink: (*char) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74303:9
+	xatoll: (*char) => signed long long		if def(CONFIG_MV)		at string literal: xatoll:72817:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_MV)		at string literal: xatoll_range:72817:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MV)		at string literal: xatoll_range_sfx:72817:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_MV)		at string literal: xatoll_sfx:72817:0
+	xatou: (*char) => unsigned int		if def(CONFIG_MV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72833:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_MV)		at string literal: xatoull:72817:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MV)		at string literal: xatoull_range:72817:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MV)		at string literal: xatoull_range_sfx:72817:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_MV)		at string literal: xatoull_sfx:72817:0
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_MV)		at string literal: xstrtoll:72817:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_MV)		at string literal: xstrtoll_range:72817:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MV)		at string literal: xstrtoll_range_sfx:72817:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_MV)		at string literal: xstrtoull:72817:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MV)		at string literal: xstrtoull_range:72817:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MV)		at string literal: xstrtoull_range_sfx:72817:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_MV)		at string literal: xstrtoull_sfx:72817:0
+exports (1)
+	mv_main: (signed int, **char) => signed int		if def(CONFIG_MV)		at file busybox-1.18.5/coreutils/mv.c:74221:0

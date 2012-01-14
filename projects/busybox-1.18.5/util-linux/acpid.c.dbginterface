@@ -1,0 +1,64 @@
+fm True
+features (0)
+	
+imports (58)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70837:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70784:8
+	bb_daemonize_or_rexec: (signed int) => void		if !def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74795:44
+	bb_daemonize_or_rexec: (signed int, **char) => void		if def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74795:44
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74633:2
+	bb_signals: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74816:1, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74815:1
+	bb_simple_perror_msg: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74643:2
+	bb_simple_perror_msg_and_die: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74828:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70809:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70834:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70806:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74892:4, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74892:4
+	config_close: (*struct parser_t) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74722:2, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74697:2
+	config_open2: (*char, *(*char) => *struct _IO_FILE) => *struct parser_t		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74709:10, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74688:10
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74712:59, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74691:59
+	fopen_for_read: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74709:33, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74688:33
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74895:2, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74895:2, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74645:1
+	full_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74867:22
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74758:8
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74851:3
+	open: (*char, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74825:7
+	openlog: (*char, signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74804:2
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74846:8
+	record_signo: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74816:27
+	spawn: (**char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74641:2
+	stat: (*char, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74640:10
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74862:10, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74663:37
+	strncmp: (*char, *char, unsigned long) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74663:7
+	strstr: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74673:7
+	unlink: (*char) => signed int		if def(CONFIG_FEATURE_PIDFILE)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74899:53
+	write_pidfile: (*char) => void		if def(CONFIG_FEATURE_PIDFILE)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74839:29
+	xasprintf: (*char, ...) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74824:14, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74628:17
+	xatoi_positive: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74718:26
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70765:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70765:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70765:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70765:0
+	xatou16: (*char) => unsigned short		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74717:27
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70781:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70765:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70765:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70765:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70765:0
+	xchdir: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74813:1
+	xmalloc_reads: (signed int, *char, *unsigned long) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74860:10
+	xmove_fd: (signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74807:2
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74807:11
+	xrealloc_vector_helper: (*void, unsigned int, signed int) => *void		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74831:45, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74713:45, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74692:45
+	xstrdup: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74719:25, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74716:27, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74714:27, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74694:27, file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74693:24
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70765:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70765:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70765:0
+	xstrtou: (*char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74715:27
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70765:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70765:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70765:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70765:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74755:42
+exports (1)
+	acpid_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/acpid.c:74741:0

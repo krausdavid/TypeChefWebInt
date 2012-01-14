@@ -1,0 +1,42 @@
+fm True
+features (0)
+	
+imports (36)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70846:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70793:8
+	alarm: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72155:1, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72152:1
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72322:3, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72296:3, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72274:3, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72241:3
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72210:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70818:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70843:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70815:9
+	cfmakeraw: (*struct termios) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72364:2
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72383:2, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72383:2
+	fflush_stdout_and_exit: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72384:1
+	full_write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72332:2, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72307:2, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72224:3, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72209:7, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72177:1
+	read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72154:5
+	safe_write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72325:3
+	signal_no_SA_RESTART_empty_mask: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72369:1
+	single_argv: (**char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72359:17
+	tcflush: (signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72330:2, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72173:1
+	tcgetattr: (signed int, *struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72361:15
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72374:2, file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72365:2
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70774:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70774:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70774:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70774:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70790:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70774:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70774:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70774:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70774:0
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72359:11
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70774:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70774:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70774:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70774:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70774:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70774:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70774:0
+exports (1)
+	rx_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/miscutils/rx.c:72348:0

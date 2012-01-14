@@ -1,0 +1,43 @@
+fm True
+features (0)
+	
+imports (37)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72914:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72861:8
+	bb_error_msg: (*char, ...) => void		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74538:3, file busybox-1.18.5/coreutils/printf.c:74538:3, file busybox-1.18.5/coreutils/printf.c:74457:5, file busybox-1.18.5/coreutils/printf.c:74380:2, file busybox-1.18.5/coreutils/printf.c:74218:2
+	bb_process_escape_sequence: (**char) => char		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74490:14, file busybox-1.18.5/coreutils/printf.c:74280:7
+	bb_putchar: (signed int) => signed int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74490:3, file busybox-1.18.5/coreutils/printf.c:74403:4
+	bb_show_usage: (void) => void		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74541:2
+	bb_strtoi: (*char, **char, signed int) => signed int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74378:9
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74238:23, file busybox-1.18.5/coreutils/printf.c:74233:33, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72886:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72911:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74226:32, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:9
+	fcntl: (signed int, signed int, ...) => signed int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74517:5
+	free: (*void) => void		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74483:4
+	memcpy: (*void, *void, unsigned long) => *void		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74465:5
+	overlapping_strcpy: (*char, *char) => void		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74449:4
+	printf: (*char, ...) => signed int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74367:4, file busybox-1.18.5/coreutils/printf.c:74365:4, file busybox-1.18.5/coreutils/printf.c:74362:4, file busybox-1.18.5/coreutils/printf.c:74360:4, file busybox-1.18.5/coreutils/printf.c:74348:5, file busybox-1.18.5/coreutils/printf.c:74346:5, file busybox-1.18.5/coreutils/printf.c:74343:5, file busybox-1.18.5/coreutils/printf.c:74341:5, file busybox-1.18.5/coreutils/printf.c:74321:4, file busybox-1.18.5/coreutils/printf.c:74319:4, file busybox-1.18.5/coreutils/printf.c:74316:4, file busybox-1.18.5/coreutils/printf.c:74314:4, file busybox-1.18.5/coreutils/printf.c:74306:2
+	putchar: (signed int) => signed int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74494:3, file busybox-1.18.5/coreutils/printf.c:74281:2
+	strchr: (*char, signed int) => *char		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74454:14, file busybox-1.18.5/coreutils/printf.c:74413:7, file busybox-1.18.5/coreutils/printf.c:74298:14
+	strstr: (*char, *char) => *char		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74297:13
+	strtod: (*char, **char) => double		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74245:20
+	utoa: (unsigned int) => *char		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74213:8
+	xatoll: (*char) => signed long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xatoll:72842:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xatoll_range:72842:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xatoll_range_sfx:72842:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xatoll_sfx:72842:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72858:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xatoull:72842:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xatoull_range:72842:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xatoull_range_sfx:72842:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xatoull_sfx:72842:0
+	xmalloc: (unsigned long) => *void		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74464:9
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xstrtoll:72842:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xstrtoll_range:72842:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xstrtoll_range_sfx:72842:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xstrtoull:72842:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xstrtoull_range:72842:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xstrtoull_range_sfx:72842:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at string literal: xstrtoull_sfx:72842:0
+exports (1)
+	printf_main: (signed int, **char) => signed int		if (def(CONFIG_PRINTF)|def(CONFIG_ASH_BUILTIN_PRINTF))		at file busybox-1.18.5/coreutils/printf.c:74501:0

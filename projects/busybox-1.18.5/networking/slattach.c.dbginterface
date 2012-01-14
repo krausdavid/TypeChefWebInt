@@ -1,0 +1,57 @@
+fm True
+features (0)
+	
+imports (51)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70844:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70791:8
+	bb_ioctl_or_warn: (signed int, unsigned int, *void) => signed int		if !def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74657:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74645:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74598:39
+	bb_ioctl_or_warn: (signed int, unsigned int, *void, *char) => signed int		if def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74657:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74645:39, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74598:39
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74575:2
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74556:2
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74718:2
+	bb_signals: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74736:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70816:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70841:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70813:9
+	bb_xioctl: (signed int, unsigned int, *void) => signed int		if !def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74561:39
+	bb_xioctl: (signed int, unsigned int, *void, *char) => signed int		if def(CONFIG_IOCTL_HEX2STR_ERROR)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74561:39
+	cfgetispeed: (*struct termios) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74767:22
+	cfgetospeed: (*struct termios) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74768:22
+	cfsetispeed: (*struct termios, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74772:2, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74767:2, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74609:1
+	cfsetospeed: (*struct termios, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74773:2, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74768:2, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74610:1
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74626:2, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74626:2
+	concat_path_file: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74747:14
+	exit: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74628:1, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74617:2
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74750:2
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74713:7
+	index_in_strings: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74720:9
+	invarg: (*char, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74731:3, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74723:2
+	ioctl: (signed int, unsigned long, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74790:6
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74757:1, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74608:1
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74759:2
+	open: (*char, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74745:10
+	sleep: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74792:2, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74786:3, file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74613:1
+	system: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74799:2
+	tcgetattr: (signed int, *struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74555:5
+	tcsetattr: (signed int, signed int, *struct termios) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74573:7
+	tty_value_to_baud: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74729:14
+	xatoi: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74729:32
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70772:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70772:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70772:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70772:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70788:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70772:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70772:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70772:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70772:0
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74748:11
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70772:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70772:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70772:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70772:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70772:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70772:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70772:0
+exports (1)
+	slattach_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/slattach.c:74681:0

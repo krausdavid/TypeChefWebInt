@@ -1,0 +1,1 @@
+(definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA))

@@ -1,0 +1,65 @@
+fm True
+features (0)
+	
+imports (59)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_FIND)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73174:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_FIND)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73121:8
+	__builtin_alloca: (unsigned long) => *void		if (def(CONFIG_FEATURE_FIND_EXEC)&def(CONFIG_USE_PORTABLE_CODE)&def(CONFIG_FIND))		at file systems/redhat/usr/include/alloca.h:75653:22
+	alloc_action: (signed int, *(*char, *struct stat, *void) => signed int) => *struct {Map(f -> List((True,CPointer(CFunction(List(CPointer(CSignUnspecified(CChar())), CPointer(CStruct(stat,false)), CPointer(CVoid())),CSigned(CInt()))))), invert -> List((def(CONFIG_FEATURE_FIND_NOT),CSigned(CInt()))))}		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76596:43, file busybox-1.18.5/findutils/find.c:76586:43, file busybox-1.18.5/findutils/find.c:76571:43, file busybox-1.18.5/findutils/find.c:76542:43, file busybox-1.18.5/findutils/find.c:76533:43, file busybox-1.18.5/findutils/find.c:76526:43, file busybox-1.18.5/findutils/find.c:76518:43, file busybox-1.18.5/findutils/find.c:76509:43, file busybox-1.18.5/findutils/find.c:76501:43, file busybox-1.18.5/findutils/find.c:76490:43, file busybox-1.18.5/findutils/find.c:76478:43, file busybox-1.18.5/findutils/find.c:76471:43, file busybox-1.18.5/findutils/find.c:76464:43, file busybox-1.18.5/findutils/find.c:76457:43, file busybox-1.18.5/findutils/find.c:76449:43, file busybox-1.18.5/findutils/find.c:76405:43, file busybox-1.18.5/findutils/find.c:76389:43, file busybox-1.18.5/findutils/find.c:76382:43, file busybox-1.18.5/findutils/find.c:76364:43, file busybox-1.18.5/findutils/find.c:76351:43
+	bb_basename: (*char) => *char		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:75556:19
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76602:3
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76495:4, file busybox-1.18.5/findutils/find.c:76441:5, file busybox-1.18.5/findutils/find.c:76425:4, file busybox-1.18.5/findutils/find.c:76410:5, file busybox-1.18.5/findutils/find.c:76293:4, file busybox-1.18.5/findutils/find.c:75848:2
+	bb_parse_mode: (*char, *unsigned int) => signed int		if (def(CONFIG_FEATURE_FIND_PERM)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:76494:8
+	bb_show_usage: (void) => void		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76816:4, file busybox-1.18.5/findutils/find.c:76603:3
+	bb_simple_perror_msg: (*char) => void		if (def(CONFIG_FIND)&(def(CONFIG_FEATURE_FIND_CONTEXT)|def(CONFIG_FEATURE_FIND_DELETE)|def(CONFIG_FEATURE_FIND_EXEC)))		at file busybox-1.18.5/findutils/find.c:76590:4, file busybox-1.18.5/findutils/find.c:75734:2, file busybox-1.18.5/findutils/find.c:75664:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_FIND)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73146:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76543:13, file busybox-1.18.5/findutils/find.c:76534:13, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73171:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_FIND)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73143:9
+	fnmatch: (*char, *char, signed int) => signed int		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:75575:8, file busybox-1.18.5/findutils/find.c:75569:8
+	free: (*void) => void		if (def(CONFIG_FEATURE_FIND_EXEC)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75668:2
+	freecon: (*char) => void		if (def(CONFIG_FEATURE_FIND_CONTEXT)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75752:1
+	getfilecon: (*char, **char) => signed int		if (def(CONFIG_FEATURE_FIND_CONTEXT)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75745:7
+	index_in_strings: (*char, *char) => signed int		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76790:12, file busybox-1.18.5/findutils/find.c:76287:13
+	lgetfilecon: (*char, **char) => signed int		if (def(CONFIG_FEATURE_FIND_CONTEXT)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75747:7
+	memcpy: (*void, *void, unsigned long) => *void		if (def(CONFIG_FEATURE_FIND_EXEC)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75498:2, file busybox-1.18.5/findutils/find.c:75495:2
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76756:154
+	printf: (*char, ...) => signed int		if (def(CONFIG_FEATURE_FIND_PRINT0)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75687:1
+	puts: (*char) => signed int		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:75797:2, file busybox-1.18.5/findutils/find.c:75693:1
+	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76829:7
+	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((def(CONFIG_FEATURE_FIND_REGEX),CSigned(CInt()))), rm_eo -> List((def(CONFIG_FEATURE_FIND_REGEX),CSigned(CInt()))))}[], signed int) => signed int		if (def(CONFIG_FEATURE_FIND_REGEX)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75582:5
+	rmdir: (*char) => signed int		if (def(CONFIG_FEATURE_FIND_DELETE)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75729:7
+	selinux_raw_to_trans_context: (*char, **char) => signed int		if (def(CONFIG_FEATURE_FIND_CONTEXT)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:76589:7
+	spawn_and_wait: (**char) => signed int		if (def(CONFIG_FEATURE_FIND_EXEC)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75662:6
+	stat: (*char, *struct stat) => signed int		if (def(CONFIG_FEATURE_FIND_XDEV)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:76804:9
+	strcmp: (*char, *char) => signed int		if (def(CONFIG_FEATURE_FIND_CONTEXT)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75751:6
+	strcpy: (*char, *char) => *char		if (def(CONFIG_FEATURE_FIND_EXEC)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75501:1
+	strlen: (*char) => unsigned long		if (def(CONFIG_FEATURE_FIND_EXEC)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75493:21, file busybox-1.18.5/findutils/find.c:75491:15
+	strstr: (*char, *char) => *char		if (def(CONFIG_FEATURE_FIND_EXEC)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75494:15, file busybox-1.18.5/findutils/find.c:75480:15
+	time: (*signed long) => signed long		if (def(CONFIG_FIND)&(def(CONFIG_FEATURE_FIND_MMIN)|def(CONFIG_FEATURE_FIND_MTIME)))		at file busybox-1.18.5/findutils/find.c:75626:19, file busybox-1.18.5/findutils/find.c:75613:19
+	unlink: (*char) => signed int		if (def(CONFIG_FEATURE_FIND_DELETE)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:75731:7
+	xatoi_positive: (*char) => signed int		if (def(CONFIG_FEATURE_FIND_MAXDEPTH)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:76817:37
+	xatoll: (*char) => signed long long		if def(CONFIG_FIND)		at string literal: xatoll:73102:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_FIND)		at string literal: xatoll_range:73102:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FIND)		at string literal: xatoll_range_sfx:73102:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_FIND)		at string literal: xatoll_sfx:73102:0
+	xatou: (*char) => unsigned int		if def(CONFIG_FIND)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73118:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_FIND)		at string literal: xatoull:73102:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FIND)		at string literal: xatoull_range:73102:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FIND)		at string literal: xatoull_range_sfx:73102:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76575:18, string literal: xatoull_sfx:73102:0
+	xgroup2gid: (*char) => signed long		if (def(CONFIG_FEATURE_FIND_GROUP)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:76545:14
+	xmalloc: (unsigned long) => *void		if (def(CONFIG_FEATURE_FIND_EXEC)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:76426:21, file busybox-1.18.5/findutils/find.c:75493:13
+	xrealloc: (*void, unsigned long) => *void		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76321:10, file busybox-1.18.5/findutils/find.c:76244:20
+	xregcomp: (*struct re_pattern_buffer, *char, signed int) => void		if (def(CONFIG_FEATURE_FIND_REGEX)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:76472:3
+	xstat: (*char, *struct stat) => void		if (def(CONFIG_FEATURE_FIND_NEWER)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:76519:3
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_FIND)		at string literal: xstrtoll:73102:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_FIND)		at string literal: xstrtoll_range:73102:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FIND)		at string literal: xstrtoll_range_sfx:73102:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_FIND)		at string literal: xstrtoull:73102:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FIND)		at string literal: xstrtoull_range:73102:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FIND)		at string literal: xstrtoull_range_sfx:73102:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_FIND)		at string literal: xstrtoull_sfx:73102:0
+	xuname2uid: (*char) => signed long		if (def(CONFIG_FEATURE_FIND_USER)&def(CONFIG_FIND))		at file busybox-1.18.5/findutils/find.c:76536:14
+	xzalloc: (unsigned long) => *void		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76800:17, file busybox-1.18.5/findutils/find.c:76269:8, file busybox-1.18.5/findutils/find.c:76245:39
+exports (1)
+	find_main: (signed int, **char) => signed int		if def(CONFIG_FIND)		at file busybox-1.18.5/findutils/find.c:76706:0

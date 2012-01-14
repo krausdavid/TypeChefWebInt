@@ -1,0 +1,51 @@
+fm True
+features (0)
+	
+imports (40)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74542:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74489:8
+	bb_info_msg: (*char, ...) => void		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/common.h:78442:47, file busybox-1.18.5/networking/udhcp/common.h:78418:47, file busybox-1.18.5/networking/udhcp/packet.c:78415:2, file busybox-1.18.5/networking/udhcp/common.h:78410:47, file busybox-1.18.5/networking/udhcp/packet.c:78398:1, file busybox-1.18.5/networking/udhcp/packet.c:78363:1
+	bb_perror_msg: (*char, ...) => void		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78601:2, file busybox-1.18.5/networking/udhcp/packet.c:78551:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74514:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74539:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74511:9
+	bin2hex: (*char, *char, signed int) => *char		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78397:2
+	bind: (signed int, CIgnore(), unsigned int) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78578:5, file busybox-1.18.5/networking/udhcp/packet.c:78510:5
+	close: (signed int) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78598:1, file busybox-1.18.5/networking/udhcp/packet.c:78548:1
+	connect: (signed int, CIgnore(), unsigned int) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78587:5
+	htonl: (unsigned int) => unsigned int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78414:23, file busybox-1.18.5/networking/udhcp/packet.c:78349:18
+	htons: (unsigned short) => unsigned short		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78585:19, file busybox-1.18.5/networking/udhcp/packet.c:78576:19, file busybox-1.18.5/networking/udhcp/packet.c:78537:21, file busybox-1.18.5/networking/udhcp/packet.c:78532:18, file busybox-1.18.5/networking/udhcp/packet.c:78530:19, file busybox-1.18.5/networking/udhcp/packet.c:78529:21, file busybox-1.18.5/networking/udhcp/packet.c:78505:25, file busybox-1.18.5/networking/udhcp/packet.c:78494:36, file busybox-1.18.5/networking/udhcp/packet.c:78443:21
+	memcmp: (*void, *void, unsigned long) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78440:7
+	memcpy: (*void, *void, unsigned long) => *void		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78508:1
+	memset: (*void, signed int, unsigned long) => *void		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78583:1, file busybox-1.18.5/networking/udhcp/packet.c:78574:1, file busybox-1.18.5/networking/udhcp/packet.c:78501:1, file busybox-1.18.5/networking/udhcp/packet.c:78500:1, file busybox-1.18.5/networking/udhcp/packet.c:78407:1, file busybox-1.18.5/networking/udhcp/packet.c:78339:1
+	safe_read: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78408:9
+	safe_write: (signed int, *void, unsigned long) => signed long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78595:10
+	sendto: (signed int, *void, unsigned long, signed int, CIgnore(), unsigned int) => signed long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78544:10
+	setsockopt_reuseaddr: (signed int) => void		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78572:1
+	socket: (signed int, signed int, signed int) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78567:6, file busybox-1.18.5/networking/udhcp/packet.c:78494:6
+	udhcp_add_simple_option: (*struct dhcp_packet, unsigned char, unsigned int) => void		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78352:1
+	udhcp_end_option: (*unsigned char) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78594:38, file busybox-1.18.5/networking/udhcp/packet.c:78524:38
+	udhcp_get_option: (*struct dhcp_packet, signed int) => *unsigned char		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78422:11
+	xatoll: (*char) => signed long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xatoll:74470:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xatoll_range:74470:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xatoll_range_sfx:74470:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xatoll_sfx:74470:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:74486:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xatoull:74470:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xatoull_range:74470:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xatoull_range_sfx:74470:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xatoull_sfx:74470:0
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xstrtoll:74470:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xstrtoll_range:74470:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xstrtoll_range_sfx:74470:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xstrtoull:74470:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xstrtoull_range:74470:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xstrtoull_range_sfx:74470:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xstrtoull_sfx:74470:0
+exports (6)
+	udhcp_checksum: (*void, signed int) => unsigned short		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78452:0
+	udhcp_dump_packet: (*struct dhcp_packet) => void		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78356:0
+	udhcp_init_header: (*struct dhcp_packet, char) => void		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78337:0
+	udhcp_recv_kernel_packet: (*struct dhcp_packet, signed int) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78402:0
+	udhcp_send_kernel_packet: (*struct dhcp_packet, unsigned int, signed int, unsigned int, signed int) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78557:0
+	udhcp_send_raw_packet: (*struct dhcp_packet, unsigned int, signed int, unsigned int, signed int, *unsigned char, signed int) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/packet.c:78482:0

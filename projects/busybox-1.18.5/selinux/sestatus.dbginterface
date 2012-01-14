@@ -1,0 +1,55 @@
+fm True
+features (0)
+	
+imports (49)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_SESTATUS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72884:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_SESTATUS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72831:8
+	bb_basename: (*char) => *char		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74413:8, file busybox-1.18.5/selinux/sestatus.c:74281:29
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74423:1
+	bb_putchar: (signed int) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74190:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_SESTATUS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72856:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_SESTATUS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72881:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_SESTATUS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72853:9
+	config_close: (*struct parser_t) => void		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74237:1
+	config_open: (*char) => *struct parser_t		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74221:10
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if def(CONFIG_SESTATUS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74222:59
+	find_pid_by_name: (*char) => *signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74281:12
+	free: (*void) => void		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74302:3, file busybox-1.18.5/selinux/sestatus.c:74302:3, file busybox-1.18.5/selinux/sestatus.c:74210:2, file busybox-1.18.5/selinux/sestatus.c:74210:2, file busybox-1.18.5/selinux/sestatus.c:74200:3, file busybox-1.18.5/selinux/sestatus.c:74200:3
+	freecon: (*char) => void		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74355:3, file busybox-1.18.5/selinux/sestatus.c:74355:3, file busybox-1.18.5/selinux/sestatus.c:74341:6, file busybox-1.18.5/selinux/sestatus.c:74341:6, file busybox-1.18.5/selinux/sestatus.c:74321:3, file busybox-1.18.5/selinux/sestatus.c:74321:3, file busybox-1.18.5/selinux/sestatus.c:74292:4, file busybox-1.18.5/selinux/sestatus.c:74292:4, file busybox-1.18.5/selinux/sestatus.c:74276:3, file busybox-1.18.5/selinux/sestatus.c:74276:3, file busybox-1.18.5/selinux/sestatus.c:74263:3, file busybox-1.18.5/selinux/sestatus.c:74263:3
+	getcon: (**char) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74253:5
+	getfilecon: (*char, **char) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74331:8
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74374:8
+	getpidcon: (signed int, **char) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74282:24, file busybox-1.18.5/selinux/sestatus.c:74266:5
+	is_selinux_enabled: (void) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74377:6
+	lgetfilecon: (*char, **char) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74327:6, file busybox-1.18.5/selinux/sestatus.c:74311:14
+	lstat: (*char, *struct stat) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74329:6
+	printf: (*char, ...) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74412:1, file busybox-1.18.5/selinux/sestatus.c:74406:1, file busybox-1.18.5/selinux/sestatus.c:74399:1, file busybox-1.18.5/selinux/sestatus.c:74393:1, file busybox-1.18.5/selinux/sestatus.c:74386:1, file busybox-1.18.5/selinux/sestatus.c:74380:1, file busybox-1.18.5/selinux/sestatus.c:74344:4, file busybox-1.18.5/selinux/sestatus.c:74332:5, file busybox-1.18.5/selinux/sestatus.c:74312:2, file busybox-1.18.5/selinux/sestatus.c:74283:3, file busybox-1.18.5/selinux/sestatus.c:74267:2, file busybox-1.18.5/selinux/sestatus.c:74254:2, file busybox-1.18.5/selinux/sestatus.c:74189:3, file busybox-1.18.5/selinux/sestatus.c:74186:2
+	puts: (*char) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74310:1, file busybox-1.18.5/selinux/sestatus.c:74306:1, file busybox-1.18.5/selinux/sestatus.c:74250:1, file busybox-1.18.5/selinux/sestatus.c:74177:1
+	security_get_boolean_active: (*char) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74180:11
+	security_get_boolean_names: (***char, *signed int) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74174:5
+	security_get_boolean_pending: (*char) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74183:12
+	security_getenforce: (void) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74390:6
+	security_policyvers: (void) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74403:6
+	selinux_getenforcemode: (*signed int) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74397:5
+	selinux_policy_root: (void) => *char		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74409:12
+	strcmp: (*char, *char) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74225:13, file busybox-1.18.5/selinux/sestatus.c:74223:6
+	xatoll: (*char) => signed long long		if def(CONFIG_SESTATUS)		at string literal: xatoll:72812:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_SESTATUS)		at string literal: xatoll_range:72812:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SESTATUS)		at string literal: xatoll_range_sfx:72812:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_SESTATUS)		at string literal: xatoll_sfx:72812:0
+	xatou: (*char) => unsigned int		if def(CONFIG_SESTATUS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72828:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_SESTATUS)		at string literal: xatoull:72812:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SESTATUS)		at string literal: xatoull_range:72812:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SESTATUS)		at string literal: xatoull_range_sfx:72812:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_SESTATUS)		at string literal: xatoull_sfx:72812:0
+	xmalloc_ttyname: (signed int) => *char		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74308:9
+	xstrdup: (*char) => *char		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74232:19, file busybox-1.18.5/selinux/sestatus.c:74229:19
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_SESTATUS)		at string literal: xstrtoll:72812:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_SESTATUS)		at string literal: xstrtoll_range:72812:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SESTATUS)		at string literal: xstrtoll_range_sfx:72812:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_SESTATUS)		at string literal: xstrtoull:72812:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SESTATUS)		at string literal: xstrtoull_range:72812:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SESTATUS)		at string literal: xstrtoull_range_sfx:72812:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_SESTATUS)		at string literal: xstrtoull_sfx:72812:0
+exports (1)
+	sestatus_main: (signed int, **char) => signed int		if def(CONFIG_SESTATUS)		at file busybox-1.18.5/selinux/sestatus.c:74367:0

@@ -1,0 +1,45 @@
+fm True
+features (0)
+	
+imports (36)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71397:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71344:8
+	bb_putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73121:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71369:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71394:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71366:9
+	free_volume_id: (*struct volume_id) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:72947:1
+	gnu_dev_major: (unsigned long long) => unsigned int		if True		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/sysmacros.h:72995:20
+	ioctl: (signed int, unsigned long, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:72934:5
+	open: (*char, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:72998:6
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73120:3, file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73118:3, file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73116:2
+	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73027:1
+	strcasecmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73151:6
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73135:22
+	strncmp: (*char, *char, unsigned long) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73165:10, file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73163:5
+	volume_id_open_node: (signed int) => *struct volume_id		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:72932:7
+	volume_id_probe_all: (*struct volume_id, unsigned long) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:72937:5
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:71325:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:71325:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:71325:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:71325:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71341:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:71325:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:71325:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:71325:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:71325:0
+	xstrdup: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73152:10, file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73136:10, file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73005:21
+	xstrndup: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:72942:11, file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:72941:11
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:71325:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:71325:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:71325:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:71325:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:71325:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:71325:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:71325:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:72962:15, file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:72958:21
+exports (4)
+	display_uuid_cache: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73109:0
+	get_devname_from_label: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73128:0
+	get_devname_from_uuid: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73143:0
+	resolve_mount_spec: (**char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.c:73159:0

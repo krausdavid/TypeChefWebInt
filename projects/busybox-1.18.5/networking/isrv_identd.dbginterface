@@ -1,0 +1,48 @@
+fm True
+features (0)
+	
+imports (42)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_FAKEIDENTD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_FAKEIDENTD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:8
+	alarm: (unsigned int) => unsigned int		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74977:2
+	bb_daemonize_or_rexec: (signed int) => void		if (!def(CONFIG_NOMMU)&def(CONFIG_FAKEIDENTD))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75012:44
+	bb_daemonize_or_rexec: (signed int, **char) => void		if (def(CONFIG_NOMMU)&def(CONFIG_FAKEIDENTD))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75012:44
+	bb_lookup_port: (*char, *char, unsigned int) => unsigned int		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:75040:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_FAKEIDENTD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_FAKEIDENTD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72880:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_FAKEIDENTD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72852:9
+	create_and_bind_stream_or_die: (*char, signed int) => signed int		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:75039:7
+	dprintf: (signed int, *char, ...) => signed int		if def(CONFIG_FAKEIDENTD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h:74955:18
+	fcntl: (signed int, signed int, ...) => signed int		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74961:2, file busybox-1.18.5/networking/isrv_identd.c:74936:2, file busybox-1.18.5/networking/isrv_identd.c:74921:16
+	free: (*void) => void		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74957:1
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:75003:7
+	isrv_register_fd: (*struct isrv_state_t, signed int, signed int) => signed int		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74918:5
+	isrv_register_peer: (*struct isrv_state_t, *void) => signed int		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74915:8
+	isrv_run: (signed int, *(*struct isrv_state_t, signed int) => signed int, *(signed int, **void) => signed int, *(signed int, **void) => signed int, *(**void) => signed int, signed int, signed int) => void		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:75044:1
+	isrv_want_rd: (*struct isrv_state_t, signed int) => void		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74922:1
+	openlog: (*char, signed int, signed int) => void		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:75025:2
+	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74937:6
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:75035:1
+	strcpy: (*char, *char) => *char		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:75004:1
+	strncpy: (*char, *char, unsigned long) => *char		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:75006:2
+	strpbrk: (*char, *char) => *char		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74947:5
+	xatoll: (*char) => signed long long		if def(CONFIG_FAKEIDENTD)		at string literal: xatoll:72811:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_FAKEIDENTD)		at string literal: xatoll_range:72811:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FAKEIDENTD)		at string literal: xatoll_range_sfx:72811:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_FAKEIDENTD)		at string literal: xatoll_sfx:72811:0
+	xatou: (*char) => unsigned int		if def(CONFIG_FAKEIDENTD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72827:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_FAKEIDENTD)		at string literal: xatoull:72811:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FAKEIDENTD)		at string literal: xatoull_range:72811:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FAKEIDENTD)		at string literal: xatoull_range_sfx:72811:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_FAKEIDENTD)		at string literal: xatoull_sfx:72811:0
+	xlisten: (signed int, signed int) => void		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:75041:2
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_FAKEIDENTD)		at string literal: xstrtoll:72811:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_FAKEIDENTD)		at string literal: xstrtoll_range:72811:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FAKEIDENTD)		at string literal: xstrtoll_range_sfx:72811:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_FAKEIDENTD)		at string literal: xstrtoull:72811:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FAKEIDENTD)		at string literal: xstrtoull_range:72811:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FAKEIDENTD)		at string literal: xstrtoull_range_sfx:72811:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_FAKEIDENTD)		at string literal: xstrtoull_sfx:72811:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74972:21, file busybox-1.18.5/networking/isrv_identd.c:74913:21
+exports (1)
+	fakeidentd_main: (signed int, **char) => signed int		if def(CONFIG_FAKEIDENTD)		at file busybox-1.18.5/networking/isrv_identd.c:74989:0

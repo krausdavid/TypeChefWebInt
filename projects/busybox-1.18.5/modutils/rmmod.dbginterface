@@ -1,0 +1,37 @@
+fm True
+features (0)
+	
+imports (31)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_RMMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72899:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_RMMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72846:8
+	bb_basename: (*char) => *char		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76063:10
+	bb_delete_module: (*char, unsigned int) => signed int		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76068:6, file busybox-1.18.5/modutils/rmmod.c:76043:6
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76069:3
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76044:3
+	bb_show_usage: (void) => void		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76049:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_RMMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72871:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_RMMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72896:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_RMMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72868:9
+	filename2modname: (*char, *char) => *char		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76067:3
+	get_linux_version_code: (void) => signed int		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76058:35, file busybox-1.18.5/modutils/rmmod.c:76058:35
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76035:5
+	moderror: (signed int) => *char		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76070:19
+	safe_strncpy: (*char, *char, unsigned long) => *char		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76065:3
+	xatoll: (*char) => signed long long		if def(CONFIG_RMMOD)		at string literal: xatoll:72827:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_RMMOD)		at string literal: xatoll_range:72827:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_RMMOD)		at string literal: xatoll_range_sfx:72827:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_RMMOD)		at string literal: xatoll_sfx:72827:0
+	xatou: (*char) => unsigned int		if def(CONFIG_RMMOD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72843:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_RMMOD)		at string literal: xatoull:72827:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_RMMOD)		at string literal: xatoull_range:72827:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_RMMOD)		at string literal: xatoull_range_sfx:72827:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_RMMOD)		at string literal: xatoull_sfx:72827:0
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_RMMOD)		at string literal: xstrtoll:72827:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_RMMOD)		at string literal: xstrtoll_range:72827:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_RMMOD)		at string literal: xstrtoll_range_sfx:72827:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_RMMOD)		at string literal: xstrtoull:72827:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_RMMOD)		at string literal: xstrtoull_range:72827:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_RMMOD)		at string literal: xstrtoull_range_sfx:72827:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_RMMOD)		at string literal: xstrtoull_sfx:72827:0
+exports (1)
+	rmmod_main: (signed int, **char) => signed int		if def(CONFIG_RMMOD)		at file busybox-1.18.5/modutils/rmmod.c:76029:0

@@ -1,0 +1,67 @@
+fm True
+features (0)
+	
+imports (61)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_ARPING)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:77296:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_ARPING)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:77243:8
+	alarm: (unsigned int) => unsigned int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78704:1
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78959:2, file busybox-1.18.5/networking/arping.c:78880:3
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78940:4, file busybox-1.18.5/networking/arping.c:78908:2, file busybox-1.18.5/networking/arping.c:78877:3
+	bb_perror_msg: (*char, ...) => void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78985:3, file busybox-1.18.5/networking/arping.c:78933:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_ARPING)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:77268:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_ARPING)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:77293:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_ARPING)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:77265:9
+	bb_xioctl: (signed int, unsigned int, *void) => signed int		if (!def(CONFIG_IOCTL_HEX2STR_ERROR)&def(CONFIG_ARPING))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:78869:39
+	bb_xioctl: (signed int, unsigned int, *void, *char) => signed int		if (def(CONFIG_IOCTL_HEX2STR_ERROR)&def(CONFIG_ARPING))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:78869:39
+	close: (signed int) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78943:2
+	ether_ntoa: (*struct ether_addr) => *char		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78787:4, file busybox-1.18.5/networking/arping.c:78778:3
+	exit: (signed int) => void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78681:1, file busybox-1.18.5/networking/arping.c:78680:2, file busybox-1.18.5/networking/arping.c:78678:2
+	fflush_all: (void) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78796:2
+	free: (*void) => void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78904:3, file busybox-1.18.5/networking/arping.c:78904:3
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78845:8
+	getsockname: (signed int, CIgnore(), *unsigned int) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78953:2, file busybox-1.18.5/networking/arping.c:78935:3
+	htons: (unsigned short) => unsigned short		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78948:19, file busybox-1.18.5/networking/arping.c:78929:20, file busybox-1.18.5/networking/arping.c:78801:18, file busybox-1.18.5/networking/arping.c:78776:16, file busybox-1.18.5/networking/arping.c:78738:19, file busybox-1.18.5/networking/arping.c:78734:55, file busybox-1.18.5/networking/arping.c:78733:19, file busybox-1.18.5/networking/arping.c:78729:55, file busybox-1.18.5/networking/arping.c:78729:18, file busybox-1.18.5/networking/arping.c:78644:59, file busybox-1.18.5/networking/arping.c:78644:38, file busybox-1.18.5/networking/arping.c:78641:14, file busybox-1.18.5/networking/arping.c:78640:14
+	inet_aton: (*char, *struct in_addr) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78907:16
+	inet_ntoa: (struct in_addr) => *char		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78968:30, file busybox-1.18.5/networking/arping.c:78967:25, file busybox-1.18.5/networking/arping.c:78780:21, file busybox-1.18.5/networking/arping.c:78777:3
+	ioctl_or_perror_and_die: (signed int, unsigned int, *void, *char, ...) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78864:2
+	memcmp: (*void, *void, unsigned long) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78783:6, file busybox-1.18.5/networking/arping.c:78767:7, file busybox-1.18.5/networking/arping.c:78751:7
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78806:2
+	mempcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78654:5, file busybox-1.18.5/networking/arping.c:78652:6, file busybox-1.18.5/networking/arping.c:78650:6, file busybox-1.18.5/networking/arping.c:78647:5, file busybox-1.18.5/networking/arping.c:78646:5
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78963:1, file busybox-1.18.5/networking/arping.c:78919:2, file busybox-1.18.5/networking/arping.c:78860:2
+	monotonic_us: (void) => unsigned long long		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78791:34, file busybox-1.18.5/networking/arping.c:78688:34, file busybox-1.18.5/networking/arping.c:78658:34
+	printf: (*char, ...) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78968:2, file busybox-1.18.5/networking/arping.c:78967:2, file busybox-1.18.5/networking/arping.c:78794:3, file busybox-1.18.5/networking/arping.c:78792:3, file busybox-1.18.5/networking/arping.c:78786:3, file busybox-1.18.5/networking/arping.c:78785:4, file busybox-1.18.5/networking/arping.c:78780:3, file busybox-1.18.5/networking/arping.c:78774:2, file busybox-1.18.5/networking/arping.c:78670:2
+	recvfrom: (signed int, *void, unsigned long, signed int, CIgnore(), *unsigned int) => signed long		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78983:7
+	sendto: (signed int, *void, unsigned long, signed int, CIgnore(), unsigned int) => signed long		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78656:7
+	setsockopt: (signed int, signed int, signed int, *void, unsigned int) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78932:7
+	setsockopt_bindtodevice: (signed int, *char) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78918:2
+	sigaddset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}, signed int) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78990:2, file busybox-1.18.5/networking/arping.c:78989:2
+	sigemptyset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78988:2
+	signal_SA_RESTART_empty_mask: (signed int, *(signed int) => void) => void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78972:1, file busybox-1.18.5/networking/arping.c:78971:1
+	sigprocmask: (signed int, *struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}, *struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78993:2, file busybox-1.18.5/networking/arping.c:78991:2
+	strncpy_IFNAMSIZ: (*char, *char) => *char		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78861:2
+	xasprintf: (*char, ...) => *char		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78836:11
+	xatoll: (*char) => signed long long		if def(CONFIG_ARPING)		at string literal: xatoll:77224:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_ARPING)		at string literal: xatoll_range:77224:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ARPING)		at string literal: xatoll_range_sfx:77224:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_ARPING)		at string literal: xatoll_sfx:77224:0
+	xatou: (*char) => unsigned int		if def(CONFIG_ARPING)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:77240:9
+	xatou_range: (*char, unsigned int, unsigned int) => unsigned int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78848:16
+	xatoull: (*char) => unsigned long long		if def(CONFIG_ARPING)		at string literal: xatoull:77224:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ARPING)		at string literal: xatoull_range:77224:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ARPING)		at string literal: xatoull_range_sfx:77224:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_ARPING)		at string literal: xatoull_sfx:77224:0
+	xbind: (signed int, *struct sockaddr, unsigned int) => void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78949:1, file busybox-1.18.5/networking/arping.c:78924:3
+	xconnect: (signed int, *struct sockaddr, unsigned int) => void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78934:3
+	xhost2sockaddr: (*char, signed int) => *struct len_and_sockaddr		if (!def(CONFIG_FEATURE_IPV6)&def(CONFIG_ARPING))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:78889:46
+	xhost_and_af2sockaddr: (*char, signed int, unsigned short) => *struct len_and_sockaddr		if (def(CONFIG_FEATURE_IPV6)&def(CONFIG_ARPING))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:78889:46
+	xmalloc: (unsigned long) => *void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78976:10
+	xsocket: (signed int, signed int, signed int) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78916:17, file busybox-1.18.5/networking/arping.c:78830:11
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_ARPING)		at string literal: xstrtoll:77224:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_ARPING)		at string literal: xstrtoll_range:77224:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ARPING)		at string literal: xstrtoll_range_sfx:77224:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_ARPING)		at string literal: xstrtoull:77224:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ARPING)		at string literal: xstrtoull_range:77224:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ARPING)		at string literal: xstrtoull_range_sfx:77224:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_ARPING)		at string literal: xstrtoull_sfx:77224:0
+exports (1)
+	arping_main: (signed int, **char) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78820:0

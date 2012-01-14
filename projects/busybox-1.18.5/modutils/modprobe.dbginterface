@@ -1,0 +1,63 @@
+fm True
+features (0)
+	
+imports (57)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_MODPROBE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72964:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_MODPROBE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72911:8
+	bb_basename: (*char) => *char		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76756:5
+	bb_delete_module: (*char, unsigned int) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77086:7, file busybox-1.18.5/modutils/modprobe.c:76914:9
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76947:3, file busybox-1.18.5/modutils/modprobe.c:76917:6, file busybox-1.18.5/modutils/modprobe.c:76892:3
+	bb_init_module: (*char, *char) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76941:7
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77087:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_MODPROBE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72936:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_MODPROBE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72961:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_MODPROBE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72933:9
+	config_close: (*struct parser_t) => void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77098:2, file busybox-1.18.5/modutils/modprobe.c:77003:1, file busybox-1.18.5/modutils/modprobe.c:76818:1
+	config_open2: (*char, *(*char) => *struct _IO_FILE) => *struct parser_t		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77095:21, file busybox-1.18.5/modutils/modprobe.c:77054:16, file busybox-1.18.5/modutils/modprobe.c:76972:5, file busybox-1.18.5/modutils/modprobe.c:76759:5
+	config_read: (*struct parser_t, **char, unsigned int, *char) => signed int		if def(CONFIG_MODPROBE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:77096:59, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:77056:59, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76975:59, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:76765:59
+	filename2modname: (*char, *char) => *char		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77061:3, file busybox-1.18.5/modutils/modprobe.c:76781:11, file busybox-1.18.5/modutils/modprobe.c:76775:3, file busybox-1.18.5/modutils/modprobe.c:76691:1
+	fnmatch: (*char, *char, signed int) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77067:9, file busybox-1.18.5/modutils/modprobe.c:76779:8
+	fopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77095:51, file busybox-1.18.5/modutils/modprobe.c:76759:28
+	free: (*void) => void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77173:3, file busybox-1.18.5/modutils/modprobe.c:76945:2, file busybox-1.18.5/modutils/modprobe.c:76861:1
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77022:7
+	last_char_is: (*char, signed int) => *char		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77057:11, file busybox-1.18.5/modutils/modprobe.c:76977:10
+	llist_add_to: (**struct llist_t, *void) => void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76997:3, file busybox-1.18.5/modutils/modprobe.c:76782:4, file busybox-1.18.5/modutils/modprobe.c:76702:1
+	llist_add_to_end: (**struct llist_t, *void) => void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76730:1
+	llist_pop: (**struct llist_t) => *void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77159:20, file busybox-1.18.5/modutils/modprobe.c:77143:14, file busybox-1.18.5/modutils/modprobe.c:76908:7
+	llist_rev: (*struct llist_t) => *struct llist_t		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76899:12
+	moderror: (signed int) => *char		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76950:4, file busybox-1.18.5/modutils/modprobe.c:76919:7
+	parse_cmdline_module_options: (**char) => *char		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77111:20
+	puts: (*char) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77068:6, file busybox-1.18.5/modutils/modprobe.c:77063:4
+	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76825:8
+	sprintf: (*char, *char, ...) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76679:3
+	strchr: (*char, signed int) => *char		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76856:6
+	strcmp: (*char, *char) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76812:6, file busybox-1.18.5/modutils/modprobe.c:76812:6, file busybox-1.18.5/modutils/modprobe.c:76801:13, file busybox-1.18.5/modutils/modprobe.c:76795:13, file busybox-1.18.5/modutils/modprobe.c:76767:6, file busybox-1.18.5/modutils/modprobe.c:76694:6
+	string_to_llist: (*char, **struct llist_t, *char) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76999:4
+	strlen: (*char) => unsigned long		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76847:7, file busybox-1.18.5/modutils/modprobe.c:76678:34, file busybox-1.18.5/modutils/modprobe.c:76677:16
+	strncmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76849:6, file busybox-1.18.5/modutils/modprobe.c:76740:5, file busybox-1.18.5/modutils/modprobe.c:76740:5
+	strsep: (**char, *char) => *char		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76848:16
+	uname: (*struct utsname) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77048:1
+	xatoll: (*char) => signed long long		if def(CONFIG_MODPROBE)		at string literal: xatoll:72892:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_MODPROBE)		at string literal: xatoll_range:72892:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MODPROBE)		at string literal: xatoll_range_sfx:72892:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_MODPROBE)		at string literal: xatoll_sfx:72892:0
+	xatou: (*char) => unsigned int		if def(CONFIG_MODPROBE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72908:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_MODPROBE)		at string literal: xatoull:72892:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MODPROBE)		at string literal: xatoull_range:72892:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MODPROBE)		at string literal: xatoull_range_sfx:72892:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_MODPROBE)		at string literal: xatoull_sfx:72892:0
+	xchdir: (*char) => void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77049:1, file busybox-1.18.5/modutils/modprobe.c:77047:1
+	xfopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77054:57, file busybox-1.18.5/modutils/modprobe.c:76972:46
+	xmalloc_open_read_close: (*char, *unsigned long) => *void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76842:16
+	xrealloc: (*void, unsigned long) => *void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76678:10
+	xstrdup: (*char) => *char		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76997:26, file busybox-1.18.5/modutils/modprobe.c:76701:14, file busybox-1.18.5/modutils/modprobe.c:76675:10
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_MODPROBE)		at string literal: xstrtoll:72892:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_MODPROBE)		at string literal: xstrtoll_range:72892:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MODPROBE)		at string literal: xstrtoll_range_sfx:72892:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_MODPROBE)		at string literal: xstrtoull:72892:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MODPROBE)		at string literal: xstrtoull_range:72892:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MODPROBE)		at string literal: xstrtoull_range_sfx:72892:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_MODPROBE)		at string literal: xstrtoull_sfx:72892:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:76700:5
+exports (1)
+	modprobe_main: (signed int, **char) => signed int		if def(CONFIG_MODPROBE)		at file busybox-1.18.5/modutils/modprobe.c:77014:0

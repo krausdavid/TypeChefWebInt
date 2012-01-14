@@ -1,0 +1,35 @@
+fm True
+features (0)
+	
+imports (29)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_DMESG)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73255:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_DMESG)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73202:8
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_DMESG)		at file busybox-1.18.5/util-linux/dmesg.c:74570:2, file busybox-1.18.5/util-linux/dmesg.c:74556:3
+	bb_putchar: (signed int) => signed int		if def(CONFIG_DMESG)		at file busybox-1.18.5/util-linux/dmesg.c:74605:3, file busybox-1.18.5/util-linux/dmesg.c:74601:3, file busybox-1.18.5/util-linux/dmesg.c:74605:3, file busybox-1.18.5/util-linux/dmesg.c:74601:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_DMESG)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73227:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_DMESG)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73252:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_DMESG)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73224:9
+	free: (*void) => void		if def(CONFIG_DMESG)		at file busybox-1.18.5/util-linux/dmesg.c:74615:30, file busybox-1.18.5/util-linux/dmesg.c:74615:30
+	full_write: (signed int, *void, unsigned long) => signed long		if def(CONFIG_DMESG)		at file busybox-1.18.5/util-linux/dmesg.c:74603:2, file busybox-1.18.5/util-linux/dmesg.c:74603:2
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_DMESG)		at file busybox-1.18.5/util-linux/dmesg.c:74553:8
+	klogctl: (signed int, *char, signed int) => signed int		if def(CONFIG_DMESG)		at file busybox-1.18.5/util-linux/dmesg.c:74568:7, file busybox-1.18.5/util-linux/dmesg.c:74561:8, file busybox-1.18.5/util-linux/dmesg.c:74555:6
+	putchar: (signed int) => signed int		if def(CONFIG_DMESG)		at file busybox-1.18.5/util-linux/dmesg.c:74594:3, file busybox-1.18.5/util-linux/dmesg.c:74594:3
+	xatoll: (*char) => signed long long		if def(CONFIG_DMESG)		at string literal: xatoll:73183:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_DMESG)		at string literal: xatoll_range:73183:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_DMESG)		at string literal: xatoll_range_sfx:73183:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_DMESG)		at string literal: xatoll_sfx:73183:0
+	xatou: (*char) => unsigned int		if def(CONFIG_DMESG)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73199:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_DMESG)		at string literal: xatoull:73183:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_DMESG)		at string literal: xatoull_range:73183:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_DMESG)		at string literal: xatoull_range_sfx:73183:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_DMESG)		at string literal: xatoull_sfx:73183:0
+	xmalloc: (unsigned long) => *void		if def(CONFIG_DMESG)		at file busybox-1.18.5/util-linux/dmesg.c:74567:7
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_DMESG)		at string literal: xstrtoll:73183:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_DMESG)		at string literal: xstrtoll_range:73183:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_DMESG)		at string literal: xstrtoll_range_sfx:73183:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_DMESG)		at string literal: xstrtoull:73183:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_DMESG)		at string literal: xstrtoull_range:73183:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_DMESG)		at string literal: xstrtoull_range_sfx:73183:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_DMESG)		at string literal: xstrtoull_sfx:73183:0
+exports (1)
+	dmesg_main: (signed int, **char) => signed int		if def(CONFIG_DMESG)		at file busybox-1.18.5/util-linux/dmesg.c:74541:0

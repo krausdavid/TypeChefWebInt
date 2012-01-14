@@ -14,7 +14,7 @@ echo ""
 echo ""
 echo "useJCCPFileChecker is a script for using the TypeChef Programm including some extras"
 echo ""
-echo "useJCCPFileChecker [NAME OF FILE CHECK LIST] [PATH OF THE PROGRAMM OUTGOING FROM THE tcFolder] [NAME OF THE FLAG LIST]"
+echo "useJCCPFileChecker [NAME OF FILE CHECK LIST] [PATH OF THE PROGRAMM] [NAME OF THE FLAG LIST]"
 echo ""
 echo "    - File Check Lists have the ending *.lst"
 echo "    - Flag Lists have the ending *.flag"
@@ -23,7 +23,7 @@ echo ""
 echo "----------------------------------------------------"
 exit 1
 }
-tcFolder="/app/archive/kos/share/TypeChef"
+tcFolder="/app/archive/kos/share/TypeChef/TypeChef"
 if [ ! $# -eq 4 ]; then 
   if [ ! $# -eq 3]; then	
     func_help
@@ -52,12 +52,12 @@ else
 echo "remove *.dbg files [START]"
 echo "#######################"
 func_filesToProcess|while read i; do
-if [ ! -f $tcFolder/$srcPath/$i.dbg ]; then
+if [ ! -f $srcPath/$i.dbg ]; then
 echo "#######################"  
 echo "nothing to remove"
 echo "#######################"
  else
-     rm $tcFolder/$srcPath/$i.dbg
+     rm $srcPath/$i.dbg
      echo "#######################"
      echo "remove $i.dbg [OK]"
     echo "#######################" 
@@ -66,7 +66,7 @@ done
 fi
 
 
-export partialPreprocFlags="-x CONFIG_ --include $tcFolder/busybox/config.h -I $tcFolder/$srcPath/include"
+export partialPreprocFlags="-x CONFIG_ --include $tcFolder/busybox/config.h -I $srcPath/include"
 echo "#######################"
 echo "reading flags [START]"
 echo "#######################"
@@ -82,8 +82,8 @@ echo "reading flags [OK]"
 echo "using jcpp [START]"
 echo "#######################"
 func_filesToProcess|while read i; do
-  if [ ! -f $tcFolder/$srcPath/$i.dbg ]; then
-    touch $tcFolder/$srcPath/$i.dbg
+  if [ ! -f $srcPath/$i.dbg ]; then
+    touch $srcPath/$i.dbg
     oldPath=$(pwd)
     cd $tcFolder
     ./jcpp.sh $srcPath/$i.c

@@ -1,0 +1,40 @@
+fm True
+features (0)
+	
+imports (34)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72912:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72859:8
+	bb_perror_msg_and_die: (*char, ...) => void		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74314:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72884:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72909:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72881:9
+	fclose: (*struct _IO_FILE) => signed int		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74312:5, file busybox-1.18.5/loginutils/add-remove-shell.c:74285:3, file busybox-1.18.5/loginutils/add-remove-shell.c:74285:3
+	fopen_for_read: (*char) => *struct _IO_FILE		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74219:11
+	free: (*void) => void		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74329:2, file busybox-1.18.5/loginutils/add-remove-shell.c:74328:2, file busybox-1.18.5/loginutils/add-remove-shell.c:74329:2, file busybox-1.18.5/loginutils/add-remove-shell.c:74328:2, file busybox-1.18.5/loginutils/add-remove-shell.c:74275:3
+	printf: (*char, ...) => signed int		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74306:4, file busybox-1.18.5/loginutils/add-remove-shell.c:74306:4, file busybox-1.18.5/loginutils/add-remove-shell.c:74273:3
+	strcmp: (*char, *char) => signed int		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74245:8
+	xasprintf: (*char, ...) => *char		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74221:10
+	xatoll: (*char) => signed long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xatoll:72840:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xatoll_range:72840:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xatoll_range_sfx:72840:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xatoll_sfx:72840:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72856:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xatoull:72840:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xatoull_range:72840:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xatoull_range_sfx:72840:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xatoull_sfx:72840:0
+	xmalloc_fgetline: (*struct _IO_FILE) => *char		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74242:17
+	xmalloc_follow_symlinks: (*char) => *char		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74216:11
+	xmove_fd: (signed int, signed int) => void		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74230:1
+	xopen: (*char, signed int) => signed int		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74230:10
+	xrename: (*char, *char) => void		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74318:1
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xstrtoll:72840:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xstrtoll_range:72840:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xstrtoll_range_sfx:72840:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xstrtoull:72840:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xstrtoull_range:72840:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xstrtoull_range_sfx:72840:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at string literal: xstrtoull_sfx:72840:0
+	xunlink: (*char) => void		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74313:2
+exports (1)
+	add_remove_shell_main: (signed int, **char) => signed int		if (def(CONFIG_ADD_SHELL)|def(CONFIG_REMOVE_SHELL))		at file busybox-1.18.5/loginutils/add-remove-shell.c:74208:0

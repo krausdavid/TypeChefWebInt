@@ -1,0 +1,53 @@
+fm True
+features (0)
+	
+imports (45)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70846:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70793:8
+	atoi: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72932:15, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72912:15, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72315:12, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72241:11
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72943:4, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72939:3, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72930:4, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72909:4, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72446:4, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72411:4, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72377:5, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72343:5
+	bb_simple_perror_msg: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72581:4, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72517:4
+	bb_simple_perror_msg_and_die: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72502:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70818:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70843:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70815:9
+	ferror: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72580:7
+	fread: (*void, unsigned long, unsigned long, *struct _IO_FILE) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72577:6
+	freopen: (*char, *char, *struct _IO_FILE) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72516:9
+	fseek: (*struct _IO_FILE, signed long, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72501:5
+	memcmp: (*void, *void, unsigned long) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72593:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72567:41
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72799:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72795:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72768:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72764:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72749:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72745:8
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72573:3
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72831:4, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72828:4, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72800:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72796:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72792:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72781:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72778:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72775:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72769:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72765:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72761:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72750:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72746:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72737:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72731:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72728:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72690:2, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72687:2, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72684:2, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72681:2, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72666:2, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72660:2
+	puts: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72601:4, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72569:5
+	skip_whitespace: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72934:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72920:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72915:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72891:6
+	sprintf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72662:2
+	strcat: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72436:4
+	strchr: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72626:24, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72366:14, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72364:14, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72352:9, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72311:11, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72307:15, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72245:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72239:10
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72435:32
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70774:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70774:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70774:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70774:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70790:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70774:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70774:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70774:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70774:0
+	xfstat: (signed int, *struct stat, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72491:2
+	xmalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72546:22
+	xrealloc: (*void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72435:14
+	xstrdup: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72420:13
+	xstrndup: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72946:13
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70774:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70774:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70774:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70774:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70774:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70774:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70774:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72899:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72877:7, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72547:22, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72282:8, file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72210:25
+exports (3)
+	alloc_dumper: (void) => *struct dumper_t		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72208:0
+	bb_dump_add: (*struct dumper_t, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72867:0
+	bb_dump_dump: (*struct dumper_t, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/dump.c:72839:0

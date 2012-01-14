@@ -1,0 +1,1 @@
+(definedEx(CONFIG_MD5SUM) || definedEx(CONFIG_SHA1SUM) || definedEx(CONFIG_SHA256SUM) || definedEx(CONFIG_SHA512SUM))

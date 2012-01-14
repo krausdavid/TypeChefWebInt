@@ -1,0 +1,42 @@
+fm True
+features (0)
+	
+imports (35)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70839:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70786:8
+	access: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73421:5
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70811:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70836:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70808:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73422:2
+	endutent: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73533:1, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73513:3, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73461:1
+	getutent: (void) => *struct utmp		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73485:15
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73497:4, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73431:1
+	open: (*char, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73422:8
+	pututline: (*struct utmp) => *struct utmp		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73532:1, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73460:1
+	safe_strncpy: (*char, *char, unsigned long) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73527:2, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73525:2, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73523:2, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73439:2, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73437:2, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73435:1
+	setutent: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73480:1, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73458:1
+	skip_dev_pfx: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73523:30, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73434:12
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73452:5
+	strncpy: (*char, *char, unsigned long) => *char		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73454:1
+	time: (*signed long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73528:22, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73440:22
+	updwtmp: (*char, *struct utmp) => void		if def(CONFIG_FEATURE_WTMP)		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73538:1, file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73466:1
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70767:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70767:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70767:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70767:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70783:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70767:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70767:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70767:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70767:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70767:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70767:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70767:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70767:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70767:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70767:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70767:0
+exports (2)
+	update_utmp: (signed int, signed int, *char, *char, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73473:0
+	write_new_utmp: (signed int, signed int, *char, *char, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/utmp.c:73425:0

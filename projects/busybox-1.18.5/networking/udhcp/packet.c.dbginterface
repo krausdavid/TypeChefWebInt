@@ -1,0 +1,51 @@
+fm True
+features (0)
+	
+imports (40)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72499:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72446:8
+	bb_info_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/common.h:76399:47, file cprojects/busybox/busybox-1.18.5/networking/udhcp/common.h:76375:47, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76372:2, file cprojects/busybox/busybox-1.18.5/networking/udhcp/common.h:76367:47, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76355:1, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76320:1
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76558:2, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76508:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72471:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72496:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72468:9
+	bin2hex: (*char, *char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76354:2
+	bind: (signed int, *struct sockaddr, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76535:5, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76467:5
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76555:1, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76505:1
+	connect: (signed int, *struct sockaddr, unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76544:5
+	htonl: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76371:23, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76306:18
+	htons: (unsigned short) => unsigned short		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76542:19, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76533:19, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76494:21, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76489:18, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76487:19, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76486:21, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76462:25, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76451:36, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76400:21
+	memcmp: (*void, *void, unsigned long) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76397:7
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76465:1
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76540:1, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76531:1, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76458:1, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76457:1, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76364:1, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76296:1
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76365:9
+	safe_write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76552:10
+	sendto: (signed int, *void, unsigned long, signed int, *struct sockaddr, unsigned int) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76501:10
+	setsockopt_reuseaddr: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76529:1
+	socket: (signed int, signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76524:6, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76451:6
+	udhcp_add_simple_option: (*struct dhcp_packet, unsigned char, unsigned int) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76309:1
+	udhcp_end_option: (*unsigned char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76551:38, file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76481:38
+	udhcp_get_option: (*struct dhcp_packet, signed int) => *unsigned char		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76379:11
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72427:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72427:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72427:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:72427:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:72443:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:72427:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:72427:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:72427:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:72427:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:72427:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:72427:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:72427:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:72427:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:72427:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:72427:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:72427:0
+exports (6)
+	udhcp_checksum: (*void, signed int) => unsigned short		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76409:0
+	udhcp_dump_packet: (*struct dhcp_packet) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76313:0
+	udhcp_init_header: (*struct dhcp_packet, char) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76294:0
+	udhcp_recv_kernel_packet: (*struct dhcp_packet, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76359:0
+	udhcp_send_kernel_packet: (*struct dhcp_packet, unsigned int, signed int, unsigned int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76514:0
+	udhcp_send_raw_packet: (*struct dhcp_packet, unsigned int, signed int, unsigned int, signed int, *unsigned char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/udhcp/packet.c:76439:0

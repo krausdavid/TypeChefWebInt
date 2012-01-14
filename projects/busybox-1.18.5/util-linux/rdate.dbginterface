@@ -1,0 +1,42 @@
+fm True
+features (0)
+	
+imports (36)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_RDATE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72884:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_RDATE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72831:8
+	alarm: (unsigned int) => unsigned int		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74175:1
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74217:3
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74181:2, file busybox-1.18.5/util-linux/rdate.c:74166:1
+	bb_lookup_port: (*char, *char, unsigned int) => unsigned int		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74178:45
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74220:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_RDATE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72856:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_RDATE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72881:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_RDATE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72853:9
+	close: (signed int) => signed int		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74182:1
+	create_and_connect_stream_or_die: (*char, signed int) => signed int		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74178:6
+	ctime: (*signed long) => *char		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74224:15
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74208:9
+	ntohl: (unsigned int) => unsigned int		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74191:8
+	printf: (*char, ...) => signed int		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74224:2
+	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74180:5
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74176:1
+	stime: (*signed long) => signed int		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74219:7
+	time: (*signed long) => signed long		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74215:2
+	xatoll: (*char) => signed long long		if def(CONFIG_RDATE)		at string literal: xatoll:72812:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_RDATE)		at string literal: xatoll_range:72812:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_RDATE)		at string literal: xatoll_range_sfx:72812:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_RDATE)		at string literal: xatoll_sfx:72812:0
+	xatou: (*char) => unsigned int		if def(CONFIG_RDATE)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72828:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_RDATE)		at string literal: xatoull:72812:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_RDATE)		at string literal: xatoull_range:72812:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_RDATE)		at string literal: xatoull_range_sfx:72812:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_RDATE)		at string literal: xatoull_sfx:72812:0
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_RDATE)		at string literal: xstrtoll:72812:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_RDATE)		at string literal: xstrtoll_range:72812:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_RDATE)		at string literal: xstrtoll_range_sfx:72812:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_RDATE)		at string literal: xstrtoull:72812:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_RDATE)		at string literal: xstrtoull_range:72812:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_RDATE)		at string literal: xstrtoull_range_sfx:72812:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_RDATE)		at string literal: xstrtoull_sfx:72812:0
+exports (1)
+	rdate_main: (signed int, **char) => signed int		if def(CONFIG_RDATE)		at file busybox-1.18.5/util-linux/rdate.c:74202:0

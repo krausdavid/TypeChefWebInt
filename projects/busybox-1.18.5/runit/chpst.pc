@@ -1,0 +1,1 @@
+(definedEx(CONFIG_SETUIDGID) || definedEx(CONFIG_CHPST) || definedEx(CONFIG_ENVDIR) || definedEx(CONFIG_SOFTLIMIT) || definedEx(CONFIG_ENVUIDGID))

@@ -1,0 +1,48 @@
+fm True
+features (0)
+	
+imports (42)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_MKFS_REISER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:8
+	BUG_wrong_field_size: (void) => char		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74850:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74849:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74848:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74787:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74786:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74785:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74784:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74783:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74782:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74781:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74780:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74779:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74777:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74775:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74774:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74773:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74771:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74770:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74769:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74768:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74767:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74764:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74761:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74759:204, file busybox-1.18.5/util-linux/mkfs_reiser.c:74758:204
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_MKFS_REISER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72829:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74746:2, file busybox-1.18.5/util-linux/mkfs_reiser.c:74726:2, file busybox-1.18.5/util-linux/mkfs_reiser.c:74720:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_MKFS_REISER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72854:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_MKFS_REISER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72879:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_MKFS_REISER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72851:9
+	find_mount_point: (*char, signed int) => *struct mntent		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74725:5
+	free: (*void) => void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74916:2, file busybox-1.18.5/util-linux/mkfs_reiser.c:74915:2, file busybox-1.18.5/util-linux/mkfs_reiser.c:74916:2, file busybox-1.18.5/util-linux/mkfs_reiser.c:74915:2
+	generate_uuid: (*unsigned char) => void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74790:1
+	get_volume_size_in_bytes: (signed int, *char, unsigned int, signed int) => unsigned long		if (!def(CONFIG_LFS)&def(CONFIG_MKFS_REISER))		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74729:10
+	get_volume_size_in_bytes: (signed int, *char, unsigned int, signed int) => unsigned long long		if (def(CONFIG_LFS)&def(CONFIG_MKFS_REISER))		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74729:10
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74712:12
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74825:1
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74846:1, file busybox-1.18.5/util-linux/mkfs_reiser.c:74839:3, file busybox-1.18.5/util-linux/mkfs_reiser.c:74821:1, file busybox-1.18.5/util-linux/mkfs_reiser.c:74815:2, file busybox-1.18.5/util-linux/mkfs_reiser.c:74808:1
+	random: (void) => signed long		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74767:32, file busybox-1.18.5/util-linux/mkfs_reiser.c:74767:32, file busybox-1.18.5/util-linux/mkfs_reiser.c:74767:32
+	safe_strncpy: (*char, *char, unsigned long) => *char		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74792:1
+	srandom: (unsigned int) => void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74766:1
+	strcpy: (*char, *char) => *char		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74776:1
+	time: (*signed long) => signed long		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74765:13
+	xatoll: (*char) => signed long long		if def(CONFIG_MKFS_REISER)		at string literal: xatoll:72810:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_MKFS_REISER)		at string literal: xatoll_range:72810:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MKFS_REISER)		at string literal: xatoll_range_sfx:72810:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_MKFS_REISER)		at string literal: xatoll_sfx:72810:0
+	xatou: (*char) => unsigned int		if def(CONFIG_MKFS_REISER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72826:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_MKFS_REISER)		at string literal: xatoull:72810:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MKFS_REISER)		at string literal: xatoull_range:72810:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MKFS_REISER)		at string literal: xatoull_range_sfx:72810:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_MKFS_REISER)		at string literal: xatoull_sfx:72810:0
+	xclose: (signed int) => void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74919:1
+	xfstat: (signed int, *struct stat, *char) => void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74718:1
+	xlseek: (signed int, signed long, signed int) => signed long		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74903:1, file busybox-1.18.5/util-linux/mkfs_reiser.c:74833:2, file busybox-1.18.5/util-linux/mkfs_reiser.c:74753:1
+	xopen: (*char, signed int) => signed int		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74717:6
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_MKFS_REISER)		at string literal: xstrtoll:72810:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_MKFS_REISER)		at string literal: xstrtoll_range:72810:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MKFS_REISER)		at string literal: xstrtoll_range_sfx:72810:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_MKFS_REISER)		at string literal: xstrtoull:72810:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MKFS_REISER)		at string literal: xstrtoull_range:72810:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MKFS_REISER)		at string literal: xstrtoull_range_sfx:72810:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_MKFS_REISER)		at string literal: xstrtoull_sfx:72810:0
+	xwrite: (signed int, *void, unsigned long) => void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74904:1, file busybox-1.18.5/util-linux/mkfs_reiser.c:74841:2, file busybox-1.18.5/util-linux/mkfs_reiser.c:74826:1, file busybox-1.18.5/util-linux/mkfs_reiser.c:74823:2, file busybox-1.18.5/util-linux/mkfs_reiser.c:74818:1, file busybox-1.18.5/util-linux/mkfs_reiser.c:74801:1
+	xzalloc: (unsigned long) => *void		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74804:7, file busybox-1.18.5/util-linux/mkfs_reiser.c:74756:37
+exports (1)
+	mkfs_reiser_main: (signed int, **char) => signed int		if def(CONFIG_MKFS_REISER)		at file busybox-1.18.5/util-linux/mkfs_reiser.c:74695:0

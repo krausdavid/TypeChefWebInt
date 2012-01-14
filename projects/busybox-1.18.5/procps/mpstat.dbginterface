@@ -1,0 +1,64 @@
+fm True
+features (0)
+	
+imports (58)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_MPSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72893:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_MPSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72840:8
+	alarm: (unsigned int) => unsigned int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75263:1
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75546:5
+	bb_putchar: (signed int) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:74867:2, file busybox-1.18.5/procps/mpstat.c:74813:1
+	bb_show_usage: (void) => void		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75524:3, file busybox-1.18.5/procps/mpstat.c:75501:4
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_MPSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72865:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_MPSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72890:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_MPSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72862:9
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75431:1, file busybox-1.18.5/procps/mpstat.c:75250:1, file busybox-1.18.5/procps/mpstat.c:75224:1, file busybox-1.18.5/procps/mpstat.c:75131:1, file busybox-1.18.5/procps/mpstat.c:75108:1
+	fgets: (*char, signed int, *struct _IO_FILE) => *char		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75423:8, file busybox-1.18.5/procps/mpstat.c:75244:5, file busybox-1.18.5/procps/mpstat.c:75187:8, file busybox-1.18.5/procps/mpstat.c:75173:8, file busybox-1.18.5/procps/mpstat.c:75123:8, file busybox-1.18.5/procps/mpstat.c:75057:8
+	fopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75415:6, file busybox-1.18.5/procps/mpstat.c:75241:6, file busybox-1.18.5/procps/mpstat.c:75164:6, file busybox-1.18.5/procps/mpstat.c:75119:6
+	free: (*void) => void		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75582:2, file busybox-1.18.5/procps/mpstat.c:75581:2, file busybox-1.18.5/procps/mpstat.c:75579:3, file busybox-1.18.5/procps/mpstat.c:75578:3, file busybox-1.18.5/procps/mpstat.c:75577:3, file busybox-1.18.5/procps/mpstat.c:75576:3, file busybox-1.18.5/procps/mpstat.c:75582:2, file busybox-1.18.5/procps/mpstat.c:75581:2, file busybox-1.18.5/procps/mpstat.c:75579:3, file busybox-1.18.5/procps/mpstat.c:75578:3, file busybox-1.18.5/procps/mpstat.c:75577:3, file busybox-1.18.5/procps/mpstat.c:75576:3, file busybox-1.18.5/procps/mpstat.c:75432:1, file busybox-1.18.5/procps/mpstat.c:75225:1
+	get_cpu_count: (void) => unsigned int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75475:12
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75490:7
+	index_in_strings: (*char, *char) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75522:6
+	localtime_r: (*signed long, *struct tm) => *struct tm		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75257:1
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75317:2, file busybox-1.18.5/procps/mpstat.c:75315:1, file busybox-1.18.5/procps/mpstat.c:75314:1, file busybox-1.18.5/procps/mpstat.c:75313:1
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75541:4, file busybox-1.18.5/procps/mpstat.c:75514:2, file busybox-1.18.5/procps/mpstat.c:75327:2, file busybox-1.18.5/procps/mpstat.c:75297:2, file busybox-1.18.5/procps/mpstat.c:75296:2, file busybox-1.18.5/procps/mpstat.c:75295:2, file busybox-1.18.5/procps/mpstat.c:75294:2, file busybox-1.18.5/procps/mpstat.c:75079:2
+	pause: (void) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75324:2
+	printf: (*char, ...) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75401:1, file busybox-1.18.5/procps/mpstat.c:75007:3, file busybox-1.18.5/procps/mpstat.c:75001:5, file busybox-1.18.5/procps/mpstat.c:74994:3, file busybox-1.18.5/procps/mpstat.c:74982:3, file busybox-1.18.5/procps/mpstat.c:74968:5, file busybox-1.18.5/procps/mpstat.c:74938:3, file busybox-1.18.5/procps/mpstat.c:74921:3, file busybox-1.18.5/procps/mpstat.c:74888:1, file busybox-1.18.5/procps/mpstat.c:74863:5, file busybox-1.18.5/procps/mpstat.c:74860:5, file busybox-1.18.5/procps/mpstat.c:74821:2, file busybox-1.18.5/procps/mpstat.c:74808:19, file busybox-1.18.5/procps/mpstat.c:74794:1
+	safe_strncpy: (*char, *char, unsigned long) => *char		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75205:2
+	setbuf: (*struct _IO_FILE, *char) => void		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75468:1
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75262:1
+	skip_whitespace: (*char) => *char		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:74808:51
+	sscanf: (*char, *char, ...) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75245:6, file busybox-1.18.5/procps/mpstat.c:75127:3, file busybox-1.18.5/procps/mpstat.c:75080:2, file busybox-1.18.5/procps/mpstat.c:75069:7
+	starts_with_cpu: (*char) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75062:7
+	strchr: (*char, signed int) => *char		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75195:7
+	strcmp: (*char, *char) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75539:7, file busybox-1.18.5/procps/mpstat.c:74854:8, file busybox-1.18.5/procps/mpstat.c:74846:9, file busybox-1.18.5/procps/mpstat.c:74839:8, file busybox-1.18.5/procps/mpstat.c:74785:8
+	strcspn: (*char, *char) => unsigned long		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75426:10
+	strftime: (*char, unsigned long, *char, *struct tm) => unsigned long		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75399:1, file busybox-1.18.5/procps/mpstat.c:75037:1, file busybox-1.18.5/procps/mpstat.c:75036:1
+	strncmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75125:6
+	strstr: (*char, *char) => *char		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75176:15
+	strtok: (*char, *char) => *char		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75538:44, file busybox-1.18.5/procps/mpstat.c:75538:11
+	strtoul: (*char, **char, signed int) => unsigned long		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75213:20, file busybox-1.18.5/procps/mpstat.c:75179:9
+	sysconf: (signed int) => signed long		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75375:8
+	time: (*signed long) => signed long		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75256:1
+	uname: (*struct utsname) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75397:1
+	xatoi_positive: (*char) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75544:17, file busybox-1.18.5/procps/mpstat.c:75502:13, file busybox-1.18.5/procps/mpstat.c:75495:15
+	xatoll: (*char) => signed long long		if def(CONFIG_MPSTAT)		at string literal: xatoll:72821:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_MPSTAT)		at string literal: xatoll_range:72821:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MPSTAT)		at string literal: xatoll_range_sfx:72821:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_MPSTAT)		at string literal: xatoll_sfx:72821:0
+	xatou: (*char) => unsigned int		if def(CONFIG_MPSTAT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72837:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_MPSTAT)		at string literal: xatoull:72821:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MPSTAT)		at string literal: xatoull_range:72821:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MPSTAT)		at string literal: xatoull_range_sfx:72821:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_MPSTAT)		at string literal: xatoull_sfx:72821:0
+	xfopen_for_read: (*char) => *struct _IO_FILE		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75055:6
+	xmalloc: (unsigned long) => *void		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75420:8, file busybox-1.18.5/procps/mpstat.c:75169:7
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_MPSTAT)		at string literal: xstrtoll:72821:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_MPSTAT)		at string literal: xstrtoll_range:72821:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_MPSTAT)		at string literal: xstrtoll_range_sfx:72821:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_MPSTAT)		at string literal: xstrtoull:72821:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_MPSTAT)		at string literal: xstrtoull_range:72821:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_MPSTAT)		at string literal: xstrtoull_range_sfx:72821:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_MPSTAT)		at string literal: xstrtoull_sfx:72821:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75470:42, file busybox-1.18.5/procps/mpstat.c:75388:16, file busybox-1.18.5/procps/mpstat.c:75385:23, file busybox-1.18.5/procps/mpstat.c:75384:19, file busybox-1.18.5/procps/mpstat.c:75383:16, file busybox-1.18.5/procps/mpstat.c:75382:16
+exports (1)
+	mpstat_main: (signed int, **char) => signed int		if def(CONFIG_MPSTAT)		at file busybox-1.18.5/procps/mpstat.c:75455:0

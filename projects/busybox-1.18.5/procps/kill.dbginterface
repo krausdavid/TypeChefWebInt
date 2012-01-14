@@ -1,0 +1,43 @@
+fm True
+features (0)
+	
+imports (37)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72884:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72831:8
+	bb_error_msg: (*char, ...) => void		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74419:3, file busybox-1.18.5/procps/kill.c:74392:5, file busybox-1.18.5/procps/kill.c:74392:5, file busybox-1.18.5/procps/kill.c:74392:5, file busybox-1.18.5/procps/kill.c:74365:2, file busybox-1.18.5/procps/kill.c:74347:5, file busybox-1.18.5/procps/kill.c:74338:5, file busybox-1.18.5/procps/kill.c:74347:5, file busybox-1.18.5/procps/kill.c:74338:5, file busybox-1.18.5/procps/kill.c:74347:5, file busybox-1.18.5/procps/kill.c:74338:5, file busybox-1.18.5/procps/kill.c:74290:2, file busybox-1.18.5/procps/kill.c:74229:5, file busybox-1.18.5/procps/kill.c:74217:5
+	bb_perror_msg: (*char, ...) => void		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74422:3, file busybox-1.18.5/procps/kill.c:74403:6, file busybox-1.18.5/procps/kill.c:74403:6, file busybox-1.18.5/procps/kill.c:74403:6
+	bb_show_usage: (void) => void		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74259:3, file busybox-1.18.5/procps/kill.c:74259:3, file busybox-1.18.5/procps/kill.c:74259:3
+	bb_strtoi: (*char, **char, signed int) => signed int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74417:8, file busybox-1.18.5/procps/kill.c:74345:11, file busybox-1.18.5/procps/kill.c:74345:11, file busybox-1.18.5/procps/kill.c:74345:11
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72856:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74215:12, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72881:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72853:9
+	find_pid_by_name: (*char) => *signed int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74388:13, file busybox-1.18.5/procps/kill.c:74388:13, file busybox-1.18.5/procps/kill.c:74388:13
+	free: (*void) => void		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74406:3, file busybox-1.18.5/procps/kill.c:74406:3, file busybox-1.18.5/procps/kill.c:74406:3
+	get_signame: (signed int) => *char		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74222:9
+	get_signum: (*char) => signed int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74288:9, file busybox-1.18.5/procps/kill.c:74227:12
+	getpid: (void) => signed int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74297:7
+	getsid: (signed int) => signed int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74319:8, file busybox-1.18.5/procps/kill.c:74319:8, file busybox-1.18.5/procps/kill.c:74319:8
+	kill: (signed int, signed int) => signed int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74421:13, file busybox-1.18.5/procps/kill.c:74399:9, file busybox-1.18.5/procps/kill.c:74399:9, file busybox-1.18.5/procps/kill.c:74399:9, file busybox-1.18.5/procps/kill.c:74359:2, file busybox-1.18.5/procps/kill.c:74354:3, file busybox-1.18.5/procps/kill.c:74321:2, file busybox-1.18.5/procps/kill.c:74359:2, file busybox-1.18.5/procps/kill.c:74354:3, file busybox-1.18.5/procps/kill.c:74321:2, file busybox-1.18.5/procps/kill.c:74359:2, file busybox-1.18.5/procps/kill.c:74354:3, file busybox-1.18.5/procps/kill.c:74321:2
+	print_signames: (void) => void		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74209:3
+	printf: (*char, ...) => signed int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74232:4
+	procps_scan: (*struct procps_status_t, signed int) => *struct procps_status_t		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74323:14, file busybox-1.18.5/procps/kill.c:74323:14, file busybox-1.18.5/procps/kill.c:74323:14
+	puts: (*char) => signed int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74222:4
+	strlen: (*char) => unsigned long		if ((def(CONFIG_KILL)|def(CONFIG_ASH))&(def(CONFIG_KILLALL)|def(CONFIG_KILLALL5)))		at file busybox-1.18.5/procps/kill.c:74190:28
+	xatoll: (*char) => signed long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xatoll:72812:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xatoll_range:72812:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xatoll_range_sfx:72812:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xatoll_sfx:72812:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72828:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xatoull:72812:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xatoull_range:72812:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xatoull_range_sfx:72812:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xatoull_sfx:72812:0
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xstrtoll:72812:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xstrtoll_range:72812:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xstrtoll_range_sfx:72812:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xstrtoull:72812:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xstrtoull_range:72812:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xstrtoull_range_sfx:72812:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at string literal: xstrtoull_sfx:72812:0
+exports (1)
+	kill_main: (signed int, **char) => signed int		if (def(CONFIG_KILL)|def(CONFIG_ASH))		at file busybox-1.18.5/procps/kill.c:74176:0

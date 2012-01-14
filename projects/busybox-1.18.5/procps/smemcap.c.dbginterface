@@ -1,0 +1,41 @@
+fm True
+features (0)
+	
+imports (35)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70852:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70799:8
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70824:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70849:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70821:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72495:1
+	closedir: (*struct __dirstream) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72557:2, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72557:2
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72504:2
+	fstat: (signed int, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72494:1
+	full_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72488:6
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72540:3, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72449:1
+	readdir: (*struct __dirstream) => *struct dirent		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72537:14
+	sprintf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72511:1, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72469:1, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72456:1, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72455:1, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72454:1, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72453:1, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72451:1
+	strcpy: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72458:1, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72450:1
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70780:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70780:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70780:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70780:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70796:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70780:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70780:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70780:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70780:0
+	xchdir: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72532:1
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72483:6
+	xopendir: (*char) => *struct __dirstream		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72533:5
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70780:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70780:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70780:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70780:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70780:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70780:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70780:0
+	xwrite: (signed int, *void, unsigned long) => void		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72501:2, file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72471:1
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72485:8
+exports (1)
+	smemcap_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/procps/smemcap.c:72527:0

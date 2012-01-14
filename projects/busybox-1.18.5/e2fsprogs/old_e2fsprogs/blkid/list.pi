@@ -1,0 +1,8708 @@
+#line 1 "host/platform-redhat.h" 1
+//Generated with:
+//echo -|gcc -dM - -E -std=gnu99 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "busybox/config.h" 1
+#if definedEx(CONFIG_HAVE_DOT_CONFIG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HAVE_DOT_CONFIG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DESKTOP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DESKTOP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_EXTRA_COMPAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_EXTRA_COMPAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INCLUDE_SUSv2)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INCLUDE_SUSv2)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_USE_PORTABLE_CODE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_USE_PORTABLE_CODE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PLATFORM_LINUX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PLATFORM_LINUX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BUFFERS_USE_MALLOC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BUFFERS_USE_MALLOC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BUFFERS_GO_ON_STACK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BUFFERS_GO_ON_STACK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BUFFERS_GO_IN_BSS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BUFFERS_GO_IN_BSS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SHOW_USAGE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SHOW_USAGE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VERBOSE_USAGE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VERBOSE_USAGE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_COMPRESS_USAGE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_COMPRESS_USAGE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INSTALLER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INSTALLER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOCALE_SUPPORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOCALE_SUPPORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNICODE_SUPPORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNICODE_SUPPORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNICODE_USING_LOCALE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNICODE_USING_LOCALE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SUBST_WCHAR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SUBST_WCHAR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LAST_SUPPORTED_WCHAR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LAST_SUPPORTED_WCHAR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNICODE_COMBINING_WCHARS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNICODE_COMBINING_WCHARS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNICODE_WIDE_WCHARS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNICODE_WIDE_WCHARS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNICODE_BIDI_SUPPORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNICODE_BIDI_SUPPORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNICODE_NEUTRAL_TABLE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNICODE_NEUTRAL_TABLE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNICODE_PRESERVE_BROKEN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNICODE_PRESERVE_BROKEN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LONG_OPTS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LONG_OPTS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DEVPTS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DEVPTS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CLEAN_UP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CLEAN_UP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UTMP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UTMP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_WTMP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_WTMP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PIDFILE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PIDFILE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SUID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SUID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SUID_CONFIG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SUID_CONFIG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SUID_CONFIG_QUIET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SUID_CONFIG_QUIET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SELINUX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SELINUX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PREFER_APPLETS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PREFER_APPLETS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BUSYBOX_EXEC_PATH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BUSYBOX_EXEC_PATH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SYSLOG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SYSLOG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HAVE_RPC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HAVE_RPC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_STATIC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_STATIC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PIE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PIE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NOMMU)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NOMMU)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BUILD_LIBBUSYBOX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BUILD_LIBBUSYBOX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INDIVIDUAL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INDIVIDUAL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SHARED_BUSYBOX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SHARED_BUSYBOX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CROSS_COMPILER_PREFIX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CROSS_COMPILER_PREFIX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_EXTRA_CFLAGS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_EXTRA_CFLAGS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEBUG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEBUG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEBUG_PESSIMIZE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEBUG_PESSIMIZE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_WERROR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_WERROR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NO_DEBUG_LIB)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NO_DEBUG_LIB)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DMALLOC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DMALLOC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_EFENCE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_EFENCE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSTALL_NO_USR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_NO_USR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSTALL_APPLET_SYMLINKS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_APPLET_SYMLINKS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSTALL_APPLET_HARDLINKS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_APPLET_HARDLINKS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSTALL_APPLET_SCRIPT_WRAPPERS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_APPLET_SCRIPT_WRAPPERS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSTALL_APPLET_DONT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_APPLET_DONT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSTALL_SH_APPLET_SYMLINK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_SH_APPLET_SYMLINK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSTALL_SH_APPLET_HARDLINK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_SH_APPLET_HARDLINK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSTALL_SH_APPLET_SCRIPT_WRAPPER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_SH_APPLET_SCRIPT_WRAPPER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PREFIX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PREFIX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PASSWORD_MINLEN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PASSWORD_MINLEN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MD5_SIZE_VS_SPEED)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MD5_SIZE_VS_SPEED)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FAST_TOP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FAST_TOP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_ETC_NETWORKS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_ETC_NETWORKS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EDITING)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EDITING)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EDITING_MAX_LEN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EDITING_MAX_LEN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EDITING_VI)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EDITING_VI)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EDITING_HISTORY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EDITING_HISTORY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAB_COMPLETION)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAB_COMPLETION)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_USERNAME_COMPLETION)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_USERNAME_COMPLETION)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EDITING_ASK_TERMINAL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EDITING_ASK_TERMINAL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_NON_POSIX_CP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_NON_POSIX_CP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VERBOSE_CP_MESSAGE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VERBOSE_CP_MESSAGE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_COPYBUF_KB)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_COPYBUF_KB)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MONOTONIC_SYSCALL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MONOTONIC_SYSCALL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IOCTL_HEX2STR_ERROR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IOCTL_HEX2STR_ERROR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HWIB)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HWIB)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SEAMLESS_XZ)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SEAMLESS_XZ)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SEAMLESS_LZMA)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SEAMLESS_LZMA)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SEAMLESS_GZ)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SEAMLESS_GZ)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SEAMLESS_Z)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SEAMLESS_Z)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_AR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_AR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_AR_LONG_FILENAMES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_AR_LONG_FILENAMES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_AR_CREATE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_AR_CREATE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BUNZIP2)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BUNZIP2)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BZIP2)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BZIP2)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CPIO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CPIO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CPIO_O)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CPIO_O)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CPIO_P)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CPIO_P)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DPKG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DPKG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DPKG_DEB)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DPKG_DEB)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DPKG_DEB_EXTRACT_ONLY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DPKG_DEB_EXTRACT_ONLY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_GUNZIP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_GUNZIP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_GZIP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_GZIP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LZOP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LZOP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LZOP_COMPR_HIGH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LZOP_COMPR_HIGH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RPM2CPIO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RPM2CPIO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RPM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RPM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TAR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TAR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_CREATE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_CREATE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_AUTODETECT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_AUTODETECT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_FROM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_FROM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_OLDGNU_COMPATIBILITY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_OLDGNU_COMPATIBILITY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_OLDSUN_COMPATIBILITY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_OLDSUN_COMPATIBILITY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_GNU_EXTENSIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_GNU_EXTENSIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_TO_COMMAND)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_TO_COMMAND)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_NOPRESERVE_TIME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_NOPRESERVE_TIME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TAR_SELINUX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TAR_SELINUX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNCOMPRESS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNCOMPRESS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNLZMA)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNLZMA)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LZMA_FAST)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LZMA_FAST)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LZMA)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LZMA)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNXZ)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNXZ)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_XZ)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_XZ)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNZIP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNZIP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BASENAME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BASENAME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DATE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DATE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DATE_ISOFMT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DATE_ISOFMT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DATE_NANO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DATE_NANO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DATE_COMPAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DATE_COMPAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TEST)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TEST)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TEST_64)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TEST_64)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TR_CLASSES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TR_CLASSES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TR_EQUIV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TR_EQUIV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BASE64)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BASE64)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CAL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CAL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CATV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CATV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHGRP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHGRP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHMOD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHMOD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHOWN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHOWN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHOWN_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHOWN_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHROOT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHROOT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CKSUM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CKSUM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_COMM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_COMM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CP_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CP_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CUT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CUT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DD_SIGNAL_HANDLING)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DD_SIGNAL_HANDLING)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DD_THIRD_STATUS_LINE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DD_THIRD_STATUS_LINE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DD_IBS_OBS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DD_IBS_OBS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DF_FANCY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DF_FANCY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DIRNAME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DIRNAME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DOS2UNIX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DOS2UNIX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNIX2DOS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNIX2DOS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DU)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DU)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DU_DEFAULT_BLOCKSIZE_1K)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DU_DEFAULT_BLOCKSIZE_1K)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ECHO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ECHO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FANCY_ECHO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FANCY_ECHO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ENV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ENV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_EXPAND)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_EXPAND)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_EXPR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_EXPR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_EXPR_MATH_SUPPORT_64)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_EXPR_MATH_SUPPORT_64)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FALSE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FALSE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FOLD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FOLD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FSYNC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FSYNC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HEAD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HEAD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FANCY_HEAD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FANCY_HEAD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HOSTID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HOSTID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSTALL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LENGTH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LENGTH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOGNAME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOGNAME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LS_FILETYPES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LS_FILETYPES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LS_FOLLOWLINKS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LS_FOLLOWLINKS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LS_RECURSIVE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LS_RECURSIVE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LS_SORTFILES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LS_SORTFILES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LS_TIMESTAMPS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LS_TIMESTAMPS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LS_USERNAME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LS_USERNAME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LS_COLOR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LS_COLOR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LS_COLOR_IS_DEFAULT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LS_COLOR_IS_DEFAULT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MD5SUM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MD5SUM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MKDIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MKDIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MKFIFO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MKFIFO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MKNOD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MKNOD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NICE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NICE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NOHUP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NOHUP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_OD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_OD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PRINTENV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PRINTENV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PRINTF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PRINTF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PWD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PWD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_READLINK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_READLINK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_READLINK_FOLLOW)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_READLINK_FOLLOW)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_REALPATH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_REALPATH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RMDIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RMDIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SEQ)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SEQ)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SHA1SUM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SHA1SUM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SHA256SUM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SHA256SUM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SHA512SUM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SHA512SUM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SLEEP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SLEEP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FANCY_SLEEP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FANCY_SLEEP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FLOAT_SLEEP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FLOAT_SLEEP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SORT_BIG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SORT_BIG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SPLIT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SPLIT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SPLIT_FANCY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SPLIT_FANCY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_STAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_STAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_STAT_FORMAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_STAT_FORMAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_STTY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_STTY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SUM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SUM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SYNC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SYNC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TAC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TAC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TAIL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TAIL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FANCY_TAIL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FANCY_TAIL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TEE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TEE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TEE_USE_BLOCK_IO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TEE_USE_BLOCK_IO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TOUCH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TOUCH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TRUE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TRUE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TTY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TTY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNAME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNAME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNEXPAND)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNEXPAND)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UNEXPAND_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UNEXPAND_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UNIQ)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UNIQ)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_USLEEP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_USLEEP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UUDECODE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UUDECODE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UUENCODE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UUENCODE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_WC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_WC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_WC_LARGE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_WC_LARGE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_WHO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_WHO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_WHOAMI)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_WHOAMI)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_YES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_YES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PRESERVE_HARDLINKS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PRESERVE_HARDLINKS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_AUTOWIDTH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_AUTOWIDTH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HUMAN_READABLE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HUMAN_READABLE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MD5_SHA1_SUM_CHECK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MD5_SHA1_SUM_CHECK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHVT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHVT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FGCONSOLE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FGCONSOLE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CLEAR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CLEAR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEALLOCVT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEALLOCVT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DUMPKMAP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DUMPKMAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_KBD_MODE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_KBD_MODE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOADFONT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOADFONT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOADKMAP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOADKMAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_OPENVT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_OPENVT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RESET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RESET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RESIZE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RESIZE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_RESIZE_PRINT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_RESIZE_PRINT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETCONSOLE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETCONSOLE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SETCONSOLE_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SETCONSOLE_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETFONT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETFONT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SETFONT_TEXTUAL_MAP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SETFONT_TEXTUAL_MAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEFAULT_SETFONT_DIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEFAULT_SETFONT_DIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETKEYCODES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETKEYCODES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETLOGCONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETLOGCONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SHOWKEY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SHOWKEY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LOADFONT_PSF2)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LOADFONT_PSF2)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LOADFONT_RAW)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LOADFONT_RAW)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MKTEMP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MKTEMP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PIPE_PROGRESS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PIPE_PROGRESS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RUN_PARTS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RUN_PARTS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_RUN_PARTS_FANCY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_RUN_PARTS_FANCY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_START_STOP_DAEMON)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_START_STOP_DAEMON)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_START_STOP_DAEMON_FANCY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_START_STOP_DAEMON_FANCY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_WHICH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_WHICH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_AWK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_AWK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_AWK_LIBM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_AWK_LIBM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CMP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CMP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DIFF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DIFF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DIFF_DIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DIFF_DIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ED)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ED)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PATCH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PATCH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SED)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SED)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_VI)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_VI)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_MAX_LEN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_MAX_LEN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_8BIT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_8BIT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_COLON)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_COLON)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_YANKMARK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_YANKMARK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_SEARCH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_SEARCH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_USE_SIGNALS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_USE_SIGNALS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_DOT_CMD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_DOT_CMD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_READONLY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_READONLY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_SETOPTS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_SETOPTS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_SET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_SET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_WIN_RESIZE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_WIN_RESIZE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_ASK_TERMINAL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_ASK_TERMINAL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VI_OPTIMIZE_CURSOR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VI_OPTIMIZE_CURSOR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_ALLOW_EXEC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_ALLOW_EXEC)
+   
+   
+   
+#endif
+
+   
+   
+   
+    
+   
+   
+
+#if definedEx(CONFIG_FEATURE_FIND_PRINT0)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_PRINT0)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_MTIME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_MTIME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_MMIN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_MMIN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_PERM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_PERM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_TYPE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_TYPE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_XDEV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_XDEV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_MAXDEPTH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_MAXDEPTH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_NEWER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_NEWER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_INUM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_INUM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_EXEC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_EXEC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_USER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_USER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_GROUP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_GROUP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_NOT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_NOT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_DEPTH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_DEPTH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_PAREN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_PAREN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_SIZE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_SIZE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_PRUNE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_PRUNE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_DELETE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_DELETE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_PATH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_PATH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_REGEX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_REGEX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_CONTEXT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_CONTEXT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FIND_LINKS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FIND_LINKS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_GREP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_GREP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_GREP_EGREP_ALIAS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_GREP_EGREP_ALIAS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_GREP_FGREP_ALIAS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_GREP_FGREP_ALIAS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_GREP_CONTEXT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_GREP_CONTEXT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_XARGS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_XARGS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_XARGS_SUPPORT_QUOTES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_XARGS_SUPPORT_QUOTES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_XARGS_SUPPORT_TERMOPT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_XARGS_SUPPORT_TERMOPT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_XARGS_SUPPORT_ZERO_TERM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_XARGS_SUPPORT_ZERO_TERM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BOOTCHARTD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BOOTCHARTD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BOOTCHARTD_BLOATED_HEADER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BOOTCHARTD_BLOATED_HEADER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BOOTCHARTD_CONFIG_FILE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BOOTCHARTD_CONFIG_FILE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INIT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INIT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_USE_INITTAB)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_USE_INITTAB)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_KILL_REMOVED)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_KILL_REMOVED)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_KILL_DELAY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_KILL_DELAY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INIT_SCTTY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INIT_SCTTY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INIT_SYSLOG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INIT_SYSLOG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EXTRA_QUIET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EXTRA_QUIET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INIT_COREDUMPS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INIT_COREDUMPS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INITRD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INITRD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INIT_TERMINAL_TYPE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INIT_TERMINAL_TYPE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HALT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HALT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CALL_TELINIT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CALL_TELINIT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TELINIT_PATH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TELINIT_PATH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MESG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MESG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SHADOWPASSWDS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SHADOWPASSWDS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_USE_BB_PWD_GRP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_USE_BB_PWD_GRP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_USE_BB_SHADOW)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_USE_BB_SHADOW)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_USE_BB_CRYPT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_USE_BB_CRYPT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_USE_BB_CRYPT_SHA)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_USE_BB_CRYPT_SHA)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ADDUSER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ADDUSER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHECK_NAMES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHECK_NAMES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FIRST_SYSTEM_ID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FIRST_SYSTEM_ID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LAST_SYSTEM_ID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LAST_SYSTEM_ID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ADDGROUP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ADDGROUP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DELUSER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DELUSER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DELGROUP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DELGROUP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DEL_USER_FROM_GROUP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DEL_USER_FROM_GROUP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_GETTY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_GETTY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOGIN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOGIN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PAM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PAM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOGIN_SCRIPTS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOGIN_SCRIPTS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_NOLOGIN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_NOLOGIN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SECURETTY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SECURETTY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PASSWD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PASSWD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PASSWD_WEAK_CHECK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PASSWD_WEAK_CHECK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CRYPTPW)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CRYPTPW)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHPASSWD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHPASSWD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SU)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SU)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SU_SYSLOG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SU_SYSLOG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SU_CHECKS_SHELLS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SU_CHECKS_SHELLS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SULOGIN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SULOGIN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_VLOCK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_VLOCK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHATTR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHATTR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FSCK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FSCK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LSATTR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LSATTR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TUNE2FS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TUNE2FS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MODINFO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MODINFO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MODPROBE_SMALL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MODPROBE_SMALL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MODPROBE_SMALL_OPTIONS_ON_CMDLINE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MODPROBE_SMALL_OPTIONS_ON_CMDLINE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MODPROBE_SMALL_CHECK_ALREADY_LOADED)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MODPROBE_SMALL_CHECK_ALREADY_LOADED)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INSMOD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSMOD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RMMOD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RMMOD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LSMOD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LSMOD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MODPROBE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MODPROBE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MODPROBE_BLACKLIST)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MODPROBE_BLACKLIST)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEPMOD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEPMOD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_2_4_MODULES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_2_4_MODULES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INSMOD_TRY_MMAP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INSMOD_TRY_MMAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INSMOD_VERSION_CHECKING)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INSMOD_VERSION_CHECKING)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INSMOD_KSYMOOPS_SYMBOLS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INSMOD_KSYMOOPS_SYMBOLS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INSMOD_LOADINKMEM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INSMOD_LOADINKMEM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INSMOD_LOAD_MAP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INSMOD_LOAD_MAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INSMOD_LOAD_MAP_FULL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INSMOD_LOAD_MAP_FULL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MODUTILS_ALIAS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MODUTILS_ALIAS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MODUTILS_SYMBOLS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MODUTILS_SYMBOLS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEFAULT_MODULES_DIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEFAULT_MODULES_DIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEFAULT_DEPMOD_FILE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEFAULT_DEPMOD_FILE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BLOCKDEV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BLOCKDEV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_REV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_REV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ACPID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ACPID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_ACPID_COMPAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_ACPID_COMPAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BLKID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BLKID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DMESG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DMESG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DMESG_PRETTY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DMESG_PRETTY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FBSET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FBSET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FBSET_FANCY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FBSET_FANCY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FBSET_READMODE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FBSET_READMODE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FDFLUSH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FDFLUSH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FDFORMAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FDFORMAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FDISK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FDISK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FDISK_SUPPORT_LARGE_DISKS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FDISK_SUPPORT_LARGE_DISKS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FDISK_WRITABLE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FDISK_WRITABLE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_AIX_LABEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_AIX_LABEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SGI_LABEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SGI_LABEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SUN_LABEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SUN_LABEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_OSF_LABEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_OSF_LABEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FDISK_ADVANCED)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FDISK_ADVANCED)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FINDFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FINDFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FLOCK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FLOCK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FREERAMDISK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FREERAMDISK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FSCK_MINIX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FSCK_MINIX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MKFS_EXT2)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MKFS_EXT2)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MKFS_MINIX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MKFS_MINIX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MINIX2)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MINIX2)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MKFS_REISER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MKFS_REISER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MKFS_VFAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MKFS_VFAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_GETOPT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_GETOPT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_GETOPT_LONG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_GETOPT_LONG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HEXDUMP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HEXDUMP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HEXDUMP_REVERSE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HEXDUMP_REVERSE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HWCLOCK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HWCLOCK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HWCLOCK_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HWCLOCK_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HWCLOCK_ADJTIME_FHS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HWCLOCK_ADJTIME_FHS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IPCRM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IPCRM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IPCS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IPCS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOSETUP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOSETUP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LSPCI)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LSPCI)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LSUSB)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LSUSB)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MDEV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MDEV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MDEV_CONF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MDEV_CONF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MDEV_RENAME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MDEV_RENAME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MDEV_RENAME_REGEXP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MDEV_RENAME_REGEXP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MDEV_EXEC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MDEV_EXEC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MDEV_LOAD_FIRMWARE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MDEV_LOAD_FIRMWARE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MKSWAP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MKSWAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MKSWAP_UUID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MKSWAP_UUID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MORE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MORE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_USE_TERMIOS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_USE_TERMIOS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MOUNT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MOUNT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_FAKE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_FAKE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_VERBOSE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_VERBOSE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_HELPERS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_HELPERS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_LABEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_LABEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_NFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_NFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_CIFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_CIFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_FLAGS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_FLAGS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_FSTAB)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_FSTAB)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PIVOT_ROOT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PIVOT_ROOT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RDATE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RDATE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RDEV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RDEV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_READPROFILE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_READPROFILE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RTCWAKE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RTCWAKE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SCRIPT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SCRIPT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SCRIPTREPLAY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SCRIPTREPLAY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETARCH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETARCH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SWAPONOFF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SWAPONOFF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SWAPON_PRI)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SWAPON_PRI)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SWITCH_ROOT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SWITCH_ROOT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UMOUNT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UMOUNT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UMOUNT_ALL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UMOUNT_ALL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_LOOP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_LOOP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MOUNT_LOOP_CREATE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MOUNT_LOOP_CREATE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MTAB_SUPPORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MTAB_SUPPORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_VOLUMEID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_VOLUMEID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_EXT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_EXT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_BTRFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_BTRFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_REISERFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_REISERFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_FAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_FAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_HFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_HFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_JFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_JFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_XFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_XFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_ISO9660)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_ISO9660)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_UDF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_UDF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_LUKS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_LUKS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_LINUXSWAP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_LINUXSWAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_CRAMFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_CRAMFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_ROMFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_ROMFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_SYSV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_SYSV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_OCFS2)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_OCFS2)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_VOLUMEID_LINUXRAID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_VOLUMEID_LINUXRAID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CONSPY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CONSPY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NANDWRITE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NANDWRITE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UBIATTACH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UBIATTACH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UBIDETACH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UBIDETACH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ADJTIMEX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ADJTIMEX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BBCONFIG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BBCONFIG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BEEP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BEEP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BEEP_FREQ)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BEEP_FREQ)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BEEP_LENGTH_MS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BEEP_LENGTH_MS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHAT_NOFAIL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHAT_NOFAIL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHAT_TTY_HIFI)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHAT_TTY_HIFI)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHAT_IMPLICIT_CR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHAT_IMPLICIT_CR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHAT_SWALLOW_OPTS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHAT_SWALLOW_OPTS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHAT_SEND_ESCAPES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHAT_SEND_ESCAPES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHAT_VAR_ABORT_LEN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHAT_VAR_ABORT_LEN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHAT_CLR_ABORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHAT_CLR_ABORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHRT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHRT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CROND)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CROND)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CROND_D)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CROND_D)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CROND_CALL_SENDMAIL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CROND_CALL_SENDMAIL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CROND_DIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CROND_DIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CRONTAB)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CRONTAB)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DC_LIBM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DC_LIBM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEVFSD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEVFSD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEVFSD_MODLOAD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEVFSD_MODLOAD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEVFSD_FG_NP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEVFSD_FG_NP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEVFSD_VERBOSE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEVFSD_VERBOSE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_DEVFS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_DEVFS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DEVMEM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DEVMEM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_EJECT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_EJECT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_EJECT_SCSI)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_EJECT_SCSI)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FBSPLASH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FBSPLASH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FLASHCP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FLASHCP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FLASH_LOCK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FLASH_LOCK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FLASH_UNLOCK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FLASH_UNLOCK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FLASH_ERASEALL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FLASH_ERASEALL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IONICE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IONICE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INOTIFYD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INOTIFYD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LAST)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LAST)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LAST_SMALL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LAST_SMALL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LAST_FANCY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LAST_FANCY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LESS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LESS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LESS_MAXLINES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LESS_MAXLINES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LESS_BRACKETS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LESS_BRACKETS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LESS_FLAGS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LESS_FLAGS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LESS_MARKS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LESS_MARKS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LESS_REGEXP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LESS_REGEXP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LESS_WINCH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LESS_WINCH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LESS_DASHCMD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LESS_DASHCMD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LESS_LINENUMS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LESS_LINENUMS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HDPARM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HDPARM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HDPARM_GET_IDENTITY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HDPARM_GET_IDENTITY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HDPARM_HDIO_SCAN_HWIF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HDPARM_HDIO_SCAN_HWIF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HDPARM_HDIO_UNREGISTER_HWIF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HDPARM_HDIO_UNREGISTER_HWIF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HDPARM_HDIO_DRIVE_RESET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HDPARM_HDIO_DRIVE_RESET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HDPARM_HDIO_TRISTATE_HWIF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HDPARM_HDIO_TRISTATE_HWIF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HDPARM_HDIO_GETSET_DMA)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HDPARM_HDIO_GETSET_DMA)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MAKEDEVS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MAKEDEVS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MAN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MAN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MICROCOM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MICROCOM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MOUNTPOINT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MOUNTPOINT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RAIDAUTORUN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RAIDAUTORUN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_READAHEAD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_READAHEAD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RFKILL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RFKILL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RUNLEVEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RUNLEVEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RX)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RX)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETSID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETSID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_STRINGS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_STRINGS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TASKSET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TASKSET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TASKSET_FANCY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TASKSET_FANCY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TIME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TIME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TIMEOUT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TIMEOUT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TTYSIZE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TTYSIZE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_VOLNAME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_VOLNAME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_WALL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_WALL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_WATCHDOG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_WATCHDOG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NBDCLIENT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NBDCLIENT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NC_SERVER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NC_SERVER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NC_EXTRA)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NC_EXTRA)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NC_110_COMPAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NC_110_COMPAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IPV6)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IPV6)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UNIX_LOCAL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UNIX_LOCAL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PREFER_IPV4_ADDRESS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PREFER_IPV4_ADDRESS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_VERBOSE_RESOLUTION_ERRORS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_VERBOSE_RESOLUTION_ERRORS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ARP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ARP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ARPING)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ARPING)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BRCTL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BRCTL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BRCTL_FANCY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BRCTL_FANCY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BRCTL_SHOW)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BRCTL_SHOW)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DNSD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DNSD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ETHER_WAKE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ETHER_WAKE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FAKEIDENTD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FAKEIDENTD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FTPD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FTPD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FTP_WRITE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FTP_WRITE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FTPD_ACCEPT_BROKEN_LIST)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FTPD_ACCEPT_BROKEN_LIST)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FTPGET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FTPGET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FTPPUT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FTPPUT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FTPGETPUT_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FTPGETPUT_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HOSTNAME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HOSTNAME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HTTPD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HTTPD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_RANGES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_RANGES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_USE_SENDFILE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_USE_SENDFILE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_SETUID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_SETUID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_BASIC_AUTH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_BASIC_AUTH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_AUTH_MD5)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_AUTH_MD5)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_CGI)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_CGI)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_CONFIG_WITH_SCRIPT_INTERPR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_CONFIG_WITH_SCRIPT_INTERPR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_SET_REMOTE_PORT_TO_ENV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_SET_REMOTE_PORT_TO_ENV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_ENCODE_URL_STR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_ENCODE_URL_STR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_ERROR_PAGES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_ERROR_PAGES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_PROXY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_PROXY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_HTTPD_GZIP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_HTTPD_GZIP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IFCONFIG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IFCONFIG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFCONFIG_STATUS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFCONFIG_STATUS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFCONFIG_SLIP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFCONFIG_SLIP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFCONFIG_MEMSTART_IOADDR_IRQ)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFCONFIG_MEMSTART_IOADDR_IRQ)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFCONFIG_HW)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFCONFIG_HW)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFCONFIG_BROADCAST_PLUS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFCONFIG_BROADCAST_PLUS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IFENSLAVE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IFENSLAVE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IFPLUGD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IFPLUGD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IFUPDOWN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IFUPDOWN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IFUPDOWN_IFSTATE_PATH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IFUPDOWN_IFSTATE_PATH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFUPDOWN_IP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFUPDOWN_IP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFUPDOWN_IP_BUILTIN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFUPDOWN_IP_BUILTIN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFUPDOWN_IFCONFIG_BUILTIN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFUPDOWN_IFCONFIG_BUILTIN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFUPDOWN_IPV4)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFUPDOWN_IPV4)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFUPDOWN_IPV6)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFUPDOWN_IPV6)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFUPDOWN_MAPPING)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFUPDOWN_MAPPING)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IFUPDOWN_EXTERNAL_DHCP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IFUPDOWN_EXTERNAL_DHCP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_INETD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INETD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_ECHO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_ECHO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DISCARD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DISCARD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_TIME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_TIME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_INETD_RPC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_INETD_RPC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IP_ADDRESS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IP_ADDRESS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IP_LINK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IP_LINK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IP_ROUTE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IP_ROUTE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IP_TUNNEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IP_TUNNEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IP_RULE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IP_RULE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IP_SHORT_FORMS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IP_SHORT_FORMS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IP_RARE_PROTOCOLS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IP_RARE_PROTOCOLS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IPADDR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IPADDR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IPLINK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IPLINK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IPROUTE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IPROUTE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IPTUNNEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IPTUNNEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IPRULE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IPRULE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IPCALC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IPCALC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IPCALC_FANCY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IPCALC_FANCY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IPCALC_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IPCALC_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NAMEIF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NAMEIF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_NAMEIF_EXTENDED)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_NAMEIF_EXTENDED)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NETSTAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NETSTAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_NETSTAT_WIDE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_NETSTAT_WIDE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_NETSTAT_PRG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_NETSTAT_PRG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NSLOOKUP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NSLOOKUP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NTPD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NTPD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_NTPD_SERVER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_NTPD_SERVER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PING)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PING)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PING6)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PING6)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_FANCY_PING)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_FANCY_PING)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PSCAN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PSCAN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ROUTE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ROUTE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SLATTACH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SLATTACH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TCPSVD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TCPSVD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TELNET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TELNET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TELNET_TTYPE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TELNET_TTYPE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TELNET_AUTOLOGIN)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TELNET_AUTOLOGIN)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TELNETD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TELNETD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TELNETD_STANDALONE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TELNETD_STANDALONE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TELNETD_INETD_WAIT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TELNETD_INETD_WAIT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TFTP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TFTP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TFTPD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TFTPD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TFTP_GET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TFTP_GET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TFTP_PUT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TFTP_PUT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TFTP_BLOCKSIZE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TFTP_BLOCKSIZE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TFTP_PROGRESS_BAR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TFTP_PROGRESS_BAR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TFTP_DEBUG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TFTP_DEBUG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TRACEROUTE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TRACEROUTE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TRACEROUTE6)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TRACEROUTE6)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TRACEROUTE_VERBOSE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TRACEROUTE_VERBOSE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TRACEROUTE_SOURCE_ROUTE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TRACEROUTE_SOURCE_ROUTE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TRACEROUTE_USE_ICMP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TRACEROUTE_USE_ICMP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TUNCTL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TUNCTL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TUNCTL_UG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TUNCTL_UG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UDHCPD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UDHCPD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DHCPRELAY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DHCPRELAY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DUMPLEASES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DUMPLEASES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UDHCPD_WRITE_LEASES_EARLY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UDHCPD_WRITE_LEASES_EARLY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_DHCPD_LEASES_FILE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_DHCPD_LEASES_FILE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UDHCPC)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UDHCPC)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UDHCPC_ARPING)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UDHCPC_ARPING)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UDHCP_PORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UDHCP_PORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UDHCP_DEBUG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UDHCP_DEBUG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UDHCP_RFC3397)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UDHCP_RFC3397)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UDHCPC_DEFAULT_SCRIPT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UDHCPC_DEFAULT_SCRIPT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UDHCPC_SLACK_FOR_BUGGY_SERVERS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UDHCPC_SLACK_FOR_BUGGY_SERVERS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IFUPDOWN_UDHCPC_CMD_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IFUPDOWN_UDHCPC_CMD_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UDPSVD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UDPSVD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_VCONFIG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_VCONFIG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_WGET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_WGET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_WGET_STATUSBAR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_WGET_STATUSBAR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_WGET_AUTHENTICATION)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_WGET_AUTHENTICATION)
+   
+   
+   
+#endif
+
+   
+   
+   
+    
+   
+   
+
+#if definedEx(CONFIG_FEATURE_WGET_TIMEOUT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_WGET_TIMEOUT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ZCIP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ZCIP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LPD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LPD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LPR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LPR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LPQ)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LPQ)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MAKEMIME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MAKEMIME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_MIME_CHARSET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_MIME_CHARSET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_POPMAILDIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_POPMAILDIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_POPMAILDIR_DELIVERY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_POPMAILDIR_DELIVERY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_REFORMIME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_REFORMIME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_REFORMIME_COMPAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_REFORMIME_COMPAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SENDMAIL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SENDMAIL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_IOSTAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_IOSTAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MPSTAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MPSTAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PMAP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PMAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SMEMCAP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SMEMCAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FREE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FREE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FUSER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FUSER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_KILL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_KILL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_KILLALL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_KILLALL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_KILLALL5)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_KILLALL5)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_NMETER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_NMETER)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PGREP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PGREP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PIDOF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PIDOF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PIDOF_SINGLE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PIDOF_SINGLE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PIDOF_OMIT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PIDOF_OMIT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PKILL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PKILL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_PS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PS_WIDE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PS_WIDE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PS_TIME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PS_TIME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RENICE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RENICE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_BB_SYSCTL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_BB_SYSCTL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_TOP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_TOP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TOP_SMP_CPU)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TOP_SMP_CPU)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TOP_DECIMALS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TOP_DECIMALS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TOP_SMP_PROCESS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TOP_SMP_PROCESS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_TOPMEM)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_TOPMEM)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SHOW_THREADS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SHOW_THREADS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_UPTIME)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_UPTIME)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_WATCH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_WATCH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RUNSV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RUNSV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RUNSVDIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RUNSVDIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_RUNSVDIR_LOG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_RUNSVDIR_LOG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SV)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SV)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SV_DEFAULT_SERVICE_DIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SV_DEFAULT_SERVICE_DIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SVLOGD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SVLOGD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHPST)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHPST)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETUIDGID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETUIDGID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ENVUIDGID)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ENVUIDGID)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ENVDIR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ENVDIR)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SOFTLIMIT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SOFTLIMIT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CHCON)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CHCON)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CHCON_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CHCON_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_GETENFORCE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_GETENFORCE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_GETSEBOOL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_GETSEBOOL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOAD_POLICY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOAD_POLICY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MATCHPATHCON)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MATCHPATHCON)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RESTORECON)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RESTORECON)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_RUNCON)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_RUNCON)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_RUNCON_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_RUNCON_LONG_OPTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SELINUXENABLED)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SELINUXENABLED)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETENFORCE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETENFORCE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETFILES)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETFILES)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SETFILES_CHECK_OPTION)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SETFILES_CHECK_OPTION)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SETSEBOOL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SETSEBOOL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SESTATUS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SESTATUS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_BASH_COMPAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_BASH_COMPAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_JOB_CONTROL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_JOB_CONTROL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_ALIAS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_ALIAS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_GETOPTS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_GETOPTS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_BUILTIN_ECHO)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_BUILTIN_ECHO)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_BUILTIN_PRINTF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_BUILTIN_PRINTF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_BUILTIN_TEST)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_BUILTIN_TEST)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_CMDCMD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_CMDCMD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_MAIL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_MAIL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_OPTIMIZE_FOR_SIZE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_OPTIMIZE_FOR_SIZE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_RANDOM_SUPPORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_RANDOM_SUPPORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_ASH_EXPAND_PRMT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_ASH_EXPAND_PRMT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_CTTYHACK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_CTTYHACK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_BASH_COMPAT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_BASH_COMPAT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_HELP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_HELP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_INTERACTIVE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_INTERACTIVE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_SAVEHISTORY)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_SAVEHISTORY)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_JOB)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_JOB)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_TICK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_TICK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_IF)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_IF)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_LOOPS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_LOOPS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_CASE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_CASE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_FUNCTIONS)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_FUNCTIONS)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_LOCAL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_LOCAL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_RANDOM_SUPPORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_RANDOM_SUPPORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_EXPORT_N)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_EXPORT_N)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_HUSH_MODE_X)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_MODE_X)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_MSH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_MSH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SH_IS_ASH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SH_IS_ASH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SH_IS_HUSH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SH_IS_HUSH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SH_IS_NONE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SH_IS_NONE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BASH_IS_ASH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BASH_IS_ASH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BASH_IS_HUSH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BASH_IS_HUSH)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_BASH_IS_NONE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_BASH_IS_NONE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SH_MATH_SUPPORT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SH_MATH_SUPPORT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SH_MATH_SUPPORT_64)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SH_MATH_SUPPORT_64)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SH_EXTRA_QUIET)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SH_EXTRA_QUIET)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SH_STANDALONE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SH_STANDALONE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SH_NOFORK)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SH_NOFORK)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_SYSLOGD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_SYSLOGD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_ROTATE_LOGFILE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_ROTATE_LOGFILE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_REMOTE_LOG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_REMOTE_LOG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SYSLOGD_DUP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SYSLOGD_DUP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_SYSLOGD_READ_BUFFER_SIZE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_SYSLOGD_READ_BUFFER_SIZE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IPC_SYSLOG)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IPC_SYSLOG)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_IPC_SYSLOG_BUFFER_SIZE)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_IPC_SYSLOG_BUFFER_SIZE)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOGREAD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOGREAD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_LOGREAD_REDUCED_LOCKING)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_LOGREAD_REDUCED_LOCKING)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_KLOGD)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_KLOGD)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_KLOGD_KLOGCTL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_KLOGD_KLOGCTL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_LOGGER)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_LOGGER)
+   
+   
+   
+#endif
+#line 1 "cprojects/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/list.c" 1
+/* vi: set sw=4 ts=4: */
+
+#line 1 "cprojects/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/list.h" 1
+/* vi: set sw=4 ts=4: */
+
+
+
+
+
+
+/*
+ * Simple doubly linked list implementation.
+ *
+ * Some of the internal functions ("__xxx") are useful when
+ * manipulating whole lists rather than single entries, as
+ * sometimes we already know the next/prev entries and we can
+ * generate better code by using them directly rather than
+ * using the generic single-entry routines.
+ */
+
+struct list_head {
+	struct list_head *next, *prev;
+};
+
+
+
+
+
+
+
+
+
+
+void __list_add(struct list_head * add, struct list_head * prev,	struct list_head * next);
+void list_add(struct list_head *add, struct list_head *head);
+void list_add_tail(struct list_head *add, struct list_head *head);
+void __list_del(struct list_head * prev, struct list_head * next);
+void list_del(struct list_head *entry);
+void list_del_init(struct list_head *entry);
+int list_empty(struct list_head *head);
+void list_splice(struct list_head *list, struct list_head *head);
+
+/**
+ * list_entry - get the struct for this entry
+ * @ptr:	the &struct list_head pointer.
+ * @type:	the type of the struct this is embedded in.
+ * @member:	the name of the list_struct within the struct.
+ */
+
+
+
+/**
+ * list_for_each - iterate over elements in a list
+ * @pos:	the &struct list_head to use as a loop counter.
+ * @head:	the head for your list.
+ */
+
+
+
+/**
+ * list_for_each_safe - iterate over elements in a list, but don't dereference
+ *                      pos after the body is done (in case it is freed)
+ * @pos:	the &struct list_head to use as a loop counter.
+ * @pnext:	the &struct list_head to use as a pointer to the next item.
+ * @head:	the head for your list (not included in iteration).
+ */
+
+
+
+
+
+
+
+
+#line 5 "cprojects/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/list.c" 2
+
+/*
+ * Insert a new entry between two known consecutive entries.
+ *
+ * This is only for internal list manipulation where we know
+ * the prev/next entries already!
+ */
+void __list_add(struct list_head * add,
+	struct list_head * prev,
+	struct list_head * next)
+{
+	next->prev = add;
+	add->next = next;
+	add->prev = prev;
+	prev->next = add;
+}
+
+/*
+ * list_add - add a new entry
+ * @add:	new entry to be added
+ * @head:	list head to add it after
+ *
+ * Insert a new entry after the specified head.
+ * This is good for implementing stacks.
+ */
+void list_add(struct list_head *add, struct list_head *head)
+{
+	__list_add(add, head, head->next);
+}
+
+/*
+ * list_add_tail - add a new entry
+ * @add:	new entry to be added
+ * @head:	list head to add it before
+ *
+ * Insert a new entry before the specified head.
+ * This is useful for implementing queues.
+ */
+void list_add_tail(struct list_head *add, struct list_head *head)
+{
+	__list_add(add, head->prev, head);
+}
+
+/*
+ * Delete a list entry by making the prev/next entries
+ * point to each other.
+ *
+ * This is only for internal list manipulation where we know
+ * the prev/next entries already!
+ */
+void __list_del(struct list_head * prev, struct list_head * next)
+{
+	next->prev = prev;
+	prev->next = next;
+}
+
+/*
+ * list_del - deletes entry from list.
+ * @entry:	the element to delete from the list.
+ *
+ * list_empty() on @entry does not return true after this, @entry is
+ * in an undefined state.
+ */
+void list_del(struct list_head *entry)
+{
+	__list_del(entry->prev, entry->next);
+}
+
+/*
+ * list_del_init - deletes entry from list and reinitialize it.
+ * @entry:	the element to delete from the list.
+ */
+void list_del_init(struct list_head *entry)
+{
+	__list_del(entry->prev, entry->next);
+	do { (entry)->next = (entry); (entry)->prev = (entry); } while (0);
+}
+
+/*
+ * list_empty - tests whether a list is empty
+ * @head:	the list to test.
+ */
+int list_empty(struct list_head *head)
+{
+	return head->next == head;
+}
+
+/*
+ * list_splice - join two lists
+ * @list:	the new list to add.
+ * @head:	the place to add it in the first list.
+ */
+void list_splice(struct list_head *list, struct list_head *head)
+{
+	struct list_head *first = list->next;
+
+	if (first != list) {
+		struct list_head *last = list->prev;
+		struct list_head *at = head->next;
+
+		first->prev = head;
+		head->next = first;
+
+		last->next = at;
+		at->prev = last;
+	}
+}

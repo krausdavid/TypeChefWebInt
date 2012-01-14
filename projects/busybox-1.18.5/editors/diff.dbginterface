@@ -1,0 +1,62 @@
+fm True
+features (0)
+	
+imports (56)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_DIFF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72952:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_DIFF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72899:8
+	bb_copyfd_eof: (signed int, signed int) => signed long		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74837:7
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75112:2, file busybox-1.18.5/editors/diff.c:75108:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_DIFF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72924:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_DIFF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72949:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_DIFF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72921:9
+	close: (signed int) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74840:4
+	concat_path_file: (*char, *char) => *char		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75122:15, file busybox-1.18.5/editors/diff.c:75005:19, file busybox-1.18.5/editors/diff.c:75002:29, file busybox-1.18.5/editors/diff.c:74938:21
+	fclose_if_not_stdin: (*struct _IO_FILE) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74876:1, file busybox-1.18.5/editors/diff.c:74875:1
+	fdopen: (signed int, *char) => *struct _IO_FILE		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74843:10
+	fgetc: (*struct _IO_FILE) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74533:11, file busybox-1.18.5/editors/diff.c:74321:6
+	fread: (*void, unsigned long, unsigned long, *struct _IO_FILE) => unsigned long		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74852:6, file busybox-1.18.5/editors/diff.c:74851:6
+	free: (*void) => void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75129:3, file busybox-1.18.5/editors/diff.c:75045:2, file busybox-1.18.5/editors/diff.c:75044:2, file busybox-1.18.5/editors/diff.c:75045:2, file busybox-1.18.5/editors/diff.c:75044:2, file busybox-1.18.5/editors/diff.c:75032:3, file busybox-1.18.5/editors/diff.c:75029:2, file busybox-1.18.5/editors/diff.c:75027:3, file busybox-1.18.5/editors/diff.c:75026:3, file busybox-1.18.5/editors/diff.c:74940:3, file busybox-1.18.5/editors/diff.c:74815:1, file busybox-1.18.5/editors/diff.c:74814:1, file busybox-1.18.5/editors/diff.c:74813:1, file busybox-1.18.5/editors/diff.c:74812:1, file busybox-1.18.5/editors/diff.c:74677:1, file busybox-1.18.5/editors/diff.c:74676:1, file busybox-1.18.5/editors/diff.c:74509:1, file busybox-1.18.5/editors/diff.c:74461:1, file busybox-1.18.5/editors/diff.c:74460:1
+	fseeko: (*struct _IO_FILE, signed long, signed int) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74581:2, file busybox-1.18.5/editors/diff.c:74307:2
+	fstat: (signed int, *struct stat) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75101:3
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75091:1
+	llist_pop: (**struct llist_t) => *void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75095:22
+	lseek: (signed int, signed long, signed int) => signed long		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74832:6
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74763:4
+	memset: (*void, signed int, unsigned long) => *void		if (def(CONFIG_FEATURE_DIFF_DIR)&def(CONFIG_DIFF))		at file busybox-1.18.5/editors/diff.c:74956:1
+	open_or_warn_stdin: (*char) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74826:11
+	printf: (*char, ...) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75022:5, file busybox-1.18.5/editors/diff.c:75020:5, file busybox-1.18.5/editors/diff.c:75017:4, file busybox-1.18.5/editors/diff.c:75015:4, file busybox-1.18.5/editors/diff.c:75013:4, file busybox-1.18.5/editors/diff.c:74996:3, file busybox-1.18.5/editors/diff.c:74891:3, file busybox-1.18.5/editors/diff.c:74887:3, file busybox-1.18.5/editors/diff.c:74793:3, file busybox-1.18.5/editors/diff.c:74791:4, file busybox-1.18.5/editors/diff.c:74788:4, file busybox-1.18.5/editors/diff.c:74783:3, file busybox-1.18.5/editors/diff.c:74780:4, file busybox-1.18.5/editors/diff.c:74779:4, file busybox-1.18.5/editors/diff.c:74535:4
+	putchar: (signed int) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74542:4, file busybox-1.18.5/editors/diff.c:74540:7, file busybox-1.18.5/editors/diff.c:74531:3, file busybox-1.18.5/editors/diff.c:74529:2
+	qsort: (*void, unsigned long, unsigned long, *(*void, *void) => signed int) => void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74638:2
+	qsort_string_vector: (**char, unsigned int) => void		if (def(CONFIG_FEATURE_DIFF_DIR)&def(CONFIG_DIFF))		at file busybox-1.18.5/editors/diff.c:74973:2
+	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if (def(CONFIG_FEATURE_DIFF_DIR)&def(CONFIG_DIFF))		at file busybox-1.18.5/editors/diff.c:74966:2
+	stat: (*char, *struct stat) => signed int		if (def(CONFIG_FEATURE_DIFF_DIR)&def(CONFIG_DIFF))		at file busybox-1.18.5/editors/diff.c:75010:4, file busybox-1.18.5/editors/diff.c:75003:5, file busybox-1.18.5/editors/diff.c:74939:11
+	strcmp: (*char, *char) => signed int		if (def(CONFIG_FEATURE_DIFF_DIR)&def(CONFIG_DIFF))		at file busybox-1.18.5/editors/diff.c:74993:36, file busybox-1.18.5/editors/diff.c:74977:34
+	strlen: (*char) => unsigned long		if (def(CONFIG_FEATURE_DIFF_DIR)&def(CONFIG_DIFF))		at file busybox-1.18.5/editors/diff.c:74965:16
+	strrchr: (*char, signed int) => *char		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75121:23
+	unlink: (*char) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74836:3
+	xatoll: (*char) => signed long long		if def(CONFIG_DIFF)		at string literal: xatoll:72880:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_DIFF)		at string literal: xatoll_range:72880:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_DIFF)		at string literal: xatoll_range_sfx:72880:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_DIFF)		at string literal: xatoll_sfx:72880:0
+	xatou: (*char) => unsigned int		if def(CONFIG_DIFF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72896:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_DIFF)		at string literal: xatoull:72880:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_DIFF)		at string literal: xatoull_range:72880:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_DIFF)		at string literal: xatoull_range_sfx:72880:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_DIFF)		at string literal: xatoull_sfx:72880:0
+	xfunc_die: (void) => void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74838:4
+	xmalloc: (unsigned long) => *void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74663:5, file busybox-1.18.5/editors/diff.c:74617:10, file busybox-1.18.5/editors/diff.c:74578:13, file busybox-1.18.5/editors/diff.c:74504:10
+	xmkstemp: (*char) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74834:16
+	xrealloc: (*void, unsigned long) => *void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:74661:9, file busybox-1.18.5/editors/diff.c:74657:10, file busybox-1.18.5/editors/diff.c:74599:15, file busybox-1.18.5/editors/diff.c:74442:12
+	xrealloc_vector_helper: (*void, unsigned int, signed int) => *void		if def(CONFIG_DIFF)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74912:45, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74762:45
+	xstat: (*char, *struct stat) => void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75123:3, file busybox-1.18.5/editors/diff.c:75104:3
+	xstrdup: (*char) => *char		if (def(CONFIG_FEATURE_DIFF_DIR)&def(CONFIG_DIFF))		at file busybox-1.18.5/editors/diff.c:74913:15
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_DIFF)		at string literal: xstrtoll:72880:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_DIFF)		at string literal: xstrtoll_range:72880:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_DIFF)		at string literal: xstrtoll_range_sfx:72880:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_DIFF)		at string literal: xstrtoull:72880:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_DIFF)		at string literal: xstrtoull_range:72880:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_DIFF)		at string literal: xstrtoull_range_sfx:72880:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_DIFF)		at string literal: xstrtoull_sfx:72880:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75084:42, file busybox-1.18.5/editors/diff.c:74420:14, file busybox-1.18.5/editors/diff.c:74417:22
+exports (1)
+	diff_main: (signed int, **char) => signed int		if def(CONFIG_DIFF)		at file busybox-1.18.5/editors/diff.c:75078:0

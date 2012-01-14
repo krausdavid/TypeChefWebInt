@@ -1,0 +1,50 @@
+fm True
+features (0)
+	
+imports (44)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_SWITCH_ROOT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73483:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_SWITCH_ROOT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73430:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74850:2, file busybox-1.18.5/util-linux/switch_root.c:74844:2
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74875:1, file busybox-1.18.5/util-linux/switch_root.c:74859:2
+	bb_show_usage: (void) => void		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74837:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_SWITCH_ROOT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73455:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_SWITCH_ROOT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73480:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_SWITCH_ROOT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73452:9
+	close: (signed int) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74867:2
+	closedir: (*struct __dirstream) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74797:3
+	concat_path_file: (*char, *char) => *char		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74793:13
+	execv: (*char, *char[]) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74874:1
+	free: (*void) => void		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74795:4
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74825:1
+	getpid: (void) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74834:29
+	lstat: (*char, *struct stat) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74778:5
+	mount: (*char, *char, *char, unsigned long, *void) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74857:5
+	opendir: (*char) => *struct __dirstream		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74783:8
+	readdir: (*struct __dirstream) => *struct dirent		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74785:15
+	rmdir: (*char) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74800:3
+	stat: (*char, *struct stat) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74843:5
+	statfs: (*char, *struct statfs) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74846:1
+	unlink: (*char) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74804:2
+	xatoll: (*char) => signed long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xatoll:73411:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xatoll_range:73411:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xatoll_range_sfx:73411:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xatoll_sfx:73411:0
+	xatou: (*char) => unsigned int		if def(CONFIG_SWITCH_ROOT)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73427:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xatoull:73411:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xatoull_range:73411:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xatoull_range_sfx:73411:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xatoull_sfx:73411:0
+	xchdir: (*char) => void		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74863:1, file busybox-1.18.5/util-linux/switch_root.c:74830:1
+	xchroot: (*char) => void		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74861:1
+	xdup2: (signed int, signed int) => void		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74870:2, file busybox-1.18.5/util-linux/switch_root.c:74869:2
+	xopen: (*char, signed int) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74868:2
+	xstat: (*char, *struct stat) => void		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74833:1, file busybox-1.18.5/util-linux/switch_root.c:74831:1
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xstrtoll:73411:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xstrtoll_range:73411:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xstrtoll_range_sfx:73411:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xstrtoull:73411:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xstrtoull_range:73411:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xstrtoull_range_sfx:73411:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_SWITCH_ROOT)		at string literal: xstrtoull_sfx:73411:0
+exports (1)
+	switch_root_main: (signed int, **char) => signed int		if def(CONFIG_SWITCH_ROOT)		at file busybox-1.18.5/util-linux/switch_root.c:74816:0

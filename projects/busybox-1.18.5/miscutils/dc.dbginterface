@@ -1,0 +1,39 @@
+fm True
+features (0)
+	
+imports (33)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_DC)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72879:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_DC)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72826:8
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76319:2
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76424:1, file busybox-1.18.5/miscutils/dc.c:76249:2, file busybox-1.18.5/miscutils/dc.c:76242:2
+	bb_putchar: (signed int) => signed int		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76356:2, file busybox-1.18.5/miscutils/dc.c:76353:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_DC)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72851:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_DC)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72876:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_DC)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72848:9
+	free: (*void) => void		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76467:3
+	pow: (double, double) => double		if (def(CONFIG_FEATURE_DC_LIBM)&def(CONFIG_DC))		at file busybox-1.18.5/miscutils/dc.c:76275:6
+	printf: (*char, ...) => signed int		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76342:2, file busybox-1.18.5/miscutils/dc.c:76339:2, file busybox-1.18.5/miscutils/dc.c:76333:3, file busybox-1.18.5/miscutils/dc.c:76331:3
+	skip_non_whitespace: (*char) => *char		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76434:12
+	skip_whitespace: (*char) => *char		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76432:17
+	strchrnul: (*char, signed int) => *char		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76317:9
+	strcmp: (*char, *char) => signed int		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76418:6
+	strtod: (*char, **char) => double		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76410:5
+	xatoll: (*char) => signed long long		if def(CONFIG_DC)		at string literal: xatoll:72807:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_DC)		at string literal: xatoll_range:72807:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_DC)		at string literal: xatoll_range_sfx:72807:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_DC)		at string literal: xatoll_sfx:72807:0
+	xatou: (*char) => unsigned int		if def(CONFIG_DC)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72823:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_DC)		at string literal: xatoull:72807:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_DC)		at string literal: xatoull_range:72807:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_DC)		at string literal: xatoull_range_sfx:72807:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_DC)		at string literal: xatoull_sfx:72807:0
+	xmalloc_fgetline: (*struct _IO_FILE) => *char		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76458:17
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_DC)		at string literal: xstrtoll:72807:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_DC)		at string literal: xstrtoll_range:72807:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_DC)		at string literal: xstrtoll_range_sfx:72807:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_DC)		at string literal: xstrtoull:72807:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_DC)		at string literal: xstrtoull_range:72807:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_DC)		at string literal: xstrtoull_range_sfx:72807:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_DC)		at string literal: xstrtoull_sfx:72807:0
+exports (1)
+	dc_main: (signed int, **char) => signed int		if def(CONFIG_DC)		at file busybox-1.18.5/miscutils/dc.c:76448:0

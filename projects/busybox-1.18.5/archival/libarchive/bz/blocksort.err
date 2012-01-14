@@ -1,0 +1,11 @@
+Exception in thread "main" java.lang.AssertionError: assertion failed
+	at scala.Predef$.assert(Predef.scala:89)
+	at de.fosd.typechef.parser.c.EnforceTreeHelper$class.prepareAST(EnforceTreeHelper.scala:42)
+	at de.fosd.typechef.typesystem.CTypeSystem.prepareAST(CTypeSystem.scala:19)
+	at de.fosd.typechef.typesystem.CTypeSystem.checkAST(CTypeSystem.scala:81)
+	at de.fosd.typechef.linux.LinuxPreprocessorFrontend$$anonfun$main$1.apply(LinuxPreprocessorFrontend.scala:148)
+	at de.fosd.typechef.linux.LinuxPreprocessorFrontend$$anonfun$main$1.apply(LinuxPreprocessorFrontend.scala:132)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:34)
+	at scala.collection.mutable.ArrayOps.foreach(ArrayOps.scala:38)
+	at de.fosd.typechef.linux.LinuxPreprocessorFrontend$.main(LinuxPreprocessorFrontend.scala:132)
+	at de.fosd.typechef.linux.LinuxPreprocessorFrontend.main(LinuxPreprocessorFrontend.scala)

@@ -1,0 +1,56 @@
+fm True
+features (0)
+	
+imports (50)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_ADDUSER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_ADDUSER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74310:2, file busybox-1.18.5/loginutils/adduser.c:74269:1, file busybox-1.18.5/loginutils/adduser.c:74238:3, file busybox-1.18.5/loginutils/adduser.c:74238:3, file busybox-1.18.5/loginutils/adduser.c:74223:3, file busybox-1.18.5/loginutils/adduser.c:74219:3, file busybox-1.18.5/loginutils/adduser.c:74223:3, file busybox-1.18.5/loginutils/adduser.c:74219:3, file busybox-1.18.5/loginutils/adduser.c:74188:2, file busybox-1.18.5/loginutils/adduser.c:74188:2
+	bb_internal_getgrgid: (unsigned int) => *struct group		if (def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDUSER))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74211:21
+	bb_internal_getgrnam: (*char) => *struct group		if (def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDUSER))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74232:21
+	bb_internal_getpwnam: (*char) => *struct passwd		if (def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDUSER))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h:74182:20
+	bb_internal_getpwuid: (unsigned int) => *struct passwd		if (def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDUSER))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h:74204:20
+	bb_simple_perror_msg: (*char) => void		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74442:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_ADDUSER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_ADDUSER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72880:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_ADDUSER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72852:9
+	chmod: (*char, unsigned int) => signed int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74440:6
+	chown: (*char, unsigned int, unsigned int) => signed int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74439:6
+	chown_main: (signed int, **char) => signed int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74436:3
+	copy_file: (*char, *char, signed int) => signed int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74434:3
+	die_if_bad_username: (*char) => void		if (def(CONFIG_FEATURE_CHECK_NAMES)&def(CONFIG_ADDUSER))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74335:34
+	execlp: (*char, *char, ...) => signed int		if def(CONFIG_ADDUSER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74263:33, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74263:33
+	find_applet_by_name: (*char) => signed int		if (def(CONFIG_FEATURE_PREFER_APPLETS)&def(CONFIG_ADDUSER))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74263:41
+	free: (*void) => void		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74412:2, file busybox-1.18.5/loginutils/adduser.c:74412:2, file busybox-1.18.5/loginutils/adduser.c:74380:2, file busybox-1.18.5/loginutils/adduser.c:74380:2, file busybox-1.18.5/loginutils/adduser.c:74254:1
+	geteuid: (void) => unsigned int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74309:5
+	getgrgid: (unsigned int) => *struct group		if (!def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDUSER))		at file busybox-1.18.5/loginutils/adduser.c:74214:58
+	getgrnam: (*char) => *struct group		if (!def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDUSER))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74232:21
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74324:9, file busybox-1.18.5/loginutils/adduser.c:74321:9
+	getpwnam: (*char) => *struct passwd		if (!def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDUSER))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h:74182:20
+	getpwuid: (unsigned int) => *struct passwd		if (!def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_ADDUSER))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h:74204:20
+	itoa: (signed int) => *char		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74219:49, file busybox-1.18.5/loginutils/adduser.c:74219:49
+	mkdir: (*char, unsigned int) => signed int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74424:18
+	system: (*char) => signed int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74253:1
+	time: (*signed long) => signed long		if (def(CONFIG_FEATURE_SHADOWPASSWDS)&def(CONFIG_ADDUSER))		at file busybox-1.18.5/loginutils/adduser.c:74394:47
+	umask: (unsigned int) => unsigned int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74419:1
+	update_passwd: (*char, *char, *char) => signed int		if (def(CONFIG_ADDUSER)&((!def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&!def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)&def(CONFIG_FEATURE_SHADOWPASSWDS))|(!def(CONFIG_FEATURE_ADDUSER_TO_GROUP)&!def(CONFIG_FEATURE_DEL_USER_FROM_GROUP))))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74398:57, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74364:57
+	update_passwd: (*char, *char, *char, *char) => signed int		if (def(CONFIG_ADDUSER)&(def(CONFIG_FEATURE_ADDUSER_TO_GROUP)|def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)|(def(CONFIG_FEATURE_SHADOWPASSWDS)&(def(CONFIG_FEATURE_ADDUSER_TO_GROUP)|def(CONFIG_FEATURE_DEL_USER_FROM_GROUP))&(def(CONFIG_FEATURE_ADDUSER_TO_GROUP)|def(CONFIG_FEATURE_DEL_USER_FROM_GROUP)|!def(CONFIG_FEATURE_SHADOWPASSWDS)))))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74398:57, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74364:57
+	xasprintf: (*char, ...) => *char		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74394:5, file busybox-1.18.5/loginutils/adduser.c:74359:5, file busybox-1.18.5/loginutils/adduser.c:74343:14, file busybox-1.18.5/loginutils/adduser.c:74251:8, file busybox-1.18.5/loginutils/adduser.c:74249:8
+	xatoll: (*char) => signed long long		if def(CONFIG_ADDUSER)		at string literal: xatoll:72811:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_ADDUSER)		at string literal: xatoll_range:72811:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ADDUSER)		at string literal: xatoll_range_sfx:72811:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_ADDUSER)		at string literal: xatoll_sfx:72811:0
+	xatou: (*char) => unsigned int		if def(CONFIG_ADDUSER)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72827:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_ADDUSER)		at string literal: xatoull:72811:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ADDUSER)		at string literal: xatoull_range:72811:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ADDUSER)		at string literal: xatoull_range_sfx:72811:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_ADDUSER)		at string literal: xatoull_sfx:72811:0
+	xgroup2gid: (*char) => signed long		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74354:24
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_ADDUSER)		at string literal: xstrtoll:72811:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_ADDUSER)		at string literal: xstrtoll_range:72811:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_ADDUSER)		at string literal: xstrtoll_range_sfx:72811:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_ADDUSER)		at string literal: xstrtoull:72811:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_ADDUSER)		at string literal: xstrtoull_range:72811:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_ADDUSER)		at string literal: xstrtoull_range_sfx:72811:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_ADDUSER)		at string literal: xstrtoull_sfx:72811:0
+exports (1)
+	adduser_main: (signed int, **char) => signed int		if def(CONFIG_ADDUSER)		at file busybox-1.18.5/loginutils/adduser.c:74298:0

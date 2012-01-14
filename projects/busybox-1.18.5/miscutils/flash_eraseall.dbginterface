@@ -1,0 +1,44 @@
+fm True
+features (0)
+	
+imports (38)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_FLASH_ERASEALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72886:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_FLASH_ERASEALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72833:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75342:6, file busybox-1.18.5/miscutils/flash_eraseall.c:75294:5, file busybox-1.18.5/miscutils/flash_eraseall.c:75249:2
+	bb_info_msg: (*char, ...) => void		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75332:5
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75344:5
+	bb_putchar: (signed int) => signed int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75397:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_FLASH_ERASEALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72858:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_FLASH_ERASEALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_FLASH_ERASEALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	bb_xioctl: (signed int, unsigned int, *void) => signed int		if (!def(CONFIG_IOCTL_HEX2STR_ERROR)&def(CONFIG_FLASH_ERASEALL))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75374:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75354:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75279:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75253:39
+	bb_xioctl: (signed int, unsigned int, *void, *char) => signed int		if (def(CONFIG_IOCTL_HEX2STR_ERROR)&def(CONFIG_FLASH_ERASEALL))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75374:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75354:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75279:39, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:75253:39
+	close: (signed int) => signed int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75408:2, file busybox-1.18.5/miscutils/flash_eraseall.c:75408:2
+	crc32_filltable: (*unsigned int, signed int) => *unsigned int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75268:16
+	fflush_all: (void) => signed int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75221:1
+	fstat: (signed int, *struct stat) => signed int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75247:1
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75243:18
+	ioctl: (signed int, unsigned long, ...) => signed int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75329:9
+	printf: (*char, ...) => signed int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75393:3, file busybox-1.18.5/miscutils/flash_eraseall.c:75216:1
+	xasprintf: (*char, ...) => *char		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75321:15
+	xatoll: (*char) => signed long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xatoll:72814:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xatoll_range:72814:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xatoll_range_sfx:72814:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xatoll_sfx:72814:0
+	xatou: (*char) => unsigned int		if def(CONFIG_FLASH_ERASEALL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xatoull:72814:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xatoull_range:72814:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xatoull_range_sfx:72814:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xatoull_sfx:72814:0
+	xlseek: (signed int, signed long, signed int) => signed long		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75381:3
+	xopen: (*char, signed int) => signed int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75246:6
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xstrtoll:72814:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xstrtoll_range:72814:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xstrtoll_range_sfx:72814:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xstrtoull:72814:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xstrtoull_range:72814:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xstrtoull_range_sfx:72814:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_FLASH_ERASEALL)		at string literal: xstrtoull_sfx:72814:0
+	xwrite: (signed int, *void, unsigned long) => void		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75386:3
+exports (1)
+	flash_eraseall_main: (signed int, **char) => signed int		if def(CONFIG_FLASH_ERASEALL)		at file busybox-1.18.5/miscutils/flash_eraseall.c:75232:0

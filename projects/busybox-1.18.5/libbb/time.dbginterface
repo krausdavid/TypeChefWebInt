@@ -1,0 +1,47 @@
+fm True
+features (0)
+	
+imports (32)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72829:8
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file busybox-1.18.5/libbb/time.c:75451:2, file busybox-1.18.5/libbb/time.c:74315:2, file busybox-1.18.5/libbb/time.c:74307:2, file busybox-1.18.5/libbb/time.c:74296:3, file busybox-1.18.5/libbb/time.c:74211:3, file busybox-1.18.5/libbb/time.c:74211:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72854:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72879:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72851:9
+	gettimeofday: (*struct timeval, *struct timezone) => signed int		if !def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75495:1, file busybox-1.18.5/libbb/time.c:75489:1, file busybox-1.18.5/libbb/time.c:75483:1
+	localtime: (*signed long) => *struct tm		if True		at file busybox-1.18.5/libbb/time.c:74222:19
+	mktime: (*struct tm) => signed long		if True		at file busybox-1.18.5/libbb/time.c:74313:12
+	sscanf: (*char, *char, ...) => signed int		if True		at file busybox-1.18.5/libbb/time.c:74300:7, file busybox-1.18.5/libbb/time.c:74286:19, file busybox-1.18.5/libbb/time.c:74275:19, file busybox-1.18.5/libbb/time.c:74265:18, file busybox-1.18.5/libbb/time.c:74258:18, file busybox-1.18.5/libbb/time.c:74252:18, file busybox-1.18.5/libbb/time.c:74247:18, file busybox-1.18.5/libbb/time.c:74215:7, file busybox-1.18.5/libbb/time.c:74194:6, file busybox-1.18.5/libbb/time.c:74186:6, file busybox-1.18.5/libbb/time.c:74178:6, file busybox-1.18.5/libbb/time.c:74171:6, file busybox-1.18.5/libbb/time.c:74194:6, file busybox-1.18.5/libbb/time.c:74186:6, file busybox-1.18.5/libbb/time.c:74178:6, file busybox-1.18.5/libbb/time.c:74171:6
+	strchr: (*char, signed int) => *char		if True		at file busybox-1.18.5/libbb/time.c:74300:14
+	strchrnul: (*char, signed int) => *char		if True		at file busybox-1.18.5/libbb/time.c:74244:12
+	strptime: (*char, *char, *struct tm) => *char		if def(CONFIG_DESKTOP)		at file busybox-1.18.5/libbb/time.c:74203:14
+	strrchr: (*char, signed int) => *char		if True		at file busybox-1.18.5/libbb/time.c:74163:26
+	syscall: (signed long, ...) => signed long		if def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75450:5
+	time: (*signed long) => signed long		if !def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75500:8
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72810:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72810:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72810:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:72810:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72826:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:72810:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:72810:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:72810:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:72810:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:72810:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:72810:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:72810:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:72810:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:72810:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:72810:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:72810:0
+exports (10)
+	monotonic_ms: (void) => unsigned long long		if !def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75492:0
+	monotonic_ms: (void) => unsigned long long		if def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75465:0
+	monotonic_ns: (void) => unsigned long long		if !def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75471:0
+	monotonic_ns: (void) => unsigned long long		if def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75453:0
+	monotonic_sec: (void) => unsigned int		if !def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75498:0
+	monotonic_sec: (void) => unsigned int		if def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75471:0
+	monotonic_us: (void) => unsigned long long		if !def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75486:0
+	monotonic_us: (void) => unsigned long long		if def(CONFIG_MONOTONIC_SYSCALL)		at file busybox-1.18.5/libbb/time.c:75459:0
+	parse_datestr: (*char, *struct tm) => void		if True		at file busybox-1.18.5/libbb/time.c:74160:0
+	validate_tm_time: (*char, *struct tm) => signed long		if True		at file busybox-1.18.5/libbb/time.c:74311:0

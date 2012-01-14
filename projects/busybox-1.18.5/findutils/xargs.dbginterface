@@ -1,0 +1,49 @@
+fm True
+features (0)
+	
+imports (43)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_XARGS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72934:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_XARGS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72881:8
+	_IO_getc: (*struct _IO_FILE) => signed int		if (def(CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION)&def(CONFIG_XARGS))		at file systems/redhat/usr/include/stdio.h:74484:18, file systems/redhat/usr/include/stdio.h:74482:18
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74260:2, file busybox-1.18.5/findutils/xargs.c:74256:2
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74741:4, file busybox-1.18.5/findutils/xargs.c:74698:2, file busybox-1.18.5/findutils/xargs.c:74351:4
+	bb_putchar_stderr: (char) => signed int		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74755:4
+	bb_simple_perror_msg: (*char) => void		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74252:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_XARGS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72906:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_XARGS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72931:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_XARGS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72903:9
+	fclose: (*struct _IO_FILE) => signed int		if (def(CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION)&def(CONFIG_XARGS))		at file busybox-1.18.5/findutils/xargs.c:74485:1
+	fflush_all: (void) => signed int		if (def(CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION)&def(CONFIG_XARGS))		at file busybox-1.18.5/findutils/xargs.c:74481:1
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74751:4
+	fputs: (*char, *struct _IO_FILE) => signed int		if (def(CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION)&def(CONFIG_XARGS))		at file busybox-1.18.5/findutils/xargs.c:74480:1
+	free: (*void) => void		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74785:2, file busybox-1.18.5/findutils/xargs.c:74784:2, file busybox-1.18.5/findutils/xargs.c:74785:2, file busybox-1.18.5/findutils/xargs.c:74784:2
+	getchar: (void) => signed int		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74442:10, file busybox-1.18.5/findutils/xargs.c:74408:12, file busybox-1.18.5/findutils/xargs.c:74393:10, file busybox-1.18.5/findutils/xargs.c:74357:12, file busybox-1.18.5/findutils/xargs.c:74314:10
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74611:7
+	overlapping_strcpy: (*char, *char) => void		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74773:2
+	spawn_and_wait: (**char) => signed int		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74250:10
+	strcmp: (*char, *char) => signed int		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74407:8, file busybox-1.18.5/findutils/xargs.c:74356:8
+	strlen: (*char) => unsigned long		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74692:14, file busybox-1.18.5/findutils/xargs.c:74437:15, file busybox-1.18.5/findutils/xargs.c:74388:15, file busybox-1.18.5/findutils/xargs.c:74306:15
+	sysconf: (signed int) => signed long		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74679:12
+	xatoll: (*char) => signed long long		if def(CONFIG_XARGS)		at string literal: xatoll:72862:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_XARGS)		at string literal: xatoll_range:72862:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_XARGS)		at string literal: xatoll_range_sfx:72862:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_XARGS)		at string literal: xatoll_sfx:72862:0
+	xatou: (*char) => unsigned int		if def(CONFIG_XARGS)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72878:9
+	xatou_range: (*char, unsigned int, unsigned int) => unsigned int		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74705:14, file busybox-1.18.5/findutils/xargs.c:74686:16
+	xatoull: (*char) => unsigned long long		if def(CONFIG_XARGS)		at string literal: xatoull:72862:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_XARGS)		at string literal: xatoull_range:72862:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_XARGS)		at string literal: xatoull_range_sfx:72862:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_XARGS)		at string literal: xatoull_sfx:72862:0
+	xfopen_for_read: (*char) => *struct _IO_FILE		if (def(CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION)&def(CONFIG_XARGS))		at file busybox-1.18.5/findutils/xargs.c:74479:14
+	xmalloc: (unsigned long) => *void		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74719:10
+	xrealloc: (*void, unsigned long) => *void		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74279:11
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_XARGS)		at string literal: xstrtoll:72862:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_XARGS)		at string literal: xstrtoll_range:72862:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_XARGS)		at string literal: xstrtoll_range_sfx:72862:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_XARGS)		at string literal: xstrtoull:72862:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_XARGS)		at string literal: xstrtoull_range:72862:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_XARGS)		at string literal: xstrtoull_range_sfx:72862:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_XARGS)		at string literal: xstrtoull_sfx:72862:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74701:7
+exports (1)
+	xargs_main: (signed int, **char) => signed int		if def(CONFIG_XARGS)		at file busybox-1.18.5/findutils/xargs.c:74592:0

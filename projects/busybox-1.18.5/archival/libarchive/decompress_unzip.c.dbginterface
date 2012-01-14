@@ -1,0 +1,47 @@
+fm True
+features (0)
+	
+imports (36)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70984:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70931:8
+	_setjmp: (struct __jmp_buf_tag[]) => signed int		if True		at file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/setjmp.h:73539:21
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73801:2, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73793:2, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73785:2, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73776:2, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73635:3
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73549:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70956:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70981:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70953:9
+	crc32_block_endian0: (unsigned int, *void, unsigned int, *unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73456:14
+	crc32_filltable: (*unsigned int, signed int) => *unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73535:20
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73819:22, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73818:1, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73616:22, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73612:1, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73576:1, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73575:1, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:72762:2
+	full_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73633:20
+	full_write: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73547:11
+	longjmp: (struct __jmp_buf_tag[], signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:72779:1
+	memcpy: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73697:1, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73116:5
+	memmove: (*void, *void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73692:1, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73631:2
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:72854:1
+	safe_read: (signed int, *void, unsigned long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:72791:21
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70912:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70912:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70912:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70912:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70928:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70912:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70912:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70912:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70912:0
+	xmalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73771:14, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73610:14, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73522:17
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70912:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70912:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70912:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70912:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70912:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70912:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70912:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73768:29, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73605:29, file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:72945:8
+exports (6)
+	inflate_unzip: (*struct inflate_unzip_result, signed long, signed int, signed int) => signed int		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73587:11
+	inflate_unzip: (*struct inflate_unzip_result, signed long, signed int, signed int) => signed long long		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73587:11
+	unpack_gz_stream: (signed int, signed int) => signed int		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73825:11
+	unpack_gz_stream: (signed int, signed int) => signed long long		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73825:11
+	unpack_gz_stream_with_info: (signed int, signed int, *struct unpack_info_t) => signed int		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73747:11
+	unpack_gz_stream_with_info: (signed int, signed int, *struct unpack_info_t) => signed long long		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.c:73747:11

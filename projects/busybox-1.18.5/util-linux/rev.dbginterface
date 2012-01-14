@@ -1,0 +1,43 @@
+fm True
+features (0)
+	
+imports (37)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_REV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72897:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_REV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72844:8
+	bb_mbstowcs: (*signed int, *char, unsigned long) => unsigned long		if (!def(CONFIG_UNICODE_USING_LOCALE)&(!def(CONFIG_UNICODE_SUPPORT)|!def(CONFIG_UNICODE_USING_LOCALE))&((def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)))&def(CONFIG_UNICODE_SUPPORT)&def(CONFIG_REV))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78897:20
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_REV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72869:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_REV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72894:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_REV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72866:9
+	bb_wcstombs: (*char, *signed int, unsigned long) => unsigned long		if (!def(CONFIG_UNICODE_USING_LOCALE)&(!def(CONFIG_UNICODE_SUPPORT)|!def(CONFIG_UNICODE_USING_LOCALE))&((def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)))&def(CONFIG_UNICODE_SUPPORT)&def(CONFIG_REV))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78908:20
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78923:2
+	feof: (*struct _IO_FILE) => signed int		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78881:8
+	fflush_stdout_and_exit: (signed int) => void		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78936:1
+	fgets: (*char, signed int, *struct _IO_FILE) => *char		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78877:8
+	fopen_or_warn_stdin: (*char) => *struct _IO_FILE		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78867:7
+	fputs: (*char, *struct _IO_FILE) => signed int		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78921:3
+	free: (*void) => void		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78934:2, file busybox-1.18.5/util-linux/rev.c:78934:2, file busybox-1.18.5/util-linux/rev.c:78915:4
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78855:1
+	init_unicode: (void) => void		if (def(CONFIG_REV)&((def(CONFIG_UNICODE_SUPPORT)&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&(!def(CONFIG_UNICODE_SUPPORT)|def(CONFIG_UNICODE_USING_LOCALE)|!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)|(def(CONFIG_UNICODE_SUPPORT)&def(CONFIG_UNICODE_USING_LOCALE)))&def(CONFIG_UNICODE_USING_LOCALE))|(!def(CONFIG_UNICODE_USING_LOCALE)&(!def(CONFIG_UNICODE_SUPPORT)|!def(CONFIG_UNICODE_USING_LOCALE))&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)&def(CONFIG_UNICODE_SUPPORT))))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78848:24, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78848:24
+	mbstowcs: (*signed int, *char, unsigned long) => unsigned long		if (def(CONFIG_UNICODE_SUPPORT)&def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_REV))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78897:20
+	strlen: (*char) => unsigned long		if (!def(CONFIG_UNICODE_SUPPORT)&def(CONFIG_REV))		at file busybox-1.18.5/util-linux/rev.c:78919:15
+	wcstombs: (*char, *signed int, unsigned long) => unsigned long		if (def(CONFIG_UNICODE_SUPPORT)&def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_REV))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78908:20
+	xatoll: (*char) => signed long long		if def(CONFIG_REV)		at string literal: xatoll:72825:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_REV)		at string literal: xatoll_range:72825:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_REV)		at string literal: xatoll_range_sfx:72825:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_REV)		at string literal: xatoll_sfx:72825:0
+	xatou: (*char) => unsigned int		if def(CONFIG_REV)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72841:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_REV)		at string literal: xatoull:72825:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_REV)		at string literal: xatoull_range:72825:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_REV)		at string literal: xatoull_range_sfx:72825:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_REV)		at string literal: xatoull_sfx:72825:0
+	xmalloc: (unsigned long) => *void		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78893:19, file busybox-1.18.5/util-linux/rev.c:78862:7
+	xrealloc: (*void, unsigned long) => *void		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78886:10
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_REV)		at string literal: xstrtoll:72825:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_REV)		at string literal: xstrtoll_range:72825:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_REV)		at string literal: xstrtoll_range_sfx:72825:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_REV)		at string literal: xstrtoull:72825:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_REV)		at string literal: xstrtoull_range:72825:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_REV)		at string literal: xstrtoull_range_sfx:72825:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_REV)		at string literal: xstrtoull_sfx:72825:0
+exports (1)
+	rev_main: (signed int, **char) => signed int		if def(CONFIG_REV)		at file busybox-1.18.5/util-linux/rev.c:78840:0

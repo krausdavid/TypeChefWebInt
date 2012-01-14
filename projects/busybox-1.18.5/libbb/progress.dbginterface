@@ -1,0 +1,39 @@
+fm True
+features (0)
+	
+imports (32)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72913:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72860:8
+	bb_mbstowcs: (*signed int, *char, unsigned long) => unsigned long		if (((def(CONFIG_UNICODE_SUPPORT)&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))&((def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)))&!def(CONFIG_UNICODE_USING_LOCALE)&(!def(CONFIG_UNICODE_SUPPORT)|!def(CONFIG_UNICODE_USING_LOCALE))&def(CONFIG_UNICODE_SUPPORT))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78882:20
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72885:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72910:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:9
+	bb_wcstombs: (*char, *signed int, unsigned long) => unsigned long		if (((def(CONFIG_UNICODE_SUPPORT)&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))&((def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)))&!def(CONFIG_UNICODE_USING_LOCALE)&(!def(CONFIG_UNICODE_SUPPORT)|!def(CONFIG_UNICODE_USING_LOCALE))&def(CONFIG_UNICODE_SUPPORT))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78891:20
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if True		at file busybox-1.18.5/libbb/progress.c:78948:3, file busybox-1.18.5/libbb/progress.c:78942:3, file busybox-1.18.5/libbb/progress.c:78938:2, file busybox-1.18.5/libbb/progress.c:78922:1, file busybox-1.18.5/libbb/progress.c:78913:2, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78863:24, file busybox-1.18.5/libbb/progress.c:78898:2
+	free: (*void) => void		if ((def(CONFIG_UNICODE_SUPPORT)&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))		at file busybox-1.18.5/libbb/progress.c:78899:2
+	get_terminal_width_height: (signed int, *unsigned int, *unsigned int) => signed int		if True		at file busybox-1.18.5/libbb/progress.c:78817:1
+	init_unicode: (void) => void		if ((def(CONFIG_UNICODE_USING_LOCALE)&(!def(CONFIG_UNICODE_SUPPORT)|def(CONFIG_UNICODE_USING_LOCALE)|!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)|(def(CONFIG_UNICODE_SUPPORT)&def(CONFIG_UNICODE_USING_LOCALE)))&(!def(CONFIG_UNICODE_SUPPORT)|def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&def(CONFIG_UNICODE_SUPPORT))|(def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)&!def(CONFIG_UNICODE_USING_LOCALE)&(!def(CONFIG_UNICODE_SUPPORT)|!def(CONFIG_UNICODE_USING_LOCALE))&(!def(CONFIG_UNICODE_SUPPORT)|def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))&def(CONFIG_UNICODE_SUPPORT)))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78863:24, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78863:24
+	mbstowcs: (*signed int, *char, unsigned long) => unsigned long		if ((!def(CONFIG_UNICODE_SUPPORT)|def(CONFIG_UNICODE_USING_LOCALE))&((def(CONFIG_UNICODE_SUPPORT)&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h:78882:20
+	memset: (*void, signed int, unsigned long) => *void		if True		at file busybox-1.18.5/libbb/progress.c:78912:2, file busybox-1.18.5/libbb/progress.c:78910:2, file busybox-1.18.5/libbb/progress.c:78878:2
+	monotonic_sec: (void) => unsigned int		if True		at file busybox-1.18.5/libbb/progress.c:78842:11, file busybox-1.18.5/libbb/progress.c:78823:16
+	wcstombs: (*char, *signed int, unsigned long) => unsigned long		if ((!def(CONFIG_UNICODE_SUPPORT)|def(CONFIG_UNICODE_USING_LOCALE))&((def(CONFIG_UNICODE_SUPPORT)&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))		at file busybox-1.18.5/libbb/progress.c:78894:2
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72841:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72841:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72841:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:72841:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72857:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:72841:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:72841:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:72841:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:72841:0
+	xstrdup: (*char) => *char		if ((def(CONFIG_UNICODE_SUPPORT)&(def(CONFIG_UNICODE_USING_LOCALE)|def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))|(def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))		at file busybox-1.18.5/libbb/progress.c:78872:14
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:72841:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:72841:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:72841:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:72841:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:72841:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:72841:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:72841:0
+exports (2)
+	bb_progress_init: (*struct bb_progress_t) => void		if True		at file busybox-1.18.5/libbb/progress.c:78821:0
+	bb_progress_update: (*struct bb_progress_t, *char, signed long, signed long, signed long) => void		if True		at file busybox-1.18.5/libbb/progress.c:78829:0

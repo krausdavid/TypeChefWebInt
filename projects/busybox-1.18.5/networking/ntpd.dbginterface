@@ -1,0 +1,82 @@
+fm True
+features (0)
+	
+imports (76)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_NTPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72903:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_NTPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72850:8
+	adjtimex: (*struct timex) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79750:6, file busybox-1.18.5/networking/ntpd.c:79722:6
+	alarm: (unsigned int) => unsigned int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80249:2
+	bb_daemonize_or_rexec: (signed int) => void		if (!def(CONFIG_NOMMU)&def(CONFIG_NTPD))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:80220:44
+	bb_daemonize_or_rexec: (signed int, **char) => void		if (def(CONFIG_NOMMU)&def(CONFIG_NTPD))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:80220:44
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80364:8, file busybox-1.18.5/networking/ntpd.c:80340:5, file busybox-1.18.5/networking/ntpd.c:80043:2, file busybox-1.18.5/networking/ntpd.c:79999:10, file busybox-1.18.5/networking/ntpd.c:79995:11, file busybox-1.18.5/networking/ntpd.c:79973:10, file busybox-1.18.5/networking/ntpd.c:79969:11, file busybox-1.18.5/networking/ntpd.c:79955:3, file busybox-1.18.5/networking/ntpd.c:79940:10, file busybox-1.18.5/networking/ntpd.c:79913:2, file busybox-1.18.5/networking/ntpd.c:79888:7, file busybox-1.18.5/networking/ntpd.c:79853:2, file busybox-1.18.5/networking/ntpd.c:79835:2, file busybox-1.18.5/networking/ntpd.c:79801:7, file busybox-1.18.5/networking/ntpd.c:79788:7, file busybox-1.18.5/networking/ntpd.c:79769:7, file busybox-1.18.5/networking/ntpd.c:79756:7, file busybox-1.18.5/networking/ntpd.c:79724:8, file busybox-1.18.5/networking/ntpd.c:79694:7, file busybox-1.18.5/networking/ntpd.c:79631:9, file busybox-1.18.5/networking/ntpd.c:79613:8, file busybox-1.18.5/networking/ntpd.c:79602:9, file busybox-1.18.5/networking/ntpd.c:79578:8, file busybox-1.18.5/networking/ntpd.c:79550:10, file busybox-1.18.5/networking/ntpd.c:79541:9, file busybox-1.18.5/networking/ntpd.c:79508:8, file busybox-1.18.5/networking/ntpd.c:79471:7, file busybox-1.18.5/networking/ntpd.c:79452:7, file busybox-1.18.5/networking/ntpd.c:79444:10, file busybox-1.18.5/networking/ntpd.c:79402:8, file busybox-1.18.5/networking/ntpd.c:79394:9, file busybox-1.18.5/networking/ntpd.c:79385:8, file busybox-1.18.5/networking/ntpd.c:79381:9, file busybox-1.18.5/networking/ntpd.c:79355:9, file busybox-1.18.5/networking/ntpd.c:79334:8, file busybox-1.18.5/networking/ntpd.c:79324:8, file busybox-1.18.5/networking/ntpd.c:79306:7, file busybox-1.18.5/networking/ntpd.c:79301:9, file busybox-1.18.5/networking/ntpd.c:79243:8, file busybox-1.18.5/networking/ntpd.c:79218:8, file busybox-1.18.5/networking/ntpd.c:79178:8, file busybox-1.18.5/networking/ntpd.c:79165:8, file busybox-1.18.5/networking/ntpd.c:79108:1, file busybox-1.18.5/networking/ntpd.c:79055:7, file busybox-1.18.5/networking/ntpd.c:79031:7, file busybox-1.18.5/networking/ntpd.c:78915:7, file busybox-1.18.5/networking/ntpd.c:78884:7, file busybox-1.18.5/networking/ntpd.c:78814:3
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80182:2
+	bb_perror_msg: (*char, ...) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79821:2, file busybox-1.18.5/networking/ntpd.c:78949:2
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80040:3, file busybox-1.18.5/networking/ntpd.c:79752:2, file busybox-1.18.5/networking/ntpd.c:79723:3, file busybox-1.18.5/networking/ntpd.c:79103:2
+	bb_show_usage: (void) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80207:2
+	bb_signals: (signed int, *(signed int) => void) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80257:1, file busybox-1.18.5/networking/ntpd.c:80251:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_NTPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72875:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_NTPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72900:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_NTPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72872:9
+	close: (signed int) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80337:5, file busybox-1.18.5/networking/ntpd.c:80013:1, file busybox-1.18.5/networking/ntpd.c:79024:2
+	create_and_bind_dgram_or_die: (*char, signed int) => signed int		if (def(CONFIG_FEATURE_NTPD_SERVER)&def(CONFIG_NTPD))		at file busybox-1.18.5/networking/ntpd.c:80231:16
+	exit: (signed int) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79621:4, file busybox-1.18.5/networking/ntpd.c:79582:3
+	fabs: (double) => double		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79961:16, file busybox-1.18.5/networking/ntpd.c:79957:4, file busybox-1.18.5/networking/ntpd.c:79939:7, file busybox-1.18.5/networking/ntpd.c:79611:22, file busybox-1.18.5/networking/ntpd.c:79493:14, file busybox-1.18.5/networking/ntpd.c:78894:18
+	free: (*void) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80083:1, file busybox-1.18.5/networking/ntpd.c:80082:1, file busybox-1.18.5/networking/ntpd.c:80044:2, file busybox-1.18.5/networking/ntpd.c:79083:1, file busybox-1.18.5/networking/ntpd.c:79082:1, file busybox-1.18.5/networking/ntpd.c:79081:1, file busybox-1.18.5/networking/ntpd.c:79080:1, file busybox-1.18.5/networking/ntpd.c:79001:2
+	get_sock_lsa: (signed int) => *struct len_and_sockaddr		if (def(CONFIG_FEATURE_NTPD_SERVER)&def(CONFIG_NTPD))		at file busybox-1.18.5/networking/ntpd.c:80031:6
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80193:8
+	getpid: (void) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80179:9
+	gettimeofday: (*struct timeval, *struct timezone) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79097:1, file busybox-1.18.5/networking/ntpd.c:78692:1
+	getuid: (void) => unsigned int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80181:5
+	htonl: (unsigned int) => unsigned int		if (def(CONFIG_FEATURE_NTPD_SERVER)&def(CONFIG_NTPD))		at file busybox-1.18.5/networking/ntpd.c:78730:17, file busybox-1.18.5/networking/ntpd.c:78729:17
+	htons: (unsigned short) => unsigned short		if (def(CONFIG_FEATURE_NTPD_SERVER)&def(CONFIG_NTPD))		at file busybox-1.18.5/networking/ntpd.c:78740:17, file busybox-1.18.5/networking/ntpd.c:78739:17
+	kill_myself_with_sig: (signed int) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80397:1
+	llist_add_to: (**struct llist_t, *void) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:78931:1
+	llist_pop: (**struct llist_t) => *void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80212:13
+	localtime: (*signed long) => *struct tm		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79106:55
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80280:1, file busybox-1.18.5/networking/ntpd.c:80052:1, file busybox-1.18.5/networking/ntpd.c:79728:1, file busybox-1.18.5/networking/ntpd.c:79721:2
+	ntohl: (unsigned int) => unsigned int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:78709:17, file busybox-1.18.5/networking/ntpd.c:78708:17
+	ntohs: (unsigned short) => unsigned short		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:78718:17, file busybox-1.18.5/networking/ntpd.c:78717:17
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80365:9
+	putenv: (*char) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79064:1, file busybox-1.18.5/networking/ntpd.c:79062:1, file busybox-1.18.5/networking/ntpd.c:79060:1, file busybox-1.18.5/networking/ntpd.c:79058:1
+	qsort: (*void, unsigned long, unsigned long, *(*void, *void) => signed int) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79341:1, file busybox-1.18.5/networking/ntpd.c:79247:1
+	random: (void) => signed long		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79799:5, file busybox-1.18.5/networking/ntpd.c:79786:5, file busybox-1.18.5/networking/ntpd.c:79018:36, file busybox-1.18.5/networking/ntpd.c:79017:36
+	record_signo: (signed int) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80255:4
+	recv: (signed int, *void, unsigned long, signed int) => signed long		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79819:8
+	recv_from_to: (signed int, *void, unsigned long, signed int, *struct sockaddr, *struct sockaddr, unsigned int) => signed long		if (def(CONFIG_FEATURE_NTPD_SERVER)&def(CONFIG_NTPD))		at file busybox-1.18.5/networking/ntpd.c:80034:8
+	send_to_from: (signed int, *void, unsigned long, signed int, *struct sockaddr, *struct sockaddr, unsigned int) => signed long		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:78946:8
+	sendto: (signed int, *void, unsigned long, signed int, CIgnore(), unsigned int) => signed long		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:78944:8
+	setpriority: (signed int, unsigned int, signed int) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80238:2
+	setsockopt: (signed int, signed int, signed int, *void, unsigned int) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80233:2, file busybox-1.18.5/networking/ntpd.c:78998:2, file busybox-1.18.5/networking/ntpd.c:79000:3
+	settimeofday: (*struct timeval, *struct timezone) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79102:5
+	socket_want_pktinfo: (signed int) => void		if (def(CONFIG_FEATURE_NTPD_SERVER)&def(CONFIG_NTPD))		at file busybox-1.18.5/networking/ntpd.c:80232:2
+	spawn: (**char) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79074:1
+	sqrt: (double) => double		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:78682:9
+	srandom: (unsigned int) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80179:1
+	strftime: (*char, unsigned long, *char, *struct tm) => unsigned long		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79106:1
+	unsetenv: (*char) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79079:1, file busybox-1.18.5/networking/ntpd.c:79078:1, file busybox-1.18.5/networking/ntpd.c:79077:1, file busybox-1.18.5/networking/ntpd.c:79076:1
+	xasprintf: (*char, ...) => *char		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79063:8, file busybox-1.18.5/networking/ntpd.c:79061:8, file busybox-1.18.5/networking/ntpd.c:79059:8, file busybox-1.18.5/networking/ntpd.c:79057:8
+	xatoll: (*char) => signed long long		if def(CONFIG_NTPD)		at string literal: xatoll:72831:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_NTPD)		at string literal: xatoll_range:72831:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_NTPD)		at string literal: xatoll_range_sfx:72831:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_NTPD)		at string literal: xatoll_sfx:72831:0
+	xatou: (*char) => unsigned int		if def(CONFIG_NTPD)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72847:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_NTPD)		at string literal: xatoull:72831:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_NTPD)		at string literal: xatoull_range:72831:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_NTPD)		at string literal: xatoull_range_sfx:72831:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_NTPD)		at string literal: xatoull_sfx:72831:0
+	xbind: (signed int, *struct sockaddr, unsigned int) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:78995:2
+	xfunc_die: (void) => void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:79831:2
+	xhost2sockaddr: (*char, signed int) => *struct len_and_sockaddr		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:78924:12
+	xmalloc_sockaddr2dotted_noport: (*struct sockaddr) => *char		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80042:9, file busybox-1.18.5/networking/ntpd.c:78925:15
+	xsocket_type: (**struct len_and_sockaddr, signed int) => signed int		if (!def(CONFIG_FEATURE_IPV6)&def(CONFIG_NTPD))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:78983:42
+	xsocket_type: (**struct len_and_sockaddr, signed int, signed int) => signed int		if (def(CONFIG_FEATURE_IPV6)&def(CONFIG_NTPD))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:78983:42
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_NTPD)		at string literal: xstrtoll:72831:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_NTPD)		at string literal: xstrtoll_range:72831:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_NTPD)		at string literal: xstrtoll_range_sfx:72831:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_NTPD)		at string literal: xstrtoull:72831:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_NTPD)		at string literal: xstrtoull_range:72831:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_NTPD)		at string literal: xstrtoull_range_sfx:72831:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_NTPD)		at string literal: xstrtoull_sfx:72831:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80295:7, file busybox-1.18.5/networking/ntpd.c:80294:12, file busybox-1.18.5/networking/ntpd.c:80032:8, file busybox-1.18.5/networking/ntpd.c:78923:5
+exports (1)
+	ntpd_main: (signed int, **char) => signed int		if def(CONFIG_NTPD)		at file busybox-1.18.5/networking/ntpd.c:80272:0

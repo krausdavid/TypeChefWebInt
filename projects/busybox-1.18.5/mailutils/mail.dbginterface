@@ -1,0 +1,55 @@
+fm True
+features (0)
+	
+imports (46)
+	BB_EXECVP_or_die: (**char) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74252:2
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72829:8
+	alarm: (unsigned int) => unsigned int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74266:2
+	atexit: (*(void) => void) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74259:1
+	bb_ask: (signed int, signed int, *char) => *char		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74354:19, file busybox-1.18.5/mailutils/mail.c:74353:19
+	bb_error_msg_and_die: (*char, ...) => void		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74360:2, file busybox-1.18.5/mailutils/mail.c:74220:4, file busybox-1.18.5/mailutils/mail.c:74216:3, file busybox-1.18.5/mailutils/mail.c:74210:2
+	bb_perror_msg_and_die: (*char, ...) => void		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74324:4, file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74241:80
+	bb_signals: (signed int, *(signed int) => void) => void		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74236:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72854:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72879:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72851:9
+	bb_uuencode: (*char, *void, signed int, *char) => void		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74333:2
+	close: (signed int) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74245:1, file busybox-1.18.5/mailutils/mail.c:74244:1
+	fclose: (*struct _IO_FILE) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74343:2
+	fflush_all: (void) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74271:1
+	fread: (*void, unsigned long, unsigned long, *struct _IO_FILE) => unsigned long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74322:10
+	fwrite: (*void, unsigned long, unsigned long, *struct _IO_FILE) => unsigned long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74340:2
+	isatty: (signed int) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74352:5
+	kill: (signed int, signed int) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74199:2
+	printf: (*char, ...) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74335:3, file busybox-1.18.5/mailutils/mail.c:74269:2
+	safe_waitpid: (signed int, *signed int, signed int) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74214:5
+	strlen: (*char) => unsigned long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74315:8
+	vfork: (void) => signed int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74241:44
+	xasprintf: (*char, ...) => *char		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74268:8
+	xatoll: (*char) => signed long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xatoll:72810:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xatoll_range:72810:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xatoll_range_sfx:72810:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xatoll_sfx:72810:0
+	xatou: (*char) => unsigned int		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72826:9
+	xatoull: (*char) => unsigned long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xatoull:72810:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xatoull_range:72810:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xatoull_range_sfx:72810:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xatoull_sfx:72810:0
+	xfopen_for_read: (*char) => *struct _IO_FILE		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74310:32
+	xmalloc_reads: (signed int, *char, *unsigned long) => *char		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74357:11, file busybox-1.18.5/mailutils/mail.c:74356:11
+	xmove_fd: (signed int, signed int) => void		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74247:1, file busybox-1.18.5/mailutils/mail.c:74246:1
+	xpipe: (signed int[]) => void		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74233:1, file busybox-1.18.5/mailutils/mail.c:74232:1
+	xstrdup: (*char) => *char		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74354:11, file busybox-1.18.5/mailutils/mail.c:74353:11
+	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xstrtoll:72810:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xstrtoll_range:72810:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xstrtoll_range_sfx:72810:0
+	xstrtoull: (*char, signed int) => unsigned long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xstrtoull:72810:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xstrtoull_range:72810:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xstrtoull_range_sfx:72810:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at string literal: xstrtoull_sfx:72810:0
+exports (4)
+	command: (*char, *char) => *char		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74262:0
+	encode_base64: (*char, *char, *char) => void		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74297:0
+	get_cred_or_die: (signed int) => void		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74350:0
+	launch_helper: (**char) => void		if (def(CONFIG_REFORMIME)|def(CONFIG_SENDMAIL)|def(CONFIG_POPMAILDIR)|def(CONFIG_MAKEMIME))		at file busybox-1.18.5/mailutils/mail.c:74226:0

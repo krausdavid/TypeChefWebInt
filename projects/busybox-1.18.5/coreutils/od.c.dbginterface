@@ -1,0 +1,63 @@
+fm True
+features (0)
+	
+imports (56)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70845:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70792:8
+	alloc_dumper: (void) => *struct dumper_t		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75528:20
+	bb_dump_add: (*struct dumper_t, *char) => void		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75548:2, file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75547:2, file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75541:3, file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75539:4, file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75537:4, file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75536:4
+	bb_dump_dump: (*struct dumper_t, **char) => signed int		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75556:8
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75293:3, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74355:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74344:3
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75261:3, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75244:3, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75240:4, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75226:4, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75190:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75139:3, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74661:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74555:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74501:5, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74407:5
+	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75315:2
+	bb_show_usage: (void) => void		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75543:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70817:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74497:11, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74402:11, file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70842:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70814:9
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75314:5
+	fclose_if_not_stdin: (*struct _IO_FILE) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74350:2
+	ferror: (*struct _IO_FILE) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74354:5, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74343:6
+	fgetc: (*struct _IO_FILE) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74946:7
+	fileno: (*struct _IO_FILE) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74626:12
+	fopen_or_warn_stdin: (*char) => *struct _IO_FILE		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74321:14
+	fputs: (*char, *struct _IO_FILE) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75024:14, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75023:14, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75022:14, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75021:14, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75020:14, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75019:14, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75018:16, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74713:1, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74304:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74268:3, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74251:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74244:3, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74239:3
+	fread: (*void, unsigned long, unsigned long, *struct _IO_FILE) => unsigned long		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74789:11, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74647:19
+	free: (*void) => void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75033:1, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74997:4, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74929:1
+	fseeko: (*struct _IO_FILE, signed long, signed int) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74633:8
+	fstat: (signed int, *struct stat) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74626:6
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75119:7
+	getopt: (signed int, **char, *char) => signed int		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75530:14
+	llist_pop: (**struct llist_t) => *void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75176:23
+	memcmp: (*void, *void, unsigned long) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74743:5
+	memcpy: (*void, *void, unsigned long) => *void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74590:2
+	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74918:2
+	printf: (*char, ...) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74766:4, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74759:4, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74690:1, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74206:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74195:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74184:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74160:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74147:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74136:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74125:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74114:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74104:2
+	putchar: (signed int) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75028:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75025:12, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74769:3, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74719:1, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74717:2, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74700:8, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74698:1
+	puts: (*char) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74749:3
+	setbuf: (*struct _IO_FILE, *char) => void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74329:2
+	strchr: (*char, signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75533:19, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75137:6, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74834:5, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74493:6, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74455:9, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74397:6
+	strtol: (*char, **char, signed int) => signed long		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75447:21
+	xasprintf: (*char, ...) => *char		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74534:16, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74529:16, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74524:16, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74461:16
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70773:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70773:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70773:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70773:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70789:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70773:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70773:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70773:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70773:0
+	xmalloc: (unsigned long) => *void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74979:13, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74872:12
+	xrealloc: (*void, unsigned long) => *void		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74993:10
+	xrealloc_vector_helper: (*void, unsigned int, signed int) => *void		if def(CONFIG_DESKTOP)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:74589:45
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70773:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70773:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70773:0
+	xstrtou_sfx: (*char, signed int, *struct suffix_mult) => unsigned int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75183:15
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70773:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70773:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70773:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75166:23, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75150:23, file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:74844:23, string literal: xstrtoull_sfx:70773:0
+exports (2)
+	od_main: (signed int, **char) => signed int		if !def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od.c:75523:0
+	od_main: (signed int, **char) => signed int		if def(CONFIG_DESKTOP)		at file cprojects/busybox/busybox-1.18.5/coreutils/od_bloaty.c:75046:0

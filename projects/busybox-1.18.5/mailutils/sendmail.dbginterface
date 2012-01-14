@@ -1,0 +1,57 @@
+fm True
+features (0)
+	
+imports (51)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_SENDMAIL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72882:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_SENDMAIL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72829:8
+	alarm: (unsigned int) => unsigned int		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74216:3
+	atoi: (*char) => signed int		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74214:10
+	bb_error_msg: (*char, ...) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74248:2
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74348:2, file busybox-1.18.5/mailutils/sendmail.c:74221:1
+	bb_show_usage: (void) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74301:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_SENDMAIL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72854:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_SENDMAIL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72879:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_SENDMAIL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72851:9
+	command: (*char, *char) => *char		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74203:19
+	create_and_connect_stream_or_die: (*char, signed int) => signed int		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74333:7
+	encode_base64: (*char, *char, *char) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74372:2, file busybox-1.18.5/mailutils/sendmail.c:74370:2
+	fclose: (*struct _IO_FILE) => signed int		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74496:2, file busybox-1.18.5/mailutils/sendmail.c:74496:2
+	free: (*void) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74428:3, file busybox-1.18.5/mailutils/sendmail.c:74416:3, file busybox-1.18.5/mailutils/sendmail.c:74362:2, file busybox-1.18.5/mailutils/sendmail.c:74362:2, file busybox-1.18.5/mailutils/sendmail.c:74217:2
+	get_cred_or_die: (signed int) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74369:3
+	getenv: (*char) => *char		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74328:17
+	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74295:8
+	launch_helper: (**char) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74321:2
+	llist_add_to_end: (**struct llist_t, *void) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74452:4, file busybox-1.18.5/mailutils/sendmail.c:74441:3
+	llist_pop: (**struct llist_t) => *void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74462:30, file busybox-1.18.5/mailutils/sendmail.c:74303:21
+	printf: (*char, ...) => signed int		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74462:4, file busybox-1.18.5/mailutils/sendmail.c:74415:3, file busybox-1.18.5/mailutils/sendmail.c:74413:4
+	puts: (*char) => signed int		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74469:4
+	safe_getdomainname: (void) => *char		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74265:29
+	skip_whitespace: (*char) => *char		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74436:40
+	strchr: (*char, signed int) => *char		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74436:13
+	strlen: (*char) => unsigned long		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74211:6
+	strncasecmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74426:18, file busybox-1.18.5/mailutils/sendmail.c:74422:44, file busybox-1.18.5/mailutils/sendmail.c:74422:11
+	xasprintf: (*char, ...) => *char		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74452:28
+	xatoll: (*char) => signed long long		if def(CONFIG_SENDMAIL)		at string literal: xatoll:72810:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_SENDMAIL)		at string literal: xatoll_range:72810:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SENDMAIL)		at string literal: xatoll_range_sfx:72810:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_SENDMAIL)		at string literal: xatoll_sfx:72810:0
+	xatou: (*char) => unsigned int		if def(CONFIG_SENDMAIL)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72826:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_SENDMAIL)		at string literal: xatoull:72810:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SENDMAIL)		at string literal: xatoull_range:72810:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SENDMAIL)		at string literal: xatoull_range_sfx:72810:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_SENDMAIL)		at string literal: xatoull_sfx:72810:0
+	xdup2: (signed int, signed int) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74336:2, file busybox-1.18.5/mailutils/sendmail.c:74286:1
+	xfdopen_for_read: (signed int) => *struct _IO_FILE		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74287:9
+	xmalloc_fgetline: (*struct _IO_FILE) => *char		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74404:13, file busybox-1.18.5/mailutils/sendmail.c:74210:18
+	xmove_fd: (signed int, signed int) => void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74335:2
+	xstrdup: (*char) => *char		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74307:12, file busybox-1.18.5/mailutils/sendmail.c:74305:12
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_SENDMAIL)		at string literal: xstrtoll:72810:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_SENDMAIL)		at string literal: xstrtoll_range:72810:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_SENDMAIL)		at string literal: xstrtoll_range_sfx:72810:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_SENDMAIL)		at string literal: xstrtoull:72810:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_SENDMAIL)		at string literal: xstrtoull_range:72810:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_SENDMAIL)		at string literal: xstrtoull_range_sfx:72810:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_SENDMAIL)		at string literal: xstrtoull_sfx:72810:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/mail.h:74283:42
+exports (1)
+	sendmail_main: (signed int, **char) => signed int		if def(CONFIG_SENDMAIL)		at file busybox-1.18.5/mailutils/sendmail.c:74259:0

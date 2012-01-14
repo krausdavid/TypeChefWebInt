@@ -1,0 +1,63 @@
+fm True
+features (0)
+	
+imports (57)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71562:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71509:8
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:72933:1
+	bb_perror_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:72928:1
+	bb_signals: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73094:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71534:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71559:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71531:9
+	chdir: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73169:9
+	close_on_exec_on: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73140:1, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73120:3, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73119:3
+	closedir: (*struct __dirstream) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73042:1
+	dup2: (signed int, signed int) => signed int		if def(CONFIG_FEATURE_RUNSVDIR_LOG)		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73123:7
+	execlp: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:72973:2
+	fchdir: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73179:13
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73091:1
+	getpid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73248:6, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73105:5
+	kill: (signed int, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73244:5, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73054:3
+	monotonic_sec: (void) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73159:8, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73142:14, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73128:15
+	ndelay_on: (signed int) => signed int		if def(CONFIG_FEATURE_RUNSVDIR_LOG)		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73122:3, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73121:3
+	open: (*char, signed int, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73137:10
+	opendir: (*char) => *struct __dirstream		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:72988:7
+	pipe: (signed int[]) => signed int		if def(CONFIG_FEATURE_RUNSVDIR_LOG)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73116:26
+	poll: (*struct pollfd, unsigned long, signed int) => signed int		if def(CONFIG_FEATURE_RUNSVDIR_LOG)		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73205:3
+	read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_FEATURE_RUNSVDIR_LOG)		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73214:10
+	readdir: (*struct __dirstream) => *struct dirent		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:72998:6
+	realloc: (*void, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73023:27
+	record_signo: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73106:4
+	setsid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:72962:3
+	sig_block: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73202:2
+	sig_unblock: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73209:2
+	sleep: (unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73204:2, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73208:3, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73181:7
+	spawn: (**char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73232:9
+	stat: (*char, *struct stat) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73164:7, file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73003:6
+	strlen: (*char) => unsigned long		if def(CONFIG_FEATURE_RUNSVDIR_LOG)		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73113:13
+	time: (*signed long) => signed long		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73176:13
+	usleep: (unsigned int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73177:7
+	utoa: (unsigned int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73231:19
+	vfork: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:72954:7
+	wait: (CIgnore()) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73236:11
+	wait_any_nohang: (*signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73147:9
+	write: (signed int, *void, unsigned long) => signed long		if def(CONFIG_FEATURE_RUNSVDIR_LOG)		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73195:4
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:71490:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:71490:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:71490:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:71490:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71506:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:71490:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:71490:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:71490:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:71490:0
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:71490:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:71490:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:71490:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:71490:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:71490:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:71490:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:71490:0
+exports (1)
+	runsvdir_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/runit/runsvdir.c:73070:0

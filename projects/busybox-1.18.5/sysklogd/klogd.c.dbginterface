@@ -1,0 +1,47 @@
+fm True
+features (0)
+	
+imports (41)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70850:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70797:8
+	bb_daemonize_or_rexec: (signed int) => void		if !def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73407:44
+	bb_daemonize_or_rexec: (signed int, **char) => void		if def(CONFIG_NOMMU)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:73407:44
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73472:3
+	bb_signals_recursive_norestart: (signed int, *(signed int) => void) => void		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73456:1
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70822:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70847:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70819:9
+	close: (signed int) => signed int		if !def(CONFIG_FEATURE_KLOGD_KLOGCTL)		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73360:2, file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73360:2
+	fclose: (*struct _IO_FILE) => signed int		if !def(CONFIG_FEATURE_KLOGD_KLOGCTL)		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73339:2
+	fopen_or_warn: (*char, *char) => *struct _IO_FILE		if !def(CONFIG_FEATURE_KLOGD_KLOGCTL)		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73330:12
+	fprintf: (*struct _IO_FILE, *char, ...) => signed int		if !def(CONFIG_FEATURE_KLOGD_KLOGCTL)		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73338:2
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73399:7
+	kill_myself_with_sig: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73531:2
+	klogctl: (signed int, *char, signed int) => signed int		if def(CONFIG_FEATURE_KLOGD_KLOGCTL)		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73230:1, file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73229:1, file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73221:8, file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73216:1, file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73209:1
+	openlog: (*char, signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73421:1
+	overlapping_strcpy: (*char, *char) => void		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73493:4
+	read: (signed int, *void, unsigned long) => signed long		if !def(CONFIG_FEATURE_KLOGD_KLOGCTL)		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73345:8
+	record_signo: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73456:47
+	signal: (signed int, *(signed int) => void) => *(signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73454:1
+	syslog: (signed int, *char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73529:1, file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73520:4, file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73458:1
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70778:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70778:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70778:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70778:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70794:9
+	xatou_range: (*char, unsigned int, unsigned int) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73402:6
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70778:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70778:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70778:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70778:0
+	xmove_fd: (signed int, signed int) => void		if !def(CONFIG_FEATURE_KLOGD_KLOGCTL)		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73325:1
+	xopen: (*char, signed int) => signed int		if !def(CONFIG_FEATURE_KLOGD_KLOGCTL)		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73324:10
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70778:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70778:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70778:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70778:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70778:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70778:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70778:0
+exports (1)
+	klogd_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/sysklogd/klogd.c:73392:0

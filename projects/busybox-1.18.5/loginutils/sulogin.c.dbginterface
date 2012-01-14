@@ -1,0 +1,52 @@
+fm True
+features (0)
+	
+imports (46)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70838:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70785:8
+	bb_ask: (signed int, signed int, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72901:7
+	bb_do_delay: (signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72922:2
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72923:2
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72949:1, file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72859:2
+	bb_info_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72928:1, file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72906:3
+	bb_internal_getpwuid: (unsigned int) => *struct passwd		if def(CONFIG_USE_BB_PWD_GRP)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/pwd_.h:72867:20
+	bb_internal_getspnam_r: (*char, *struct spwd, *char, unsigned long, **struct spwd) => signed int		if (def(CONFIG_FEATURE_SHADOWPASSWDS)&def(CONFIG_USE_BB_SHADOW))		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/shadow_.h:72884:20
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70810:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70835:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70807:9
+	close: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72852:2, file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72850:2, file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72849:2
+	dup: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72853:2, file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72851:2
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72918:2
+	getenv: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72941:10, file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72939:9
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72845:1
+	getpwuid: (unsigned int) => *struct passwd		if !def(CONFIG_USE_BB_PWD_GRP)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/pwd_.h:72867:20
+	getspnam_r: (*char, *struct spwd, *char, unsigned long, **struct spwd) => signed int		if (def(CONFIG_FEATURE_SHADOWPASSWDS)&!def(CONFIG_USE_BB_SHADOW))		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/shadow_.h:72884:20
+	isatty: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72857:20, file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72857:34, file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72857:6
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72925:1
+	openlog: (*char, signed int, signed int) => void		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72842:1
+	pw_encrypt: (*char, *char) => *char		if !def(CONFIG_USE_BB_CRYPT)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72911:41
+	pw_encrypt: (*char, *char, signed int) => *char		if def(CONFIG_USE_BB_CRYPT)		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/libbb.h:72911:41
+	renew_current_security_context: (void) => void		if def(CONFIG_SELINUX)		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72932:12
+	run_shell: (*char, signed int, *char, **char) => void		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72946:1
+	sanitize_env_if_suid: (void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72863:1
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72917:6
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72925:15
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70766:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70766:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70766:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70766:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70782:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70766:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70766:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70766:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70766:0
+	xopen: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72851:6
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70766:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70766:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70766:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70766:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70766:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70766:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70766:0
+exports (1)
+	sulogin_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/loginutils/sulogin.c:72830:0

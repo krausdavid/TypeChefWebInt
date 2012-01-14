@@ -1,0 +1,31 @@
+fm True
+features (0)
+	
+imports (25)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72915:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72862:8
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72887:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72912:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72884:9
+	memcmp: (*void, *void, unsigned long) => signed int		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file busybox-1.18.5/util-linux/volume_id/iso9660.c:74515:5, file busybox-1.18.5/util-linux/volume_id/iso9660.c:74498:8, file busybox-1.18.5/util-linux/volume_id/iso9660.c:74493:7, file busybox-1.18.5/util-linux/volume_id/iso9660.c:74494:7, file busybox-1.18.5/util-linux/volume_id/iso9660.c:74492:7, file busybox-1.18.5/util-linux/volume_id/iso9660.c:74472:5
+	volume_id_get_buffer: (*struct volume_id, unsigned long, unsigned long) => *void		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file busybox-1.18.5/util-linux/volume_id/iso9660.c:74485:8, file busybox-1.18.5/util-linux/volume_id/iso9660.c:74466:7
+	volume_id_set_label_string: (*struct volume_id, *unsigned char, unsigned long) => void		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file busybox-1.18.5/util-linux/volume_id/iso9660.c:74504:4, file busybox-1.18.5/util-linux/volume_id/iso9660.c:74478:2
+	volume_id_set_unicode16: (*char, unsigned long, *unsigned char, signed int, unsigned long) => void		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file busybox-1.18.5/util-linux/volume_id/iso9660.c:74497:4
+	xatoll: (*char) => signed long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xatoll:72843:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xatoll_range:72843:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xatoll_range_sfx:72843:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xatoll_sfx:72843:0
+	xatou: (*char) => unsigned int		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72859:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xatoull:72843:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xatoull_range:72843:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xatoull_range_sfx:72843:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xatoull_sfx:72843:0
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xstrtoll:72843:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xstrtoll_range:72843:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xstrtoll_range_sfx:72843:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xstrtoull:72843:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xstrtoull_range:72843:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xstrtoull_range_sfx:72843:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at string literal: xstrtoull_sfx:72843:0
+exports (1)
+	volume_id_probe_iso9660: (*struct volume_id) => signed int		if def(CONFIG_FEATURE_VOLUMEID_ISO9660)		at file busybox-1.18.5/util-linux/volume_id/iso9660.c:74457:0

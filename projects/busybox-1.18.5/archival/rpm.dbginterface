@@ -1,0 +1,64 @@
+fm True
+features (0)
+	
+imports (58)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if def(CONFIG_RPM)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72883:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if def(CONFIG_RPM)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:8
+	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74633:3
+	bb_internal_getgrnam: (*char) => *struct group		if (def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_RPM))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74886:21
+	bb_internal_getpwnam: (*char) => *struct passwd		if (def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_RPM))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h:74877:20
+	bb_show_usage: (void) => void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74624:2, file busybox-1.18.5/archival/rpm.c:74618:3, file busybox-1.18.5/archival/rpm.c:74600:13
+	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_RPM)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72855:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_RPM)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72880:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_RPM)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72852:9
+	bsearch: (*void, *void, unsigned long, unsigned long, *(*void, *void) => signed int) => *void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74827:9, file busybox-1.18.5/archival/rpm.c:74804:9, file busybox-1.18.5/archival/rpm.c:74795:9
+	chown: (*char, unsigned int, unsigned int) => signed int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74893:1
+	copy_file: (*char, *char, signed int) => signed int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74865:3
+	data_extract_all: (*struct archive_handle_t) => void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74716:31
+	free: (*void) => void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74904:2, file busybox-1.18.5/archival/rpm.c:74867:3, file busybox-1.18.5/archival/rpm.c:74699:2
+	get_header_cpio: (*struct archive_handle_t) => char		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74738:8
+	getgid: (void) => unsigned int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74892:29
+	getgrnam: (*char) => *struct group		if (!def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_RPM))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h:74886:21
+	getopt: (signed int, **char, *char) => signed int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74593:15
+	getpagesize: (void) => signed int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74591:22
+	getpwnam: (*char) => *struct passwd		if (!def(CONFIG_USE_BB_PWD_GRP)&def(CONFIG_RPM))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h:74877:20
+	getuid: (void) => unsigned int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74883:29
+	htonl: (unsigned int) => unsigned int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74757:30
+	init_handle: (void) => *struct archive_handle_t		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74714:18
+	localtime: (*signed long) => *struct tm		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74667:16
+	lstat: (*char, *struct stat) => signed int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74861:13
+	mmap: (*void, unsigned long, signed int, signed int, signed int, signed long) => *void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74636:8
+	ntohl: (unsigned int) => unsigned int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74837:9, file busybox-1.18.5/archival/rpm.c:74769:33, file busybox-1.18.5/archival/rpm.c:74768:21, file busybox-1.18.5/archival/rpm.c:74767:20, file busybox-1.18.5/archival/rpm.c:74766:19, file busybox-1.18.5/archival/rpm.c:74760:19, file busybox-1.18.5/archival/rpm.c:74759:16
+	ntohs: (unsigned short) => unsigned short		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74843:9
+	printf: (*char, ...) => signed int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74693:5, file busybox-1.18.5/archival/rpm.c:74675:4, file busybox-1.18.5/archival/rpm.c:74674:4, file busybox-1.18.5/archival/rpm.c:74673:4, file busybox-1.18.5/archival/rpm.c:74672:4, file busybox-1.18.5/archival/rpm.c:74671:4, file busybox-1.18.5/archival/rpm.c:74670:4, file busybox-1.18.5/archival/rpm.c:74669:4, file busybox-1.18.5/archival/rpm.c:74665:4, file busybox-1.18.5/archival/rpm.c:74662:4, file busybox-1.18.5/archival/rpm.c:74651:4
+	remove_file: (*char, signed int) => signed int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74866:3
+	seek_by_read: (signed int, signed long) => void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74715:24
+	setup_unzip_on_fd: (signed int) => void		if (def(CONFIG_RPM)&(def(CONFIG_FEATURE_SEAMLESS_LZMA)|def(CONFIG_FEATURE_SEAMLESS_BZ2)|def(CONFIG_FEATURE_SEAMLESS_GZ)))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:74732:32
+	strftime: (*char, unsigned long, *char, *struct tm) => unsigned long		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74668:4
+	strlen: (*char) => unsigned long		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74814:21
+	xasprintf: (*char, ...) => *char		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74900:19, file busybox-1.18.5/archival/rpm.c:74864:13
+	xatoll: (*char) => signed long long		if def(CONFIG_RPM)		at string literal: xatoll:72811:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if def(CONFIG_RPM)		at string literal: xatoll_range:72811:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_RPM)		at string literal: xatoll_range_sfx:72811:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if def(CONFIG_RPM)		at string literal: xatoll_sfx:72811:0
+	xatou: (*char) => unsigned int		if def(CONFIG_RPM)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72827:9
+	xatoull: (*char) => unsigned long long		if def(CONFIG_RPM)		at string literal: xatoull:72811:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_RPM)		at string literal: xatoull_range:72811:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_RPM)		at string literal: xatoull_range_sfx:72811:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if def(CONFIG_RPM)		at string literal: xatoull_sfx:72811:0
+	xchdir: (*char) => void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74710:2
+	xlseek: (signed int, signed long, signed int) => signed long		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74776:3, file busybox-1.18.5/archival/rpm.c:74773:13, file busybox-1.18.5/archival/rpm.c:74761:13, file busybox-1.18.5/archival/rpm.c:74748:1, file busybox-1.18.5/archival/rpm.c:74634:11
+	xmalloc: (unsigned long) => *void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74764:33
+	xopen: (*char, signed int) => signed int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74630:11
+	xread: (signed int, *void, unsigned long) => void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74765:3, file busybox-1.18.5/archival/rpm.c:74756:2
+	xrealloc: (*void, unsigned long) => *void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74779:8
+	xstrtoll: (*char, signed int) => signed long long		if def(CONFIG_RPM)		at string literal: xstrtoll:72811:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if def(CONFIG_RPM)		at string literal: xstrtoll_range:72811:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if def(CONFIG_RPM)		at string literal: xstrtoll_range_sfx:72811:0
+	xstrtoull: (*char, signed int) => unsigned long long		if def(CONFIG_RPM)		at string literal: xstrtoull:72811:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if def(CONFIG_RPM)		at string literal: xstrtoull_range:72811:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if def(CONFIG_RPM)		at string literal: xstrtoull_range_sfx:72811:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if def(CONFIG_RPM)		at string literal: xstrtoull_sfx:72811:0
+	xzalloc: (unsigned long) => *void		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74745:20
+exports (1)
+	rpm_main: (signed int, **char) => signed int		if def(CONFIG_RPM)		at file busybox-1.18.5/archival/rpm.c:74588:0

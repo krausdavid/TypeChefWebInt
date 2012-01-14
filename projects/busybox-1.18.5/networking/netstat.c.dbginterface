@@ -1,0 +1,60 @@
+fm True
+features (0)
+	
+imports (54)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70845:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70792:8
+	bb_basename: (*char) => *char		if def(CONFIG_FEATURE_NETSTAT_PRG)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72474:44
+	bb_displayroutes: (signed int, signed int) => void		if def(CONFIG_ROUTE)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72916:2
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72859:3, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72502:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72500:2
+	bb_putchar: (signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72839:1, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72646:2
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70817:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70842:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70814:9
+	concat_path_file: (*char, *char) => *char		if def(CONFIG_FEATURE_NETSTAT_PRG)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72474:22
+	fclose: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72863:1
+	fopen_or_warn_stdin: (*char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72850:12
+	fputc_printable: (signed int, *struct _IO_FILE) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72838:2
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72861:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72648:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72647:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72555:1, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72481:1, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72441:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72399:3
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72881:7
+	getservbyport: (signed int, *char) => *struct servent		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72536:23
+	htons: (unsigned short) => unsigned short		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72554:48
+	inet_ntop: (signed int, *void, *char, unsigned int) => *char		if def(CONFIG_FEATURE_IPV6)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72519:1
+	inet_pton: (signed int, *char, *void) => signed int		if def(CONFIG_FEATURE_IPV6)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72520:1
+	itoa: (signed int) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72726:25, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72541:8
+	memset: (*void, signed int, unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72684:1, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72656:1
+	ntohs: (unsigned short) => unsigned short		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72541:13
+	open_read_close: (*char, *void, unsigned long) => signed long		if def(CONFIG_FEATURE_NETSTAT_PRG)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72467:5
+	printf: (*char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:73007:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:73006:3, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:73004:3, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:73002:3, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:73000:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72947:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72946:3, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72944:3, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72942:3, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72939:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72832:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72826:1, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72644:3, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72616:2
+	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if def(CONFIG_FEATURE_NETSTAT_PRG)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72494:11, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72475:5
+	safe_strncpy: (*char, *char, unsigned long) => *char		if def(CONFIG_FEATURE_NETSTAT_PRG)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72377:1
+	snprintf: (*char, unsigned long, *char, ...) => signed int		if def(CONFIG_FEATURE_NETSTAT_PRG)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72466:7
+	sscanf: (*char, *char, ...) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72746:7, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72579:7, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72527:1, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72516:1
+	strcat: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72824:1, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72823:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72821:2, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72819:2
+	strcpy: (*char, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72817:1, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72473:1
+	strlen: (*char) => unsigned long		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72592:5
+	strncmp: (*char, *char, unsigned long) => signed int		if def(CONFIG_FEATURE_NETSTAT_PRG)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72416:12, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72411:5
+	xasprintf: (*char, ...) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72554:13
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:70773:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:70773:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:70773:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:70773:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:70789:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:70773:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:70773:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:70773:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:70773:0
+	xmalloc_fgets_str: (*struct _IO_FILE, *char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72856:18
+	xmalloc_readlink: (*char) => *char		if def(CONFIG_FEATURE_NETSTAT_PRG)		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72438:12
+	xmalloc_sockaddr2dotted_noport: (*struct sockaddr) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72551:18
+	xmalloc_sockaddr2host_noport: (*struct sockaddr) => *char		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72552:18
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:70773:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:70773:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:70773:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:70773:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:70773:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:70773:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:70773:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72878:42, file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72374:8
+exports (1)
+	netstat_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/networking/netstat.c:72874:0

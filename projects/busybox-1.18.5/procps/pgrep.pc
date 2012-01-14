@@ -1,0 +1,1 @@
+(definedEx(CONFIG_PGREP) || definedEx(CONFIG_PKILL))
