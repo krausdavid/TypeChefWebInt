@@ -4,61 +4,15 @@ import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import javax.xml.parsers.*;
-
-import org.w3c.dom.*;
-import org.xml.sax.SAXException;
+import tcwi.xml.*;
 
 public class web_TreeViewInitializator {
 
-	private static final String VERSION = "0.0.2.10";
+	private static final String VERSION = "0.0.2.11";
 	private static final String AUTHORS = "EifX";
-	private static String GLOBAL_SETTINGS_FILE;
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static String folderSeparator;
-
-	/**
-	 * This method navigates through a XML-File by given path <tt>settings</tt><br>
-	 * Only inline attributes are excepted (Ex.: &lt;node val="test" /&gt;)
-	 * @param settings
-	 * @return The Value from an XML Node
-	 * @throws ParserConfigurationException
-	 * @throws SAXException
-	 * @throws IOException
-	 */
-	public static String read_setting(String[] settings) throws ParserConfigurationException, SAXException, IOException{
-	    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-	    DocumentBuilder builder = factory.newDocumentBuilder();
-	    Document document = builder.parse( new File(GLOBAL_SETTINGS_FILE) );
-	    NodeList list = document.getChildNodes();
-
-	    //Go to a deeper path
-	    for(int i=0;i<settings.length;i++){
-	    	if(settings.length-2>i){
-		    	for(int j=0;j<list.getLength();j++){
-		    		if(list.item(j).getNodeName()==settings[i]){
-		    			list = list.item(j).getChildNodes();
-		    			break;
-		    		}
-		    	}
-	    	}else{
-	    		//Node found, try to get his specific value
-	    		for(int j=0;j<list.getLength();j++){
-	    			if(list.item(j).getNodeName()==settings[i]){
-	    				NamedNodeMap attr = list.item(j).getAttributes();
-	    				for(int k=0;k<attr.getLength();k++){
-	    					if(attr.item(k).getNodeName()==settings[i+1]){
-	    						return attr.item(k).getNodeValue();
-	    					}
-	    				}
-	    			}
-	    		}
-	    	}
-	    }
-
-		return "";
-	}
 
 	/**
 	 * Get all files from an given path. If failureTest is set, this method said, if an path have an error file
@@ -242,10 +196,8 @@ public class web_TreeViewInitializator {
 			//Print the files!
 			if(pathArr.length==1){
 				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/files/"+projectName+"/"+newPath+"\"))");
-				//javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"noLinkInserted\"))");
 			}else{
 				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/files/"+projectName+"/"+newPath+"\"))");
-				//javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \"noLinkInserted\"))");
 			}
 
 			//Draw fileicons
@@ -259,6 +211,8 @@ public class web_TreeViewInitializator {
 				System.out.println("ERROR! DBG-File read error : "+files.get(i).getPath());
 				System.exit(-1);
 			}
+			//Add checkboxes
+			javascript.add("doc"+i+".prependHTML = \"<td valign=middle><input type=checkbox id=\"+"+i+"+\"></td>\"");
 
 			oldArr = pathArr;
 
@@ -299,7 +253,18 @@ public class web_TreeViewInitializator {
 	public static void js_header(String projectName, String iconPath, String projectPath){
 		javascript.add("USETEXTLINKS = 1");
 		javascript.add("STARTALLOPEN = 0");
+		javascript.add("USEICONS = 1");
+		javascript.add("BUILDALL = 1");
 		javascript.add("ICONPATH = '"+iconPath+"'");
+
+/*		javascript.add("function generateCheckBox(parentfolderObject, itemLabel, checkBoxDOMId, linkPath) {");
+		javascript.add("     var newObj;");
+		javascript.add("     newObj = insDoc(parentfolderObject, gLnk(\"R\", itemLabel, linkPath))");
+		javascript.add("     newObj.prependHTML = \"<td valign=middle><input type=checkbox id=\"+checkBoxDOMId+\"></td>\"");
+		javascript.add("     return newObj");
+		javascript.add("}");		
+	*/	
+		
 		javascript.add("foldersTree = gFld(\"<i>"+projectName+"</i>\", \"\")");
 		javascript.add("foldersTree.treeID = \"Frameset\"");
 
@@ -336,8 +301,8 @@ public class web_TreeViewInitializator {
 				}else{
 					folderSeparator = "/";
 				}
-
-				GLOBAL_SETTINGS_FILE = args[2];
+				
+				Parser xmlParser = new Parser(args[2]);
 
 				if(args[0].substring(args[0].length()-1).equals(folderSeparator)){
 					args[0] = args[0].substring(0,args[0].length()-1);
@@ -367,19 +332,19 @@ public class web_TreeViewInitializator {
 				System.out.println("Build header...");
 
 				String[] xpath = {"settings","website","generic","treeview","icons"};
-				js_header(args[1],read_setting(xpath),args[0]);
+				js_header(args[1],xmlParser.read_setting(xpath),args[0]);
 
 				System.out.println("Build folder tree...");
 				xpath = new String[]{"settings","global","website","defaultURI"};
-				js_tree(args[0],args[1],read_setting(xpath));
+				js_tree(args[0],args[1],xmlParser.read_setting(xpath));
 
 				System.out.println("\nSave folder tree...");
 				xpath = new String[]{"settings","global","webint","path"};
-				String readedPath = read_setting(xpath);
+				String readedPath = xmlParser.read_setting(xpath);
 				xpath = new String[]{"settings","global","website","path"};
-				readedPath = readedPath+read_setting(xpath);
+				readedPath = readedPath+xmlParser.read_setting(xpath);
 				xpath = new String[]{"settings","website","generic","treeview","path"};
-				readedPath = readedPath+read_setting(xpath);
+				readedPath = readedPath+xmlParser.read_setting(xpath);
 
 				writeTxt(readedPath+folderSeparator+args[1]+".js");
 				System.out.println("DONE!");

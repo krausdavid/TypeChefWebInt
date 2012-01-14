@@ -4,7 +4,7 @@
 		<dbgfilechecker path="/DBGFileCheker" />
 		<website path="/php" defaultURI="http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php" />
 		<shellscripts path="/scripts" />
-		<typechef path="/app/archive/kos/share/TypeChef" />
+		<typechef path="/app/archive/kos/share/TypeChef/TypeChef" />
 		<webint path="/app/home/eifx/public_html/TypeChefWebInt" />
 	</global>
 	<website>
