@@ -22,6 +22,15 @@
 
 		{* TODO: Muss generisch werden!!! *}
 		<SCRIPT src="{$_wud}/generics/treeview/busybox.js"></SCRIPT>
+		<SCRIPT>
+			function check_boxes(){
+				var outStr = ""
+				for(var i = 0; i<MAX_LENGTH; i++){
+					outStr = outStr + getElById('chkbox'+i) + ";"
+				}
+				location.href="{$_wud}/execute?chkStr="+outStr
+			}
+		</SCRIPT>
 		<!--[if lt IE 7.]>
 			<script defer type="text/javascript" src="{$_wud}/include/javascripts/pngfix/pngfix.js"></script>
 		<![endif]-->
