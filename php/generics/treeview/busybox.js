@@ -3,6 +3,7 @@ STARTALLOPEN = 0
 USEICONS = 1
 BUILDALL = 1
 ICONPATH = '/~eifx/TypeChefWebInt/php/include/images/treeview/'
+MAX_LENGTH = 522
 foldersTree = gFld("<i>busybox</i>", "")
 foldersTree.treeID = "Frameset"
 foldersTree.iconSrc = ICONPATH + "folderopenfail.gif"

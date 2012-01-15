@@ -218,6 +218,7 @@ public class Web_TreeViewInitializator {
 		javascript.add("USEICONS = 1");
 		javascript.add("BUILDALL = 1");
 		javascript.add("ICONPATH = '"+iconPath+"'");
+		javascript.add("MAX_LENGTH = "+files.size());
 
 		javascript.add("foldersTree = gFld(\"<i>"+projectName+"</i>\", \"\")");
 		javascript.add("foldersTree.treeID = \"Frameset\"");
