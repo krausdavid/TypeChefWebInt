@@ -200,7 +200,7 @@ public class Web_TreeViewInitializator {
 			}
 
 			//Add checkboxes
-			javascript.add("doc"+i+".prependHTML = \"<td valign=middle><input type=checkbox id=\""+i+"\"></td>\"");
+			javascript.add("doc"+i+".prependHTML = \"<td valign=middle><input type=checkbox id=\\\""+i+"\\\"></td>\"");
 
 			oldArr = pathArr;			
 			
