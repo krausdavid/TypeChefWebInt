@@ -1,0 +1,6 @@
+# KBuildMiner properties template
+# rename to miner.properties
+#
+codebase = ../../../workspace/codebases/linux-2.6.33.3
+astOutput = output/linux_2.6.33.3_ast.xml
+pcOutput = output/linux_2.6.33.3_pcs.txt

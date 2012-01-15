@@ -1,0 +1,18 @@
+We need a major refactoring:
+Make each list (the assignment of sth. to a list respectively) a node in the AST and adapt the traversal. Should make everything a bit more robust and enables the implementation of more heuristics, such as:
+
+busybox/archival/libunarchive:
+...
+ifneq ($(lib-y),)
+
+	lib-y += $(COMMON_FILES)
+
+endif
+...
+
+
+Problematic things in Linux:
+
+Variable references within filenames:
+obj-$(CONFIG_NUMA)		+= numa.o numa_$(BITS).o
+-> these filenames are now in the AST, should be resolved in scala code later

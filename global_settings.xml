@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <settings>
 	<global>
-		<dbgfilechecker path="/java/DBGFileCheker" />
 		<website path="/php" defaultURI="http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php" />
 		<shellscripts path="/scripts" />
 		<typechef path="/app/archive/kos/share/TypeChef/TypeChef" />

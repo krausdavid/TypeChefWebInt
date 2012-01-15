@@ -2,8 +2,8 @@
 #!/bin/bash -vxe
 
 func_filesToProcess(){
-  local listFile="fileLists/$fileCheckList"
-  cat $listFile
+   listFile="$pjFolder/$fileCheckList"
+   cat $listFile
 
   #awk -F: '$1 ~ /.c$/ {print gensub(/\.c$/, "", "", $1)}' < linux_2.6.33.3_pcs.txt
 }
@@ -27,10 +27,14 @@ echo "####################"
 echo "read global settings"
 echo "####################"
 tcFolder=`./readTCFolder.sh`
+cd ../projects/
+pjFolder=$(pwd)
+cd -
 echo $tcFolder
+echo $pjFolder
 
 if [ ! $# -eq 4 ]; then 
-  if [ ! $# -eq 3]; then	
+  if [ ! $# -eq 3 ]; then	
     func_help
   else
     noRemove=0
@@ -41,8 +45,8 @@ fi
 
 
 fileCheckList=$1
-flagList=$3
 srcPath=$2
+flagList=$3
 
 
 export outCSV=boa.csv
@@ -81,16 +85,17 @@ while read i; do
 echo "#######################"
 echo "flag $i [OK]"
 echo "#######################"
-done < params/$flagList
+done < $pjFolder/$flagList
 echo "#######################"
 echo "reading flags [OK]"
 echo "using jcpp [START]"
 echo "#######################"
 func_filesToProcess|while read i; do
-  if [ ! -f $srcPath/$i.dbg ]; then
+echo $i 
+ if [ ! -f $srcPath/$i.dbg ]; then
     touch $srcPath/$i.dbg
     oldPath=$(pwd)
-    cd /app/home/krausdavid/TypeChefWebInt/TypeChefWebInt/projects
+    cd ../jcpp/
     ./jcpp.sh $srcPath/$i.c
     cd - 
     echo "#######################"
