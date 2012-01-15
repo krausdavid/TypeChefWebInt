@@ -6,11 +6,7 @@
 		<shellscripts path="/scripts" />
 		<typechef path="/app/archive/kos/share/TypeChef/TypeChef" />
 		<webint path="/app/home/eifx/public_html/TypeChefWebInt" />
-<<<<<<< HEAD
-		<tcpath>/app/archive/kos/share/TypeChef/TypeChef</tcpath>
-=======
 		<projects path="/projects" />
->>>>>>> 033566de93e15ce85b31b6b6c6a171727c58ac3b
 	</global>
 	<website>
 		<generic>

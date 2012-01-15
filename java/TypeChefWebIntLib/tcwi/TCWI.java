@@ -14,7 +14,7 @@ import tcwi.xml.*;
 /**
  * 
  * @author EifX
- * @version 0.0.0.4
+ * @version 0.0.0.5
  */
 public class TCWI {
 	private ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -64,7 +64,7 @@ public class TCWI {
 		}
 	}
 
-	private void writeProjectXMLFile(String path, String projectName){
+	private void writeProjectXMLFile(String path, String projectName, String projectPath){
 		try{
 			Calendar c = new GregorianCalendar();
 			String month = (c.get(GregorianCalendar.MONTH)+1)+"";
@@ -87,20 +87,17 @@ public class TCWI {
 			if(second.length()==1){
 				second = "0"+second;
 			}
-			
-			System.out.println(c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day);
-			System.out.println(hour+":"+minute+":"+second);
 
 			File f = new File(path);
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project.xml","rw");
-			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
-			file.writeBytes("<settings>");
-			file.writeBytes("     <global>");
-			file.writeBytes("          <project name=\""+projectName+"\" path=\""+path+"\">");
-			file.writeBytes("          <init buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\">");
-			file.writeBytes("     </global>");
-			file.writeBytes("</settings>");
+			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");
+			file.writeBytes("<settings>\r\n");
+			file.writeBytes("     <global>\r\n");
+			file.writeBytes("          <project name=\""+projectName+"\" path=\""+projectPath+"\">\r\n");
+			file.writeBytes("          <init buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\">\r\n");
+			file.writeBytes("     </global>\r\n");
+			file.writeBytes("</settings>\r\n");
 			file.close();
 		}catch (IOException e){
 			System.out.println("ERROR during write the project-file at:\n"+path);
@@ -140,7 +137,7 @@ public class TCWI {
 		
 		try {
 			writeProjectFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName);
-			writeProjectXMLFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName);
+			writeProjectXMLFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName,path);
 		} catch (Exception e) {
 			System.out.println("ERROR by reading the settings-file.");
 			System.exit(-1);

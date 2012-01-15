@@ -96,6 +96,11 @@ public class DBGFileChecker {
 		}
 	}
 	
+	/**
+	 * Check if the given path is correct
+	 * @param path
+	 * @return
+	 */
 	public static String isCorrectPath(String path){
 		if(path.startsWith("\"")||path.startsWith("/")){
 			path = path.substring(1);
@@ -119,6 +124,11 @@ public class DBGFileChecker {
 		}
 	}
 	
+	/**
+	 * Check if the given filename is correct
+	 * @param path
+	 * @return
+	 */
 	public static String isCorrectFile(String path){
 		if(path!=""){
 			boolean isWin = true;
