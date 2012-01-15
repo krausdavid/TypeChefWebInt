@@ -19,6 +19,25 @@ public class ErrorFile implements Comparable<ErrorFile>{
 		this.isNotTrueSucceeded = isNotTrueSucceeded;
 		this.haveTypeErrors = haveTypeErrors;
 	}
+	
+	public ErrorFile(String path, String isEmptyFile, String isNotTrueSucceeded, String haveTypeErrors) {
+		this.path = path;
+		if(isEmptyFile.equals("true")){
+			this.isEmptyFile = true;
+		}else{
+			this.isEmptyFile = false;
+		}
+		if(isNotTrueSucceeded.equals("true")){
+			this.isNotTrueSucceeded = true;
+		}else{
+			this.isNotTrueSucceeded = false;
+		}
+		if(haveTypeErrors.equals("true")){
+			this.haveTypeErrors = true;
+		}else{
+			this.haveTypeErrors = false;
+		}
+	}
 
 	public ErrorFile(String path, boolean[] flags) {
 		this.path = path;
@@ -57,6 +76,22 @@ public class ErrorFile implements Comparable<ErrorFile>{
 
 	public void setHaveTypeErrors(boolean haveTypeErrors) {
 		this.haveTypeErrors = haveTypeErrors;
+	}
+	
+	public boolean haveErrors(){
+		if(this.isEmptyFile){
+			return true;
+		}else{
+			if(this.isNotTrueSucceeded){
+				return true;
+			}else{
+				if(this.haveTypeErrors){
+					return true;
+				}else{
+					return false;
+				}
+			}
+		}
 	}
 
 	@Override

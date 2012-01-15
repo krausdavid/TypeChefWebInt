@@ -14,12 +14,13 @@ import tcwi.xml.*;
 /**
  * 
  * @author EifX
- * @version 0.0.0.5
+ * @version 0.0.0.6
  */
 public class TCWI {
 	private ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private Check check = new Check();
 	private Parser parser;
+	private boolean failureProject = false;
 	
 	/**
 	 * Get all files from an given path
@@ -56,6 +57,12 @@ public class TCWI {
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project","rw");
 			for(int i=0;i<files.size();i++){
+				//Check if the project has errors. The result will be saved in the project.xml
+				if(failureProject==false){
+					if(files.get(i).haveErrors()){
+						failureProject = true;
+					}
+				}
 				file.writeBytes(files.get(i)+"\r\n");
 			}
 			file.close();
@@ -91,11 +98,11 @@ public class TCWI {
 			File f = new File(path);
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project.xml","rw");
-			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");
+			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
 			file.writeBytes("<settings>\r\n");
 			file.writeBytes("     <global>\r\n");
-			file.writeBytes("          <project name=\""+projectName+"\" path=\""+projectPath+"\">\r\n");
-			file.writeBytes("          <init buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\">\r\n");
+			file.writeBytes("          <project name=\""+projectName+"\" path=\""+projectPath+"\" failureProject=\""+failureProject+"\" />\r\n");
+			file.writeBytes("          <init buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
 			file.writeBytes("     </global>\r\n");
 			file.writeBytes("</settings>\r\n");
 			file.close();

@@ -2,19 +2,78 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import tcwi.xml.*;
 import tcwi.fileHandler.*;
+import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.0.2.14";
+	private static final String VERSION = "0.0.3.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
-	private static ArrayList<File> files = new ArrayList<File>();
+	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static String folderSeparator;
-	private static Check check;
+	private static Check check = new Check();
+	private static Parser parser;
+	private static boolean failureProject = false;
+	
+	public static void getAllFiles(String projectName, String settingsFile){
+		RandomAccessFile file = null;
+		try{
+			File f = new File("");
+			String path = f.getAbsolutePath();
+			path = path.substring(0,path.lastIndexOf(check.folderSeparator()));
+			path = path.substring(0,path.lastIndexOf(check.folderSeparator()));
+			parser = new Parser(settingsFile);
+			String[] xpath = {"settings","global","projects","path"};
+			
+			f = new File(path+parser.read_setting(xpath)+check.folderSeparator()+projectName+".project");
+			
+			//If the project have minimal one error, the main-folder in the tree-list is a fail folder
+			Parser projectParser = new Parser(path+parser.read_setting(xpath)+check.folderSeparator()+projectName+".project.xml");
+			String[] xpathProject = {"settings","global","projects","failureProject"};
+			if(projectParser.read_setting(xpathProject).equals("true")){
+				failureProject = true;
+			}else{
+				failureProject = false;
+			}
+			
+			
+			files.clear();
+			
+			file = new RandomAccessFile(f.getAbsolutePath(),"r");
+			String str = file.readLine();
+			while(str!=null){
+				String[] strArr = str.split("\t");
+				ErrorFile errFile = new ErrorFile(strArr[0],strArr[1],strArr[2],strArr[3]);
+				files.add(errFile);
+				str = file.readLine();
+			}
+			file.close();
+		}catch(Exception e){
+			System.out.println("ERROR: Can't read the setting file");
+			try {
+				file.close();
+			} catch (IOException e1) {}
+			System.exit(-1);
+		}
+	}
+	
+	public static boolean isAFailFolder(String path){
+		ArrayList<ErrorFile> filesNew = new ArrayList<ErrorFile>();
+		for(int i=0;i<files.size();i++){
+			if(files.get(i).getPath().contains(path)){
+				filesNew.add(files.get(i));
+			}
+		}
+		for(int i=0;i<filesNew.size();i++){
+			if(filesNew.get(i).haveErrors()){
+				return true;
+			}
+		}
+		return false;
+	}
 	
 	/**
 	 * Get all files from an given path. If failureTest is set, this method said, if an path have an error file
@@ -22,7 +81,7 @@ public class Web_TreeViewInitializator {
 	 * @param failureTest
 	 * @return
 	 */
-	public static boolean getAllFiles(String path, boolean failureTest){
+/*	public static boolean getAllFiles(String path, boolean failureTest){
 		File file = new File(path);
 		File[] fileList = file.listFiles();
 		try{
@@ -58,7 +117,7 @@ public class Web_TreeViewInitializator {
 		}
 		return true;
 	}
-
+*/
 	/**
 	 * Write the output filefalse
 	 * @param path
@@ -103,10 +162,7 @@ public class Web_TreeViewInitializator {
 	public static void js_tree(String path, String projectName, String defaultURI){
 		String[] oldArr = {""};
 		int notEqual = -1;
-		Double dsize = new Double(files.size());
-		int percent = 0;
-		System.out.println("|0%      |50%      |100%");
-		Double calc = 0.0;
+		
 		for(int i=0;i<files.size();i++){
 			//Get the file
 			notEqual = -1;
@@ -151,7 +207,7 @@ public class Web_TreeViewInitializator {
 						p+=folderSeparator+pathArr[k];
 					}
 					p = path+p;
-					if(getAllFiles(p,true)){
+					if(isAFailFolder(p)){
 						javascript.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \"folderopenok.gif\"");
 						javascript.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
 					}else{
@@ -187,32 +243,6 @@ public class Web_TreeViewInitializator {
 
 			oldArr = pathArr;
 
-			//Graphical representation
-			Double di = new Double(i);
-
-			calc = (di.doubleValue() / dsize.doubleValue())*100;
-
-			if(calc>=0&&percent==0){System.out.print("|");percent=percent+5;}
-			if(calc>=5&&percent==5){System.out.print("|");percent=percent+5;}
-			if(calc>=10&&percent==10){System.out.print("|");percent=percent+5;}
-			if(calc>=15&&percent==15){System.out.print("|");percent=percent+5;}
-			if(calc>=20&&percent==20){System.out.print("|");percent=percent+5;}
-			if(calc>=25&&percent==25){System.out.print("|");percent=percent+5;}
-			if(calc>=30&&percent==30){System.out.print("|");percent=percent+5;}
-			if(calc>=35&&percent==35){System.out.print("|");percent=percent+5;}
-			if(calc>=40&&percent==40){System.out.print("|");percent=percent+5;}
-			if(calc>=45&&percent==45){System.out.print("|");percent=percent+5;}
-			if(calc>=50&&percent==50){System.out.print("|");percent=percent+5;}
-			if(calc>=55&&percent==55){System.out.print("|");percent=percent+5;}
-			if(calc>=60&&percent==60){System.out.print("|");percent=percent+5;}
-			if(calc>=65&&percent==65){System.out.print("|");percent=percent+5;}
-			if(calc>=70&&percent==70){System.out.print("|");percent=percent+5;}
-			if(calc>=75&&percent==75){System.out.print("|");percent=percent+5;}
-			if(calc>=80&&percent==80){System.out.print("|");percent=percent+5;}
-			if(calc>=85&&percent==85){System.out.print("|");percent=percent+5;}
-			if(calc>=90&&percent==90){System.out.print("|");percent=percent+5;}
-			if(calc>=95&&percent==95){System.out.print("|");percent=percent+5;}
-			if(calc>=100&&percent==100){System.out.print("|");percent=percent+5;}
 		}
 	}
 
@@ -231,7 +261,7 @@ public class Web_TreeViewInitializator {
 		javascript.add("foldersTree = gFld(\"<i>"+projectName+"</i>\", \"\")");
 		javascript.add("foldersTree.treeID = \"Frameset\"");
 
-		if(getAllFiles(projectPath,true)){
+		if(failureProject){
 			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
 			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
 		}else{
@@ -245,49 +275,28 @@ public class Web_TreeViewInitializator {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		if(args.length!=3){
+		if(args.length!=2){
 			System.out.println("Help - web_TreeViewInitializator "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
 			System.out.println("\nUsage: web_TreeViewInitializator [PATH] [PROJECTNAME] [GLOBAL_SETTINGS]");
-			System.out.println("\n\n[PATH]");
-			System.out.println("\n     Absolute Path for scan for TypeChef-Files\n");
 			System.out.println("\n[PROJECTNAME]");
 			System.out.println("\n     Project name\n");
 			System.out.println("\n[GLOBAL_SETTINGS]");
 			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
 			try {
-				check = new Check();
 				System.out.println("\nRead needed variables...");
+				
 				//Windows or Unix OS?
 				folderSeparator = check.folderSeparator()+"";
 				
-				Parser xmlParser = new Parser(args[2]);
-
-				if(args[0].substring(args[0].length()-1).equals(folderSeparator)){
-					args[0] = args[0].substring(0,args[0].length()-1);
-				}
+				//Init the XMLParser
+				Parser xmlParser = new Parser(args[1]);
 
 				System.out.println("Read folder tree...");
-				getAllFiles(args[0],false);
+				getAllFiles(args[0],args[1]);
 
-
-				System.out.println("Sort folder tree...");
-
-				String[] sortArr = new String[files.size()];
-				for(int i=0;i<sortArr.length;i++){
-					sortArr[i] = files.get(i).getAbsolutePath();
-				}
-
-				Arrays.sort(sortArr);
-
-				while(files.size()!=0){
-					files.remove(0);
-				}
-				for(int i=0;i<sortArr.length;i++){
-					files.add(new File(sortArr[i]));
-				}
-
+//TODO:
 
 				System.out.println("Build header...");
 
