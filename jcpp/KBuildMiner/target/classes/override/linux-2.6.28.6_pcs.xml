@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<override_pcs>
+	<pc>
+		<f>arch/x86/kernel/asm-offsets.c</f>
+		<e>true</e>
+	</pc>
+    <!--fragment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ObjectFile" sourceFile="net/dccp/ipv6.c" generated="false" expr="CONFIG_IPV6_m | ( CONFIG_IP_DCCP_m &amp; (CONFIG_IPV6_y | CONFIG_IP_DCCP_m) ) | ( CONFIG_IP_DCCP_y &amp; (CONFIG_IPV6_y | CONFIG_IP_DCCP_m ) ) | (CONFIG_IPV6_y &amp; ( CONFIG_IP_DCCP_y | CONFIG_IP_DCCP_m ))"/-->
+    <pc>
+		<f>net/dccp/ipv6.c</f>
+		<e>CONFIG_IPV6 == "m" || ( CONFIG_IPV6 == "y" &amp;&amp; ( CONFIG_IP_DCCP == "m" || CONFIG_IP_DCCP == "y" ) )</e>
+	</pc>
+	<pc>
+		<f>fs/xfs/quota/xfs_qm_stats.c</f>
+		<e>(CONFIG_PROC_FS == "y" &amp;&amp; ( CONFIG_XFS_QUOTA == "y" &amp;&amp; (CONFIG_XFS_FS == "y" || CONFIG_XFS_FS == "m")))</e>
+	</pc>
+</override_pcs>

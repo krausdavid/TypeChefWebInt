@@ -86,7 +86,6 @@ echo "#######################"
 echo "flag $i [OK]"
 echo "#######################"
 done < $pjFolder/$flagList
-sleep 8
 echo "#######################"
 echo "reading flags [OK]"
 echo "using jcpp [START]"
