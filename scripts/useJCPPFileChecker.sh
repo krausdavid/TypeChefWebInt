@@ -2,7 +2,9 @@
 #!/bin/bash -vxe
 
 func_filesToProcess(){
-  local listFile="fileLists/$fileCheckList"
+  local listFile="../projects/$progName.lst"
+echo $listFile
+sleep 6
   cat $listFile
 
   #awk -F: '$1 ~ /.c$/ {print gensub(/\.c$/, "", "", $1)}' < linux_2.6.33.3_pcs.txt
@@ -14,7 +16,7 @@ echo ""
 echo ""
 echo "useJCCPFileChecker is a script for using the TypeChef Programm including some extras"
 echo ""
-echo "useJCCPFileChecker [NAME OF FILE CHECK LIST] [PATH OF THE PROGRAMM] [NAME OF THE FLAG LIST]"
+echo "useJCCPFileChecker [NAME OF PROGRAMM] [PATH OF THE PROGRAMM]"
 echo ""
 echo "    - File Check Lists have the ending *.lst"
 echo "    - Flag Lists have the ending *.flag"
@@ -28,20 +30,20 @@ echo "read global settings"
 echo "####################"
 tcFolder=`./readTCFolder.sh`
 echo $tcFolder
+sleep 3
 
-if [ ! $# -eq 4 ]; then 
-  if [ ! $# -eq 3]; then	
+if [ ! $# -eq 3 ]; then 
+  if [ ! $# -eq 2 ]; then	
     func_help
   else
     noRemove=0
   fi
 else
-  noRemove=$4
+  noRemove=$3
 fi
 
 
-fileCheckList=$1
-flagList=$3
+progName=$1
 srcPath=$2
 
 
@@ -81,7 +83,8 @@ while read i; do
 echo "#######################"
 echo "flag $i [OK]"
 echo "#######################"
-done < params/$flagList
+done < ../projects/$progName.flag
+sleep 8
 echo "#######################"
 echo "reading flags [OK]"
 echo "using jcpp [START]"
@@ -90,7 +93,7 @@ func_filesToProcess|while read i; do
   if [ ! -f $srcPath/$i.dbg ]; then
     touch $srcPath/$i.dbg
     oldPath=$(pwd)
-    cd /app/home/krausdavid/TypeChefWebInt/TypeChefWebInt/projects
+    cd ../jcpp/
     ./jcpp.sh $srcPath/$i.c
     cd - 
     echo "#######################"
