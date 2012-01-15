@@ -23,11 +23,11 @@
 		{* TODO: Muss generisch werden!!! *}
 		<SCRIPT src="{$_wud}/generics/treeview/busybox.js"></SCRIPT>
 		<SCRIPT>
-			function check_boxes(){
+			function check_boxes(){literal}{
 				var outStr = ""
 				for(var i = 0; i<MAX_LENGTH; i++){
 					outStr = outStr + getElById('chkbox'+i) + "_"
-				}
+				}{/literal}
 				location.href="{$_wud}/execute?chkStr="+outStr
 			}
 		</SCRIPT>
