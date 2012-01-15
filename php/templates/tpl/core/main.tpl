@@ -26,7 +26,9 @@
 			function check_boxes(){literal}{
 				var outStr = ""
 				for(var i = 0; i<MAX_LENGTH; i++){
-					outStr = outStr + getElById('chkbox'+i) + "_"
+					if(getElById('chkbox'+i).checked){
+						outStr = outStr + 'chkbox'+ i + "_"
+					}
 				}{/literal}
 				location.href="{$_wud}/execute?chkStr="+outStr
 			}
