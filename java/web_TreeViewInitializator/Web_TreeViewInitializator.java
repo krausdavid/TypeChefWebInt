@@ -16,6 +16,8 @@ public class Web_TreeViewInitializator {
 	private static String folderSeparator;
 	private static Check check;
 
+	
+	
 	/**
 	 * Get all files from an given path. If failureTest is set, this method said, if an path have an error file
 	 * @param path
@@ -260,11 +262,7 @@ public class Web_TreeViewInitializator {
 				check = new Check();
 				System.out.println("\nRead needed variables...");
 				//Windows or Unix OS?
-				if(args[0].indexOf('\\')!=-1){
-					folderSeparator = "\\";
-				}else{
-					folderSeparator = "/";
-				}
+				folderSeparator = check.folderSeparator()+"";
 				
 				Parser xmlParser = new Parser(args[2]);
 
