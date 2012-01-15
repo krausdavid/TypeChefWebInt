@@ -73,9 +73,9 @@ public class ErrorFile implements Comparable<ErrorFile>{
 			if(this.path.length()>i){
 				if(errFile.getPath().charAt(i)!=this.getPath().charAt(i)){
 					if(errFile.getPath().charAt(i)>this.getPath().charAt(i)){
-						return 1;
-					}else{
 						return -1;
+					}else{
+						return 1;
 					}
 				}
 			}else{

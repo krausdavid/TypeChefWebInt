@@ -12,7 +12,7 @@ import tcwi.xml.*;
 /**
  * 
  * @author EifX
- * @version 0.0.0.1
+ * @version 0.0.0.3
  */
 public class TCWI {
 	private ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -52,7 +52,7 @@ public class TCWI {
 		try{
 			File f = new File(path);
 			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName,"rw");
+			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project","rw");
 			for(int i=0;i<files.size();i++){
 				file.writeBytes(files.get(i)+"\r\n");
 			}
@@ -75,7 +75,11 @@ public class TCWI {
 		
 		System.out.println("Sort files...");
 		
-		ErrorFile[] errFiles = (ErrorFile[]) files.toArray();
+		ErrorFile[] errFiles = new ErrorFile[files.size()];
+		for(int i=0;i<files.size();i++){
+			errFiles[i] = files.get(i);
+		}
+
 		Arrays.sort(errFiles);
 		files.clear();
 		for(int i=0;i<errFiles.length;i++){
