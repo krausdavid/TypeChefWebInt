@@ -2,35 +2,32 @@ import java.io.File;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
-import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
 public class Web_WriteFileList {
-	private static Check check = new Check();
 	private static Parser parser;
 	private static String project_settings_path;
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
 
-	private static final String VERSION = "0.0.0.1";
+	private static final String VERSION = "0.0.0.7";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
-		if(args.length!=2){
+		if(args.length!=3){
 			System.out.println("Help - web_WriteFileList "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
-			System.out.println("\nUsage: web_WriteFileList [PROJECTNAME] [CHECKBOX_STRING]");
+			System.out.println("\nUsage: web_WriteFileList [PROJECTNAME] [CHECKBOX_STRING] [PROJECT-DIR]");
 			System.out.println("\n[PROJECTNAME]");
 			System.out.println("\n     Project name\n");
 			System.out.println("\n[CHECKBOX_STRING]");
-			System.out.println("\n     The checkbox string from the website");
+			System.out.println("\n     The checkbox string from the website\n");
+			System.out.println("\n[PROJECT-DIR]");
+			System.out.println("\n     The project directory");
 		}else{
 			//Read the project dir
-			File f = new File("");
-			String path = f.getAbsolutePath();
-			path = path.substring(0,path.lastIndexOf(check.folderSeparator()+""));
-			path = path.substring(0,path.lastIndexOf(check.folderSeparator()+""));
-			path = path+check.folderSeparator()+"projects"+check.folderSeparator();
+			String path = args[2];
+
 			project_settings_path = path+args[0]+".project";
 			project_settings_xml_path = path+args[0]+".project.xml";
 			project_settings_lst_path = path+args[0]+".lst";
@@ -60,18 +57,18 @@ public class Web_WriteFileList {
 				while(str!=null){
 					if(intArr[i]==j){
 						String[] tmpArr = str.split("\t");
-						writeInFile.add(tmpArr[0].substring(projectPath.length()+1,tmpArr[0].length()-4));
-						str = file.readLine();
+						writeInFile.add(tmpArr[0].substring(projectPath.length()+1,tmpArr[0].length()));
 						i++;
 					}
 					if(i>=intArr.length){
 						break;
 					}
+					str = file.readLine();
 					j++;
 				}
 				file.close();
-		
-				f = new File(project_settings_lst_path);
+	
+				File f = new File(project_settings_lst_path);
 				f.delete();
 				file = new RandomAccessFile(project_settings_lst_path,"rw");
 				for(int k=0;k<writeInFile.size();k++){

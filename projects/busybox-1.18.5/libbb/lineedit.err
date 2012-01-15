@@ -1,1 +1,11 @@
-bash: /app/archive/kos/share/TypeChef/TypeChef/typechef.sh: Permission denied
+Exception in thread "main" java.lang.AssertionError: assertion failed: cannot type check Translation Unit, tunit is null
+	at scala.Predef$.assert(Predef.scala:103)
+	at de.fosd.typechef.typesystem.CTypeSystem$class.typecheckTranslationUnit(CTypeSystem.scala:20)
+	at de.fosd.typechef.typesystem.CTypeSystemFrontend.typecheckTranslationUnit(CTypeSystemFrontend.scala:17)
+	at de.fosd.typechef.typesystem.CTypeSystemFrontend.checkAST(CTypeSystemFrontend.scala:58)
+	at de.fosd.typechef.linux.LinuxPreprocessorFrontend$$anonfun$main$1.apply(LinuxPreprocessorFrontend.scala:171)
+	at de.fosd.typechef.linux.LinuxPreprocessorFrontend$$anonfun$main$1.apply(LinuxPreprocessorFrontend.scala:135)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:34)
+	at scala.collection.mutable.ArrayOps.foreach(ArrayOps.scala:38)
+	at de.fosd.typechef.linux.LinuxPreprocessorFrontend$.main(LinuxPreprocessorFrontend.scala:135)
+	at de.fosd.typechef.linux.LinuxPreprocessorFrontend.main(LinuxPreprocessorFrontend.scala)

@@ -1,0 +1,1 @@
+(definedEx(CONFIG_DPKG) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_TAR))

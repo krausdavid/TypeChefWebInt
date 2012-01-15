@@ -14,7 +14,7 @@ import tcwi.xml.*;
 /**
  * 
  * @author EifX
- * @version 0.0.0.6
+ * @version 0.0.1.1
  */
 public class TCWI {
 	private ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -35,11 +35,12 @@ public class TCWI {
 				if(fileList[i].isDirectory()){
 					getAllFiles(fileList[i].getAbsolutePath());
 				}else{
-					if(fileList[i].toString().substring(fileList[i].toString().length()-4, fileList[i].toString().length()).equals(".dbg")){
+					if(fileList[i].toString().substring(fileList[i].toString().length()-2, fileList[i].toString().length()).equals(".c")){
 						try{
-							ErrorFile errFile = new ErrorFile(fileList[i].getAbsolutePath(),check.failFlags(fileList[i].getAbsolutePath()));
+							ErrorFile errFile = new ErrorFile(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2),check.failFlags(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2)));
 							files.add(errFile);
 						}catch (IOException e){
+							e.printStackTrace();
 							return fileList[i].getAbsolutePath();
 						}
 					}

@@ -1,0 +1,1 @@
+!defined(CONFIG_TRACEROUTE6) || (defined(CONFIG_FEATURE_IPV6) && defined(CONFIG_TRACEROUTE))

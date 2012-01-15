@@ -1,0 +1,46 @@
+fm True
+features (0)
+	
+imports (40)
+	BUG_bb_strtou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71470:8
+	BUG_xatou32_unimplemented: (void) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71417:8
+	bb_error_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72928:4
+	bb_error_msg_and_die: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72831:3
+	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72931:4
+	bb_show_usage: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72870:3
+	bb_strtoll: (*char, **char, signed int) => signed long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71442:9
+	bb_strtou: (*char, **char, signed int) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71467:9
+	bb_strtoull: (*char, **char, signed int) => unsigned long long		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71439:9
+	del_loop: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72944:4, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72944:4
+	endmntent: (*struct _IO_FILE) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72857:2
+	erase_mtab: (*char) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72953:4, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72953:4
+	free: (*void) => void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72988:3, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72987:3, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72986:3, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72988:3, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72987:3, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72986:3, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72972:2
+	getmntent_r: (*struct _IO_FILE, *struct mntent, *char, signed int) => *struct mntent		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72847:9
+	getopt32: (**char, *char, ...) => unsigned int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72790:7
+	match_fstype: (*struct mntent, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72849:8
+	mount: (*char, *char, *char, unsigned long, *void) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72923:14
+	setmntent: (*char, *char) => *struct _IO_FILE		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72807:6
+	strcmp: (*char, *char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72969:27, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72901:38, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72901:9
+	umount2: (*char, signed int) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72915:13
+	umount: (*char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72911:12
+	xatoll: (*char) => signed long long		if True		at string literal: xatoll:71398:0
+	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:71398:0
+	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:71398:0
+	xatoll_sfx: (*char, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_sfx:71398:0
+	xatou: (*char) => unsigned int		if True		at file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/xatonum.h:71414:9
+	xatoull: (*char) => unsigned long long		if True		at string literal: xatoull:71398:0
+	xatoull_range: (*char, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xatoull_range:71398:0
+	xatoull_range_sfx: (*char, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_range_sfx:71398:0
+	xatoull_sfx: (*char, *struct suffix_mult) => unsigned long long		if True		at string literal: xatoull_sfx:71398:0
+	xmalloc_realpath: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72898:10
+	xstrdup: (*char) => *char		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72882:10, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72854:12, file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72853:15
+	xstrtoll: (*char, signed int) => signed long long		if True		at string literal: xstrtoll:71398:0
+	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if True		at string literal: xstrtoll_range:71398:0
+	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xstrtoll_range_sfx:71398:0
+	xstrtoull: (*char, signed int) => unsigned long long		if True		at string literal: xstrtoull:71398:0
+	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:71398:0
+	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:71398:0
+	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:71398:0
+	xzalloc: (unsigned long) => *void		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72851:7
+exports (1)
+	umount_main: (signed int, **char) => signed int		if True		at file cprojects/busybox/busybox-1.18.5/util-linux/umount.c:72776:0

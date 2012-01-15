@@ -1,1 +1,6 @@
-bash: /app/archive/kos/share/TypeChef/TypeChef/typechef.sh: Permission denied
+Dec 12, 2011 6:07:15 PM de.fosd.typechef.lexer.PreprocessorListener print
+WARNING: cprojects/busybox/busybox-1.18.5/procps/top.c:782:36: warning: Unnecessary escape character e
+cprojects/busybox/busybox-1.18.5/procps/top.c:782:36: warning: Unnecessary escape character e
+Dec 12, 2011 6:07:15 PM de.fosd.typechef.lexer.PreprocessorListener print
+WARNING: cprojects/busybox/busybox-1.18.5/procps/top.c:782:45: warning: Unnecessary escape character e
+cprojects/busybox/busybox-1.18.5/procps/top.c:782:45: warning: Unnecessary escape character e

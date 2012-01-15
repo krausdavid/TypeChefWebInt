@@ -1,0 +1,1 @@
+(definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_FEATURE_SEAMLESS_Z))

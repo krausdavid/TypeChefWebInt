@@ -1,0 +1,1 @@
+(definedEx(CONFIG_RPM) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ))

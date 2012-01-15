@@ -1,0 +1,1 @@
+(definedEx(CONFIG_MAKEMIME) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL))

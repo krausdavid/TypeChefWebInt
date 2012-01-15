@@ -1,0 +1,60 @@
+preIncludes: ArraySeq()
+systemIncludes: usr/include
+postIncludes: List(usr/lib/gcc/x86_64-redhat-linux/4.4.4/include)
+List(-I, /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include, -I, systems/redhat/usr/include, -I, systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include)
+True	succeeded
+
+Parsing statistics: 
+  Duration parsing: 621 ms
+  Tokens: 217
+  Tokens Consumed: 260
+  Tokens Backtracked: 43
+  Tokens Repeated: 0
+  Conditional Tokens: 0
+  Distinct Features#: 0
+  Distinct Features: 
+  Distinct Feature Expressions: 1
+  Choice Nodes: 0
+
+check 1/36. line 10969. err 0
+check 2/36. line 10970. err 0
+check 3/36. line 10971. err 0
+check 4/36. line 10973. err 0
+check 5/36. line 10979. err 0
+check 6/36. line 10980. err 0
+check 7/36. line 10982. err 0
+check 8/36. line 10986. err 0
+check 9/36. line 10993. err 0
+check 10/36. line 10994. err 0
+check 11/36. line 10995. err 0
+check 12/36. line 10997. err 0
+check 13/36. line 11002. err 0
+check 14/36. line 11003. err 0
+check 15/36. line 11004. err 0
+check 16/36. line 11006. err 0
+check 17/36. line 11013. err 0
+check 18/36. line 11015. err 0
+check 19/36. line 11016. err 0
+check 20/36. line 11017. err 0
+check 21/36. line 11024. err 0
+check 22/36. line 11026. err 0
+check 23/36. line 11027. err 0
+check 24/36. line 11028. err 0
+check 25/36. line 11037. err 0
+check 26/36. line 11040. err 0
+check 27/36. line 11049. err 0
+check 28/36. line 11050. err 0
+check 29/36. line 11209. err 0
+check 30/36. line 11210. err 0
+check 31/36. line 11211. err 0
+check 32/36. line 11587. err 0
+check 33/36. line 11588. err 0
+check 34/36. line 11753. err 0
+check 35/36. line 11756. err 0
+check 36/36. line 11757. err 0
+No type errors found.
+
+
+inferring interfaces.
+timing (lexer, parser, type system, interface inference)
+2341;693;582;21

@@ -1,0 +1,1 @@
+defined(CONFIG_MODINFO) || defined(CONFIG_DEPMOD) || defined(CONFIG_INSMOD) || defined(CONFIG_LSMOD) || defined(CONFIG_MODPROBE) || defined(CONFIG_RMMOD)

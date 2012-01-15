@@ -1,4 +1,4 @@
-#line 1 "platform-redhat.h" 1
+#line 1 "host/platform-redhat.h" 1
 //Generated with:
 //echo -|gcc -dM - -E -std=gnu99 
 
@@ -136,7 +136,7 @@
 
 
 
-#line 1 "/app/archive/kos/share/TypeChef/busybox/busybox/config.h" 1
+#line 1 "/app/archive/kos/share/TypeChef/busybox/config.h" 1
 
 
 
@@ -175,77 +175,6 @@
 
 
 
-
-#if definedEx(CONFIG_FEATURE_TOP_SMP_CPU)
-  
-#endif
-#if definedEx(CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS)
-  
-#endif
-#if definedEx(CONFIG_FEATURE_FIND_CONTEXT)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_UNEXPAND_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_LS_COLOR)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS)
-  
-  
-#endif
 
 
 
@@ -271,14 +200,16 @@
    
    
 #endif
-
+#if definedEx(CONFIG_EXTRA_COMPAT)
    
    
    
-    
+#endif
+#if !definedEx(CONFIG_EXTRA_COMPAT)
    
    
-
+   
+#endif
 #if definedEx(CONFIG_INCLUDE_SUSv2)
    
    
@@ -379,6 +310,16 @@
    
    
 #endif
+#if definedEx(CONFIG_INSTALL_NO_USR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_NO_USR)
+   
+   
+   
+#endif
 #if definedEx(CONFIG_LOCALE_SUPPORT)
    
    
@@ -419,22 +360,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_UNICODE_COMBINING_WCHARS)
    
    
@@ -485,12 +410,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS) || definedEx(CONFIG_LONG_OPTS) || definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_UNEXPAND_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS))
+#if definedEx(CONFIG_LONG_OPTS)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_UNEXPAND_LONG_OPTIONS) && !definedEx(CONFIG_LONG_OPTS) && !definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS))
+#if !definedEx(CONFIG_LONG_OPTS)
    
    
    
@@ -515,22 +440,22 @@
    
    
 #endif
-#if definedEx(CONFIG_FEATURE_UTMP)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_FEATURE_UTMP)
-   
-   
-   
-#endif
 #if definedEx(CONFIG_FEATURE_WTMP)
    
    
    
 #endif
 #if !definedEx(CONFIG_FEATURE_WTMP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UTMP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UTMP)
    
    
    
@@ -575,12 +500,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX))
+#if definedEx(CONFIG_SELINUX)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) && !definedEx(CONFIG_SELINUX))
+#if !definedEx(CONFIG_SELINUX)
    
    
    
@@ -595,14 +520,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_SYSLOG)
    
    
@@ -693,22 +610,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_DEBUG)
    
    
@@ -765,16 +666,6 @@
    
 #endif
 #if !definedEx(CONFIG_EFENCE)
-   
-   
-   
-#endif
-#if definedEx(CONFIG_INSTALL_NO_USR)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_INSTALL_NO_USR)
    
    
    
@@ -849,30 +740,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_FAST_TOP)
    
    
@@ -893,14 +760,16 @@
    
    
 #endif
-
+#if definedEx(CONFIG_FEATURE_USE_TERMIOS)
    
    
    
-    
+#endif
+#if !definedEx(CONFIG_FEATURE_USE_TERMIOS)
    
    
-
+   
+#endif
 
    
    
@@ -919,14 +788,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
    
    
@@ -997,14 +858,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_MONOTONIC_SYSCALL)
    
    
@@ -1205,12 +1058,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS) || definedEx(CONFIG_GZIP))
+#if definedEx(CONFIG_GZIP)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS) && !definedEx(CONFIG_GZIP))
+#if !definedEx(CONFIG_GZIP)
    
    
    
@@ -1265,12 +1118,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS) || definedEx(CONFIG_TAR))
+#if definedEx(CONFIG_TAR)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS) && !definedEx(CONFIG_TAR))
+#if !definedEx(CONFIG_TAR)
    
    
    
@@ -1825,12 +1678,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS) || definedEx(CONFIG_ENV))
+#if definedEx(CONFIG_ENV)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS) && !definedEx(CONFIG_ENV))
+#if !definedEx(CONFIG_ENV)
    
    
    
@@ -1845,12 +1698,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) || definedEx(CONFIG_EXPAND))
+#if definedEx(CONFIG_EXPAND)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) && !definedEx(CONFIG_EXPAND))
+#if !definedEx(CONFIG_EXPAND)
    
    
    
@@ -1955,12 +1808,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS) || definedEx(CONFIG_INSTALL))
+#if definedEx(CONFIG_INSTALL)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS) && !definedEx(CONFIG_INSTALL))
+#if !definedEx(CONFIG_INSTALL)
    
    
    
@@ -2005,12 +1858,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_LS_COLOR) || definedEx(CONFIG_LS))
+#if definedEx(CONFIG_LS)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_LS_COLOR) && !definedEx(CONFIG_LS))
+#if !definedEx(CONFIG_LS)
    
    
    
@@ -2105,12 +1958,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS) || definedEx(CONFIG_MKDIR))
+#if definedEx(CONFIG_MKDIR)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS) && !definedEx(CONFIG_MKDIR))
+#if !definedEx(CONFIG_MKDIR)
    
    
    
@@ -2145,12 +1998,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS) || definedEx(CONFIG_MV))
+#if definedEx(CONFIG_MV)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS) && !definedEx(CONFIG_MV))
+#if !definedEx(CONFIG_MV)
    
    
    
@@ -2265,12 +2118,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS) || definedEx(CONFIG_RMDIR))
+#if definedEx(CONFIG_RMDIR)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS) && !definedEx(CONFIG_RMDIR))
+#if !definedEx(CONFIG_RMDIR)
    
    
    
@@ -2845,14 +2698,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_SETKEYCODES)
    
    
@@ -2923,12 +2768,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS) || definedEx(CONFIG_RUN_PARTS))
+#if definedEx(CONFIG_RUN_PARTS)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS) && !definedEx(CONFIG_RUN_PARTS))
+#if !definedEx(CONFIG_RUN_PARTS)
    
    
    
@@ -2953,12 +2798,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS) || definedEx(CONFIG_START_STOP_DAEMON))
+#if definedEx(CONFIG_START_STOP_DAEMON)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS) && !definedEx(CONFIG_START_STOP_DAEMON))
+#if !definedEx(CONFIG_START_STOP_DAEMON)
    
    
    
@@ -2993,6 +2838,16 @@
    
    
 #endif
+#if definedEx(CONFIG_PATCH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PATCH)
+   
+   
+   
+#endif
 #if definedEx(CONFIG_AWK)
    
    
@@ -3023,12 +2878,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS) || definedEx(CONFIG_DIFF))
+#if definedEx(CONFIG_DIFF)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS) && !definedEx(CONFIG_DIFF))
+#if !definedEx(CONFIG_DIFF)
    
    
    
@@ -3063,16 +2918,6 @@
    
    
 #endif
-#if definedEx(CONFIG_PATCH)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_PATCH)
-   
-   
-   
-#endif
 #if definedEx(CONFIG_SED)
    
    
@@ -3093,14 +2938,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_VI_8BIT)
    
    
@@ -3231,14 +3068,16 @@
    
    
 #endif
-
+#if definedEx(CONFIG_FIND)
    
    
    
-    
+#endif
+#if !definedEx(CONFIG_FIND)
    
    
-
+   
+#endif
 #if definedEx(CONFIG_FEATURE_FIND_PRINT0)
    
    
@@ -3579,6 +3418,26 @@
    
    
 #endif
+#if definedEx(CONFIG_HALT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HALT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CALL_TELINIT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CALL_TELINIT)
+   
+   
+   
+#endif
 #if definedEx(CONFIG_INIT)
    
    
@@ -3609,14 +3468,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_INIT_SCTTY)
    
    
@@ -3667,42 +3518,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-#if definedEx(CONFIG_HALT)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_HALT)
-   
-   
-   
-#endif
-#if definedEx(CONFIG_FEATURE_CALL_TELINIT)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_FEATURE_CALL_TELINIT)
-   
-   
-   
-#endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_MESG)
    
    
@@ -3783,12 +3598,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS) || definedEx(CONFIG_ADDUSER))
+#if definedEx(CONFIG_ADDUSER)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS) && !definedEx(CONFIG_ADDUSER))
+#if !definedEx(CONFIG_ADDUSER)
    
    
    
@@ -3813,28 +3628,12 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
-#if (definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS) || definedEx(CONFIG_ADDGROUP))
+#if definedEx(CONFIG_ADDGROUP)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS) && !definedEx(CONFIG_ADDGROUP))
+#if !definedEx(CONFIG_ADDGROUP)
    
    
    
@@ -4289,22 +4088,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_BLOCKDEV)
    
    
@@ -4491,6 +4274,16 @@
    
 #endif
 #if !definedEx(CONFIG_FEATURE_OSF_LABEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_GPT_LABEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_GPT_LABEL)
    
    
    
@@ -4811,16 +4604,6 @@
    
 #endif
 #if !definedEx(CONFIG_MORE)
-   
-   
-   
-#endif
-#if definedEx(CONFIG_FEATURE_USE_TERMIOS)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_FEATURE_USE_TERMIOS)
    
    
    
@@ -5345,22 +5128,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_CHAT)
    
    
@@ -5481,14 +5248,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_CRONTAB)
    
    
@@ -5709,14 +5468,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_LESS_BRACKETS)
    
    
@@ -6537,14 +6288,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_IFUPDOWN_IP)
    
    
@@ -7235,14 +6978,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_UDHCPC)
    
    
@@ -7273,14 +7008,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_UDHCP_RFC3397)
    
    
@@ -7291,30 +7018,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_UDPSVD)
    
    
@@ -7365,14 +7068,16 @@
    
    
 #endif
-
+#if definedEx(CONFIG_FEATURE_WGET_LONG_OPTIONS)
    
    
    
-    
+#endif
+#if !definedEx(CONFIG_FEATURE_WGET_LONG_OPTIONS)
    
    
-
+   
+#endif
 #if definedEx(CONFIG_FEATURE_WGET_TIMEOUT)
    
    
@@ -7433,14 +7138,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_POPMAILDIR)
    
    
@@ -7517,6 +7214,16 @@
    
 #endif
 #if !definedEx(CONFIG_PMAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_POWERTOP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_POWERTOP)
    
    
    
@@ -7721,12 +7428,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_TOP_SMP_CPU) || definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE) || definedEx(CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS))
+#if definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_TOP_SMP_CPU) && !definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE) && !definedEx(CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS))
+#if !definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)
    
    
    
@@ -7851,14 +7558,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_SVLOGD)
    
    
@@ -8229,6 +7928,16 @@
    
    
 #endif
+#if definedEx(CONFIG_HUSH_BRACE_EXPANSION)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_BRACE_EXPANSION)
+   
+   
+   
+#endif
 #if definedEx(CONFIG_HUSH_HELP)
    
    
@@ -8519,14 +8228,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_IPC_SYSLOG)
    
    
@@ -8537,14 +8238,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_LOGREAD)
    
    
@@ -8595,17 +8288,7 @@
    
    
 #endif
-#if definedEx(CONFIG_POWERTOP)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_POWERTOP)
-   
-   
-   
-#endif
-#line 1 "busybox-1.18.5/libbb/perror_nomsg_and_die.c" 1
+#line 1 "cprojects/busybox/busybox-1.18.5/libbb/perror_nomsg_and_die.c" 1
 /* vi: set sw=4 ts=4: */
 /*
  * bb_perror_nomsg_and_die implementation for busybox
@@ -8619,7 +8302,7 @@
  * modified definition without "attribute (format)"
  * instead of including libbb.h */
 //#include "libbb.h"
-#line 1 "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h" 1
+#line 1 "/app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h" 1
 /* vi: set sw=4 ts=4: */
 /*
  * Copyright 2006, Bernhard Reutner-Fischer
@@ -8751,7 +8434,7 @@
 
 /* ---- Endian Detection ------------------------------------ */
 
-#line 1 "systems/redhat/usr/include/limits.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/limits.h" 1
 /* Copyright (C) 1991, 1992, 1996, 1997, 1998, 1999, 2000, 2005
    Free Software Foundation, Inc.
    This file is part of the GNU C Library.
@@ -8778,7 +8461,7 @@
 
 
 
-#line 1 "systems/redhat/usr/include/features.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h" 1
 /* Copyright (C) 1991-1993,1995-2007,2009,2010 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -9093,7 +8776,7 @@
 /* This is here only because every header file already includes this one.  */
 
 
-#line 1 "systems/redhat/usr/include/sys/cdefs.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/cdefs.h" 1
 /* Copyright (C) 1992-2001, 2002, 2004, 2005, 2006, 2007, 2009
    Free Software Foundation, Inc.
    This file is part of the GNU C Library.
@@ -9389,7 +9072,7 @@
 
 
 
-#line 1 "systems/redhat/usr/include/bits/wordsize.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h" 1
 /* Determine the wordsize from the preprocessor defines.  */
 
 
@@ -9397,7 +9080,7 @@
 
  
 
-#line 367 "systems/redhat/usr/include/sys/cdefs.h" 2
+#line 367 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/cdefs.h" 2
 
 
 
@@ -9431,7 +9114,7 @@
 
 
 
-#line 363 "systems/redhat/usr/include/features.h" 2
+#line 363 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h" 2
 
 /* If we don't have __REDIRECT, prototypes will be missing if
    __USE_FILE_OFFSET64 but not __USE_LARGEFILE[64]. */
@@ -9448,11 +9131,11 @@
    Get the definitions of all the appropriate `__stub_FUNCTION' symbols.
    <gnu/stubs.h> contains `#define __stub_FUNCTION' when FUNCTION is a stub
    that will always return failure (and set errno to ENOSYS).  */
-#line 1 "systems/redhat/usr/include/gnu/stubs.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs.h" 1
 /* This file selects the right generated file of `__stub_FUNCTION' macros
    based on the architecture being compiled for.  */
 
-#line 1 "systems/redhat/usr/include/bits/wordsize.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h" 1
 /* Determine the wordsize from the preprocessor defines.  */
 
 
@@ -9460,11 +9143,11 @@
 
  
 
-#line 6 "systems/redhat/usr/include/gnu/stubs.h" 2
+#line 6 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs.h" 2
 
 
 
- #line 1 "systems/redhat/usr/include/gnu/stubs-64.h" 1
+ #line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs-64.h" 1
 /* This file is automatically generated.
    It defines a symbol `__stub_FUNCTION' for each function
    in the C library which is a stub, meaning it will fail
@@ -9487,14 +9170,14 @@
 
 
 
-#line 11 "systems/redhat/usr/include/gnu/stubs.h" 2
+#line 11 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs.h" 2
  
 
-#line 387 "systems/redhat/usr/include/features.h" 2
+#line 387 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h" 2
 
 
 
-#line 29 "systems/redhat/usr/include/limits.h" 2
+#line 29 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/limits.h" 2
 
 
 /* Maximum length of any multibyte character in any locale.
@@ -9582,7 +9265,7 @@
     the definitions from gcc's header.  */
 
 /* `_GCC_LIMITS_H_' is what GCC's file defines.  */
-#line 1 "systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/limits.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/limits.h" 1
 /* This administrivia gets added to the beginning of limits.h
    if the system has its own version of limits.h.  */
 
@@ -9677,13 +9360,13 @@
 
 
 
-/* Minimum and maximum values a `signed long long int' can hold.  */
 
 
 
 
 
-/* Maximum value an `unsigned long long int' can hold.  (Minimum is 0).  */
+
+
 
 
 
@@ -9695,7 +9378,7 @@
 
 
 
-#line 127 "systems/redhat/usr/include/limits.h" 2
+#line 127 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/limits.h" 2
 
 /* The <limits.h> files in some gcc versions don't define LLONG_MIN,
    LLONG_MAX, and ULLONG_MAX.  Instead only the values gcc defined for
@@ -9713,7 +9396,7 @@
 
 
 /* POSIX adds things to <limits.h>.  */
-#line 1 "systems/redhat/usr/include/bits/posix1_lim.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix1_lim.h" 1
 /* Copyright (C) 1991-1993,96,98,2000-2003,2004 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -9798,8 +9481,8 @@
  
 
 
-/* Number of descriptors that a process may examine with `pselect' or
-   `select'.  */
+
+
 
 
 /* Number of bytes in a pathname.  */
@@ -9847,14 +9530,14 @@
 
 
 
-/* Maximum number of connections that can be queued on a socket.  */
 
 
-/* Maximum number of bytes that can be buffered on a socket for send
-   or receive.  */
 
 
-/* Maximum number of elements in an `iovec' array.  */
+
+
+
+
 
 
 /* Maximum clock resolution in nanoseconds.  */
@@ -9862,7 +9545,7 @@
 
 
 /* Get the implementation-specific values for the above.  */
-#line 1 "systems/redhat/usr/include/bits/local_lim.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/local_lim.h" 1
 /* Minimum guaranteed maximum values for system limits.  Linux version.
    Copyright (C) 1993-1998,2000,2002-2004,2008 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
@@ -9900,7 +9583,7 @@
 
 
 /* The kernel sources contain a file with all the needed information.  */
-#line 1 "systems/redhat/usr/include/linux/limits.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/limits.h" 1
 
 
 
@@ -9921,7 +9604,7 @@
 
 
 
-#line 41 "systems/redhat/usr/include/bits/local_lim.h" 2
+#line 41 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/local_lim.h" 2
 
 /* Have to remove NR_OPEN?  */
 
@@ -9982,7 +9665,7 @@
 
 /* Maximum value the semaphore can have.  */
 
-#line 159 "systems/redhat/usr/include/bits/posix1_lim.h" 2
+#line 159 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix1_lim.h" 2
 
 
 
@@ -9995,10 +9678,10 @@
 
 
 
-#line 147 "systems/redhat/usr/include/limits.h" 2
+#line 147 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/limits.h" 2
 
 
-#line 1 "systems/redhat/usr/include/bits/posix2_lim.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/posix2_lim.h" 1
 /* Copyright (C) 1991, 1996, 1999, 2000, 2001 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -10089,185 +9772,12 @@
 
 
 
-#line 151 "systems/redhat/usr/include/limits.h" 2
+#line 151 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/limits.h" 2
 
 
-#line 1 "systems/redhat/usr/include/bits/xopen_lim.h" 1
-/* Copyright (C) 1996, 1997, 1999, 2001 Free Software Foundation, Inc.
-   This file is part of the GNU C Library.
 
-   The GNU C Library is free software; you can redistribute it and/or
-   modify it under the terms of the GNU Lesser General Public
-   License as published by the Free Software Foundation; either
-   version 2.1 of the License, or (at your option) any later version.
 
-   The GNU C Library is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-   Lesser General Public License for more details.
-
-   You should have received a copy of the GNU Lesser General Public
-   License along with the GNU C Library; if not, write to the Free
-   Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
-   02111-1307 USA.  */
-
-/*
- * Never include this file directly; use <limits.h> instead.
- */
-
-/* Additional definitions from X/Open Portability Guide, Issue 4, Version 2
-   System Interfaces and Headers, 4.16 <limits.h>
-
-   Please note only the values which are not greater than the minimum
-   stated in the standard document are listed.  The `sysconf' functions
-   should be used to obtain the actual value.  */
-
-
-
-
-
-#line 1 "systems/redhat/usr/include/bits/stdio_lim.h" 1
-/* Copyright (C) 1994, 1997, 1998, 1999, 2009 Free Software Foundation, Inc.
-   This file is part of the GNU C Library.
-
-   The GNU C Library is free software; you can redistribute it and/or
-   modify it under the terms of the GNU Lesser General Public
-   License as published by the Free Software Foundation; either
-   version 2.1 of the License, or (at your option) any later version.
-
-   The GNU C Library is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-   Lesser General Public License for more details.
-
-   You should have received a copy of the GNU Lesser General Public
-   License along with the GNU C Library; if not, write to the Free
-   Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
-   02111-1307 USA.  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 36 "systems/redhat/usr/include/bits/xopen_lim.h" 2
-
-/* We do not provide fixed values for
-
-   ARG_MAX	Maximum length of argument to the `exec' function
-		including environment data.
-
-   ATEXIT_MAX	Maximum number of functions that may be registered
-		with `atexit'.
-
-   CHILD_MAX	Maximum number of simultaneous processes per real
-		user ID.
-
-   OPEN_MAX	Maximum number of files that one process can have open
-		at anyone time.
-
-   PAGESIZE
-   PAGE_SIZE	Size of bytes of a page.
-
-   PASS_MAX	Maximum number of significant bytes in a password.
-
-   We only provide a fixed limit for
-
-   IOV_MAX	Maximum number of `iovec' structures that one process has
-		available for use with `readv' or writev'.
-
-   if this is indeed fixed by the underlying system.
-*/
-
-
-/* Maximum number of `iovec' structures that one process has available
-   for use with `readv' or writev'.  */
-
-
-
-/* Maximum value of `digit' in calls to the `printf' and `scanf'
-   functions.  We have no limit, so return a reasonable value.  */
-
-
-/* Maximum number of bytes in a `LANG' name.  We have no limit.  */
-
-
-/* Maximum message number.  We have no limit.  */
-
-
-/* Maximum number of bytes in N-to-1 collation mapping.  We have no
-   limit.  */
-
-
-/* Maximum set number.  We have no limit.  */
-
-
-/* Maximum number of bytes in a message.  We have no limit.  */
-
-
-/* Default process priority.  */
-
-
-
-/* Number of bits in a word of type `int'.  */
-
-
-
- 
-
- 
-
-
-
- 
-
- 
-
- 
-
-
-
- 
-
-/* Number of bits in a word of type `long int'.  */
-
-
-
- /* Safe assumption.  */
-
-
- 
-
- 
-
-
- 
-
-
- 
-
-
-
-#line 155 "systems/redhat/usr/include/limits.h" 2
-
-#line 155 "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h" 2
+#line 155 "/app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h" 2
 
 
  
@@ -10275,7 +9785,7 @@
 
 
 
- #line 1 "systems/redhat/usr/include/byteswap.h" 1
+ #line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/byteswap.h" 1
 /* Copyright (C) 1997 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -10298,7 +9808,7 @@
 
 
 /* Get the machine specific, optimized definitions.  */
-#line 1 "systems/redhat/usr/include/bits/byteswap.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h" 1
 /* Macros to swap the order of bytes in integer values.
    Copyright (C) 1997, 1998, 2000, 2002, 2003, 2007, 2008
    Free Software Foundation, Inc.
@@ -10325,7 +9835,7 @@
 
 
 
-#line 1 "systems/redhat/usr/include/bits/wordsize.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h" 1
 /* Determine the wordsize from the preprocessor defines.  */
 
 
@@ -10333,7 +9843,7 @@
 
  
 
-#line 30 "systems/redhat/usr/include/bits/byteswap.h" 2
+#line 30 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h" 2
 
 /* Swap bytes in 16 bit value.  */
 
@@ -10428,7 +9938,7 @@
 
 
 
-#line 25 "systems/redhat/usr/include/byteswap.h" 2
+#line 25 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/byteswap.h" 2
 
 
 /* The following definitions must all be macros since otherwise some
@@ -10445,8 +9955,8 @@
 
 
 
-#line 166 "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h" 2
-#line 1 "systems/redhat/usr/include/endian.h" 1
+#line 166 "/app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h" 2
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h" 1
 /* Copyright (C) 1992, 1996, 1997, 2000, 2008 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -10468,7 +9978,7 @@
 
 
 
-#line 1 "systems/redhat/usr/include/features.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h" 1
 /* Copyright (C) 1991-1993,1995-2007,2009,2010 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -10804,7 +10314,7 @@
 
 
 
-#line 24 "systems/redhat/usr/include/endian.h" 2
+#line 24 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h" 2
 
 /* Definitions for byte order, according to significance of bytes,
    from low addresses to high addresses.  The value is what you get by
@@ -10819,14 +10329,14 @@
 
 
 /* This file defines `__BYTE_ORDER' for the particular machine.  */
-#line 1 "systems/redhat/usr/include/bits/endian.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/endian.h" 1
 /* x86_64 is little-endian.  */
 
 
 
 
 
-#line 39 "systems/redhat/usr/include/endian.h" 2
+#line 39 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h" 2
 
 /* Some machines may need to use a different endianness for floating point
    values.  */
@@ -10845,7 +10355,7 @@
 
 
 /* Conversion interfaces.  */
-#line 1 "systems/redhat/usr/include/bits/byteswap.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/byteswap.h" 1
 /* Macros to swap the order of bytes in integer values.
    Copyright (C) 1997, 1998, 2000, 2002, 2003, 2007, 2008
    Free Software Foundation, Inc.
@@ -10967,7 +10477,7 @@
 
 
 
-#line 63 "systems/redhat/usr/include/endian.h" 2
+#line 63 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/endian.h" 2
 
 
 
@@ -11001,7 +10511,7 @@
 
 
 
-#line 167 "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h" 2
+#line 167 "/app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h" 2
 
 
 
@@ -11048,7 +10558,7 @@
  * a lvalue. This makes it more likely to not swap them by mistake
  */
 
-#line 1 "systems/redhat/usr/include/stdint.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h" 1
 /* Copyright (C) 1997,1998,1999,2000,2001,2006 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -11074,7 +10584,7 @@
 
 
 
-#line 1 "systems/redhat/usr/include/features.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h" 1
 /* Copyright (C) 1991-1993,1995-2007,2009,2010 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -11410,8 +10920,8 @@
 
 
 
-#line 28 "systems/redhat/usr/include/stdint.h" 2
-#line 1 "systems/redhat/usr/include/bits/wchar.h" 1
+#line 28 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h" 2
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wchar.h" 1
 /* wchar_t type related definitions.
    Copyright (C) 2000 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
@@ -11438,8 +10948,8 @@
 
 
 
-#line 29 "systems/redhat/usr/include/stdint.h" 2
-#line 1 "systems/redhat/usr/include/bits/wordsize.h" 1
+#line 29 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h" 2
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h" 1
 /* Determine the wordsize from the preprocessor defines.  */
 
 
@@ -11447,7 +10957,7 @@
 
  
 
-#line 30 "systems/redhat/usr/include/stdint.h" 2
+#line 30 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/stdint.h" 2
 
 /* Exact integral types.  */
 
@@ -11695,7 +11205,7 @@ typedef unsigned long int	uintmax_t;
 
 
 
-#line 226 "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h" 2
+#line 226 "/app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h" 2
 typedef int      bb__aliased_int      __attribute__((__may_alias__));
 typedef uint16_t bb__aliased_uint16_t __attribute__((__may_alias__));
 typedef uint32_t bb__aliased_uint32_t __attribute__((__may_alias__));
@@ -11733,7 +11243,7 @@ typedef uint32_t bb__aliased_uint32_t __attribute__((__may_alias__));
 /* ---- Miscellaneous --------------------------------------- */
 
 
-#line 1 "systems/redhat/usr/include/features.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h" 1
 /* Copyright (C) 1991-1993,1995-2007,2009,2010 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -12069,7 +11579,7 @@ typedef uint32_t bb__aliased_uint32_t __attribute__((__may_alias__));
 
 
 
-#line 271 "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h" 2
+#line 271 "/app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h" 2
 
 /* Size-saving "small" ints (arch-dependent) */
 
@@ -12085,7 +11595,7 @@ typedef unsigned char smalluint;
 
 
  /* modern system, so use it */
-#line 1 "systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdbool.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include/stdbool.h" 1
 /* Copyright (C) 1998, 1999, 2000, 2009 Free Software Foundation, Inc.
 
 This file is part of GCC.
@@ -12132,7 +11642,7 @@ see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
 
 
 
-#line 291 "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h" 2
+#line 291 "/app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/platform.h" 2
 
 /* Try to defeat gcc's alignment of "char message[]"-like data */
 
@@ -12239,7 +11749,7 @@ see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
 
 
 
-#line 16 "busybox-1.18.5/libbb/perror_nomsg_and_die.c" 2
+#line 16 "cprojects/busybox/busybox-1.18.5/libbb/perror_nomsg_and_die.c" 2
 extern void bb_perror_msg_and_die(const char *s, ...) ;
 
 /* suppress gcc "no previous prototype" warning */

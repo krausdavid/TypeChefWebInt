@@ -1,0 +1,1 @@
+(definedEx(CONFIG_UBIATTACH) || definedEx(CONFIG_UBIDETACH))

@@ -1,0 +1,1 @@
+(definedEx(CONFIG_LOSETUP) || definedEx(CONFIG_FEATURE_MOUNT_LOOP))

@@ -1,522 +1,781 @@
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/applets/applets.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/ar.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/bbunzip.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/bzip2.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/cpio.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/dpkg.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/dpkg_deb.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/gzip.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_align.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_extract_all.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_extract_to_command.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_extract_to_stdout.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_skip.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_bunzip2.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_uncompress.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_unlzma.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_unxz.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/filter_accept_all.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/filter_accept_list.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/filter_accept_list_reassign.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/filter_accept_reject_list.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/find_list_entry.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_ar.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_cpio.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_tar.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_tar_bz2.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_tar_gz.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_tar_lzma.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/header_list.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/header_skip.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/header_verbose_list.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/init_handle.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/lzo1x_1.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/lzo1x_1o.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/lzo1x_9x.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/lzo1x_d.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/open_transformer.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/seek_by_jump.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/seek_by_read.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/unpack_ar_archive.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/lzop.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/rpm.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/rpm2cpio.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/tar.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/unzip.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/chvt.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/clear.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/deallocvt.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/dumpkmap.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/fgconsole.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/kbd_mode.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/loadfont.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/loadkmap.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/openvt.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/reset.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/resize.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/setconsole.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/setkeycodes.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/setlogcons.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/showkey.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/basename.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cal.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/catv.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/chgrp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/chmod.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/chown.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/chroot.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cksum.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/comm.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cut.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/date.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/dd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/df.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/dirname.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/dos2unix.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/du.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/echo.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/env.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/expand.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/expr.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/false.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/fold.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/fsync.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/head.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/hostid.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/id.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/install.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/length.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/libcoreutils/getopt_mk_fifo_nod.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/ln.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/logname.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/ls.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/md5_sha1_sum.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/mkdir.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/mkfifo.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/mknod.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/mv.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/nice.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/nohup.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/od.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/printenv.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/printf.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/pwd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/readlink.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/realpath.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/rm.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/rmdir.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/seq.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/sleep.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/sort.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/split.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/stat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/stty.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/sum.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/sync.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tac.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tail.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tee.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/test.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/test_ptr_hack.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/touch.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tr.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/true.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tty.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/uname.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/uniq.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/usleep.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/uudecode.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/uuencode.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/wc.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/who.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/whoami.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/yes.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/mktemp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/pipe_progress.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/run_parts.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/start_stop_daemon.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/which.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/chattr.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/e2fs_lib.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/fsck.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/lsattr.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/tune2fs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/awk.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/cmp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/diff.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/ed.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/patch.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/sed.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/vi.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/findutils/find.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/findutils/grep.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/findutils/xargs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/init/bootchartd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/init/halt.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/init/init.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/init/mesg.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/appletlib.dbg	false	true	true
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/ask_confirmation.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_askpass.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_basename.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_bswap_64.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_do_delay.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_pwd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_qsort.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_strtonum.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/change_identity.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/chomp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/compare_string_array.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/concat_path_file.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/concat_subpath_file.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/copy_file.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/copyfd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/correct_password.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/crc32.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/create_icmp6_socket.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/create_icmp_socket.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/default_error_retval.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/device_open.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/die_if_bad_username.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/dump.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/execable.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/fclose_nonstdin.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/fflush_stdout_and_exit.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/fgets_str.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/find_mount_point.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/find_pid_by_name.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/find_root_device.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/full_write.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_console.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_cpu_count.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_last_path_component.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_line_from_file.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_volsize.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/getopt32.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/getpty.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/hash_md5_sha.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/herror_msg.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/human_readable.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/inet_common.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/info_msg.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/inode_hash.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/isdirectory.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/kernel_version.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/last_char_is.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/lineedit.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/lineedit_ptr_hack.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/llist.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/login.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/loop.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/make_directory.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/makedev.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/match_fstype.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/messages.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/mode_string.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/mtab.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/obscure.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/parse_config.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/parse_mode.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/perror_msg.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/perror_nomsg.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/perror_nomsg_and_die.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/pidfile.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/platform.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/print_flags.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/printable.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/printable_string.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/process_escape_sequence.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/procps.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/progress.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/ptr_to_globals.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/pw_encrypt.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/read.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/read_key.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/read_printf.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/recursive_action.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/remove_file.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/rtc.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/run_shell.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/safe_gethostname.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/safe_poll.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/safe_strncpy.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/safe_write.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/selinux_common.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/setup_environment.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/signals.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/simplify_path.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/single_argv.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/skip_whitespace.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/speed_table.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/str_tolower.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/strrstr.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/time.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/trim.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/u_signal_names.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/udp_io.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/unicode.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/update_passwd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/utmp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/uuencode.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/vdprintf.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/verror_msg.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/vfork_daemon_rexec.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/warn_ignoring_args.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/wfopen.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/wfopen_input.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/write.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xatonum.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xconnect.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xfunc_die.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xfuncs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xfuncs_printf.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xgetcwd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xgethostbyname.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xreadlink.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xrealloc_vector.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xregcomp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libpwdgrp/pwd_grp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libpwdgrp/uidgid_get.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/add-remove-shell.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/addgroup.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/adduser.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/chpasswd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/cryptpw.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/deluser.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/getty.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/login.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/passwd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/su.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/sulogin.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/vlock.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/mailutils/mail.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/mailutils/mime.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/mailutils/popmaildir.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/mailutils/sendmail.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/adjtimex.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/bbconfig.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/beep.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/chat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/chrt.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/conspy.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/crond.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/crontab.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/dc.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/devfsd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/devmem.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/eject.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/fbsplash.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/flash_eraseall.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/flash_lock_unlock.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/flashcp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/hdparm.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/inotifyd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/ionice.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/last.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/last_fancy.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/less.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/makedevs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/man.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/microcom.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/mountpoint.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/mt.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/nandwrite.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/raidautorun.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/readahead.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/rfkill.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/runlevel.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/rx.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/setsid.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/strings.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/taskset.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/time.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/timeout.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/ttysize.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/ubi_attach_detach.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/volname.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/wall.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/watchdog.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/depmod.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/insmod.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/lsmod.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modinfo.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modprobe-small.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modprobe.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modutils-24.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modutils.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/rmmod.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/arp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/arping.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/brctl.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/dnsd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ether-wake.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ftpd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ftpgetput.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/hostname.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/httpd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ifconfig.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ifenslave.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ifplugd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ifupdown.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/inetd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/interface.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ip.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ipcalc.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/isrv.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/isrv_identd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ip_parse_common_args.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ipaddress.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/iplink.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/iproute.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/iprule.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/iptunnel.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/libnetlink.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ll_addr.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ll_map.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ll_proto.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ll_types.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/rt_names.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/rtm_map.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/utils.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/nameif.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/nbd-client.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/nc.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/netstat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/nslookup.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ntpd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ping.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/pscan.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/route.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/slattach.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/tcpudp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/tcpudp_perhost.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/telnet.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/telnetd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/tftp.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/traceroute.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/tunctl.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/arpping.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/common.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/dhcpc.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/dhcpd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/dhcprelay.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/domain_codec.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/dumpleases.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/files.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/leases.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/packet.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/signalpipe.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/socket.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/static_leases.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/vconfig.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/wget.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/zcip.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/printutils/lpd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/printutils/lpr.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/free.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/fuser.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/iostat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/kill.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/mpstat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/nmeter.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/pgrep.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/pidof.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/pmap.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/powertop.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/ps.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/renice.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/smemcap.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/sysctl.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/top.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/uptime.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/watch.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/chpst.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/runsv.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/runsvdir.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/sv.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/svlogd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/chcon.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/getenforce.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/getsebool.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/load_policy.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/matchpathcon.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/runcon.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/selinuxenabled.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/sestatus.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/setenforce.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/setfiles.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/setsebool.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/ash.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/ash_ptr_hack.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/cttyhack.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/hush.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/match.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/math.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/random.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/shell_common.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/sysklogd/klogd.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/sysklogd/logread.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/sysklogd/syslogd_and_logger.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/acpid.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/blkid.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/blockdev.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/dmesg.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fbset.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fdformat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fdisk.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/findfs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/flock.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/freeramdisk.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fsck_minix.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/getopt.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/hexdump.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/hwclock.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/ipcrm.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/ipcs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/losetup.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/lspci.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/lsusb.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mdev.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkfs_ext2.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkfs_minix.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkfs_reiser.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkfs_vfat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkswap.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/more.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mount.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/pivot_root.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/rdate.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/rdev.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/readprofile.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/rev.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/rtcwake.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/script.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/scriptreplay.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/setarch.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/swaponoff.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/switch_root.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/umount.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/btrfs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/cramfs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/ext.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/fat.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/get_devname.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/hfs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/iso9660.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/jfs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/linux_raid.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/linux_swap.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/luks.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/ntfs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/ocfs2.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/reiserfs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/romfs.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/sysv.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/udf.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/util.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/volume_id.dbg	false	false	false
-/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/xfs.dbg	false	false	false
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/applets/applet_tables	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/applets/applets	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/applets/individual	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/applets/usage_pod	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/applets/usage	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/ar	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/bbunzip	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/bzip2	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/cpio	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/dpkg_deb	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/dpkg	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/gzip	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/bz/blocksort	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/bz/bzlib	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/bz/compress	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/bz/huffman	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_align	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_extract_all	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_extract_to_command	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_extract_to_stdout	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/data_skip	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_bunzip2	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_uncompress	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_unlzma	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_unxz	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/decompress_unzip	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/filter_accept_all	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/filter_accept_list_reassign	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/filter_accept_list	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/filter_accept_reject_list	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/find_list_entry	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_ar	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_cpio	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_tar_bz2	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_tar_gz	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_tar_lzma	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/get_header_tar	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/header_list	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/header_skip	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/header_verbose_list	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/init_handle	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/lzo1x_1o	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/lzo1x_1	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/lzo1x_9x	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/lzo1x_c	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/lzo1x_d	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/open_transformer	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/seek_by_jump	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/seek_by_read	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/unpack_ar_archive	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/unxz/xz_dec_bcj	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/unxz/xz_dec_lzma2	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/libarchive/unxz/xz_dec_stream	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/lzop	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/rpm2cpio	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/rpm	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/tar	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/archival/unzip	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/chvt	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/clear	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/deallocvt	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/dumpkmap	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/fgconsole	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/kbd_mode	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/loadfont	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/loadkmap	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/openvt	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/reset	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/resize	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/setconsole	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/setkeycodes	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/setlogcons	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/console-tools/showkey	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/basename	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cal	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/catv	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/chgrp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/chmod	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/chown	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/chroot	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cksum	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/comm	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/cut	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/date	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/dd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/df	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/dirname	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/dos2unix	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/du	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/echo	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/env	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/expand	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/expr	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/false	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/fold	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/fsync	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/head	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/hostid	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/id	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/install	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/length	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/libcoreutils/getopt_mk_fifo_nod	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/ln	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/logname	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/ls	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/md5_sha1_sum	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/mkdir	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/mkfifo	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/mknod	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/mv	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/nice	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/nohup	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/od_bloaty	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/od	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/printenv	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/printf	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/pwd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/readlink	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/realpath	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/rmdir	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/rm	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/seq	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/sleep	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/sort	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/split	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/stat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/stty	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/sum	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/sync	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tac	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tail	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tee	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/test_ptr_hack	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/test	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/touch	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/true	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tr	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/tty	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/uname	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/uniq	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/usleep	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/uudecode	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/uuencode	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/wc	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/whoami	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/who	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/coreutils/yes	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/mktemp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/pipe_progress	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/run_parts	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/start_stop_daemon	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/debianutils/which	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/chattr	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/e2fs_lib	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/fsck	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/lsattr	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/blkid_getsize	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/cache	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/devname	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/devno	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/dev	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/list	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/probe	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/read	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/resolve	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/save	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/blkid/tag	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/chattr	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2fsck	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/feature	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/fgetsetflags	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/fgetsetversion	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/hashstr	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/iod	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/ls	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/mntopts	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/ostype	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/parse_num	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/pe	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/pf	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/ps	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/e2p/uuid	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/alloc_sb	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/alloc_stats	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/alloc_tables	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/alloc	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/badblocks	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/bb_compat	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/bb_inode	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/bitmaps	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/bitops	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/block	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/bmap	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/bmove	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/brel_ma	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/check_desc	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/closefs	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/cmp_bitmaps	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/dblist_dir	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/dblist	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/dir_iterate	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/dirblock	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/dirhash	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/dupfs	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/expanddir	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/ext2fs_inline	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/ext_attr	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/fileio	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/finddev	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/flushb	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/freefs	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/gen_bitmap	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/get_pathname	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/getsectsize	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/getsize	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/icount	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/imager	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/ind_block	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/initialize	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/inline	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/inode_io	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/inode	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/io_manager	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/irel_ma	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/ismounted	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/link	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/lookup	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/mkdir	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/mkjournal	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/namei	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/newdir	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/openfs	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/read_bb_file	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/read_bb	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/res_gdt	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/rs_bitmap	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/rw_bitmaps	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/sparse	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/swapfs	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/test_io	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/unix_io	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/unlink	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/valid_blk	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/version	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/ext2fs/write_bb_file	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/fsck	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/lsattr	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/mke2fs	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/tune2fs	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/util	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/uuid/compare	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/uuid/gen_uuid	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/uuid/pack	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/uuid/parse	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/uuid/unpack	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/uuid/unparse	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/old_e2fsprogs/uuid/uuid_time	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/e2fsprogs/tune2fs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/awk	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/cmp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/diff	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/ed	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/patch_bbox	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/patch_toybox	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/patch	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/sed	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/editors/vi	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/findutils/find	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/findutils/grep	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/findutils/xargs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/init/bootchartd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/init/halt	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/init/init	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/init/mesg	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/appletlib	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/ask_confirmation	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_askpass	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_basename	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_bswap_64	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_do_delay	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_pwd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_qsort	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_strtod	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/bb_strtonum	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/change_identity	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/chomp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/compare_string_array	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/concat_path_file	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/concat_subpath_file	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/copy_file	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/copyfd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/correct_password	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/crc32	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/create_icmp6_socket	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/create_icmp_socket	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/default_error_retval	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/device_open	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/die_if_bad_username	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/dump	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/execable	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/fclose_nonstdin	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/fflush_stdout_and_exit	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/fgets_str	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/find_mount_point	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/find_pid_by_name	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/find_root_device	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/full_write	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_console	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_cpu_count	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_last_path_component	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_line_from_file	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/get_volsize	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/getopt32	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/getpty	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/hash_md5_sha	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/hash_md5prime	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/herror_msg	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/human_readable	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/inet_common	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/info_msg	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/inode_hash	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/isdirectory	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/kernel_version	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/last_char_is	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/lineedit_ptr_hack	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/lineedit	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/llist	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/login	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/loop	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/make_directory	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/makedev	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/match_fstype	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/messages	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/mode_string	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/mtab	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/obscure	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/parse_config	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/parse_mode	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/perror_msg	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/perror_nomsg_and_die	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/perror_nomsg	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/pidfile	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/platform	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/print_flags	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/printable_string	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/printable	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/process_escape_sequence	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/procps	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/progress	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/ptr_to_globals	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/pw_encrypt_des	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/pw_encrypt_md5	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/pw_encrypt_sha	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/pw_encrypt	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/read_key	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/read_printf	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/read	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/recursive_action	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/remove_file	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/rtc	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/run_shell	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/safe_gethostname	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/safe_poll	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/safe_strncpy	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/safe_write	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/selinux_common	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/setup_environment	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/signals	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/simplify_path	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/single_argv	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/skip_whitespace	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/speed_table	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/str_tolower	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/strrstr	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/time	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/trim	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/u_signal_names	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/udp_io	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/unicode	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/update_passwd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/utmp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/uuencode	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/vdprintf	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/verror_msg	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/vfork_daemon_rexec	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/warn_ignoring_args	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/wfopen_input	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/wfopen	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/write	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xatonum_template	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xatonum	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xconnect	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xfunc_die	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xfuncs_printf	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xfuncs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xgetcwd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xgethostbyname	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xreadlink	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xrealloc_vector	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libbb/xregcomp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libpwdgrp/pwd_grp_internal	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libpwdgrp/pwd_grp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/libpwdgrp/uidgid_get	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/add-remove-shell	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/addgroup	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/adduser	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/chpasswd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/cryptpw	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/deluser	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/getty	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/login	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/passwd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/sulogin	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/su	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/loginutils/vlock	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/mailutils/mail	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/mailutils/mime	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/mailutils/popmaildir	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/mailutils/sendmail	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/adjtimex	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/bbconfig	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/beep	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/chat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/chrt	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/conspy	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/crond	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/crontab	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/dc	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/devfsd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/devmem	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/eject	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/fbsplash	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/flash_eraseall	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/flash_lock_unlock	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/flashcp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/hdparm	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/inotifyd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/ionice	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/last_fancy	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/last	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/less	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/makedevs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/man	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/microcom	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/mountpoint	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/mt	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/nandwrite	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/raidautorun	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/readahead	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/rfkill	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/runlevel	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/rx	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/setsid	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/strings	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/taskset	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/timeout	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/time	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/ttysize	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/ubi_attach_detach	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/volname	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/wall	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/miscutils/watchdog	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/depmod	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/insmod	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/lsmod	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modinfo	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modprobe-small	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modprobe	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modutils-24	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/modutils	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/modutils/rmmod	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/arping	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/arp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/brctl	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/dnsd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ether-wake	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ftpd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ftpgetput	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/hostname	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/httpd_indexcgi	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/httpd_ssi	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/httpd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ifconfig	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ifenslave	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ifplugd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ifupdown	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/inetd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/interface	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ipcalc	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ip	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/isrv_identd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/isrv	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ip_parse_common_args	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ipaddress	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/iplink	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/iproute	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/iprule	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/iptunnel	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/libnetlink	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ll_addr	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ll_map	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ll_proto	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/ll_types	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/rt_names	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/rtm_map	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/libiproute/utils	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/nameif	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/nbd-client	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/nc_bloaty	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/nc	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/netstat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/nslookup	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ntpd_simple	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ntpd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/ping	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/pscan	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/route	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/slattach	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/tcpudp_perhost	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/tcpudp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/tc	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/telnetd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/telnet	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/tftp	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/traceroute	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/tunctl	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/arpping	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/common	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/dhcpc	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/dhcpd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/dhcprelay	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/domain_codec	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/dumpleases	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/files	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/leases	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/packet	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/signalpipe	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/socket	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/udhcp/static_leases	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/vconfig	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/wget	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/networking/zcip	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/printutils/lpd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/printutils/lpr	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/free	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/fuser	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/iostat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/kill	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/mpstat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/nmeter	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/pgrep	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/pidof	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/pmap	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/powertop	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/ps	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/renice	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/smemcap	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/sysctl	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/top	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/uptime	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/procps/watch	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/chpst	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/runsvdir	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/runsv	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/svlogd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/runit/sv	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/basic/docproc	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/basic/fixdep	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/basic/split-include	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/echo	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/confdata	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/conf	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/expr	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/gconf	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/images	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/kconfig_load	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/kxgettext	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/lex.zconf	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/lxdialog/checklist	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/lxdialog/inputbox	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/lxdialog/lxdialog	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/lxdialog/menubox	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/lxdialog/msgbox	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/lxdialog/textbox	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/lxdialog/util	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/lxdialog/yesno	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/mconf	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/menu	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/symbol	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/util	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/zconf.hash	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/scripts/kconfig/zconf.tab	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/chcon	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/getenforce	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/getsebool	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/load_policy	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/matchpathcon	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/runcon	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/selinuxenabled	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/sestatus	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/setenforce	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/setfiles	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/selinux/setsebool	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/ash_ptr_hack	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/ash_test/printenv	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/ash_test/recho	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/ash_test/zecho	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/ash	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/cttyhack	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/hush	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/match	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/math	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/random	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/shell/shell_common	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/sysklogd/klogd	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/sysklogd/logger	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/sysklogd/logread	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/sysklogd/syslogd_and_logger	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/sysklogd/syslogd	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/acpid	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/blkid	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/blockdev	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/dmesg	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fbset	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fdformat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fdisk_aix	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fdisk_gpt	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fdisk_osf	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fdisk_sgi	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fdisk_sun	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fdisk	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/findfs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/flock	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/freeramdisk	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/fsck_minix	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/getopt	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/hexdump	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/hwclock	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/ipcrm	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/ipcs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/losetup	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/lspci	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/lsusb	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mdev	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkfs_ext2	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkfs_minix	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkfs_reiser	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkfs_vfat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mkswap	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/more	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/mount	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/pivot_root	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/rdate	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/rdev	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/readprofile	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/rev	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/rtcwake	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/scriptreplay	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/script	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/setarch	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/swaponoff	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/switch_root	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/umount	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/um	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/btrfs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/cramfs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/ext	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/fat	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/get_devname	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/hfs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/iso9660	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/jfs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/linux_raid	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/linux_swap	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/luks	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/ntfs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/ocfs2	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/reiserfs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/romfs	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/sysv	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/udf	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_highpoint	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_hpfs	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_isw_raid	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_lsi_raid	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_lvm	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_mac	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_minix	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_msdos	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_nvidia_raid	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_promise_raid	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_silicon_raid	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_ufs	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/unused_via_raid	true	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/util	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/volume_id	false	true	true	true
+/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/util-linux/volume_id/xfs	false	true	true	true
+me/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logread	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd_and_logger	false	false	false	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/acpid	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/blkid	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/blockdev	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/dmesg	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/fbset	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/fdformat	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/fdisk_aix	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/fdisk_gpt	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/fdisk_osf	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/fdisk_sgi	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/fdisk_sun	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/fdisk	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/findfs	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/flock	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/freeramdisk	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/fsck_minix	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/getopt	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/hexdump	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/hwclock	false	false	false	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/ipcrm	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/ipcs	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/losetup	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/lspci	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/lsusb	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/mdev	false	false	false	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/mkfs_ext2	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/mkfs_minix	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/mkfs_reiser	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/mkfs_vfat	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/mkswap	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/more	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/mount	false	false	false	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/pivot_root	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/rdate	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/rdev	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/readprofile	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/rev	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/rtcwake	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/scriptreplay	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/script	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/setarch	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/swaponoff	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/switch_root	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/umount	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/um	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/btrfs	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/cramfs	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ext	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/fat	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/get_devname	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/hfs	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/iso9660	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/jfs	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/linux_raid	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/linux_swap	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/luks	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ntfs	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ocfs2	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/reiserfs	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/romfs	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/sysv	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/udf	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_highpoint	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_hpfs	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_isw_raid	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_lsi_raid	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_lvm	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_mac	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_minix	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_msdos	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_nvidia_raid	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_promise_raid	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_silicon_raid	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_ufs	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/unused_via_raid	true	true	true	true
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/util	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/volume_id	false	false	false	false
+/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/xfs	false	false	false	false

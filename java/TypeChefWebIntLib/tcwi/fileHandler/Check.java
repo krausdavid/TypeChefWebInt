@@ -6,6 +6,11 @@ import java.io.RandomAccessFile;
 
 public class Check {
 	
+	public boolean hasNoDBG(String path){
+		File f = new File(path+".dbg");
+		return !f.exists();
+	}
+	
 	/**
 	 * Returns for a file <tt>true</tt> or <tt>false</tt> if TypeChef said "True succeeded" or not
 	 * @param path
@@ -13,17 +18,21 @@ public class Check {
 	 * @throws IOException
 	 */
 	public String ifTrueSucc(String path) throws IOException{
-		RandomAccessFile file = new RandomAccessFile(path,"r");
-		String str = file.readLine();
-		while(str!=null){
-			if(str.contains("True\tsucceeded")){
-				file.close();
-				return " OK ";
+		if(!hasNoDBG(path)){
+			RandomAccessFile file = new RandomAccessFile(path+".dbg","r");
+			String str = file.readLine();
+			while(str!=null){
+				if(str.contains("True\tsucceeded")){
+					file.close();
+					return " OK ";
+				}
+				str = file.readLine();
 			}
-			str = file.readLine();
+			file.close();
+			return "FAIL";
+		}else{
+			return "FAIL";
 		}
-		file.close();
-		return "FAIL";
 	}
 	
 	/**
@@ -33,13 +42,17 @@ public class Check {
 	 * @throws IOException
 	 */
 	public boolean isEmpty(String path) throws IOException{
-		RandomAccessFile file = new RandomAccessFile(path,"r");
-		if(file.length()==0){
-			file.close();
-			return true;
+		if(!hasNoDBG(path)){
+			RandomAccessFile file = new RandomAccessFile(path+".dbg","r");
+			if(file.length()==0){
+				file.close();
+				return true;
+			}else{
+				file.close();
+				return false;
+			}
 		}else{
-			file.close();
-			return false;
+			return true;
 		}
 	}
 
@@ -50,17 +63,21 @@ public class Check {
 	 * @throws IOException
 	 */
 	public String ifNoTypeError(String path) throws IOException{
-		RandomAccessFile file = new RandomAccessFile(path,"r");
-		String str = file.readLine();
-		while(str!=null){
-			if(str.contains("No type errors found.")){
-				file.close();
-				return " OK ";
+		if(!hasNoDBG(path)){
+			RandomAccessFile file = new RandomAccessFile(path+".dbg","r");
+			String str = file.readLine();
+			while(str!=null){
+				if(str.contains("No type errors found.")){
+					file.close();
+					return " OK ";
+				}
+				str = file.readLine();
 			}
-			str = file.readLine();
+			file.close();
+			return "FAIL";
+		}else{
+			return "FAIL";
 		}
-		file.close();
-		return "FAIL";
 	}
 	
 	/**
@@ -70,29 +87,12 @@ public class Check {
 	 * @throws IOException
 	 */
 	public boolean isNotAFailFile(String path) throws IOException{
-/*		RandomAccessFile file = new RandomAccessFile(path,"r");
-		if(file.length()==0){
-			file.close();
+		boolean[] flags = failFlags(path);
+		if(flags[0]==false){
+			return !flags[1]&&!flags[2]&&!flags[3];
+		}else{
 			return false;
 		}
-
-		String str = file.readLine();
-		boolean trueSucc = false;
-		while(str!=null){
-			if(str.contains("True\tsucceeded")){
-				trueSucc = true;
-			}
-			if(str.contains("No type errors found.")&&trueSucc){
-				file.close();
-				return true;
-			}
-			str = file.readLine();
-		}
-
-		file.close();
-		return false;*/
-		boolean[] flags = failFlags(path);
-		return !flags[0]&&!flags[1]&&!flags[2];
 	}
 	
 	/**
@@ -106,26 +106,33 @@ public class Check {
 	 * @throws IOException
 	 */
 	public boolean[] failFlags(String path) throws IOException{
-		RandomAccessFile file = new RandomAccessFile(path,"r");
-		boolean[] flags = {true,true,true};
-		
-		if(file.length()!=0){
-			flags[0] = false;
-		}
+		if(!hasNoDBG(path)){
+			RandomAccessFile file = new RandomAccessFile(path+".dbg","r");
+			boolean[] flags = {false,true,true,true};
 
-		String str = file.readLine();
-		while(str!=null){
-			if(str.contains("True\tsucceeded")){
+			if(file.length()!=0){
 				flags[1] = false;
 			}
-			if(str.contains("No type errors found.")){
-				flags[2] = false;
+			
+			String str = file.readLine();
+			while(str!=null){
+				if(str.contains("True\tsucceeded")){
+					flags[2] = false;
+				}
+				if(str.contains("No type errors found.")){
+					flags[3] = false;
+					break;
+				}
+				str = file.readLine();
 			}
-			str = file.readLine();
-		}
+	
+			file.close();
 
-		file.close();
-		return flags;
+			return flags;
+		}else{
+			boolean[] flags = {true,true,true,true};
+			return flags;
+		}
 	}
 	
 	/**

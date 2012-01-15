@@ -1,0 +1,1 @@
+(definedEx(CONFIG_CAT) || definedEx(CONFIG_MORE) || definedEx(CONFIG_LESS) || definedEx(CONFIG_CRONTAB))

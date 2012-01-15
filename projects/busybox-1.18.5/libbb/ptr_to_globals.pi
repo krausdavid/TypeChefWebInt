@@ -1,4 +1,4 @@
-#line 1 "platform-redhat.h" 1
+#line 1 "host/platform-redhat.h" 1
 //Generated with:
 //echo -|gcc -dM - -E -std=gnu99 
 
@@ -136,7 +136,7 @@
 
 
 
-#line 1 "/app/archive/kos/share/TypeChef/busybox/busybox/config.h" 1
+#line 1 "/app/archive/kos/share/TypeChef/busybox/config.h" 1
 
 
 
@@ -175,77 +175,6 @@
 
 
 
-
-#if definedEx(CONFIG_FEATURE_TOP_SMP_CPU)
-  
-#endif
-#if definedEx(CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS)
-  
-#endif
-#if definedEx(CONFIG_FEATURE_FIND_CONTEXT)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_UNEXPAND_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_LS_COLOR)
-  
-  
-#endif
-#if definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS)
-  
-  
-#endif
 
 
 
@@ -271,14 +200,16 @@
    
    
 #endif
-
+#if definedEx(CONFIG_EXTRA_COMPAT)
    
    
    
-    
+#endif
+#if !definedEx(CONFIG_EXTRA_COMPAT)
    
    
-
+   
+#endif
 #if definedEx(CONFIG_INCLUDE_SUSv2)
    
    
@@ -379,6 +310,16 @@
    
    
 #endif
+#if definedEx(CONFIG_INSTALL_NO_USR)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_INSTALL_NO_USR)
+   
+   
+   
+#endif
 #if definedEx(CONFIG_LOCALE_SUPPORT)
    
    
@@ -419,22 +360,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_UNICODE_COMBINING_WCHARS)
    
    
@@ -485,12 +410,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS) || definedEx(CONFIG_LONG_OPTS) || definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_UNEXPAND_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS) || definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS))
+#if definedEx(CONFIG_LONG_OPTS)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_UNEXPAND_LONG_OPTIONS) && !definedEx(CONFIG_LONG_OPTS) && !definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS) && !definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS))
+#if !definedEx(CONFIG_LONG_OPTS)
    
    
    
@@ -515,22 +440,22 @@
    
    
 #endif
-#if definedEx(CONFIG_FEATURE_UTMP)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_FEATURE_UTMP)
-   
-   
-   
-#endif
 #if definedEx(CONFIG_FEATURE_WTMP)
    
    
    
 #endif
 #if !definedEx(CONFIG_FEATURE_WTMP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_UTMP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_UTMP)
    
    
    
@@ -575,12 +500,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX))
+#if definedEx(CONFIG_SELINUX)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) && !definedEx(CONFIG_SELINUX))
+#if !definedEx(CONFIG_SELINUX)
    
    
    
@@ -595,14 +520,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_SYSLOG)
    
    
@@ -693,22 +610,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_DEBUG)
    
    
@@ -765,16 +666,6 @@
    
 #endif
 #if !definedEx(CONFIG_EFENCE)
-   
-   
-   
-#endif
-#if definedEx(CONFIG_INSTALL_NO_USR)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_INSTALL_NO_USR)
    
    
    
@@ -849,30 +740,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_FAST_TOP)
    
    
@@ -893,14 +760,16 @@
    
    
 #endif
-
+#if definedEx(CONFIG_FEATURE_USE_TERMIOS)
    
    
    
-    
+#endif
+#if !definedEx(CONFIG_FEATURE_USE_TERMIOS)
    
    
-
+   
+#endif
 
    
    
@@ -919,14 +788,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
    
    
@@ -997,14 +858,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_MONOTONIC_SYSCALL)
    
    
@@ -1205,12 +1058,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS) || definedEx(CONFIG_GZIP))
+#if definedEx(CONFIG_GZIP)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_GZIP_LONG_OPTIONS) && !definedEx(CONFIG_GZIP))
+#if !definedEx(CONFIG_GZIP)
    
    
    
@@ -1265,12 +1118,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS) || definedEx(CONFIG_TAR))
+#if definedEx(CONFIG_TAR)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_TAR_LONG_OPTIONS) && !definedEx(CONFIG_TAR))
+#if !definedEx(CONFIG_TAR)
    
    
    
@@ -1825,12 +1678,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS) || definedEx(CONFIG_ENV))
+#if definedEx(CONFIG_ENV)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_ENV_LONG_OPTIONS) && !definedEx(CONFIG_ENV))
+#if !definedEx(CONFIG_ENV)
    
    
    
@@ -1845,12 +1698,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) || definedEx(CONFIG_EXPAND))
+#if definedEx(CONFIG_EXPAND)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) && !definedEx(CONFIG_EXPAND))
+#if !definedEx(CONFIG_EXPAND)
    
    
    
@@ -1955,12 +1808,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS) || definedEx(CONFIG_INSTALL))
+#if definedEx(CONFIG_INSTALL)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_INSTALL_LONG_OPTIONS) && !definedEx(CONFIG_INSTALL))
+#if !definedEx(CONFIG_INSTALL)
    
    
    
@@ -2005,12 +1858,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_LS_COLOR) || definedEx(CONFIG_LS))
+#if definedEx(CONFIG_LS)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_LS_COLOR) && !definedEx(CONFIG_LS))
+#if !definedEx(CONFIG_LS)
    
    
    
@@ -2105,12 +1958,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS) || definedEx(CONFIG_MKDIR))
+#if definedEx(CONFIG_MKDIR)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_MKDIR_LONG_OPTIONS) && !definedEx(CONFIG_MKDIR))
+#if !definedEx(CONFIG_MKDIR)
    
    
    
@@ -2145,12 +1998,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS) || definedEx(CONFIG_MV))
+#if definedEx(CONFIG_MV)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_MV_LONG_OPTIONS) && !definedEx(CONFIG_MV))
+#if !definedEx(CONFIG_MV)
    
    
    
@@ -2265,12 +2118,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS) || definedEx(CONFIG_RMDIR))
+#if definedEx(CONFIG_RMDIR)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_RMDIR_LONG_OPTIONS) && !definedEx(CONFIG_RMDIR))
+#if !definedEx(CONFIG_RMDIR)
    
    
    
@@ -2845,14 +2698,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_SETKEYCODES)
    
    
@@ -2923,12 +2768,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS) || definedEx(CONFIG_RUN_PARTS))
+#if definedEx(CONFIG_RUN_PARTS)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS) && !definedEx(CONFIG_RUN_PARTS))
+#if !definedEx(CONFIG_RUN_PARTS)
    
    
    
@@ -2953,12 +2798,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS) || definedEx(CONFIG_START_STOP_DAEMON))
+#if definedEx(CONFIG_START_STOP_DAEMON)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS) && !definedEx(CONFIG_START_STOP_DAEMON))
+#if !definedEx(CONFIG_START_STOP_DAEMON)
    
    
    
@@ -2993,6 +2838,16 @@
    
    
 #endif
+#if definedEx(CONFIG_PATCH)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_PATCH)
+   
+   
+   
+#endif
 #if definedEx(CONFIG_AWK)
    
    
@@ -3023,12 +2878,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS) || definedEx(CONFIG_DIFF))
+#if definedEx(CONFIG_DIFF)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_DIFF_LONG_OPTIONS) && !definedEx(CONFIG_DIFF))
+#if !definedEx(CONFIG_DIFF)
    
    
    
@@ -3063,16 +2918,6 @@
    
    
 #endif
-#if definedEx(CONFIG_PATCH)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_PATCH)
-   
-   
-   
-#endif
 #if definedEx(CONFIG_SED)
    
    
@@ -3093,14 +2938,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_VI_8BIT)
    
    
@@ -3231,14 +3068,16 @@
    
    
 #endif
-
+#if definedEx(CONFIG_FIND)
    
    
    
-    
+#endif
+#if !definedEx(CONFIG_FIND)
    
    
-
+   
+#endif
 #if definedEx(CONFIG_FEATURE_FIND_PRINT0)
    
    
@@ -3579,6 +3418,26 @@
    
    
 #endif
+#if definedEx(CONFIG_HALT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HALT)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_CALL_TELINIT)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_CALL_TELINIT)
+   
+   
+   
+#endif
 #if definedEx(CONFIG_INIT)
    
    
@@ -3609,14 +3468,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_INIT_SCTTY)
    
    
@@ -3667,42 +3518,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-#if definedEx(CONFIG_HALT)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_HALT)
-   
-   
-   
-#endif
-#if definedEx(CONFIG_FEATURE_CALL_TELINIT)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_FEATURE_CALL_TELINIT)
-   
-   
-   
-#endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_MESG)
    
    
@@ -3783,12 +3598,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS) || definedEx(CONFIG_ADDUSER))
+#if definedEx(CONFIG_ADDUSER)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_ADDUSER_LONG_OPTIONS) && !definedEx(CONFIG_ADDUSER))
+#if !definedEx(CONFIG_ADDUSER)
    
    
    
@@ -3813,28 +3628,12 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
-#if (definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS) || definedEx(CONFIG_ADDGROUP))
+#if definedEx(CONFIG_ADDGROUP)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_ADDGROUP_LONG_OPTIONS) && !definedEx(CONFIG_ADDGROUP))
+#if !definedEx(CONFIG_ADDGROUP)
    
    
    
@@ -4289,22 +4088,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_BLOCKDEV)
    
    
@@ -4491,6 +4274,16 @@
    
 #endif
 #if !definedEx(CONFIG_FEATURE_OSF_LABEL)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_FEATURE_GPT_LABEL)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_FEATURE_GPT_LABEL)
    
    
    
@@ -4811,16 +4604,6 @@
    
 #endif
 #if !definedEx(CONFIG_MORE)
-   
-   
-   
-#endif
-#if definedEx(CONFIG_FEATURE_USE_TERMIOS)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_FEATURE_USE_TERMIOS)
    
    
    
@@ -5345,22 +5128,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_CHAT)
    
    
@@ -5481,14 +5248,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_CRONTAB)
    
    
@@ -5709,14 +5468,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_LESS_BRACKETS)
    
    
@@ -6537,14 +6288,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_IFUPDOWN_IP)
    
    
@@ -7235,14 +6978,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_UDHCPC)
    
    
@@ -7273,14 +7008,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_UDHCP_RFC3397)
    
    
@@ -7291,30 +7018,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_UDPSVD)
    
    
@@ -7365,14 +7068,16 @@
    
    
 #endif
-
+#if definedEx(CONFIG_FEATURE_WGET_LONG_OPTIONS)
    
    
    
-    
+#endif
+#if !definedEx(CONFIG_FEATURE_WGET_LONG_OPTIONS)
    
    
-
+   
+#endif
 #if definedEx(CONFIG_FEATURE_WGET_TIMEOUT)
    
    
@@ -7433,14 +7138,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_POPMAILDIR)
    
    
@@ -7517,6 +7214,16 @@
    
 #endif
 #if !definedEx(CONFIG_PMAP)
+   
+   
+   
+#endif
+#if definedEx(CONFIG_POWERTOP)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_POWERTOP)
    
    
    
@@ -7721,12 +7428,12 @@
    
    
 #endif
-#if (definedEx(CONFIG_FEATURE_TOP_SMP_CPU) || definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE) || definedEx(CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS))
+#if definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)
    
    
    
 #endif
-#if (!definedEx(CONFIG_FEATURE_TOP_SMP_CPU) && !definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE) && !definedEx(CONFIG_FEATURE_TOP_CPU_GLOBAL_PERCENTS))
+#if !definedEx(CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE)
    
    
    
@@ -7851,14 +7558,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_SVLOGD)
    
    
@@ -8229,6 +7928,16 @@
    
    
 #endif
+#if definedEx(CONFIG_HUSH_BRACE_EXPANSION)
+   
+   
+   
+#endif
+#if !definedEx(CONFIG_HUSH_BRACE_EXPANSION)
+   
+   
+   
+#endif
 #if definedEx(CONFIG_HUSH_HELP)
    
    
@@ -8519,14 +8228,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_FEATURE_IPC_SYSLOG)
    
    
@@ -8537,14 +8238,6 @@
    
    
 #endif
-
-   
-   
-   
-    
-   
-   
-
 #if definedEx(CONFIG_LOGREAD)
    
    
@@ -8595,17 +8288,7 @@
    
    
 #endif
-#if definedEx(CONFIG_POWERTOP)
-   
-   
-   
-#endif
-#if !definedEx(CONFIG_POWERTOP)
-   
-   
-   
-#endif
-#line 1 "busybox-1.18.5/libbb/ptr_to_globals.c" 1
+#line 1 "cprojects/busybox/busybox-1.18.5/libbb/ptr_to_globals.c" 1
 /* vi: set sw=4 ts=4: */
 /*
  * Copyright (C) 2008 by Denys Vlasenko <vda.linux@googlemail.com>
@@ -8613,7 +8296,7 @@
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 
-#line 1 "systems/redhat/usr/include/errno.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/errno.h" 1
 /* Copyright (C) 1991,92,93,94,95,96,97,2002 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -8641,7 +8324,7 @@
    of EDOM and ERANGE, and not everything else.  */
 
 
-#line 1 "systems/redhat/usr/include/features.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h" 1
 /* Copyright (C) 1991-1993,1995-2007,2009,2010 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
@@ -8956,7 +8639,7 @@
 /* This is here only because every header file already includes this one.  */
 
 
-#line 1 "systems/redhat/usr/include/sys/cdefs.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/cdefs.h" 1
 /* Copyright (C) 1992-2001, 2002, 2004, 2005, 2006, 2007, 2009
    Free Software Foundation, Inc.
    This file is part of the GNU C Library.
@@ -9252,7 +8935,7 @@
 
 
 
-#line 1 "systems/redhat/usr/include/bits/wordsize.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h" 1
 /* Determine the wordsize from the preprocessor defines.  */
 
 
@@ -9260,7 +8943,7 @@
 
  
 
-#line 367 "systems/redhat/usr/include/sys/cdefs.h" 2
+#line 367 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/sys/cdefs.h" 2
 
 
 
@@ -9294,7 +8977,7 @@
 
 
 
-#line 363 "systems/redhat/usr/include/features.h" 2
+#line 363 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h" 2
 
 /* If we don't have __REDIRECT, prototypes will be missing if
    __USE_FILE_OFFSET64 but not __USE_LARGEFILE[64]. */
@@ -9311,11 +8994,11 @@
    Get the definitions of all the appropriate `__stub_FUNCTION' symbols.
    <gnu/stubs.h> contains `#define __stub_FUNCTION' when FUNCTION is a stub
    that will always return failure (and set errno to ENOSYS).  */
-#line 1 "systems/redhat/usr/include/gnu/stubs.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs.h" 1
 /* This file selects the right generated file of `__stub_FUNCTION' macros
    based on the architecture being compiled for.  */
 
-#line 1 "systems/redhat/usr/include/bits/wordsize.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/wordsize.h" 1
 /* Determine the wordsize from the preprocessor defines.  */
 
 
@@ -9323,11 +9006,11 @@
 
  
 
-#line 6 "systems/redhat/usr/include/gnu/stubs.h" 2
+#line 6 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs.h" 2
 
 
 
- #line 1 "systems/redhat/usr/include/gnu/stubs-64.h" 1
+ #line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs-64.h" 1
 /* This file is automatically generated.
    It defines a symbol `__stub_FUNCTION' for each function
    in the C library which is a stub, meaning it will fail
@@ -9350,20 +9033,20 @@
 
 
 
-#line 11 "systems/redhat/usr/include/gnu/stubs.h" 2
+#line 11 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/gnu/stubs.h" 2
  
 
-#line 387 "systems/redhat/usr/include/features.h" 2
+#line 387 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/features.h" 2
 
 
 
-#line 31 "systems/redhat/usr/include/errno.h" 2
+#line 31 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/errno.h" 2
 
 
 
 /* Get the error number constants from the system-specific file.
    This file will test __need_Emath and _ERRNO_H.  */
-#line 1 "systems/redhat/usr/include/bits/errno.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/errno.h" 1
 /* Error constants.  Linux specific version.
    Copyright (C) 1996-1999, 2005, 2009 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
@@ -9387,20 +9070,16 @@
 
 
 
-#line 1 "systems/redhat/usr/include/linux/errno.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/errno.h" 1
 
 
 
-#line 1 "systems/redhat/usr/include/asm/errno.h" 1
-#line 1 "systems/redhat/usr/include/asm-generic/errno.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/errno.h" 1
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/errno.h" 1
 
 
 
-#line 1 "systems/redhat/usr/include/asm-generic/errno-base.h" 1
-
-
-
-
+#line 1 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/errno-base.h" 1
 
 
 
@@ -9436,7 +9115,11 @@
 
 
 
-#line 6 "systems/redhat/usr/include/asm-generic/errno.h" 2
+
+
+
+
+#line 6 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm-generic/errno.h" 2
 
 
 
@@ -9544,12 +9227,12 @@
 
 
 
-#line 3 "systems/redhat/usr/include/asm/errno.h" 2
-#line 6 "systems/redhat/usr/include/linux/errno.h" 2
+#line 3 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/asm/errno.h" 2
+#line 6 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/linux/errno.h" 2
 
 
 
-#line 27 "systems/redhat/usr/include/bits/errno.h" 2
+#line 27 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/bits/errno.h" 2
 
 /* Linux has no ENOTSUP error code.  */
 
@@ -9584,7 +9267,7 @@ extern int *__errno_location (void) __attribute__ ((__nothrow__)) __attribute__ 
 
 
 
-#line 38 "systems/redhat/usr/include/errno.h" 2
+#line 38 "/app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/errno.h" 2
 
 
 
@@ -9597,10 +9280,10 @@ extern int *__errno_location (void) __attribute__ ((__nothrow__)) __attribute__ 
 
 
 
-/* The full and simple forms of the name with which the program was
-   invoked.  These variables are set up automatically at startup based on
-   the value of ARGV[0] (this works only if you use GNU ld).  */
-extern char *program_invocation_name, *program_invocation_short_name;
+
+
+
+
 
 
 
@@ -9612,12 +9295,12 @@ extern char *program_invocation_name, *program_invocation_short_name;
    before.  */
 
 
-typedef int error_t;
 
 
 
 
-#line 10 "busybox-1.18.5/libbb/ptr_to_globals.c" 2
+
+#line 10 "cprojects/busybox/busybox-1.18.5/libbb/ptr_to_globals.c" 2
 
 struct globals;
 

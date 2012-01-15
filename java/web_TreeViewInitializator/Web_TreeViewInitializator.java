@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.0.2";
+	private static final String VERSION = "0.1.0.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -48,7 +48,7 @@ public class Web_TreeViewInitializator {
 			String str = file.readLine();
 			while(str!=null){
 				String[] strArr = str.split("\t");
-				ErrorFile errFile = new ErrorFile(strArr[0],strArr[1],strArr[2],strArr[3]);
+				ErrorFile errFile = new ErrorFile(strArr[0],strArr[1],strArr[2],strArr[3],strArr[4]);
 				files.add(errFile);
 				str = file.readLine();
 			}
@@ -247,6 +247,7 @@ public class Web_TreeViewInitializator {
 			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
 			try {
+				//TODO: So dynamisch machen, dass das Script von /java und von /php ausgeführt werden kann
 				System.out.println(args[0]+" "+args[1]);
 				System.out.println("\nRead needed variables...");
 

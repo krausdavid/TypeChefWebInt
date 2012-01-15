@@ -2791,7 +2791,7 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_TIME) || definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_ECHO) || definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME) || (definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN) &amp;&amp; !definedEx(CONFIG_NOMMU)))
+                (definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_ECHO) || (definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN) &amp;&amp; !definedEx(CONFIG_NOMMU)) || definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_TIME) || definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME))
             </featureexpr><pos>
             <file>
                 file /app/home/pgiarrusso/TypeChef/systems/redhat/usr/include/alloca.h
@@ -4267,7 +4267,7 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_TIME) || definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_ECHO) || definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME) || (definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN) &amp;&amp; !definedEx(CONFIG_NOMMU)))
+                (definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_ECHO) || (definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN) &amp;&amp; !definedEx(CONFIG_NOMMU)) || definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_TIME) || definedEx(CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME))
             </featureexpr><pos>
             <file>
                 file cprojects/busybox/busybox-1.18.5/networking/inetd.c

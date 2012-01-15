@@ -1,0 +1,1 @@
+(definedEx(CONFIG_UNXZ) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ))

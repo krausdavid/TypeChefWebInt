@@ -1,1 +1,9 @@
-bash: /app/archive/kos/share/TypeChef/TypeChef/typechef.sh: Permission denied
+Dec 12, 2011 6:03:34 PM de.fosd.typechef.lexer.PreprocessorListener print
+WARNING: cprojects/busybox/busybox-1.18.5/miscutils/hdparm.c:1776:13: warning: Unnecessary escape character ?
+cprojects/busybox/busybox-1.18.5/miscutils/hdparm.c:1776:13: warning: Unnecessary escape character ?
+Dec 12, 2011 6:03:34 PM de.fosd.typechef.lexer.PreprocessorListener print
+WARNING: cprojects/busybox/busybox-1.18.5/miscutils/hdparm.c:1776:15: warning: Unnecessary escape character ?
+cprojects/busybox/busybox-1.18.5/miscutils/hdparm.c:1776:15: warning: Unnecessary escape character ?
+Dec 12, 2011 6:03:34 PM de.fosd.typechef.lexer.PreprocessorListener print
+WARNING: cprojects/busybox/busybox-1.18.5/miscutils/hdparm.c:1776:17: warning: Unnecessary escape character ?
+cprojects/busybox/busybox-1.18.5/miscutils/hdparm.c:1776:17: warning: Unnecessary escape character ?

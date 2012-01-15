@@ -18,7 +18,7 @@ import org.xml.sax.SAXException;
  *
  */
 public class Parser {
-	String setting_file;
+	private String setting_file;
 	
 	/**
 	 * Creates an XML Object
@@ -81,4 +81,9 @@ public class Parser {
 
 		return "";
 	}
+
+	public String getSetting_file() {
+		return setting_file;
+	}
+	
 }

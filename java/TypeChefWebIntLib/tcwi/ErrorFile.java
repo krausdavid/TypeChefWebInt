@@ -2,26 +2,34 @@ package tcwi;
 
 public class ErrorFile implements Comparable<ErrorFile>{
 	private String path;
+	private boolean haveNoDBG;
 	private boolean isEmptyFile;
 	private boolean isNotTrueSucceeded;
 	private boolean haveTypeErrors;
 	
 	public ErrorFile(){
 		this.path = "";
+		this.haveNoDBG = true;
 		this.isEmptyFile = true;
 		this.isNotTrueSucceeded = true;
 		this.haveTypeErrors = true;
 	}
 
-	public ErrorFile(String path, boolean isEmptyFile, boolean isNotTrueSucceeded, boolean haveTypeErrors) {
+	public ErrorFile(String path, boolean haveNoDBG, boolean isEmptyFile, boolean isNotTrueSucceeded, boolean haveTypeErrors) {
 		this.path = path;
+		this.haveNoDBG = haveNoDBG;
 		this.isEmptyFile = isEmptyFile;
 		this.isNotTrueSucceeded = isNotTrueSucceeded;
 		this.haveTypeErrors = haveTypeErrors;
 	}
 	
-	public ErrorFile(String path, String isEmptyFile, String isNotTrueSucceeded, String haveTypeErrors) {
+	public ErrorFile(String path,String haveNoDBG, String isEmptyFile, String isNotTrueSucceeded, String haveTypeErrors) {
 		this.path = path;
+		if(haveNoDBG.equals("true")){
+			this.haveNoDBG = true;
+		}else{
+			this.haveNoDBG = false;
+		}
 		if(isEmptyFile.equals("true")){
 			this.isEmptyFile = true;
 		}else{
@@ -41,9 +49,10 @@ public class ErrorFile implements Comparable<ErrorFile>{
 
 	public ErrorFile(String path, boolean[] flags) {
 		this.path = path;
-		this.isEmptyFile = flags[0];
-		this.isNotTrueSucceeded = flags[1];
-		this.haveTypeErrors = flags[2];
+		this.haveNoDBG = flags[0];
+		this.isEmptyFile = flags[1];
+		this.isNotTrueSucceeded = flags[2];
+		this.haveTypeErrors = flags[3];
 	}
 
 	public String getPath() {
@@ -78,17 +87,29 @@ public class ErrorFile implements Comparable<ErrorFile>{
 		this.haveTypeErrors = haveTypeErrors;
 	}
 	
+	public boolean isHaveNoDBG() {
+		return haveNoDBG;
+	}
+
+	public void setHaveNoDBG(boolean haveNoDBG) {
+		this.haveNoDBG = haveNoDBG;
+	}
+
 	public boolean haveErrors(){
-		if(this.isEmptyFile){
+		if(this.haveNoDBG){
 			return true;
 		}else{
-			if(this.isNotTrueSucceeded){
+			if(this.isEmptyFile){
 				return true;
 			}else{
-				if(this.haveTypeErrors){
+				if(this.isNotTrueSucceeded){
 					return true;
 				}else{
-					return false;
+					if(this.haveTypeErrors){
+						return true;
+					}else{
+						return false;
+					}
 				}
 			}
 		}
@@ -96,7 +117,7 @@ public class ErrorFile implements Comparable<ErrorFile>{
 
 	@Override
 	public String toString() {
-		return this.path+"\t"+isEmptyFile+"\t"+isNotTrueSucceeded+"\t"+haveTypeErrors;
+		return this.path+"\t"+haveNoDBG+"\t"+isEmptyFile+"\t"+isNotTrueSucceeded+"\t"+haveTypeErrors;
 	}
 
 	@Override

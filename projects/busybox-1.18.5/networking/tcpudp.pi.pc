@@ -1,0 +1,1 @@
+(definedEx(CONFIG_TCPSVD) || definedEx(CONFIG_UDPSVD))
