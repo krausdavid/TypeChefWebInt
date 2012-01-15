@@ -5,6 +5,8 @@ import java.io.InputStreamReader;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
+import tcwi.fileHandler.Check;
+
 /**
  * A little program to scan a path (recursively) for "true succeeded" files from TypeChef
  * @author EifX
@@ -14,7 +16,8 @@ public class DBGFileChecker {
 	
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static ArrayList<String> sysOutput = new ArrayList<String>();
-	private static final String VERSION = "0.3.1.4";
+	private static final String VERSION = "0.3.1.5";
+	private static Check check;
 	
 	/**
 	 * Get all files from an given path
@@ -51,98 +54,18 @@ public class DBGFileChecker {
 	public static void help(){
 		out("");
 		out("Help - DBGFileChecker "+VERSION+" - by EifX");
-		out("------------------------------------");
+		out("---------------------------------------");
 		out("Usage: DBGFileChecker [PATH]");
 		out("");
 		out("");
 		out("[PATH] (Optional):");
 		out("");
-		out("     Path for scan. Work with absolute paths. ");
+		out("     Path for scan. Work with absolute paths only. ");
 		out("");
 		out("--help || -h");
 		out("");
 		out("    This help helps you ;)");
 		out("");
-		/*out("Usage: DBGFileChecker [PATH] ([TXT-FILE]) [NORMAL_ERROR_OPTIONS] [TYPE_ERROR_OPTIONS]");
-		out("");
-		out("[PATH]:");
-		out("");
-		out("     Path for scan. Work with absolute and relative paths. If no path is set, the standart");
-		out("     path will be used for scan.");
-		out("");
-		out("[TXT-FILE]: (Optional)");
-		out("");
-		out("     Path for text-file output. Works like [PATH].");
-		out("");
-		out("[*_ERROR_OPTIONS]");
-		out("");
-		out("     t          Only error files will be displayed");
-		out("");
-		out("     f          Only correct files will be displayed");
-		out("");
-		out("     a          All files will be displayed");
-		out("");
-		out("Sample:");
-		out("");
-		out("DBGFileChecker samplepath sampletxtfile a a");*/
-
-	}
-	
-	/**
-	 * Returns for a file <tt>true</tt> or <tt>false</tt> if TypeChef said "True succeeded" or not
-	 * @param path
-	 * @return
-	 * @throws IOException
-	 */
-	public static String ifTrueSucc(String path) throws IOException{
-		RandomAccessFile file = new RandomAccessFile(path,"r");
-		String str = file.readLine();
-		while(str!=null){
-			if(str.contains("True\tsucceeded")){
-				file.close();
-				return " OK ";
-			}
-			str = file.readLine();
-		}
-		file.close();
-		return "FAIL";
-	}
-	
-	/**
-	 * Check if a given file is empty
-	 * @param path
-	 * @return
-	 * @throws IOException
-	 */
-	public static boolean isEmpty(String path) throws IOException{
-		RandomAccessFile file = new RandomAccessFile(path,"r");
-		if(file.length()==0){
-			file.close();
-			return true;
-		}else{
-			file.close();
-			return false;
-		}
-	}
-	
-	/**
-	 * Returns for a file <tt>true</tt> or <tt>false</tt> if TypeChef said "No type errors found." or not
-	 * @param path
-	 * @return
-	 * @throws IOException
-	 */
-	public static String ifNoTypeError(String path) throws IOException{
-		RandomAccessFile file = new RandomAccessFile(path,"r");
-		String str = file.readLine();
-		while(str!=null){
-			if(str.contains("No type errors found.")){
-				file.close();
-				return " OK ";
-			}
-			str = file.readLine();
-		}
-		file.close();
-		return "FAIL";
 	}
 	
 	/**
@@ -355,14 +278,14 @@ public class DBGFileChecker {
 			if(calc>=95&&percent==95){System.out.print("|");percent=percent+5;}
 			if(calc>=100&&percent==100){System.out.print("|");percent=percent+5;}
 			
-			if(isEmpty(files.get(i).getPath())){
+			if(check.isEmpty(files.get(i).getPath())){
 				emptyFiles.add(files.get(i));
 			}else{
-				if(ifTrueSucc(files.get(i).getPath()).equals("FAIL")){
+				if(check.ifTrueSucc(files.get(i).getPath()).equals("FAIL")){
 					normalError++;
 					errnormal = true;
 				}
-				if(ifNoTypeError(files.get(i).getPath()).equals("FAIL")){
+				if(check.ifNoTypeError(files.get(i).getPath()).equals("FAIL")){
 					typeError++;
 					errtype = true;
 				}
@@ -469,6 +392,7 @@ public class DBGFileChecker {
 
 	public static void main(String[] args) {
 		try {	
+			check = new Check();
 			String[] outStr = new String[4];
 			if(args.length>0){
 				if((args[0].equals("--help"))||(args[0].equals("-h"))){
