@@ -9,14 +9,12 @@ import tcwi.fileHandler.*;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.0.2.13";
+	private static final String VERSION = "0.0.2.14";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<File> files = new ArrayList<File>();
 	private static String folderSeparator;
 	private static Check check;
-
-	
 	
 	/**
 	 * Get all files from an given path. If failureTest is set, this method said, if an path have an error file
@@ -168,9 +166,9 @@ public class Web_TreeViewInitializator {
 
 			//Print the files!
 			if(pathArr.length==1){
-				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/files/"+projectName+"/"+newPath+"\"))");
+				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/?files="+newPath+"&project="+projectName+"\"))");
 			}else{
-				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/files/"+projectName+"/"+newPath+"\"))");
+				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/?files="+newPath+"&project="+projectName+"\"))");
 			}
 
 			//Draw fileicons
