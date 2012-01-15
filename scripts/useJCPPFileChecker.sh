@@ -23,7 +23,12 @@ echo ""
 echo "----------------------------------------------------"
 exit 1
 }
-tcFolder="/app/archive/kos/share/TypeChef/TypeChef"
+echo "####################"
+echo "read global settings"
+echo "####################"
+tcFolder=`./readTCFolder.sh`
+echo $tcFolder
+
 if [ ! $# -eq 4 ]; then 
   if [ ! $# -eq 3]; then	
     func_help
