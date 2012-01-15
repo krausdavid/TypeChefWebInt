@@ -48,6 +48,9 @@ switch ($_GET['root']) {
 		echo tools::reload_tree();
 		require("./run/site/main.php");
 		break;
+	case "execute":
+		require("./run/execute/main.php");
+		break;
 	case "403_forbidden":
 		require("./run/pages/403_forbidden.php");
 		break;
