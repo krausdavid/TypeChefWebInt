@@ -8,4 +8,5 @@
 		Bitte aktivieren Sie JavaScript!
 		</NOSCRIPT>
 	</div>
+	<INPUT type="button" onClick="check_boxes()" value="Evaluation">
 {/strip}
