@@ -1,4 +1,4 @@
-TODO:
+﻿TODO:
 - settings.ini -> settings.xml
 - Vorbereitungen für MultiUser-Anwendung
 - Einstellungen und Admin-Bereich erstellen
@@ -7,8 +7,3 @@ TODO:
 - Projektauswahlmöglichkeit
 - "Startknopf" für die ersten Initialisierungen
 - Möglichkeit, einen gewählten Pfad geöffnet zu lassen
-- Auswahlhaken im TreeView anzeigen
-- Beim Laden eines Projektes sollte der Dateibaum mit diversen Informationen über die Dateien in eine Datei abgespeichert werden
-  Es wird sehr viel Zeit beim TreeViewer, DBGFileChecker etc. damit verbraucht
-- TreeView: Überarbeiten und Ressourcenschonender gestallten
-- DBGFileChecker: Überarbeiten und Ressourcenschonender gestallten
