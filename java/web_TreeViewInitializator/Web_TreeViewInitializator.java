@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.0.3";
+	private static final String VERSION = "0.1.0.4";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -237,7 +237,7 @@ public class Web_TreeViewInitializator {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		if(args.length!=2){
+		if(args.length!=3){
 			System.out.println("Help - web_TreeViewInitializator "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
 			System.out.println("\nUsage: web_TreeViewInitializator [PROJECTNAME] [GLOBAL_SETTINGS]");
@@ -245,22 +245,17 @@ public class Web_TreeViewInitializator {
 			System.out.println("\n     Project name\n");
 			System.out.println("\n[GLOBAL_SETTINGS]");
 			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
+			System.out.println("\n[PROJECT-DIR]");
+			System.out.println("\n     The project directory");
 		}else{
 			try {
-				//TODO: So dynamisch machen, dass das Script von /java und von /php ausgeführt werden kann
-				System.out.println(args[0]+" "+args[1]);
 				System.out.println("\nRead needed variables...");
 
 				folderSeparator = check.folderSeparator()+"";
 				
 				//Read the project dir
-				File f = new File("");
-				String path = f.getAbsolutePath();
-				path = path.substring(0,path.lastIndexOf(check.folderSeparator()));
-				path = path.substring(0,path.lastIndexOf(check.folderSeparator()));
-				path = path+folderSeparator+"projects"+folderSeparator;
-				project_settings_path = path+args[0]+".project";
-				project_settings_xml_path = path+args[0]+".project.xml";
+				project_settings_path = args[2]+check.folderSeparator()+args[0]+".project";
+				project_settings_xml_path = args[2]+check.folderSeparator()+args[0]+".project.xml";
 				
 				parser = new Parser(project_settings_xml_path);
 				
