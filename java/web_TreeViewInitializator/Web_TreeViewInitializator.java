@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.0.4";
+	private static final String VERSION = "0.1.1.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -196,7 +196,11 @@ public class Web_TreeViewInitializator {
 			if(!files.get(i).haveErrors()){
 				javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileok.gif\"");
 			}else{
-				javascript.add("doc"+i+".iconSrc = ICONPATH + \"filefail.gif\"");
+				if(files.get(i).isHaveNoDBG()){
+					javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileempty.gif\"");
+				}else{
+					javascript.add("doc"+i+".iconSrc = ICONPATH + \"filefail.gif\"");
+				}
 			}
 
 			//Add checkboxes
@@ -240,13 +244,13 @@ public class Web_TreeViewInitializator {
 		if(args.length!=3){
 			System.out.println("Help - web_TreeViewInitializator "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
-			System.out.println("\nUsage: web_TreeViewInitializator [PROJECTNAME] [GLOBAL_SETTINGS]");
+			System.out.println("\nUsage: web_TreeViewInitializator [PROJECTNAME] [GLOBAL_SETTINGS] [PROJECT-DIR]");
 			System.out.println("\n[PROJECTNAME]");
 			System.out.println("\n     Project name\n");
 			System.out.println("\n[GLOBAL_SETTINGS]");
 			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 			System.out.println("\n[PROJECT-DIR]");
-			System.out.println("\n     The project directory");
+			System.out.println("\n     The project directory\n");
 		}else{
 			try {
 				System.out.println("\nRead needed variables...");
