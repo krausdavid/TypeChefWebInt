@@ -51,6 +51,9 @@ switch ($_GET['root']) {
 	case "execute":
 		require("./run/execute/main.php");
 		break;
+	case "project":
+		require("./run/project/main.php");
+		break;
 	case "403_forbidden":
 		require("./run/pages/403_forbidden.php");
 		break;
