@@ -18,5 +18,8 @@
  */
 
 $template->assign("title", "Projekt '".$_GET['project']."' Dateien: ".$_GET['files'].".*");
+$template->assign("filepath", $PROJECT_PATH.$_GET['files'].".dbg");
+$template->assign("filecontent", tools::read_file($PROJECT_PATH.$_GET['files'].".dbg",true));
+
 $template->assign("template", "./project/main.tpl"); 
 ?>

@@ -34,7 +34,16 @@ $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
-//echo "->".tools::read_settings("typechef_path")."<-";
+//Test-Zone
+$PROJECT_PATH = "/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/";
+
+$arr = tools::get_all_files($PROJECT_PATH."/applets","applets");
+
+for($i=0;$i<count($arr);$i++){
+	echo $arr[$i]."<br>";
+}
+
+//Test-Zone End
 
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
 	$template->assign("browser", "MSIE");

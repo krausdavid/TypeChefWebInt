@@ -1,1 +1,1 @@
-﻿
+﻿<tt>{$filecontent}</tt>
