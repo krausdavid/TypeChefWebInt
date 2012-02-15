@@ -66,6 +66,7 @@ class tools
 	function read_file($file,$break)
 	{
 		$handle = fopen($file, "r");
+		$fcontent = "";
 		if ($handle){
 			while(!feof($handle)){
 				if($break==true){

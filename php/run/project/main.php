@@ -30,12 +30,13 @@ if($_GET['choosen_file']!=""){
 	for($i=1;$i<count($fileEXTarr);$i++){
 		$fileEXT .= ".".$fileEXTarr[$i];
 	}
+	
+	//Replace < and > Tags. HTML display this characters wrong
 	$output_file = tools::read_file($PROJECT_PATH.$_GET['files'].$fileEXT,false);
 	$output_file = str_replace("<","&lt;",$output_file);
 	$output_file = str_replace(">","&gt;",$output_file);
 	
 	$template->assign("filecontent", $output_file);
-	$template->assign("choosen_file", true);
 }
 
 $template->assign("title", "Projekt '".$_GET['project']."' Dateien: ".$_GET['files'].".*");
