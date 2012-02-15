@@ -37,11 +37,6 @@ $template->cache_dir = "./templates/tmp";
 //Test-Zone
 $PROJECT_PATH = "/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/";
 
-$arr = tools::get_all_files($PROJECT_PATH."/applets","applets");
-
-for($i=0;$i<count($arr);$i++){
-	echo $arr[$i]."<br>";
-}
 
 //Test-Zone End
 
