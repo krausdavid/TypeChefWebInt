@@ -23,13 +23,14 @@ echo ""
 echo "----------------------------------------------------"
 exit 1
 }
-echo "####################"
-echo "read global settings"
-echo "####################"
+#echo "####################"
+#echo "read global settings"
+#echo "####################"
 tcFolder=`./readTCFolder.sh`
 cd ../projects/
 pjFolder=$(pwd)
 cd -
+
 echo $tcFolder
 echo $pjFolder
 
@@ -47,6 +48,7 @@ fi
 fileCheckList=$1
 srcPath=$2
 flagList=$3
+configH="${3%.*}.h"
 
 
 export outCSV=boa.csv
@@ -55,55 +57,61 @@ export outCSV=boa.csv
 
 if [ $noRemove -eq 1 ]; then
 echo "#######################"
-echo "continue without remove"
-echo "#######################"
+#echo "continue without remove"
+#echo "#######################"
 else 
-echo "remove *.dbg files [START]"
-echo "#######################"
+#echo "remove *.dbg files [START]"
+#echo "#######################"
 func_filesToProcess|while read i; do
 if [ ! -f $srcPath/$i.dbg ]; then
-echo "#######################"  
+#echo "#######################"  
 echo "nothing to remove"
-echo "#######################"
+#echo "#######################"
  else
      rm $srcPath/$i.dbg
-     echo "#######################"
-     echo "remove $i.dbg [OK]"
-    echo "#######################" 
+#     echo "#######################"
+#     echo "remove $i.dbg [OK]"
+#    echo "#######################" 
  fi
 done
 fi
 
 
-export partialPreprocFlags="-x CONFIG_ --include $tcFolder/busybox/config.h -I $srcPath/include"
-echo "#######################"
-echo "reading flags [START]"
-echo "#######################"
+export partialPreprocFlags="-x CONFIG_ --include $pjFolder/$configH -I $srcPath/include"
+#echo "#######################"
+#echo "reading flags [START]"
+#echo "#######################"
 flags=""
 while read i; do
     flags="$flags $i"
-echo "#######################"
-echo "flag $i [OK]"
-echo "#######################"
+#echo "#######################"
+#echo "flag $i [OK]"
+#echo "#######################"
 done < $pjFolder/$flagList
-echo "#######################"
-echo "reading flags [OK]"
-echo "using jcpp [START]"
-echo "#######################"
+#echo "#######################"
+#echo "reading flags [OK]"
+#echo "using jcpp [START]"
+#echo "#######################"
 func_filesToProcess|while read i; do
-echo $i 
+#echo $i 
  if [ ! -f $srcPath/$i.dbg ]; then
     touch $srcPath/$i.dbg
     oldPath=$(pwd)
     cd ../jcpp/
-    ./jcpp.sh $srcPath/$i.c
+	echo "++++++++++++++++++++"
+	echo $srcPath
+	echo $i
+	toChek="${srcPath}/${i}.c"
+	echo $toChek
+	echo "++++++++++++++++++++"
+	 ./jcpp.sh $srcPath/$i.c $flags
     cd - 
-    echo "#######################"
-    echo "working on file $srcPath/ $i.c [OK]"
-    echo "#######################"
+#    echo "#######################"
+#    echo "working on file $srcPath/ $i.c [OK]"
+#    echo "#######################"
  else
     echo "Skipping $srcPath/$i.c"
   fi
 done
-echo "#######################"
+#echo "#######################"
 echo "all done [OK]"
