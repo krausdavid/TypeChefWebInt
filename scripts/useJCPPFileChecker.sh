@@ -98,12 +98,6 @@ func_filesToProcess|while read i; do
     touch $srcPath/$i.dbg
     oldPath=$(pwd)
     cd ../jcpp/
-	echo "++++++++++++++++++++"
-	echo $srcPath
-	echo $i
-	toChek="${srcPath}/${i}.c"
-	echo $toChek
-	echo "++++++++++++++++++++"
 	 ./jcpp.sh $srcPath/$i.c $flags
     cd - 
 #    echo "#######################"
