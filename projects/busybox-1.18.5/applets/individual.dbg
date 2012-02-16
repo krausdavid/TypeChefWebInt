@@ -1,0 +1,5 @@
+preIncludes: ArraySeq()
+systemIncludes: usr/include
+postIncludes: List(usr/lib/gcc/x86_64-redhat-linux/4.4.4/include)
+Invocation error: Expected a file, found ../project/busybox.h
+use parameter --help for more information.
