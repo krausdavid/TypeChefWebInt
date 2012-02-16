@@ -34,7 +34,11 @@ $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
-//echo "->".tools::read_settings("typechef_path")."<-";
+//Test-Zone
+$PROJECT_PATH = "/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/";
+
+
+//Test-Zone End
 
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
 	$template->assign("browser", "MSIE");
@@ -50,6 +54,9 @@ switch ($_GET['root']) {
 		break;
 	case "execute":
 		require("./run/execute/main.php");
+		break;
+	case "project":
+		require("./run/project/main.php");
 		break;
 	case "403_forbidden":
 		require("./run/pages/403_forbidden.php");
