@@ -18,7 +18,9 @@
 */
 
 class xmlparser{
-	
+	function read_setting($xpath){
+		
+	}
 }
 
 ?>

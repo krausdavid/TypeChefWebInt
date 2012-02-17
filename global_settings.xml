@@ -9,7 +9,7 @@
 	</global>
 	<website>
 		<generic>
-			<treeview path="/generics/treeview" icons="/~eifx/TypeChefWebInt/php/include/images/treeview/"/>
+			<treeview path="/generics/treeview" icons="/~eifx/TypeChefWebInt/php/include/images/treeview/" />
 		</generic>
 	</website>
 </settings>
