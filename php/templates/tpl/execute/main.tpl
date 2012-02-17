@@ -1,1 +1,3 @@
-Alles Feddisch!
+﻿{strip}
+	Alles Feddisch!
+{/strip}
