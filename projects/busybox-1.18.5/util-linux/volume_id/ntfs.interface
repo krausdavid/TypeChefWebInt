@@ -38,7 +38,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72887
@@ -80,7 +80,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/volume_id/ntfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ntfs.c
             </file>
             <line>
                 74521
@@ -126,7 +126,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72884
@@ -172,7 +172,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72912
@@ -384,7 +384,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/volume_id/ntfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ntfs.c
             </file>
             <line>
                 74541
@@ -394,7 +394,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/util-linux/volume_id/ntfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ntfs.c
             </file>
             <line>
                 74514
@@ -482,7 +482,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/volume_id/ntfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ntfs.c
             </file>
             <line>
                 74549
@@ -492,7 +492,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/util-linux/volume_id/ntfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ntfs.c
             </file>
             <line>
                 74518
@@ -610,7 +610,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72862
@@ -768,7 +768,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/volume_id/ntfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ntfs.c
             </file>
             <line>
                 74591
@@ -938,7 +938,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72859
@@ -1006,7 +1006,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72915
@@ -1092,7 +1092,7 @@
                 definedEx(CONFIG_FEATURE_VOLUMEID_NTFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/volume_id/ntfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/volume_id/ntfs.c
             </file>
             <line>
                 74494

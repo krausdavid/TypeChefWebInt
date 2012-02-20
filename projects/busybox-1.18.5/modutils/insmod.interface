@@ -38,7 +38,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72857
@@ -78,7 +78,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/insmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/insmod.c
             </file>
             <line>
                 76080
@@ -124,7 +124,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72854
@@ -170,7 +170,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72882
@@ -198,7 +198,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/insmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/insmod.c
             </file>
             <line>
                 76078
@@ -454,7 +454,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/insmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/insmod.c
             </file>
             <line>
                 76080
@@ -572,7 +572,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72832
@@ -644,7 +644,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/insmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/insmod.c
             </file>
             <line>
                 76082
@@ -718,7 +718,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/insmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/insmod.c
             </file>
             <line>
                 76082
@@ -796,7 +796,7 @@
                 (definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; definedEx(CONFIG_INSMOD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/insmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/insmod.c
             </file>
             <line>
                 76055
@@ -966,7 +966,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72829
@@ -1034,7 +1034,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72885
@@ -1126,7 +1126,7 @@
                 definedEx(CONFIG_INSMOD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/insmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/insmod.c
             </file>
             <line>
                 76039

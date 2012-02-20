@@ -10,9 +10,9 @@ imports (38)
 	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_CHCON)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73395:9
 	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_CHCON)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73420:9
 	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_CHCON)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:73392:9
-	context_free: (*struct {Map(ptr -> List((True,CPointer(CVoid()))))}) => void		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74793:1
-	context_new: (*char) => *struct {Map(ptr -> List((True,CPointer(CVoid()))))}		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74755:12
-	context_str: (*struct {Map(ptr -> List((True,CPointer(CVoid()))))}) => *char		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74762:18
+	context_free: (*struct {Map(ptr -> List((True,One(CPointer(CVoid())))))}) => void		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74793:1
+	context_new: (*char) => *struct {Map(ptr -> List((True,One(CPointer(CVoid())))))}		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74755:12
+	context_str: (*struct {Map(ptr -> List((True,One(CPointer(CVoid())))))}) => *char		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74762:18
 	freecon: (*char) => void		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74794:1
 	getfilecon: (*char, **char) => signed int		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74845:6, file busybox-1.18.5/selinux/chcon.c:74734:11
 	getopt32: (**char, *char, ...) => unsigned int		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74837:1
@@ -20,7 +20,7 @@ imports (38)
 	lsetfilecon: (*char, *char) => signed int		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74772:10
 	printf: (*char, ...) => signed int		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74789:2, file busybox-1.18.5/selinux/chcon.c:74777:3
 	recursive_action: (*char, unsigned int, *(*char, *struct stat, *void, signed int) => signed int, *(*char, *struct stat, *void, signed int) => signed int, *void, unsigned int) => signed int		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74863:6
-	set_security_context_component: (*char, *char, *char, *char, *char) => *struct {Map(ptr -> List((True,CPointer(CVoid()))))}		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74748:12
+	set_security_context_component: (*char, *char, *char, *char, *char) => *struct {Map(ptr -> List((True,One(CPointer(CVoid())))))}		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74748:12
 	setfilecon: (*char, *char) => signed int		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74774:10
 	strcmp: (*char, *char) => signed int		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74768:29
 	strlen: (*char) => unsigned long		if def(CONFIG_CHCON)		at file busybox-1.18.5/selinux/chcon.c:74858:18

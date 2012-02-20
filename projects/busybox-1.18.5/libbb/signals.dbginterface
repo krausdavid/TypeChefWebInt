@@ -11,12 +11,12 @@ imports (31)
 	memset: (*void, signed int, unsigned long) => *void		if True		at file busybox-1.18.5/libbb/signals.c:74265:1, file busybox-1.18.5/libbb/signals.c:74255:1, file busybox-1.18.5/libbb/signals.c:74205:1
 	raise: (signed int) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74248:1
 	sigaction: (signed int, *struct sigaction, *struct sigaction) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74174:8
-	sigaddset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}, signed int) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74232:1, file busybox-1.18.5/libbb/signals.c:74224:1
-	sigemptyset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74239:1, file busybox-1.18.5/libbb/signals.c:74231:1, file busybox-1.18.5/libbb/signals.c:74223:1
-	sigfillset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74180:1
+	sigaddset: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}, signed int) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74232:1, file busybox-1.18.5/libbb/signals.c:74224:1
+	sigemptyset: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74239:1, file busybox-1.18.5/libbb/signals.c:74231:1, file busybox-1.18.5/libbb/signals.c:74223:1
+	sigfillset: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74180:1
 	signal: (signed int, *(signed int) => void) => *(signed int) => void		if True		at file busybox-1.18.5/libbb/signals.c:74246:1, file busybox-1.18.5/libbb/signals.c:74192:3
-	sigprocmask: (signed int, *struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}, *struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74233:1, file busybox-1.18.5/libbb/signals.c:74225:1, file busybox-1.18.5/libbb/signals.c:74181:8
-	sigsuspend: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74240:1
+	sigprocmask: (signed int, *struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}, *struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74233:1, file busybox-1.18.5/libbb/signals.c:74225:1, file busybox-1.18.5/libbb/signals.c:74181:8
+	sigsuspend: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}) => signed int		if True		at file busybox-1.18.5/libbb/signals.c:74240:1
 	xatoll: (*char) => signed long long		if True		at string literal: xatoll:72813:0
 	xatoll_range: (*char, signed long long, signed long long) => signed long long		if True		at string literal: xatoll_range:72813:0
 	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if True		at string literal: xatoll_range_sfx:72813:0

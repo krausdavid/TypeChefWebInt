@@ -38,7 +38,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73272
@@ -84,7 +84,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73269
@@ -130,7 +130,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/setarch.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/setarch.c
             </file>
             <line>
                 74603
@@ -176,7 +176,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73297
@@ -204,7 +204,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/setarch.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/setarch.c
             </file>
             <line>
                 74617
@@ -214,7 +214,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/util-linux/setarch.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/setarch.c
             </file>
             <line>
                 74613
@@ -550,7 +550,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73247
@@ -694,7 +694,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/setarch.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/setarch.c
             </file>
             <line>
                 74620
@@ -736,7 +736,7 @@
                 (definedEx(CONFIG_FEATURE_PREFER_APPLETS) &amp;&amp; definedEx(CONFIG_SETARCH))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74624
@@ -904,7 +904,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/setarch.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/setarch.c
             </file>
             <line>
                 74632
@@ -946,7 +946,7 @@
                 (!definedEx(CONFIG_FEATURE_PREFER_APPLETS) &amp;&amp; definedEx(CONFIG_SETARCH))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74624
@@ -980,7 +980,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73244
@@ -1048,7 +1048,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73300
@@ -1140,7 +1140,7 @@
                 definedEx(CONFIG_SETARCH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/setarch.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/setarch.c
             </file>
             <line>
                 74586

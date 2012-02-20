@@ -15,7 +15,7 @@ imports (42)
 	memset: (*void, signed int, unsigned long) => *void		if def(CONFIG_EXPR)		at file busybox-1.18.5/coreutils/expr.c:75227:1, file busybox-1.18.5/coreutils/expr.c:75226:1
 	printf: (*char, ...) => signed int		if def(CONFIG_EXPR)		at file busybox-1.18.5/coreutils/expr.c:75498:2
 	puts: (*char) => signed int		if def(CONFIG_EXPR)		at file busybox-1.18.5/coreutils/expr.c:75514:2
-	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((True,CSigned(CInt()))), rm_eo -> List((True,CSigned(CInt()))))}[], signed int) => signed int		if def(CONFIG_EXPR)		at file busybox-1.18.5/coreutils/expr.c:75232:5
+	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((True,One(CSigned(CInt())))), rm_eo -> List((True,One(CSigned(CInt())))))}[], signed int) => signed int		if def(CONFIG_EXPR)		at file busybox-1.18.5/coreutils/expr.c:75232:5
 	regfree: (*struct re_pattern_buffer) => void		if def(CONFIG_EXPR)		at file busybox-1.18.5/coreutils/expr.c:75249:1
 	strcmp: (*char, *char) => signed int		if def(CONFIG_EXPR)		at file busybox-1.18.5/coreutils/expr.c:75164:7, file busybox-1.18.5/coreutils/expr.c:75148:24
 	strcspn: (*char, *char) => unsigned long		if def(CONFIG_EXPR)		at file busybox-1.18.5/coreutils/expr.c:75315:16

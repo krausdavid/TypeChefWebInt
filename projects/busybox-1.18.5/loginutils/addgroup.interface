@@ -28,7 +28,7 @@
                 (definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) &amp;&amp; definedEx(CONFIG_ADDGROUP))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74341
@@ -68,7 +68,7 @@
                 (definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) &amp;&amp; definedEx(CONFIG_ADDGROUP))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74344
@@ -114,7 +114,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72857
@@ -157,10 +157,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_ADDGROUP) &amp;&amp; ((!definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) &amp;&amp; !definedEx(CONFIG_FEATURE_DEL_USER_FROM_GROUP)) || (!definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) &amp;&amp; !definedEx(CONFIG_FEATURE_DEL_USER_FROM_GROUP) &amp;&amp; definedEx(CONFIG_FEATURE_SHADOWPASSWDS))))
+                (definedEx(CONFIG_ADDGROUP) &amp;&amp; ((!definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) &amp;&amp; !definedEx(CONFIG_FEATURE_DEL_USER_FROM_GROUP) &amp;&amp; definedEx(CONFIG_FEATURE_SHADOWPASSWDS)) || (!definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) &amp;&amp; !definedEx(CONFIG_FEATURE_DEL_USER_FROM_GROUP))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74276
@@ -170,7 +170,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74241
@@ -216,7 +216,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72854
@@ -250,7 +250,7 @@
                 (definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) &amp;&amp; definedEx(CONFIG_ADDGROUP))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74340
@@ -280,7 +280,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74247
@@ -290,7 +290,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74247
@@ -336,7 +336,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72882
@@ -364,7 +364,7 @@
                 (definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) &amp;&amp; definedEx(CONFIG_ADDGROUP))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74336
@@ -398,7 +398,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74214
@@ -734,7 +734,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72832
@@ -806,7 +806,7 @@
                 (definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; definedEx(CONFIG_ADDGROUP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
                 74204
@@ -916,7 +916,7 @@
                 (!definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; definedEx(CONFIG_ADDGROUP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
                 74177
@@ -960,7 +960,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74324
@@ -1012,7 +1012,7 @@
                 (definedEx(CONFIG_ADDGROUP) &amp;&amp; (definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) || (definedEx(CONFIG_FEATURE_SHADOWPASSWDS) &amp;&amp; (definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) || definedEx(CONFIG_FEATURE_DEL_USER_FROM_GROUP)) &amp;&amp; (definedEx(CONFIG_FEATURE_ADDUSER_TO_GROUP) || definedEx(CONFIG_FEATURE_DEL_USER_FROM_GROUP) || !definedEx(CONFIG_FEATURE_SHADOWPASSWDS))) || definedEx(CONFIG_FEATURE_DEL_USER_FROM_GROUP)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74353
@@ -1022,7 +1022,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74349
@@ -1032,7 +1032,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74276
@@ -1042,7 +1042,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74241
@@ -1122,7 +1122,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74238
@@ -1248,7 +1248,7 @@
                 (definedEx(CONFIG_FEATURE_CHECK_NAMES) &amp;&amp; definedEx(CONFIG_ADDGROUP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74360
@@ -1258,7 +1258,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74360
@@ -1288,7 +1288,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74312
@@ -1322,7 +1322,7 @@
                 (!definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; definedEx(CONFIG_ADDGROUP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
                 74204
@@ -1356,7 +1356,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74313
@@ -1366,7 +1366,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74219
@@ -1376,7 +1376,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74214
@@ -1386,7 +1386,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74183
@@ -1396,7 +1396,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74183
@@ -1430,7 +1430,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72829
@@ -1466,7 +1466,7 @@
                 (definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; definedEx(CONFIG_ADDGROUP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
                 74177
@@ -1534,7 +1534,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72885
@@ -1564,7 +1564,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74256
@@ -1574,7 +1574,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74256
@@ -1666,7 +1666,7 @@
                 definedEx(CONFIG_ADDGROUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/addgroup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/addgroup.c
             </file>
             <line>
                 74306

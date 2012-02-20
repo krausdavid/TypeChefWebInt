@@ -38,7 +38,7 @@
                 definedEx(CONFIG_FGCONSOLE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72855
@@ -84,7 +84,7 @@
                 definedEx(CONFIG_FGCONSOLE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72852
@@ -130,7 +130,7 @@
                 definedEx(CONFIG_FGCONSOLE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72880
@@ -336,7 +336,7 @@
                 definedEx(CONFIG_FGCONSOLE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/fgconsole.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/fgconsole.c
             </file>
             <line>
                 74190
@@ -470,7 +470,7 @@
                 (definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; definedEx(CONFIG_FGCONSOLE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74184
@@ -548,7 +548,7 @@
                 definedEx(CONFIG_FGCONSOLE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72830
@@ -836,7 +836,7 @@
                 (!definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; definedEx(CONFIG_FGCONSOLE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74184
@@ -870,7 +870,7 @@
                 definedEx(CONFIG_FGCONSOLE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72827
@@ -900,7 +900,7 @@
                 definedEx(CONFIG_FGCONSOLE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/fgconsole.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/fgconsole.c
             </file>
             <line>
                 74187
@@ -910,7 +910,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/console-tools/fgconsole.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/fgconsole.c
             </file>
             <line>
                 74184
@@ -978,7 +978,7 @@
                 definedEx(CONFIG_FGCONSOLE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72883
@@ -1070,7 +1070,7 @@
                 definedEx(CONFIG_FGCONSOLE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/fgconsole.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/fgconsole.c
             </file>
             <line>
                 74177

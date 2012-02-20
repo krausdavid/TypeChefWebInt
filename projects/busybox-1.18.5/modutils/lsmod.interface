@@ -24,7 +24,7 @@
                 ((!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || !definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) &amp;&amp; definedEx(CONFIG_LSMOD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78912
@@ -55,10 +55,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))))))
+                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78885
@@ -68,7 +68,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78864
@@ -78,7 +78,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78885
@@ -88,7 +88,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78864
@@ -120,7 +120,7 @@
                 (!definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE) &amp;&amp; definedEx(CONFIG_LSMOD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78824
@@ -166,7 +166,7 @@
                 definedEx(CONFIG_LSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72865
@@ -212,7 +212,7 @@
                 definedEx(CONFIG_LSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72862
@@ -239,10 +239,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))))))
+                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78859
@@ -252,7 +252,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78859
@@ -292,7 +292,7 @@
                 (definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE) &amp;&amp; definedEx(CONFIG_LSMOD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78799
@@ -321,10 +321,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_CLEAN_UP)) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))))))
+                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_CLEAN_UP)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78908
@@ -334,7 +334,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78908
@@ -380,7 +380,7 @@
                 definedEx(CONFIG_LSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72890
@@ -416,7 +416,7 @@
                 (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_LSMOD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78838
@@ -619,10 +619,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_LSMOD) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_UNICODE_SUPPORT))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || ((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_UNICODE_SUPPORT))) || definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE) || ((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT))))
+                (definedEx(CONFIG_LSMOD) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_UNICODE_SUPPORT))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || ((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || ((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_UNICODE_SUPPORT))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78887
@@ -632,7 +632,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78891
@@ -642,7 +642,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78868
@@ -652,7 +652,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78872
@@ -662,7 +662,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78887
@@ -672,7 +672,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78891
@@ -682,7 +682,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78868
@@ -692,7 +692,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78872
@@ -702,7 +702,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78848
@@ -712,7 +712,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78814
@@ -748,7 +748,7 @@
                 ((!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || !definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) &amp;&amp; definedEx(CONFIG_LSMOD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78912
@@ -914,7 +914,7 @@
                 definedEx(CONFIG_LSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72840
@@ -1041,10 +1041,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))))))
+                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))))) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 78881
@@ -1054,7 +1054,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 78861
@@ -1064,7 +1064,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 78881
@@ -1074,7 +1074,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 78861
@@ -1108,7 +1108,7 @@
                 (definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE) &amp;&amp; definedEx(CONFIG_LSMOD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78819
@@ -1181,10 +1181,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT))))
+                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78889
@@ -1194,7 +1194,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78870
@@ -1204,7 +1204,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78889
@@ -1214,7 +1214,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78870
@@ -1239,10 +1239,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_LSMOD) &amp;&amp; (((definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))))
+                (definedEx(CONFIG_LSMOD) &amp;&amp; ((((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) || ((!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) || (definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; (!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 78841
@@ -1252,7 +1252,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 78841
@@ -1422,7 +1422,7 @@
                 definedEx(CONFIG_LSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72837
@@ -1456,7 +1456,7 @@
                 (definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE) &amp;&amp; definedEx(CONFIG_LSMOD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78801
@@ -1524,7 +1524,7 @@
                 definedEx(CONFIG_LSMOD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72893
@@ -1551,10 +1551,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || (definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE) &amp;&amp; !definedEx(CONFIG_FEATURE_CLEAN_UP)) || (definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP))))
+                (definedEx(CONFIG_LSMOD) &amp;&amp; (((!definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) || !definedEx(CONFIG_FEATURE_2_4_MODULES)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; definedEx(CONFIG_FEATURE_2_4_MODULES) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT)) || (definedEx(CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || (definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE) &amp;&amp; !definedEx(CONFIG_FEATURE_CLEAN_UP)) || (definedEx(CONFIG_FEATURE_CHECK_TAINTED_MODULE) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78892
@@ -1564,7 +1564,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78873
@@ -1574,7 +1574,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78892
@@ -1584,7 +1584,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78873
@@ -1594,7 +1594,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78810
@@ -1604,7 +1604,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78810
@@ -1696,7 +1696,7 @@
                 definedEx(CONFIG_LSMOD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/modutils/lsmod.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/modutils/lsmod.c
             </file>
             <line>
                 78834

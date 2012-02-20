@@ -1345,7 +1345,7 @@
     </function>
             </type>
             <featureexpr>
-                ((definedEx(CONFIG_UDHCPC) &amp;&amp; !definedEx(CONFIG_FEATURE_IFUPDOWN_EXTERNAL_DHCP) &amp;&amp; definedEx(CONFIG_FEATURE_IFUPDOWN_IPV4)) || (definedEx(CONFIG_FEATURE_IFUPDOWN_IPV4) &amp;&amp; definedEx(CONFIG_FEATURE_IFUPDOWN_EXTERNAL_DHCP)))
+                ((definedEx(CONFIG_FEATURE_IFUPDOWN_IPV4) &amp;&amp; definedEx(CONFIG_FEATURE_IFUPDOWN_EXTERNAL_DHCP)) || (definedEx(CONFIG_UDHCPC) &amp;&amp; !definedEx(CONFIG_FEATURE_IFUPDOWN_EXTERNAL_DHCP) &amp;&amp; definedEx(CONFIG_FEATURE_IFUPDOWN_IPV4)))
             </featureexpr><pos>
             <file>
                 file cprojects/busybox/busybox-1.18.5/networking/ifupdown.c

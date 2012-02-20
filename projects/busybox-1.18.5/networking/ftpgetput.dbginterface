@@ -39,7 +39,7 @@ imports (45)
 	xconnect_stream: (*struct len_and_sockaddr) => signed int		if (def(CONFIG_FTPGET)|def(CONFIG_FTPPUT))		at file busybox-1.18.5/networking/ftpgetput.c:74304:8, file busybox-1.18.5/networking/ftpgetput.c:74234:25
 	xhost2sockaddr: (*char, signed int) => *struct len_and_sockaddr		if (def(CONFIG_FTPGET)|def(CONFIG_FTPPUT))		at file busybox-1.18.5/networking/ftpgetput.c:74480:7
 	xmalloc_sockaddr2dotted: (*struct sockaddr) => *char		if (def(CONFIG_FTPGET)|def(CONFIG_FTPPUT))		at file busybox-1.18.5/networking/ftpgetput.c:74483:3
-	xopen: (*char, signed int) => signed int		if (def(CONFIG_FTPGET)|def(CONFIG_FTPPUT))		at file busybox-1.18.5/networking/ftpgetput.c:74410:13, file busybox-1.18.5/networking/ftpgetput.c:74384:13, file busybox-1.18.5/networking/ftpgetput.c:74410:13
+	xopen: (*char, signed int) => signed int		if (def(CONFIG_FTPGET)|def(CONFIG_FTPPUT))		at file busybox-1.18.5/networking/ftpgetput.c:74410:13, file busybox-1.18.5/networking/ftpgetput.c:74410:13, file busybox-1.18.5/networking/ftpgetput.c:74384:13
 	xstrtoll: (*char, signed int) => signed long long		if (def(CONFIG_FTPGET)|def(CONFIG_FTPPUT))		at string literal: xstrtoll:72817:0
 	xstrtoll_range: (*char, signed int, signed long long, signed long long) => signed long long		if (def(CONFIG_FTPGET)|def(CONFIG_FTPPUT))		at string literal: xstrtoll_range:72817:0
 	xstrtoll_range_sfx: (*char, signed int, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_FTPGET)|def(CONFIG_FTPPUT))		at string literal: xstrtoll_range_sfx:72817:0

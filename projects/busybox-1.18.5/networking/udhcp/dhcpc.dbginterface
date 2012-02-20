@@ -35,7 +35,7 @@ imports (87)
 	putenv: (*char) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:78980:2, file busybox-1.18.5/networking/udhcp/dhcpc.c:78975:2, file busybox-1.18.5/networking/udhcp/dhcpc.c:78970:2, file busybox-1.18.5/networking/udhcp/dhcpc.c:78961:3, file busybox-1.18.5/networking/udhcp/dhcpc.c:78955:2, file busybox-1.18.5/networking/udhcp/dhcpc.c:78946:1, file busybox-1.18.5/networking/udhcp/dhcpc.c:78939:1
 	rand: (void) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:79015:8
 	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:79316:9
-	select: (signed int, *struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}, *struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}, *struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}, *struct timeval) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:80032:12
+	select: (signed int, *struct {Map(fds_bits -> List((True,One(CArray(CSigned(CLong()),-1)))))}, *struct {Map(fds_bits -> List((True,One(CArray(CSigned(CLong()),-1)))))}, *struct {Map(fds_bits -> List((True,One(CArray(CSigned(CLong()),-1)))))}, *struct timeval) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:80032:12
 	setlinebuf: (*struct _IO_FILE) => void		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:79989:1
 	setsockopt: (signed int, signed int, signed int, *void, unsigned int) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:79482:6, file busybox-1.18.5/networking/udhcp/dhcpc.c:79482:6
 	sleep: (unsigned int) => unsigned int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:80345:4, file busybox-1.18.5/networking/udhcp/dhcpc.c:80203:4
@@ -61,8 +61,8 @@ imports (87)
 	udhcp_recv_kernel_packet: (*struct dhcp_packet, signed int) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:80197:10
 	udhcp_send_kernel_packet: (*struct dhcp_packet, unsigned int, signed int, unsigned int, signed int) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:79290:8, file busybox-1.18.5/networking/udhcp/dhcpc.c:79227:9
 	udhcp_send_raw_packet: (*struct dhcp_packet, unsigned int, signed int, unsigned int, signed int, *unsigned char, signed int) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:79100:8
-	udhcp_sp_fd_set: (*struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}, signed int) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:80023:11
-	udhcp_sp_read: (*struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:80167:10
+	udhcp_sp_fd_set: (*struct {Map(fds_bits -> List((True,One(CArray(CSigned(CLong()),-1)))))}, signed int) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:80023:11
+	udhcp_sp_read: (*struct {Map(fds_bits -> List((True,One(CArray(CSigned(CLong()),-1)))))}) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:80167:10
 	udhcp_sp_setup: (void) => void		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:79995:1
 	udhcp_str2optset: (*char, *void) => signed int		if def(CONFIG_UDHCPC)		at file busybox-1.18.5/networking/udhcp/dhcpc.c:79953:2
 	unlink: (*char) => signed int		if def(CONFIG_UDHCPC)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:80363:53

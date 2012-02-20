@@ -26,7 +26,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74968
@@ -66,7 +66,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74960
@@ -112,7 +112,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72853
@@ -170,7 +170,7 @@
                 (definedEx(CONFIG_FEATURE_SHADOWPASSWDS) &amp;&amp; definedEx(CONFIG_USE_BB_SHADOW) &amp;&amp; definedEx(CONFIG_SULOGIN))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/shadow_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/shadow_.h
             </file>
             <line>
                 74927
@@ -204,7 +204,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74971
@@ -214,7 +214,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74949
@@ -260,7 +260,7 @@
                 (definedEx(CONFIG_USE_BB_CRYPT) &amp;&amp; definedEx(CONFIG_SULOGIN))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74954
@@ -292,7 +292,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74895
@@ -302,7 +302,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74893
@@ -312,7 +312,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74892
@@ -358,7 +358,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72850
@@ -402,7 +402,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74944
@@ -436,7 +436,7 @@
                 (definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; definedEx(CONFIG_SULOGIN))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
                 74910
@@ -486,7 +486,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74989
@@ -532,7 +532,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72878
@@ -564,7 +564,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74896
@@ -574,7 +574,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74894
@@ -738,7 +738,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74885
@@ -772,7 +772,7 @@
                 (!definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; definedEx(CONFIG_SULOGIN))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
                 74910
@@ -846,7 +846,7 @@
                 (definedEx(CONFIG_SULOGIN) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74975
@@ -1012,7 +1012,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72828
@@ -1130,7 +1130,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74968
@@ -1162,7 +1162,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74900
@@ -1172,7 +1172,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74900
@@ -1182,7 +1182,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74900
@@ -1216,7 +1216,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74966
@@ -1294,7 +1294,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74888
@@ -1324,7 +1324,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74906
@@ -1473,10 +1473,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_FEATURE_SHADOWPASSWDS) &amp;&amp; !definedEx(CONFIG_USE_BB_SHADOW) &amp;&amp; definedEx(CONFIG_SULOGIN))
+                (definedEx(CONFIG_FEATURE_SHADOWPASSWDS) &amp;&amp; !definedEx(CONFIG_USE_BB_SHADOW) &amp;&amp; (!definedEx(CONFIG_FEATURE_SHADOWPASSWDS) || !definedEx(CONFIG_USE_BB_SHADOW)) &amp;&amp; definedEx(CONFIG_SULOGIN))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/shadow_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/shadow_.h
             </file>
             <line>
                 74927
@@ -1512,7 +1512,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74984
@@ -1522,7 +1522,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74982
@@ -1594,7 +1594,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74965
@@ -1628,7 +1628,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74992
@@ -1638,7 +1638,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74902
@@ -1672,7 +1672,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72825
@@ -1710,7 +1710,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74894
@@ -1778,7 +1778,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72881
@@ -1820,7 +1820,7 @@
                 (!definedEx(CONFIG_USE_BB_CRYPT) &amp;&amp; definedEx(CONFIG_SULOGIN))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74954
@@ -1850,7 +1850,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74961
@@ -1942,7 +1942,7 @@
                 definedEx(CONFIG_SULOGIN)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/loginutils/sulogin.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/loginutils/sulogin.c
             </file>
             <line>
                 74873

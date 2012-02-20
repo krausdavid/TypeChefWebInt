@@ -401,6 +401,70 @@
         </import><import>
             <sig>
             <name>
+                regexec
+            </name>
+            <type>
+                <function>
+        <param>
+            <pointer>
+        <struct isUnion="false">
+        re_pattern_buffer
+    </struct>
+    </pointer>
+        </param><param>
+            <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+        </param><param>
+            <unsigned>
+        <long></long>
+    </unsigned>
+        </param><param>
+            <array length="-1">
+        <astruct isUnion="false">
+        
+    </astruct>
+    </array>
+        </param><param>
+            <signed>
+        <int></int>
+    </signed>
+        </param><ret>
+            <signed>
+        <int></int>
+    </signed>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                definedEx(CONFIG_FEATURE_LESS_REGEXP)
+            </featureexpr><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/miscutils/less.c
+            </file>
+            <line>
+                75631
+            </line>
+            <col>
+                6
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/miscutils/less.c
+            </file>
+            <line>
+                75203
+            </line>
+            <col>
+                17
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
                 exit
             </name>
             <type>
@@ -2689,70 +2753,6 @@
             </line>
             <col>
                 0
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
-                regexec
-            </name>
-            <type>
-                <function>
-        <param>
-            <pointer>
-        <struct isUnion="false">
-        re_pattern_buffer
-    </struct>
-    </pointer>
-        </param><param>
-            <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-        </param><param>
-            <unsigned>
-        <long></long>
-    </unsigned>
-        </param><param>
-            <array length="-1">
-        <astruct isUnion="false">
-        
-    </astruct>
-    </array>
-        </param><param>
-            <signed>
-        <int></int>
-    </signed>
-        </param><ret>
-            <signed>
-        <int></int>
-    </signed>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                definedEx(CONFIG_FEATURE_LESS_REGEXP)
-            </featureexpr><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/miscutils/less.c
-            </file>
-            <line>
-                75631
-            </line>
-            <col>
-                6
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/miscutils/less.c
-            </file>
-            <line>
-                75203
-            </line>
-            <col>
-                17
             </col>
         </pos>
         </sig>

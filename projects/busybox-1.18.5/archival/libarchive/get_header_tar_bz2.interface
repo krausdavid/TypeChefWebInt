@@ -38,7 +38,7 @@
                 definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72851
@@ -74,7 +74,7 @@
                 (!definedEx(CONFIG_NOMMU) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_SEAMLESS_BZ2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
             </file>
             <line>
                 74473
@@ -120,7 +120,7 @@
                 definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72848
@@ -156,7 +156,7 @@
                 (definedEx(CONFIG_NOMMU) &amp;&amp; definedEx(CONFIG_FEATURE_SEAMLESS_BZ2))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/archive.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/archive.h
             </file>
             <line>
                 74473
@@ -204,7 +204,7 @@
                 (!definedEx(CONFIG_NOMMU) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_SEAMLESS_BZ2))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/archive.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/archive.h
             </file>
             <line>
                 74473
@@ -250,7 +250,7 @@
                 definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72876
@@ -586,7 +586,7 @@
                 definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72826
@@ -732,7 +732,7 @@
                 definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
             </file>
             <line>
                 74469
@@ -768,7 +768,7 @@
                 (!definedEx(CONFIG_NOMMU) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_SEAMLESS_BZ2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
             </file>
             <line>
                 74473
@@ -952,7 +952,7 @@
                 (!definedEx(CONFIG_NOMMU) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_SEAMLESS_BZ2))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/archive.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/archive.h
             </file>
             <line>
                 74473
@@ -986,7 +986,7 @@
                 definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
             </file>
             <line>
                 74480
@@ -1020,7 +1020,7 @@
                 definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72823
@@ -1088,7 +1088,7 @@
                 definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72879
@@ -1174,7 +1174,7 @@
                 definedEx(CONFIG_FEATURE_SEAMLESS_BZ2)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/get_header_tar_bz2.c
             </file>
             <line>
                 74466

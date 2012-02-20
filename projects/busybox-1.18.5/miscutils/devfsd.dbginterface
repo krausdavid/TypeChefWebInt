@@ -54,12 +54,12 @@ imports (97)
 	read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77516:10
 	readdir: (*struct __dirstream) => *struct dirent		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:78196:14
 	readlink: (*char, *char, unsigned long) => signed long		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77950:9, file busybox-1.18.5/miscutils/devfsd.c:77920:19, file busybox-1.18.5/miscutils/devfsd.c:77918:16
-	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((True,CSigned(CInt()))), rm_eo -> List((True,CSigned(CInt()))))}[], signed int) => signed int		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77583:5
+	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((True,One(CSigned(CInt())))), rm_eo -> List((True,One(CSigned(CInt())))))}[], signed int) => signed int		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77583:5
 	regfree: (*struct re_pattern_buffer) => void		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77994:2
 	safe_gethostname: (void) => *char		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:78142:13
 	setpgid: (signed int, signed int) => signed int		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77248:2, file busybox-1.18.5/miscutils/devfsd.c:77248:2
 	sigaction_set: (signed int, *struct sigaction) => signed int		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77180:1, file busybox-1.18.5/miscutils/devfsd.c:77179:1
-	sigemptyset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77176:1
+	sigemptyset: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}) => signed int		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77176:1
 	skip_whitespace: (*char) => *char		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77302:11
 	snprintf: (*char, unsigned long, *char, ...) => signed int		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:78171:1, file busybox-1.18.5/miscutils/devfsd.c:77943:3, file busybox-1.18.5/miscutils/devfsd.c:77843:4, file busybox-1.18.5/miscutils/devfsd.c:77815:3, file busybox-1.18.5/miscutils/devfsd.c:77733:1, file busybox-1.18.5/miscutils/devfsd.c:77695:1
 	socket: (signed int, signed int, signed int) => signed int		if def(CONFIG_DEVFSD)		at file busybox-1.18.5/miscutils/devfsd.c:77939:8

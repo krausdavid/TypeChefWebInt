@@ -7,7 +7,7 @@ imports (36)
 	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_TR)		at file busybox-1.18.5/coreutils/tr.c:74469:3
 	bb_perror_msg_and_die: (*char, ...) => void		if def(CONFIG_TR)		at file busybox-1.18.5/coreutils/tr.c:74494:5
 	bb_process_escape_sequence: (**char) => char		if def(CONFIG_TR)		at file busybox-1.18.5/coreutils/tr.c:74254:19
-	bb_show_usage: (void) => void		if def(CONFIG_TR)		at file busybox-1.18.5/coreutils/tr.c:74382:5, file busybox-1.18.5/coreutils/tr.c:74382:5, file busybox-1.18.5/coreutils/tr.c:74382:5, file busybox-1.18.5/coreutils/tr.c:74382:5
+	bb_show_usage: (void) => void		if (def(CONFIG_TR)&(!def(CONFIG_FEATURE_TR_CLASSES)|!def(CONFIG_FEATURE_TR_EQUIV)|(def(CONFIG_FEATURE_TR_CLASSES)&def(CONFIG_FEATURE_TR_EQUIV))))		at file busybox-1.18.5/coreutils/tr.c:74382:5, file busybox-1.18.5/coreutils/tr.c:74382:5, file busybox-1.18.5/coreutils/tr.c:74382:5, file busybox-1.18.5/coreutils/tr.c:74382:5
 	bb_strtoll: (*char, **char, signed int) => signed long long		if def(CONFIG_TR)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72895:9
 	bb_strtou: (*char, **char, signed int) => unsigned int		if def(CONFIG_TR)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72920:9
 	bb_strtoull: (*char, **char, signed int) => unsigned long long		if def(CONFIG_TR)		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72892:9

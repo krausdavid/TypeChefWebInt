@@ -32,7 +32,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81204
@@ -42,7 +42,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81183
@@ -84,7 +84,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80859
@@ -122,7 +122,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81714
@@ -132,7 +132,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81701
@@ -166,7 +166,7 @@
                 ((definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD) || (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_ROTATE_LOGFILE))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81709
@@ -176,7 +176,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81004
@@ -186,7 +186,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80948
@@ -214,7 +214,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; !definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81393
@@ -224,7 +224,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81393
@@ -266,7 +266,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80862
@@ -312,7 +312,7 @@
                 (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72855
@@ -358,7 +358,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81696
@@ -398,7 +398,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80889
@@ -408,7 +408,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80886
@@ -446,7 +446,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80976
@@ -486,7 +486,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81557
@@ -518,7 +518,7 @@
                 ((definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)) &amp;&amp; ((definedEx(CONFIG_SYSLOGD) &amp;&amp; ((definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_SYSLOGD_DUP)) || (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_REMOTE_LOG) &amp;&amp; !definedEx(CONFIG_FEATURE_SYSLOGD_DUP))) &amp;&amp; definedEx(CONFIG_FEATURE_REMOTE_LOG)) || (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_ROTATE_LOGFILE)) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81348
@@ -528,7 +528,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81022
@@ -538,7 +538,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80981
@@ -548,7 +548,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80966
@@ -582,7 +582,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80931
@@ -592,7 +592,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80903
@@ -602,7 +602,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80893
@@ -612,7 +612,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80878
@@ -622,7 +622,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80873
@@ -668,7 +668,7 @@
                 (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72852
@@ -700,7 +700,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81518
@@ -710,7 +710,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81434
@@ -739,10 +739,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_PIDFILE) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
+                (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_PIDFILE) &amp;&amp; (!definedEx(CONFIG_SYSLOGD) || definedEx(CONFIG_FEATURE_PIDFILE)) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 81572
@@ -774,7 +774,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80856
@@ -810,7 +810,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_ROTATE_LOGFILE) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81025
@@ -846,7 +846,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81710
@@ -892,7 +892,7 @@
                 (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81129
@@ -902,7 +902,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72880
@@ -936,7 +936,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81078
@@ -946,7 +946,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80963
@@ -982,7 +982,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_REMOTE_LOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81519
@@ -1022,7 +1022,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81627
@@ -1032,7 +1032,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81627
@@ -1196,7 +1196,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81689
@@ -1270,7 +1270,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; !definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81241
@@ -1280,7 +1280,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81241
@@ -1316,7 +1316,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80934
@@ -1326,7 +1326,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80869
@@ -1364,7 +1364,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_ROTATE_LOGFILE) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80987
@@ -1399,10 +1399,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_NOMMU) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
+                (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_NOMMU) &amp;&amp; (!definedEx(CONFIG_SYSLOGD) || definedEx(CONFIG_NOMMU)) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 81562
@@ -1484,7 +1484,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81681
@@ -1524,7 +1524,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_SYSLOGD_DUP) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81302
@@ -1564,7 +1564,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81257
@@ -1682,7 +1682,7 @@
                 (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72830
@@ -1752,7 +1752,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81556
@@ -1792,7 +1792,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80971
@@ -1838,7 +1838,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81178
@@ -1878,7 +1878,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_REMOTE_LOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81200
@@ -1908,7 +1908,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81394
@@ -1948,7 +1948,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_ROTATE_LOGFILE) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81017
@@ -1958,7 +1958,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81014
@@ -2048,7 +2048,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; ((definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_SYSLOGD_DUP)) || (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_REMOTE_LOG) &amp;&amp; !definedEx(CONFIG_FEATURE_SYSLOGD_DUP))) &amp;&amp; definedEx(CONFIG_FEATURE_REMOTE_LOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81333
@@ -2082,7 +2082,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81384
@@ -2122,7 +2122,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81170
@@ -2132,7 +2132,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80881
@@ -2200,7 +2200,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81267
@@ -2238,7 +2238,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_REMOTE_LOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81522
@@ -2278,7 +2278,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80871
@@ -2316,7 +2316,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81185
@@ -2356,7 +2356,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81184
@@ -2402,7 +2402,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81061
@@ -2412,7 +2412,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81054
@@ -2456,7 +2456,7 @@
                 (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81684
@@ -2466,7 +2466,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81445
@@ -2496,7 +2496,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_REMOTE_LOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81521
@@ -2506,7 +2506,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81194
@@ -2636,7 +2636,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81176
@@ -2678,7 +2678,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81175
@@ -2718,7 +2718,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81434
@@ -2728,7 +2728,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80924
@@ -2738,7 +2738,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80918
@@ -2768,7 +2768,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81224
@@ -2778,7 +2778,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81223
@@ -2818,7 +2818,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81027
@@ -2828,7 +2828,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81029
@@ -2838,7 +2838,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80979
@@ -2910,7 +2910,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; !definedEx(CONFIG_NOMMU) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 81562
@@ -2952,7 +2952,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81538
@@ -2962,7 +2962,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81536
@@ -2972,7 +2972,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81532
@@ -3002,7 +3002,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81681
@@ -3036,7 +3036,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81660
@@ -3046,7 +3046,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81653
@@ -3080,7 +3080,7 @@
                 (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72827
@@ -3114,7 +3114,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81625
@@ -3124,7 +3124,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81625
@@ -3152,7 +3152,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81717
@@ -3194,7 +3194,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81224
@@ -3204,7 +3204,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81223
@@ -3244,7 +3244,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80876
@@ -3312,7 +3312,7 @@
                 (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72883
@@ -3354,7 +3354,7 @@
                 (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_IPC_SYSLOG) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80930
@@ -3364,7 +3364,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 80902
@@ -3416,7 +3416,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81226
@@ -3452,7 +3452,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81079
@@ -3486,7 +3486,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81181
@@ -3516,7 +3516,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81350
@@ -3526,7 +3526,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81179
@@ -3568,7 +3568,7 @@
                 ((definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD)) &amp;&amp; (definedEx(CONFIG_LOGGER) || definedEx(CONFIG_SYSLOGD) || (definedEx(CONFIG_SYSLOGD) &amp;&amp; definedEx(CONFIG_FEATURE_ROTATE_LOGFILE))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81711
@@ -3578,7 +3578,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81092
@@ -3588,7 +3588,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81088
@@ -3598,7 +3598,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81012
@@ -3608,7 +3608,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81010
@@ -3700,7 +3700,7 @@
                 definedEx(CONFIG_LOGGER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/logger.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/logger.c
             </file>
             <line>
                 81674
@@ -3740,7 +3740,7 @@
                 definedEx(CONFIG_SYSLOGD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/sysklogd/syslogd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/sysklogd/syslogd.c
             </file>
             <line>
                 81406

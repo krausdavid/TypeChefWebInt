@@ -26,30 +26,30 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77805
+                83545
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77774
+                83514
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77178
+                82918
             </line>
             <col>
                 7
@@ -78,10 +78,10 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77485
+                83225
             </line>
             <col>
                 10
@@ -112,10 +112,10 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77402
+                83142
             </line>
             <col>
                 7
@@ -152,120 +152,120 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77889
+                83629
             </line>
             <col>
                 22
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77889
+                83629
             </line>
             <col>
                 22
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77878
+                83618
             </line>
             <col>
                 18
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77838
+                83578
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77826
+                83566
             </line>
             <col>
                 35
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77817
+                83557
             </line>
             <col>
                 33
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77826
+                83566
             </line>
             <col>
                 35
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77817
+                83557
             </line>
             <col>
                 33
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77254
+                82994
             </line>
             <col>
                 22
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77254
+                82994
             </line>
             <col>
                 22
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77242
+                82982
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77176
+                82916
             </line>
             <col>
                 6
@@ -308,7 +308,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72884
@@ -340,10 +340,10 @@
                 definedEx(CONFIG_FEATURE_INSTALLER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77719
+                83459
             </line>
             <col>
                 3
@@ -386,10 +386,10 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77400
+                83140
             </line>
             <col>
                 7
@@ -428,20 +428,20 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77654
+                83394
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77571
+                83311
             </line>
             <col>
                 1
@@ -468,10 +468,10 @@
                 definedEx(CONFIG_FEATURE_SUID)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77603
+                83343
             </line>
             <col>
                 8
@@ -508,20 +508,20 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77500
+                83240
             </line>
             <col>
                 9
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77426
+                83166
             </line>
             <col>
                 27
@@ -552,20 +552,20 @@
                 (definedEx(CONFIG_FEATURE_SUID) &amp;&amp; definedEx(CONFIG_FEATURE_SUID_CONFIG))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77645
+                83385
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77636
+                83376
             </line>
             <col>
                 3
@@ -608,7 +608,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72881
@@ -652,30 +652,30 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77916
+                83656
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77793
+                83533
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77243
+                82983
             </line>
             <col>
                 5
@@ -708,10 +708,10 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77388
+                83128
             </line>
             <col>
                 11
@@ -744,30 +744,30 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77510
+                83250
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77493
+                83233
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77345
+                83085
             </line>
             <col>
                 8
@@ -794,20 +794,20 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77917
+                83657
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77908
+                83648
             </line>
             <col>
                 1
@@ -850,7 +850,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72909
@@ -890,10 +890,10 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77384
+                83124
             </line>
             <col>
                 6
@@ -930,10 +930,10 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77450
+                83190
             </line>
             <col>
                 7
@@ -1134,10 +1134,10 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77420
+                83160
             </line>
             <col>
                 27
@@ -1168,330 +1168,410 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77977
+                83717
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77976
+                83716
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77977
+                83717
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77976
+                83716
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77856
+                83596
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77855
+                83595
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77803
+                83543
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77802
+                83542
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77800
+                83540
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77789
+                83529
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77785
+                83525
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77783
+                83523
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77781
+                83521
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77776
+                83516
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77753
+                83493
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77752
+                83492
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77751
+                83491
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77132
+                82872
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77131
+                82871
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77130
+                82870
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77129
+                82869
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77128
+                82868
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77126
+                82866
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77124
+                82864
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77123
+                82863
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77132
+                82872
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77131
+                82871
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77130
+                82870
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77129
+                82869
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77128
+                82868
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77126
+                82866
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77124
+                82864
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77123
+                82863
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82872
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82871
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82870
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82869
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82868
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82866
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82864
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82863
             </line>
             <col>
                 2
@@ -1528,10 +1608,10 @@
                 (definedEx(CONFIG_FEATURE_SUID) &amp;&amp; definedEx(CONFIG_FEATURE_SUID_CONFIG))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77644
+                83384
             </line>
             <col>
                 6
@@ -1570,10 +1650,10 @@
                 definedEx(CONFIG_FEATURE_INSTALLER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77705
+                83445
             </line>
             <col>
                 8
@@ -1606,20 +1686,20 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77969
+                83709
             </line>
             <col>
                 15
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77969
+                83709
             </line>
             <col>
                 15
@@ -1652,20 +1732,20 @@
                 (definedEx(CONFIG_FEATURE_SUID_CONFIG) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                77525
+                83265
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                77314
+                83054
             </line>
             <col>
                 20
@@ -1740,20 +1820,20 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77227
+                82967
             </line>
             <col>
                 30
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77227
+                82967
             </line>
             <col>
                 30
@@ -1782,10 +1862,10 @@
                 definedEx(CONFIG_FEATURE_COMPRESS_USAGE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77061
+                82801
             </line>
             <col>
                 11
@@ -1900,10 +1980,10 @@
                 definedEx(CONFIG_FEATURE_SUID)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77667
+                83407
             </line>
             <col>
                 2
@@ -1930,7 +2010,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72859
@@ -2002,10 +2082,10 @@
                 (definedEx(CONFIG_FEATURE_SUID_CONFIG) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
-                77301
+                83041
             </line>
             <col>
                 21
@@ -2070,70 +2150,80 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77978
+                83718
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77978
+                83718
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77857
+                83597
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77152
+                82892
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77118
+                82858
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77152
+                82858
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82892
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77118
+                82858
             </line>
             <col>
                 3
@@ -2170,10 +2260,10 @@
                 definedEx(CONFIG_FEATURE_INSTALLER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77702
+                83442
             </line>
             <col>
                 7
@@ -2240,40 +2330,40 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77943
+                83683
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77937
+                83677
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77943
+                83683
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77937
+                83677
             </line>
             <col>
                 1
@@ -2306,10 +2396,10 @@
                 (definedEx(CONFIG_FEATURE_SUID_CONFIG) &amp;&amp; !definedEx(CONFIG_USE_BB_PWD_GRP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
-                77542
+                83282
             </line>
             <col>
                 21
@@ -2346,40 +2436,40 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77514
+                83254
             </line>
             <col>
                 26
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77467
+                83207
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77437
+                83177
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77420
+                83160
             </line>
             <col>
                 7
@@ -2412,20 +2502,20 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77820
+                83560
             </line>
             <col>
                 12
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77820
+                83560
             </line>
             <col>
                 12
@@ -2466,10 +2556,10 @@
                 definedEx(CONFIG_FEATURE_COMPRESS_USAGE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77063
+                82803
             </line>
             <col>
                 3
@@ -2506,10 +2596,10 @@
                 (definedEx(CONFIG_FEATURE_SUID) &amp;&amp; definedEx(CONFIG_FEATURE_SUID_CONFIG))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77635
+                83375
             </line>
             <col>
                 6
@@ -2588,10 +2678,10 @@
                 definedEx(CONFIG_FEATURE_INSTALLER)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77700
+                83440
             </line>
             <col>
                 6
@@ -2726,20 +2816,20 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77747
+                83487
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77747
+                83487
             </line>
             <col>
                 3
@@ -2770,20 +2860,20 @@
                 definedEx(CONFIG_FEATURE_SUID_CONFIG)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77574
+                83314
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77405
+                83145
             </line>
             <col>
                 3
@@ -2810,10 +2900,10 @@
                 definedEx(CONFIG_FEATURE_SUID)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77663
+                83403
             </line>
             <col>
                 6
@@ -2841,13 +2931,13 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_FEATURE_SUID_CONFIG) &amp;&amp; !definedEx(CONFIG_USE_BB_PWD_GRP))
+                (definedEx(CONFIG_FEATURE_SUID_CONFIG) &amp;&amp; !definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (!definedEx(CONFIG_FEATURE_SUID_CONFIG) || !definedEx(CONFIG_USE_BB_PWD_GRP)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
-                77301
+                83041
             </line>
             <col>
                 21
@@ -2876,10 +2966,10 @@
                 definedEx(CONFIG_FEATURE_COMPRESS_USAGE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77065
+                82805
             </line>
             <col>
                 1
@@ -2908,10 +2998,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77214
+                82954
             </line>
             <col>
                 24
@@ -2942,20 +3032,20 @@
                 definedEx(CONFIG_FEATURE_SUID)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77664
+                83404
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77626
+                83366
             </line>
             <col>
                 3
@@ -2986,7 +3076,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72856
@@ -3022,20 +3112,20 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77796
+                83536
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77750
+                83490
             </line>
             <col>
                 2
@@ -3068,10 +3158,10 @@
                 (definedEx(CONFIG_FEATURE_SUID_CONFIG) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
-                77542
+                83282
             </line>
             <col>
                 21
@@ -3136,7 +3226,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72912
@@ -3166,20 +3256,20 @@
                 (definedEx(CONFIG_FEATURE_SUID_CONFIG) || definedEx(CONFIG_FEATURE_SUID))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77588
+                83328
             </line>
             <col>
                 24
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77380
+                83120
             </line>
             <col>
                 8
@@ -3216,10 +3306,10 @@
                 definedEx(CONFIG_LOCALE_SUPPORT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77233
+                82973
             </line>
             <col>
                 2
@@ -3264,10 +3354,10 @@
                 definedEx(CONFIG_FEATURE_COMPRESS_USAGE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77053
+                82793
             </line>
             <col>
                 5
@@ -3294,10 +3384,10 @@
                 definedEx(CONFIG_FEATURE_SUID)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77666
+                83406
             </line>
             <col>
                 2
@@ -3330,10 +3420,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77851
+                83591
             </line>
             <col>
                 15
@@ -3381,7 +3471,7 @@
                 file systems/redhat/usr/include/assert.h
             </file>
             <line>
-                77378
+                83118
             </line>
             <col>
                 83
@@ -3405,43 +3495,63 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_FEATURE_INSTALLER) || definedEx(CONFIG_FEATURE_SUID_CONFIG) || (!definedEx(CONFIG_FEATURE_CLEAN_UP) &amp;&amp; (definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_SHOW_USAGE)) &amp;&amp; definedEx(CONFIG_FEATURE_COMPRESS_USAGE)) || (definedEx(CONFIG_FEATURE_CLEAN_UP) &amp;&amp; (definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_SHOW_USAGE)) &amp;&amp; definedEx(CONFIG_FEATURE_COMPRESS_USAGE)))
+                ((!definedEx(CONFIG_SHOW_USAGE) &amp;&amp; definedEx(CONFIG_FEATURE_COMPRESS_USAGE) &amp;&amp; (definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_SHOW_USAGE)) &amp;&amp; !definedEx(CONFIG_FEATURE_CLEAN_UP)) || (definedEx(CONFIG_SHOW_USAGE) &amp;&amp; !definedEx(CONFIG_FEATURE_CLEAN_UP) &amp;&amp; definedEx(CONFIG_FEATURE_COMPRESS_USAGE)) || (!definedEx(CONFIG_SHOW_USAGE) &amp;&amp; definedEx(CONFIG_FEATURE_COMPRESS_USAGE) &amp;&amp; (definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_SHOW_USAGE)) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP)) || definedEx(CONFIG_FEATURE_SUID_CONFIG) || (definedEx(CONFIG_SHOW_USAGE) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP) &amp;&amp; definedEx(CONFIG_FEATURE_COMPRESS_USAGE)) || definedEx(CONFIG_FEATURE_INSTALLER))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77721
+                83461
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77578
+                83318
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77144
+                82884
             </line>
             <col>
                 35
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77144
+                82884
+            </line>
+            <col>
+                35
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82884
+            </line>
+            <col>
+                35
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82884
             </line>
             <col>
                 35
@@ -3471,23 +3581,23 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_FEATURE_SUID_CONFIG) &amp;&amp; !definedEx(CONFIG_USE_BB_PWD_GRP))
+                (definedEx(CONFIG_FEATURE_SUID_CONFIG) &amp;&amp; !definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (!definedEx(CONFIG_FEATURE_SUID_CONFIG) || !definedEx(CONFIG_USE_BB_PWD_GRP)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                77525
+                83265
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                77314
+                83054
             </line>
             <col>
                 20
@@ -3576,10 +3686,10 @@
                 !definedEx(CONFIG_BUILD_LIBBUSYBOX)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77922
+                83662
             </line>
             <col>
                 0
@@ -3612,10 +3722,10 @@
                 definedEx(CONFIG_BUILD_LIBBUSYBOX)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77922
+                83662
             </line>
             <col>
                 0
@@ -3652,10 +3762,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77911
+                83651
             </line>
             <col>
                 0
@@ -3690,10 +3800,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77860
+                83600
             </line>
             <col>
                 0
@@ -3722,10 +3832,10 @@
                 !definedEx(CONFIG_FEATURE_INDIVIDUAL)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77203
+                82943
             </line>
             <col>
                 0
@@ -3762,10 +3872,10 @@
                 definedEx(CONFIG_FEATURE_INDIVIDUAL)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77203
+                82943
             </line>
             <col>
                 0
@@ -3796,38 +3906,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77163
-            </line>
-            <col>
-                0
-            </col>
-        </pos>
-        </sig>
-        </export><export>
-            <sig>
-            <name>
-                bb_show_usage
-            </name>
-            <type>
-                <function>
-        <param>
-            <void></void>
-        </param><ret>
-            <void></void>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                (!definedEx(CONFIG_FEATURE_COMPRESS_USAGE) &amp;&amp; !definedEx(CONFIG_SHOW_USAGE))
-            </featureexpr><pos>
-            <file>
-                file busybox-1.18.5/libbb/appletlib.c
-            </file>
-            <line>
-                76731
+                82903
             </line>
             <col>
                 0
@@ -3852,10 +3934,38 @@
                 (definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_SHOW_USAGE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/appletlib.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
             </file>
             <line>
-                77076
+                82816
+            </line>
+            <col>
+                0
+            </col>
+        </pos>
+        </sig>
+        </export><export>
+            <sig>
+            <name>
+                bb_show_usage
+            </name>
+            <type>
+                <function>
+        <param>
+            <void></void>
+        </param><ret>
+            <void></void>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                (!definedEx(CONFIG_FEATURE_COMPRESS_USAGE) &amp;&amp; !definedEx(CONFIG_SHOW_USAGE))
+            </featureexpr><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/appletlib.c
+            </file>
+            <line>
+                82471
             </line>
             <col>
                 0

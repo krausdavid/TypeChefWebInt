@@ -38,7 +38,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72868
@@ -84,7 +84,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72865
@@ -130,7 +130,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72893
@@ -170,7 +170,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
             </file>
             <line>
                 74219
@@ -506,7 +506,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72843
@@ -618,7 +618,7 @@
                 (definedEx(CONFIG_FEATURE_VERBOSE_CP_MESSAGE) &amp;&amp; (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
             </file>
             <line>
                 74202
@@ -686,7 +686,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
             </file>
             <line>
                 74206
@@ -856,7 +856,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72840
@@ -924,7 +924,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72896
@@ -1016,7 +1016,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
             </file>
             <line>
                 74217
@@ -1078,7 +1078,7 @@
                 (definedEx(CONFIG_CP) || definedEx(CONFIG_MV) || definedEx(CONFIG_INSTALL))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/libcoreutils/cp_mv_stat.c
             </file>
             <line>
                 74196

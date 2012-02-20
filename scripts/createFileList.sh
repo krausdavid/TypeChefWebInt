@@ -15,8 +15,7 @@ rm fileList.temp
 
 
 
-IFS=$'\n' lines=($(cat ../projekts/busybox.project))
-
+IFS=$'\n' lines=($(cat ../projects/busybox.project))
 touch fileList.lst
 
 fun_toProcess|while read i; do

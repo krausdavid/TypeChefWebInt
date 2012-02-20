@@ -26,7 +26,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_EXEC) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75493
@@ -36,7 +36,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75491
@@ -68,7 +68,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_EXEC) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76426
@@ -78,7 +78,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75493
@@ -118,7 +118,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75751
@@ -164,7 +164,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73146
@@ -196,7 +196,7 @@
                 (definedEx(CONFIG_FIND) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_FEATURE_FIND_DELETE) || definedEx(CONFIG_FEATURE_FIND_EXEC)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76590
@@ -206,7 +206,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75734
@@ -216,7 +216,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75664
@@ -248,7 +248,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75752
@@ -288,145 +288,13 @@
                 (definedEx(CONFIG_FEATURE_FIND_PERM) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76494
             </line>
             <col>
                 8
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
-                bb_strtoull
-            </name>
-            <type>
-                <function>
-        <param>
-            <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-        </param><param>
-            <pointer>
-        <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-    </pointer>
-        </param><param>
-            <signed>
-        <int></int>
-    </signed>
-        </param><ret>
-            <unsigned>
-        <longlong></longlong>
-    </unsigned>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                definedEx(CONFIG_FIND)
-            </featureexpr><pos>
-            <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
-            </file>
-            <line>
-                73143
-            </line>
-            <col>
-                9
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
-                xzalloc
-            </name>
-            <type>
-                <function>
-        <param>
-            <unsigned>
-        <long></long>
-    </unsigned>
-        </param><ret>
-            <pointer>
-        <void></void>
-    </pointer>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                definedEx(CONFIG_FIND)
-            </featureexpr><pos>
-            <file>
-                file busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                76800
-            </line>
-            <col>
-                17
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                76269
-            </line>
-            <col>
-                8
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                76245
-            </line>
-            <col>
-                39
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
-                xuname2uid
-            </name>
-            <type>
-                <function>
-        <param>
-            <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-        </param><ret>
-            <signed>
-        <long></long>
-    </signed>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                (definedEx(CONFIG_FEATURE_FIND_USER) &amp;&amp; definedEx(CONFIG_FIND))
-            </featureexpr><pos>
-            <file>
-                file busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                76536
-            </line>
-            <col>
-                14
             </col>
         </pos>
         </sig>
@@ -480,7 +348,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76596
@@ -490,7 +358,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76586
@@ -500,7 +368,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76571
@@ -510,7 +378,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76542
@@ -520,7 +388,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76533
@@ -530,7 +398,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76526
@@ -540,7 +408,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76518
@@ -550,7 +418,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76509
@@ -560,7 +428,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76501
@@ -570,7 +438,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76490
@@ -580,7 +448,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76478
@@ -590,7 +458,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76471
@@ -600,7 +468,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76464
@@ -610,7 +478,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76457
@@ -620,7 +488,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76449
@@ -630,7 +498,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76405
@@ -640,7 +508,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76389
@@ -650,7 +518,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76382
@@ -660,7 +528,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76364
@@ -670,13 +538,145 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76351
             </line>
             <col>
                 43
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                bb_strtoull
+            </name>
+            <type>
+                <function>
+        <param>
+            <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+        </param><param>
+            <pointer>
+        <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+    </pointer>
+        </param><param>
+            <signed>
+        <int></int>
+    </signed>
+        </param><ret>
+            <unsigned>
+        <longlong></longlong>
+    </unsigned>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                definedEx(CONFIG_FIND)
+            </featureexpr><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
+            </file>
+            <line>
+                73143
+            </line>
+            <col>
+                9
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                xzalloc
+            </name>
+            <type>
+                <function>
+        <param>
+            <unsigned>
+        <long></long>
+    </unsigned>
+        </param><ret>
+            <pointer>
+        <void></void>
+    </pointer>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                definedEx(CONFIG_FIND)
+            </featureexpr><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                76800
+            </line>
+            <col>
+                17
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                76269
+            </line>
+            <col>
+                8
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                76245
+            </line>
+            <col>
+                39
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                xuname2uid
+            </name>
+            <type>
+                <function>
+        <param>
+            <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+        </param><ret>
+            <signed>
+        <long></long>
+    </signed>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                (definedEx(CONFIG_FEATURE_FIND_USER) &amp;&amp; definedEx(CONFIG_FIND))
+            </featureexpr><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                76536
+            </line>
+            <col>
+                14
             </col>
         </pos>
         </sig>
@@ -706,7 +706,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76321
@@ -716,7 +716,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76244
@@ -762,7 +762,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76543
@@ -772,7 +772,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76534
@@ -782,7 +782,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73171
@@ -810,7 +810,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76816
@@ -820,7 +820,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76603
@@ -854,7 +854,7 @@
                 (definedEx(CONFIG_FIND) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_MMIN) || definedEx(CONFIG_FEATURE_FIND_MTIME)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75626
@@ -864,7 +864,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75613
@@ -906,7 +906,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_REGEX) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76472
@@ -946,7 +946,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_XDEV) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76804
@@ -1104,7 +1104,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_DELETE) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75729
@@ -1186,7 +1186,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_PRINT0) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75687
@@ -1222,7 +1222,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75556
@@ -1283,60 +1283,6 @@
         </import><import>
             <sig>
             <name>
-                regexec
-            </name>
-            <type>
-                <function>
-        <param>
-            <pointer>
-        <struct isUnion="false">
-        re_pattern_buffer
-    </struct>
-    </pointer>
-        </param><param>
-            <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-        </param><param>
-            <unsigned>
-        <long></long>
-    </unsigned>
-        </param><param>
-            <array length="-1">
-        <astruct isUnion="false">
-        
-    </astruct>
-    </array>
-        </param><param>
-            <signed>
-        <int></int>
-    </signed>
-        </param><ret>
-            <signed>
-        <int></int>
-    </signed>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                (definedEx(CONFIG_FEATURE_FIND_REGEX) &amp;&amp; definedEx(CONFIG_FIND))
-            </featureexpr><pos>
-            <file>
-                file busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                75582
-            </line>
-            <col>
-                5
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
                 xatoi_positive
             </name>
             <type>
@@ -1358,7 +1304,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_MAXDEPTH) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76817
@@ -1398,7 +1344,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76575
@@ -1500,7 +1446,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75575
@@ -1510,7 +1456,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75569
@@ -1540,7 +1486,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73121
@@ -1614,7 +1560,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_EXEC) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75662
@@ -1648,7 +1594,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_GROUP) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76545
@@ -1722,7 +1668,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75797
@@ -1732,7 +1678,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75693
@@ -1772,7 +1718,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76756
@@ -1806,7 +1752,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76602
@@ -1846,7 +1792,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76790
@@ -1856,7 +1802,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76287
@@ -1932,7 +1878,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_EXEC) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75494
@@ -1942,7 +1888,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75480
@@ -2048,7 +1994,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76829
@@ -2132,7 +2078,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75747
@@ -2226,7 +2172,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_EXEC) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75501
@@ -2266,7 +2212,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_EXEC) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75498
@@ -2276,7 +2222,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75495
@@ -2356,7 +2302,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_NEWER) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76519
@@ -2398,7 +2344,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75745
@@ -2432,7 +2378,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76495
@@ -2442,7 +2388,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76441
@@ -2452,7 +2398,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76425
@@ -2462,7 +2408,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76410
@@ -2472,7 +2418,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76293
@@ -2482,7 +2428,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75848
@@ -2516,7 +2462,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73118
@@ -2584,13 +2530,67 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 73174
             </line>
             <col>
                 8
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                regexec
+            </name>
+            <type>
+                <function>
+        <param>
+            <pointer>
+        <struct isUnion="false">
+        re_pattern_buffer
+    </struct>
+    </pointer>
+        </param><param>
+            <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+        </param><param>
+            <unsigned>
+        <long></long>
+    </unsigned>
+        </param><param>
+            <array length="-1">
+        <astruct isUnion="false">
+        
+    </astruct>
+    </array>
+        </param><param>
+            <signed>
+        <int></int>
+    </signed>
+        </param><ret>
+            <signed>
+        <int></int>
+    </signed>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                (definedEx(CONFIG_FEATURE_FIND_REGEX) &amp;&amp; definedEx(CONFIG_FIND))
+            </featureexpr><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                75582
+            </line>
+            <col>
+                5
             </col>
         </pos>
         </sig>
@@ -2626,7 +2626,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76589
@@ -2660,7 +2660,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_DELETE) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75731
@@ -2690,7 +2690,7 @@
                 (definedEx(CONFIG_FEATURE_FIND_EXEC) &amp;&amp; definedEx(CONFIG_FIND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 75668
@@ -2814,7 +2814,7 @@
                 definedEx(CONFIG_FIND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/findutils/find.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/findutils/find.c
             </file>
             <line>
                 76706

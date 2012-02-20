@@ -38,7 +38,7 @@
                 definedEx(CONFIG_RESET)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72859
@@ -84,7 +84,7 @@
                 definedEx(CONFIG_RESET)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72856
@@ -130,7 +130,7 @@
                 definedEx(CONFIG_RESET)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72884
@@ -336,7 +336,7 @@
                 definedEx(CONFIG_RESET)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/reset.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/reset.c
             </file>
             <line>
                 74201
@@ -502,7 +502,7 @@
                 definedEx(CONFIG_RESET)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72834
@@ -612,7 +612,7 @@
                 definedEx(CONFIG_RESET)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/reset.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/reset.c
             </file>
             <line>
                 74193
@@ -824,7 +824,7 @@
                 (!definedEx(CONFIG_STTY) &amp;&amp; definedEx(CONFIG_RESET))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/reset.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/reset.c
             </file>
             <line>
                 74205
@@ -858,7 +858,7 @@
                 definedEx(CONFIG_RESET)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72831
@@ -898,7 +898,7 @@
                 (definedEx(CONFIG_STTY) &amp;&amp; definedEx(CONFIG_RESET))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/reset.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/reset.c
             </file>
             <line>
                 74205
@@ -966,7 +966,7 @@
                 definedEx(CONFIG_RESET)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72887
@@ -1058,7 +1058,7 @@
                 definedEx(CONFIG_RESET)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/reset.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/reset.c
             </file>
             <line>
                 74185

@@ -2063,7 +2063,7 @@
 		(c) => ((unsigned char)(c) >= ' ' && (unsigned char)(c) < 0x7f) if (!def(CONFIG_LOCALE_SUPPORT)&!def(CONFIG_FEATURE_VI_8BIT))
 		(c) => ((unsigned char)(c) >= ' ' && (c) != 0x7f && (unsigned char)(c) != 0x9b) if (!def(CONFIG_LOCALE_SUPPORT)&def(CONFIG_FEATURE_VI_8BIT)&(def(CONFIG_LOCALE_SUPPORT)|def(CONFIG_FEATURE_VI_8BIT)))
 		(c) => isprint_asciionly(c) if (def(CONFIG_LOCALE_SUPPORT)&!def(CONFIG_FEATURE_VI_8BIT)&(def(CONFIG_LOCALE_SUPPORT)|!def(CONFIG_FEATURE_VI_8BIT))&(def(CONFIG_LOCALE_SUPPORT)|def(CONFIG_FEATURE_VI_8BIT)))
-		(c) => (isprint)(c) if (def(CONFIG_FEATURE_VI_8BIT)&def(CONFIG_LOCALE_SUPPORT)&(def(CONFIG_LOCALE_SUPPORT)|!def(CONFIG_FEATURE_VI_8BIT))&(!def(CONFIG_LOCALE_SUPPORT)|def(CONFIG_FEATURE_VI_8BIT))&(def(CONFIG_LOCALE_SUPPORT)|def(CONFIG_FEATURE_VI_8BIT)))
+		(c) => (isprint)(c) if (def(CONFIG_LOCALE_SUPPORT)&def(CONFIG_FEATURE_VI_8BIT)&(def(CONFIG_LOCALE_SUPPORT)|!def(CONFIG_FEATURE_VI_8BIT))&(!def(CONFIG_LOCALE_SUPPORT)|def(CONFIG_FEATURE_VI_8BIT))&(def(CONFIG_LOCALE_SUPPORT)|def(CONFIG_FEATURE_VI_8BIT)))
 
 
 #define ioctl_or_warn if True 

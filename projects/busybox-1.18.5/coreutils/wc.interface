@@ -26,7 +26,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 78966
@@ -72,7 +72,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72884
@@ -104,7 +104,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 78967
@@ -150,7 +150,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72881
@@ -184,7 +184,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 79036
@@ -230,7 +230,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72909
@@ -260,7 +260,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 79078
@@ -466,7 +466,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 79063
@@ -476,7 +476,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 79051
@@ -642,7 +642,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72859
@@ -760,7 +760,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 78956
@@ -770,7 +770,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 78937
@@ -829,10 +829,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_WC) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)))))
+                (definedEx(CONFIG_WC) &amp;&amp; ((((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) || ((!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))))) || (definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 78907
@@ -842,7 +842,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 78907
@@ -886,7 +886,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 78914
@@ -1056,7 +1056,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72856
@@ -1092,7 +1092,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 78950
@@ -1160,7 +1160,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72912
@@ -1286,7 +1286,7 @@
                 definedEx(CONFIG_WC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/wc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/wc.c
             </file>
             <line>
                 78865

@@ -747,7 +747,7 @@
     </function>
             </type>
             <featureexpr>
-                (((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))
+                (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)))
             </featureexpr><pos>
             <file>
                 file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/unicode.h
@@ -791,7 +791,7 @@
     </function>
             </type>
             <featureexpr>
-                (((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))
+                (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)))
             </featureexpr><pos>
             <file>
                 file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/unicode.h
@@ -1401,7 +1401,7 @@
     </function>
             </type>
             <featureexpr>
-                ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE))))
+                ((definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)))
             </featureexpr><pos>
             <file>
                 file /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include/unicode.h

@@ -38,7 +38,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72851
@@ -84,7 +84,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72848
@@ -128,7 +128,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
             </file>
             <line>
                 74499
@@ -174,7 +174,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72876
@@ -510,7 +510,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72826
@@ -750,7 +750,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
             </file>
             <line>
                 74504
@@ -826,7 +826,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
             </file>
             <line>
                 74500
@@ -860,7 +860,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72823
@@ -898,7 +898,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
             </file>
             <line>
                 74498
@@ -966,7 +966,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72879
@@ -1050,7 +1050,7 @@
                 (definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_AR) || definedEx(CONFIG_DPKG))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/unpack_ar_archive.c
             </file>
             <line>
                 74494

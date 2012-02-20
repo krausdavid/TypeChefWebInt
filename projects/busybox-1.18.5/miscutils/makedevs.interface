@@ -31,10 +31,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74303
@@ -65,10 +65,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74344
@@ -97,10 +97,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74344
@@ -146,7 +146,7 @@
                 definedEx(CONFIG_MAKEDEVS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72855
@@ -173,10 +173,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74295
@@ -215,10 +215,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74353
@@ -228,7 +228,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74323
@@ -238,7 +238,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74304
@@ -284,7 +284,7 @@
                 definedEx(CONFIG_MAKEDEVS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72852
@@ -315,10 +315,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74296
@@ -347,10 +347,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_MAKEDEVS) &amp;&amp; ((!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; (!definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) || !definedEx(CONFIG_FEATURE_CLEAN_UP))) || (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP))))
+                (definedEx(CONFIG_MAKEDEVS) &amp;&amp; ((definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF)) || (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74372
@@ -360,7 +360,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74372
@@ -406,7 +406,7 @@
                 definedEx(CONFIG_MAKEDEVS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72880
@@ -434,7 +434,7 @@
                 (definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74213
@@ -444,7 +444,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74190
@@ -481,10 +481,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74318
@@ -517,10 +517,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74266
@@ -723,10 +723,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74261
@@ -736,7 +736,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74259
@@ -775,10 +775,10 @@
     </function>
             </type>
             <featureexpr>
-                definedEx(CONFIG_MAKEDEVS)
+                (definedEx(CONFIG_MAKEDEVS) &amp;&amp; (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) || definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74350
@@ -788,7 +788,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74221
@@ -875,10 +875,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74285
@@ -912,7 +912,7 @@
                 (definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74198
@@ -922,7 +922,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74197
@@ -932,7 +932,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74196
@@ -942,7 +942,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74195
@@ -1060,7 +1060,7 @@
                 definedEx(CONFIG_MAKEDEVS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72830
@@ -1127,10 +1127,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74255
@@ -1161,10 +1161,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74295
@@ -1253,10 +1253,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74267
@@ -1287,10 +1287,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74263
@@ -1321,10 +1321,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74339
@@ -1334,7 +1334,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74290
@@ -1399,10 +1399,10 @@
     </function>
             </type>
             <featureexpr>
-                definedEx(CONFIG_MAKEDEVS)
+                (definedEx(CONFIG_MAKEDEVS) &amp;&amp; (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) || definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74357
@@ -1412,7 +1412,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74354
@@ -1422,7 +1422,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74351
@@ -1432,7 +1432,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74319
@@ -1442,7 +1442,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74312
@@ -1452,7 +1452,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74306
@@ -1462,7 +1462,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74222
@@ -1497,10 +1497,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74356
@@ -1510,7 +1510,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74325
@@ -1520,7 +1520,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74310
@@ -1561,10 +1561,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74252
@@ -1644,7 +1644,7 @@
                 (definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74193
@@ -1785,10 +1785,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74296
@@ -1798,7 +1798,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74295
@@ -1832,7 +1832,7 @@
                 definedEx(CONFIG_MAKEDEVS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72827
@@ -1861,10 +1861,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74257
@@ -1932,7 +1932,7 @@
                 definedEx(CONFIG_MAKEDEVS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72883
@@ -1965,10 +1965,10 @@
     </function>
             </type>
             <featureexpr>
-                definedEx(CONFIG_MAKEDEVS)
+                (definedEx(CONFIG_MAKEDEVS) &amp;&amp; (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) || definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74349
@@ -1978,7 +1978,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74221
@@ -2005,10 +2005,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74296
@@ -2035,10 +2035,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74361
@@ -2077,10 +2077,10 @@
     </function>
             </type>
             <featureexpr>
-                definedEx(CONFIG_MAKEDEVS)
+                (definedEx(CONFIG_MAKEDEVS) &amp;&amp; (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) || definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74348
@@ -2090,7 +2090,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74217
@@ -2179,10 +2179,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
+                (definedEx(CONFIG_FEATURE_MAKEDEVS_TABLE) &amp;&amp; !definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74245
@@ -2222,7 +2222,7 @@
                 (definedEx(CONFIG_FEATURE_MAKEDEVS_LEAF) &amp;&amp; definedEx(CONFIG_MAKEDEVS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/makedevs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/makedevs.c
             </file>
             <line>
                 74183

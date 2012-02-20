@@ -24,7 +24,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_SEND_ESCAPES) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74570
@@ -56,7 +56,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_SEND_ESCAPES) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74575
@@ -90,7 +90,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74488
@@ -100,7 +100,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74350
@@ -110,7 +110,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74335
@@ -150,7 +150,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74352
@@ -160,7 +160,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74327
@@ -206,7 +206,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72855
@@ -248,7 +248,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_TTY_HIFI) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74617
@@ -258,7 +258,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74303
@@ -290,7 +290,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74379
@@ -336,7 +336,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72852
@@ -368,7 +368,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74595
@@ -378,7 +378,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74556
@@ -424,7 +424,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72880
@@ -464,7 +464,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74461
@@ -502,7 +502,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_TTY_HIFI) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74300
@@ -712,7 +712,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_SEND_ESCAPES) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74586
@@ -800,7 +800,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_CLR_ABORT) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74353
@@ -840,7 +840,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74497
@@ -850,7 +850,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74490
@@ -968,7 +968,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72830
@@ -1046,7 +1046,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74477
@@ -1088,7 +1088,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74560
@@ -1098,7 +1098,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74453
@@ -1176,7 +1176,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_IMPLICIT_CR) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74607
@@ -1210,7 +1210,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74385
@@ -1250,7 +1250,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74315
@@ -1316,7 +1316,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74542
@@ -1352,7 +1352,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_SEND_ESCAPES) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74580
@@ -1396,7 +1396,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_SWALLOW_OPTS) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74306
@@ -1528,7 +1528,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74339
@@ -1568,7 +1568,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74592
@@ -1578,7 +1578,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74472
@@ -1588,7 +1588,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74464
@@ -1672,7 +1672,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74292
@@ -1706,7 +1706,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72827
@@ -1740,7 +1740,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74365
@@ -1778,7 +1778,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74381
@@ -1848,7 +1848,7 @@
                 (definedEx(CONFIG_FEATURE_CHAT_TTY_HIFI) &amp;&amp; definedEx(CONFIG_CHAT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74302
@@ -1878,7 +1878,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72883
@@ -1914,7 +1914,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74228
@@ -1924,7 +1924,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74228
@@ -1976,7 +1976,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74331
@@ -2016,7 +2016,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74543
@@ -2046,7 +2046,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74603
@@ -2138,7 +2138,7 @@
                 definedEx(CONFIG_CHAT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/chat.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/chat.c
             </file>
             <line>
                 74257

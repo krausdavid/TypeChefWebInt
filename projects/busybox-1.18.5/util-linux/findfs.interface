@@ -38,7 +38,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72856
@@ -84,7 +84,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72853
@@ -128,7 +128,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/findfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/findfs.c
             </file>
             <line>
                 74209
@@ -174,7 +174,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72881
@@ -202,7 +202,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/findfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/findfs.c
             </file>
             <line>
                 74218
@@ -212,7 +212,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/util-linux/findfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/findfs.c
             </file>
             <line>
                 74207
@@ -548,7 +548,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72831
@@ -622,7 +622,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/findfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/findfs.c
             </file>
             <line>
                 74217
@@ -696,7 +696,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/findfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/findfs.c
             </file>
             <line>
                 74222
@@ -900,7 +900,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72828
@@ -968,7 +968,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72884
@@ -1060,7 +1060,7 @@
                 definedEx(CONFIG_FINDFS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/util-linux/findfs.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/util-linux/findfs.c
             </file>
             <line>
                 74202

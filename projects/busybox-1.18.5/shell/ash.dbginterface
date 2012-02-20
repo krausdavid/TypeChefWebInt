@@ -85,7 +85,7 @@ imports (133)
 	shell_builtin_ulimit: (**char) => signed int		if def(CONFIG_ASH)		at file busybox-1.18.5/shell/ash.c:88832:8
 	sigaction: (signed int, *struct sigaction, *struct sigaction) => signed int		if def(CONFIG_ASH)		at file busybox-1.18.5/shell/ash.c:79060:6
 	sigaction_set: (signed int, *struct sigaction) => signed int		if def(CONFIG_ASH)		at file busybox-1.18.5/shell/ash.c:79090:1
-	sigfillset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if def(CONFIG_ASH)		at file busybox-1.18.5/shell/ash.c:79084:2
+	sigfillset: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}) => signed int		if def(CONFIG_ASH)		at file busybox-1.18.5/shell/ash.c:79084:2
 	signal: (signed int, *(signed int) => void) => *(signed int) => void		if def(CONFIG_ASH)		at file busybox-1.18.5/shell/ash.c:88892:1, file busybox-1.18.5/shell/ash.c:88888:1, file busybox-1.18.5/shell/ash.c:80682:2, file busybox-1.18.5/shell/ash.c:78978:2, file busybox-1.18.5/shell/ash.c:75902:3
 	sigprocmask_allsigs: (signed int) => signed int		if def(CONFIG_ASH)		at file busybox-1.18.5/shell/ash.c:75895:1
 	sprintf: (*char, *char, ...) => signed int		if def(CONFIG_ASH)		at file busybox-1.18.5/shell/ash.c:86326:2, file busybox-1.18.5/shell/ash.c:86324:5, file busybox-1.18.5/shell/ash.c:86307:1, file busybox-1.18.5/shell/ash.c:79387:4

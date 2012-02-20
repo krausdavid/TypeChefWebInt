@@ -22,50 +22,50 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81909
+                81967
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81322
+                81359
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81026
+                81061
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80886
+                80921
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79298
+                79312
             </line>
             <col>
                 1
@@ -94,10 +94,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_ASK_TERMINAL)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81882
+                81940
             </line>
             <col>
                 2
@@ -138,7 +138,7 @@
                 (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 79077
@@ -172,197 +172,197 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81213
+                81250
             </line>
             <col>
                 9
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81004
+                81039
             </line>
             <col>
                 17
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80957
+                80992
             </line>
             <col>
                 9
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80953
+                80988
             </line>
             <col>
                 9
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80897
+                80932
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80333
+                80368
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80314
+                80349
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80147
+                80182
             </line>
             <col>
                 16
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80129
+                80164
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80123
+                80158
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80074
+                80109
             </line>
             <col>
                 30
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80051
+                80086
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79992
+                80027
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
-                79962
+                79997
             </line>
             <col>
                 34
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
-                79935
+                79970
             </line>
             <col>
                 34
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79790
+                79825
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79719
+                79754
             </line>
             <col>
                 9
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79688
+                79723
             </line>
             <col>
                 10
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79572
+                79607
             </line>
             <col>
                 11
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
                 79137
@@ -400,10 +400,10 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80084
+                80119
             </line>
             <col>
                 2
@@ -432,20 +432,20 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80041
+                80076
             </line>
             <col>
                 13
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79641
+                79676
             </line>
             <col>
                 12
@@ -482,20 +482,20 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80386
+                80421
             </line>
             <col>
                 10
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80087
+                80122
             </line>
             <col>
                 8
@@ -538,7 +538,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72887
@@ -584,10 +584,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81210
+                81247
             </line>
             <col>
                 6
@@ -626,10 +626,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80362
+                80397
             </line>
             <col>
                 4
@@ -668,10 +668,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81064
+                81099
             </line>
             <col>
                 7
@@ -708,20 +708,20 @@
                 (definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT) || definedEx(CONFIG_FEATURE_TAB_COMPLETION))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80965
+                81000
             </line>
             <col>
                 10
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79672
+                79707
             </line>
             <col>
                 9
@@ -760,20 +760,20 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79978
+                80013
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79978
+                80013
             </line>
             <col>
                 8
@@ -810,117 +810,117 @@
                 ((definedEx(CONFIG_FEATURE_EDITING_VI) &amp;&amp; !definedEx(CONFIG_UNICODE_SUPPORT)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || !definedEx(CONFIG_UNICODE_SUPPORT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE)) || definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80944
+                80979
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80829
+                80864
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80809
+                80844
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80761
+                80796
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80749
+                80784
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80711
+                80746
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80703
+                80738
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80613
+                80648
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80605
+                80640
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80499
+                80534
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80491
+                80526
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 78833
@@ -952,10 +952,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80337
+                80372
             </line>
             <col>
                 1
@@ -1004,10 +1004,10 @@
                 (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; (!definedEx(CONFIG_FEATURE_TAB_COMPLETION) || !definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) || !definedEx(CONFIG_USE_BB_PWD_GRP)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                79584
+                79619
             </line>
             <col>
                 20
@@ -1050,7 +1050,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72884
@@ -1082,50 +1082,50 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81247
+                81284
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81188
+                81225
             </line>
             <col>
                 80
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80907
+                80942
             </line>
             <col>
                 22
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80187
+                80222
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79992
+                80027
             </line>
             <col>
                 11
@@ -1153,23 +1153,23 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT))
+                ((definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_FEATURE_TAB_COMPLETION))) || (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
-                79962
+                79997
             </line>
             <col>
                 34
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
-                79935
+                79970
             </line>
             <col>
                 34
@@ -1210,40 +1210,40 @@
                 (definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT) || definedEx(CONFIG_FEATURE_TAB_COMPLETION) || (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; (!definedEx(CONFIG_FEATURE_TAB_COMPLETION) || !definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) || !definedEx(CONFIG_USE_BB_PWD_GRP))) || (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80955
+                80990
             </line>
             <col>
                 9
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79708
+                79743
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79591
+                79626
             </line>
             <col>
                 23
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79591
+                79626
             </line>
             <col>
                 23
@@ -1292,10 +1292,10 @@
                 (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                79584
+                79619
             </line>
             <col>
                 20
@@ -1332,10 +1332,10 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                79517
+                79552
             </line>
             <col>
                 45
@@ -1368,10 +1368,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80271
+                80306
             </line>
             <col>
                 6
@@ -1402,10 +1402,10 @@
                 (definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) || definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                81278
+                81315
             </line>
             <col>
                 20
@@ -1435,7 +1435,7 @@
                 file systems/redhat/usr/include/stdlib.h
             </file>
             <line>
-                81119
+                81154
             </line>
             <col>
                 20
@@ -1445,7 +1445,7 @@
                 file systems/redhat/usr/include/stdlib.h
             </file>
             <line>
-                81048
+                81083
             </line>
             <col>
                 20
@@ -1481,10 +1481,10 @@
     </function>
             </type>
             <featureexpr>
-                (((definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE)))) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))
+                ((((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE)))) || (((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 79111
@@ -1494,7 +1494,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 79111
@@ -1530,10 +1530,10 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79700
+                79735
             </line>
             <col>
                 17
@@ -1566,20 +1566,20 @@
                 (definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT) || definedEx(CONFIG_FEATURE_TAB_COMPLETION))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81008
+                81043
             </line>
             <col>
                 24
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79720
+                79755
             </line>
             <col>
                 11
@@ -1622,7 +1622,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72912
@@ -1662,10 +1662,10 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79715
+                79750
             </line>
             <col>
                 7
@@ -1700,10 +1700,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81204
+                81241
             </line>
             <col>
                 5
@@ -1858,10 +1858,10 @@
                 (!definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) || definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                81278
+                81315
             </line>
             <col>
                 20
@@ -1946,20 +1946,20 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79711
+                79746
             </line>
             <col>
                 11
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79553
+                79588
             </line>
             <col>
                 7
@@ -1992,150 +1992,180 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81474
+                81525
             </line>
             <col>
                 49
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81481
+                81532
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81469
+                81520
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79959
+                79994
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79914
+                79949
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79896
+                79931
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79787
+                79822
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79453
+                79488
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79453
+                79488
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79417
+                79452
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79413
+                79448
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79405
+                79440
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79400
+                79435
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79383
+                79418
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79358
+                79440
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
+            </file>
+            <line>
+                79435
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
+            </file>
+            <line>
+                79418
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
+            </file>
+            <line>
+                79386
             </line>
             <col>
                 2
@@ -2173,10 +2203,10 @@
     </function>
             </type>
             <featureexpr>
-                ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_PRESERVE_BROKEN) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_PRESERVE_BROKEN) || definedEx(CONFIG_UNICODE_USING_LOCALE))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_PRESERVE_BROKEN) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_PRESERVE_BROKEN) || definedEx(CONFIG_UNICODE_USING_LOCALE))))
+                ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_PRESERVE_BROKEN) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_PRESERVE_BROKEN)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_PRESERVE_BROKEN) || definedEx(CONFIG_UNICODE_USING_LOCALE))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_PRESERVE_BROKEN) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_PRESERVE_BROKEN) || definedEx(CONFIG_UNICODE_USING_LOCALE))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 79031
@@ -2186,7 +2216,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 79002
@@ -2222,10 +2252,10 @@
                 (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                79542
+                79577
             </line>
             <col>
                 20
@@ -2256,10 +2286,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80360
+                80395
             </line>
             <col>
                 8
@@ -2288,100 +2318,120 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81702
+                81753
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81701
+                81752
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79775
+                79810
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79774
+                79809
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79414
+                79449
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79354
+                79382
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79290
+                79304
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79285
+                79299
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79262
+                79276
             </line>
             <col>
                 23
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79224
+                79276
+            </line>
+            <col>
+                23
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
+            </file>
+            <line>
+                79231
+            </line>
+            <col>
+                23
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
+            </file>
+            <line>
+                79231
             </line>
             <col>
                 23
@@ -2418,10 +2468,10 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79681
+                79716
             </line>
             <col>
                 11
@@ -2496,10 +2546,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80354
+                80389
             </line>
             <col>
                 60
@@ -2532,70 +2582,70 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81286
+                81323
             </line>
             <col>
                 18
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81285
+                81322
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80401
+                80436
             </line>
             <col>
                 23
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80215
+                80250
             </line>
             <col>
                 24
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80211
+                80246
             </line>
             <col>
                 25
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80106
+                80141
             </line>
             <col>
                 17
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79642
+                79677
             </line>
             <col>
                 16
@@ -2673,10 +2723,10 @@
     </function>
             </type>
             <featureexpr>
-                ((!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; definedEx(CONFIG_UNICODE_PRESERVE_BROKEN)) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_UNICODE_PRESERVE_BROKEN)))
+                ((((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_PRESERVE_BROKEN)) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; definedEx(CONFIG_UNICODE_PRESERVE_BROKEN)) || (((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_UNICODE_PRESERVE_BROKEN)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 79031
@@ -2686,7 +2736,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 79002
@@ -2775,20 +2825,20 @@
     </function>
             </type>
             <featureexpr>
-                ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)))
+                ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
-                81110
+                81145
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 78986
@@ -2818,7 +2868,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72862
@@ -2888,10 +2938,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80943
+                80978
             </line>
             <col>
                 22
@@ -2928,20 +2978,20 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80355
+                80390
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80329
+                80364
             </line>
             <col>
                 6
@@ -2979,30 +3029,30 @@
     </function>
             </type>
             <featureexpr>
-                (((definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE)))) || (!definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE))))
+                ((((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE)))) || (((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE)))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
-                81110
+                81145
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
-                81110
+                81145
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 78986
@@ -3038,10 +3088,10 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79696
+                79731
             </line>
             <col>
                 8
@@ -3084,7 +3134,7 @@
                 !definedEx(CONFIG_UNICODE_SUPPORT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
                 79142
@@ -3094,7 +3144,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
                 79136
@@ -3130,10 +3180,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80283
+                80318
             </line>
             <col>
                 17
@@ -3170,60 +3220,60 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81849
+                81900
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81540
+                81591
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81540
+                81591
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79467
+                79502
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79446
+                79481
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79446
+                79481
             </line>
             <col>
                 1
@@ -3260,10 +3310,10 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79715
+                79750
             </line>
             <col>
                 27
@@ -3302,10 +3352,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81008
+                81043
             </line>
             <col>
                 17
@@ -3342,10 +3392,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80364
+                80399
             </line>
             <col>
                 7
@@ -3416,50 +3466,50 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79980
+                80015
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79978
+                80013
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79980
+                80015
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79978
+                80013
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79242
+                79249
             </line>
             <col>
                 2
@@ -3484,10 +3534,10 @@
                 (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                79597
+                79632
             </line>
             <col>
                 20
@@ -3524,10 +3574,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80281
+                80316
             </line>
             <col>
                 2
@@ -3564,27 +3614,27 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80885
+                80920
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79297
+                79311
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
                 79085
@@ -3652,20 +3702,20 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81906
+                81964
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81267
+                81304
             </line>
             <col>
                 1
@@ -3694,7 +3744,7 @@
                 (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 79111
@@ -3728,10 +3778,10 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79738
+                79773
             </line>
             <col>
                 2
@@ -3768,50 +3818,50 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80063
+                80098
             </line>
             <col>
                 29
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79986
+                80021
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79645
+                79680
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79632
+                79667
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79538
+                79573
             </line>
             <col>
                 7
@@ -3836,10 +3886,10 @@
                 (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; (!definedEx(CONFIG_FEATURE_TAB_COMPLETION) || !definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) || !definedEx(CONFIG_USE_BB_PWD_GRP)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79600
+                79635
             </line>
             <col>
                 1
@@ -3861,23 +3911,23 @@
     </function>
             </type>
             <featureexpr>
-                ((definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)))
+                ((((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || definedEx(CONFIG_UNICODE_USING_LOCALE) || ((!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE))) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
-                81220
+                81257
             </line>
             <col>
                 24
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
-                81220
+                81257
             </line>
             <col>
                 24
@@ -3914,10 +3964,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80332
+                80367
             </line>
             <col>
                 1
@@ -3942,10 +3992,10 @@
                 (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                79576
+                79611
             </line>
             <col>
                 20
@@ -3980,17 +4030,27 @@
                 !definedEx(CONFIG_UNICODE_SUPPORT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79334
+                79362
             </line>
             <col>
                 55
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
+            </file>
+            <line>
+                79365
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
                 79203
@@ -4074,30 +4134,30 @@
                 ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE))) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81130
+                81165
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81130
+                81165
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81130
+                81165
             </line>
             <col>
                 4
@@ -4136,10 +4196,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_ASK_TERMINAL)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80883
+                80918
             </line>
             <col>
                 5
@@ -4174,50 +4234,50 @@
                 (definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT) || definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY) || (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; (!definedEx(CONFIG_FEATURE_TAB_COMPLETION) || !definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) || !definedEx(CONFIG_USE_BB_PWD_GRP))) || (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80970
+                81005
             </line>
             <col>
                 22
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80959
+                80994
             </line>
             <col>
                 23
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80354
+                80389
             </line>
             <col>
                 13
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79592
+                79627
             </line>
             <col>
                 13
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79592
+                79627
             </line>
             <col>
                 13
@@ -4308,40 +4368,40 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80166
+                80201
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80164
+                80199
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80144
+                80179
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79721
+                79756
             </line>
             <col>
                 3
@@ -4374,10 +4434,10 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79623
+                79658
             </line>
             <col>
                 8
@@ -4414,10 +4474,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_VI)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79469
+                79504
             </line>
             <col>
                 1
@@ -4454,10 +4514,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80335
+                80370
             </line>
             <col>
                 8
@@ -4540,13 +4600,57 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81034
+                81069
             </line>
             <col>
                 1
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                bb_wcrtomb
+            </name>
+            <type>
+                <function>
+        <param>
+            <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+        </param><param>
+            <signed>
+        <int></int>
+    </signed>
+        </param><param>
+            <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+        </param><ret>
+            <unsigned>
+        <long></long>
+    </unsigned>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                (((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))))
+            </featureexpr><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
+            </file>
+            <line>
+                79077
+            </line>
+            <col>
+                20
             </col>
         </pos>
         </sig>
@@ -4574,20 +4678,20 @@
                 definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80363
+                80398
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80295
+                80330
             </line>
             <col>
                 2
@@ -4614,30 +4718,30 @@
                 (definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) || definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81283
+                81320
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81283
+                81320
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80947
+                80982
             </line>
             <col>
                 10
@@ -4668,7 +4772,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72859
@@ -4736,7 +4840,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72915
@@ -4772,10 +4876,10 @@
                 definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80930
+                80965
             </line>
             <col>
                 7
@@ -4824,30 +4928,30 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81908
+                81966
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81270
+                81307
             </line>
             <col>
                 29
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81037
+                81072
             </line>
             <col>
                 2
@@ -4890,20 +4994,20 @@
                 definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80988
+                81023
             </line>
             <col>
                 15
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80981
+                81016
             </line>
             <col>
                 10
@@ -4936,57 +5040,13 @@
                 definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80908
+                80943
             </line>
             <col>
                 17
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
-                bb_wcrtomb
-            </name>
-            <type>
-                <function>
-        <param>
-            <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-        </param><param>
-            <signed>
-        <int></int>
-    </signed>
-        </param><param>
-            <pointer>
-        <astruct isUnion="false">
-        
-    </astruct>
-    </pointer>
-        </param><ret>
-            <unsigned>
-        <long></long>
-    </unsigned>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)))
-            </featureexpr><pos>
-            <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
-            </file>
-            <line>
-                79077
-            </line>
-            <col>
-                20
             </col>
         </pos>
         </sig>
@@ -5010,237 +5070,237 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81892
+                81950
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81013
+                81048
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81009
+                81044
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80395
+                80430
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80389
+                80424
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80367
+                80402
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80288
+                80323
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80285
+                80320
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80276
+                80311
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80258
+                80293
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80257
+                80292
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80205
+                80240
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80181
+                80216
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80180
+                80215
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80121
+                80156
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80088
+                80123
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79745
+                79780
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79743
+                79778
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79742
+                79777
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79736
+                79771
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79554
+                79589
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79510
+                79545
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                79509
+                79544
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
                 78976
@@ -5250,7 +5310,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
                 78974
@@ -5260,7 +5320,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
                 78972
@@ -5270,7 +5330,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
                 78969
@@ -5312,20 +5372,20 @@
                 definedEx(CONFIG_FEATURE_TAB_COMPLETION)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80169
+                80204
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80146
+                80181
             </line>
             <col>
                 2
@@ -5350,10 +5410,10 @@
                 (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; (!definedEx(CONFIG_FEATURE_TAB_COMPLETION) || !definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) || !definedEx(CONFIG_USE_BB_PWD_GRP)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                79576
+                79611
             </line>
             <col>
                 20
@@ -5386,10 +5446,10 @@
                 (definedEx(CONFIG_FEATURE_TAB_COMPLETION) &amp;&amp; definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) &amp;&amp; (!definedEx(CONFIG_FEATURE_TAB_COMPLETION) || !definedEx(CONFIG_FEATURE_USERNAME_COMPLETION) || !definedEx(CONFIG_USE_BB_PWD_GRP)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
-                79542
+                79577
             </line>
             <col>
                 20
@@ -5488,10 +5548,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                81174
+                81211
             </line>
             <col>
                 0
@@ -5522,10 +5582,10 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/lineedit.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/lineedit.c
             </file>
             <line>
-                80185
+                80220
             </line>
             <col>
                 0

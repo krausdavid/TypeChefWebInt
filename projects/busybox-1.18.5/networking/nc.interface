@@ -32,7 +32,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75143
@@ -42,7 +42,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74739
@@ -71,10 +71,50 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_NC) &amp;&amp; ((definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_EXTRA)) || !definedEx(CONFIG_NC_110_COMPAT) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA)) || !definedEx(CONFIG_NC_EXTRA) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA)))))
+                definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
+            </file>
+            <line>
+                74999
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
+            </file>
+            <line>
+                74999
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
+            </file>
+            <line>
+                74843
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
+            </file>
+            <line>
+                74843
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75664
@@ -84,47 +124,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
-            </file>
-            <line>
-                74999
-            </line>
-            <col>
-                3
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
-            </file>
-            <line>
-                74999
-            </line>
-            <col>
-                3
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
-            </file>
-            <line>
-                74843
-            </line>
-            <col>
-                2
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
-            </file>
-            <line>
-                74843
-            </line>
-            <col>
-                2
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74731
@@ -214,7 +214,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74473
@@ -246,7 +246,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75159
@@ -256,7 +256,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74740
@@ -296,7 +296,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75068
@@ -342,7 +342,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72855
@@ -369,26 +369,26 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_NC) &amp;&amp; ((!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; (!definedEx(CONFIG_NC_EXTRA) || !definedEx(CONFIG_FEATURE_PREFER_APPLETS)) &amp;&amp; (definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA) || definedEx(CONFIG_FEATURE_PREFER_APPLETS))) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; ((!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_FEATURE_PREFER_APPLETS)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; !definedEx(CONFIG_FEATURE_PREFER_APPLETS))))))
+                (definedEx(CONFIG_NC) &amp;&amp; ((!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; ((!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_FEATURE_PREFER_APPLETS)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; !definedEx(CONFIG_FEATURE_PREFER_APPLETS)))) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; (!definedEx(CONFIG_NC_EXTRA) || !definedEx(CONFIG_FEATURE_PREFER_APPLETS)) &amp;&amp; (definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA) || definedEx(CONFIG_FEATURE_PREFER_APPLETS)) &amp;&amp; (definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA) || !definedEx(CONFIG_FEATURE_PREFER_APPLETS)))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
-            </file>
-            <line>
-                75613
-            </line>
-            <col>
-                28
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75625
             </line>
             <col>
                 2
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
+            </file>
+            <line>
+                75613
+            </line>
+            <col>
+                28
             </col>
         </pos>
         </sig>
@@ -438,17 +438,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75641
-            </line>
-            <col>
-                6
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74870
@@ -458,13 +448,23 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74868
             </line>
             <col>
                 8
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75641
+            </line>
+            <col>
+                6
             </col>
         </pos>
         </sig>
@@ -500,7 +500,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75261
@@ -510,7 +510,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75240
@@ -520,7 +520,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75240
@@ -530,7 +530,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74883
@@ -540,7 +540,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74702
@@ -550,7 +550,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74686
@@ -560,7 +560,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74575
@@ -570,7 +570,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74458
@@ -580,7 +580,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74450
@@ -626,7 +626,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74684
@@ -666,7 +666,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74974
@@ -676,7 +676,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74945
@@ -686,7 +686,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74747
@@ -696,7 +696,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74726
@@ -746,7 +746,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74682
@@ -778,27 +778,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75602
-            </line>
-            <col>
-                3
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75581
-            </line>
-            <col>
-                4
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75199
@@ -808,7 +788,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75021
@@ -818,7 +798,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74920
@@ -828,7 +808,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74884
@@ -838,7 +818,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74873
@@ -848,7 +828,27 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75602
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75581
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74743
@@ -858,7 +858,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74653
@@ -892,7 +892,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75642
@@ -902,7 +902,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 75598
@@ -912,7 +912,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75579
@@ -922,7 +922,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74632
@@ -932,7 +932,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74612
@@ -942,7 +942,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74523
@@ -988,7 +988,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72852
@@ -1017,36 +1017,36 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_NC) &amp;&amp; ((!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_SERVER) &amp;&amp; definedEx(CONFIG_NC_EXTRA)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_SERVER) &amp;&amp; definedEx(CONFIG_NC_EXTRA)) || definedEx(CONFIG_NC_110_COMPAT)))
+                (definedEx(CONFIG_NC) &amp;&amp; (definedEx(CONFIG_NC_110_COMPAT) || (!definedEx(CONFIG_NC_SERVER) &amp;&amp; definedEx(CONFIG_NC_EXTRA)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_SERVER) &amp;&amp; definedEx(CONFIG_NC_EXTRA))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75517
-            </line>
-            <col>
-                17
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75517
-            </line>
-            <col>
-                17
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75050
             </line>
             <col>
                 42
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75517
+            </line>
+            <col>
+                17
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75517
+            </line>
+            <col>
+                17
             </col>
         </pos>
         </sig>
@@ -1076,7 +1076,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75159
@@ -1086,7 +1086,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74740
@@ -1096,7 +1096,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74644
@@ -1106,7 +1106,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74641
@@ -1138,7 +1138,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75589
@@ -1148,7 +1148,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75557
@@ -1158,7 +1158,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74480
@@ -1168,7 +1168,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74466
@@ -1208,7 +1208,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74623
@@ -1218,7 +1218,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74602
@@ -1248,7 +1248,7 @@
                 (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75651
@@ -1294,7 +1294,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72880
@@ -1319,130 +1319,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_NC) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_SERVER) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_SERVER) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_SERVER)))))
+                (definedEx(CONFIG_NC) &amp;&amp; (definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_SERVER) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_SERVER)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_SERVER))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75550
-            </line>
-            <col>
-                17
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75547
-            </line>
-            <col>
-                26
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75545
-            </line>
-            <col>
-                17
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75543
-            </line>
-            <col>
-                13
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75539
-            </line>
-            <col>
-                24
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75534
-            </line>
-            <col>
-                10
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75550
-            </line>
-            <col>
-                17
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75547
-            </line>
-            <col>
-                26
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75545
-            </line>
-            <col>
-                17
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75543
-            </line>
-            <col>
-                13
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75539
-            </line>
-            <col>
-                24
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75534
-            </line>
-            <col>
-                10
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75222
@@ -1452,13 +1332,133 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75222
             </line>
             <col>
                 3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75550
+            </line>
+            <col>
+                17
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75547
+            </line>
+            <col>
+                26
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75545
+            </line>
+            <col>
+                17
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75543
+            </line>
+            <col>
+                13
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75539
+            </line>
+            <col>
+                24
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75534
+            </line>
+            <col>
+                10
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75550
+            </line>
+            <col>
+                17
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75547
+            </line>
+            <col>
+                26
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75545
+            </line>
+            <col>
+                17
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75543
+            </line>
+            <col>
+                13
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75539
+            </line>
+            <col>
+                24
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75534
+            </line>
+            <col>
+                10
             </col>
         </pos>
         </sig>
@@ -1482,7 +1482,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75162
@@ -1522,7 +1522,7 @@
                 (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75648
@@ -1726,7 +1726,7 @@
                 (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75608
@@ -1736,7 +1736,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75607
@@ -1770,17 +1770,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75606
-            </line>
-            <col>
-                2
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75204
@@ -1790,7 +1780,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75161
@@ -1800,7 +1790,17 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75606
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74660
@@ -1810,7 +1810,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74518
@@ -1898,7 +1898,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74643
@@ -1938,7 +1938,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74915
@@ -1948,7 +1948,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74893
@@ -1992,27 +1992,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75584
-            </line>
-            <col>
-                14
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75446
-            </line>
-            <col>
-                25
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75129
@@ -2022,13 +2002,33 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75113
             </line>
             <col>
                 12
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75584
+            </line>
+            <col>
+                14
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75446
+            </line>
+            <col>
+                25
             </col>
         </pos>
         </sig>
@@ -2140,7 +2140,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72830
@@ -2210,7 +2210,7 @@
                 (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75575
@@ -2240,7 +2240,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74459
@@ -2318,7 +2318,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74539
@@ -2358,7 +2358,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74787
@@ -2396,7 +2396,7 @@
                 (definedEx(CONFIG_NC) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75662
@@ -2406,7 +2406,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74808
@@ -2440,7 +2440,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74941
@@ -2450,7 +2450,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74936
@@ -2460,7 +2460,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74650
@@ -2528,7 +2528,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75257
@@ -2538,7 +2538,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75257
@@ -2548,7 +2548,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74897
@@ -2558,7 +2558,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74872
@@ -2568,7 +2568,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74728
@@ -2608,7 +2608,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_FEATURE_IPV6) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 75149
@@ -2648,7 +2648,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75183
@@ -2658,7 +2658,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75183
@@ -2702,7 +2702,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_FEATURE_IPV6) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 75149
@@ -2746,7 +2746,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75079
@@ -2785,10 +2785,10 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_FEATURE_PREFER_APPLETS) &amp;&amp; definedEx(CONFIG_NC))
+                (((!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_FEATURE_PREFER_APPLETS)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; !definedEx(CONFIG_FEATURE_PREFER_APPLETS))) &amp;&amp; !definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_NC) &amp;&amp; definedEx(CONFIG_FEATURE_PREFER_APPLETS))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 75613
@@ -2822,7 +2822,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74637
@@ -2832,7 +2832,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74636
@@ -2872,7 +2872,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75577
@@ -2882,7 +2882,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74630
@@ -2920,7 +2920,7 @@
                 (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75562
@@ -3044,7 +3044,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75164
@@ -3071,10 +3071,10 @@
     </function>
             </type>
             <featureexpr>
-                ((!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA)) &amp;&amp; ((definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_SERVER) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_EXTRA))) &amp;&amp; !definedEx(CONFIG_NC_EXTRA)) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_SERVER) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA))) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_SERVER) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_SERVER)) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_EXTRA))) &amp;&amp; !definedEx(CONFIG_NC_EXTRA)) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_NC_SERVER) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_SERVER)) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA)))) &amp;&amp; definedEx(CONFIG_NC))
+                ((!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA)) &amp;&amp; ((definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_SERVER) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA)) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_EXTRA))) &amp;&amp; !definedEx(CONFIG_NC_EXTRA)) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; !definedEx(CONFIG_NC_SERVER) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA))) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA))) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_SERVER) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_SERVER)) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA)) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_EXTRA))) &amp;&amp; !definedEx(CONFIG_NC_EXTRA)) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_NC_SERVER) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA))) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_SERVER)) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA)))) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75237
@@ -3084,7 +3084,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75237
@@ -3094,7 +3094,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75237
@@ -3104,7 +3104,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75237
@@ -3188,7 +3188,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75107
@@ -3248,7 +3248,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74609
@@ -3288,7 +3288,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75137
@@ -3298,7 +3298,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75127
@@ -3338,7 +3338,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74665
@@ -3348,7 +3348,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74571
@@ -3387,10 +3387,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_NC) &amp;&amp; (definedEx(CONFIG_NC_110_COMPAT) || (definedEx(CONFIG_NC_EXTRA) &amp;&amp; !definedEx(CONFIG_FEATURE_PREFER_APPLETS))))
+                (definedEx(CONFIG_NC) &amp;&amp; (definedEx(CONFIG_NC_110_COMPAT) || (definedEx(CONFIG_NC_EXTRA) &amp;&amp; !definedEx(CONFIG_FEATURE_PREFER_APPLETS) &amp;&amp; ((!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_FEATURE_PREFER_APPLETS)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; !definedEx(CONFIG_FEATURE_PREFER_APPLETS))) &amp;&amp; (definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA) || !definedEx(CONFIG_FEATURE_PREFER_APPLETS)))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 75613
@@ -3400,7 +3400,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74522
@@ -3434,17 +3434,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75326
-            </line>
-            <col>
-                1
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75115
@@ -3454,7 +3444,17 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75326
+            </line>
+            <col>
+                1
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74659
@@ -3464,7 +3464,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74615
@@ -3506,7 +3506,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75059
@@ -3516,7 +3516,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75053
@@ -3552,7 +3552,7 @@
                 (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75657
@@ -3586,7 +3586,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75478
@@ -3596,7 +3596,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75462
@@ -3606,7 +3606,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75478
@@ -3616,7 +3616,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75462
@@ -3626,7 +3626,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72827
@@ -3662,7 +3662,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74519
@@ -3697,36 +3697,36 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_NC) &amp;&amp; ((!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_SERVER) &amp;&amp; definedEx(CONFIG_NC_EXTRA)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_SERVER) &amp;&amp; definedEx(CONFIG_NC_EXTRA)) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA))))
+                (definedEx(CONFIG_NC) &amp;&amp; ((definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_SERVER) &amp;&amp; definedEx(CONFIG_NC_EXTRA)) || (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_SERVER) &amp;&amp; definedEx(CONFIG_NC_EXTRA))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75494
-            </line>
-            <col>
-                23
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc.c
-            </file>
-            <line>
-                75494
-            </line>
-            <col>
-                23
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75204
             </line>
             <col>
                 11
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75494
+            </line>
+            <col>
+                23
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
+            </file>
+            <line>
+                75494
+            </line>
+            <col>
+                23
             </col>
         </pos>
         </sig>
@@ -3788,7 +3788,7 @@
                 (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 75598
@@ -3818,7 +3818,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72883
@@ -3864,7 +3864,7 @@
                 (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75403
@@ -3874,7 +3874,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75403
@@ -3912,7 +3912,7 @@
                 (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75583
@@ -3949,10 +3949,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_NC))
+                ((!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA)) &amp;&amp; ((definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; !definedEx(CONFIG_NC_EXTRA) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || !definedEx(CONFIG_NC_EXTRA))) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA))) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA)) &amp;&amp; (!definedEx(CONFIG_NC_110_COMPAT) || definedEx(CONFIG_NC_EXTRA) || (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA))))) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74984
@@ -3962,7 +3962,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74984
@@ -3972,7 +3972,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74955
@@ -3982,7 +3982,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74955
@@ -4018,7 +4018,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74701
@@ -4070,7 +4070,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75601
@@ -4080,7 +4080,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75556
@@ -4090,7 +4090,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74479
@@ -4100,7 +4100,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74465
@@ -4134,7 +4134,7 @@
                 definedEx(CONFIG_NC)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
                 75563
@@ -4144,7 +4144,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74558
@@ -4180,7 +4180,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75226
@@ -4190,7 +4190,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 75226
@@ -4200,7 +4200,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74700
@@ -4210,7 +4210,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74699
@@ -4220,7 +4220,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74649
@@ -4230,7 +4230,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74574
@@ -4260,7 +4260,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74707
@@ -4270,7 +4270,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74705
@@ -4280,7 +4280,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74704
@@ -4290,7 +4290,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74651
@@ -4300,7 +4300,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74576
@@ -4342,7 +4342,7 @@
                 (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC_EXTRA) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
                 74790
@@ -4431,13 +4431,13 @@
     </function>
             </type>
             <featureexpr>
-                (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
+                (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc_bloaty.c
             </file>
             <line>
-                75337
+                75034
             </line>
             <col>
                 0
@@ -4471,13 +4471,13 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
+                (!definedEx(CONFIG_NC_110_COMPAT) &amp;&amp; definedEx(CONFIG_NC))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nc_bloaty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nc.c
             </file>
             <line>
-                75034
+                75337
             </line>
             <col>
                 0

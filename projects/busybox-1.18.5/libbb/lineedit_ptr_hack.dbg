@@ -1,26 +1,11 @@
 preIncludes: ArraySeq()
 systemIncludes: usr/include
 postIncludes: List(usr/lib/gcc/x86_64-redhat-linux/4.4.4/include)
-List(-I, /app/archive/kos/share/TypeChef/cprojects/busybox/busybox-1.18.5/include, -I, systems/redhat/usr/include, -I, systems/redhat/usr/lib/gcc/x86_64-redhat-linux/4.4.4/include)
-True	succeeded
-
-Parsing statistics: 
-  Duration parsing: 264 ms
-  Tokens: 8
-  Tokens Consumed: 10
-  Tokens Backtracked: 2
-  Tokens Repeated: 0
-  Conditional Tokens: 0
-  Distinct Features#: 0
-  Distinct Features: 
-  Distinct Feature Expressions: 1
-  Choice Nodes: 0
-
-check 1/2. line 8299. err 0
-check 2/2. line 8304. err 0
+parsing.
+type checking.
 No type errors found.
 
 
 inferring interfaces.
 timing (lexer, parser, type system, interface inference)
-2083;323;629;30
+1561;193;505;15

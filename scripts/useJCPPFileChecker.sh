@@ -1,6 +1,5 @@
 #!/bin/bash -e
 #!/bin/bash -vxe
-
 func_filesToProcess(){
    listFile="$pjFolder/$fileCheckList"
    cat $listFile
@@ -14,18 +13,17 @@ echo ""
 echo ""
 echo "useJCCPFileChecker is a script for using the TypeChef Programm including some extras"
 echo ""
-echo "useJCCPFileChecker [NAME OF FILE CHECK LIST] [PATH OF THE PROGRAMM] [NAME OF THE FLAG LIST]"
+echo "useJCCPFileChecker [NAME OF FILE CHECK LIST] [PATH OF THE PROGRAMM] [NAME OF THE FLAG LIST] (Optional: [NO REMOVE])"
 echo ""
 echo "    - File Check Lists have the ending *.lst"
 echo "    - Flag Lists have the ending *.flag"
+echo "    - leave NO REMOVE only if you want to remove all DBG Files"
 echo ""
 echo ""
 echo "----------------------------------------------------"
 exit 1
 }
-#echo "####################"
-#echo "read global settings"
-#echo "####################"
+echo "--> read global settings"
 tcFolder=`./readTCFolder.sh`
 cd ../projects/
 pjFolder=$(pwd)
@@ -56,56 +54,39 @@ export outCSV=boa.csv
 #echo -n -> "$outCSV"
 
 if [ $noRemove -eq 1 ]; then
-echo "#######################"
-#echo "continue without remove"
-#echo "#######################"
+echo "--> continue without remove"
 else 
-#echo "remove *.dbg files [START]"
-#echo "#######################"
+#echo "--> remove *.dbg files [START]"
 func_filesToProcess|while read i; do
 if [ ! -f $srcPath/$i.dbg ]; then
-#echo "#######################"  
 echo "nothing to remove"
-#echo "#######################"
  else
      rm $srcPath/$i.dbg
-#     echo "#######################"
-#     echo "remove $i.dbg [OK]"
-#    echo "#######################" 
+     echo "--> remove $i.dbg [OK]"
  fi
 done
 fi
 
 
-export partialPreprocFlags="-x CONFIG_ --include $pjFolder/$configH -I $srcPath/include"
-#echo "#######################"
-#echo "reading flags [START]"
-#echo "#######################"
+export partialPreprocFlags="-x CONFIG_ --include $pjFolder/$configH -I $srcPath/include --writePI --recordTiming"
+echo "--> reading flags [START]"
 flags=""
 while read i; do
     flags="$flags $i"
-#echo "#######################"
-#echo "flag $i [OK]"
-#echo "#######################"
+echo "--> flag $i [OK]"
 done < $pjFolder/$flagList
-#echo "#######################"
-#echo "reading flags [OK]"
-#echo "using jcpp [START]"
-#echo "#######################"
+echo "--> reading flags [OK]"
+echo "--> using jcpp [START]"
 func_filesToProcess|while read i; do
-#echo $i 
  if [ ! -f $srcPath/$i.dbg ]; then
     touch $srcPath/$i.dbg
     oldPath=$(pwd)
     cd ../jcpp/
 	 ./jcpp.sh $srcPath/$i.c $flags
     cd - 
-#    echo "#######################"
-#    echo "working on file $srcPath/ $i.c [OK]"
-#    echo "#######################"
+    echo " --> working on file $srcPath/ $i.c [OK]"
  else
     echo "Skipping $srcPath/$i.c"
   fi
 done
-#echo "#######################"
-echo "all done [OK]"
+echo "--> all done [OK]"

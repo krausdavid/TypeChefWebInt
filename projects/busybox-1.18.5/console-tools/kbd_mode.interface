@@ -38,7 +38,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72856
@@ -70,7 +70,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/kbd_mode.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/kbd_mode.c
             </file>
             <line>
                 74651
@@ -80,7 +80,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/console-tools/kbd_mode.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/kbd_mode.c
             </file>
             <line>
                 74651
@@ -126,7 +126,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72853
@@ -172,7 +172,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72881
@@ -378,7 +378,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/kbd_mode.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/kbd_mode.c
             </file>
             <line>
                 74628
@@ -512,7 +512,7 @@
                 (definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; definedEx(CONFIG_KBD_MODE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74635
@@ -522,7 +522,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74614
@@ -600,7 +600,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72831
@@ -712,7 +712,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/kbd_mode.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/kbd_mode.c
             </file>
             <line>
                 74605
@@ -790,7 +790,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/kbd_mode.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/kbd_mode.c
             </file>
             <line>
                 74604
@@ -966,7 +966,7 @@
                 (!definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; definedEx(CONFIG_KBD_MODE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74635
@@ -976,7 +976,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74614
@@ -1010,7 +1010,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72828
@@ -1078,7 +1078,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72884
@@ -1170,7 +1170,7 @@
                 definedEx(CONFIG_KBD_MODE)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/kbd_mode.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/kbd_mode.c
             </file>
             <line>
                 74592

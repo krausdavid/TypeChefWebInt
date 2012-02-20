@@ -38,7 +38,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72864
@@ -84,7 +84,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72861
@@ -130,7 +130,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72889
@@ -336,7 +336,7 @@
                 definedEx(CONFIG_BUILD_LIBBUSYBOX)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/applets/applets.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/applets/applets.c
             </file>
             <line>
                 74244
@@ -346,7 +346,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/applets/applets.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/applets/applets.c
             </file>
             <line>
                 74244
@@ -512,7 +512,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72839
@@ -794,7 +794,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72836
@@ -862,7 +862,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72892
@@ -954,7 +954,7 @@
                 definedEx(CONFIG_BUILD_LIBBUSYBOX)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/applets/applets.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/applets/applets.c
             </file>
             <line>
                 74242

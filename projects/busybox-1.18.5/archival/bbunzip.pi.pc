@@ -1,1 +1,0 @@
-(definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_LZOP) || definedEx(CONFIG_BUNZIP2) || definedEx(CONFIG_BZIP2) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_GZIP) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_UNLZMA))

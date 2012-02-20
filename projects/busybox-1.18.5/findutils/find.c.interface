@@ -327,6 +327,60 @@
         </import><import>
             <sig>
             <name>
+                regexec
+            </name>
+            <type>
+                <function>
+        <param>
+            <pointer>
+        <struct isUnion="false">
+        re_pattern_buffer
+    </struct>
+    </pointer>
+        </param><param>
+            <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+        </param><param>
+            <unsigned>
+        <long></long>
+    </unsigned>
+        </param><param>
+            <array length="-1">
+        <astruct isUnion="false">
+        
+    </astruct>
+    </array>
+        </param><param>
+            <signed>
+        <int></int>
+    </signed>
+        </param><ret>
+            <signed>
+        <int></int>
+    </signed>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                definedEx(CONFIG_FEATURE_FIND_REGEX)
+            </featureexpr><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                73539
+            </line>
+            <col>
+                5
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
                 xstrtoull_sfx
             </name>
             <type>
@@ -433,60 +487,6 @@
             </line>
             <col>
                 14
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
-                regexec
-            </name>
-            <type>
-                <function>
-        <param>
-            <pointer>
-        <struct isUnion="false">
-        re_pattern_buffer
-    </struct>
-    </pointer>
-        </param><param>
-            <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-        </param><param>
-            <unsigned>
-        <long></long>
-    </unsigned>
-        </param><param>
-            <array length="-1">
-        <astruct isUnion="false">
-        
-    </astruct>
-    </array>
-        </param><param>
-            <signed>
-        <int></int>
-    </signed>
-        </param><ret>
-            <signed>
-        <int></int>
-    </signed>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                definedEx(CONFIG_FEATURE_FIND_REGEX)
-            </featureexpr><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                73539
-            </line>
-            <col>
-                5
             </col>
         </pos>
         </sig>
@@ -1517,6 +1517,256 @@
         </import><import>
             <sig>
             <name>
+                alloc_action
+            </name>
+            <type>
+                <function>
+        <param>
+            <signed>
+        <int></int>
+    </signed>
+        </param><param>
+            <pointer>
+        <function>
+        <param>
+            <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+        </param><param>
+            <pointer>
+        <struct isUnion="false">
+        stat
+    </struct>
+    </pointer>
+        </param><param>
+            <pointer>
+        <void></void>
+    </pointer>
+        </param><ret>
+            <signed>
+        <int></int>
+    </signed>
+        </ret>
+    </function>
+    </pointer>
+        </param><ret>
+            <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                1
+            </featureexpr><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74553
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74543
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74528
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74499
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74490
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74483
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74475
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74466
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74458
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74447
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74435
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74428
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74421
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74414
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74406
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74362
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74346
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74339
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74321
+            </line>
+            <col>
+                43
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/findutils/find.c
+            </file>
+            <line>
+                74308
+            </line>
+            <col>
+                43
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
                 xzalloc
             </name>
             <type>
@@ -1939,256 +2189,6 @@
             </line>
             <col>
                 2
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
-                alloc_action
-            </name>
-            <type>
-                <function>
-        <param>
-            <signed>
-        <int></int>
-    </signed>
-        </param><param>
-            <pointer>
-        <function>
-        <param>
-            <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-        </param><param>
-            <pointer>
-        <struct isUnion="false">
-        stat
-    </struct>
-    </pointer>
-        </param><param>
-            <pointer>
-        <void></void>
-    </pointer>
-        </param><ret>
-            <signed>
-        <int></int>
-    </signed>
-        </ret>
-    </function>
-    </pointer>
-        </param><ret>
-            <pointer>
-        <astruct isUnion="false">
-        
-    </astruct>
-    </pointer>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                1
-            </featureexpr><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74553
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74543
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74528
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74499
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74490
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74483
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74475
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74466
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74458
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74447
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74435
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74428
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74421
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74414
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74406
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74362
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74346
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74339
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74321
-            </line>
-            <col>
-                43
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/findutils/find.c
-            </file>
-            <line>
-                74308
-            </line>
-            <col>
-                43
             </col>
         </pos>
         </sig>

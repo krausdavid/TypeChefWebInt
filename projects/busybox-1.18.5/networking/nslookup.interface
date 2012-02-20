@@ -38,7 +38,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 76762
@@ -84,7 +84,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 76759
@@ -118,7 +118,7 @@
                 (definedEx(CONFIG_VERBOSE_RESOLUTION_ERRORS) &amp;&amp; definedEx(CONFIG_NSLOOKUP))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78157
@@ -150,7 +150,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78171
@@ -160,7 +160,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78171
@@ -298,7 +298,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 76787
@@ -326,7 +326,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78248
@@ -532,7 +532,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78131
@@ -542,7 +542,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78124
@@ -574,7 +574,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78198
@@ -740,7 +740,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 76737
@@ -882,7 +882,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78133
@@ -922,7 +922,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78112
@@ -956,7 +956,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78157
@@ -966,7 +966,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78157
@@ -1054,7 +1054,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78118
@@ -1090,7 +1090,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78186
@@ -1100,7 +1100,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78128
@@ -1136,7 +1136,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78129
@@ -1312,7 +1312,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78208
@@ -1346,7 +1346,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 76734
@@ -1414,7 +1414,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 76790
@@ -1444,7 +1444,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78197
@@ -1454,7 +1454,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78197
@@ -1464,7 +1464,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78152
@@ -1474,7 +1474,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78152
@@ -1484,7 +1484,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78142
@@ -1494,7 +1494,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78142
@@ -1586,7 +1586,7 @@
                 definedEx(CONFIG_NSLOOKUP)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/networking/nslookup.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/networking/nslookup.c
             </file>
             <line>
                 78240

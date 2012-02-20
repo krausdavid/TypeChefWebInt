@@ -56,7 +56,7 @@ imports (55)
 	xstrtoull_range: (*char, signed int, unsigned long long, unsigned long long) => unsigned long long		if True		at string literal: xstrtoull_range:75904:0
 	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_range_sfx:75904:0
 	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if True		at string literal: xstrtoull_sfx:75904:0
-	xzalloc: (unsigned long) => *void		if True		at file busybox-1.18.5/libbb/xconnect.c:77671:7, file busybox-1.18.5/libbb/xconnect.c:77525:7, file busybox-1.18.5/libbb/xconnect.c:77538:7, file busybox-1.18.5/libbb/xconnect.c:77525:7, file busybox-1.18.5/libbb/xconnect.c:77438:6, file busybox-1.18.5/libbb/xconnect.c:77438:6, file busybox-1.18.5/libbb/xconnect.c:77295:11
+	xzalloc: (unsigned long) => *void		if True		at file busybox-1.18.5/libbb/xconnect.c:77671:7, file busybox-1.18.5/libbb/xconnect.c:77538:7, file busybox-1.18.5/libbb/xconnect.c:77525:7, file busybox-1.18.5/libbb/xconnect.c:77525:7, file busybox-1.18.5/libbb/xconnect.c:77438:6, file busybox-1.18.5/libbb/xconnect.c:77438:6, file busybox-1.18.5/libbb/xconnect.c:77295:11
 exports (26)
 	bb_lookup_port: (*char, *char, unsigned int) => unsigned int		if True		at file busybox-1.18.5/libbb/xconnect.c:77340:0
 	create_and_bind_dgram_or_die: (*char, signed int) => signed int		if True		at file busybox-1.18.5/libbb/xconnect.c:77721:0

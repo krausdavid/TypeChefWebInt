@@ -38,7 +38,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72858
@@ -84,7 +84,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72855
@@ -130,7 +130,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72883
@@ -160,7 +160,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/tty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/tty.c
             </file>
             <line>
                 74248
@@ -362,7 +362,7 @@
                 (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_TTY))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74215
@@ -528,7 +528,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72833
@@ -640,7 +640,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/tty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/tty.c
             </file>
             <line>
                 74233
@@ -650,7 +650,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/tty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/tty.c
             </file>
             <line>
                 74233
@@ -728,7 +728,7 @@
                 (definedEx(CONFIG_INCLUDE_SUSv2) &amp;&amp; definedEx(CONFIG_TTY))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/tty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/tty.c
             </file>
             <line>
                 74189
@@ -762,7 +762,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/tty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/tty.c
             </file>
             <line>
                 74224
@@ -932,7 +932,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72830
@@ -1000,7 +1000,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72886
@@ -1092,7 +1092,7 @@
                 definedEx(CONFIG_TTY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/tty.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/tty.c
             </file>
             <line>
                 74172

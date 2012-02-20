@@ -23,10 +23,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75386
@@ -36,7 +36,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75319
@@ -65,10 +65,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75347
@@ -107,10 +107,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75151
@@ -156,7 +156,7 @@
                 definedEx(CONFIG_PS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72857
@@ -202,7 +202,7 @@
                 definedEx(CONFIG_PS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72854
@@ -243,10 +243,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75279
@@ -283,10 +283,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 75268
@@ -332,7 +332,7 @@
                 definedEx(CONFIG_PS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72882
@@ -365,10 +365,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75456
@@ -571,40 +571,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX))) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
-            </file>
-            <line>
-                75660
-            </line>
-            <col>
-                10
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/procps/ps.c
-            </file>
-            <line>
-                75660
-            </line>
-            <col>
-                10
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/procps/ps.c
-            </file>
-            <line>
-                75644
-            </line>
-            <col>
-                9
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75393
@@ -614,13 +584,43 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75369
             </line>
             <col>
                 1
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
+            </file>
+            <line>
+                75660
+            </line>
+            <col>
+                10
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
+            </file>
+            <line>
+                75660
+            </line>
+            <col>
+                10
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
+            </file>
+            <line>
+                75644
+            </line>
+            <col>
+                9
             </col>
         </pos>
         </sig>
@@ -653,10 +653,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX)))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)))))
+                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX)))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75658
@@ -666,7 +666,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75658
@@ -760,23 +760,23 @@
                 definedEx(CONFIG_PS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
-            </file>
-            <line>
-                75668
-            </line>
-            <col>
-                3
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75128
             </line>
             <col>
                 1
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
+            </file>
+            <line>
+                75668
+            </line>
+            <col>
+                3
             </col>
         </pos>
         </sig>
@@ -801,10 +801,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; definedEx(CONFIG_PS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))))
+                (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_PS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75045
@@ -814,7 +814,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75035
@@ -824,7 +824,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75033
@@ -943,10 +943,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75177
@@ -956,7 +956,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75118
@@ -986,7 +986,7 @@
                 definedEx(CONFIG_PS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72832
@@ -1051,20 +1051,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE)) || (!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE))) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; ((!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE)) || (!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE))) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
-            </file>
-            <line>
-                75626
-            </line>
-            <col>
-                23
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75461
@@ -1074,13 +1064,23 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75344
             </line>
             <col>
                 6
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
+            </file>
+            <line>
+                75626
+            </line>
+            <col>
+                23
             </col>
         </pos>
         </sig>
@@ -1117,10 +1117,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))) || (((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75222
@@ -1130,7 +1130,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75182
@@ -1140,7 +1140,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75177
@@ -1150,7 +1150,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75123
@@ -1160,7 +1160,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75118
@@ -1170,7 +1170,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75101
@@ -1180,7 +1180,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75101
@@ -1245,10 +1245,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_CLEAN_UP))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP))))
+                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_CLEAN_UP))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_CLEAN_UP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75680
@@ -1258,7 +1258,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75680
@@ -1289,10 +1289,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || ((definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX) &amp;&amp; !definedEx(CONFIG_FEATURE_SHOW_THREADS) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE)) || !definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX) &amp;&amp; !definedEx(CONFIG_FEATURE_SHOW_THREADS) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE)) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX))) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE)) || (!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE)))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE)) || (!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE))) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)))))
+                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX))) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; ((!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE)) || (!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE)))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; ((!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE)) || (!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE))) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX))) || ((definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX) &amp;&amp; !definedEx(CONFIG_FEATURE_SHOW_THREADS) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE)) || !definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX) &amp;&amp; !definedEx(CONFIG_FEATURE_SHOW_THREADS) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE)) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75669
@@ -1302,7 +1302,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75633
@@ -1312,7 +1312,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75633
@@ -1322,20 +1322,20 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
-            </file>
-            <line>
-                75633
-            </line>
-            <col>
-                2
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75629
+            </line>
+            <col>
+                2
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
+            </file>
+            <line>
+                75633
             </line>
             <col>
                 2
@@ -1361,10 +1361,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75506
@@ -1429,10 +1429,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))
+                (((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; definedEx(CONFIG_PS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75090
@@ -1469,10 +1469,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75294
@@ -1482,7 +1482,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75293
@@ -1513,30 +1513,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX))) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX))) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; (definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX)))) || (((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
-            </file>
-            <line>
-                75651
-            </line>
-            <col>
-                22
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/procps/ps.c
-            </file>
-            <line>
-                75651
-            </line>
-            <col>
-                22
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75182
@@ -1546,7 +1526,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75101
@@ -1556,7 +1536,27 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
+            </file>
+            <line>
+                75651
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
+            </file>
+            <line>
+                75651
+            </line>
+            <col>
+                22
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75101
@@ -1599,10 +1599,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75215
@@ -1612,7 +1612,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75203
@@ -1622,7 +1622,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75171
@@ -1663,10 +1663,20 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || ((definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX) &amp;&amp; !definedEx(CONFIG_FEATURE_SHOW_THREADS) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE)) || !definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE))) || ((definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX) &amp;&amp; !definedEx(CONFIG_FEATURE_SHOW_THREADS) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE)) || !definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; ((!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE)) || (!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE))) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
+            </file>
+            <line>
+                75446
+            </line>
+            <col>
+                7
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75608
@@ -1676,23 +1686,13 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75578
             </line>
             <col>
                 8
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/procps/ps.c
-            </file>
-            <line>
-                75446
-            </line>
-            <col>
-                7
             </col>
         </pos>
         </sig>
@@ -1819,10 +1819,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; (((!definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))) || ((!definedEx(CONFIG_DESKTOP) || (!definedEx(CONFIG_FEATURE_FIND_CONTEXT) &amp;&amp; !definedEx(CONFIG_SELINUX))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75474
@@ -1832,7 +1832,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75474
@@ -1842,7 +1842,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75463
@@ -1852,7 +1852,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75367
@@ -1935,23 +1935,23 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || ((!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; !definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; ((!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE)) || (!definedEx(CONFIG_DESKTOP) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_WIDE))) &amp;&amp; definedEx(CONFIG_FEATURE_PS_WIDE) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX) || definedEx(CONFIG_FEATURE_SHOW_THREADS) || definedEx(CONFIG_FEATURE_PS_WIDE)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
-                75599
+                75507
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
-                75507
+                75599
             </line>
             <col>
                 2
@@ -1979,10 +1979,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75284
@@ -2016,7 +2016,7 @@
                 definedEx(CONFIG_PS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72829
@@ -2053,10 +2053,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; definedEx(CONFIG_PS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))))
+                (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_PS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75047
@@ -2066,7 +2066,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75037
@@ -2134,7 +2134,7 @@
                 definedEx(CONFIG_PS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72885
@@ -2174,20 +2174,20 @@
                 definedEx(CONFIG_PS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
-                75640
+                75515
             </line>
             <col>
                 13
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
-                75515
+                75640
             </line>
             <col>
                 13
@@ -2223,10 +2223,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_ADDITIONAL_COLUMNS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75391
@@ -2236,7 +2236,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75365
@@ -2246,7 +2246,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75281
@@ -2256,7 +2256,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75187
@@ -2266,7 +2266,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75153
@@ -2276,7 +2276,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75143
@@ -2286,7 +2286,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75138
@@ -2296,7 +2296,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
                 75133
@@ -2385,13 +2385,13 @@
     </function>
             </type>
             <featureexpr>
-                ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME))) &amp;&amp; definedEx(CONFIG_PS))
+                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
-                75533
+                75404
             </line>
             <col>
                 0
@@ -2425,13 +2425,13 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_PS) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))))
+                ((!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_FEATURE_PS_TIME) || definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || !definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) &amp;&amp; ((definedEx(CONFIG_DESKTOP) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS) &amp;&amp; (!definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)))) || (definedEx(CONFIG_DESKTOP) &amp;&amp; (!definedEx(CONFIG_FEATURE_PS_TIME) || !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) &amp;&amp; definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; !definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS)) || !definedEx(CONFIG_DESKTOP) || (definedEx(CONFIG_FEATURE_PS_TIME) &amp;&amp; definedEx(CONFIG_FEATURE_PS_UNUSUAL_SYSTEMS))) &amp;&amp; definedEx(CONFIG_PS))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/procps/ps.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/procps/ps.c
             </file>
             <line>
-                75404
+                75533
             </line>
             <col>
                 0

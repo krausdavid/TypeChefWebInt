@@ -36,7 +36,7 @@ exports (12)
 	bb_iswpunct: (signed int) => signed int		if def(CONFIG_UNICODE_SUPPORT)		at file busybox-1.18.5/libbb/unicode.c:79102:0
 	bb_iswspace: (signed int) => signed int		if def(CONFIG_UNICODE_SUPPORT)		at file busybox-1.18.5/libbb/unicode.c:79064:0
 	bb_mbstowcs: (*signed int, *char, unsigned long) => unsigned long		if def(CONFIG_UNICODE_SUPPORT)		at file busybox-1.18.5/libbb/unicode.c:79015:0
-	bb_wcrtomb: (*char, signed int, *struct {Map(bogus -> List((True,CSignUnspecified(CChar()))))}) => unsigned long		if def(CONFIG_UNICODE_SUPPORT)		at file busybox-1.18.5/libbb/unicode.c:78858:0
+	bb_wcrtomb: (*char, signed int, *struct {Map(bogus -> List((True,One(CSignUnspecified(CChar())))))}) => unsigned long		if def(CONFIG_UNICODE_SUPPORT)		at file busybox-1.18.5/libbb/unicode.c:78858:0
 	bb_wcstombs: (*char, *signed int, unsigned long) => unsigned long		if def(CONFIG_UNICODE_SUPPORT)		at file busybox-1.18.5/libbb/unicode.c:78891:0
 	bb_wcwidth: (unsigned int) => signed int		if def(CONFIG_UNICODE_SUPPORT)		at file busybox-1.18.5/libbb/unicode.c:79298:0
 	init_unicode: (void) => void		if (def(CONFIG_UNICODE_SUPPORT)&!def(CONFIG_UNICODE_USING_LOCALE)&def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))		at file busybox-1.18.5/libbb/unicode.c:78808:0

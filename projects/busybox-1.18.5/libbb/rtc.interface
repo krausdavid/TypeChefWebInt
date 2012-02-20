@@ -38,7 +38,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72852
@@ -84,7 +84,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 75990
@@ -118,7 +118,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76046
@@ -146,7 +146,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76052
@@ -156,7 +156,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76043
@@ -202,7 +202,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72849
@@ -236,7 +236,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76049
@@ -280,7 +280,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 75991
@@ -316,7 +316,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 75978
@@ -362,7 +362,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72877
@@ -666,7 +666,7 @@
                 (definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 76026
@@ -744,7 +744,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72827
@@ -822,7 +822,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76012
@@ -832,7 +832,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76008
@@ -912,7 +912,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76023
@@ -1076,7 +1076,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76041
@@ -1152,7 +1152,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 75996
@@ -1192,7 +1192,7 @@
                 (!definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 76026
@@ -1226,7 +1226,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72824
@@ -1260,7 +1260,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76051
@@ -1270,7 +1270,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76042
@@ -1308,7 +1308,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76018
@@ -1376,7 +1376,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72880
@@ -1466,7 +1466,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76035
@@ -1502,7 +1502,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76021
@@ -1542,7 +1542,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 76002
@@ -1572,7 +1572,7 @@
                 (definedEx(CONFIG_HWCLOCK) || definedEx(CONFIG_RTCWAKE))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/rtc.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/rtc.c
             </file>
             <line>
                 75975

@@ -24,7 +24,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74681
@@ -70,7 +70,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72875
@@ -100,7 +100,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74615
@@ -134,7 +134,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74640
@@ -144,7 +144,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74617
@@ -190,7 +190,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72872
@@ -230,7 +230,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74632
@@ -266,7 +266,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74706
@@ -312,7 +312,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72900
@@ -340,7 +340,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74603
@@ -644,7 +644,7 @@
                 (definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; definedEx(CONFIG_INOTIFYD))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74674
@@ -722,7 +722,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72850
@@ -796,7 +796,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74701
@@ -838,7 +838,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74638
@@ -880,7 +880,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74656
@@ -960,7 +960,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74682
@@ -1034,7 +1034,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74622
@@ -1158,7 +1158,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74645
@@ -1240,7 +1240,7 @@
                 (!definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; definedEx(CONFIG_INOTIFYD))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74674
@@ -1282,7 +1282,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74645
@@ -1316,7 +1316,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72847
@@ -1384,7 +1384,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72903
@@ -1414,7 +1414,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74715
@@ -1506,7 +1506,7 @@
                 definedEx(CONFIG_INOTIFYD)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/miscutils/inotifyd.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/miscutils/inotifyd.c
             </file>
             <line>
                 74593

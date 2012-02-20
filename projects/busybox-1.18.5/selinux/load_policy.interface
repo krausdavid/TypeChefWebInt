@@ -38,7 +38,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72852
@@ -72,7 +72,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/selinux/load_policy.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/selinux/load_policy.c
             </file>
             <line>
                 74176
@@ -118,7 +118,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72849
@@ -164,7 +164,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72877
@@ -192,7 +192,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/selinux/load_policy.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/selinux/load_policy.c
             </file>
             <line>
                 74171
@@ -528,7 +528,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72827
@@ -672,7 +672,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/selinux/load_policy.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/selinux/load_policy.c
             </file>
             <line>
                 74174
@@ -842,7 +842,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72824
@@ -910,7 +910,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72880
@@ -1002,7 +1002,7 @@
                 definedEx(CONFIG_LOAD_POLICY)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/selinux/load_policy.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/selinux/load_policy.c
             </file>
             <line>
                 74166

@@ -49,8 +49,8 @@ imports (91)
 	setrlimit: (signed int, *struct rlimit) => signed int		if def(CONFIG_INIT)		at file busybox-1.18.5/init/init.c:77384:3, file busybox-1.18.5/init/init.c:77384:3
 	setsid: (void) => signed int		if def(CONFIG_INIT)		at file busybox-1.18.5/init/init.c:77929:1, file busybox-1.18.5/init/init.c:77328:1
 	sigaction_set: (signed int, *struct sigaction) => signed int		if def(CONFIG_INIT)		at file busybox-1.18.5/init/init.c:78037:2, file busybox-1.18.5/init/init.c:78033:2
-	sigdelset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}, signed int) => signed int		if def(CONFIG_INIT)		at file busybox-1.18.5/init/init.c:78028:2
-	sigfillset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if def(CONFIG_INIT)		at file busybox-1.18.5/init/init.c:78027:2
+	sigdelset: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}, signed int) => signed int		if def(CONFIG_INIT)		at file busybox-1.18.5/init/init.c:78028:2
+	sigfillset: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}) => signed int		if def(CONFIG_INIT)		at file busybox-1.18.5/init/init.c:78027:2
 	signal: (signed int, *(signed int) => void) => *(signed int) => void		if def(CONFIG_INIT)		at file busybox-1.18.5/init/init.c:78023:2, file busybox-1.18.5/init/init.c:77789:1, file busybox-1.18.5/init/init.c:77773:1
 	sigprocmask_allsigs: (signed int) => signed int		if def(CONFIG_INIT)		at file busybox-1.18.5/init/init.c:77318:2, file busybox-1.18.5/init/init.c:77296:1, file busybox-1.18.5/init/init.c:77225:1
 	skip_dev_pfx: (*char) => *char		if (def(CONFIG_FEATURE_USE_INITTAB)&def(CONFIG_INIT))		at file busybox-1.18.5/init/init.c:77597:35

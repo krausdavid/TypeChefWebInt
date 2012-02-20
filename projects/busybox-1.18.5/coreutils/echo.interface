@@ -22,7 +22,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74294
@@ -68,7 +68,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72871
@@ -108,7 +108,7 @@
                 (definedEx(CONFIG_FEATURE_FANCY_ECHO) &amp;&amp; (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74233
@@ -154,7 +154,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72868
@@ -200,7 +200,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72896
@@ -402,7 +402,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74291
@@ -412,7 +412,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74286
@@ -422,7 +422,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74280
@@ -588,7 +588,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72846
@@ -664,7 +664,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74214
@@ -674,7 +674,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74199
@@ -754,7 +754,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74254
@@ -958,7 +958,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72843
@@ -1026,7 +1026,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72899
@@ -1062,7 +1062,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74277
@@ -1072,7 +1072,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74277
@@ -1164,7 +1164,7 @@
                 (definedEx(CONFIG_ASH) || definedEx(CONFIG_HUSH) || definedEx(CONFIG_ECHO))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/echo.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/echo.c
             </file>
             <line>
                 74181

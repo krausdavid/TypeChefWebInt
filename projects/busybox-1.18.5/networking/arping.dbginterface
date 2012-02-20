@@ -34,10 +34,10 @@ imports (61)
 	sendto: (signed int, *void, unsigned long, signed int, CIgnore(), unsigned int) => signed long		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78656:7
 	setsockopt: (signed int, signed int, signed int, *void, unsigned int) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78932:7
 	setsockopt_bindtodevice: (signed int, *char) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78918:2
-	sigaddset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}, signed int) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78990:2, file busybox-1.18.5/networking/arping.c:78989:2
-	sigemptyset: (*struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78988:2
+	sigaddset: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}, signed int) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78990:2, file busybox-1.18.5/networking/arping.c:78989:2
+	sigemptyset: (*struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78988:2
 	signal_SA_RESTART_empty_mask: (signed int, *(signed int) => void) => void		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78972:1, file busybox-1.18.5/networking/arping.c:78971:1
-	sigprocmask: (signed int, *struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}, *struct {Map(__val -> List((True,CArray(CUnsigned(CLong()),-1))))}) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78993:2, file busybox-1.18.5/networking/arping.c:78991:2
+	sigprocmask: (signed int, *struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}, *struct {Map(__val -> List((True,One(CArray(CUnsigned(CLong()),-1)))))}) => signed int		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78993:2, file busybox-1.18.5/networking/arping.c:78991:2
 	strncpy_IFNAMSIZ: (*char, *char) => *char		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78861:2
 	xasprintf: (*char, ...) => *char		if def(CONFIG_ARPING)		at file busybox-1.18.5/networking/arping.c:78836:11
 	xatoll: (*char) => signed long long		if def(CONFIG_ARPING)		at string literal: xatoll:77224:0

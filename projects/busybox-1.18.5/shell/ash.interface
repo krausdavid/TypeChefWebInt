@@ -22,7 +22,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 75973
@@ -59,7 +59,7 @@
                 file systems/redhat/usr/include/setjmp.h
             </file>
             <line>
-                89060
+                89074
             </line>
             <col>
                 21
@@ -69,7 +69,7 @@
                 file systems/redhat/usr/include/setjmp.h
             </file>
             <line>
-                88850
+                88864
             </line>
             <col>
                 21
@@ -79,7 +79,7 @@
                 file systems/redhat/usr/include/setjmp.h
             </file>
             <line>
-                87521
+                87535
             </line>
             <col>
                 21
@@ -89,7 +89,7 @@
                 file systems/redhat/usr/include/setjmp.h
             </file>
             <line>
-                85255
+                85269
             </line>
             <col>
                 21
@@ -99,7 +99,7 @@
                 file systems/redhat/usr/include/setjmp.h
             </file>
             <line>
-                84522
+                84529
             </line>
             <col>
                 21
@@ -109,7 +109,7 @@
                 file systems/redhat/usr/include/setjmp.h
             </file>
             <line>
-                84036
+                84043
             </line>
             <col>
                 21
@@ -164,7 +164,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79090
@@ -198,17 +198,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84383
+                84390
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81476
@@ -218,7 +218,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80666
@@ -252,117 +252,117 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88552
+                88566
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88396
+                88410
             </line>
             <col>
                 11
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86553
+                86567
             </line>
             <col>
                 34
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86178
+                86192
             </line>
             <col>
                 47
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85799
+                85813
             </line>
             <col>
                 29
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85373
+                85387
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85373
+                85387
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83788
+                83795
             </line>
             <col>
                 15
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83752
+                83759
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83736
+                83743
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83245
+                83252
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82849
@@ -372,7 +372,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82367
@@ -382,7 +382,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82296
@@ -392,7 +392,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81846
@@ -402,7 +402,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81317
@@ -412,7 +412,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81210
@@ -422,7 +422,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80669
@@ -432,7 +432,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79958
@@ -442,7 +442,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78006
@@ -452,7 +452,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77843
@@ -462,7 +462,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77680
@@ -472,7 +472,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77064
@@ -482,7 +482,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76898
@@ -518,37 +518,37 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                87525
+                87539
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85218
+                85232
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84046
+                84053
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81073
@@ -558,7 +558,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 75871
@@ -628,77 +628,77 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88885
+                88899
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                87531
+                87545
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85887
+                85901
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85754
+                85768
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84606
+                84613
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83917
+                83924
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83079
+                83086
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82850
@@ -708,7 +708,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81219
@@ -718,7 +718,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80894
@@ -728,7 +728,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80320
@@ -738,7 +738,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79921
@@ -748,7 +748,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77684
@@ -758,7 +758,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76859
@@ -792,10 +792,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85266
+                85280
             </line>
             <col>
                 15
@@ -832,67 +832,67 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86613
+                86627
             </line>
             <col>
                 12
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86611
+                86625
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86006
+                86020
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85930
+                85944
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83484
+                83491
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83239
+                83246
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82786
@@ -902,7 +902,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80368
@@ -912,7 +912,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80280
@@ -922,7 +922,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79377
@@ -932,7 +932,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78748
@@ -942,7 +942,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76636
@@ -988,7 +988,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72894
@@ -1030,7 +1030,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78041
@@ -1040,7 +1040,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78022
@@ -1070,17 +1070,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88876
+                88890
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80687
@@ -1122,37 +1122,37 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86222
+                86236
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86204
+                86218
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85855
+                85869
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79655
@@ -1162,7 +1162,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79611
@@ -1172,7 +1172,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78902
@@ -1182,7 +1182,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78876
@@ -1192,7 +1192,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76639
@@ -1202,7 +1202,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76637
@@ -1212,7 +1212,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76634
@@ -1252,10 +1252,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88820
+                88834
             </line>
             <col>
                 8
@@ -1292,20 +1292,20 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/platform.h
             </file>
             <line>
-                85003
+                85010
             </line>
             <col>
                 18
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/platform.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/platform.h
             </file>
             <line>
-                84968
+                84975
             </line>
             <col>
                 18
@@ -1336,10 +1336,10 @@
                 (definedEx(CONFIG_ASH_RANDOM_SUPPORT) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86110
+                86124
             </line>
             <col>
                 6
@@ -1376,7 +1376,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78056
@@ -1412,7 +1412,7 @@
                 (definedEx(CONFIG_ASH_JOB_CONTROL) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79423
@@ -1422,7 +1422,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79343
@@ -1449,16 +1449,16 @@
     </function>
             </type>
             <featureexpr>
-                definedEx(CONFIG_ASH)
+                (!definedEx(CONFIG_NOMMU) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
-                80444
+                80441
             </line>
             <col>
-                7
+                25
             </col>
         </pos>
         </sig>
@@ -1486,20 +1486,20 @@
                 (definedEx(CONFIG_FEATURE_SH_STANDALONE) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88339
+                88353
             </line>
             <col>
                 18
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83111
+                83118
             </line>
             <col>
                 18
@@ -1536,17 +1536,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86070
+                86084
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82341
@@ -1556,7 +1556,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78433
@@ -1566,7 +1566,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78433
@@ -1576,7 +1576,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77672
@@ -1586,7 +1586,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77630
@@ -1596,7 +1596,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77155
@@ -1628,77 +1628,87 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85779
+                85793
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85735
+                85749
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85707
+                85721
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84409
+                84416
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84405
+                84412
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84399
+                84406
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84395
+                84402
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
+            </file>
+            <line>
+                84398
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 84391
@@ -1708,17 +1718,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
-            </file>
-            <line>
-                84384
-            </line>
-            <col>
-                4
-            </col>
-        </pos><pos>
-            <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81541
@@ -1728,7 +1728,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81491
@@ -1738,7 +1738,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81485
@@ -1748,7 +1748,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81481
@@ -1758,7 +1758,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81029
@@ -1768,7 +1768,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81020
@@ -1778,7 +1778,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80983
@@ -1788,7 +1788,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80985
@@ -1798,7 +1798,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80976
@@ -1808,7 +1808,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80950
@@ -1818,7 +1818,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80690
@@ -1828,7 +1828,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80677
@@ -1838,7 +1838,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80648
@@ -1848,7 +1848,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80348
@@ -1858,7 +1858,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80348
@@ -1868,7 +1868,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79366
@@ -1878,7 +1878,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79328
@@ -1924,7 +1924,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72891
@@ -1956,107 +1956,107 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89051
+                89065
             </line>
             <col>
                 43
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89049
+                89063
             </line>
             <col>
                 36
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89047
+                89061
             </line>
             <col>
                 91
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89046
+                89060
             </line>
             <col>
                 93
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89045
+                89059
             </line>
             <col>
                 81
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85692
+                85706
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85376
+                85390
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85376
+                85390
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84603
+                84610
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83244
+                83251
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81333
@@ -2066,7 +2066,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78799
@@ -2076,7 +2076,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77647
@@ -2168,10 +2168,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88743
+                88757
             </line>
             <col>
                 5
@@ -2212,7 +2212,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82351
@@ -2246,27 +2246,27 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88907
+                88921
             </line>
             <col>
                 17
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86133
+                86147
             </line>
             <col>
                 27
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80199
@@ -2276,7 +2276,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80196
@@ -2316,10 +2316,10 @@
                 (definedEx(CONFIG_ASH_BUILTIN_ECHO) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84731
+                84738
             </line>
             <col>
                 63
@@ -2356,7 +2356,7 @@
                 (definedEx(CONFIG_ASH_JOB_CONTROL) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79391
@@ -2386,7 +2386,7 @@
                 (definedEx(CONFIG_ASH_JOB_CONTROL) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79341
@@ -2422,7 +2422,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82741
@@ -2526,7 +2526,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79849
@@ -2536,7 +2536,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76965
@@ -2566,10 +2566,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88907
+                88921
             </line>
             <col>
                 22
@@ -2612,17 +2612,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86499
+                86513
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72919
@@ -2662,10 +2662,10 @@
                 (definedEx(CONFIG_FEATURE_SH_NOFORK) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85160
+                85174
             </line>
             <col>
                 16
@@ -2702,67 +2702,67 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88911
+                88925
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88911
+                88925
             </line>
             <col>
                 37
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88383
+                88397
             </line>
             <col>
                 9
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88267
+                88281
             </line>
             <col>
                 10
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88164
+                88178
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85850
+                85864
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80605
@@ -2772,7 +2772,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78168
@@ -2982,10 +2982,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85009
+                85016
             </line>
             <col>
                 2
@@ -3022,7 +3022,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81677
@@ -3064,10 +3064,10 @@
                 (definedEx(CONFIG_FEATURE_EDITING_SAVEHISTORY) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89106
+                89120
             </line>
             <col>
                 18
@@ -3100,7 +3100,7 @@
                 (definedEx(CONFIG_ASH_JOB_CONTROL) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79452
@@ -3110,7 +3110,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79402
@@ -3218,7 +3218,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80639
@@ -3254,7 +3254,7 @@
                 (definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
                 81417
@@ -3332,17 +3332,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89093
+                89107
             </line>
             <col>
                 11
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80331
@@ -3378,37 +3378,37 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88504
+                88518
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88188
+                88202
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85889
+                85903
             </line>
             <col>
                 19
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80216
@@ -3418,7 +3418,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78801
@@ -3428,7 +3428,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78800
@@ -3438,7 +3438,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78795
@@ -3448,7 +3448,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78082
@@ -3458,7 +3458,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77887
@@ -3468,7 +3468,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77887
@@ -3478,7 +3478,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77653
@@ -3518,7 +3518,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81734
@@ -3554,47 +3554,47 @@
                 (definedEx(CONFIG_SH_MATH_SUPPORT) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85277
+                85291
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85277
+                85291
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84857
+                84864
             </line>
             <col>
                 17
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84857
+                84864
             </line>
             <col>
                 17
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77671
@@ -3604,7 +3604,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77671
@@ -3638,10 +3638,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88654
+                88668
             </line>
             <col>
                 1
@@ -3694,10 +3694,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86062
+                86076
             </line>
             <col>
                 1
@@ -3826,7 +3826,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82943
@@ -3836,7 +3836,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82744
@@ -3846,7 +3846,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81834
@@ -3856,7 +3856,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81792
@@ -3886,7 +3886,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72869
@@ -3974,20 +3974,20 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83067
+                83074
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83057
+                83064
             </line>
             <col>
                 2
@@ -4018,10 +4018,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88492
+                88506
             </line>
             <col>
                 10
@@ -4050,17 +4050,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85747
+                85761
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79332
@@ -4100,17 +4100,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85771
+                85785
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80734
@@ -4120,7 +4120,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80728
@@ -4130,7 +4130,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80709
@@ -4140,7 +4140,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80703
@@ -4150,7 +4150,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80620
@@ -4160,7 +4160,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80619
@@ -4170,7 +4170,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80349
@@ -4180,7 +4180,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80349
@@ -4190,7 +4190,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79315
@@ -4224,10 +4224,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89057
+                89071
             </line>
             <col>
                 20
@@ -4262,7 +4262,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80940
@@ -4272,7 +4272,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80782
@@ -4282,7 +4282,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79326
@@ -4318,7 +4318,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82724
@@ -4358,17 +4358,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85569
+                85583
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82199
@@ -4378,7 +4378,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82179
@@ -4418,7 +4418,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82703
@@ -4500,7 +4500,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76641
@@ -4534,10 +4534,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88805
+                88819
             </line>
             <col>
                 3
@@ -4574,7 +4574,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79909
@@ -4584,7 +4584,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76876
@@ -4624,7 +4624,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 75965
@@ -4656,27 +4656,27 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88946
+                88960
             </line>
             <col>
                 33
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88946
+                88960
             </line>
             <col>
                 46
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79322
@@ -4750,7 +4750,7 @@
                 (definedEx(CONFIG_LOCALE_SUPPORT) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82783
@@ -4782,10 +4782,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88653
+                88667
             </line>
             <col>
                 11
@@ -4824,17 +4824,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88292
+                88306
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79238
@@ -4844,7 +4844,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79238
@@ -4886,7 +4886,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82842
@@ -4896,7 +4896,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81202
@@ -4932,7 +4932,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 75995
@@ -4966,7 +4966,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82756
@@ -5006,97 +5006,97 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88902
+                88916
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88577
+                88591
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88264
+                88278
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88151
+                88165
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                87780
+                87794
             </line>
             <col>
                 8
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                87455
+                87469
             </line>
             <col>
                 20
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86874
+                86888
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84614
+                84621
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83109
+                83116
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82587
@@ -5106,7 +5106,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82583
@@ -5116,7 +5116,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82562
@@ -5126,7 +5126,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82557
@@ -5136,7 +5136,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82400
@@ -5146,7 +5146,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82346
@@ -5156,7 +5156,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78872
@@ -5200,7 +5200,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79060
@@ -5234,7 +5234,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79084
@@ -5270,7 +5270,7 @@
                 (definedEx(CONFIG_ASH_JOB_CONTROL) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80414
@@ -5280,7 +5280,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80335
@@ -5290,7 +5290,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79360
@@ -5300,7 +5300,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79351
@@ -5340,10 +5340,10 @@
                 (definedEx(CONFIG_ASH_BUILTIN_PRINTF) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84734
+                84741
             </line>
             <col>
                 63
@@ -5380,7 +5380,7 @@
                 (definedEx(CONFIG_SH_MATH_SUPPORT) &amp;&amp; !definedEx(CONFIG_SH_MATH_SUPPORT_64) &amp;&amp; (!definedEx(CONFIG_SH_MATH_SUPPORT) || !definedEx(CONFIG_SH_MATH_SUPPORT_64)) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81096
@@ -5454,7 +5454,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 75895
@@ -5492,10 +5492,20 @@
                 (definedEx(CONFIG_FEATURE_SH_STANDALONE) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83054
+                83061
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
+            </file>
+            <line>
+                83061
             </line>
             <col>
                 3
@@ -5586,27 +5596,27 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83787
+                83794
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83250
+                83257
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82746
@@ -5616,7 +5626,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79629
@@ -5626,7 +5636,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77852
@@ -5666,47 +5676,47 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                87645
+                87659
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                87532
+                87546
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84607
+                84614
             </line>
             <col>
                 14
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84494
+                84501
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81225
@@ -5716,7 +5726,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80320
@@ -5726,7 +5736,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77848
@@ -5736,7 +5746,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77688
@@ -5746,7 +5756,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77685
@@ -5756,7 +5766,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77174
@@ -5766,7 +5776,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77160
@@ -5776,7 +5786,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77057
@@ -5786,7 +5796,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76990
@@ -5796,7 +5806,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76899
@@ -5836,7 +5846,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82934
@@ -5846,7 +5856,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80684
@@ -5856,7 +5866,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80671
@@ -5866,7 +5876,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77025
@@ -5940,7 +5950,7 @@
                 (definedEx(CONFIG_ASH_JOB_CONTROL) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79334
@@ -5976,7 +5986,7 @@
                 (definedEx(CONFIG_ASH_JOB_CONTROL) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79359
@@ -5986,7 +5996,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79292
@@ -6020,10 +6030,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88471
+                88485
             </line>
             <col>
                 6
@@ -6050,7 +6060,7 @@
                 (!definedEx(CONFIG_FEATURE_EDITING_FANCY_PROMPT) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77530
@@ -6112,20 +6122,20 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84844
+                84851
             </line>
             <col>
                 6
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83490
+                83497
             </line>
             <col>
                 8
@@ -6162,10 +6172,10 @@
                 (definedEx(CONFIG_ASH_BUILTIN_TEST) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84737
+                84744
             </line>
             <col>
                 63
@@ -6204,13 +6214,43 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79515
             </line>
             <col>
                 7
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                BUG_fork_is_unavailable_on_nommu
+            </name>
+            <type>
+                <function>
+        <param>
+            <void></void>
+        </param><ret>
+            <signed>
+        <int></int>
+    </signed>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                (definedEx(CONFIG_NOMMU) &amp;&amp; definedEx(CONFIG_ASH))
+            </featureexpr><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
+            </file>
+            <line>
+                80441
+            </line>
+            <col>
+                25
             </col>
         </pos>
         </sig>
@@ -6238,7 +6278,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79484
@@ -6272,7 +6312,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72866
@@ -6308,27 +6348,27 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84398
+                84405
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84394
+                84401
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80780
@@ -6362,17 +6402,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                87285
+                87299
             </line>
             <col>
                 31
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82330
@@ -6382,7 +6422,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81995
@@ -6392,7 +6432,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79227
@@ -6402,7 +6442,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79227
@@ -6412,7 +6452,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77137
@@ -6446,7 +6486,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76726
@@ -6478,40 +6518,40 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88823
+                88837
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88817
+                88831
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88783
+                88797
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88782
+                88796
             </line>
             <col>
                 8
@@ -6554,7 +6594,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76010
@@ -6586,10 +6626,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85267
+                85281
             </line>
             <col>
                 1
@@ -6620,7 +6660,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 75982
@@ -6654,10 +6694,20 @@
                 (definedEx(CONFIG_FEATURE_SH_STANDALONE) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83053
+                83060
+            </line>
+            <col>
+                4
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
+            </file>
+            <line>
+                83060
             </line>
             <col>
                 4
@@ -6724,17 +6774,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85459
+                85473
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80552
@@ -6744,7 +6794,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 75903
@@ -6784,7 +6834,7 @@
                 (definedEx(CONFIG_SH_MATH_SUPPORT) &amp;&amp; definedEx(CONFIG_SH_MATH_SUPPORT_64) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81096
@@ -6814,7 +6864,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72922
@@ -6850,10 +6900,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88832
+                88846
             </line>
             <col>
                 8
@@ -6886,10 +6936,10 @@
                 (definedEx(CONFIG_ASH_BASH_COMPAT) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86900
+                86914
             </line>
             <col>
                 6
@@ -6916,10 +6966,20 @@
                 (definedEx(CONFIG_FEATURE_SH_STANDALONE) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83051
+                83058
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
+            </file>
+            <line>
+                83058
             </line>
             <col>
                 3
@@ -6968,27 +7028,27 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88892
+                88906
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88888
+                88902
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80682
@@ -6998,7 +7058,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78978
@@ -7008,7 +7068,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 75902
@@ -7054,10 +7114,10 @@
                 (definedEx(CONFIG_ASH_RANDOM_SUPPORT) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86158
+                86172
             </line>
             <col>
                 6
@@ -7094,7 +7154,7 @@
                 (definedEx(CONFIG_LOCALE_SUPPORT) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77323
@@ -7104,7 +7164,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77317
@@ -7154,10 +7214,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85453
+                85467
             </line>
             <col>
                 7
@@ -7184,167 +7244,167 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89108
+                89122
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88864
+                88878
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                88506
+                88520
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                87648
+                87662
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                87522
+                87536
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86035
+                86049
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85712
+                85726
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85708
+                85722
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85422
+                85436
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85410
+                85424
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84507
+                84514
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84503
+                84510
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84495
+                84502
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83269
+                83276
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83204
+                83211
             </line>
             <col>
                 4
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                83070
+                83077
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82855
@@ -7354,7 +7414,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82853
@@ -7364,7 +7424,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 82627
@@ -7374,7 +7434,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81539
@@ -7384,7 +7444,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81375
@@ -7394,7 +7454,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81355
@@ -7404,7 +7464,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81034
@@ -7414,7 +7474,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 80247
@@ -7424,7 +7484,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79282
@@ -7434,7 +7494,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79279
@@ -7444,7 +7504,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78793
@@ -7454,7 +7514,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78779
@@ -7464,7 +7524,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78778
@@ -7474,7 +7534,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78777
@@ -7484,7 +7544,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78084
@@ -7494,7 +7554,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78073
@@ -7504,7 +7564,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77886
@@ -7514,7 +7574,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77886
@@ -7524,7 +7584,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77755
@@ -7534,7 +7594,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77753
@@ -7544,7 +7604,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77640
@@ -7554,7 +7614,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77628
@@ -7564,7 +7624,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77273
@@ -7574,7 +7634,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 77272
@@ -7584,7 +7644,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76925
@@ -7594,7 +7654,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 76236
@@ -7630,20 +7690,20 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84401
+                84408
             </line>
             <col>
                 3
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                84294
+                84301
             </line>
             <col>
                 2
@@ -7682,37 +7742,37 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86326
+                86340
             </line>
             <col>
                 2
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86324
+                86338
             </line>
             <col>
                 5
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                86307
+                86321
             </line>
             <col>
                 1
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 79387
@@ -7746,7 +7806,7 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 78111
@@ -7814,7 +7874,7 @@
                 (!definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; definedEx(CONFIG_ASH))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
                 81417
@@ -7854,17 +7914,17 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                85441
+                85455
             </line>
             <col>
                 7
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
                 81532
@@ -7956,10 +8016,10 @@
                 definedEx(CONFIG_ASH)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/shell/ash.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/shell/ash.c
             </file>
             <line>
-                89037
+                89051
             </line>
             <col>
                 0

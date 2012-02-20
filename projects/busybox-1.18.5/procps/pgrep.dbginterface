@@ -18,7 +18,7 @@ imports (36)
 	print_signames: (void) => void		if (def(CONFIG_PGREP)|def(CONFIG_PKILL))		at file busybox-1.18.5/procps/pgrep.c:75089:2, file busybox-1.18.5/procps/pgrep.c:75089:2
 	printf: (*char, ...) => signed int		if (def(CONFIG_PGREP)|def(CONFIG_PKILL))		at file busybox-1.18.5/procps/pgrep.c:75024:3, file busybox-1.18.5/procps/pgrep.c:75022:3, file busybox-1.18.5/procps/pgrep.c:75024:3, file busybox-1.18.5/procps/pgrep.c:75022:3
 	procps_scan: (*struct procps_status_t, signed int) => *struct procps_status_t		if (def(CONFIG_PGREP)|def(CONFIG_PKILL))		at file busybox-1.18.5/procps/pgrep.c:75111:16
-	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((True,CSigned(CInt()))), rm_eo -> List((True,CSigned(CInt()))))}[], signed int) => signed int		if (def(CONFIG_PGREP)|def(CONFIG_PKILL))		at file busybox-1.18.5/procps/pgrep.c:75135:7
+	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((True,One(CSigned(CInt())))), rm_eo -> List((True,One(CSigned(CInt())))))}[], signed int) => signed int		if (def(CONFIG_PGREP)|def(CONFIG_PKILL))		at file busybox-1.18.5/procps/pgrep.c:75135:7
 	strlen: (*char) => unsigned long		if (def(CONFIG_PGREP)|def(CONFIG_PKILL))		at file busybox-1.18.5/procps/pgrep.c:75136:83
 	xatoll: (*char) => signed long long		if (def(CONFIG_PGREP)|def(CONFIG_PKILL))		at string literal: xatoll:72810:0
 	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_PGREP)|def(CONFIG_PKILL))		at string literal: xatoll_range:72810:0

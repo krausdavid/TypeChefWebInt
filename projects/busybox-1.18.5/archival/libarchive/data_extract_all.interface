@@ -34,7 +34,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74486
@@ -74,7 +74,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74507
@@ -120,7 +120,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72851
@@ -162,7 +162,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74646
@@ -202,7 +202,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74483
@@ -234,7 +234,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74573
@@ -268,7 +268,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74538
@@ -278,7 +278,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74524
@@ -288,7 +288,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74514
@@ -334,7 +334,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72848
@@ -380,7 +380,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72876
@@ -592,7 +592,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74603
@@ -628,7 +628,7 @@
                 (definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
                 74624
@@ -666,7 +666,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74572
@@ -748,7 +748,7 @@
                 (definedEx(CONFIG_FEATURE_TAR_SELINUX) &amp;&amp; (definedEx(CONFIG_FEATURE_FIND_CONTEXT) || definedEx(CONFIG_SELINUX)) &amp;&amp; (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74667
@@ -758,7 +758,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74477
@@ -876,7 +876,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72826
@@ -914,7 +914,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74577
@@ -984,7 +984,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74534
@@ -1024,7 +1024,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74522
@@ -1098,7 +1098,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74531
@@ -1138,7 +1138,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74589
@@ -1206,7 +1206,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74607
@@ -1216,7 +1216,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74593
@@ -1226,7 +1226,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74583
@@ -1236,7 +1236,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74552
@@ -1269,10 +1269,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME) &amp;&amp; !definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2)))
+                (definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME) &amp;&amp; !definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (!definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME) || !definedEx(CONFIG_USE_BB_PWD_GRP)) &amp;&amp; (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
                 74635
@@ -1312,7 +1312,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74659
@@ -1350,7 +1350,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74652
@@ -1392,7 +1392,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74568
@@ -1474,7 +1474,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74550
@@ -1602,7 +1602,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74611
@@ -1636,7 +1636,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72823
@@ -1672,7 +1672,7 @@
                 (definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME) &amp;&amp; definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/grp_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/grp_.h
             </file>
             <line>
                 74635
@@ -1740,7 +1740,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72879
@@ -1774,7 +1774,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74537
@@ -1784,7 +1784,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74511
@@ -1814,7 +1814,7 @@
                 (definedEx(CONFIG_FEATURE_TAR_SELINUX) &amp;&amp; (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74478
@@ -1847,10 +1847,10 @@
     </function>
             </type>
             <featureexpr>
-                (definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME) &amp;&amp; !definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2)))
+                (definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME) &amp;&amp; !definedEx(CONFIG_USE_BB_PWD_GRP) &amp;&amp; (!definedEx(CONFIG_FEATURE_TAR_UNAME_GNAME) || !definedEx(CONFIG_USE_BB_PWD_GRP)) &amp;&amp; (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2)))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/pwd_.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/pwd_.h
             </file>
             <line>
                 74624
@@ -1934,7 +1934,7 @@
                 (definedEx(CONFIG_AR) || definedEx(CONFIG_FEATURE_SEAMLESS_BZ2) || definedEx(CONFIG_GUNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_XZ) || definedEx(CONFIG_TAR) || definedEx(CONFIG_RPM) || definedEx(CONFIG_UNCOMPRESS) || definedEx(CONFIG_UNLZMA) || definedEx(CONFIG_FEATURE_COMPRESS_BBCONFIG) || definedEx(CONFIG_FEATURE_SEAMLESS_Z) || definedEx(CONFIG_UNXZ) || definedEx(CONFIG_RPM2CPIO) || definedEx(CONFIG_UNZIP) || definedEx(CONFIG_FEATURE_SEAMLESS_LZMA) || definedEx(CONFIG_DPKG_DEB) || definedEx(CONFIG_FEATURE_COMPRESS_USAGE) || definedEx(CONFIG_DPKG) || definedEx(CONFIG_FEATURE_SEAMLESS_GZ) || definedEx(CONFIG_FEATURE_TAR_TO_COMMAND) || definedEx(CONFIG_CPIO) || definedEx(CONFIG_BUNZIP2))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/archival/libarchive/data_extract_all.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/archival/libarchive/data_extract_all.c
             </file>
             <line>
                 74466

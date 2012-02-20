@@ -38,7 +38,7 @@
                 definedEx(CONFIG_SETLOGCONS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72857
@@ -84,7 +84,7 @@
                 definedEx(CONFIG_SETLOGCONS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72854
@@ -130,7 +130,7 @@
                 definedEx(CONFIG_SETLOGCONS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72882
@@ -434,7 +434,7 @@
                 (definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; definedEx(CONFIG_SETLOGCONS))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74185
@@ -512,7 +512,7 @@
                 definedEx(CONFIG_SETLOGCONS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72832
@@ -802,7 +802,7 @@
                 definedEx(CONFIG_SETLOGCONS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/setlogcons.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/setlogcons.c
             </file>
             <line>
                 74181
@@ -842,7 +842,7 @@
                 (!definedEx(CONFIG_IOCTL_HEX2STR_ERROR) &amp;&amp; definedEx(CONFIG_SETLOGCONS))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74185
@@ -876,7 +876,7 @@
                 definedEx(CONFIG_SETLOGCONS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72829
@@ -914,7 +914,7 @@
                 definedEx(CONFIG_SETLOGCONS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/setlogcons.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/setlogcons.c
             </file>
             <line>
                 74195
@@ -924,7 +924,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/console-tools/setlogcons.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/setlogcons.c
             </file>
             <line>
                 74185
@@ -992,7 +992,7 @@
                 definedEx(CONFIG_SETLOGCONS)
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72885
@@ -1084,7 +1084,7 @@
                 definedEx(CONFIG_SETLOGCONS)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/console-tools/setlogcons.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/console-tools/setlogcons.c
             </file>
             <line>
                 74171

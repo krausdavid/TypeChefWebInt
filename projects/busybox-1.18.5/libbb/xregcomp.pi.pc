@@ -1,1 +1,0 @@
-(definedEx(CONFIG_DEVFSD) || definedEx(CONFIG_GREP) || definedEx(CONFIG_AWK) || definedEx(CONFIG_EXPR) || definedEx(CONFIG_MDEV) || definedEx(CONFIG_PGREP) || definedEx(CONFIG_SED) || definedEx(CONFIG_PKILL) || definedEx(CONFIG_FEATURE_FIND_REGEX) || definedEx(CONFIG_LESS))

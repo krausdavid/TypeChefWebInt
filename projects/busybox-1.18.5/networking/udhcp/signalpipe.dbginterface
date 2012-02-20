@@ -31,6 +31,6 @@ imports (28)
 	xstrtoull_range_sfx: (*char, signed int, unsigned long long, unsigned long long, *struct suffix_mult) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xstrtoull_range_sfx:72833:0
 	xstrtoull_sfx: (*char, signed int, *struct suffix_mult) => unsigned long long		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at string literal: xstrtoull_sfx:72833:0
 exports (3)
-	udhcp_sp_fd_set: (*struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}, signed int) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/signalpipe.c:76605:0
-	udhcp_sp_read: (*struct {Map(fds_bits -> List((True,CArray(CSigned(CLong()),-1))))}) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/signalpipe.c:76619:0
+	udhcp_sp_fd_set: (*struct {Map(fds_bits -> List((True,One(CArray(CSigned(CLong()),-1)))))}, signed int) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/signalpipe.c:76605:0
+	udhcp_sp_read: (*struct {Map(fds_bits -> List((True,One(CArray(CSigned(CLong()),-1)))))}) => signed int		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/signalpipe.c:76619:0
 	udhcp_sp_setup: (void) => void		if (def(CONFIG_UDHCPD)|def(CONFIG_UDHCPC))		at file busybox-1.18.5/networking/udhcp/signalpipe.c:76588:0

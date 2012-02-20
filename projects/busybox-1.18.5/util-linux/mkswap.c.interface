@@ -169,42 +169,6 @@
         </import><import>
             <sig>
             <name>
-                context_new
-            </name>
-            <type>
-                <function>
-        <param>
-            <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-        </param><ret>
-            <pointer>
-        <astruct isUnion="false">
-        
-    </astruct>
-    </pointer>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                definedEx(CONFIG_SELINUX)
-            </featureexpr><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/util-linux/mkswap.c
-            </file>
-            <line>
-                72136
-            </line>
-            <col>
-                12
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
                 bin2hex
             </name>
             <type>
@@ -357,6 +321,42 @@
             </line>
             <col>
                 0
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                context_new
+            </name>
+            <type>
+                <function>
+        <param>
+            <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+        </param><ret>
+            <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                definedEx(CONFIG_SELINUX)
+            </featureexpr><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/util-linux/mkswap.c
+            </file>
+            <line>
+                72136
+            </line>
+            <col>
+                12
             </col>
         </pos>
         </sig>
@@ -791,6 +791,42 @@
         </import><import>
             <sig>
             <name>
+                context_str
+            </name>
+            <type>
+                <function>
+        <param>
+            <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+        </param><ret>
+            <pointer>
+        <nosign>
+        <char></char>
+    </nosign>
+    </pointer>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                definedEx(CONFIG_SELINUX)
+            </featureexpr><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/util-linux/mkswap.c
+            </file>
+            <line>
+                72139
+            </line>
+            <col>
+                11
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
                 freecon
             </name>
             <type>
@@ -889,7 +925,7 @@
         </import><import>
             <sig>
             <name>
-                context_str
+                context_type_set
             </name>
             <type>
                 <function>
@@ -899,12 +935,16 @@
         
     </astruct>
     </pointer>
-        </param><ret>
+        </param><param>
             <pointer>
         <nosign>
         <char></char>
     </nosign>
     </pointer>
+        </param><ret>
+            <signed>
+        <int></int>
+    </signed>
         </ret>
     </function>
             </type>
@@ -915,10 +955,10 @@
                 file cprojects/busybox/busybox-1.18.5/util-linux/mkswap.c
             </file>
             <line>
-                72139
+                72137
             </line>
             <col>
-                11
+                18
             </col>
         </pos>
         </sig>
@@ -1537,46 +1577,6 @@
         </import><import>
             <sig>
             <name>
-                context_type_set
-            </name>
-            <type>
-                <function>
-        <param>
-            <pointer>
-        <astruct isUnion="false">
-        
-    </astruct>
-    </pointer>
-        </param><param>
-            <pointer>
-        <nosign>
-        <char></char>
-    </nosign>
-    </pointer>
-        </param><ret>
-            <signed>
-        <int></int>
-    </signed>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                definedEx(CONFIG_SELINUX)
-            </featureexpr><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/util-linux/mkswap.c
-            </file>
-            <line>
-                72137
-            </line>
-            <col>
-                18
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
                 is_selinux_enabled
             </name>
             <type>
@@ -1601,48 +1601,6 @@
             </line>
             <col>
                 6
-            </col>
-        </pos>
-        </sig>
-        </import><import>
-            <sig>
-            <name>
-                context_free
-            </name>
-            <type>
-                <function>
-        <param>
-            <pointer>
-        <astruct isUnion="false">
-        
-    </astruct>
-    </pointer>
-        </param><ret>
-            <void></void>
-        </ret>
-    </function>
-            </type>
-            <featureexpr>
-                definedEx(CONFIG_SELINUX)
-            </featureexpr><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/util-linux/mkswap.c
-            </file>
-            <line>
-                72153
-            </line>
-            <col>
-                3
-            </col>
-        </pos><pos>
-            <file>
-                file cprojects/busybox/busybox-1.18.5/util-linux/mkswap.c
-            </file>
-            <line>
-                72153
-            </line>
-            <col>
-                3
             </col>
         </pos>
         </sig>
@@ -1753,6 +1711,48 @@
             </line>
             <col>
                 12
+            </col>
+        </pos>
+        </sig>
+        </import><import>
+            <sig>
+            <name>
+                context_free
+            </name>
+            <type>
+                <function>
+        <param>
+            <pointer>
+        <astruct isUnion="false">
+        
+    </astruct>
+    </pointer>
+        </param><ret>
+            <void></void>
+        </ret>
+    </function>
+            </type>
+            <featureexpr>
+                definedEx(CONFIG_SELINUX)
+            </featureexpr><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/util-linux/mkswap.c
+            </file>
+            <line>
+                72153
+            </line>
+            <col>
+                3
+            </col>
+        </pos><pos>
+            <file>
+                file cprojects/busybox/busybox-1.18.5/util-linux/mkswap.c
+            </file>
+            <line>
+                72153
+            </line>
+            <col>
+                3
             </col>
         </pos>
         </sig>

@@ -22,7 +22,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74271
@@ -56,7 +56,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74315
@@ -94,7 +94,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74259
@@ -140,7 +140,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72854
@@ -172,7 +172,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74245
@@ -182,7 +182,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74244
@@ -216,7 +216,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74324
@@ -226,7 +226,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74241
@@ -272,7 +272,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72851
@@ -316,7 +316,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74354
@@ -326,7 +326,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74353
@@ -358,7 +358,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74266
@@ -404,7 +404,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72879
@@ -574,7 +574,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74357
@@ -584,7 +584,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74356
@@ -664,7 +664,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74247
@@ -674,7 +674,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74246
@@ -710,7 +710,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74335
@@ -720,7 +720,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74269
@@ -756,7 +756,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74310
@@ -840,7 +840,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74354
@@ -850,7 +850,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74353
@@ -968,7 +968,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72829
@@ -1042,7 +1042,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74199
@@ -1114,7 +1114,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74233
@@ -1124,7 +1124,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74232
@@ -1156,7 +1156,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74352
@@ -1236,7 +1236,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74340
@@ -1278,7 +1278,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74214
@@ -1314,7 +1314,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74252
@@ -1394,7 +1394,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74268
@@ -1522,7 +1522,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74343
@@ -1568,7 +1568,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74322
@@ -1602,7 +1602,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74360
@@ -1612,7 +1612,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74220
@@ -1622,7 +1622,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74216
@@ -1632,7 +1632,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74210
@@ -1674,7 +1674,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74236
@@ -1708,7 +1708,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72826
@@ -1776,7 +1776,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/libbb.h
             </file>
             <line>
                 74241
@@ -1806,7 +1806,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72882
@@ -1852,7 +1852,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74333
@@ -1934,7 +1934,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74350
@@ -1978,7 +1978,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74297
@@ -2020,7 +2020,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74262
@@ -2054,7 +2054,7 @@
                 (definedEx(CONFIG_REFORMIME) || definedEx(CONFIG_SENDMAIL) || definedEx(CONFIG_POPMAILDIR) || definedEx(CONFIG_MAKEMIME))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/mailutils/mail.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/mailutils/mail.c
             </file>
             <line>
                 74226

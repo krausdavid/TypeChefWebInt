@@ -6,7 +6,7 @@ imports (85)
 	BUG_xatou32_unimplemented: (void) => unsigned int		if (def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h:72830:8
 	atoi: (*char) => signed int		if def(CONFIG_LOGGER)		at file busybox-1.18.5/sysklogd/logger.c:81625:9, file busybox-1.18.5/sysklogd/logger.c:81625:9
 	bb_daemonize_or_rexec: (signed int) => void		if (def(CONFIG_SYSLOGD)&!def(CONFIG_NOMMU)&(def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD)))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:81562:44
-	bb_daemonize_or_rexec: (signed int, **char) => void		if (def(CONFIG_SYSLOGD)&def(CONFIG_NOMMU)&(def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD)))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:81562:44
+	bb_daemonize_or_rexec: (signed int, **char) => void		if (def(CONFIG_SYSLOGD)&def(CONFIG_NOMMU)&(!def(CONFIG_SYSLOGD)|def(CONFIG_NOMMU))&(def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD)))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:81562:44
 	bb_error_msg_and_die: (*char, ...) => void		if def(CONFIG_LOGGER)		at file busybox-1.18.5/sysklogd/logger.c:81660:2, file busybox-1.18.5/sysklogd/logger.c:81653:3
 	bb_perror_msg: (*char, ...) => void		if def(CONFIG_SYSLOGD)		at file busybox-1.18.5/sysklogd/syslogd.c:81267:4
 	bb_perror_msg_and_die: (*char, ...) => void		if (def(CONFIG_SYSLOGD)&def(CONFIG_FEATURE_IPC_SYSLOG)&(def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD)))		at file busybox-1.18.5/sysklogd/syslogd.c:80931:2, file busybox-1.18.5/sysklogd/syslogd.c:80903:2, file busybox-1.18.5/sysklogd/syslogd.c:80893:2, file busybox-1.18.5/sysklogd/syslogd.c:80878:2, file busybox-1.18.5/sysklogd/syslogd.c:80873:2
@@ -64,7 +64,7 @@ imports (85)
 	time: (*signed long) => signed long		if def(CONFIG_SYSLOGD)		at file busybox-1.18.5/sysklogd/syslogd.c:81078:2, file busybox-1.18.5/sysklogd/syslogd.c:80963:9
 	uid2uname_utoa: (signed long) => *char		if def(CONFIG_LOGGER)		at file busybox-1.18.5/sysklogd/logger.c:81681:9
 	unlink: (*char) => signed int		if def(CONFIG_SYSLOGD)		at file busybox-1.18.5/sysklogd/syslogd.c:81181:1
-	write_pidfile: (*char) => void		if (def(CONFIG_SYSLOGD)&def(CONFIG_FEATURE_PIDFILE)&(def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD)))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:81572:29
+	write_pidfile: (*char) => void		if (def(CONFIG_SYSLOGD)&def(CONFIG_FEATURE_PIDFILE)&(!def(CONFIG_SYSLOGD)|def(CONFIG_FEATURE_PIDFILE))&(def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD)))		at file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/libbb.h:81572:29
 	xatoll: (*char) => signed long long		if (def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD))		at string literal: xatoll:72811:0
 	xatoll_range: (*char, signed long long, signed long long) => signed long long		if (def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD))		at string literal: xatoll_range:72811:0
 	xatoll_range_sfx: (*char, signed long long, signed long long, *struct suffix_mult) => signed long long		if (def(CONFIG_LOGGER)|def(CONFIG_SYSLOGD))		at string literal: xatoll_range_sfx:72811:0

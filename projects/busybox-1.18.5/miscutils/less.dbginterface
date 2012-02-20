@@ -34,7 +34,7 @@ imports (71)
 	puts: (*char) => signed int		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77297:1
 	read_key: (signed int, *char, signed int) => signed long		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:77474:6
 	regcomp_or_errmsg: (*struct re_pattern_buffer, *char, signed int) => *char		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77710:7
-	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((def(CONFIG_FEATURE_LESS_REGEXP),CSigned(CInt()))), rm_eo -> List((def(CONFIG_FEATURE_LESS_REGEXP),CSigned(CInt()))))}[], signed int) => signed int		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77674:6, file busybox-1.18.5/miscutils/less.c:77246:17
+	regexec: (*struct re_pattern_buffer, *char, unsigned long, struct {Map(rm_so -> List((def(CONFIG_FEATURE_LESS_REGEXP),One(CSigned(CInt())))), rm_eo -> List((def(CONFIG_FEATURE_LESS_REGEXP),One(CSigned(CInt())))))}[], signed int) => signed int		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77674:6, file busybox-1.18.5/miscutils/less.c:77246:17
 	regfree: (*struct re_pattern_buffer) => void		if (def(CONFIG_FEATURE_LESS_REGEXP)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77695:2
 	safe_poll: (*struct pollfd, unsigned long, signed int) => signed int		if (!def(CONFIG_FEATURE_LESS_WINCH)&def(CONFIG_LESS))		at file busybox-1.18.5/miscutils/less.c:77458:2
 	safe_read: (signed int, *void, unsigned long) => signed long		if def(CONFIG_LESS)		at file busybox-1.18.5/miscutils/less.c:76949:16

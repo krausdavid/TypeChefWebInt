@@ -38,7 +38,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72854
@@ -84,7 +84,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72851
@@ -130,7 +130,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72879
@@ -384,7 +384,7 @@
                 !definedEx(CONFIG_UNICODE_SUPPORT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/printable_string.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/printable_string.c
             </file>
             <line>
                 78810
@@ -502,7 +502,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72829
@@ -656,7 +656,7 @@
                 definedEx(CONFIG_UNICODE_SUPPORT)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/printable_string.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/printable_string.c
             </file>
             <line>
                 78806
@@ -826,7 +826,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72826
@@ -894,7 +894,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72882
@@ -924,7 +924,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/printable_string.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/printable_string.c
             </file>
             <line>
                 78826
@@ -1018,7 +1018,7 @@
                 1
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/libbb/printable_string.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/printable_string.c
             </file>
             <line>
                 78778

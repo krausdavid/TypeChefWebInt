@@ -24,7 +24,7 @@
                 definedEx(CONFIG_UNEXPAND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78867
@@ -70,7 +70,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72868
@@ -102,7 +102,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 79026
@@ -144,7 +144,7 @@
                 ((definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)) &amp;&amp; ((definedEx(CONFIG_UNEXPAND) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) || definedEx(CONFIG_EXPAND)))))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78882
@@ -154,7 +154,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78820
@@ -188,7 +188,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 79037
@@ -234,7 +234,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72865
@@ -268,7 +268,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 79025
@@ -314,7 +314,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72893
@@ -344,7 +344,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 79039
@@ -554,7 +554,7 @@
                 definedEx(CONFIG_UNEXPAND)
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78874
@@ -590,7 +590,7 @@
                 ((definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)) &amp;&amp; (definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) || definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78875
@@ -600,7 +600,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78871
@@ -610,7 +610,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78829
@@ -776,7 +776,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72843
@@ -894,7 +894,7 @@
                 ((definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)) &amp;&amp; (definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) || definedEx(CONFIG_EXPAND)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78834
@@ -953,10 +953,10 @@
     </function>
             </type>
             <featureexpr>
-                ((definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)))))
+                ((definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)) &amp;&amp; ((((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || definedEx(CONFIG_UNICODE_USING_LOCALE) || ((!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || definedEx(CONFIG_UNICODE_USING_LOCALE))) || !definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV) &amp;&amp; ((definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; definedEx(CONFIG_UNICODE_USING_LOCALE)) || (definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE))) &amp;&amp; (definedEx(CONFIG_UNICODE_USING_LOCALE) || definedEx(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV)) &amp;&amp; !definedEx(CONFIG_UNICODE_USING_LOCALE) &amp;&amp; definedEx(CONFIG_UNICODE_SUPPORT) &amp;&amp; (!definedEx(CONFIG_UNICODE_SUPPORT) || !definedEx(CONFIG_UNICODE_USING_LOCALE)))))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 78931
@@ -966,7 +966,7 @@
             </col>
         </pos><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/unicode.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/unicode.h
             </file>
             <line>
                 78931
@@ -1010,7 +1010,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78973
@@ -1020,7 +1020,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78961
@@ -1030,7 +1030,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78973
@@ -1040,7 +1040,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78961
@@ -1218,7 +1218,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78977
@@ -1252,7 +1252,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 79036
@@ -1286,7 +1286,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72840
@@ -1322,7 +1322,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78985
@@ -1354,7 +1354,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 79031
@@ -1422,7 +1422,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/include/xatonum.h
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/include/xatonum.h
             </file>
             <line>
                 72896
@@ -1458,7 +1458,7 @@
                 ((definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)) &amp;&amp; (definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) || definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78844
@@ -1468,7 +1468,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78803
@@ -1498,7 +1498,7 @@
                 ((definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)) &amp;&amp; (definedEx(CONFIG_FEATURE_EXPAND_LONG_OPTIONS) || definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND)))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78893
@@ -1508,7 +1508,7 @@
             </col>
         </pos><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78835
@@ -1600,7 +1600,7 @@
                 (definedEx(CONFIG_EXPAND) || definedEx(CONFIG_UNEXPAND))
             </featureexpr><pos>
             <file>
-                file busybox-1.18.5/coreutils/expand.c
+                file /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/coreutils/expand.c
             </file>
             <line>
                 78905
