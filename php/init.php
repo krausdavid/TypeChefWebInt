@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
  * #####################################################
@@ -18,7 +18,7 @@
  */
 
 define("WEBSITE_NAME", "NONAME");
-define("WEBSITE_VERSION", "0.0.1.0");
+define("WEBSITE_VERSION", "0.0.2.0");
 define("WEBSITE_AUTOR", "Alexander 'EifX' Eifler, David 'hullleman' Kraus");
 
 define("WEBSITE_HOME_PAGE_LOGIN", "/");

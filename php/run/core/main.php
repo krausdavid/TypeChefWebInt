@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
  * #####################################################
@@ -18,6 +18,7 @@
  */
 
 require("./run/core/tools.php");
+require("./run/core/xmlparser.php");
 //require("./run/_lib/mysql/mysql.php");
 require("./run/_lib/smarty/Smarty.class.php");
 

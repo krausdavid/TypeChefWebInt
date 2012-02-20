@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /*
  * #####################################################
@@ -15,13 +15,12 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
- */
- 
-ob_start();
-error_reporting(E_ALL);
+*/
 
-header("HTTP/1.1 200 OK");
-header("Content-Type: text/html; charset=UTF-8");
+class xmlparser{
+	function read_setting($xpath){
+		
+	}
+}
 
-require("./init.php");
 ?>

@@ -1,3 +1,3 @@
-<?php /* Smarty version 2.6.26, created on 2012-01-15 21:38:58
+<?php /* Smarty version 2.6.26, created on 2012-02-17 19:39:22
          compiled from ./core/tree.tpl */ ?>
-<?php echo ''; ?><?php echo '<DIV style="position:absolute; top:20; left:0;"><TABLE border=0><TR><TD><FONT size=-2><A style="font-size:0pt;text-decoration:none;color:white" href="http://www.treemenu.net/" target=_blank>Javascript Tree Menu</A></FONT></TD></TR></TABLE></DIV><div class="treeview"><SCRIPT>initializeDocument()</SCRIPT><NOSCRIPT>Bitte aktivieren Sie JavaScript!</NOSCRIPT></div><INPUT type="button" onClick="check_boxes()" value="Evaluation">'; ?>
+﻿<?php echo ''; ?><?php echo '<DIV style="position:absolute; top:20; left:0;"><TABLE border=0><TR><TD><FONT size=-2><A style="font-size:0pt;text-decoration:none;color:white" href="http://www.treemenu.net/" target=_blank>Javascript Tree Menu</A></FONT></TD></TR></TABLE></DIV><div class="treeview"><SCRIPT>initializeDocument()</SCRIPT><NOSCRIPT>Bitte aktivieren Sie JavaScript!</NOSCRIPT></div><INPUT type="button" onClick="check_boxes()" value="Evaluation">'; ?>

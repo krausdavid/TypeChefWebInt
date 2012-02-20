@@ -1,3 +1,3 @@
-{strip}
-Hallo Welt!
+﻿{strip}
+	Hallo Welt!
 {/strip}
