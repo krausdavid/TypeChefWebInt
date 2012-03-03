@@ -7,3 +7,6 @@
 - Projektauswahlmöglichkeit
 - "Startknopf" für die ersten Initialisierungen
 - Möglichkeit, einen gewählten Pfad geöffnet zu lassen
+- Häckchen auch für Ordner
+- Web_WriteFileList: Kompletten Baum bauen, wenn keine Häckchen gesetzt wurden.
+- Webseite soll eine Maximalbreite nicht überschreiten
