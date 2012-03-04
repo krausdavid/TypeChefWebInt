@@ -10,39 +10,24 @@ public class Web_WriteFileList {
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
 
-	private static final String VERSION = "0.0.1.0";
+	private static final String VERSION = "0.0.0.7";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
 		if(args.length!=3){
 			System.out.println("Help - web_WriteFileList "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
-			System.out.println("\nUsage: web_WriteFileList [PROJECTNAME] [CHECKBOX_STRING] [GLOBAL_SETTINGS]");
+			System.out.println("\nUsage: web_WriteFileList [PROJECTNAME] [CHECKBOX_STRING] [PROJECT-DIR]");
 			System.out.println("\n[PROJECTNAME]");
 			System.out.println("\n     Project name\n");
 			System.out.println("\n[CHECKBOX_STRING]");
 			System.out.println("\n     The checkbox string from the website. If the string is marked as empty\n");
 			System.out.println("     with the word 'EMPTY', the whole list will be written\n");
-			System.out.println("\n[GLOBAL_SETTINGS]");
-			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
+			System.out.println("\n[PROJECT-DIR]");
+			System.out.println("\n     The project directory");
 		}else{
 			//Read the project dir
-			Parser xmlParser = new Parser(args[2]);
-			
-			String webIntPath = "";
-			String WebIntProjectsPath = "";
-			String[] xpathWebIntPath = {"settings","global","webint","path"};
-			String[] xpathWebIntProjectsPath = {"settings","global","projects","path"};
-			
-			try{
-				webIntPath = xmlParser.read_setting(xpathWebIntPath);
-				WebIntProjectsPath = xmlParser.read_setting(xpathWebIntProjectsPath);
-			}catch (Exception e){
-				System.out.println("ERROR! File not exists, read error or XML not well-formed!\n\n");
-				e.printStackTrace();
-			}
-			
-			String path = webIntPath+WebIntProjectsPath;
+			String path = args[2];
 
 			project_settings_path = path+args[0]+".project";
 			project_settings_xml_path = path+args[0]+".project.xml";

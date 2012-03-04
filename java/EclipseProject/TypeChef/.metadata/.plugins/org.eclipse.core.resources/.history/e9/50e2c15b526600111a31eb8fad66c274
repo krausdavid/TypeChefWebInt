@@ -10,7 +10,7 @@ public class Web_WriteFileList {
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
 
-	private static final String VERSION = "0.0.1.0";
+	private static final String VERSION = "0.0.0.7";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
@@ -42,7 +42,8 @@ public class Web_WriteFileList {
 				e.printStackTrace();
 			}
 			
-			String path = webIntPath+WebIntProjectsPath;
+			
+			String path = args[2];
 
 			project_settings_path = path+args[0]+".project";
 			project_settings_xml_path = path+args[0]+".project.xml";
