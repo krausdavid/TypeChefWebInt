@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;web_TreeViewInitializator&apos; to &apos;Web_TreeViewInitializator&apos;&#x0D;&#x0A;- Original project: &apos;web_TreeViewInitializator&apos;&#x0D;&#x0A;- Original element: &apos;web_TreeViewInitializator&apos;&#x0D;&#x0A;- Renamed element: &apos;Web_TreeViewInitializator&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;web_TreeViewInitializator&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{web_TreeViewInitializator.java[web_TreeViewInitializator" matchStrategy="1" name="Web_TreeViewInitializator" qualified="false" references="true" similarDeclarations="false" stamp="1326584734775" textual="false" version="1.0"/>
+</session>
