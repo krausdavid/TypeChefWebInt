@@ -39,7 +39,7 @@
 	</head>
 
 	<body class="body">
-		<table align="center" border="1" cellpadding="0" cellspacing="0" class="table">
+		<table align="center" border="1" cellpadding="0" cellspacing="0" class="table" width="1000">
 			<colgroup>
 				<col width="400">
 				<col width="600">
