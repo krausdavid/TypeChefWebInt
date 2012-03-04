@@ -4,21 +4,8 @@
 	padding: 0px;
 	font: 12px "Verdana";
 	border: #000000 1px solid;
-
-}
-.spacerlu{
-	border-bottom: #000000 1px solid;
-	border-right: #000000 1px solid;
-	padding: 5px;
-}
-.spacerru{
-	border-bottom: #000000 1px solid;
-	padding: 5px;
-}
-.spacerld{
-	border-right: #000000 1px solid;
-	padding: 5px;
-}
-.spacerrd{
-	padding: 5px;
+	max-width:1000px !important;
+	min-width:1000px !important;
+	margin-left:auto;
+	margin-right:auto;
 }
