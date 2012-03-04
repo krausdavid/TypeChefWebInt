@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.1.4";
+	private static final String VERSION = "0.1.1.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -244,37 +244,32 @@ public class Web_TreeViewInitializator {
 		if(args.length!=3){
 			System.out.println("Help - web_TreeViewInitializator "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
-			System.out.println("\nUsage: web_TreeViewInitializator [PROJECTNAME] [GLOBAL_SETTINGS]");
+			System.out.println("\nUsage: web_TreeViewInitializator [PROJECTNAME] [GLOBAL_SETTINGS] [PROJECT-DIR]");
 			System.out.println("\n[PROJECTNAME]");
 			System.out.println("\n     Project name\n");
 			System.out.println("\n[GLOBAL_SETTINGS]");
 			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
+			System.out.println("\n[PROJECT-DIR]");
+			System.out.println("\n     The project directory\n");
 		}else{
 			try {
 				System.out.println("\nRead needed variables...");
 
 				folderSeparator = check.folderSeparator()+"";
 				
-				//Init the XMLParser
-				Parser xmlParser = new Parser(args[1]);
-				
-				String[] xpathWebIntPath = {"settings","global","webint","path"};
-				String webIntPath = xmlParser.read_setting(xpathWebIntPath);
-				String[] xpathWebIntProjectsPath = {"settings","global","projects","path"};
-				String WebIntProjectsPath = xmlParser.read_setting(xpathWebIntProjectsPath);
-				
-
 				//Read the project dir
-				project_settings_path = webIntPath+WebIntProjectsPath+check.folderSeparator()+args[0]+".project";
-				project_settings_xml_path = webIntPath+WebIntProjectsPath+check.folderSeparator()+args[0]+".project.xml";
+				String webIntPath = args[1].substring(0, args[1].indexOf("/global_settings.xml"));
+				project_settings_path = args[2]+check.folderSeparator()+args[0]+".project";
+				project_settings_xml_path = args[2]+check.folderSeparator()+args[0]+".project.xml";
 				
 				parser = new Parser(project_settings_xml_path);
 				
 				String[] xpathProjectPath = {"settings","global","project","path"};
 				projectPath = parser.read_setting(xpathProjectPath);
 				
+				//Init the XMLParser
+				Parser xmlParser = new Parser(args[1]);
 
-				//Do the work
 				System.out.println("Read folder tree...");
 				getAllFiles(args[0],args[1]);
 
