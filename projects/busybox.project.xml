@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
      <global>
-          <project name="busybox" path="/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5" failureProject="true" />
-          <init buildday="2012-03-64" buildtime="08:43:31" />
+          <project name="busybox" path="/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/" failureProject="true" />
+          <init buildday="2012-03-04" buildtime="23:10:51" />
      </global>
 </settings>
