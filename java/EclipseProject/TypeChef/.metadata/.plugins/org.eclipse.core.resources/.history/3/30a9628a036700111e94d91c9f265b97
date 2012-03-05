@@ -10,11 +10,10 @@ public class Web_WriteFileList {
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
 
-	private static final String VERSION = "0.0.2.1";
+	private static final String VERSION = "0.0.2.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
-		//Help - Shown if not the right count of parameters are given to the programm
 		if(args.length!=3){
 			System.out.println("Help - web_WriteFileList "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
@@ -27,7 +26,7 @@ public class Web_WriteFileList {
 			System.out.println("\n[GLOBAL_SETTINGS]");
 			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
-			//Read the project dir and settings
+			//Read the project dir
 			Parser xmlParser = new Parser(args[2]);
 			
 			String webIntPath = "";
@@ -53,10 +52,8 @@ public class Web_WriteFileList {
 			parser = new Parser(project_settings_xml_path);
 			String[] xpath = {"settings","global","project","path"};
 			
-			//If no checkbox-string is given to the program, all files
-			//will be add to the .lst-file
 			if(!args[1].equals("EMPTY")){
-				//Read all needed variables
+			
 				args[1] = args[1].substring(0,args[1].length()-1);
 				String[] strArr = args[1].split("_");
 	
@@ -68,10 +65,10 @@ public class Web_WriteFileList {
 	
 				RandomAccessFile file;
 				ArrayList<String> writeInFile = new ArrayList<String>();
-				int j = 0,i = 0;
+				int j = 0;
+				int i = 0;
 				
 				try {
-					//Read from .project-file
 					file = new RandomAccessFile(project_settings_path,"r");
 					String projectPath = parser.read_setting(xpath);
 					
@@ -89,8 +86,7 @@ public class Web_WriteFileList {
 						j++;
 					}
 					file.close();
-					
-					//Write to .lst-file
+		
 					File f = new File(project_settings_lst_path);
 					f.delete();
 					file = new RandomAccessFile(project_settings_lst_path,"rw");
@@ -106,8 +102,6 @@ public class Web_WriteFileList {
 				}
 			}else{
 				try{
-					//If no checkbox-string is given, all files from .project will
-					//be add to the .lst-file
 					String projectPath = parser.read_setting(xpath);
 	
 					RandomAccessFile fileRead = new RandomAccessFile(project_settings_path,"r");
