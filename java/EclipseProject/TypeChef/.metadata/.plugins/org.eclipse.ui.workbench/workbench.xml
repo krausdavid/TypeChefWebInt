@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="726" y="-13">
+<window height="768" maximized="true" width="1024" x="474" y="14">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -36,12 +36,11 @@
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
-<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TCWI.java" partName="TCWI.java" path="D:/Dropbox/Uni/EclipseProjects/TypeChef/TypeChefWebIntLib/src/tcwi/TCWI.java" title="TCWI.java" tooltip="TypeChefWebIntLib/src/tcwi/TCWI.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TCWI.java" partName="TCWI.java" path="D:/Git/TypeChefWebInt/java/EclipseProject/TypeChef/TypeChefWebIntLib/src/tcwi/TCWI.java" title="TCWI.java" tooltip="TypeChefWebIntLib/src/tcwi/TCWI.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TypeChefWebIntLib/src/tcwi/TCWI.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="320" selectionTopPixel="0"/>
 </editor>
@@ -53,25 +52,21 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/_Spielewiese/src/Main.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="203" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Web_TreeViewInitializator.java" partName="Web_TreeViewInitializator.java" path="D:/Dropbox/Uni/EclipseProjects/TypeChef/web_TreeViewInitializator/src/Web_TreeViewInitializator.java" title="Web_TreeViewInitializator.java" tooltip="web_TreeViewInitializator/src/Web_TreeViewInitializator.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Web_TreeViewInitializator.java" partName="Web_TreeViewInitializator.java" path="D:/Git/TypeChefWebInt/java/EclipseProject/TypeChef/web_TreeViewInitializator/src/Web_TreeViewInitializator.java" title="Web_TreeViewInitializator.java" tooltip="web_TreeViewInitializator/src/Web_TreeViewInitializator.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/web_TreeViewInitializator/src/Web_TreeViewInitializator.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="281" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="115" selectionOffset="10129" selectionTopPixel="4099"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Web_ProjectInitializator.java" partName="Web_ProjectInitializator.java" path="D:/Dropbox/Uni/EclipseProjects/TypeChef/web_ProjectInitializator/src/Web_ProjectInitializator.java" title="Web_ProjectInitializator.java" tooltip="web_ProjectInitializator/src/Web_ProjectInitializator.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Web_ProjectInitializator.java" partName="Web_ProjectInitializator.java" path="D:/Git/TypeChefWebInt/java/EclipseProject/TypeChef/web_ProjectInitializator/src/Web_ProjectInitializator.java" title="Web_ProjectInitializator.java" tooltip="web_ProjectInitializator/src/Web_ProjectInitializator.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/web_ProjectInitializator/src/Web_ProjectInitializator.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="921" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="878" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ErrorFile.java" partName="ErrorFile.java" path="D:/Dropbox/Uni/EclipseProjects/TypeChef/TypeChefWebIntLib/src/tcwi/ErrorFile.java" title="ErrorFile.java" tooltip="TypeChefWebIntLib/src/tcwi/ErrorFile.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TypeChefWebIntLib/src/tcwi/ErrorFile.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2313" selectionTopPixel="1305"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parser.java" partName="Parser.java" path="D:/Dropbox/Uni/EclipseProjects/TypeChef/TypeChefWebIntLib/src/tcwi/xml/Parser.java" title="Parser.java" tooltip="TypeChefWebIntLib/src/tcwi/xml/Parser.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parser.java" partName="Parser.java" path="D:/Git/TypeChefWebInt/java/EclipseProject/TypeChef/TypeChefWebIntLib/src/tcwi/xml/Parser.java" title="Parser.java" tooltip="TypeChefWebIntLib/src/tcwi/xml/Parser.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TypeChefWebIntLib/src/tcwi/xml/Parser.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1847" selectionTopPixel="480"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Web_WriteFileList.java" partName="Web_WriteFileList.java" path="D:/Dropbox/Uni/EclipseProjects/TypeChef/web_WriteFileList/src/Web_WriteFileList.java" title="Web_WriteFileList.java" tooltip="web_WriteFileList/src/Web_WriteFileList.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Web_WriteFileList.java" partName="Web_WriteFileList.java" path="D:/Git/TypeChefWebInt/java/EclipseProject/TypeChef/web_WriteFileList/src/Web_WriteFileList.java" title="Web_WriteFileList.java" tooltip="web_WriteFileList/src/Web_WriteFileList.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/web_WriteFileList/src/Web_WriteFileList.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1036" selectionTopPixel="135"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="376" selectionTopPixel="450"/>
 </editor>
 </editors>
 <views>
@@ -82,6 +77,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings (3 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -336,168 +332,167 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/web_TreeViewInitializator/src/Web_TreeViewInitializator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/web_WriteFileList/src/Web_WriteFileList.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/web_ProjectInitializator/src/Web_ProjectInitializator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TypeChefWebIntLib/src/tcwi/fileHandler/Check.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TypeChefWebIntLib/src/tcwi/TCWI.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/web_ProjectInitializator/src/Web_ProjectInitializator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/web_WriteFileList/src/Web_WriteFileList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TypeChefWebIntLib/src/tcwi/ErrorFile.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TypeChefWebIntLib/src/tcwi/TCWI.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TypeChefWebIntLib/src/tcwi/xml/Parser.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/web_WriteFileList/src/Web_WriteFileList.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/web_ProjectInitializator/src/Web_ProjectInitializator.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TypeChefWebIntLib/src/tcwi/TCWI.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TypeChefWebIntLib/src/tcwi/ErrorFile.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TypeChefWebIntLib/src/tcwi/xml/Parser.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/web_WriteFileList/src/Web_WriteFileList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TypeChefWebIntLib/src/tcwi/TCWI.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/web_TreeViewInitializator/src/Web_TreeViewInitializator.java"/>
 </editors>
-<item historyLabel="Check.java" index="3">
-<position info="not_deleted" x="2942" y="0"/>
-</item>
-<item historyLabel="TCWI.java" index="4">
-<position info="not_deleted" x="1359" y="0"/>
-</item>
-<item historyLabel="Check.java" index="3">
-<position info="not_deleted" x="2942" y="0"/>
-</item>
-<item historyLabel="Check.java" index="3">
-<position info="not_deleted" x="2053" y="0"/>
-</item>
-<item historyLabel="Check.java" index="3">
-<position info="not_deleted" x="2127" y="0"/>
-</item>
-<item historyLabel="TCWI.java" index="4">
-<position info="not_deleted" x="1225" y="0"/>
-</item>
-<item historyLabel="Check.java" index="3">
-<position info="not_deleted" x="2668" y="0"/>
-</item>
-<item historyLabel="TCWI.java" index="4">
-<position info="not_deleted" x="1225" y="0"/>
-</item>
-<item historyLabel="Check.java" index="3">
-<position info="not_deleted" x="2668" y="0"/>
-</item>
-<item historyLabel="Check.java" index="3">
-<position/>
-</item>
-<item historyLabel="Check.java" index="3">
-<position info="not_deleted" x="3006" y="0"/>
-</item>
-<item historyLabel="Check.java" index="3">
-<position info="not_deleted" x="3006" y="0"/>
-</item>
-<item historyLabel="Web_ProjectInitializator.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Web_WriteFileList.java" index="1">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="Web_ProjectInitializator.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TCWI.java" index="4">
-<position info="not_deleted" x="320" y="0"/>
-</item>
-<item historyLabel="Web_ProjectInitializator.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="281" y="0"/>
-</item>
-<item historyLabel="Web_WriteFileList.java" index="1">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="281" y="0"/>
-</item>
-<item historyLabel="Web_ProjectInitializator.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position/>
-</item>
-<item historyLabel="Web_ProjectInitializator.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Web_WriteFileList.java" index="6">
-<position info="not_deleted" x="979" y="97"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="8531" y="0"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="6174" y="0"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="7852" y="0"/>
-</item>
-<item historyLabel="ErrorFile.java" index="7">
-<position info="not_deleted" x="1522" y="0"/>
-</item>
-<item historyLabel="Web_ProjectInitializator.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="6174" y="0"/>
-</item>
-<item historyLabel="ErrorFile.java" index="7">
-<position info="not_deleted" x="2313" y="0"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="6190" y="0"/>
-</item>
-<item historyLabel="ErrorFile.java" index="7">
-<position info="not_deleted" x="2313" y="0"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="6190" y="0"/>
-</item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="281" y="0"/>
-</item>
 <item historyLabel="Web_TreeViewInitializator.java" index="0">
 <position info="not_deleted" x="5102" y="7"/>
 </item>
-<item historyLabel="Web_ProjectInitializator.java" index="5">
+<item historyLabel="Web_ProjectInitializator.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Web_TreeViewInitializator.java" index="0">
-<position info="not_deleted" x="5102" y="7"/>
-</item>
-<item historyLabel="Web_ProjectInitializator.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TCWI.java" index="8">
+<item historyLabel="TCWI.java" index="2">
 <position info="not_deleted" x="320" y="0"/>
 </item>
-<item historyLabel="TCWI.java" index="8">
+<item historyLabel="TCWI.java" index="2">
 <position info="not_deleted" x="1313" y="0"/>
 </item>
 <item historyLabel="Web_TreeViewInitializator.java" index="0">
 <position info="not_deleted" x="5102" y="7"/>
 </item>
-<item historyLabel="Parser.java" index="9">
+<item historyLabel="Parser.java" index="3">
 <position info="not_deleted" x="2516" y="0"/>
 </item>
-<item historyLabel="Web_WriteFileList.java" index="10">
+<item historyLabel="Web_WriteFileList.java" index="4">
 <position info="not_deleted" x="979" y="97"/>
 </item>
-<item historyLabel="Web_ProjectInitializator.java" index="11">
+<item historyLabel="Web_ProjectInitializator.java" index="5">
 <position info="not_deleted" x="921" y="0"/>
 </item>
-<item historyLabel="TCWI.java" index="12">
+<item historyLabel="TCWI.java" index="6">
 <position info="not_deleted" x="1313" y="0"/>
 </item>
-<item historyLabel="TCWI.java" index="12">
+<item historyLabel="TCWI.java" index="6">
 <position info="not_deleted" x="3690" y="12"/>
 </item>
-<item historyLabel="TCWI.java" index="12">
+<item historyLabel="TCWI.java" index="6">
 <position info="not_deleted" x="3842" y="0"/>
 </item>
-<item historyLabel="TCWI.java" index="12">
+<item historyLabel="TCWI.java" index="6">
 <position info="not_deleted" x="320" y="0"/>
 </item>
-<item active="true" historyLabel="Web_ProjectInitializator.java" index="11">
+<item historyLabel="Web_ProjectInitializator.java" index="5">
 <position info="not_deleted" x="921" y="0"/>
+</item>
+<item historyLabel="ErrorFile.java" index="7">
+<position info="not_deleted" x="2313" y="0"/>
+</item>
+<item historyLabel="Web_ProjectInitializator.java" index="5">
+<position info="not_deleted" x="956" y="0"/>
+</item>
+<item historyLabel="Parser.java" index="8">
+<position info="not_deleted" x="1847" y="0"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1040" y="0"/>
+</item>
+<item historyLabel="TCWI.java" index="10">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="Web_ProjectInitializator.java" index="5">
+<position info="not_deleted" x="956" y="0"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="281" y="0"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="8651" y="0"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="7581" y="0"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="2094" y="0"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="7581" y="0"/>
+</item>
+<item historyLabel="Web_ProjectInitializator.java" index="5">
+<position info="not_deleted" x="956" y="0"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="7581" y="0"/>
+</item>
+<item historyLabel="Web_ProjectInitializator.java" index="5">
+<position info="not_deleted" x="956" y="0"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="765" y="0"/>
+</item>
+<item historyLabel="Web_ProjectInitializator.java" index="5">
+<position info="not_deleted" x="699" y="169"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="765" y="0"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1722" y="0"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="8315" y="137"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1722" y="0"/>
+</item>
+<item historyLabel="Parser.java" index="8">
+<position info="not_deleted" x="1847" y="0"/>
+</item>
+<item historyLabel="Web_ProjectInitializator.java" index="5">
+<position info="not_deleted" x="699" y="169"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="8317" y="298"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1647" y="0"/>
+</item>
+<item historyLabel="Web_ProjectInitializator.java" index="5">
+<position info="not_deleted" x="878" y="0"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="8477" y="0"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1865" y="0"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="8477" y="0"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1865" y="0"/>
+</item>
+<item historyLabel="Web_TreeViewInitializator.java" index="11">
+<position info="not_deleted" x="10129" y="115"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1865" y="0"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1386" y="0"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1422" y="0"/>
+</item>
+<item historyLabel="Web_WriteFileList.java" index="9">
+<position/>
+</item>
+<item active="true" historyLabel="Web_WriteFileList.java" index="9">
+<position info="not_deleted" x="1400" y="18"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

@@ -10,7 +10,7 @@ public class Web_WriteFileList {
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
 
-	private static final String VERSION = "0.0.2.0";
+	private static final String VERSION = "0.0.1.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
@@ -49,9 +49,6 @@ public class Web_WriteFileList {
 			project_settings_xml_path = path+".project.xml";
 			project_settings_lst_path = path+".lst";
 			
-			parser = new Parser(project_settings_xml_path);
-			String[] xpath = {"settings","global","project","path"};
-			
 			if(!args[1].equals("EMPTY")){
 			
 				args[1] = args[1].substring(0,args[1].length()-1);
@@ -69,8 +66,11 @@ public class Web_WriteFileList {
 				int i = 0;
 				
 				try {
-					file = new RandomAccessFile(project_settings_path,"r");
+					parser = new Parser(project_settings_xml_path);
+					String[] xpath = {"settings","global","project","path"};
 					String projectPath = parser.read_setting(xpath);
+	
+					file = new RandomAccessFile(project_settings_path,"r");
 					
 					String str = file.readLine();
 					while(str!=null){
@@ -96,32 +96,11 @@ public class Web_WriteFileList {
 					file.close();
 					
 				} catch (Exception e) {
-					System.out.println("ERROR! File not exists, read error or XML not well-formed!\n\n");
+					// TODO Auto-generated catch block
 					e.printStackTrace();
-					System.exit(1);
 				}
 			}else{
-				try{
-					String projectPath = parser.read_setting(xpath);
-	
-					RandomAccessFile fileRead = new RandomAccessFile(project_settings_path,"r");
-					File f = new File(project_settings_lst_path);
-					f.delete();
-					RandomAccessFile fileWrite = new RandomAccessFile(project_settings_lst_path,"rw");
-					
-					String str = fileRead.readLine();
-					while(str!=null){
-						String[] tmpArr = str.split("\t");
-						fileWrite.writeBytes(tmpArr[0].substring(projectPath.length()+1,tmpArr[0].length()));
-					}
-					fileRead.close();
-					fileWrite.close();
-					
-				}catch (Exception e){
-					System.out.println("ERROR! File not exists, read error or XML not well-formed!\n\n");
-					e.printStackTrace();
-					System.exit(1);
-				}
+				
 			}
 		}
 	}
