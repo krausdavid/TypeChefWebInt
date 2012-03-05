@@ -19,7 +19,7 @@
 	//TODO Projekt dynamisch machen 
 	echo "Anfrage wird bearbeitet...<br><br>";
 	echo "Web_WriteFileList wird ausgeführt<br>";
-	echo shell_exec("java -jar ../java/Web_WriteFileList.jar busybox ".$_GET['chkStr']." /app/home/eifx/public_html/TypeChefWebInt/projects/");
+	echo shell_exec("java -jar ../java/Web_WriteFileList.jar busybox ".$_GET['chkStr']." /app/home/eifx/public_html/TypeChefWebInt/global_settings.xml");
 	
 	//echo shell_exec("../scripts/useJCPPFileChecker.sh busybox.lst /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5 busybox.flags");
 	echo "<br><br>analyzeBusybox.sh wird ausgeführt<br>";
