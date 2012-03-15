@@ -13,7 +13,7 @@ public class Web_WriteFileList {
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
 
-	private static final String VERSION = "0.0.2.3";
+	private static final String VERSION = "0.0.2.4";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
@@ -131,6 +131,7 @@ public class Web_WriteFileList {
 					while(str!=null){
 						String[] tmpArr = str.split("\t");
 						fileWrite.writeBytes(tmpArr[0].substring(projectPath.length()+1,tmpArr[0].length()));
+						str = fileRead.readLine();
 					}
 					fileRead.close();
 					fileWrite.close();
