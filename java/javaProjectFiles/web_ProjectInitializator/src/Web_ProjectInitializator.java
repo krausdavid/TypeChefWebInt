@@ -1,14 +1,14 @@
 import tcwi.TCWI;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.0.1.3";
+	private static final String VERSION = "0.0.1.4";
 	private static final String AUTHORS = "EifX & hulllemann";
 
 	public static void main(String[] args) {
 		if(args.length!=3){
-			System.out.println("Help - web_Initializator "+VERSION+" by "+AUTHORS);
+			System.out.println("Help - Web_ProjectInitializator "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
-			System.out.println("\nUsage: web_Initializator [PATH] [PROJECTNAME] [GLOBAL_SETTINGS]");
+			System.out.println("\nUsage: Web_ProjectInitializator [PATH] [PROJECTNAME] [GLOBAL_SETTINGS]");
 			System.out.println("\n\n[PATH]");
 			System.out.println("\n     Absolute Path for scan for TypeChef-Files\n");
 			System.out.println("\n[PROJECTNAME]");
