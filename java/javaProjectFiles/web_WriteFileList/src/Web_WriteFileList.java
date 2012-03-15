@@ -1,4 +1,6 @@
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
@@ -10,7 +12,7 @@ public class Web_WriteFileList {
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
 
-	private static final String VERSION = "0.0.2.1";
+	private static final String VERSION = "0.0.2.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
@@ -99,8 +101,16 @@ public class Web_WriteFileList {
 					}
 					file.close();
 					
+				} catch (FileNotFoundException e) {
+					System.out.println("ERROR! File doesn't exist!");
+					e.printStackTrace();
+					System.exit(1);
+				} catch (IOException e) {
+					System.out.println("ERROR! File read / write error!");
+					e.printStackTrace();
+					System.exit(1);
 				} catch (Exception e) {
-					System.out.println("ERROR! File not exists, read error or XML not well-formed!\n\n");
+					System.out.println("ERROR! An error caused by parsing the XML-file");
 					e.printStackTrace();
 					System.exit(1);
 				}
