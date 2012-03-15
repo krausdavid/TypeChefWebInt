@@ -14,7 +14,7 @@ import tcwi.xml.*;
 /**
  * 
  * @author EifX
- * @version 0.0.1.2
+ * @version 0.0.1.3
  */
 public class TCWI {
 	private ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -52,9 +52,14 @@ public class TCWI {
 		return "";
 	}
 	
+	/**
+	 * Write the .project file
+	 * @param path
+	 * @param projectName
+	 */
 	private void writeProjectFile(String path, String projectName){
 		try{
-			File f = new File(path);
+			File f = new File(path+check.folderSeparator()+projectName+".project");
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project","rw");
 			for(int i=0;i<files.size();i++){
@@ -72,6 +77,12 @@ public class TCWI {
 		}
 	}
 
+	/**
+	 * Write the .project.xml file
+	 * @param path
+	 * @param projectName
+	 * @param projectPath
+	 */
 	private void writeProjectXMLFile(String path, String projectName, String projectPath){
 		try{
 			Calendar c = new GregorianCalendar();
@@ -96,7 +107,7 @@ public class TCWI {
 				second = "0"+second;
 			}
 
-			File f = new File(path);
+			File f = new File(path+check.folderSeparator()+projectName+".project.xml");
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project.xml","rw");
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
@@ -112,8 +123,20 @@ public class TCWI {
 		}
 	}
 	
+	/**
+	 * Main initialization from a project 
+	 * @param path
+	 * @param projectName
+	 * @param settingFile
+	 */
 	public void initialisize(String path, String projectName, String settingFile){
 		System.out.println("Starting initialization from project "+projectName+"...");
+		
+		//Removes an additional folder separator from an path end
+		//ex. /app/home/foo/bar/ --> /app/home/foo/bar
+		if(path.endsWith(check.folderSeparator()+"")){
+			path = path.substring(0,path.length()-1);
+		}
 		
 		String str = getAllFiles(path);
 		if(str.equals("")){

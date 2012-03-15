@@ -1,7 +1,7 @@
 import tcwi.TCWI;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.0.0.1";
+	private static final String VERSION = "0.0.1.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 
 	public static void main(String[] args) {
