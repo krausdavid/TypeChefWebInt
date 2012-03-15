@@ -1,1 +1,0 @@
-(definedEx(CONFIG_UDHCPC) || definedEx(CONFIG_UDHCPD))

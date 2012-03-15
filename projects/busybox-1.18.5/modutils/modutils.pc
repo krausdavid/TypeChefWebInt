@@ -1,1 +1,0 @@
-(definedEx(CONFIG_RMMOD) || definedEx(CONFIG_INSMOD) || definedEx(CONFIG_MODINFO) || definedEx(CONFIG_LSMOD) || definedEx(CONFIG_DEPMOD) || definedEx(CONFIG_MODPROBE))

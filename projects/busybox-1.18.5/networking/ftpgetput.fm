@@ -1,2 +1,0 @@
-!defined(CONFIG_FEATURE_FTPGETPUT_LONG_OPTIONS) || (defined(CONFIG_LONG_OPTS) && defined(CONFIG_FTPGETPUT)) || (defined(CONFIG_LONG_OPTS) && defined(CONFIG_FTPPUT))
-

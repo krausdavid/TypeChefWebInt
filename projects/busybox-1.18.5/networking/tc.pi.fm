@@ -1,1 +1,0 @@
-defined(CONFIG_TC) && !defined(CONFIG_TC)
