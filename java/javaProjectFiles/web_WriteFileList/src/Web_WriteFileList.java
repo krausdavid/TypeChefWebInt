@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
+import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
 public class Web_WriteFileList {
@@ -12,7 +13,7 @@ public class Web_WriteFileList {
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
 
-	private static final String VERSION = "0.0.2.2";
+	private static final String VERSION = "0.0.2.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
@@ -46,7 +47,8 @@ public class Web_WriteFileList {
 				System.exit(1);
 			}
 			
-			String path = webIntPath+WebIntProjectsPath+args[0];
+			Check check = new Check();
+			String path = webIntPath+WebIntProjectsPath+check.folderSeparator()+args[0];
 
 			project_settings_path = path+".project";
 			project_settings_xml_path = path+".project.xml";
@@ -133,8 +135,16 @@ public class Web_WriteFileList {
 					fileRead.close();
 					fileWrite.close();
 					
-				}catch (Exception e){
-					System.out.println("ERROR! File not exists, read error or XML not well-formed!\n\n");
+				} catch (FileNotFoundException e) {
+					System.out.println("ERROR! File doesn't exist!");
+					e.printStackTrace();
+					System.exit(1);
+				} catch (IOException e) {
+					System.out.println("ERROR! File read / write error!");
+					e.printStackTrace();
+					System.exit(1);
+				} catch (Exception e) {
+					System.out.println("ERROR! An error caused by parsing the XML-file");
 					e.printStackTrace();
 					System.exit(1);
 				}
