@@ -1,1 +1,0 @@
-defined(CONFIG_TAR)&&(!defined(CONFIG_FEATURE_TAR_LONG_OPTIONS)||defined(CONFIG_TAR)) && (!defined(CONFIG_FEATURE_TAR_SELINUX)||defined(CONFIG_TAR))&&(!defined(CONFIG_FEATURE_TAR_GNU_EXTENSIONS)||(defined(CONFIG_TAR) || defined(CONFIG_DPKG)))

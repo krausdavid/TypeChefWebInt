@@ -1,6 +1,0 @@
-Feb 20, 2012 10:55:30 AM de.fosd.typechef.lexer.PreprocessorListener print
-WARNING: /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/unicode.c:26:15: warning: macro init_unicode has 0 parameters (variadic: false) for expansion under condition (!def(CONFIG_UNICODE_SUPPORT)|(!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))) but given 1 args
-/app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/unicode.c:26:15: warning: macro init_unicode has 0 parameters (variadic: false) for expansion under condition (!def(CONFIG_UNICODE_SUPPORT)|(!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))) but given 1 args
-Feb 20, 2012 10:55:30 AM de.fosd.typechef.lexer.PreprocessorListener print
-WARNING: /app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/unicode.c:44:15: warning: macro init_unicode has 0 parameters (variadic: false) for expansion under condition (!def(CONFIG_UNICODE_SUPPORT)|(!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))) but given 1 args
-/app/home/krausdavid/TypeChefWebInt/projects/busybox-1.18.5/libbb/unicode.c:44:15: warning: macro init_unicode has 0 parameters (variadic: false) for expansion under condition (!def(CONFIG_UNICODE_SUPPORT)|(!def(CONFIG_UNICODE_USING_LOCALE)&!def(CONFIG_FEATURE_CHECK_UNICODE_IN_ENV))) but given 1 args

@@ -1,7 +1,0 @@
-fm True
-features (0)
-	
-imports (1)
-	bb_perror_msg: (*char, ...) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/perror_nomsg.c:11759:1
-exports (1)
-	bb_perror_nomsg: (void) => void		if True		at file cprojects/busybox/busybox-1.18.5/libbb/perror_nomsg.c:11757:0

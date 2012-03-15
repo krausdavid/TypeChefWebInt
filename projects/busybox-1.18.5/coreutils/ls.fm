@@ -1,1 +1,0 @@
-!defined(CONFIG_FEATURE_LS_COLOR) || (defined(CONFIG_LS) && defined(CONFIG_LONG_OPTS))
