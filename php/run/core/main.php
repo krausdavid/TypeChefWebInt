@@ -36,7 +36,7 @@ $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
 //Test-Zone
-$PROJECT_PATH = "/app/home/eifx/public_html/TypeChefWebInt/projects/busybox-1.18.5/";
+$PROJECT_PATH = "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/";
 
 
 //Test-Zone End

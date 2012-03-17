@@ -17,8 +17,14 @@
  * =====================================================
  */
 
- 
-$arr = tools::get_all_files($PROJECT_PATH."/applets","applets");
+//$_GET['project']
+$pathArr = explode("/",$_GET['files']);
+$pathStr = "";
+for($i=0;$i<count($pathArr)-1;$i){
+	$pathStr = $pathStr."/".$pathArr[$i];
+}
+$arr = tools::get_all_files($PROJECT_PATH.$pathStr,$pathArr[count($pathArr)-1]);
+
 $template->assign("files", $arr);
 $template->assign("project", $_GET['project']);
 $template->assign("files_get", $_GET['files']);
