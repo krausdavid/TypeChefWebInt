@@ -20,7 +20,8 @@
 //$_GET['project']
 $pathArr = explode("/",$_GET['files']);
 $pathStr = "";
-for($i=0;$i<count($pathArr)-1;$i){
+$i=0;
+for($i=0;$i<count($pathArr)-1;$i++){
 	$pathStr = $pathStr."/".$pathArr[$i];
 }
 $arr = tools::get_all_files($PROJECT_PATH.$pathStr,$pathArr[count($pathArr)-1]);
