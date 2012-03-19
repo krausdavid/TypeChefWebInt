@@ -1,7 +1,10 @@
 USETEXTLINKS = 1
 STARTALLOPEN = 0
 USEICONS = 1
-BUILDALL = 1
+BUILDALL = 0
+USEFRAMES = 0
+PRESERVESTATE = 1
+HIGHLIGHT = 0 
 ICONPATH = '/~eifx/TypeChefWebInt/php/include/images/treeview/'
 MAX_LENGTH = 700
 foldersTree = gFld("<i>busybox</i>", "")

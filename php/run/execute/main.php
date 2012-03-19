@@ -27,7 +27,8 @@
 	
 	//echo shell_exec("../scripts/useJCPPFileChecker.sh busybox.lst /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5 busybox.flags");
 	echo "<br><br>analyzeBusybox.sh wird ausgeführt<br>";
-	echo shell_exec("/app/archive/kos/share/TypeChef/busybox/analyzeBusybox.sh");
+	echo "Shell-Script vorübergehend deaktiviert";
+	//echo shell_exec("/app/archive/kos/share/TypeChef/busybox/analyzeBusybox.sh");
 	echo "<br><br>Web_ProjectInitializator.jar wird ausgeführt<br>";
 	echo shell_exec("java -jar ../java/Web_ProjectInitializator.jar /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5 busybox /app/home/eifx/public_html/TypeChefWebInt/global_settings.xml");
 	//echo shell_exec("java -jar ../java/web_ProjectInitializator/Web_ProjectInitializator.jar /app/archive/kos/share/TypeChef/busybox/busybox-1.18.5 busybox /app/home/eifx/public_html/TypeChefWebInt/global_settings.xml");
