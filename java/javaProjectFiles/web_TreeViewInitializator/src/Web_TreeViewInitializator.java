@@ -118,7 +118,8 @@ public class Web_TreeViewInitializator {
 	}
 
 	/**
-	 * This Method create the javascript-path
+	 * This Method create the javascript-treeview
+	 * It takes a sorted path-list. Every path will build separatly.
 	 * @param path
 	 */
 	public static void js_tree_new(String projectName, String defaultURI){
