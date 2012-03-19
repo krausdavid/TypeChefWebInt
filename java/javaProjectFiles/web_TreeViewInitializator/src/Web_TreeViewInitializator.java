@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.2.1";
+	private static final String VERSION = "0.1.2.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -221,7 +221,10 @@ public class Web_TreeViewInitializator {
 		javascript.add("USETEXTLINKS = 1");
 		javascript.add("STARTALLOPEN = 0");
 		javascript.add("USEICONS = 1");
-		javascript.add("BUILDALL = 1");
+		javascript.add("BUILDALL = 0");
+		javascript.add("USEFRAMES = 0");
+		javascript.add("PRESERVESTATE = 1");
+		javascript.add("HIGHLIGHT = 0");
 		javascript.add("ICONPATH = '"+iconPath+"'");
 		javascript.add("MAX_LENGTH = "+files.size());
 
