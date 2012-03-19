@@ -17,7 +17,7 @@
  * =====================================================
  */
 
-define("WEBSITE_NAME", "NONAME");
+define("WEBSITE_NAME", "TypeChefWebInt");
 define("WEBSITE_VERSION", "0.0.2.0");
 define("WEBSITE_AUTOR", "Alexander 'EifX' Eifler, David 'hullleman' Kraus");
 
