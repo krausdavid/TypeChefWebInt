@@ -17,16 +17,7 @@
  * =====================================================
  */
 
-
-//require("./run/_lib/mysql/mysql.php");
 require("./run/_lib/smarty/Smarty.class.php");
-
-// $database = new mysql();
-// $database->host = DATABASE_HOST;
-// $database->user = DATABASE_USER;
-// $database->password = DATABASE_PASSWORD;
-// $database->name = DATABASE_NAME;
-// $database->connect();
 
 $template = new Smarty();
 $template->template_dir = "./templates/tpl";
@@ -36,8 +27,6 @@ $template->cache_dir = "./templates/tmp";
 
 //Test-Zone
 $PROJECT_PATH = "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/";
-
-
 //Test-Zone End
 
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
@@ -71,7 +60,6 @@ switch ($_GET['root']) {
 		require("./run/pages/404_not_found.php");
 		break;
 }
-//$database->disconnect();
 
 $template->assign("_website_name", WEBSITE_NAME);
 $template->assign("_website_version", WEBSITE_VERSION);
