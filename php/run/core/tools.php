@@ -57,6 +57,23 @@ class tools
 		return $arr;
 	}
 
+	function read_file($file,$break)
+	{
+		$handle = fopen($file, "r");
+		$fcontent = "";
+		if ($handle){
+			while(!feof($handle)){
+				if($break==true){
+					$fcontent = $fcontent."<br>".fgets($handle);
+				}else{
+					$fcontent = $fcontent.fgets($handle);
+				}
+			}
+			fclose($handle);
+		}
+		return str_replace("/r", "<br>", $fcontent);
+	}
+	
 	function readXMLFile($settingXMLPath){
 		$var="";
 		$handle = fopen($settingXMLPath,"r");
@@ -66,23 +83,6 @@ class tools
 			}
 		}
 		return $var;
-	}
-
-	function is_valid_email_address($email_address)
-	{
-		$nonascii = "\x80-\xff";
-		$nqtext = "[^\\\\$nonascii\015\012\"]";
-		$qchar = "\\\\[^$nonascii]";
-		$protocol = '(?:mailto:)';
-		$normuser = '[a-zA-Z0-9][a-zA-Z0-9_.-]*';
-		$quotedstring = "\"(?:$nqtext|$qchar)+\"";
-		$user_part = "(?:$normuser|$quotedstring)";
-		$dom_mainpart = '[a-zA-Z0-9][a-zA-Z0-9._-]*\\.';
-		$dom_subpart = '(?:[a-zA-Z0-9][a-zA-Z0-9._-]*\\.)*';
-		$dom_tldpart = '[a-zA-Z]{2,5}';
-		$domain_part = "$dom_subpart$dom_mainpart$dom_tldpart";
-		$regex = "$protocol?$user_part\@$domain_part";
-		return preg_match("/^$regex$/", $email_address);
 	}
 
 }

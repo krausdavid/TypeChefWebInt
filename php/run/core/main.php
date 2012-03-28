@@ -26,7 +26,14 @@ $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
 //Test-Zone
-$PROJECT_PATH = "/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5/";
+$PROJECT_PATH ="";
+$string = tools::readXMLFile("../projects/busybox.project.xml");
+$xml = simplexml_load_string($string);
+foreach($xml->global->project[0]->attributes() as $a => $b) {
+    if($a=="path"){
+		$PROJECT_PATH = $b."/";
+	}
+}
 //Test-Zone End
 
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
