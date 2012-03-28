@@ -16,23 +16,27 @@
  * There are currently no notes.
  * =====================================================
  */
+require("./run/core/tools.php");
+
+$WEBSITE_DEFAULT_URI = "";
+
+$string = tools::readXMLFile("../global_settings.xml");
+$xml = simplexml_load_string($string);
+foreach($xml->global->website[0]->attributes() as $a => $b) {
+    if($a=="defaultURI"){
+		$WEBSITE_DEFAULT_URI = $b;
+	}
+}
 
 define("WEBSITE_NAME", "TypeChefWebInt");
 define("WEBSITE_VERSION", "0.0.2.0");
 define("WEBSITE_AUTOR", "Alexander 'EifX' Eifler, David 'hullleman' Kraus");
 
-define("WEBSITE_HOME_PAGE_LOGIN", "/");
-define("WEBSITE_403_PAGE", "/403_forbidden");
-define("WEBSITE_404_PAGE", "/404_not_found");
-define("WEBSITE_501_PAGE", "/501_not_implemented");
-define("WEBSITE_TEMP_DIRECTORY", "/tmp");
-define("WEBSITE_DEFAULT_URI","http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php"); //TODO: Entfernen!!!
-define("SETTING_FILE","settings.ini");
+define("WEBSITE_403_PAGE", $WEBSITE_DEFAULT_URI."/403_forbidden");
+define("WEBSITE_404_PAGE", $WEBSITE_DEFAULT_URI."/404_not_found");
+define("WEBSITE_501_PAGE", $WEBSITE_DEFAULT_URI."/501_not_implemented");
 
-// define("DATABASE_NAME", "NONAME");
-// define("DATABASE_HOST", "localhost");
-// define("DATABASE_USER", "root");
-// define("DATABASE_PASSWORD", "");
+define("SETTING_FILE","settings.ini");
 
 require("./run/core/main.php");
 ?>

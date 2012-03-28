@@ -2,6 +2,6 @@
 <settings>
      <global>
           <project name="busybox" path="/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5" failureProject="true" />
-          <init buildday="2012-03-19" buildtime="20:14:59" />
+          <init buildday="2012-03-23" buildtime="17:02:48" />
      </global>
 </settings>

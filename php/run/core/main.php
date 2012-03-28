@@ -17,7 +17,7 @@
  * =====================================================
  */
 
-require("./run/core/tools.php");
+
 //require("./run/_lib/mysql/mysql.php");
 require("./run/_lib/smarty/Smarty.class.php");
 
@@ -77,6 +77,6 @@ $template->assign("_website_name", WEBSITE_NAME);
 $template->assign("_website_version", WEBSITE_VERSION);
 $template->assign("_website_autor", WEBSITE_AUTOR);
 $template->assign("_website_year", date("Y",time()));
-$template->assign("_wud", WEBSITE_DEFAULT_URI);
+$template->assign("_wud", $WEBSITE_DEFAULT_URI);
 $template->display("./core/main.tpl");
 ?>
