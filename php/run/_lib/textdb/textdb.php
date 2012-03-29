@@ -63,5 +63,34 @@ class textdb{
 			return false;
 		}
 	}
+	
+	//Insert an entry into the database
+	function insert($arr_insert){
+		$arr_all = explode("\r\n",$this->dbc);
+		if(count($arr_all)>0){
+			$id=-1;
+			if(count($arr_all)>1){
+				$id_arr = explode(";",$arr_all[count($arr_all)-1]);
+				$id = $id_arr[0];
+			}else{
+				$id=0;
+			}
+			
+			$arr_header = explode(";",$arr_all[0]);
+			if(count($arr_insert)!=count($arr_header)){
+				return false;
+			}
+			
+			$insert_str="";
+			
+			for($i=0;$i<count($arr_header);$i++){
+				$insert_str.=$arr_insert[$i].";";
+			}
+			$insert_str = substr($insert_str,0,-1);
+			$this->dbc = ($this->dbc)."\r\n".$insert_str;
+		}else{
+			return false;
+		}
+	}
 }
 ?>
