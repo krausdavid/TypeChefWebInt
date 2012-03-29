@@ -102,5 +102,40 @@ class textdb{
 			return false;
 		}
 	}
+	
+	//Deletes an entry in the database
+	function delete($fieldname,$fieldval){
+		$arr_all = explode("\r\n",$this->dbc);
+		if(count($arr_all)>0){
+			$arr_header = explode(";",$arr_all[0]);
+			if(count($arr_header)>0){
+				$fieldID=-1;
+				for($i=0;$i<count($arr_header);$i++){
+					if($fieldname==$arr_header[$i]){
+						$fieldID=$i;
+					}
+				}
+				
+				if($fieldID==-1){
+					return false;
+				}
+				
+				$new_dbc=$arr_all[0]."\r\n";
+				for($i=1;$i<count($arr_all);$i++){
+					$arr_entry = explode(";",$arr_all[$i]);
+					if($arr_entry[$fieldID]!=$fieldval){
+						$new_db .= $arr_all[$i]."\r\n";
+					}
+				}
+				$new_db = substr($new_db,0,-2);
+				
+				$this->dbc = $new_db;
+			}else{
+				return false;
+			}
+		}else{
+			return false;
+		}
+	}
 }
 ?>
