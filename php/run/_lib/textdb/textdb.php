@@ -18,16 +18,26 @@
  */
 class textdb{
 	var $dbc;
+	var $dbpath;
 
 	//Connect the db with the local text-variable
 	function connect($filepath){
 		$var="";
-		$handle = fopen($filepath,"w+");
+		$handle = fopen($filepath,"r+");
 		while(!feof($handle)){
 			$var.=fgets($handle)."\r\n";
 		}
 		fclose($handle);
 		$this->dbc = $var;
+		$this->dbpath = $filepath;
+	}
+	
+	//Close and save the database
+	function close(){
+		unlink($this->dbpath);
+		$handle = fopen($this->dbpath,"w+");
+		fputs($handle,$this->dbc);
+		fclose($handle);
 	}
 
 	//Returns an array with selected fields
