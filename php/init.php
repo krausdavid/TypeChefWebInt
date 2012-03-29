@@ -36,7 +36,5 @@ define("WEBSITE_403_PAGE", $WEBSITE_DEFAULT_URI."/403_forbidden");
 define("WEBSITE_404_PAGE", $WEBSITE_DEFAULT_URI."/404_not_found");
 define("WEBSITE_501_PAGE", $WEBSITE_DEFAULT_URI."/501_not_implemented");
 
-define("SETTING_FILE","settings.ini");
-
 require("./run/core/main.php");
 ?>
