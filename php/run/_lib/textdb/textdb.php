@@ -137,5 +137,60 @@ class textdb{
 			return false;
 		}
 	}
+	
+	function update($updatefieldname,$updatefieldval,$searchfieldname,$searchfieldval){
+	$arr_all = explode("\r\n",$this->dbc);
+		if(count($arr_all)>0){
+			$arr_header = explode(";",$arr_all[0]);
+			if(count($arr_header)>0){
+				$fieldID=-1;
+				for($i=0;$i<count($arr_header);$i++){
+					if($searchfieldname==$arr_header[$i]){
+						$fieldID=$i;
+					}
+				}
+				
+				if($fieldID==-1){
+					return false;
+				}
+				
+				$arr_all_str="";
+
+				for($i=1;$i<count($arr_all);$i++){
+					$arr_entry = explode(";",$arr_all[$i]);
+					if($arr_entry[$fieldID]==$searchfieldval){
+						$fieldUpdateID=-1;
+						
+						for($j=0;$j<count($arr_header);$j++){
+							if($updatefieldname==$arr_header[$j]){
+								$fieldUpdateID=$j;
+							}
+						}
+						
+						if($fieldUpdateID==-1){
+							return false;
+						}
+						
+						$arr_entry[$fieldUpdateId]=$updatefieldval;
+						$arr_entry_str = "";
+						
+						for($j=0;$j<count($arr_entry);$j++){
+							$arr_entry_str .= $arr_entry[$j].";";
+						}
+						$arr_entry_str = substr($arr_entry_str,0,-1);
+						
+						$arr_all_str .= $arr_entry_str."/r/n";
+					}
+				}
+
+				$this->dbc = $arr_all[0].$arr_all_str;
+				
+			}else{
+				return false;
+			}
+		}else{
+			return false;
+		}
+	}
 }
 ?>
