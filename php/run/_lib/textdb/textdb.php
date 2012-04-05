@@ -19,6 +19,7 @@
 class textdb{
 	var $dbc;
 	var $dbpath;
+	var $arr_all;
 
 	//Connect the db with the local text-variable
 	function connect($filepath){
@@ -30,6 +31,7 @@ class textdb{
 		fclose($handle);
 		$this->dbc = $var;
 		$this->dbpath = $filepath;
+		$this->arr_all = explode("\r\n",$var);
 	}
 	
 	//Close and save the database
@@ -42,9 +44,8 @@ class textdb{
 
 	//Returns an array with selected fields
 	function select_all($fieldname,$fieldval){
-		$arr_all = explode("\r\n",$this->dbc);
-		if(count($arr_all)>0){
-			$arr_header = explode(";",$arr_all[0]);
+		if(count($this->arr_all)>0){
+			$arr_header = explode(";",$this->arr_all[0]);
 			if(count($arr_header)>0){
 				$fieldID=-1;
 				for($i=0;$i<count($arr_header);$i++){
@@ -57,8 +58,8 @@ class textdb{
 					return false;
 				}
 				
-				for($i=1;$i<count($arr_all);$i++){
-					$arr_entry = explode(";",$arr_all[$i]);
+				for($i=1;$i<count($this->arr_all);$i++){
+					$arr_entry = explode(";",$this->arr_all[$i]);
 					if($arr_entry[$fieldID]==$fieldval){
 						for($j=0;$j<count($arr_entry);$j++){
 							$output[$i][$arr_header[$j]] = $arr_entry[$j];
@@ -76,17 +77,16 @@ class textdb{
 	
 	//Insert an entry into the database
 	function insert($arr_insert){
-		$arr_all = explode("\r\n",$this->dbc);
-		if(count($arr_all)>0){
+		if(count($this->arr_all)>0){
 			$id=-1;
-			if(count($arr_all)>1){
-				$id_arr = explode(";",$arr_all[count($arr_all)-1]);
+			if(count($this->arr_all)>1){
+				$id_arr = explode(";",$this->arr_all[count($this->arr_all)-1]);
 				$id = $id_arr[0];
 			}else{
 				$id=0;
 			}
 			
-			$arr_header = explode(";",$arr_all[0]);
+			$arr_header = explode(";",$this->arr_all[0]);
 			if(count($arr_insert)!=count($arr_header)){
 				return false;
 			}
@@ -105,9 +105,8 @@ class textdb{
 	
 	//Deletes an entry in the database
 	function delete($fieldname,$fieldval){
-		$arr_all = explode("\r\n",$this->dbc);
-		if(count($arr_all)>0){
-			$arr_header = explode(";",$arr_all[0]);
+		if(count($this->arr_all)>0){
+			$arr_header = explode(";",$this->arr_all[0]);
 			if(count($arr_header)>0){
 				$fieldID=-1;
 				for($i=0;$i<count($arr_header);$i++){
@@ -120,11 +119,11 @@ class textdb{
 					return false;
 				}
 				
-				$new_dbc=$arr_all[0]."\r\n";
-				for($i=1;$i<count($arr_all);$i++){
-					$arr_entry = explode(";",$arr_all[$i]);
+				$new_dbc=$this->arr_all[0]."\r\n";
+				for($i=1;$i<count($this->arr_all);$i++){
+					$arr_entry = explode(";",$this->arr_all[$i]);
 					if($arr_entry[$fieldID]!=$fieldval){
-						$new_db .= $arr_all[$i]."\r\n";
+						$new_db .= $this->arr_all[$i]."\r\n";
 					}
 				}
 				$new_db = substr($new_db,0,-2);
@@ -140,9 +139,8 @@ class textdb{
 	
 	//Updates one or many entries
 	function update($updatefieldname,$updatefieldval,$searchfieldname,$searchfieldval){
-	$arr_all = explode("\r\n",$this->dbc);
-		if(count($arr_all)>0){
-			$arr_header = explode(";",$arr_all[0]);
+		if(count($this->arr_all)>0){
+			$arr_header = explode(";",$this->arr_all[0]);
 			if(count($arr_header)>0){
 				$fieldID=-1;
 				for($i=0;$i<count($arr_header);$i++){
@@ -157,8 +155,8 @@ class textdb{
 				
 				$arr_all_str="";
 
-				for($i=1;$i<count($arr_all);$i++){
-					$arr_entry = explode(";",$arr_all[$i]);
+				for($i=1;$i<count($this->arr_all);$i++){
+					$arr_entry = explode(";",$this->arr_all[$i]);
 					if($arr_entry[$fieldID]==$searchfieldval){
 						$fieldUpdateID=-1;
 						
@@ -184,7 +182,7 @@ class textdb{
 					}
 				}
 
-				$this->dbc = $arr_all[0].$arr_all_str;
+				$this->dbc = $this->arr_all[0].$arr_all_str;
 				
 			}else{
 				return false;
@@ -194,10 +192,10 @@ class textdb{
 		}
 	}
 	
+	//Count the given entries
 	function count($fieldname,$fieldval){
-		$arr_all = explode("\r\n",$this->dbc);
-		if(count($arr_all)>0){
-			$arr_header = explode(";",$arr_all[0]);
+		if(count($this->arr_all)>0){
+			$arr_header = explode(";",$this->arr_all[0]);
 			if(count($arr_header)>0){
 				$fieldID=-1;
 				for($i=0;$i<count($arr_header);$i++){
@@ -212,8 +210,8 @@ class textdb{
 				
 				$counter=0;
 				
-				for($i=1;$i<count($arr_all);$i++){
-					$arr_entry = explode(";",$arr_all[$i]);
+				for($i=1;$i<count($this->arr_all);$i++){
+					$arr_entry = explode(";",$this->arr_all[$i]);
 					if($arr_entry[$fieldID]==$fieldval){
 						$counter++;
 					}
