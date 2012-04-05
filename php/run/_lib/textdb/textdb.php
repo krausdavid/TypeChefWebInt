@@ -138,6 +138,7 @@ class textdb{
 		}
 	}
 	
+	//Updates one or many entries
 	function update($updatefieldname,$updatefieldval,$searchfieldname,$searchfieldval){
 	$arr_all = explode("\r\n",$this->dbc);
 		if(count($arr_all)>0){
@@ -185,6 +186,40 @@ class textdb{
 
 				$this->dbc = $arr_all[0].$arr_all_str;
 				
+			}else{
+				return false;
+			}
+		}else{
+			return false;
+		}
+	}
+	
+	function count($fieldname,$fieldval){
+		$arr_all = explode("\r\n",$this->dbc);
+		if(count($arr_all)>0){
+			$arr_header = explode(";",$arr_all[0]);
+			if(count($arr_header)>0){
+				$fieldID=-1;
+				for($i=0;$i<count($arr_header);$i++){
+					if($fieldname==$arr_header[$i]){
+						$fieldID=$i;
+					}
+				}
+				
+				if($fieldID==-1){
+					return false;
+				}
+				
+				$counter=0;
+				
+				for($i=1;$i<count($arr_all);$i++){
+					$arr_entry = explode(";",$arr_all[$i]);
+					if($arr_entry[$fieldID]==$fieldval){
+						$counter++;
+					}
+				}
+				
+				return $counter;
 			}else{
 				return false;
 			}
