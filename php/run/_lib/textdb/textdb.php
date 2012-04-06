@@ -21,6 +21,7 @@ class textdb{
 	var $dbpath;		//Datebase-Path
 	var $arr_all;		//Database in an array
 	var $arr_header;	//Database-Header
+	var $actual_ID;		//Actual ID for Auto-Increment
 	var $LINE_ENDING;	//Line-ending in a text-file
 	
 	//Get the current line ending
@@ -37,6 +38,28 @@ class textdb{
 		if($this->LINE_ENDING==""){
 			$this->LINE_ENDING = "\n";
 		}
+	}
+	
+	//Gets the actual ID for auto increment
+	function getActualID(){
+		$handle = fopen($this->dbpath.".settings","r");
+		while(!feof($handle)){
+			$var=explode("=",fgets($handle));
+			if(count($var)>0){
+				if($var[0]=="AUTO_INCREMENT"){
+					$this->actual_ID = $var[1];
+				}
+			}
+		}
+		fclose($handle);
+	}
+
+	//Sets the actual ID for auto increment
+	function setActualID(){
+		unlink($this->dbpath.".settings");
+		$handle = fopen($this->dbpath.".settings","w");
+		fputs($handle,"AUTO_INCREMENT=".$this->actual_ID);
+		fclose($handle);
 	}
 
 	//Connect the db with the local text-variable
@@ -58,6 +81,7 @@ class textdb{
 		}else{
 			return false;
 		}
+		$this->getActualID();
 	}
 	
 	//Close and save the database
@@ -66,6 +90,7 @@ class textdb{
 		$handle = fopen($this->dbpath,"w");
 		fputs($handle,$this->dbc);
 		fclose($handle);
+		$this->setActualID();
 	}
 
 	//Returns an array with selected fields
@@ -110,13 +135,16 @@ class textdb{
 	
 	//Insert an entry into the database
 	function insert($arr_insert){
-		// $id=-1;
-		// if(count($this->arr_all)>1){
-			// $id_arr = explode(";",$this->arr_all[count($this->arr_all)-1]);
-			// $id = $id_arr[0];
-		// }else{
-			// $id=0;
-		// }
+		$id=-1;
+		for($i=0;$i<count($this->arr_header);$i++){
+			if($this->arr_header[$i]=="id"){
+				$id=$i;
+			}
+		}
+		
+		if($id==-1){
+			return false;
+		}
 		
 		if(count($arr_insert)!=count($this->arr_header)){
 			return false;
@@ -125,10 +153,15 @@ class textdb{
 		$insert_str="";
 		
 		for($i=0;$i<count($this->arr_header);$i++){
-			$insert_str.=$arr_insert[$i].";";
+			if($i==$id){
+				$insert_str.=$this->actual_ID.";";
+				$this->actual_ID++;
+			}else{
+				$insert_str.=$arr_insert[$i].";";
+			}
 		}
 		$insert_str = substr($insert_str,0,-1-strlen($this->LINE_ENDING));
-		$this->dbc = ($this->dbc).$this->LINE_ENDING.$insert_str;
+		$this->dbc = $this->dbc.$this->LINE_ENDING.$insert_str;
 	}
 	
 	//Deletes an entry in the database
