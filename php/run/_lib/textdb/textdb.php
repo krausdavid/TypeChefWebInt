@@ -78,14 +78,13 @@ class textdb{
 				}
 				
 				$arr_counter=0;
-				$output=array(array(),array());
 				for($i=1;$i<count($this->arr_all);$i++){
 					$arr_entry = explode(";",$this->arr_all[$i]);
 					if($arr_entry[$fieldID]==$fieldval){
 						for($j=0;$j<count($arr_entry);$j++){
 							$output[$arr_counter][$arr_header[$j]] = $arr_entry[$j];
-							$arr_counter++;
 						}
+						$arr_counter++;
 					}
 				}
 				return $output;
