@@ -18,6 +18,7 @@
  */
 
 require("./run/_lib/smarty/Smarty.class.php");
+require("./run/_lib/textdb/textdb.php");
 
 $template = new Smarty();
 $template->template_dir = "./templates/tpl";
@@ -34,6 +35,11 @@ foreach($xml->global->project[0]->attributes() as $a => $b) {
 		$PROJECT_PATH = $b."/";
 	}
 }
+
+$textdb = new textdb();
+$textdb->connect("./db/login.txt");
+echo $textdb->count("id",1);
+$textdb->close();
 //Test-Zone End
 
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){

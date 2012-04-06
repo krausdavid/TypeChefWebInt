@@ -20,24 +20,43 @@ class textdb{
 	var $dbc;
 	var $dbpath;
 	var $arr_all;
+	var $LINE_ENDING;
+	
+	//Get the current line ending
+	function getLineEnding(){
+		if(count(explode("\r\n",$this->dbc))>1){
+			$this->LINE_ENDING = "\r\n";
+		}
+		if(count(explode("\n",$this->dbc))>1){
+			$this->LINE_ENDING = "\n";
+		}
+		if(count(explode("\r",$this->dbc))>1){
+			$this->LINE_ENDING = "\r";
+		}
+		if($this->LINE_ENDING==""){
+			$this->LINE_ENDING = "\n";
+		}
+	}
 
 	//Connect the db with the local text-variable
 	function connect($filepath){
 		$var="";
-		$handle = fopen($filepath,"r+");
+		$handle = fopen($filepath,"r");
 		while(!feof($handle)){
-			$var.=fgets($handle)."\r\n";
+			$var.=fgets($handle);
 		}
 		fclose($handle);
+		
 		$this->dbc = $var;
+		$this->getLineEnding();
 		$this->dbpath = $filepath;
-		$this->arr_all = explode("\r\n",$var);
+		$this->arr_all = explode($this->LINE_ENDING,$var);
 	}
 	
 	//Close and save the database
 	function close(){
 		unlink($this->dbpath);
-		$handle = fopen($this->dbpath,"w+");
+		$handle = fopen($this->dbpath,"w");
 		fputs($handle,$this->dbc);
 		fclose($handle);
 	}
@@ -58,11 +77,14 @@ class textdb{
 					return false;
 				}
 				
+				$arr_counter=0;
+				$output=array(array(),array());
 				for($i=1;$i<count($this->arr_all);$i++){
 					$arr_entry = explode(";",$this->arr_all[$i]);
 					if($arr_entry[$fieldID]==$fieldval){
 						for($j=0;$j<count($arr_entry);$j++){
-							$output[$i][$arr_header[$j]] = $arr_entry[$j];
+							$output[$arr_counter][$arr_header[$j]] = $arr_entry[$j];
+							$arr_counter++;
 						}
 					}
 				}
@@ -96,8 +118,8 @@ class textdb{
 			for($i=0;$i<count($arr_header);$i++){
 				$insert_str.=$arr_insert[$i].";";
 			}
-			$insert_str = substr($insert_str,0,-1);
-			$this->dbc = ($this->dbc)."\r\n".$insert_str;
+			$insert_str = substr($insert_str,0,-1-strlen($this->LINE_ENDING));
+			$this->dbc = ($this->dbc).$this->LINE_ENDING.$insert_str;
 		}else{
 			return false;
 		}
@@ -119,14 +141,14 @@ class textdb{
 					return false;
 				}
 				
-				$new_dbc=$this->arr_all[0]."\r\n";
+				$new_db=$this->arr_all[0].$this->LINE_ENDING;
 				for($i=1;$i<count($this->arr_all);$i++){
 					$arr_entry = explode(";",$this->arr_all[$i]);
 					if($arr_entry[$fieldID]!=$fieldval){
-						$new_db .= $this->arr_all[$i]."\r\n";
+						$new_db .= $this->arr_all[$i].$this->LINE_ENDING;
 					}
 				}
-				$new_db = substr($new_db,0,-2);
+				$new_db = substr($new_db,0,-1);
 				
 				$this->dbc = $new_db;
 			}else{
@@ -154,7 +176,6 @@ class textdb{
 				}
 				
 				$arr_all_str="";
-
 				for($i=1;$i<count($this->arr_all);$i++){
 					$arr_entry = explode(";",$this->arr_all[$i]);
 					if($arr_entry[$fieldID]==$searchfieldval){
@@ -170,19 +191,19 @@ class textdb{
 							return false;
 						}
 						
-						$arr_entry[$fieldUpdateId]=$updatefieldval;
+						$arr_entry[$fieldUpdateID]=$updatefieldval;
 						$arr_entry_str = "";
 						
 						for($j=0;$j<count($arr_entry);$j++){
 							$arr_entry_str .= $arr_entry[$j].";";
 						}
-						$arr_entry_str = substr($arr_entry_str,0,-1);
+						$arr_entry_str = substr($arr_entry_str,0,-1-strlen($this->LINE_ENDING));
 						
-						$arr_all_str .= $arr_entry_str."/r/n";
+						$arr_all_str .= $arr_entry_str.$this->LINE_ENDING;
 					}
 				}
-
-				$this->dbc = $this->arr_all[0].$arr_all_str;
+				$arr_all_str = substr($arr_all_str,0,-1-strlen($this->LINE_ENDING));
+				$this->dbc = $this->arr_all[0].$this->LINE_ENDING.$arr_all_str;
 				
 			}else{
 				return false;
@@ -209,7 +230,6 @@ class textdb{
 				}
 				
 				$counter=0;
-				
 				for($i=1;$i<count($this->arr_all);$i++){
 					$arr_entry = explode(";",$this->arr_all[$i]);
 					if($arr_entry[$fieldID]==$fieldval){
