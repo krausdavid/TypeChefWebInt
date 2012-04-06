@@ -96,6 +96,16 @@ class textdb{
 		}
 	}
 	
+	//Returns a single value
+	function select_once($fieldname,$fieldval,$queryfieldname){
+		$arr = $this->select_all($fieldname,$fieldval);
+		if(count($arr) && $arr!=false){
+			return $arr[0][$queryfieldname];
+		}else{
+			return false;
+		}
+	}
+	
 	//Insert an entry into the database
 	function insert($arr_insert){
 		if(count($this->arr_all)>0){
