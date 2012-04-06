@@ -39,8 +39,6 @@ foreach($xml->global->project[0]->attributes() as $a => $b) {
 $textdb = new textdb();
 $textdb->connect("./db/login.db");
 echo $textdb->count("id",1);
-$arr = array("","asd","pwdd","burzlboxi");
-$textdb->insert($arr);
 $textdb->close();
 //Test-Zone End
 

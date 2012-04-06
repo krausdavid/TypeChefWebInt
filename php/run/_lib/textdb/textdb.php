@@ -25,7 +25,7 @@ class textdb{
 	var $LINE_ENDING;	//Line-ending in a text-file
 	
 	//Get the current line ending
-	function getLineEnding(){
+	private function getLineEnding(){
 		if(count(explode("\r\n",$this->dbc))>1){
 			$this->LINE_ENDING = "\r\n";
 		}
@@ -41,8 +41,8 @@ class textdb{
 	}
 	
 	//Gets the actual ID for auto increment
-	function getActualID(){
-		$handle = fopen($this->dbpath.".settings","r");
+	private function getActualID(){
+		$handle = $this->openFile($this->dbpath.".settings","r");
 		while(!feof($handle)){
 			$var=explode("=",fgets($handle));
 			if(count($var)>0){
@@ -51,14 +51,36 @@ class textdb{
 				}
 			}
 		}
-		fclose($handle);
+		$this->closeFile($handle,$this->dbpath.".settings");
 	}
 
 	//Sets the actual ID for auto increment
-	function setActualID(){
+	private function setActualID(){
 		unlink($this->dbpath.".settings");
-		$handle = fopen($this->dbpath.".settings","w");
+		$handle = $this->openFile($this->dbpath.".settings","w");
 		fputs($handle,"AUTO_INCREMENT=".$this->actual_ID);
+		$this->closeFile($handle,$this->dbpath.".settings");
+	}
+	
+	//Open a file. If it is not possible ('cause a lock-file exist)
+	//the script will try it 3 times with an delay of an second
+	private function openFile($filepath,$type){
+		$counter=0;
+		for($i=0;$counter<3;$i++){
+			if(!file_exists($filepath.".lock")){
+				$handleLock = fopen($filepath.".lock","w");
+				$handle = fopen($filepath,$type);
+				return $handle;
+			}
+			sleep(1);
+			$counter++;
+		}
+		return false;
+	}
+	
+	//Close a file and deletes the lock-file
+	private function closeFile($handle,$filepath){
+		unlink($filepath.".lock");
 		fclose($handle);
 	}
 
@@ -66,11 +88,11 @@ class textdb{
 	//Implements some needed variables
 	function connect($filepath){
 		$var="";
-		$handle = fopen($filepath,"r");
+		$handle = $this->openFile($filepath,"r");
 		while(!feof($handle)){
 			$var.=fgets($handle);
 		}
-		fclose($handle);
+		$this->closeFile($handle,$filepath);
 		
 		$this->dbc = $var;
 		$this->getLineEnding();
@@ -87,9 +109,9 @@ class textdb{
 	//Close and save the database
 	function close(){
 		unlink($this->dbpath);
-		$handle = fopen($this->dbpath,"w");
+		$handle = $this->openFile($this->dbpath,"w");
 		fputs($handle,$this->dbc);
-		fclose($handle);
+		$this->closeFile($handle,$this->dbpath);
 		$this->setActualID();
 	}
 
