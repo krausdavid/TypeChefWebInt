@@ -19,6 +19,8 @@
 
 class session
 {
+	$name;
+	
 	function start()
 	{
 		session_save_path($WEBSITE_SESSION_PATH);
