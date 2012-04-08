@@ -89,6 +89,7 @@ $template->assign("_website_version", WEBSITE_VERSION);
 $template->assign("_website_autor", WEBSITE_AUTOR);
 $template->assign("_website_year", date("Y",time()));
 $template->assign("login", $session->get('login'));
+$template->assign("login_username", $session->get('username'));
 $template->assign("_wud", $WEBSITE_DEFAULT_URI);
 $template->display("./core/main.tpl");
 ?>
