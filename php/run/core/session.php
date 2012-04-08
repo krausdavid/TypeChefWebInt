@@ -16,26 +16,33 @@
  * There are currently no notes.
  * =====================================================
  */
-require("./run/core/tools.php");
 
-$WEBSITE_DEFAULT_URI = "";
-
-$string = tools::readXMLFile("../global_settings.xml");
-$xml = simplexml_load_string($string);
-foreach($xml->global->website[0]->attributes() as $a => $b) {
-    if($a=="defaultURI"){
-		$WEBSITE_DEFAULT_URI = $b;
+class session
+{
+	function start()
+	{
+		session_name($this->name);
+		if ($_GET[$this->name]) {
+			session_id($_GET[$this->name]);
+		}
+		session_start();
+	}
+	
+	function set($index, $value)
+	{
+		$_SESSION[$index] = $value;
+	}
+	
+	function get($index)
+	{
+		return $_SESSION[$index];
+	}
+		
+	function kill()
+	{
+		$_SESSION = array();
+		setcookie(session_name(), "");
+		session_destroy();
 	}
 }
-
-define("WEBSITE_NAME", "TypeChefWebInt");
-define("WEBSITE_VERSION", "0.0.2.0");
-define("WEBSITE_AUTOR", "Alexander 'EifX' Eifler, David 'hullleman' Kraus");
-define("WEBSITE_SESSION_NAME", "TypeChefWebIntSession");
-
-define("WEBSITE_403_PAGE", $WEBSITE_DEFAULT_URI."/403_forbidden");
-define("WEBSITE_404_PAGE", $WEBSITE_DEFAULT_URI."/404_not_found");
-define("WEBSITE_501_PAGE", $WEBSITE_DEFAULT_URI."/501_not_implemented");
-
-require("./run/core/main.php");
 ?>
