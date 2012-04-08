@@ -28,6 +28,16 @@ foreach($xml->global->website[0]->attributes() as $a => $b) {
 	}
 }
 
+$WEBSITE_SESSION_PATH = "";
+
+$string = tools::readXMLFile("../global_settings.xml");
+$xml = simplexml_load_string($string);
+foreach($xml->global->webint[0]->attributes() as $a => $b) {
+    if($a=="path"){
+		$WEBSITE_SESSION_PATH = $b."/php/tmp";
+	}
+}
+
 define("WEBSITE_NAME", "TypeChefWebInt");
 define("WEBSITE_VERSION", "0.0.2.0");
 define("WEBSITE_AUTOR", "Alexander 'EifX' Eifler, David 'hullleman' Kraus");

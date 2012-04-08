@@ -17,8 +17,6 @@
  * =====================================================
  */
 
- if($_REQUEST['logout']==true){
-	$session->kill();
-	header('Location: '.$WEBSITE_DEFAULT_URI.'/');
-}
+$session->kill();
+header('Location: '.$WEBSITE_DEFAULT_URI.'/');
 ?>

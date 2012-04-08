@@ -21,6 +21,7 @@ class session
 {
 	function start()
 	{
+		session_save_path($WEBSITE_SESSION_PATH);
 		session_name($this->name);
 		if ($_GET[$this->name]) {
 			session_id($_GET[$this->name]);

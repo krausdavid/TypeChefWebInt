@@ -21,6 +21,9 @@ require("./run/_lib/smarty/Smarty.class.php");
 require("./run/_lib/textdb/textdb.php");
 require("./run/core/session.php");
 
+$textdb_login = new textdb();
+$textdb_login->connect("./db/login.db");
+
 $session = new session();
 $session->name = WEBSITE_SESSION_NAME;
 $session->start();
@@ -30,9 +33,6 @@ $template->template_dir = "./templates/tpl";
 $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
-
-$textdb_login = new textdb();
-$textdb_login->connect("./db/login.db");
 
 //Test-Zone
 $PROJECT_PATH ="";
