@@ -19,12 +19,20 @@
 
 require("./run/_lib/smarty/Smarty.class.php");
 require("./run/_lib/textdb/textdb.php");
+require("./run/core/session.php");
+
+$session = new session();
+$session->name = WEBSITE_SESSION_NAME;
+$session->start();
 
 $template = new Smarty();
 $template->template_dir = "./templates/tpl";
 $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
+
+$textdb_login = new textdb();
+$textdb_login->connect("./db/login.db");
 
 //Test-Zone
 $PROJECT_PATH ="";
@@ -35,11 +43,6 @@ foreach($xml->global->project[0]->attributes() as $a => $b) {
 		$PROJECT_PATH = $b."/";
 	}
 }
-
-$textdb = new textdb();
-$textdb->connect("./db/login.db");
-echo $textdb->count("id",1);
-$textdb->close();
 //Test-Zone End
 
 if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
@@ -57,6 +60,9 @@ switch ($_GET['root']) {
 	case "execute":
 		require("./run/execute/main.php");
 		break;
+	case "login":
+		require("./run/account/login.php");
+		break;
 	case "project":
 		require("./run/project/main.php");
 		break;
@@ -73,6 +79,7 @@ switch ($_GET['root']) {
 		require("./run/pages/404_not_found.php");
 		break;
 }
+$textdb_login->close();
 
 $template->assign("_website_name", WEBSITE_NAME);
 $template->assign("_website_version", WEBSITE_VERSION);
