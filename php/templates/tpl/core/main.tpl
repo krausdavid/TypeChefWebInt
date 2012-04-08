@@ -55,7 +55,7 @@
 						<tr valign="top">
 							<th rowspan="2">{include file="./core/tree.tpl"}</th>
 							<td height="25">
-								<a href="{$_wud}/" class="link">Startseite</a> {* - <a href="{$_wud}/reload_tree" class="link">Baum aktualisieren</a>*} - <a href="{$_wud}/login" class="link">Login</a>
+								<a href="{$_wud}/" class="link">Startseite</a> {* - <a href="{$_wud}/reload_tree" class="link">Baum aktualisieren</a>*} - {if $login neq true}<a href="{$_wud}/login" class="link">Login</a>{else}<a href="{$_wud}/logout" class="link">Logout</a>{/if}
 							</td>
 						</tr>
 						<tr>
