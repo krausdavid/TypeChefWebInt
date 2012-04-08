@@ -19,7 +19,7 @@
 
 class session
 {
-	$name;
+	var $name;
 	
 	function start()
 	{
