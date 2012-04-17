@@ -1,32 +1,60 @@
-﻿.body
-{
-	color: #111111;
+﻿.body{
+	color: #000000;
 	text-decoration: none;
 	font-family: Verdana,Arial,sans-serif;
 	font-size:12px;
 	font-weight:none;
+	background-color: #f0eee0;
 }
-.body_core
-{
-	background-color: #dcf3fc;
-}
-.body_border
-{
-	border-width:5px;
-	border-style:solid;
-	border-color:black;
-	padding:0;
-}
-.body_header
-{
-	color: #111111;
+.body_header{
+	color: #FFFFFF;
 	text-decoration: none;
 	font-family: Verdana,Arial,sans-serif;
-	font-size:14px;
+	font-size:16px;
 	font-weight:bold;
+	background-color: #2d4154;
+	padding:5px;
+	border-bottom: #000000 1px solid;
 }
-.error_header
-{
+.body_menu{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	background-color: #517bab;
+	padding:5px;
+	border-bottom: #000000 1px solid;
+}
+.body_tree{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	background-color: #ffffff;
+	padding:5px;
+	border-right: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+}
+.body_main{
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
+	background-color: #ffffff;
+	padding:5px;
+	border-bottom: #000000 1px solid;
+}
+.body_footer{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:10px;
+	background-color: #517bab;
+	padding:5px;
+}
+.error_header{
 	color: #CC0000;
 	text-decoration: none;
 	font-family: Verdana,Arial,sans-serif;

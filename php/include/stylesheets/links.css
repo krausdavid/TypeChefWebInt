@@ -1,15 +1,13 @@
-﻿.menu_link
-{
+﻿.menu_link{
 	font-family: Verdana,Arial,sans-serif;
-	font-size:14px;
-	color:#EEEEEE;
+	font-size:12px;
+	color:#FFFFFF;
 	display:inline;
 	font-weight:bold;
 	text-decoration: none;
 	vertical-align:middle;
 }
-.link
-{
+.link{
 	font-family: Verdana,Arial,sans-serif;
 	font-size:12px;
 	color:#0000FF;

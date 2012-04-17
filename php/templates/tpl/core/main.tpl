@@ -43,27 +43,27 @@
 		<table align="center" border="0" cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
-					<table align="center" border="1" cellpadding="0" cellspacing="0" class="table">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="table">
 						<colgroup>
 							<col width="400">
 							<col width="600">
 						</colgroup>
 						<tr>
-							<td align="center" colspan="2">
+							<td align="center" colspan="2" class="body_header">
 								TypeChef - WebInterface
 							</td>
 						</tr>
-						<tr valign="top">
-							<th rowspan="2">{if $login eq true}{include file="./core/tree.tpl"}{else}&nbsp;{/if}</th>
-							<td height="25">
-								<a href="{$_wud}/" class="link">Startseite</a> {* - <a href="{$_wud}/reload_tree" class="link">Baum aktualisieren</a>*} - {if $login neq true}<a href="{$_wud}/login" class="link">Login</a>{else}Hallo {$login_username} <a href="{$_wud}/logout" class="link">Logout</a>{/if}
+						<tr valign="top" class="body_main">
+							<th rowspan="2" class="body_tree">{if $login eq true}{include file="./core/tree.tpl"}{else}&nbsp;{/if}</th>
+							<td height="25" class="body_menu">
+								<a href="{$_wud}/" class="menu_link">Startseite</a> {* - <a href="{$_wud}/reload_tree" class="menu_link">Baum aktualisieren</a>*} - {if $login neq true}<a href="{$_wud}/login" class="menu_link">Login</a>{else}Hallo {$login_username} <a href="{$_wud}/logout" class="menu_link">Logout</a>{/if}
 							</td>
 						</tr>
 						<tr>
-							<td valign="top">{include file=$template}</td>
+							<td valign="top" class="body_main">{include file=$template}</td>
 						</tr>
 						<tr>
-							<td align="center" colspan="2"><br>
+							<td align="center" colspan="2" class="body_footer"><br>
 								<div style="font-family:verdana; font-size:12px; color:black; padding-top:5px;">(c) {$_website_year} by {$_website_autor}<br><br>Version {$_website_version}</div>
 							</td>
 						</tr>
