@@ -34,53 +34,59 @@ $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
-//Test-Zone
-$PROJECT_PATH ="";
-$string = tools::readXMLFile("../projects/busybox.project.xml");
-$xml = simplexml_load_string($string);
-foreach($xml->global->project[0]->attributes() as $a => $b) {
-    if($a=="path"){
-		$PROJECT_PATH = $b."/";
+if($session->get('login')!=true){
+	require("./run/account/login.php");
+}else{
+	$PROJECT_PATH = "";
+	$PROJECT_NAME = $session->get('initial_project');
+	$template->assign("project_name", $PROJECT_NAME);
+	$template->assign("login", true);
+	
+	$string = tools::readXMLFile("../projects/".$PROJECT_NAME.".project.xml");
+	$xml = simplexml_load_string($string);
+	foreach($xml->global->project[0]->attributes() as $a => $b) {
+		if($a=="path"){
+			$PROJECT_PATH = $b."/";
+		}
 	}
-}
-//Test-Zone End
 
-if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
-	$template->assign("browser", "MSIE");
-}
+	// if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
+		// $template->assign("browser", "MSIE");
+	// }
 
-switch ($_GET['root']) {
-	case "":
-		require("./run/site/main.php");
-		break;
-	case "reload_tree":
-		echo tools::reload_tree();
-		require("./run/site/main.php");
-		break;
-	case "execute":
-		require("./run/execute/main.php");
-		break;
-	case "login":
-		require("./run/account/login.php");
-		break;
-	case "logout":
-		require("./run/account/logout.php");
-		break;
-	case "project":
-		require("./run/project/main.php");
-		break;
-	case "403_forbidden":
-		require("./run/pages/403_forbidden.php");
-		break;
-	case "404_not_found":
-		require("./run/pages/404_not_found.php");
-		break;
-	case "501_not_implemented":
-		require("./run/pages/501_not_implemented.php");
-		break;
-	default:
-		require("./run/pages/404_not_found.php");
-		break;
+	switch ($_GET['root']) {
+		case "":
+			require("./run/site/main.php");
+			break;
+		case "reload_tree":
+			echo tools::reload_tree();
+			require("./run/site/main.php");
+			break;
+		case "execute":
+			require("./run/execute/main.php");
+			break;
+		case "login":
+			require("./run/account/login.php");
+			break;
+		case "logout":
+			require("./run/account/logout.php");
+			break;
+		case "project":
+			require("./run/project/main.php");
+			break;
+		case "403_forbidden":
+			require("./run/pages/403_forbidden.php");
+			break;
+		case "404_not_found":
+			require("./run/pages/404_not_found.php");
+			break;
+		case "501_not_implemented":
+			require("./run/pages/501_not_implemented.php");
+			break;
+		default:
+			require("./run/pages/404_not_found.php");
+			break;
+	}
 }
 $textdb_login->close();
 

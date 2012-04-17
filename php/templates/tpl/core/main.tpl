@@ -16,23 +16,24 @@
 		<link rel="stylesheet" type="text/css" href="{$_wud}/include/stylesheets/table.css">
 		<link rel="stylesheet" type="text/css" href="{$_wud}/include/stylesheets/links.css">
 		<link rel="shortcut icon" type="image/ico" href="{$_wud}/include/icons/favicon.ico"/>
-		{* Skripte für TreeView *}
-		<SCRIPT src="{$_wud}/include/javascripts/treeview/ua.js"></SCRIPT>
-		<SCRIPT src="{$_wud}/include/javascripts/treeview/ftiens4.js"></SCRIPT>
+		{if $login eq true}
+			{* Skripte für TreeView *}
+			<SCRIPT src="{$_wud}/include/javascripts/treeview/ua.js"></SCRIPT>
+			<SCRIPT src="{$_wud}/include/javascripts/treeview/ftiens4.js"></SCRIPT>
 
-		{* TODO: Muss generisch werden!!! *}
-		<SCRIPT src="{$_wud}/generics/treeview/busybox.js"></SCRIPT>
-		<SCRIPT>
-			function check_boxes(){literal}{
-				var outStr = ""
-				for(var i = 0; i<MAX_LENGTH; i++){
-					if(getElById('chkbox'+i).checked){
-						outStr = outStr + 'chkbox'+ i + "_"
-					}
-				}{/literal}
-				location.href="{$_wud}/execute?chkStr="+outStr
-			}
-		</SCRIPT>
+			<SCRIPT src="{$_wud}/generics/treeview/{$project_name}.js"></SCRIPT>
+			<SCRIPT>
+				function check_boxes(){literal}{
+					var outStr = ""
+					for(var i = 0; i<MAX_LENGTH; i++){
+						if(getElById('chkbox'+i).checked){
+							outStr = outStr + 'chkbox'+ i + "_"
+						}
+					}{/literal}
+					location.href="{$_wud}/execute?chkStr="+outStr
+				}
+			</SCRIPT>
+		{/if}
 		<!--[if lt IE 7.]>
 			<script defer type="text/javascript" src="{$_wud}/include/javascripts/pngfix/pngfix.js"></script>
 		<![endif]-->
@@ -53,7 +54,7 @@
 							</td>
 						</tr>
 						<tr valign="top">
-							<th rowspan="2">{include file="./core/tree.tpl"}</th>
+							<th rowspan="2">{if $login eq true}{include file="./core/tree.tpl"}{else}&nbsp;{/if}</th>
 							<td height="25">
 								<a href="{$_wud}/" class="link">Startseite</a> {* - <a href="{$_wud}/reload_tree" class="link">Baum aktualisieren</a>*} - {if $login neq true}<a href="{$_wud}/login" class="link">Login</a>{else}Hallo {$login_username} <a href="{$_wud}/logout" class="link">Logout</a>{/if}
 							</td>
