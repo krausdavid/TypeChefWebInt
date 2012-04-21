@@ -42,8 +42,25 @@ if($_GET['choosen_file']!=""){
 	$output_file = tools::read_file($PROJECT_PATH.$_GET['files'].$fileEXT,false);
 	$output_file = str_replace("<","&lt;",$output_file);
 	$output_file = str_replace(">","&gt;",$output_file);
+	$output_file = str_replace("\t"," ",$output_file);
+	$output_file_arr = explode("\n",$output_file);
 	
-	$template->assign("filecontent", $output_file);
+	
+	for($i=0;$i<count($output_file_arr);$i++){
+-		$spaces_display ="";
+		for($j=0;$j<(strlen(count($output_file_arr))-strlen($i+1));$j++){
+			$spaces_display.=" ";
+		}
+-		$spaces_wrap ="";
+		for($j=0;$j<(strlen(count($output_file_arr)));$j++){
+			$spaces_wrap.=" ";
+		}
+
+		$out[$i]['line'] = wordwrap($output_file_arr[$i],100,"<br/>".$spaces_wrap." | ",true);
+		$out[$i]['nr'] = ($i+1).$spaces_display." | ";
+	}
+	
+	$template->assign("file_output", $out);
 }
 
 $template->assign("title", "Projekt '".$_GET['project']."' Dateien: ".$_GET['files'].".*");
