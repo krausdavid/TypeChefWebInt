@@ -43,32 +43,29 @@ if($_GET['choosen_file']!=""){
 	//not syntaxable files
 	$output_file = tools::read_file($PROJECT_PATH.$_GET['files'].$fileEXT,false);
 	
+	//Syntax higlightning
+	if($fileEXT==".c"){
+		$geshi = new GeSHi($output_file, 'c');
+	}
+	if($fileEXT==".c.interface"){
+		$geshi = new GeSHi($output_file, 'xml');
+	}
+	if($fileEXT==".interface"){
+		$geshi = new GeSHi($output_file, 'xml');
+	}
+	if($fileEXT==".pi"){
+		$geshi = new GeSHi($output_file, 'c');
+	}
+	
 	$isSyntaxable = false;
 	if($fileEXT==".c" || $fileEXT==".c.interface" || $fileEXT==".interface" || $fileEXT==".pi"){
 		$isSyntaxable = true;
+		$output_file = $geshi->parse_code();
 	}
 	
 	if(!$isSyntaxable){
 		$output_file = str_replace("<","&lt;",$output_file);
 		$output_file = str_replace(">","&gt;",$output_file);
-	}
-	
-	//Syntax higlightning
-	if($fileEXT==".c"){
-		$geshi = new GeSHi($output_file, 'c');
-		$output_file = $geshi->parse_code();
-	}
-	if($fileEXT==".c.interface"){
-		$geshi = new GeSHi($output_file, 'xml');
-		$output_file = $geshi->parse_code();
-	}
-	if($fileEXT==".interface"){
-		$geshi = new GeSHi($output_file, 'xml');
-		$output_file = $geshi->parse_code();
-	}
-	if($fileEXT==".pi"){
-		$geshi = new GeSHi($output_file, 'c');
-		$output_file = $geshi->parse_code();
 	}
 	
 	$output_file = str_replace("\t"," ",$output_file);
