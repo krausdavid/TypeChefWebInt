@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.2.2";
+	private static final String VERSION = "0.1.2.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -163,9 +163,9 @@ public class Web_TreeViewInitializator {
 			if(pathArr.length-1!=notEqual){
 				for(int j=notEqual;j<pathArr.length-1;j++){
 					if(j==0){
-						javascript.add(cleanStr(pathArr[0])+" = insFld(foldersTree, gFld(\""+pathArr[0]+"\", \"\"))");
+						javascript.add("var " + cleanStr(pathArr[0])+" = insFld(foldersTree, gFld(\""+pathArr[0]+"\", \"\"));");
 					}else{
-						javascript.add(cleanStr(pathArr[j])+" = insFld("+cleanStr(pathArr[j-1])+", gFld(\""+pathArr[j]+"\", \"\"))");
+						javascript.add("var " + cleanStr(pathArr[j])+" = insFld("+cleanStr(pathArr[j-1])+", gFld(\""+pathArr[j]+"\", \"\"));");
 					}
 					//Draw foldericons
 					String p = "";
@@ -174,11 +174,11 @@ public class Web_TreeViewInitializator {
 					}
 					p = projectPath+p;
 					if(!isAFailFolder(p)){
-						javascript.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \"folderopenok.gif\"");
-						javascript.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
+						javascript.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \"folderopenok.gif\";");
+						javascript.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \"folderclosedok.gif\";");
 					}else{
-						javascript.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \"folderopenfail.gif\"");
-						javascript.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
+						javascript.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \"folderopenfail.gif\";");
+						javascript.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \"folderclosedfail.gif\";");
 					}
 				}
 			}
@@ -188,24 +188,24 @@ public class Web_TreeViewInitializator {
 
 			//Print the files!
 			if(pathArr.length==1){
-				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/project?files="+newPath+"&project="+projectName+"\"))");
+				javascript.add("var doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/project?files="+newPath+"&project="+projectName+"\"));");
 			}else{
-				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/project?files="+newPath+"&project="+projectName+"\"))");
+				javascript.add("varvdoc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/project?files="+newPath+"&project="+projectName+"\"));");
 			}
 
 			//Draw fileicons
 			if(!files.get(i).haveErrors()){
-				javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileok.gif\"");
+				javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileok.gif\";");
 			}else{
 				if(files.get(i).isHaveNoDBG()){
-					javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileempty.gif\"");
+					javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileempty.gif\";");
 				}else{
-					javascript.add("doc"+i+".iconSrc = ICONPATH + \"filefail.gif\"");
+					javascript.add("doc"+i+".iconSrc = ICONPATH + \"filefail.gif\";");
 				}
 			}
 
 			//Add checkboxes
-			javascript.add("doc"+i+".prependHTML = \"<td valign=middle><input type=checkbox id=\\\"chkbox"+i+"\\\"></td>\"");
+			javascript.add("doc"+i+".prependHTML = \"<td valign=middle><input type=checkbox id=\\\"chkbox"+i+"\\\"></td>\";");
 
 			oldArr = pathArr;			
 			
@@ -218,25 +218,25 @@ public class Web_TreeViewInitializator {
 	 * @param iconPath
 	 */
 	public static void js_header(String projectName, String iconPath){
-		javascript.add("USETEXTLINKS = 1");
-		javascript.add("STARTALLOPEN = 0");
-		javascript.add("USEICONS = 1");
-		javascript.add("BUILDALL = 0");
-		javascript.add("USEFRAMES = 0");
-		javascript.add("PRESERVESTATE = 1");
-		javascript.add("HIGHLIGHT = 0");
-		javascript.add("ICONPATH = '"+iconPath+"'");
-		javascript.add("MAX_LENGTH = "+files.size());
+		javascript.add("USETEXTLINKS = 1;");
+		javascript.add("STARTALLOPEN = 0;");
+		javascript.add("USEICONS = 1;");
+		javascript.add("BUILDALL = 0;");
+		javascript.add("USEFRAMES = 0;");
+		javascript.add("PRESERVESTATE = 1;");
+		javascript.add("HIGHLIGHT = 0;");
+		javascript.add("ICONPATH = '"+iconPath+"';");
+		javascript.add("MAX_LENGTH = "+files.size()+";");
 
-		javascript.add("foldersTree = gFld(\"<i>"+projectName+"</i>\", \"\")");
-		javascript.add("foldersTree.treeID = \"Frameset\"");
+		javascript.add("var foldersTree = gFld(\"<i>"+projectName+"</i>\", \"\");");
+		javascript.add("foldersTree.treeID = \"Frameset\";");
 
 		if(failureProject){
-			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
-			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
+			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\";");
+			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\";");
 		}else{
-			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
-			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
+			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\";");
+			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\";");
 		}
 	}
 
