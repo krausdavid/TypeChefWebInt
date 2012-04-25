@@ -1,3 +1,3 @@
 ﻿{strip}
-	Alles Feddisch!
+	Verarbeitung abgeschlossen.
 {/strip}

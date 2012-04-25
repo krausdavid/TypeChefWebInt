@@ -24,13 +24,13 @@
 			<SCRIPT src="{$_wud}/generics/treeview/{$project_name}.js"></SCRIPT>
 			<SCRIPT>
 				function check_boxes(){literal}{
-					var outStr = ""
+					var outStr = "";
 					for(var i = 0; i<MAX_LENGTH; i++){
 						if(getElById('chkbox'+i).checked){
-							outStr = outStr + 'chkbox'+ i + "_"
+							outStr = outStr + 'chkbox'+ i + "_";
 						}
 					}{/literal}
-					location.href="{$_wud}/execute?chkStr="+outStr
+					location.href="{$_wud}/execute?chkStr="+outStr;
 				}
 			</SCRIPT>
 		{/if}
@@ -56,7 +56,7 @@
 						<tr valign="top" class="body_main">
 							<th rowspan="2" class="body_tree">{if $login eq true}{include file="./core/tree.tpl"}{else}&nbsp;{/if}</th>
 							<td height="25" class="body_menu">
-								<a href="{$_wud}/" class="menu_link">Startseite</a> {* - <a href="{$_wud}/reload_tree" class="menu_link">Baum aktualisieren</a>*} - {if $login neq true}<a href="{$_wud}/login" class="menu_link">Login</a>{else}Hallo {$login_username} - <a href="{$_wud}/logout" class="menu_link">Logout</a>{/if}
+								<a href="{$_wud}/" class="menu_link">Startseite</a> {* - <a href="{$_wud}/reload_tree" class="menu_link">Baum aktualisieren</a>*} - {if $login neq true}<a href="{$_wud}/login" class="menu_link">Login</a>{else}Hallo {$login_username} - Einstellungen - <a href="{$_wud}/logout" class="menu_link">Logout</a>{/if}
 							</td>
 						</tr>
 						<tr>
