@@ -54,7 +54,7 @@
 							</td>
 						</tr>
 						<tr valign="top" class="body_main">
-							<th rowspan="2" class="body_tree">{if $login eq true}{include file="./core/tree.tpl"}{else}&nbsp;{/if}</th>
+							<th rowspan="2" class="body_tree" align="left">{if $login eq true}{include file="./core/tree.tpl"}{else}&nbsp;{/if}</th>
 							<td height="25" class="body_menu">
 								<a href="{$_wud}/" class="menu_link">Startseite</a> {* - <a href="{$_wud}/reload_tree" class="menu_link">Baum aktualisieren</a>*} - {if $login neq true}<a href="{$_wud}/login" class="menu_link">Login</a>{else}Hallo {$login_username} - Einstellungen - <a href="{$_wud}/logout" class="menu_link">Logout</a>{/if}
 							</td>

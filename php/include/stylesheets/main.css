@@ -27,11 +27,11 @@
 	border-bottom: #000000 1px solid;
 }
 .body_tree{
-	color: #FFFFFF;
+	color: #000000;
 	text-decoration: none;
 	font-family: Verdana,Arial,sans-serif;
 	font-size:12px;
-	font-weight:bold;
+	font-weight:none;
 	background-color: #ffffff;
 	padding:5px;
 	border-right: #000000 1px solid;
