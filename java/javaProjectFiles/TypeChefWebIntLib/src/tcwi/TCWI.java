@@ -14,7 +14,7 @@ import tcwi.xml.*;
 /**
  * 
  * @author EifX
- * @version 0.0.2.1
+ * @version 0.0.3.0
  */
 public class TCWI {
 	private ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -97,7 +97,7 @@ public class TCWI {
 	 * @param projectName
 	 * @param projectPath
 	 */
-	private void writeProjectXMLFile(String path, String projectName, String projectVersion, String projectAuthor, String projectPath){
+	private void writeProjectXMLFile(String path, String projectName, String projectFullName, String projectVersion, String projectAuthor, String projectPath){
 		try{
 			Calendar c = new GregorianCalendar();
 			String month = correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
@@ -112,7 +112,7 @@ public class TCWI {
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
 			file.writeBytes("<settings>\r\n");
 			file.writeBytes("     <global>\r\n");
-			file.writeBytes("          <project name=\""+projectName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+failureProject+"\" />\r\n");
+			file.writeBytes("          <project idname=\""+projectName+"\" fullname=\""+projectFullName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+failureProject+"\" />\r\n");
 			file.writeBytes("          <init builder=\""+projectAuthor+"\" buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
 			file.writeBytes("     </global>\r\n");
 			file.writeBytes("</settings>\r\n");
@@ -128,7 +128,7 @@ public class TCWI {
 	 * @param projectName
 	 * @param settingFile
 	 */
-	public void initialisize(String path, String projectName,String projectVersion, String projectAuthor, String settingFile){
+	public void initialisize(String path, String projectName, String projectFullName, String projectVersion, String projectAuthor, String settingFile){
 		System.out.println("Starting initialization from project "+projectName+"...");
 		
 		//Removes an additional folder separator from an path end
@@ -167,7 +167,7 @@ public class TCWI {
 		
 		try {
 			writeProjectFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName);
-			writeProjectXMLFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName,projectVersion,projectAuthor,path);
+			writeProjectXMLFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName,projectFullName,projectVersion,projectAuthor,path);
 		} catch (Exception e) {
 			System.out.println("ERROR by reading the settings-file.");
 			System.exit(-1);
