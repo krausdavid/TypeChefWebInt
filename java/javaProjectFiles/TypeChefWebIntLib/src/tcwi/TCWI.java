@@ -14,7 +14,7 @@ import tcwi.xml.*;
 /**
  * 
  * @author EifX
- * @version 0.0.3.0
+ * @version 0.0.3.1
  */
 public class TCWI {
 	private ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
