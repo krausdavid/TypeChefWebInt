@@ -5,7 +5,7 @@ public class Web_ProjectInitializator {
 	private static final String AUTHORS = "EifX & hulllemann";
 
 	public static void main(String[] args) {
-		if(args.length!=3){
+		if(args.length!=6){
 			System.out.println("Help - Web_ProjectInitializator "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
 			System.out.println("\nUsage: Web_ProjectInitializator [PROJECTPATH] [PROJECTNAME] [PROJECTFULLNAME] ");
@@ -13,7 +13,7 @@ public class Web_ProjectInitializator {
 			System.out.println("\n[PROJECTPATH]");
 			System.out.println("     Absolute Path for scan for TypeChef-Files\n");
 			System.out.println("[PROJECTNAME]");
-			System.out.println("     Project shortcut-name. It must be unique!\n");
+			System.out.println("     Project shortcut-name. It must be unique!\n"); //TODO: Unique-Check!
 			System.out.println("[PROJECTFULLNAME]");
 			System.out.println("     Project name\n");
 			System.out.println("[PROJECTVERSION]");
