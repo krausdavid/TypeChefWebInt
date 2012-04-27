@@ -14,7 +14,7 @@ import tcwi.xml.*;
 /**
  * 
  * @author EifX
- * @version 0.0.1.3
+ * @version 0.0.2.1
  */
 public class TCWI {
 	private ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -78,34 +78,33 @@ public class TCWI {
 	}
 
 	/**
+	 * Returns a correct formatted number
+	 * @param str
+	 * @return
+	 */
+	private String correctCalendarForm(int i){
+		String str = i+"";
+		if(str.length()==1){
+			return "0"+str;
+		}else{
+			return str;
+		}
+	}
+	
+	/**
 	 * Write the .project.xml file
 	 * @param path
 	 * @param projectName
 	 * @param projectPath
 	 */
-	private void writeProjectXMLFile(String path, String projectName, String projectPath){
+	private void writeProjectXMLFile(String path, String projectName, String projectVersion, String projectAuthor, String projectPath){
 		try{
 			Calendar c = new GregorianCalendar();
-			String month = (c.get(GregorianCalendar.MONTH)+1)+"";
-			if(month.length()==1){
-				month = "0"+month;
-			}
-			String day = c.get(GregorianCalendar.DAY_OF_MONTH)+"";
-			if(day.length()==1){
-				day = "0"+day;
-			}
-			String hour = c.get(GregorianCalendar.HOUR_OF_DAY)+"";
-			if(hour.length()==1){
-				hour = "0"+hour;
-			}
-			String minute = c.get(GregorianCalendar.MINUTE)+"";
-			if(minute.length()==1){
-				minute = "0"+minute;
-			}
-			String second = c.get(GregorianCalendar.SECOND)+"";
-			if(second.length()==1){
-				second = "0"+second;
-			}
+			String month = correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
+			String day = correctCalendarForm(c.get(GregorianCalendar.DAY_OF_MONTH));
+			String hour = correctCalendarForm(c.get(GregorianCalendar.HOUR_OF_DAY));
+			String minute = correctCalendarForm(c.get(GregorianCalendar.MINUTE));
+			String second = correctCalendarForm(c.get(GregorianCalendar.SECOND));
 
 			File f = new File(path+check.folderSeparator()+projectName+".project.xml");
 			f.delete();
@@ -113,8 +112,8 @@ public class TCWI {
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
 			file.writeBytes("<settings>\r\n");
 			file.writeBytes("     <global>\r\n");
-			file.writeBytes("          <project name=\""+projectName+"\" path=\""+projectPath+"\" failureProject=\""+failureProject+"\" />\r\n");
-			file.writeBytes("          <init buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
+			file.writeBytes("          <project name=\""+projectName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+failureProject+"\" />\r\n");
+			file.writeBytes("          <init builder=\""+projectAuthor+"\" buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
 			file.writeBytes("     </global>\r\n");
 			file.writeBytes("</settings>\r\n");
 			file.close();
@@ -129,7 +128,7 @@ public class TCWI {
 	 * @param projectName
 	 * @param settingFile
 	 */
-	public void initialisize(String path, String projectName, String settingFile){
+	public void initialisize(String path, String projectName,String projectVersion, String projectAuthor, String settingFile){
 		System.out.println("Starting initialization from project "+projectName+"...");
 		
 		//Removes an additional folder separator from an path end
@@ -168,7 +167,7 @@ public class TCWI {
 		
 		try {
 			writeProjectFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName);
-			writeProjectXMLFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName,path);
+			writeProjectXMLFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName,projectVersion,projectAuthor,path);
 		} catch (Exception e) {
 			System.out.println("ERROR by reading the settings-file.");
 			System.exit(-1);
