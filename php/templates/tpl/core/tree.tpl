@@ -13,12 +13,12 @@
 			</optgroup>
 		</select>
 	</form>
-	<DIV style="position:absolute; top:0; left:0;"><TABLE border=0><TR><TD><FONT size=-2><A style="font-size:6pt;text-decoration:none;color:black" href="http://www.treemenu.net/" target=_blank>with Javascript Tree Menu</A></FONT></TD></TR></TABLE></DIV>
+	<div style="position:absolute; top:0; left:0;"><table border=0><tr><td><font size=-2><a style="font-size:6pt;text-decoration:none;color:black" href="http://www.treemenu.net/" target=_blank>with Javascript Tree Menu</a></font></td></tr></table></div>
 	<div class="treeview">
-		<SCRIPT>initializeDocument()</SCRIPT>
-		<NOSCRIPT>
-		Bitte aktivieren Sie JavaScript!
-		</NOSCRIPT>
+		<script>initializeDocument()</script>
+		<noscript>
+			Bitte aktivieren Sie JavaScript!
+		</noscript>
 	</div>
-	<INPUT type="button" onClick="check_boxes()" value="Evaluation">
+	<input type="button" onClick="check_boxes()" value="Evaluation" />
 {/strip}
