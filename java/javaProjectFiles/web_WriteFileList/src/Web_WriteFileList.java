@@ -13,7 +13,7 @@ public class Web_WriteFileList {
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
 
-	private static final String VERSION = "0.0.2.5";
+	private static final String VERSION = "0.0.2.6";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
@@ -33,13 +33,10 @@ public class Web_WriteFileList {
 			//Read the project dir and settings
 			Parser xmlParser = new Parser(args[2]);
 			
-			String webIntPath = "";
 			String WebIntProjectsPath = "";
-			String[] xpathWebIntPath = {"settings","global","webint","path"};
 			String[] xpathWebIntProjectsPath = {"settings","global","projects","path"};
 			
 			try{
-				webIntPath = xmlParser.read_setting(xpathWebIntPath);
 				WebIntProjectsPath = xmlParser.read_setting(xpathWebIntProjectsPath);
 			}catch (Exception e){
 				System.out.println("ERROR! File not exists, read error or XML not well-formed!\n\n");
@@ -48,7 +45,7 @@ public class Web_WriteFileList {
 			}
 			
 			Check check = new Check();
-			String path = webIntPath+WebIntProjectsPath+check.folderSeparator()+args[0];
+			String path = WebIntProjectsPath+check.folderSeparator()+args[0];
 
 			project_settings_path = path+".project";
 			project_settings_xml_path = path+".project.xml";
