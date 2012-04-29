@@ -24,6 +24,7 @@ if($_REQUEST['cmd_submit']){
 			$session->set("id", $textdb_login->select_once("username",$_POST['txt_name'],"id"));
 			$session->set("username", $textdb_login->select_once("username",$_POST['txt_name'],"username"));
 			$session->set("initial_project", $textdb_login->select_once("username",$_POST['txt_name'],"initial_project"));
+			$session->set("current_project", $textdb_login->select_once("username",$_POST['txt_name'],"initial_project"));
 			header('Location: '.$WEBSITE_DEFAULT_URI.'/');
 		}
 	}

@@ -39,7 +39,7 @@ if($session->get('login')!=true){
 	require("./run/account/login.php");
 }else{
 	$PROJECT_PATH = "";
-	$PROJECT_NAME = $session->get('initial_project');
+	$PROJECT_NAME = $session->get('current_project');
 	$template->assign("project_name", $PROJECT_NAME);
 	$template->assign("login", true);
 	
