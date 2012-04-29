@@ -43,6 +43,10 @@ $template->cache_dir = "./templates/tmp";
 if($session->get('login')!=true){
 	require("./run/account/login.php");
 }else{
+	if(substr($_POST['project'],0,1)=="_"){
+		$session->set('current_project',substr($_POST['project'],1));
+	}
+	
 	$PROJECT_NAME = $session->get('current_project');
 
 	//List all projects in the treeview-option-box
