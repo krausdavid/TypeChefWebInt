@@ -132,6 +132,10 @@ public class Web_ProjectInitializator {
 		return true;
 	}	
 	
+	/**
+	 * Main class
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		if(args.length!=6){
 			System.out.println("Help - Web_ProjectInitializator "+VERSION+" by "+AUTHORS);
