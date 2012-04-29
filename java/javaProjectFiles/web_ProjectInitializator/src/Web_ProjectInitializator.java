@@ -1,7 +1,7 @@
 import tcwi.TCWI;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.0.3.1";
+	private static final String VERSION = "0.0.4.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 
 	public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class Web_ProjectInitializator {
 			System.out.println("\n[PROJECTPATH]");
 			System.out.println("     Absolute Path for scan for TypeChef-Files\n");
 			System.out.println("[PROJECTNAME]");
-			System.out.println("     Project shortcut-name. It must be unique!\n"); //TODO: Unique-Check!
+			System.out.println("     Project shortcut-name. It must be unique!\n");
 			System.out.println("[PROJECTFULLNAME]");
 			System.out.println("     Project name\n");
 			System.out.println("[PROJECTVERSION]");

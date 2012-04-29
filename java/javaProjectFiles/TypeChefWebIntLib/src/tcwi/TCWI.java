@@ -14,7 +14,7 @@ import tcwi.xml.*;
 /**
  * 
  * @author EifX
- * @version 0.0.3.1
+ * @version 0.0.4.0
  */
 public class TCWI {
 	private ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -123,6 +123,25 @@ public class TCWI {
 	}
 	
 	/**
+	 * Checks whether the given project name is already taken
+	 * @param projectName
+	 * @param projectPath
+	 * @return
+	 */
+	private boolean uniqueCheck(String projectName, String projectPath){
+		File f = new File(projectPath);
+		File[] farr = f.listFiles();
+		for(int i=0;i<farr.length;i++){
+			if(farr[i].getName().endsWith(".project")){
+				if(farr[i].getName().substring(0, farr[i].getName().indexOf(".project")).equals(projectName)){
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
+	/**
 	 * Main initialization from a project 
 	 * @param path
 	 * @param projectName
@@ -130,6 +149,28 @@ public class TCWI {
 	 */
 	public void initialisize(String path, String projectName, String projectFullName, String projectVersion, String projectAuthor, String settingFile){
 		System.out.println("Starting initialization from project "+projectName+"...");
+
+		parser = new Parser(settingFile);
+		String[] xpath1 = {"settings","global","webint","path"};
+		String[] xpath2 = {"settings","global","projects","path"};
+		
+		String webintPath = "";
+		String projectPath = "";
+		
+		try{
+			webintPath = parser.read_setting(xpath1);
+			projectPath = parser.read_setting(xpath2);
+		} catch (Exception e) {
+			System.out.println("ERROR by reading the settings-file.");
+			System.exit(-1);
+		}
+		
+		if(uniqueCheck(projectName, webintPath+projectPath)){
+			System.out.println("Project name is OK!");
+		}else{
+			System.out.println("Initialization FAILED! Project name already set!");
+			System.exit(-1);
+		}
 		
 		//Removes an additional folder separator from an path end
 		//ex. /app/home/foo/bar/ --> /app/home/foo/bar
@@ -161,17 +202,8 @@ public class TCWI {
 		System.out.println("Sorting DONE!");
 		System.out.println("Writing down the project file...");
 		
-		parser = new Parser(settingFile);
-		String[] xpath1 = {"settings","global","webint","path"};
-		String[] xpath2 = {"settings","global","projects","path"};
-		
-		try {
-			writeProjectFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName);
-			writeProjectXMLFile(parser.read_setting(xpath1)+parser.read_setting(xpath2),projectName,projectFullName,projectVersion,projectAuthor,path);
-		} catch (Exception e) {
-			System.out.println("ERROR by reading the settings-file.");
-			System.exit(-1);
-		}
+		writeProjectFile(webintPath+projectPath,projectName);
+		writeProjectXMLFile(webintPath+projectPath,projectName,projectFullName,projectVersion,projectAuthor,path);
 		
 		System.out.println("Writing DONE!\nScript DONE!");
 	}
