@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.3.1";
+	private static final String VERSION = "0.1.3.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -261,15 +261,12 @@ public class Web_TreeViewInitializator {
 				//Init the XMLParser
 				Parser xmlParser = new Parser(args[1]);
 				
-				String[] xpathWebIntPath = {"settings","global","webint","path"};
-				String webIntPath = xmlParser.read_setting(xpathWebIntPath);
 				String[] xpathWebIntProjectsPath = {"settings","global","projects","path"};
 				String WebIntProjectsPath = xmlParser.read_setting(xpathWebIntProjectsPath);
-				
 
 				//Read the project dir
-				project_settings_path = webIntPath+WebIntProjectsPath+check.folderSeparator()+args[0]+".project";
-				project_settings_xml_path = webIntPath+WebIntProjectsPath+check.folderSeparator()+args[0]+".project.xml";
+				project_settings_path = WebIntProjectsPath+check.folderSeparator()+args[0]+".project";
+				project_settings_xml_path = WebIntProjectsPath+check.folderSeparator()+args[0]+".project.xml";
 				
 				Parser parser = new Parser(project_settings_xml_path);
 				
