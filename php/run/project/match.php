@@ -17,18 +17,6 @@
  * =====================================================
  */
 
-switch($_GET['choice']){
-	case "view":
-		require("./run/project/view.php");
-		break;
-	case "new":
-		require("./run/project/new.php");
-		break;
-	case "match":
-		require("./run/project/match.php");
-		break;
-	default:
-		require("./run/pages/404_not_found.php");
-		break;
-}
+$template->assign("title", "Projekte vergleichen");
+$template->assign("template", "./project/match.tpl"); 
 ?>

@@ -43,6 +43,7 @@ $template->cache_dir = "./templates/tmp";
 if($session->get('login')!=true){
 	require("./run/account/login.php");
 }else{
+	//Check if the user change a project
 	if(substr($_POST['project'],0,1)=="_"){
 		$session->set('current_project',substr($_POST['project'],1));
 	}
