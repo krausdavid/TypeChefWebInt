@@ -1,9 +1,137 @@
-import tcwi.TCWI;
+import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import tcwi.ErrorFile;
+import tcwi.fileHandler.Check;
+import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.0.4.0";
+	private static final String VERSION = "0.1.0.0";
 	private static final String AUTHORS = "EifX & hulllemann";
+	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
+	private static Check check = new Check();
+	private static Parser parser;
+	private static boolean failureProject = false;
 
+	private static String getAllFiles(String path){
+		File file = new File(path);
+		File[] fileList = file.listFiles();
+		try{
+			for(int i=0;i<fileList.length;i++){
+				if(fileList[i].isDirectory()){
+					getAllFiles(fileList[i].getAbsolutePath());
+				}else{
+					if(fileList[i].toString().substring(fileList[i].toString().length()-2, fileList[i].toString().length()).equals(".c")){
+						try{
+							ErrorFile errFile = new ErrorFile(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2),check.failFlags(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2)));
+							files.add(errFile);
+						}catch (IOException e){
+							e.printStackTrace();
+							return fileList[i].getAbsolutePath();
+						}
+					}
+				}
+			}
+		}catch (Exception e){
+			return path;
+		}
+		return "";
+	}
+	
+	/**
+	 * Write the .project file
+	 * @param path
+	 * @param projectName
+	 */
+	private static void writeProjectFile(String path, String projectName){
+		try{
+			File f = new File(path+check.folderSeparator()+projectName+".project");
+			f.delete();
+			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project","rw");
+			for(int i=0;i<files.size();i++){
+				//Check if the project has errors. The result will be saved in the project.xml
+				if(failureProject==false){
+					if(files.get(i).haveErrors()){
+						failureProject = true;
+					}
+				}
+				file.writeBytes(files.get(i)+"\r\n");
+			}
+			file.close();
+		}catch (IOException e){
+			System.out.println("ERROR during write the project-file at:\n"+path);
+		}
+	}
+
+	/**
+	 * Returns a correct formatted number
+	 * @param str
+	 * @return
+	 */
+	private static String correctCalendarForm(int i){
+		String str = i+"";
+		if(str.length()==1){
+			return "0"+str;
+		}else{
+			return str;
+		}
+	}
+	
+	/**
+	 * Write the .project.xml file
+	 * @param path
+	 * @param projectName
+	 * @param projectPath
+	 */
+	private static void writeProjectXMLFile(String path, String projectName, String projectFullName, String projectVersion, String projectAuthor, String projectPath){
+		try{
+			Calendar c = new GregorianCalendar();
+			String month = correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
+			String day = correctCalendarForm(c.get(GregorianCalendar.DAY_OF_MONTH));
+			String hour = correctCalendarForm(c.get(GregorianCalendar.HOUR_OF_DAY));
+			String minute = correctCalendarForm(c.get(GregorianCalendar.MINUTE));
+			String second = correctCalendarForm(c.get(GregorianCalendar.SECOND));
+
+			File f = new File(path+check.folderSeparator()+projectName+".project.xml");
+			f.delete();
+			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project.xml","rw");
+			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
+			file.writeBytes("<settings>\r\n");
+			file.writeBytes("     <global>\r\n");
+			file.writeBytes("          <project idname=\""+projectName+"\" fullname=\""+projectFullName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+failureProject+"\" />\r\n");
+			file.writeBytes("          <init builder=\""+projectAuthor+"\" buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
+			file.writeBytes("     </global>\r\n");
+			file.writeBytes("</settings>\r\n");
+			file.close();
+		}catch (IOException e){
+			System.out.println("ERROR during write the project-file at:\n"+path);
+		}
+	}
+	
+	/**
+	 * Checks whether the given project name is already taken
+	 * @param projectName
+	 * @param projectPath
+	 * @return
+	 */
+	private static boolean uniqueCheck(String projectName, String projectPath){
+		File f = new File(projectPath);
+		File[] farr = f.listFiles();
+		for(int i=0;i<farr.length;i++){
+			if(farr[i].getName().endsWith(".project")){
+				if(farr[i].getName().substring(0, farr[i].getName().indexOf(".project")).equals(projectName)){
+					return false;
+				}
+			}
+		}
+		return true;
+	}	
+	
 	public static void main(String[] args) {
 		if(args.length!=6){
 			System.out.println("Help - Web_ProjectInitializator "+VERSION+" by "+AUTHORS);
@@ -23,8 +151,71 @@ public class Web_ProjectInitializator {
 			System.out.println("[GLOBAL_SETTINGS]");
 			System.out.println("     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
-			TCWI tcwi = new TCWI();
-			tcwi.initialisize(args[0], args[1], args[2], args[3], args[4], args[5]);
+			String path = args[0];
+			String projectName = args[1];
+			String projectFullName = args[2];
+			String projectVersion = args[3];
+			String projectAuthor = args[4];
+			String settingFile = args[5];
+			
+			System.out.println("Starting initialization from project "+projectName+"...");
+
+			parser = new Parser(settingFile);
+			String[] xpath1 = {"settings","global","webint","path"};
+			String[] xpath2 = {"settings","global","projects","path"};
+			
+			String webintPath = "";
+			String projectPath = "";
+			
+			try{
+				webintPath = parser.read_setting(xpath1);
+				projectPath = parser.read_setting(xpath2);
+			} catch (Exception e) {
+				System.out.println("ERROR by reading the settings-file.");
+				System.exit(-1);
+			}
+			
+			if(uniqueCheck(projectName, webintPath+projectPath)){
+				System.out.println("Project name is OK!");
+			}else{
+				System.out.println("Initialization FAILED! Project name already set!");
+				System.exit(-1);
+			}
+			
+			//Removes an additional folder separator from an path end
+			//ex. /app/home/foo/bar/ --> /app/home/foo/bar
+			if(path.endsWith(check.folderSeparator()+"")){
+				path = path.substring(0,path.length()-1);
+			}
+			
+			String str = getAllFiles(path);
+			if(str.equals("")){
+				System.out.println("Initialization DONE!");
+			}else{
+				System.out.println("Initialization FAILED! Maybe you do not have the rights for the path: \n"+str);
+				System.exit(-1);
+			}
+			
+			System.out.println("Sort files...");
+			
+			ErrorFile[] errFiles = new ErrorFile[files.size()];
+			for(int i=0;i<files.size();i++){
+				errFiles[i] = files.get(i);
+			}
+
+			Arrays.sort(errFiles);
+			files.clear();
+			for(int i=0;i<errFiles.length;i++){
+				files.add(errFiles[i]);
+			}
+
+			System.out.println("Sorting DONE!");
+			System.out.println("Writing down the project file...");
+			
+			writeProjectFile(webintPath+projectPath,projectName);
+			writeProjectXMLFile(webintPath+projectPath,projectName,projectFullName,projectVersion,projectAuthor,path);
+			
+			System.out.println("Writing DONE!\nScript DONE!");
 		}
 	}
 
