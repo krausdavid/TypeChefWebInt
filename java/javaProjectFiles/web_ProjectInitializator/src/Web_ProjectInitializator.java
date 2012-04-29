@@ -11,7 +11,7 @@ import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.0.0";
+	private static final String VERSION = "0.1.0.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -165,21 +165,18 @@ public class Web_ProjectInitializator {
 			System.out.println("Starting initialization from project "+projectName+"...");
 
 			parser = new Parser(settingFile);
-			String[] xpath1 = {"settings","global","webint","path"};
-			String[] xpath2 = {"settings","global","projects","path"};
+			String[] xpath = {"settings","global","projects","path"};
 			
-			String webintPath = "";
 			String projectPath = "";
 			
 			try{
-				webintPath = parser.read_setting(xpath1);
-				projectPath = parser.read_setting(xpath2);
+				projectPath = parser.read_setting(xpath);
 			} catch (Exception e) {
 				System.out.println("ERROR by reading the settings-file.");
 				System.exit(-1);
 			}
 			
-			if(uniqueCheck(projectName, webintPath+projectPath)){
+			if(uniqueCheck(projectName, projectPath)){
 				System.out.println("Project name is OK!");
 			}else{
 				System.out.println("Initialization FAILED! Project name already set!");
@@ -216,8 +213,8 @@ public class Web_ProjectInitializator {
 			System.out.println("Sorting DONE!");
 			System.out.println("Writing down the project file...");
 			
-			writeProjectFile(webintPath+projectPath,projectName);
-			writeProjectXMLFile(webintPath+projectPath,projectName,projectFullName,projectVersion,projectAuthor,path);
+			writeProjectFile(projectPath,projectName);
+			writeProjectXMLFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path);
 			
 			System.out.println("Writing DONE!\nScript DONE!");
 		}
