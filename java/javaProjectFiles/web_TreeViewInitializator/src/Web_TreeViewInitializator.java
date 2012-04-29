@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.3.2";
+	private static final String VERSION = "0.1.3.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -293,12 +293,8 @@ public class Web_TreeViewInitializator {
 
 				System.out.println("Save folder tree...");
 				//Build the path for the javascript-path
-				xpath = new String[]{"settings","global","webint","path"};
-				String readedPath = xmlParser.read_setting(xpath);
-				xpath = new String[]{"settings","global","website","path"};
-				readedPath = readedPath+xmlParser.read_setting(xpath);
 				xpath = new String[]{"settings","website","generic","treeview","path"};
-				readedPath = readedPath+xmlParser.read_setting(xpath);
+				String readedPath = xmlParser.read_setting(xpath);
 
 				writeTxt(readedPath+folderSeparator+args[0]+".js");
 				System.out.println("DONE!");
