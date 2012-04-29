@@ -9,13 +9,12 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.2.4";
+	private static final String VERSION = "0.1.3.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static String folderSeparator;
 	private static Check check = new Check();
-	private static Parser parser;
 	private static boolean failureProject = false;
 	private static String projectPath;
 	private static String project_settings_path;
@@ -217,7 +216,7 @@ public class Web_TreeViewInitializator {
 	 * @param projectName
 	 * @param iconPath
 	 */
-	public static void js_header(String projectName, String iconPath){
+	public static void js_header(String projectFullNameAndVersion, String iconPath){
 		javascript.add("USETEXTLINKS = 1");
 		javascript.add("STARTALLOPEN = 0");
 		javascript.add("USEICONS = 1");
@@ -228,7 +227,7 @@ public class Web_TreeViewInitializator {
 		javascript.add("ICONPATH = '"+iconPath+"'");
 		javascript.add("MAX_LENGTH = "+files.size());
 
-		javascript.add("foldersTree = gFld(\"<i>"+projectName+"</i>\", \"\")");
+		javascript.add("foldersTree = gFld(\"<i>"+projectFullNameAndVersion+"</i>\", \"\")");
 		javascript.add("foldersTree.treeID = \"Frameset\"");
 
 		if(failureProject){
@@ -272,10 +271,14 @@ public class Web_TreeViewInitializator {
 				project_settings_path = webIntPath+WebIntProjectsPath+check.folderSeparator()+args[0]+".project";
 				project_settings_xml_path = webIntPath+WebIntProjectsPath+check.folderSeparator()+args[0]+".project.xml";
 				
-				parser = new Parser(project_settings_xml_path);
+				Parser parser = new Parser(project_settings_xml_path);
 				
 				String[] xpathProjectPath = {"settings","global","project","path"};
 				projectPath = parser.read_setting(xpathProjectPath);
+				String[] xpathProjectName = {"settings","global","project","fullname"};
+				String projectFullName = parser.read_setting(xpathProjectName);
+				String[] xpathProjectVersion = {"settings","global","project","version"};
+				String projectVersion = parser.read_setting(xpathProjectVersion);
 				
 
 				//Do the work
@@ -285,7 +288,7 @@ public class Web_TreeViewInitializator {
 				System.out.println("Build header...");
 
 				String[] xpath = {"settings","website","generic","treeview","icons"};
-				js_header(args[0],xmlParser.read_setting(xpath));
+				js_header(projectFullName+" "+projectVersion,xmlParser.read_setting(xpath));
 
 				System.out.println("Build folder tree...");
 				xpath = new String[]{"settings","global","website","defaultURI"};
