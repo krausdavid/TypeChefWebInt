@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<settings>
-     <global>
-          <project name="busybox" path="/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5" failureProject="true" />
-          <init buildday="2012-03-23" buildtime="17:02:48" />
-     </global>
-</settings>
