@@ -17,32 +17,24 @@
  * =====================================================
  */
 
-class session
-{
+class session{
 	var $name;
 	
-	function start()
-	{
-		session_save_path($WEBSITE_SESSION_PATH);
+	function start($session_path){
+		session_save_path($session_path);
 		session_name($this->name);
-		if ($_GET[$this->name]) {
-			session_id($_GET[$this->name]);
-		}
 		session_start();
 	}
 	
-	function set($index, $value)
-	{
+	function set($index, $value){
 		$_SESSION[$index] = $value;
 	}
 	
-	function get($index)
-	{
+	function get($index){
 		return $_SESSION[$index];
 	}
 		
-	function kill()
-	{
+	function kill(){
 		$_SESSION = array();
 		setcookie(session_name(), "");
 		session_destroy();

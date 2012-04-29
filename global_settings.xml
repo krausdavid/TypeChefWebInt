@@ -5,7 +5,7 @@
 		<shellscripts path="/scripts" />
 		<typechef path="/app/archive/kos/share/TypeChef/TypeChef" />
 		<webint path="/app/home/eifx/public_html/TypeChefWebInt" />
-		<projects path="/projects" />
+		<projects path="/app/home/eifx/public_html/TypeChefWebInt/projects" />
 	</global>
 	<website>
 		<generic>

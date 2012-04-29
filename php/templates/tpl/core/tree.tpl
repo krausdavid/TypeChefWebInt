@@ -1,7 +1,9 @@
 ﻿{strip}
 	Aktuelles Projekt:&nbsp;
 	<select name="project" size="1">
-		<option value="0">Busybox</option>
+		{foreach from=$projects_list item=projects_list name=projects_list_name}
+			<option value="{$projects_list.id}" {if $projects_list.selected eq true}selected{/if}>{$projects_list.name}</option>
+		{/foreach}
 		<option value="-">---</option>
 		<option value="new">Neues Projekt...</option>
 		<option value="match">Zwei Projekte vergleichen</option>

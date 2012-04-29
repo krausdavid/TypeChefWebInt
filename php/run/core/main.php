@@ -17,43 +17,63 @@
  * =====================================================
  */
 
+//Import some required classes
 require("./run/_lib/geshi/geshi.php");
 require("./run/_lib/smarty/Smarty.class.php");
 require("./run/_lib/textdb/textdb.php");
 require("./run/core/session.php");
 
+//Set up the connection to the login database
 $textdb_login = new textdb();
 $textdb_login->connect("./db/login.db");
 
+//Create a Session
 $session = new session();
 $session->name = WEBSITE_SESSION_NAME;
-$session->start();
+$session->start($WEBSITE_SESSION_PATH);
 
+//Set up Smarty
 $template = new Smarty();
 $template->template_dir = "./templates/tpl";
 $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
+//Check if the user is logged in
 if($session->get('login')!=true){
 	require("./run/account/login.php");
 }else{
-	$PROJECT_PATH = "";
 	$PROJECT_NAME = $session->get('current_project');
+
+	//List all projects in the treeview-option-box
+	$handle = opendir($WEBSITE_PROJECT_PATH);
+	$i=0;
+	while($file = readdir($handle)){
+		if(substr($file,-8)==".project"){
+			$projects_list[$i]['name'] = substr($file,0,-8);
+			$projects_list[$i]['id'] = $i;
+			if($PROJECT_NAME==substr($file,0,-8)){
+				$projects_list[$i]['selected'] = true;
+			}else{
+				$projects_list[$i]['selected'] = false;
+			}
+		}
+		$i++;
+	}
+	closedir($handle);
+	$template->assign("projects_list", $projects_list);
+	
+	$PROJECT_PATH = "";
 	$template->assign("project_name", $PROJECT_NAME);
 	$template->assign("login", true);
 	
-	$string = tools::readXMLFile("../projects/".$PROJECT_NAME.".project.xml");
+	$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".project.xml");
 	$xml = simplexml_load_string($string);
 	foreach($xml->global->project[0]->attributes() as $a => $b) {
 		if($a=="path"){
 			$PROJECT_PATH = $b."/";
 		}
 	}
-
-	// if(stripos($_SERVER['HTTP_USER_AGENT'], "MSIE")!==false){
-		// $template->assign("browser", "MSIE");
-	// }
 
 	switch ($_GET['root']) {
 		case "":
