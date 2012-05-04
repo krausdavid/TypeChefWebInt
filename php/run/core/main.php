@@ -30,10 +30,19 @@ $textdb_login->connect("./db/login.db");
 //Create a Session
 $session = new session();
 $session->name = WEBSITE_SESSION_NAME;
+
+if(!file_exists($WEBSITE_SESSION_PATH)){
+	mkdir($WEBSITE_SESSION_PATH);
+}
 $session->start($WEBSITE_SESSION_PATH);
 
 //Set up Smarty
 $template = new Smarty();
+if(!file_exists("./templates/tpl")){mkdir("./templates/tpl");}
+if(!file_exists("./templates/php")){mkdir("./templates/php");}
+if(!file_exists("./templates/cfg")){mkdir("./templates/cfg");}
+if(!file_exists("./templates/tmp")){mkdir("./templates/tmp");}
+
 $template->template_dir = "./templates/tpl";
 $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
