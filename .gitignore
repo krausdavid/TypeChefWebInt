@@ -1,0 +1,5 @@
+# Ignore tmp-session-dir
+php/tmp/*
+
+# Ignore tmp-smarty-dir
+php/templates/php/*

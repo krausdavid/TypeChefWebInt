@@ -1,3 +1,0 @@
-<?php /* Smarty version 2.6.26, created on 2012-05-04 21:19:19
-         compiled from ./account/login.tpl */ ?>
-﻿<?php echo ''; ?><?php if ($this->_tpl_vars['loginFailed'] == true): ?><?php echo '<div class="error_message"><b>Hinweis</b><br/><br/>Login fehlgeschlagen! Benutzername / Passwort stimmen nicht überein.</div><br/><br/>'; ?><?php endif; ?><?php echo '<form action="'; ?><?php echo $this->_tpl_vars['_wud']; ?><?php echo '/login" method="post">Name:<br/><input type="text" name="txt_name" class="text_small" /><br/><br/>Passwort:<br/><input type="password" name="txt_password" class="text_small" /><br/><br/><input type="submit" name="cmd_submit" value="Login" class="button" /></form>'; ?>
