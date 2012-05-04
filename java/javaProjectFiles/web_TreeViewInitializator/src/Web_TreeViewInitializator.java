@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.3.6";
+	private static final String VERSION = "0.1.3.7";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -204,7 +204,7 @@ public class Web_TreeViewInitializator {
 			}
 
 			//Add checkboxes
-			javascript.add("doc"+i+".prependHTML = \"<td valign=middle><input type=checkbox id=\"chkbox"+i+"\"></td>\"");
+			javascript.add("doc"+i+".prependHTML = \"<td valign=middle><input type=checkbox id=\\\"chkbox"+i+"\\\"></td>\"");
 
 			oldArr = pathArr;			
 			
