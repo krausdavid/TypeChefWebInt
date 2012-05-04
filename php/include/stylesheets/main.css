@@ -3,7 +3,6 @@
 	text-decoration: none;
 	font-family: Verdana,Arial,sans-serif;
 	font-size:12px;
-	font-weight:none;
 	background-color: #f0eee0;
 }
 .body_header{
@@ -31,7 +30,6 @@
 	text-decoration: none;
 	font-family: Verdana,Arial,sans-serif;
 	font-size:12px;
-	font-weight:none;
 	background-color: #ffffff;
 	padding:5px;
 	border-right: #000000 1px solid;
@@ -60,4 +58,24 @@
 	font-family: Verdana,Arial,sans-serif;
 	font-size:14px;
 	font-weight:bold;
+}
+.info_message {
+	width: 500px;
+	margin: 0px;
+	padding: 5px 5px 5px 45px;
+	border: 2px solid #0600FF;
+	color: #000000;
+	background: #EDFEFF url("../images/style/info32x32.png") no-repeat 5px 5px;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
+}
+.error_message {
+	width: 500px;
+	margin: 0px;
+	padding: 5px 5px 5px 45px;
+	border: 2px solid #DD0000;
+	color: #000000;
+	background: #FFFFBB url("../images/style/error32x32.png") no-repeat 5px 5px;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
 }
