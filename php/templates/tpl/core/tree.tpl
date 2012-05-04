@@ -1,4 +1,4 @@
-﻿{strip}
+﻿
 	Aktuelles Projekt:&nbsp;
 	<form method="post" action="{$_wud}/" style="display:inline">
 		<select name="project" size="1">
@@ -20,5 +20,4 @@
 			Bitte aktivieren Sie JavaScript!
 		</noscript>
 	</div>
-	<input type="button" onClick="check_boxes()" value="Evaluation" />
-{/strip}
+	<input type="button" onClick="check_boxes();" value="Evaluation" />
