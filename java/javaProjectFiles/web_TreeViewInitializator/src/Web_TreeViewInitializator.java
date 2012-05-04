@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.3.4";
+	private static final String VERSION = "0.1.3.5";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -162,7 +162,7 @@ public class Web_TreeViewInitializator {
 			if(pathArr.length-1!=notEqual){
 				for(int j=notEqual;j<pathArr.length-1;j++){
 					if(j==0){
-						javascript.add(cleanStr("var "+pathArr[0])+" = insFld(foldersTree, gFld(\""+pathArr[0]+"\", \"\"))");
+						javascript.add(cleanStr(pathArr[0])+" = insFld(foldersTree, gFld(\""+pathArr[0]+"\", \"\"))");
 					}else{
 						javascript.add(cleanStr(pathArr[j])+" = insFld("+cleanStr(pathArr[j-1])+", gFld(\""+pathArr[j]+"\", \"\"))");
 					}
@@ -187,7 +187,7 @@ public class Web_TreeViewInitializator {
 
 			//Print the files!
 			if(pathArr.length==1){
-				javascript.add("var doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/project?choice=view&files="+newPath+"&project="+projectName+"\"))");
+				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/project?choice=view&files="+newPath+"&project="+projectName+"\"))");
 			}else{
 				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/project?choice=view&files="+newPath+"&project="+projectName+"\"))");
 			}
