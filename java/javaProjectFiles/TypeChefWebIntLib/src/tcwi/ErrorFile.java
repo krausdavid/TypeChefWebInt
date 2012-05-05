@@ -1,5 +1,10 @@
 package tcwi;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.util.ArrayList;
+
 public class ErrorFile implements Comparable<ErrorFile>{
 	private String path;
 	private boolean haveNoDBG;
@@ -121,6 +126,9 @@ public class ErrorFile implements Comparable<ErrorFile>{
 	}
 
 	@Override
+	/**
+	 * Comparing filenames
+	 */
 	public int compareTo(ErrorFile errFile) {
 		if(errFile.getPath().equals(this.path)){
 			return 0;
@@ -140,6 +148,30 @@ public class ErrorFile implements Comparable<ErrorFile>{
 		}
 		
 		return 0;
+	}
+	
+	/**
+	 * Creates an Error-File ArrayList from an given projectfile
+	 * @param errFileArr
+	 * @param projectPath
+	 * @return An Error-File ArrayList
+	 * @throws IOException
+	 */
+	public ArrayList<ErrorFile> createErrorFileArray(ArrayList<ErrorFile> errFileArr, String projectPath) throws IOException{
+		File f = new File(projectPath);
+		errFileArr.clear();
+		
+		RandomAccessFile file = new RandomAccessFile(f.getAbsolutePath(),"r");
+		String str = file.readLine();
+		while(str!=null){
+			String[] strArr = str.split("\t");
+			ErrorFile errFile = new ErrorFile(strArr[0],strArr[1],strArr[2],strArr[3],strArr[4]);
+			errFileArr.add(errFile);
+			str = file.readLine();
+		}
+		file.close();
+		
+		return errFileArr;
 	}
 	
 }
