@@ -40,7 +40,6 @@ public class Web_ProjectCompare {
 			String mainProjectPath = projectPath + check.folderSeparator() + mainProject + ".project";
 			String compareProjectPath = projectPath + check.folderSeparator() + compareProject + ".project";
 			
-			
 		}
 	}
 

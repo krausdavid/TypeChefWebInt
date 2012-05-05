@@ -157,9 +157,9 @@ public class ErrorFile implements Comparable<ErrorFile>{
 	 * @return An Error-File ArrayList
 	 * @throws IOException
 	 */
-	public static ArrayList<ErrorFile> createErrorFileArray(ArrayList<ErrorFile> errFileArr, String projectPath) throws IOException{
+	public static ArrayList<ErrorFile> createErrorFileArray(String projectPath) throws IOException{
+		ArrayList<ErrorFile> errFileArr = new ArrayList<ErrorFile>();
 		File f = new File(projectPath);
-		errFileArr.clear();
 		
 		RandomAccessFile file = new RandomAccessFile(f.getAbsolutePath(),"r");
 		String str = file.readLine();
