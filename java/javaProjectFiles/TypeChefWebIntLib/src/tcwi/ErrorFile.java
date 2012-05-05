@@ -157,7 +157,7 @@ public class ErrorFile implements Comparable<ErrorFile>{
 	 * @return An Error-File ArrayList
 	 * @throws IOException
 	 */
-	public ArrayList<ErrorFile> createErrorFileArray(ArrayList<ErrorFile> errFileArr, String projectPath) throws IOException{
+	public static ArrayList<ErrorFile> createErrorFileArray(ArrayList<ErrorFile> errFileArr, String projectPath) throws IOException{
 		File f = new File(projectPath);
 		errFileArr.clear();
 		

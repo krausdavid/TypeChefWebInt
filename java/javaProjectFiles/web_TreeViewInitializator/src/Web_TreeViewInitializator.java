@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.3.7";
+	private static final String VERSION = "0.1.4.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -26,10 +26,7 @@ public class Web_TreeViewInitializator {
 	 * @param settingsFile
 	 */
 	public static void getAllFiles(String projectName, String settingsFile){
-		RandomAccessFile file = null;
 		try{
-			File f = new File(project_settings_path);
-			
 			//If the project have minimal one error, the main-folder in the tree-list is a fail folder
 			Parser projectParser = new Parser(project_settings_xml_path);
 
@@ -39,19 +36,8 @@ public class Web_TreeViewInitializator {
 			}else{
 				failureProject = false;
 			}
-			
-			
-			files.clear();
-			
-			file = new RandomAccessFile(f.getAbsolutePath(),"r");
-			String str = file.readLine();
-			while(str!=null){
-				String[] strArr = str.split("\t");
-				ErrorFile errFile = new ErrorFile(strArr[0],strArr[1],strArr[2],strArr[3],strArr[4]);
-				files.add(errFile);
-				str = file.readLine();
-			}
-			file.close();
+
+			files = ErrorFile.createErrorFileArray(files, project_settings_path);
 		}catch(Exception e){
 			System.out.println("ERROR: Can't read the setting file");
 			e.printStackTrace();
