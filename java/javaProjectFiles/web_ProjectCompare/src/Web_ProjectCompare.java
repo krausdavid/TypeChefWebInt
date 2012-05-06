@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+
+import tcwi.ErrorFile;
 import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
@@ -37,8 +40,15 @@ public class Web_ProjectCompare {
 				System.exit(-1);
 			}
 			
-			String mainProjectPath = projectPath + check.folderSeparator() + mainProject + ".project";
-			String compareProjectPath = projectPath + check.folderSeparator() + compareProject + ".project";
+			try{
+				ErrorFile errFile = new ErrorFile(null,null,null,null,null);
+
+				ArrayList<ErrorFile> mainProjectErrArr = errFile.convertToErrorFileArr(ErrorFile.createTCWIFileArray(projectPath + check.folderSeparator() + mainProject + ".project"));
+				ArrayList<ErrorFile> compareProjectErrArr = errFile.convertToErrorFileArr(ErrorFile.createTCWIFileArray(projectPath + check.folderSeparator() + compareProject + ".project"));
+			}catch (Exception e){
+				System.out.println("ERROR by reading the project-files.");
+			}
+			
 			
 		}
 	}
