@@ -9,7 +9,7 @@ import tcwi.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.4.1";
+	private static final String VERSION = "0.1.4.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -36,8 +36,8 @@ public class Web_TreeViewInitializator {
 			}else{
 				failureProject = false;
 			}
-
-			files = ErrorFile.createErrorFileArray(project_settings_path);
+			ErrorFile errFile = new ErrorFile(null,null,null,null,null);
+			files = errFile.convertToErrorFileArr(ErrorFile.createTCWIFileArray(project_settings_path));
 		}catch(Exception e){
 			System.out.println("ERROR: Can't read the setting file");
 			e.printStackTrace();

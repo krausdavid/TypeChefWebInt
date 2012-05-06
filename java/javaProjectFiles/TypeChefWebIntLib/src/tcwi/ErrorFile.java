@@ -28,6 +28,10 @@ public class ErrorFile extends TCWIFile<Boolean> implements Comparable<ErrorFile
 		}
 	}
 
+	public ErrorFile(String substring, boolean[] failFlags) {
+		super();
+	}
+
 	public boolean haveErrors(){
 		if(this.haveNoDBG){
 			return true;
