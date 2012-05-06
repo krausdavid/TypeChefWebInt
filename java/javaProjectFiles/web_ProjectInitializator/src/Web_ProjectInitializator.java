@@ -12,7 +12,7 @@ import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.1.0";
+	private static final String VERSION = "0.1.1.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -173,8 +173,14 @@ public class Web_ProjectInitializator {
 			
 			try{
 				projectPath = parser.read_setting(xpath);
-			} catch (Exception e) {
+			} catch (IOException e) {
 				exception.throwException(1, e, true, "");
+			} catch (Exception e) {
+				String path_ = "";
+				for(int i=0;i<xpath.length;i++){
+					path_ += xpath[i]+" ";
+				}
+				exception.throwException(2, e, true, path_);
 			}
 			
 			if(uniqueCheck(projectName, projectPath)){
