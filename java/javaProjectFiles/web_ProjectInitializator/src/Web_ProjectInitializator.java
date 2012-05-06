@@ -7,16 +7,18 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import tcwi.TCWIFile.ErrorFile;
+import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.0.2";
+	private static final String VERSION = "0.1.1.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
 	private static Parser parser;
 	private static boolean failureProject = false;
+	private static Exceptions exception = new Exceptions();
 
 	private static String getAllFiles(String path){
 		File file = new File(path);
@@ -64,7 +66,7 @@ public class Web_ProjectInitializator {
 			}
 			file.close();
 		}catch (IOException e){
-			System.out.println("ERROR during write the project-file at:\n"+path);
+			exception.throwException(4, e, true, path);
 		}
 	}
 
@@ -109,7 +111,7 @@ public class Web_ProjectInitializator {
 			file.writeBytes("</settings>\r\n");
 			file.close();
 		}catch (IOException e){
-			System.out.println("ERROR during write the project-file at:\n"+path);
+			exception.throwException(4, e, true, path);
 		}
 	}
 	
@@ -172,15 +174,13 @@ public class Web_ProjectInitializator {
 			try{
 				projectPath = parser.read_setting(xpath);
 			} catch (Exception e) {
-				System.out.println("ERROR by reading the settings-file.");
-				System.exit(-1);
+				exception.throwException(1, e, true, "");
 			}
 			
 			if(uniqueCheck(projectName, projectPath)){
 				System.out.println("Project name is OK!");
 			}else{
-				System.out.println("Initialization FAILED! Project name already set!");
-				System.exit(-1);
+				exception.throwException(5, null, true, "");
 			}
 			
 			//Removes an additional folder separator from an path end
@@ -193,8 +193,7 @@ public class Web_ProjectInitializator {
 			if(str.equals("")){
 				System.out.println("Initialization DONE!");
 			}else{
-				System.out.println("Initialization FAILED! Maybe you do not have the rights for the path: \n"+str);
-				System.exit(-1);
+				exception.throwException(6, null, true, "");
 			}
 			
 			System.out.println("Sort files...");
