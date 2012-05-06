@@ -6,14 +6,16 @@ import java.util.ArrayList;
 
 import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
+import tcwi.exception.Exceptions;
 
 public class Web_WriteFileList {
 	private static Parser parser;
 	private static String project_settings_path;
 	private static String project_settings_xml_path;
 	private static String project_settings_lst_path;
+	private static Exceptions exception = new Exceptions();
 
-	private static final String VERSION = "0.0.2.6";
+	private static final String VERSION = "0.0.3.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
@@ -38,10 +40,14 @@ public class Web_WriteFileList {
 			
 			try{
 				WebIntProjectsPath = xmlParser.read_setting(xpathWebIntProjectsPath);
+			}catch (IOException e){
+				exception.throwException(1, e, true, "");
 			}catch (Exception e){
-				System.out.println("ERROR! File not exists, read error or XML not well-formed!\n\n");
-				e.printStackTrace();
-				System.exit(1);
+				String path = "";
+				for(int i=0;i<xpathWebIntProjectsPath.length;i++){
+					path += xpathWebIntProjectsPath[i]+" ";
+				}
+				exception.throwException(2, e, true, path);
 			}
 			
 			Check check = new Check();
@@ -68,6 +74,7 @@ public class Web_WriteFileList {
 				}
 	
 				RandomAccessFile file;
+				File f = new File("");
 				ArrayList<String> writeInFile = new ArrayList<String>();
 				int j = 0,i = 0;
 				
@@ -92,7 +99,7 @@ public class Web_WriteFileList {
 					file.close();
 					
 					//Write to .lst-file
-					File f = new File(project_settings_lst_path);
+					f = new File(project_settings_lst_path);
 					f.delete();
 					file = new RandomAccessFile(project_settings_lst_path,"rw");
 					for(int k=0;k<writeInFile.size();k++){
@@ -101,26 +108,25 @@ public class Web_WriteFileList {
 					file.close();
 					
 				} catch (FileNotFoundException e) {
-					System.out.println("ERROR! File doesn't exist!");
-					e.printStackTrace();
-					System.exit(1);
+					exception.throwException(7, e, true, f.getAbsolutePath());
 				} catch (IOException e) {
-					System.out.println("ERROR! File read / write error!");
-					e.printStackTrace();
-					System.exit(1);
+					exception.throwException(8, e, true, f.getAbsolutePath());
 				} catch (Exception e) {
-					System.out.println("ERROR! An error caused by parsing the XML-file");
-					e.printStackTrace();
-					System.exit(1);
+					String path_ = "";
+					for(int k=0;k<xpath.length;k++){
+						path_ += xpath[k]+" ";
+					}
+					exception.throwException(2, e, true, path_);
 				}
 			}else{
+				File f = new File("");
 				try{
 					//If no checkbox-string is given, all files from .project will
 					//be add to the .lst-file
 					String projectPath = parser.read_setting(xpath);
 	
 					RandomAccessFile fileRead = new RandomAccessFile(project_settings_path,"r");
-					File f = new File(project_settings_lst_path);
+					f = new File(project_settings_lst_path);
 					f.delete();
 					RandomAccessFile fileWrite = new RandomAccessFile(project_settings_lst_path,"rw");
 					
@@ -134,17 +140,15 @@ public class Web_WriteFileList {
 					fileWrite.close();
 					
 				} catch (FileNotFoundException e) {
-					System.out.println("ERROR! File doesn't exist!");
-					e.printStackTrace();
-					System.exit(1);
+					exception.throwException(7, e, true, f.getAbsolutePath());
 				} catch (IOException e) {
-					System.out.println("ERROR! File read / write error!");
-					e.printStackTrace();
-					System.exit(1);
+					exception.throwException(8, e, true, f.getAbsolutePath());
 				} catch (Exception e) {
-					System.out.println("ERROR! An error caused by parsing the XML-file");
-					e.printStackTrace();
-					System.exit(1);
+					String path_ = "";
+					for(int k=0;k<xpath.length;k++){
+						path_ += xpath[k]+" ";
+					}
+					exception.throwException(2, e, true, path_);
 				}
 			}
 		}
