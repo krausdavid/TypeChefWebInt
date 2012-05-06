@@ -6,12 +6,12 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import tcwi.ErrorFile;
+import tcwi.TCWIFile.ErrorFile;
 import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.0.1";
+	private static final String VERSION = "0.1.0.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
