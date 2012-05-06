@@ -1,4 +1,4 @@
-package tcwi;
+package tcwi.TCWIFile;
 
 import java.util.ArrayList;
 

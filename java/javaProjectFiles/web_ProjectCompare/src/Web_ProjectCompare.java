@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-import tcwi.ErrorFile;
+import tcwi.TCWIFile.ErrorFile;
 import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
