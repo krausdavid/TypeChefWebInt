@@ -52,6 +52,7 @@ $template->cache_dir = "./templates/tmp";
 if($session->get('login')!=true){
 	require("./run/account/login.php");
 }else{
+
 	//Check if the user change a project
 	if(substr($_POST['project'],0,1)=="_"){
 		$session->set('current_project',substr($_POST['project'],1));
@@ -83,6 +84,7 @@ if($session->get('login')!=true){
 	
 	$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".project.xml");
 	$xml = simplexml_load_string($string);
+	
 	foreach($xml->global->project[0]->attributes() as $a => $b) {
 		if($a=="path"){
 			$PROJECT_PATH = $b."/";
