@@ -15,7 +15,7 @@ public class Web_WriteFileList {
 	private static String project_settings_lst_path;
 	private static Exceptions exception = new Exceptions();
 
-	private static final String VERSION = "0.0.3.0";
+	private static final String VERSION = "0.0.3.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
