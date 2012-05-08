@@ -72,22 +72,49 @@ if($session->get('login')!=true){
 			}else{
 				$projects_list[$i]['selected'] = false;
 			}
+			$i++;
 		}
-		$i++;
 	}
 	closedir($handle);
 	$template->assign("projects_list", $projects_list);
+
+	//Check if the given project from the database is exist
+	if(count($projects_list)!=0){
+		$isACurrentProject = false;
+		for($i=0;$i<count($projects_list);$i++){
+			if($projects_list[$i]['name']==$session->get('initial_project')){
+				$isACurrentProject = true;
+			}
+		}
+		if($isACurrentProject==false){
+			$template->assign("error_projectDeleted", true);
+			$template->assign("error_projectDeleted_project_old", $session->get('initial_project'));
+			$template->assign("error_projectDeleted_project_new", $projects_list[0]['name']);
+			$session->set('initial_project', $projects_list[0]['name']);
+			$session->set('current_project', $projects_list[0]['name']);
+			$PROJECT_NAME = $projects_list[0]['name'];
+			$textdb_login->update("initial_project",$projects_list[0]['name'],"id",$session->get('id'));
+		}
+	}
 	
-	$PROJECT_PATH = "";
-	$template->assign("project_name", $PROJECT_NAME);
-	$template->assign("login", true);
-	
-	$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".project.xml");
-	$xml = simplexml_load_string($string);
-	
-	foreach($xml->global->project[0]->attributes() as $a => $b) {
-		if($a=="path"){
-			$PROJECT_PATH = $b."/";
+	//Checks whether projects are available
+	if(count($projects_list)==0){
+		$template->assign("project_name", "emptytree/empty");
+		$template->assign("login", true);
+		
+	}else{
+		//Read the current project-settings-file
+		$PROJECT_PATH = "";
+		$template->assign("project_name", $PROJECT_NAME);
+		$template->assign("login", true);
+		
+		$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".project.xml");
+		$xml = simplexml_load_string($string);
+		
+		foreach($xml->global->project[0]->attributes() as $a => $b) {
+			if($a=="path"){
+				$PROJECT_PATH = $b."/";
+			}
 		}
 	}
 

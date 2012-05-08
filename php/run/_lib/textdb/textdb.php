@@ -182,7 +182,9 @@ class textdb{
 				$insert_str.=$arr_insert[$i].";";
 			}
 		}
-		$insert_str = substr($insert_str,0,-1-strlen($this->LINE_ENDING));
+		if(substr($insert_str,-strlen($this->LINE_ENDING))==$this->LINE_ENDING){
+			$insert_str = substr($insert_str,0,-1-strlen($this->LINE_ENDING));
+		}
 		$this->dbc = $this->dbc.$this->LINE_ENDING.$insert_str;
 	}
 	
@@ -251,7 +253,10 @@ class textdb{
 					for($j=0;$j<count($arr_entry);$j++){
 						$arr_entry_str .= $arr_entry[$j].";";
 					}
-					$arr_entry_str = substr($arr_entry_str,0,-1-strlen($this->LINE_ENDING));
+					
+					if(substr($arr_entry_str,-strlen($this->LINE_ENDING))==$this->LINE_ENDING){
+						$arr_entry_str = substr($arr_entry_str,0,-1-strlen($this->LINE_ENDING));
+					}
 					
 					$arr_all_str .= $arr_entry_str.$this->LINE_ENDING;
 				}

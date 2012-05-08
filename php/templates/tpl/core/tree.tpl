@@ -1,10 +1,12 @@
-﻿
+﻿{strip}
 	Aktuelles Projekt:&nbsp;
 	<form method="post" action="{$_wud}/" style="display:inline">
 		<select name="project" size="1">
 			<optgroup label="Projeke">
 				{foreach from=$projects_list item=projects_list name=projects_list_name}
 					<option value="_{$projects_list.name}" {if $projects_list.selected eq true}selected{/if} onclick="this.form.submit();">{$projects_list.name}</option>
+				{foreachelse}
+					<option value="_" selected>Keine Projete vorhanden</option>
 				{/foreach}
 			</optgroup>
 				<optgroup label="Optionen">
@@ -21,3 +23,4 @@
 		</noscript>
 	</div>
 	<input type="button" onClick="check_boxes();" value="Evaluation" />
+{/strip}

@@ -1,4 +1,4 @@
-﻿
+﻿{strip}
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 	<head>
@@ -60,7 +60,16 @@
 							</td>
 						</tr>
 						<tr>
-							<td valign="top" class="body_main">{include file=$template}</td>
+							<td valign="top" class="body_main">
+								{if $error_projectDeleted eq true}
+									<div class="info_message">
+										<b>Hinweis</b><br/><br/>
+										Ihr aktuelles Projekt wurde entfernt. Sie wurden nun automatisch von {$error_projectDeleted_project_old} nach {$error_projectDeleted_project_new} weitergeleitet. Dieses Projekt wurde als Favorit gekennzeichnet.
+									</div>
+									<br/><br/>
+								{/if}
+								{include file=$template}
+							</td>
 						</tr>
 						<tr>
 							<td align="center" colspan="2" class="body_footer"><br>
@@ -73,4 +82,4 @@
 		</table>
 	</body>
 </html>
-
+{/strip}

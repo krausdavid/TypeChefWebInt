@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<settings>
-     <global>
-          <project idname="busybox_new" fullname="BusyBox" version="1.18.5" path="/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5" failureProject="true" />
-          <init builder="EifX" buildday="2012-05-06" buildtime="22:16:31" />
-     </global>
-</settings>

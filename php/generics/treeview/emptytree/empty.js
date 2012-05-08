@@ -1,0 +1,9 @@
+USETEXTLINKS = 1
+STARTALLOPEN = 0
+USEICONS = 0
+BUILDALL = 0
+USEFRAMES = 0
+PRESERVESTATE = 1
+HIGHLIGHT = 0
+foldersTree = gFld("Dies ist ein leeres Projekt.", "")
+foldersTree.treeID = "Frameset"
