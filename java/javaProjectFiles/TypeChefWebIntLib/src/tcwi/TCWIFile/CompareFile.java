@@ -75,7 +75,7 @@ public class CompareFile implements Comparable<CompareFile>{
 	 * @return An Error-File ArrayList
 	 * @throws IOException
 	 */
-	public static ArrayList<CompareFile> createTCWIFileArray(String projectPath) throws IOException{
+	public static ArrayList<CompareFile> createCompareFileArray(String projectPath) throws IOException{
 		ArrayList<CompareFile> compareFileArr = new ArrayList<CompareFile>();
 		File f = new File(projectPath);
 		

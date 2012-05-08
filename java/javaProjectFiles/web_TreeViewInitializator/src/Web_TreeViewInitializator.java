@@ -10,7 +10,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.5.2";
+	private static final String VERSION = "0.1.5.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -39,7 +39,7 @@ public class Web_TreeViewInitializator {
 			}else{
 				failureProject = false;
 			}
-			files = ErrorFile.createTCWIFileArray(project_settings_path);
+			files = ErrorFile.createErrorFileArray(project_settings_path);
 		}catch(IOException e){
 			exception.throwException(1, e, true, "");
 		} catch (Exception e) {

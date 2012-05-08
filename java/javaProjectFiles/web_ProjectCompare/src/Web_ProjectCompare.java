@@ -43,8 +43,8 @@ public class Web_ProjectCompare {
 			try{
 				ErrorFile errFile = new ErrorFile(null,null,null,null,null);
 
-				ArrayList<ErrorFile> mainProjectErrArr = errFile.convertToErrorFileArr(ErrorFile.createTCWIFileArray(projectPath + check.folderSeparator() + mainProject + ".project"));
-				ArrayList<ErrorFile> compareProjectErrArr = errFile.convertToErrorFileArr(ErrorFile.createTCWIFileArray(projectPath + check.folderSeparator() + compareProject + ".project"));
+				ArrayList<ErrorFile> mainProjectErrArr = ErrorFile.createErrorFileArray(projectPath + check.folderSeparator() + mainProject + ".project");
+				ArrayList<ErrorFile> compareProjectErrArr = ErrorFile.createErrorFileArray(projectPath + check.folderSeparator() + compareProject + ".project");
 			}catch (Exception e){
 				System.out.println("ERROR by reading the project-files.");
 			}

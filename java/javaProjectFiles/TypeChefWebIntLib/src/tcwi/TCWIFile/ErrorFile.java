@@ -108,7 +108,7 @@ public class ErrorFile implements Comparable<ErrorFile>{
 	 * @return An Error-File ArrayList
 	 * @throws IOException
 	 */
-	public static ArrayList<ErrorFile> createTCWIFileArray(String projectPath) throws IOException{
+	public static ArrayList<ErrorFile> createErrorFileArray(String projectPath) throws IOException{
 		ArrayList<ErrorFile> errFileArr = new ArrayList<ErrorFile>();
 		File f = new File(projectPath);
 		
