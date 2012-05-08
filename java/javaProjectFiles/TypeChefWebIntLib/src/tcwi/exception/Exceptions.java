@@ -15,6 +15,7 @@ public class Exceptions {
 		exception.put(6, "ERROR 6: Can't access the given path. Maybe you do not have the rights for it?");
 		exception.put(7, "ERROR 7: File doesn't exist.");
 		exception.put(8, "ERROR 8: Can't read / write the given file.");
+		exception.put(9, "ERROR 9: The 2 given projects are not from the same type!");
 	}
 	
 	public void throwException(int i, Exception e, boolean isExit, String pathInformation){
