@@ -10,7 +10,7 @@ import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.0.1";
+	private static final String VERSION = "0.0.0.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
@@ -76,6 +76,8 @@ public class Web_ProjectCompare {
 				exception.throwException(2, e, true, path);
 			}
 			
+			System.out.println("Load Projects...");
+			
 			String path = "";
 			ArrayList<ErrorFile> mainProjectErrArr = null;
 			ArrayList<ErrorFile> compareProjectErrArr = null;
@@ -88,11 +90,13 @@ public class Web_ProjectCompare {
 				exception.throwException(8, e, true, path);
 			}
 			
+			System.out.println("Compare Projects...");
+			
 			ArrayList<CompareFile> compFileArr = new ArrayList<CompareFile>();
 			
 			if(mainProjectErrArr.size()==compareProjectErrArr.size()){
 				for(int i = 0;i<mainProjectErrArr.size();i++){
-					if(mainProjectErrArr.get(i).getPath()==compareProjectErrArr.get(i).getPath()){
+					if(mainProjectErrArr.get(i).getPath().equals(compareProjectErrArr.get(i).getPath())){
 						String haveNoDBG ="";
 						String isEmptyFile = "";
 						String isNotTrueSucceeded ="";
@@ -109,8 +113,12 @@ public class Web_ProjectCompare {
 						if(mainProjectErrArr.get(i).isHaveTypeErrors()!=compareProjectErrArr.get(i).isHaveTypeErrors()){
 							haveTypeErrors = mainProjectErrArr.get(i).isHaveTypeErrors()+"|"+compareProjectErrArr.get(i).isHaveTypeErrors();
 						}
-						CompareFile compFile = new CompareFile(mainProjectErrArr.get(i).getPath(),haveNoDBG,isEmptyFile,isNotTrueSucceeded,haveTypeErrors);
-						compFileArr.add(compFile);
+						if(haveNoDBG.equals("") && isEmptyFile.equals("") && isNotTrueSucceeded.equals("") && haveTypeErrors.equals("")){
+							
+						}else{
+							CompareFile compFile = new CompareFile(mainProjectErrArr.get(i).getPath(),haveNoDBG,isEmptyFile,isNotTrueSucceeded,haveTypeErrors);
+							compFileArr.add(compFile);
+						}
 					}else{
 						exception.throwException(9, null, true, "");
 					}
@@ -120,6 +128,7 @@ public class Web_ProjectCompare {
 			}
 			
 			writeCompareFile(projectPath,mainProject,compFileArr);
+			System.out.println("Done!");
 			
 		}
 	}
