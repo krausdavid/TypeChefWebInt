@@ -1,5 +1,6 @@
 ﻿{strip}
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
 		<title>{$_website_name}: {$title}</title>
@@ -18,22 +19,21 @@
 		<link rel="shortcut icon" type="image/ico" href="{$_wud}/include/icons/favicon.ico"/>
 		{if $login eq true}
 			{* Skripte für TreeView *}
-			<SCRIPT src="{$_wud}/include/javascripts/treeview/ua.js"></SCRIPT>
-			<SCRIPT src="{$_wud}/include/javascripts/treeview/ftiens4.js"></SCRIPT>
-
-			<SCRIPT src="{$_wud}/generics/treeview/{$project_name}.js"></SCRIPT>
+			<script src="{$_wud}/include/javascripts/treeview/ua.js"></script>
+			<script src="{$_wud}/include/javascripts/treeview/ftiens4.js"></script>
+			<script src="{$_wud}/generics/treeview/{$project_name}.js"></script>
 		{/if}
-			<SCRIPT type="text/javascript">
+			<script>
 				function check_boxes(){literal}{
 					var outStr = "";
 					for(var i = 0; i<MAX_LENGTH; i++){
-						if(getElById('chkbox'+i).checked){
+						if(document.getElementById('chkbox'+i)!=null && document.getElementById('chkbox'+i).checked){
 							outStr = outStr + 'chkbox'+ i + "_";
 						}
 					}{/literal}
 					location.href="{$_wud}/execute?chkStr="+outStr;
 				}
-			</SCRIPT>
+			</script>
 		<!--[if lt IE 7.]>
 			<script defer type="text/javascript" src="{$_wud}/include/javascripts/pngfix/pngfix.js"></script>
 		<![endif]-->
