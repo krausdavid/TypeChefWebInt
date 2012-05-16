@@ -10,7 +10,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.5.3";
+	private static final String VERSION = "0.1.6.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
@@ -69,7 +69,11 @@ public class Web_TreeViewInitializator {
 		}
 		for(int i=0;i<filesNew.size();i++){
 			if(filesNew.get(i).haveErrors()){
-				return true;
+				if(filesNew.get(i).isHaveNoDBG()){
+					return false;
+				}else{
+					return true;
+				}
 			}
 		}
 		return false;

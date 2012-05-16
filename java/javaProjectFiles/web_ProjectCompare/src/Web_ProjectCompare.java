@@ -15,7 +15,8 @@ public class Web_ProjectCompare {
 	private static Parser parser;
 	private static Check check = new Check();
 	private static Exceptions exception = new Exceptions();
-	
+	//TODO: .project.compare.xml file erstellen
+	//TODO: Methode writeCompareFile 
 	/**
 	 * Write the .project.compare file
 	 * @param path
