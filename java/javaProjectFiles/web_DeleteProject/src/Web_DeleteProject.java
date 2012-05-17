@@ -66,7 +66,7 @@ public class Web_DeleteProject {
 			f.delete();
 			f = new File(webIntProjectsPath + check.folderSeparator() + args[0] + ".lst");
 			f.delete();
-			System.out.println("Project "+ args[0] +"successfully deleted!");
+			System.out.println("Project "+ args[0] +" successfully deleted!");
 		}
 	}
 
