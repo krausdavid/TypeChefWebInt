@@ -1,6 +1,6 @@
 ﻿	Files:<br>
 	{foreach from=$files item=act_file}
-		<a href="{$_wud}/project?choice=view&files={$files_get}&project={$project}&choosen_file={$act_file}">{$act_file}</a> 
+		<a href="{$_wud}/project?choice=view&files={$files_get}&project={$project}&choosen_file={$act_file}&lang={$smarty.get.lang}">{$act_file}</a> 
 	{/foreach}
 	<hr>
 {strip}

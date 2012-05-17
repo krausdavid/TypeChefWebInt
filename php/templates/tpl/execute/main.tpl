@@ -1,3 +1,3 @@
 ﻿{strip}
-	Verarbeitung abgeschlossen.
+	DONE
 {/strip}

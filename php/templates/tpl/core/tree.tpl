@@ -1,17 +1,17 @@
 ﻿{strip}
-	Aktuelles Projekt:&nbsp;
+	{$langTXT_actualProject}:&nbsp;
 	<form method="post" action="{$_wud}/" style="display:inline">
 		<select name="project" size="1">
-			<optgroup label="Projeke">
+			<optgroup label="{$langTXT_projects}">
 				{foreach from=$projects_list item=projects_list name=projects_list_name}
 					<option value="_{$projects_list.name}" {if $projects_list.selected eq true}selected{/if} onclick="this.form.submit();">{$projects_list.name}</option>
 				{foreachelse}
-					<option value="_" selected>Keine Projete vorhanden</option>
+					<option value="_" selected>{$langTXT_noProjectsExist}</option>
 				{/foreach}
 			</optgroup>
-				<optgroup label="Optionen">
-				<option value="new" onclick="form.action='{$_wud}/project?choice=new';this.form.submit();">Neues Projekt...</option>
-				<option value="match" onclick="form.action='{$_wud}/project?choice=match';this.form.submit();">Zwei Projekte vergleichen</option>
+				<optgroup label="{$langTXT_options}">
+				<option value="new" onclick="form.action='{$_wud}/project?choice=new';this.form.submit();">{$langTXT_newProject}</option>
+				<option value="match" onclick="form.action='{$_wud}/project?choice=match';this.form.submit();">{$langTXT_compareTwoProjects}</option>
 			</optgroup>
 		</select>
 	</form>
@@ -19,7 +19,7 @@
 	<div class="treeview">
 		<script>initializeDocument()</script>
 		<noscript>
-			Bitte aktivieren Sie JavaScript!
+			{$langTXT_pleaseActivateJavaScript}
 		</noscript>
 	</div>
 	<input type="button" onClick="check_boxes();" value="Evaluation" />

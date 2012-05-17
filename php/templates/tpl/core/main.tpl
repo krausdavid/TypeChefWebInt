@@ -48,7 +48,8 @@
 	<body class="body">
 		<table align="center" border="0" cellpadding="0" cellspacing="0">
 			<tr>
-				<td>
+				<td align="right">
+					<a href="{$_wud}/?lang=DE-DE"><img src="{$_wud}/include/images/lang/DE-DE.png" border="0" alt="DE-DE" /></a> <a href="{$_wud}/?lang=EN-US"><img src="{$_wud}/include/images/lang/EN-US.png" border="0" alt="EN-US" /></a>
 					<table align="center" border="0" cellpadding="0" cellspacing="0" class="table">
 						<colgroup>
 							<col width="400">
@@ -62,15 +63,15 @@
 						<tr valign="top" class="body_main">
 							<th rowspan="2" class="body_tree" align="left">{if $login eq true}{include file="./core/tree.tpl"}{else}&nbsp;{/if}</th>
 							<td height="25" class="body_menu">
-								<a href="{$_wud}/" class="menu_link">Startseite</a> {* - <a href="{$_wud}/reload_tree" class="menu_link">Baum aktualisieren</a>*} - {if $login neq true}<a href="{$_wud}/login" class="menu_link">Login</a>{else}Hallo {$login_username} - Einstellungen - <a href="{$_wud}/logout" class="menu_link">Logout</a>{/if}
+								<a href="{$_wud}/?lang={$smarty.get.lang}" class="menu_link">{$langTXT_homepage}</a> - {if $login neq true}<a href="{$_wud}/login?lang={$smarty.get.lang}" class="menu_link">{$langTXT_login}</a>{else}{$langTXT_hello} {$login_username} - {$langTXT_settings} - <a href="{$_wud}/logout?lang={$smarty.get.lang}" class="menu_link">{$langTXT_logout}</a>{/if}
 							</td>
 						</tr>
 						<tr>
 							<td valign="top" class="body_main">
 								{if $error_projectDeleted eq true}
 									<div class="info_message">
-										<b>Hinweis</b><br/><br/>
-										Ihr aktuelles Projekt wurde entfernt. Sie wurden nun automatisch von {$error_projectDeleted_project_old} nach {$error_projectDeleted_project_new} weitergeleitet. Dieses Projekt wurde als Favorit gekennzeichnet.
+										<b>{$langINF_information}</b><br/><br/>
+										{$langINFTXT_deletedProject_PART1} {$error_projectDeleted_project_old} {$langINFTXT_deletedProject_PART2} {$error_projectDeleted_project_new} {$langINFTXT_deletedProject_PART3}
 									</div>
 									<br/><br/>
 								{/if}

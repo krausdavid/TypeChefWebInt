@@ -25,7 +25,8 @@ if($_REQUEST['cmd_submit']){
 			$session->set("username", $textdb_login->select_once("username",$_POST['txt_name'],"username"));
 			$session->set("initial_project", $textdb_login->select_once("username",$_POST['txt_name'],"initial_project"));
 			$session->set("current_project", $textdb_login->select_once("username",$_POST['txt_name'],"initial_project"));
-			header('Location: '.$WEBSITE_DEFAULT_URI.'/');
+			$session->set("lang", $textdb_login->select_once("username",$_POST['txt_name'],"language"));
+			header('Location: '.$WEBSITE_DEFAULT_URI.'/?lang='.$session->get("lang"));
 		}else{
 			$template->assign("loginFailed", true);
 		}

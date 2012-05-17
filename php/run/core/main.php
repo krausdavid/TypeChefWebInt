@@ -47,6 +47,17 @@ $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
+//Check website language
+$LANG="";
+if($_GET['lang']==""){
+	$LANG = "EN-US";
+}
+if($_GET['lang']=="DE-DE" ||$_GET['lang']=="EN-US"){
+	$LANG = $_GET['lang'];
+}
+
+require("./lang/".$LANG.".php");
+
 //Check if the user is logged in
 if($session->get('login')!=true){
 	require("./run/account/login.php");
@@ -116,7 +127,7 @@ if($session->get('login')!=true){
 			}
 		}
 	}
-
+	
 	switch ($_GET['root']) {
 		case "":
 			require("./run/site/main.php");

@@ -1,10 +1,9 @@
 ﻿{strip}
 	<div class="error_header">
-		ERROR 404 : SEITE NICHT GEFUNDEN
+		ERROR 404 : {$langERR_403NotFound}
 	</div>
 	<br>
 	<div class="body">
-		Entschuldigung, aber die von Ihnen gewählte Seite ist nicht verfügbar.<br><br>
-		Vermutlich ist ein Fehler im aufgerufendem Link oder der Bereich ist temporär nicht verfügbar.
+		{$langERRTXT_404ErrorMessage}
 	</div>
 {/strip}
