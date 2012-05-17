@@ -92,6 +92,27 @@ public class CompareFile implements Comparable<CompareFile>{
 		
 		return compareFileArr;
 	}
+	
+	public boolean haveChanges(){
+		if(this.haveNoDBG != ""){
+			return true;
+		}else{
+			if(this.isEmptyFile != ""){
+				return true;
+			}else{
+				if(this.isNotTrueSucceeded != ""){
+					return true;
+				}else{
+					if(this.haveTypeErrors != ""){
+						return true;
+					}else{
+						return false;
+					}
+				}
+			}
+		}
+	}
+	
 	@Override
 	public String toString() {
 		return this.path+"\t"+haveNoDBG+"\t"+isEmptyFile+"\t"+isNotTrueSucceeded+"\t"+haveTypeErrors;

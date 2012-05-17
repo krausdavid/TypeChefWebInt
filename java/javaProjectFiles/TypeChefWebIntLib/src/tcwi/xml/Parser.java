@@ -114,7 +114,7 @@ public class Parser {
 	}
 	
 	/**
-	 * A specific method to get the project-path
+	 * A specific method to get the project-path from the WebInt
 	 * @param globalSettings
 	 * @return
 	 */
@@ -130,6 +130,26 @@ public class Parser {
 	 */
 	public String getSetting_TreeviewPath(){
 		String[] xpath = {"settings","website","generic","treeview","path"};
+		return this.getSetting(xpath);
+	}
+	
+	/**
+	 * A specific method to get the version from an project
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_ProjectVersion(){
+		String[] xpath = {"settings","global","project","version"};
+		return this.getSetting(xpath);
+	}
+	
+	/**
+	 * A specific method to get the path from a specific project
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_ProjectBasePath(){
+		String[] xpath = {"settings","global","project","path"};
 		return this.getSetting(xpath);
 	}
 }

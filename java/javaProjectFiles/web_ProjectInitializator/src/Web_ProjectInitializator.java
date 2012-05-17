@@ -9,10 +9,11 @@ import java.util.GregorianCalendar;
 import tcwi.TCWIFile.ErrorFile;
 import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
+import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.1.3";
+	private static final String VERSION = "0.1.1.4";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -71,20 +72,6 @@ public class Web_ProjectInitializator {
 	}
 
 	/**
-	 * Returns a correct formatted number
-	 * @param str
-	 * @return
-	 */
-	private static String correctCalendarForm(int i){
-		String str = i+"";
-		if(str.length()==1){
-			return "0"+str;
-		}else{
-			return str;
-		}
-	}
-	
-	/**
 	 * Write the .project.xml file
 	 * @param path
 	 * @param projectName
@@ -93,11 +80,11 @@ public class Web_ProjectInitializator {
 	private static void writeProjectXMLFile(String path, String projectName, String projectFullName, String projectVersion, String projectAuthor, String projectPath){
 		try{
 			Calendar c = new GregorianCalendar();
-			String month = correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
-			String day = correctCalendarForm(c.get(GregorianCalendar.DAY_OF_MONTH));
-			String hour = correctCalendarForm(c.get(GregorianCalendar.HOUR_OF_DAY));
-			String minute = correctCalendarForm(c.get(GregorianCalendar.MINUTE));
-			String second = correctCalendarForm(c.get(GregorianCalendar.SECOND));
+			String month = Tools.correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
+			String day = Tools.correctCalendarForm(c.get(GregorianCalendar.DAY_OF_MONTH));
+			String hour = Tools.correctCalendarForm(c.get(GregorianCalendar.HOUR_OF_DAY));
+			String minute = Tools.correctCalendarForm(c.get(GregorianCalendar.MINUTE));
+			String second = Tools.correctCalendarForm(c.get(GregorianCalendar.SECOND));
 
 			File f = new File(path+check.folderSeparator()+projectName+".project.xml");
 			f.delete();
@@ -114,25 +101,6 @@ public class Web_ProjectInitializator {
 			exception.throwException(4, e, true, path);
 		}
 	}
-	
-	/**
-	 * Checks whether the given project name is already taken
-	 * @param projectName
-	 * @param projectPath
-	 * @return
-	 */
-	private static boolean uniqueCheck(String projectName, String projectPath){
-		File f = new File(projectPath);
-		File[] farr = f.listFiles();
-		for(int i=0;i<farr.length;i++){
-			if(farr[i].getName().endsWith(".project")){
-				if(farr[i].getName().substring(0, farr[i].getName().indexOf(".project")).equals(projectName)){
-					return false;
-				}
-			}
-		}
-		return true;
-	}	
 	
 	/**
 	 * Main class
@@ -169,7 +137,7 @@ public class Web_ProjectInitializator {
 			parser = new Parser(settingFile);
 			String projectPath = parser.getSetting_ProjectPath();
 			
-			if(uniqueCheck(projectName, projectPath)){
+			if(check.uniqueCheck(projectName, projectPath)){
 				System.out.println("Project name is OK!");
 			}else{
 				exception.throwException(5, null, true, "");

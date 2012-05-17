@@ -4,6 +4,11 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
+/**
+ * 
+ * @version 0.0.1.1
+ *
+ */
 public class Check {
 	
 	public boolean hasNoDBG(String path){
@@ -148,4 +153,23 @@ public class Check {
 		}
 		
 	}
+	
+	/**
+	 * Checks whether the given project name is already taken
+	 * @param projectName
+	 * @param projectPath
+	 * @return
+	 */
+	public boolean uniqueCheck(String projectName, String projectPath){
+		File f = new File(projectPath);
+		File[] farr = f.listFiles();
+		for(int i=0;i<farr.length;i++){
+			if(farr[i].getName().endsWith(".project")){
+				if(farr[i].getName().substring(0, farr[i].getName().indexOf(".project")).equals(projectName)){
+					return false;
+				}
+			}
+		}
+		return true;
+	}	
 }
