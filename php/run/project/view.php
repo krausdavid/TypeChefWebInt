@@ -42,20 +42,36 @@ if($_GET['choosen_file']!=""){
 	$output_file = tools::read_file($PROJECT_PATH.$_GET['files'].$fileEXT,false);
 	
 	$isSyntaxable = false;
-	if($fileEXT==".c" || $fileEXT==".c.interface" || $fileEXT==".interface" || $fileEXT==".pi" || $fileEXT==".xml"){
+	if($fileEXT==".c.interface" || $fileEXT==".interface" || $fileEXT==".pi" || $fileEXT==".xml"){
+		$template->assign("syntax_lang", "xml");
 		$isSyntaxable = true;
 	}
 	
-	if(!$isSyntaxable){
+	if($fileEXT==".c" || $fileEXT==".h"){
+		$template->assign("syntax_lang", "cpp");
+		$isSyntaxable = true;
+	}
+	
+	//if(!$isSyntaxable){
 		$output_file = str_replace("<","&lt;",$output_file);
 		$output_file = str_replace(">","&gt;",$output_file);
-	}
+	//}
 	
 	$output_file = str_replace("\t"," ",$output_file);
 	$output_file = str_replace("\r","",$output_file);
 	$output_file_arr = explode("\n",$output_file);
 	
 	for($i=0;$i<count($output_file_arr);$i++){
+		//Spaces-Display saves the spaces between numbers
+		//Example:
+		//9  |
+		//10 |
+		//It try to put the correct distances between numbers and the separator
+		$spaces_display ="";
+		for($j=0;$j<(strlen(count($output_file_arr))-strlen($i+1));$j++){
+			$spaces_display.=" ";
+		}
+		
 		//Wordwrap if the given text is not syntaxable
 		if(!$isSyntaxable){
 			$spaces_wrap ="";
@@ -64,13 +80,14 @@ if($_GET['choosen_file']!=""){
 			}
 			$out[$i]['line'] = wordwrap($output_file_arr[$i],100,"<br/>".$spaces_wrap." | ",true);
 		}else{
-			$out[$i]['line'] = $output_file_arr[$i];
+			$out[$i]['line'] = $output_file_arr[$i]."\r\n";
 		}
 		
 		$out[$i]['nr'] = ($i+1).$spaces_display." | ";
 	}
 	
 	$template->assign("file_output", $out);
+	$template->assign("isSyntaxable", $isSyntaxable);
 }
 
 $template->assign("title", "Projekt '".$_GET['project']."' Dateien: ".$_GET['files'].".*");

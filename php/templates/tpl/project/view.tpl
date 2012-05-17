@@ -6,9 +6,13 @@
 {strip}
 	{if $smarty.get.choosen_file neq ""}
 		File: {$smarty.get.choosen_file}<br>
-		<pre class="brush: xml;">
+		{if $isSyntaxable eq true}
+			<pre class="brush: {$syntax_lang} ; toolbar: false;">
+		{else}
+			<pre>
+		{/if}
 			{foreach from=$file_output item=file_output name=file_output_name}
-				{$file_output.line}<br/>
+				{if $isSyntaxable eq false}{$file_output.nr}{/if}{$file_output.line}{if $isSyntaxable eq false}<br/>{/if}
 			{/foreach}
 		</pre>
 	{/if}
