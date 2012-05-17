@@ -50,7 +50,7 @@ $template->assign("langTXTHOME_descripton", "On the left side you see an current
 $template->assign("langTXTHOME_legendDescription", "In order to understand the symbols of the tree better, here's a little legend:");
 $template->assign("langTXTHOME_legendPoint1", "This folder contains errors were found by TypeChef");
 $template->assign("langTXTHOME_legendPoint2", "This folder contains no errors were found by TypeChef");
-$template->assign("langTXTHOME_legendPoint3", "TypeChef doesn't check this file properly correct or it' excluded");
+$template->assign("langTXTHOME_legendPoint3", "This C-File was excluded from analysis");
 $template->assign("langTXTHOME_legendPoint4", "The tested C-File has errors");
 $template->assign("langTXTHOME_legendPoint5", "The tested C-File hasn't errors");
 ?>

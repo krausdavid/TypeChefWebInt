@@ -51,7 +51,7 @@ $template->assign("langTXTHOME_descripton", "Links sehen Sie im Baum ein gerade 
 $template->assign("langTXTHOME_legendDescription", "Um die Symbole des Baumes besser verstehen zu können, hier eine kleine Legende:");
 $template->assign("langTXTHOME_legendPoint1", "In diesem Ordner sind Fehler von TypeChef gefunden worden");
 $template->assign("langTXTHOME_legendPoint2", "In diesem Ordner sind keine Fehler von TypeChef gefunden worden");
-$template->assign("langTXTHOME_legendPoint3", "TypeChef hat diese C-Datei nicht korrekt geprüft oder sie wurde ausgeschlossen");
+$template->assign("langTXTHOME_legendPoint3", "Diese C-Datei wurde von der Analyse ausgeschlossen");
 $template->assign("langTXTHOME_legendPoint4", "Die geprüfte C-Datei weist Fehler auf");
 $template->assign("langTXTHOME_legendPoint5", "Die C-Datei enthält keine Fehler");
 
