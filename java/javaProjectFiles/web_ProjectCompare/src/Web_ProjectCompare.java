@@ -13,15 +13,14 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.1.1";
+	private static final String VERSION = "0.0.1.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
 	private static Exceptions exception = new Exceptions();
 	private static String newProjectName;
 	private static boolean projectWithChanges;
-	//TODO: Wenn kein Unterschied da ist, schreibe in die .project = alterstatus|alterstatus
-	//TODO: TreeViewInit muss auch Bäume für type=compare erstellen
+
 	/**
 	 * Write the .project.compare file
 	 * @param path
@@ -147,10 +146,10 @@ public class Web_ProjectCompare {
 			if(mainProjectErrArr.size()==compareProjectErrArr.size()){
 				for(int i = 0;i<mainProjectErrArr.size();i++){
 					if(mainProjectErrArr.get(i).getPath().equals(compareProjectErrArr.get(i).getPath())){
-						String haveNoDBG ="";
-						String isEmptyFile = "";
-						String isNotTrueSucceeded ="";
-						String haveTypeErrors ="";
+						String haveNoDBG = mainProjectErrArr.get(i).isHaveNoDBG()+"|"+mainProjectErrArr.get(i).isHaveNoDBG();
+						String isEmptyFile = mainProjectErrArr.get(i).isEmptyFile()+"|"+mainProjectErrArr.get(i).isEmptyFile();
+						String isNotTrueSucceeded = mainProjectErrArr.get(i).isNotTrueSucceeded()+"|"+mainProjectErrArr.get(i).isNotTrueSucceeded();;
+						String haveTypeErrors = mainProjectErrArr.get(i).isHaveTypeErrors()+"|"+mainProjectErrArr.get(i).isHaveTypeErrors();
 						if(mainProjectErrArr.get(i).isHaveNoDBG()!=compareProjectErrArr.get(i).isHaveNoDBG()){
 							haveNoDBG = mainProjectErrArr.get(i).isHaveNoDBG()+"|"+compareProjectErrArr.get(i).isHaveNoDBG();
 						}
@@ -163,9 +162,7 @@ public class Web_ProjectCompare {
 						if(mainProjectErrArr.get(i).isHaveTypeErrors()!=compareProjectErrArr.get(i).isHaveTypeErrors()){
 							haveTypeErrors = mainProjectErrArr.get(i).isHaveTypeErrors()+"|"+compareProjectErrArr.get(i).isHaveTypeErrors();
 						}
-						if(haveNoDBG.equals("") && isEmptyFile.equals("") && isNotTrueSucceeded.equals("") && haveTypeErrors.equals("")){
-							
-						}else{
+						if(!(haveNoDBG.equals("") && isEmptyFile.equals("") && isNotTrueSucceeded.equals("") && haveTypeErrors.equals(""))){
 							CompareFile compFile = new CompareFile(mainProjectErrArr.get(i).getPath(),haveNoDBG,isEmptyFile,isNotTrueSucceeded,haveTypeErrors);
 							compFileArr.add(compFile);
 						}
