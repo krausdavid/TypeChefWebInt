@@ -13,14 +13,15 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.1.0";
+	private static final String VERSION = "0.0.1.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
 	private static Exceptions exception = new Exceptions();
 	private static String newProjectName;
 	private static boolean projectWithChanges;
-	
+	//TODO: Wenn kein Unterschied da ist, schreibe in die .project = alterstatus|alterstatus
+	//TODO: TreeViewInit muss auch Bäume für type=compare erstellen
 	/**
 	 * Write the .project.compare file
 	 * @param path
@@ -82,7 +83,7 @@ public class Web_ProjectCompare {
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
 			file.writeBytes("<settings>\r\n");
 			file.writeBytes("     <global>\r\n");
-			file.writeBytes("          <project idname=\""+newProjectName+"\" fullname=\""+newProjectName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+projectWithChanges+"\" type=compare />\r\n");
+			file.writeBytes("          <project idname=\""+newProjectName+"\" fullname=\""+newProjectName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+projectWithChanges+"\" type=type=\"compare\" />\r\n");
 			file.writeBytes("          <init builder=\""+projectAuthor+"\" buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
 			file.writeBytes("     </global>\r\n");
 			file.writeBytes("</settings>\r\n");
