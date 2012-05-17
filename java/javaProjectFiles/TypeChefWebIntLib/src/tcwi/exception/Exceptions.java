@@ -17,6 +17,7 @@ public class Exceptions {
 		exception.put(8, "ERROR 8: Can't read / write the given file.");
 		exception.put(9, "ERROR 9: The 2 given projects are not from the same type!");
 		exception.put(10, "ERROR 10: The project has provided over one million times. Delete old projects of this type!");
+		exception.put(11, "ERROR 11: Error in parsing the .project-File. It's an CompareFile. Wrong format?");
 	}
 	
 	public void throwException(int i, Exception e, boolean isExit, String pathInformation){

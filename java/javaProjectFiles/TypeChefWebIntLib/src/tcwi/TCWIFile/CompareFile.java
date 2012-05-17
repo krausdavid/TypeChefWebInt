@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
+import tcwi.exception.Exceptions;
+
 public class CompareFile implements Comparable<CompareFile>{
 	protected String path;
 	protected String haveNoDBG;
@@ -93,23 +95,38 @@ public class CompareFile implements Comparable<CompareFile>{
 		return compareFileArr;
 	}
 	
+	/**
+	 * Check if the CompareFile have changes
+	 * @return
+	 */
 	public boolean haveChanges(){
-		if(this.haveNoDBG != ""){
-			return true;
-		}else{
-			if(this.isEmptyFile != ""){
+		String[] noDBG = this.haveNoDBG.split("|");
+		String[] emptyFile = this.isEmptyFile.split("|");
+		String[] notTrueSucc = this.isNotTrueSucceeded.split("|");
+		String[] haveTypeErr = this.haveTypeErrors.split("|");
+
+		if(noDBG.length >= 2 && emptyFile.length >= 2 && notTrueSucc.length >= 2 && haveTypeErr.length >= 2){
+			if(!noDBG[0].equals(noDBG[1])){
 				return true;
 			}else{
-				if(this.isNotTrueSucceeded != ""){
+				if(!emptyFile[0].equals(emptyFile[1])){
 					return true;
 				}else{
-					if(this.haveTypeErrors != ""){
+					if(!notTrueSucc[0].equals(notTrueSucc[1])){
 						return true;
 					}else{
-						return false;
+						if(!haveTypeErr[0].equals(haveTypeErr[1])){
+							return true;
+						}else{
+							return false;
+						}
 					}
 				}
-			}
+			}		
+		}else{
+			Exceptions exception = new Exceptions();
+			exception.throwException(11, null, true, "");
+			return true;
 		}
 	}
 	
