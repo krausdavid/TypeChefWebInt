@@ -18,7 +18,6 @@
  */
 
 //Import some required classes
-require("./run/_lib/geshi/geshi.php");
 require("./run/_lib/smarty/Smarty.class.php");
 require("./run/_lib/textdb/textdb.php");
 require("./run/core/session.php");

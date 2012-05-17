@@ -6,9 +6,9 @@
 {strip}
 	{if $smarty.get.choosen_file neq ""}
 		File: {$smarty.get.choosen_file}<br>
-		<pre>
+		<pre class="brush: xml;">
 			{foreach from=$file_output item=file_output name=file_output_name}
-				{$file_output.nr}{$file_output.line}<br/>
+				{$file_output.line}<br/>
 			{/foreach}
 		</pre>
 	{/if}

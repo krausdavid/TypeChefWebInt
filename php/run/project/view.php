@@ -41,24 +41,9 @@ if($_GET['choosen_file']!=""){
 	//not syntaxable files
 	$output_file = tools::read_file($PROJECT_PATH.$_GET['files'].$fileEXT,false);
 	
-	//Syntax higlightning
-	if($fileEXT==".c"){
-		$geshi = new GeSHi($output_file, 'c');
-	}
-	if($fileEXT==".c.interface"){
-		$geshi = new GeSHi($output_file, 'xml');
-	}
-	if($fileEXT==".interface"){
-		$geshi = new GeSHi($output_file, 'xml');
-	}
-	if($fileEXT==".pi"){
-		$geshi = new GeSHi($output_file, 'c');
-	}
-	
 	$isSyntaxable = false;
-	if($fileEXT==".c" || $fileEXT==".c.interface" || $fileEXT==".interface" || $fileEXT==".pi"){
+	if($fileEXT==".c" || $fileEXT==".c.interface" || $fileEXT==".interface" || $fileEXT==".pi" || $fileEXT==".xml"){
 		$isSyntaxable = true;
-		$output_file = $geshi->parse_code();
 	}
 	
 	if(!$isSyntaxable){
@@ -71,16 +56,6 @@ if($_GET['choosen_file']!=""){
 	$output_file_arr = explode("\n",$output_file);
 	
 	for($i=0;$i<count($output_file_arr);$i++){
-		//Spaces-Display saves the spaces between numbers
-		//Example:
-		//9  |
-		//10 | 
-		//It try to put the correct distances between numbers and the separator
-		$spaces_display ="";
-		for($j=0;$j<(strlen(count($output_file_arr))-strlen($i+1));$j++){
-			$spaces_display.=" ";
-		}
-		
 		//Wordwrap if the given text is not syntaxable
 		if(!$isSyntaxable){
 			$spaces_wrap ="";
