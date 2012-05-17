@@ -61,21 +61,7 @@ public class Web_ProjectCompare {
 			System.out.println("Starting compare "+mainProject+" with "+compareProject);
 
 			parser = new Parser(globalSettings);
-			String[] xpath = {"settings","global","projects","path"};
-			
-			String projectPath = "";
-			
-			try{
-				projectPath = parser.read_setting(xpath);
-			} catch (IOException e) {
-				exception.throwException(1, e, true, "");
-			} catch (Exception e){
-				String path = "";
-				for(int i=0;i<xpath.length;i++){
-					path += xpath[i]+" ";
-				}
-				exception.throwException(2, e, true, path);
-			}
+			String projectPath = parser.getSetting_ProjectPath();
 			
 			System.out.println("Load Projects...");
 			
