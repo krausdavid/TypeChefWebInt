@@ -11,14 +11,17 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import tcwi.exception.Exceptions;
+
 /**
  * A XML-Parser for TypeChefWebInt
  * @author EifX
- * @version 0.0.0.1
+ * @version 0.0.1.0
  *
  */
 public class Parser {
 	private String setting_file;
+	private Exceptions exception = new Exceptions();
 	
 	/**
 	 * Creates an XML Object
@@ -86,4 +89,37 @@ public class Parser {
 		return setting_file;
 	}
 	
+	/**
+	 * A method to get an setting from an given setting-file
+	 * @param globalSettings
+	 * @param xpath
+	 * @return
+	 */
+	public String getSetting(String globalSettings, String[] xpath){
+		Parser parser = new Parser(globalSettings);
+		String pathOutput = "";
+
+		try{
+			pathOutput = parser.read_setting(xpath);
+		} catch (IOException e) {
+			exception.throwException(1, e, true, "");
+		} catch (Exception e) {
+			String path = "";
+			for(int i=0;i<xpath.length;i++){
+				path += xpath[i]+" ";
+			}
+			exception.throwException(2, e, true, path);
+		}
+		return pathOutput;		
+	}
+	
+	/**
+	 * A specific method to get the project-path
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_ProjectPath(String globalSettings){
+		String[] xpath = {"settings","global","projects","path"};
+		return this.getSetting(globalSettings,xpath);
+	}
 }
