@@ -1,17 +1,13 @@
 import java.io.File;
-import java.io.IOException;
-
-import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
 
 public class Web_DeleteProject {
-	private static final String VERSION = "0.0.0.1";
+	private static final String VERSION = "0.0.1.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
-	private static Exceptions exception = new Exceptions();
 	
 	public static void main(String[] args) {
 		if(args.length!=2){
@@ -26,36 +22,8 @@ public class Web_DeleteProject {
 			
 			//Init the Parser
 			parser = new Parser(args[1]);
-			String[] xpathProjectsPath = {"settings","global","projects","path"};
-			String webIntProjectsPath = "";
-
-			try{
-			webIntProjectsPath = parser.read_setting(xpathProjectsPath);
-			} catch (IOException e) {
-				exception.throwException(1, e, true, "");
-			} catch (Exception e) {
-				String path = "";
-				for(int i=0;i<xpathProjectsPath.length;i++){
-					path += xpathProjectsPath[i]+" ";
-				}
-				exception.throwException(2, e, true, path);
-			}
-			
-			parser = new Parser(args[1]);
-			String[] xpathTreeviewPath = {"settings","website","generic","treeview","path"};
-			String webIntTreeviewPath = "";
-
-			try{
-				webIntTreeviewPath = parser.read_setting(xpathTreeviewPath);
-			} catch (IOException e) {
-				exception.throwException(1, e, true, "");
-			} catch (Exception e) {
-				String path = "";
-				for(int i=0;i<xpathTreeviewPath.length;i++){
-					path += xpathTreeviewPath[i]+" ";
-				}
-				exception.throwException(2, e, true, path);
-			}
+			String webIntProjectsPath = parser.getSetting_ProjectPath();
+			String webIntTreeviewPath = parser.getSetting_TreeviewPath();
 			
 			File f = new File(webIntTreeviewPath + check.folderSeparator() + args[0] + ".js");
 			f.delete();

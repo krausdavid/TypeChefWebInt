@@ -16,7 +16,7 @@ import tcwi.exception.Exceptions;
 /**
  * A XML-Parser for TypeChefWebInt
  * @author EifX
- * @version 0.0.1.0
+ * @version 0.0.1.1
  *
  */
 public class Parser {
@@ -95,8 +95,8 @@ public class Parser {
 	 * @param xpath
 	 * @return
 	 */
-	public String getSetting(String globalSettings, String[] xpath){
-		Parser parser = new Parser(globalSettings);
+	public String getSetting(String[] xpath){
+		Parser parser = new Parser(this.setting_file);
 		String pathOutput = "";
 
 		try{
@@ -118,8 +118,18 @@ public class Parser {
 	 * @param globalSettings
 	 * @return
 	 */
-	public String getSetting_ProjectPath(String globalSettings){
+	public String getSetting_ProjectPath(){
 		String[] xpath = {"settings","global","projects","path"};
-		return this.getSetting(globalSettings,xpath);
+		return this.getSetting(xpath);
+	}
+	
+	/**
+	 * A specific method to get the treeview-path
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_TreeviewPath(){
+		String[] xpath = {"settings","website","generic","treeview","path"};
+		return this.getSetting(xpath);
 	}
 }
