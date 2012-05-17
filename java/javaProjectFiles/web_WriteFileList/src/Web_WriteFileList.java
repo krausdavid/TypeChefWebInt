@@ -15,7 +15,7 @@ public class Web_WriteFileList {
 	private static String project_settings_lst_path;
 	private static Exceptions exception = new Exceptions();
 
-	private static final String VERSION = "0.0.3.1";
+	private static final String VERSION = "0.0.4.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
@@ -33,25 +33,15 @@ public class Web_WriteFileList {
 			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
 			//Read the project dir and settings
-			Parser xmlParser = new Parser(args[2]);
+			String projectName = args[0];
+			String checkboxString = args[1];
+			String globalSettings = args[2];
 			
-			String WebIntProjectsPath = "";
-			String[] xpathWebIntProjectsPath = {"settings","global","projects","path"};
-			
-			try{
-				WebIntProjectsPath = xmlParser.read_setting(xpathWebIntProjectsPath);
-			}catch (IOException e){
-				exception.throwException(1, e, true, "");
-			}catch (Exception e){
-				String path = "";
-				for(int i=0;i<xpathWebIntProjectsPath.length;i++){
-					path += xpathWebIntProjectsPath[i]+" ";
-				}
-				exception.throwException(2, e, true, path);
-			}
+			Parser xmlParser = new Parser(globalSettings);
+			String WebIntProjectsPath = xmlParser.getSetting_ProjectPath();
 			
 			Check check = new Check();
-			String path = WebIntProjectsPath+check.folderSeparator()+args[0];
+			String path = WebIntProjectsPath+check.folderSeparator()+projectName;
 
 			project_settings_path = path+".project";
 			project_settings_xml_path = path+".project.xml";
@@ -62,10 +52,10 @@ public class Web_WriteFileList {
 			
 			//If no checkbox-string is given to the program, all files
 			//will be add to the .lst-file
-			if(!args[1].equals("EMPTY")){
+			if(!checkboxString.equals("EMPTY")){
 				//Read all needed variables
-				args[1] = args[1].substring(0,args[1].length()-1);
-				String[] strArr = args[1].split("_");
+				checkboxString = checkboxString.substring(0,checkboxString.length()-1);
+				String[] strArr = checkboxString.split("_");
 	
 				int[] intArr = new int[strArr.length];
 				
