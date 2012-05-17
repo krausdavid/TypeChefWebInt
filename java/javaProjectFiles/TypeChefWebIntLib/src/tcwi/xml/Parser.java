@@ -15,9 +15,7 @@ import tcwi.exception.Exceptions;
 
 /**
  * A XML-Parser for TypeChefWebInt
- * @author EifX
- * @version 0.0.1.1
- *
+ * 
  */
 public class Parser {
 	private String setting_file;
@@ -150,6 +148,16 @@ public class Parser {
 	 */
 	public String getSetting_ProjectBasePath(){
 		String[] xpath = {"settings","global","project","path"};
+		return this.getSetting(xpath);
+	}
+	
+	/**
+	 * A specific method to get the project-type from a specifig project
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_ProjectType(){
+		String[] xpath = {"settings","global","project","type"};
 		return this.getSetting(xpath);
 	}
 }
