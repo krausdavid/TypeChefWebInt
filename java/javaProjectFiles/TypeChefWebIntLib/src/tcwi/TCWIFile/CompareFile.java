@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import tcwi.exception.Exceptions;
 
-public class CompareFile implements Comparable<CompareFile>{
+public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
 	protected String path;
 	protected String haveNoDBG;
 	protected String isEmptyFile;
@@ -86,7 +86,6 @@ public class CompareFile implements Comparable<CompareFile>{
 		while(str!=null){
 			String[] strArr = str.split("\t");
 			CompareFile compareFile = new CompareFile(strArr[0],strArr[1],strArr[2],strArr[3],strArr[4]);
-			
 			compareFileArr.add(compareFile);
 			str = file.readLine();
 		}

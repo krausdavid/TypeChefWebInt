@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
-public class ErrorFile implements Comparable<ErrorFile>{
+public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 
 	protected String path;
 	protected boolean haveNoDBG;
