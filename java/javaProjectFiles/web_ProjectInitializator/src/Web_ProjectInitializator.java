@@ -12,7 +12,7 @@ import tcwi.fileHandler.Check;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.1.1";
+	private static final String VERSION = "0.1.1.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -167,21 +167,7 @@ public class Web_ProjectInitializator {
 			System.out.println("Starting initialization from project "+projectName+"...");
 
 			parser = new Parser(settingFile);
-			String[] xpath = {"settings","global","projects","path"};
-			
-			String projectPath = "";
-			
-			try{
-				projectPath = parser.read_setting(xpath);
-			} catch (IOException e) {
-				exception.throwException(1, e, true, "");
-			} catch (Exception e) {
-				String path_ = "";
-				for(int i=0;i<xpath.length;i++){
-					path_ += xpath[i]+" ";
-				}
-				exception.throwException(2, e, true, path_);
-			}
+			String projectPath = parser.getSetting_ProjectPath();
 			
 			if(uniqueCheck(projectName, projectPath)){
 				System.out.println("Project name is OK!");
