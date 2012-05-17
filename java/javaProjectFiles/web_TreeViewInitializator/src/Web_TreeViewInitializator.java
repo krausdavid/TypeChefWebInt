@@ -255,19 +255,22 @@ public class Web_TreeViewInitializator {
 		}else{
 			String[] xpath = null;
 			try {
+				String projectName = args[0];
+				String globalSettings = args[1];
+				
 				System.out.println("\nRead needed variables...");
 
 				folderSeparator = check.folderSeparator()+"";
 				
 				//Init the XMLParser
-				Parser xmlParser = new Parser(args[1]);
+				Parser xmlParser = new Parser(globalSettings);
 				
 				String[] xpathWebIntProjectsPath = {"settings","global","projects","path"};
 				String WebIntProjectsPath = xmlParser.read_setting(xpathWebIntProjectsPath);
 
 				//Read the project dir
-				project_settings_path = WebIntProjectsPath+check.folderSeparator()+args[0]+".project";
-				project_settings_xml_path = WebIntProjectsPath+check.folderSeparator()+args[0]+".project.xml";
+				project_settings_path = WebIntProjectsPath+check.folderSeparator()+projectName+".project";
+				project_settings_xml_path = WebIntProjectsPath+check.folderSeparator()+projectName+".project.xml";
 				
 				Parser parser = new Parser(project_settings_xml_path);
 				
@@ -281,7 +284,7 @@ public class Web_TreeViewInitializator {
 
 				//Do the work
 				System.out.println("Read folder tree...");
-				getAllFiles(args[0],args[1]);
+				getAllFiles(projectName,globalSettings);
 
 				System.out.println("Build header...");
 
@@ -290,14 +293,14 @@ public class Web_TreeViewInitializator {
 
 				System.out.println("Build folder tree...");
 				xpath = new String[]{"settings","global","website","defaultURI"};
-				js_tree_new(args[0],xmlParser.read_setting(xpath));
+				js_tree_new(projectName,xmlParser.read_setting(xpath));
 
 				System.out.println("Save folder tree...");
 				//Build the path for the javascript-path
 				xpath = new String[]{"settings","website","generic","treeview","path"};
 				String readedPath = xmlParser.read_setting(xpath);
 
-				writeTxt(readedPath+folderSeparator+args[0]+".js");
+				writeTxt(readedPath+folderSeparator+projectName+".js");
 				System.out.println("DONE!");
 			} catch (IOException e) {
 				exception.throwException(1, e, true, "");
