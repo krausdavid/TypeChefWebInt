@@ -9,13 +9,9 @@ import tcwi.xml.Parser;
 import tcwi.exception.Exceptions;
 
 public class Web_WriteFileList {
-	private static Parser parser;
-	private static String project_settings_path;
-	private static String project_settings_xml_path;
-	private static String project_settings_lst_path;
 	private static Exceptions exception = new Exceptions();
 
-	private static final String VERSION = "0.0.4.0";
+	private static final String VERSION = "0.0.4.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	
 	public static void main(String args[]){
@@ -43,11 +39,11 @@ public class Web_WriteFileList {
 			Check check = new Check();
 			String path = WebIntProjectsPath+check.folderSeparator()+projectName;
 
-			project_settings_path = path+".project";
-			project_settings_xml_path = path+".project.xml";
-			project_settings_lst_path = path+".lst";
+			String project_settings_path = path+".project";
+			String project_settings_xml_path = path+".project.xml";
+			String project_settings_lst_path = path+".lst";
 			
-			parser = new Parser(project_settings_xml_path);
+			Parser parser = new Parser(project_settings_xml_path);
 			String[] xpath = {"settings","global","project","path"};
 			
 			//If no checkbox-string is given to the program, all files
