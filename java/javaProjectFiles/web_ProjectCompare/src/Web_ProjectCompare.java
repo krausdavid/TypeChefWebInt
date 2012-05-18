@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.1.2";
+	private static final String VERSION = "0.0.1.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
@@ -125,13 +125,13 @@ public class Web_ProjectCompare {
 			ArrayList<ErrorFile> mainProjectErrArr = null;
 			ArrayList<ErrorFile> compareProjectErrArr = null;
 			try{
-				path = projectPath + check.folderSeparator() + mainProject + ".project";
+				path = projectPath + check.folderSeparator() + mainProject + ".project.xml";
 				parser = new Parser(path);
 				mainProjectVersion = parser.getSetting_ProjectVersion();
 				mainProjectPath = parser.getSetting_ProjectBasePath();
 				mainProjectErrArr = ErrorFile.createErrorFileArray(path);
 				
-				path = projectPath + check.folderSeparator() + compareProject + ".project";
+				path = projectPath + check.folderSeparator() + compareProject + ".project.xml";
 				parser = new Parser(path);
 				compareProjectVersion = parser.getSetting_ProjectVersion();
 				compareProjectErrArr = ErrorFile.createErrorFileArray(path);
