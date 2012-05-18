@@ -14,7 +14,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.2.0";
+	private static final String VERSION = "0.0.2.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
@@ -123,19 +123,22 @@ public class Web_ProjectCompare {
 			String mainProjectPath = "";
 			
 			String path = "";
+			String pathProject = "";
 			ArrayList<TCWIFile> mainProjectErrArr = null;
 			ArrayList<TCWIFile> compareProjectErrArr = null;
 			try{
 				path = projectPath + check.folderSeparator() + mainProject + ".project.xml";
+				pathProject = projectPath + check.folderSeparator() + mainProject + ".project";
 				parser = new Parser(path);
 				mainProjectVersion = parser.getSetting_ProjectVersion();
 				mainProjectPath = parser.getSetting_ProjectBasePath();
-				mainProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(path);
+				mainProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(pathProject);
 				
 				path = projectPath + check.folderSeparator() + compareProject + ".project.xml";
+				pathProject = projectPath + check.folderSeparator() + compareProject + ".project";
 				parser = new Parser(path);
 				compareProjectVersion = parser.getSetting_ProjectVersion();
-				compareProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(path);
+				compareProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(pathProject);
 			}catch (IOException e){
 				exception.throwException(8, e, true, path);
 			}
