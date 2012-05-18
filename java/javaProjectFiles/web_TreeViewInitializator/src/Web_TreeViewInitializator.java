@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.7.0";
+	private static final String VERSION = "0.1.7.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -87,16 +87,10 @@ public class Web_TreeViewInitializator {
 		for(int i=0;i<filesNew.size();i++){
 			if(projectType.equals("normal")){
 				if(((ErrorFile) filesNew.get(i)).haveErrors()){
-					if(((ErrorFile) filesNew.get(i)).isHaveNoDBG()){
-						return false;
-					}else{
-						return true;
-					}
+					return ((ErrorFile) filesNew.get(i)).isHaveNoDBG();
 				}
 			}else if(projectType.equals("compare")){
-				if(((CompareFile) filesNew.get(i)).haveChanges()){
-					return true;
-				}
+				return ((CompareFile) filesNew.get(i)).haveChanges();
 			}else{
 				exception.throwException(12, null, true, "");
 			}
