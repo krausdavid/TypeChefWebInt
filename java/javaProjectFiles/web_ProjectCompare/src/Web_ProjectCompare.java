@@ -14,7 +14,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.2.2";
+	private static final String VERSION = "0.0.2.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
@@ -44,9 +44,9 @@ public class Web_ProjectCompare {
 		//Save the .project file
 		projectWithChanges = false;
 		try{
-			File f = new File(path+check.folderSeparator()+projectName+".project");
+			File f = new File(path+check.folderSeparator()+newProjectName+".project");
 			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project","rw");
+			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+newProjectName+".project","rw");
 			for(int i=0;i<compFileArr.size();i++){
 				//Check if the project has changes. The result will be saved in the project.xml
 				if(projectWithChanges==false){
