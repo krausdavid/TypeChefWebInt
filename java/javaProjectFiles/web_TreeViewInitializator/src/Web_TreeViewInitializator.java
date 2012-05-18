@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.7.2";
+	private static final String VERSION = "0.1.7.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -285,7 +285,7 @@ public class Web_TreeViewInitializator {
 				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
 				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
 			}
-		}else if(projectType.equals("normal")){
+		}else if(projectType.equals("compare")){
 			if(failureProject){
 				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenidentical.gif\"");
 				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedidentical.gif\"");
