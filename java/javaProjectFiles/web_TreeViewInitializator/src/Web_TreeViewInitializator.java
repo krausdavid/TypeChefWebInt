@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.7.1";
+	private static final String VERSION = "0.1.7.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -277,12 +277,24 @@ public class Web_TreeViewInitializator {
 		javascript.add("foldersTree = gFld(\"<i>"+projectFullNameAndVersion+"</i>\", \"\")");
 		javascript.add("foldersTree.treeID = \"Frameset\"");
 
-		if(failureProject){
-			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
-			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
+		if(projectType.equals("normal")){
+			if(failureProject){
+				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
+				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
+			}else{
+				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
+				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
+			}
+		}else if(projectType.equals("normal")){
+			if(failureProject){
+				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenidentical.gif\"");
+				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedidentical.gif\"");
+			}else{
+				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopendifference.gif\"");
+				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"foldercloseddifference.gif\"");
+			}
 		}else{
-			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
-			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
+			exception.throwException(12, null, true, "");
 		}
 	}
 
