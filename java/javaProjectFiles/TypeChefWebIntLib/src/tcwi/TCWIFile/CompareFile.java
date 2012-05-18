@@ -1,10 +1,5 @@
 package tcwi.TCWIFile;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.RandomAccessFile;
-import java.util.ArrayList;
-
 import tcwi.exception.Exceptions;
 
 public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
@@ -69,30 +64,6 @@ public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
 	public void setHaveNoDBG(String haveNoDBG) {
 		this.haveNoDBG = haveNoDBG;
 	}
-	
-	/**
-	 * Creates an Error-File ArrayList from an given projectfile
-	 * @param errFileArr
-	 * @param projectPath
-	 * @return An Error-File ArrayList
-	 * @throws IOException
-	 */
-//	public static ArrayList<CompareFile> createCompareFileArray(String projectPath) throws IOException{
-//		ArrayList<CompareFile> compareFileArr = new ArrayList<CompareFile>();
-//		File f = new File(projectPath);
-//		
-//		RandomAccessFile file = new RandomAccessFile(f.getAbsolutePath(),"r");
-//		String str = file.readLine();
-//		while(str!=null){
-//			String[] strArr = str.split("\t");
-//			CompareFile compareFile = new CompareFile(strArr[0],strArr[1],strArr[2],strArr[3],strArr[4]);
-//			compareFileArr.add(compareFile);
-//			str = file.readLine();
-//		}
-//		file.close();
-//		
-//		return compareFileArr;
-//	}
 	
 	/**
 	 * Check if the CompareFile have changes
