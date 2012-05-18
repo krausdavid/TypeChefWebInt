@@ -14,7 +14,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.2.1";
+	private static final String VERSION = "0.0.2.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
@@ -44,7 +44,7 @@ public class Web_ProjectCompare {
 		//Save the .project file
 		projectWithChanges = false;
 		try{
-			File f = new File(path+check.folderSeparator()+projectName+".project.compare");
+			File f = new File(path+check.folderSeparator()+projectName+".project");
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project","rw");
 			for(int i=0;i<compFileArr.size();i++){
@@ -83,7 +83,7 @@ public class Web_ProjectCompare {
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
 			file.writeBytes("<settings>\r\n");
 			file.writeBytes("     <global>\r\n");
-			file.writeBytes("          <project idname=\""+newProjectName+"\" fullname=\""+newProjectName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+projectWithChanges+"\" type=type=\"compare\" />\r\n");
+			file.writeBytes("          <project idname=\""+newProjectName+"\" fullname=\""+newProjectName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+projectWithChanges+"\" type=\"compare\" />\r\n");
 			file.writeBytes("          <init builder=\""+projectAuthor+"\" buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
 			file.writeBytes("     </global>\r\n");
 			file.writeBytes("</settings>\r\n");
