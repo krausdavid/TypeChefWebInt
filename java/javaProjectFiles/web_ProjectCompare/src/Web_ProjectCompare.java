@@ -7,13 +7,14 @@ import java.util.GregorianCalendar;
 
 import tcwi.TCWIFile.CompareFile;
 import tcwi.TCWIFile.ErrorFile;
+import tcwi.TCWIFile.TCWIFile;
 import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
 import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.1.3";
+	private static final String VERSION = "0.0.2.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
@@ -26,7 +27,7 @@ public class Web_ProjectCompare {
 	 * @param path
 	 * @param projectName
 	 */
-	private static void writeCompareFile(String path, String projectName, String compareName, ArrayList<CompareFile> files){
+	private static void writeCompareFile(String path, String projectName, String compareName, ArrayList<TCWIFile> compFileArr){
 		//Try to find a free name
 		newProjectName = projectName + "_" + compareName + "_compare";
 		if(!check.uniqueCheck(newProjectName, path)){
@@ -46,14 +47,14 @@ public class Web_ProjectCompare {
 			File f = new File(path+check.folderSeparator()+projectName+".project.compare");
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project","rw");
-			for(int i=0;i<files.size();i++){
+			for(int i=0;i<compFileArr.size();i++){
 				//Check if the project has changes. The result will be saved in the project.xml
 				if(projectWithChanges==false){
-					if(files.get(i).haveChanges()){
+					if(((CompareFile) compFileArr.get(i)).haveChanges()){
 						projectWithChanges = true;
 					}
 				}
-				file.writeBytes(files.get(i)+"\r\n");
+				file.writeBytes(compFileArr.get(i)+"\r\n");
 			}
 			file.close();
 		}catch (IOException e){
@@ -122,48 +123,48 @@ public class Web_ProjectCompare {
 			String mainProjectPath = "";
 			
 			String path = "";
-			ArrayList<ErrorFile> mainProjectErrArr = null;
-			ArrayList<ErrorFile> compareProjectErrArr = null;
+			ArrayList<TCWIFile> mainProjectErrArr = null;
+			ArrayList<TCWIFile> compareProjectErrArr = null;
 			try{
 				path = projectPath + check.folderSeparator() + mainProject + ".project.xml";
 				parser = new Parser(path);
 				mainProjectVersion = parser.getSetting_ProjectVersion();
 				mainProjectPath = parser.getSetting_ProjectBasePath();
-				mainProjectErrArr = ErrorFile.createErrorFileArray(path);
+				mainProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(path);
 				
 				path = projectPath + check.folderSeparator() + compareProject + ".project.xml";
 				parser = new Parser(path);
 				compareProjectVersion = parser.getSetting_ProjectVersion();
-				compareProjectErrArr = ErrorFile.createErrorFileArray(path);
+				compareProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(path);
 			}catch (IOException e){
 				exception.throwException(8, e, true, path);
 			}
 			
 			System.out.println("Compare Projects...");
 			
-			ArrayList<CompareFile> compFileArr = new ArrayList<CompareFile>();
+			ArrayList<TCWIFile> compFileArr = new ArrayList<TCWIFile>();
 			
 			if(mainProjectErrArr.size()==compareProjectErrArr.size()){
 				for(int i = 0;i<mainProjectErrArr.size();i++){
-					if(mainProjectErrArr.get(i).getPath().equals(compareProjectErrArr.get(i).getPath())){
-						String haveNoDBG = mainProjectErrArr.get(i).isHaveNoDBG()+"|"+mainProjectErrArr.get(i).isHaveNoDBG();
-						String isEmptyFile = mainProjectErrArr.get(i).isEmptyFile()+"|"+mainProjectErrArr.get(i).isEmptyFile();
-						String isNotTrueSucceeded = mainProjectErrArr.get(i).isNotTrueSucceeded()+"|"+mainProjectErrArr.get(i).isNotTrueSucceeded();;
-						String haveTypeErrors = mainProjectErrArr.get(i).isHaveTypeErrors()+"|"+mainProjectErrArr.get(i).isHaveTypeErrors();
-						if(mainProjectErrArr.get(i).isHaveNoDBG()!=compareProjectErrArr.get(i).isHaveNoDBG()){
-							haveNoDBG = mainProjectErrArr.get(i).isHaveNoDBG()+"|"+compareProjectErrArr.get(i).isHaveNoDBG();
+					if(((ErrorFile) mainProjectErrArr.get(i)).getPath().equals(((ErrorFile) compareProjectErrArr.get(i)).getPath())){
+						String haveNoDBG = ((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG();
+						String isEmptyFile = ((ErrorFile) mainProjectErrArr.get(i)).isEmptyFile()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isEmptyFile();
+						String isNotTrueSucceeded = ((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded();;
+						String haveTypeErrors = ((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors();
+						if(((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG()!=((ErrorFile) compareProjectErrArr.get(i)).isHaveNoDBG()){
+							haveNoDBG = ((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isHaveNoDBG();
 						}
-						if(mainProjectErrArr.get(i).isEmptyFile()!=compareProjectErrArr.get(i).isEmptyFile()){
-							isEmptyFile = mainProjectErrArr.get(i).isEmptyFile()+"|"+compareProjectErrArr.get(i).isEmptyFile();
+						if(((ErrorFile) mainProjectErrArr.get(i)).isEmptyFile()!=((ErrorFile) compareProjectErrArr.get(i)).isEmptyFile()){
+							isEmptyFile = ((ErrorFile) mainProjectErrArr.get(i)).isEmptyFile()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isEmptyFile();
 						}
-						if(mainProjectErrArr.get(i).isNotTrueSucceeded()!=compareProjectErrArr.get(i).isNotTrueSucceeded()){
-							isNotTrueSucceeded = mainProjectErrArr.get(i).isNotTrueSucceeded()+"|"+compareProjectErrArr.get(i).isNotTrueSucceeded();
+						if(((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded()!=((ErrorFile) compareProjectErrArr.get(i)).isNotTrueSucceeded()){
+							isNotTrueSucceeded = ((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isNotTrueSucceeded();
 						}
-						if(mainProjectErrArr.get(i).isHaveTypeErrors()!=compareProjectErrArr.get(i).isHaveTypeErrors()){
-							haveTypeErrors = mainProjectErrArr.get(i).isHaveTypeErrors()+"|"+compareProjectErrArr.get(i).isHaveTypeErrors();
+						if(((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors()!=((ErrorFile) compareProjectErrArr.get(i)).isHaveTypeErrors()){
+							haveTypeErrors = ((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isHaveTypeErrors();
 						}
 						if(!(haveNoDBG.equals("") && isEmptyFile.equals("") && isNotTrueSucceeded.equals("") && haveTypeErrors.equals(""))){
-							CompareFile compFile = new CompareFile(mainProjectErrArr.get(i).getPath(),haveNoDBG,isEmptyFile,isNotTrueSucceeded,haveTypeErrors);
+							CompareFile compFile = new CompareFile(((ErrorFile) mainProjectErrArr.get(i)).getPath(),haveNoDBG,isEmptyFile,isNotTrueSucceeded,haveTypeErrors);
 							compFileArr.add(compFile);
 						}
 					}else{

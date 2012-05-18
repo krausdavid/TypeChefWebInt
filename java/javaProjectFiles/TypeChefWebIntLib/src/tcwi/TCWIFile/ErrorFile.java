@@ -108,22 +108,22 @@ public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 	 * @return An Error-File ArrayList
 	 * @throws IOException
 	 */
-	public static ArrayList<ErrorFile> createErrorFileArray(String projectPath) throws IOException{
-		ArrayList<ErrorFile> errFileArr = new ArrayList<ErrorFile>();
-		File f = new File(projectPath);
-		
-		RandomAccessFile file = new RandomAccessFile(f.getAbsolutePath(),"r");
-		String str = file.readLine();
-		while(str!=null){
-			String[] strArr = str.split("\t");
-			ErrorFile errFile = new ErrorFile(strArr[0],strArr[1],strArr[2],strArr[3],strArr[4]);
-			errFileArr.add(errFile);
-			str = file.readLine();
-		}
-		file.close();
-		
-		return errFileArr;
-	}
+//	public static ArrayList<ErrorFile> createErrorFileArray(String projectPath) throws IOException{
+//		ArrayList<ErrorFile> errFileArr = new ArrayList<ErrorFile>();
+//		File f = new File(projectPath);
+//		
+//		RandomAccessFile file = new RandomAccessFile(f.getAbsolutePath(),"r");
+//		String str = file.readLine();
+//		while(str!=null){
+//			String[] strArr = str.split("\t");
+//			ErrorFile errFile = new ErrorFile(strArr[0],strArr[1],strArr[2],strArr[3],strArr[4]);
+//			errFileArr.add(errFile);
+//			str = file.readLine();
+//		}
+//		file.close();
+//		
+//		return errFileArr;
+//	}
 	
 	public boolean haveErrors(){
 		if(this.haveNoDBG){
