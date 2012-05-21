@@ -14,7 +14,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.2.3";
+	private static final String VERSION = "0.0.2.4";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static Check check = new Check();
@@ -29,17 +29,7 @@ public class Web_ProjectCompare {
 	 */
 	private static void writeCompareFile(String path, String projectName, String compareName, ArrayList<TCWIFile> compFileArr){
 		//Try to find a free name
-		newProjectName = projectName + "_" + compareName + "_compare";
-		if(!check.uniqueCheck(newProjectName, path)){
-			int i = 0;
-			while(!check.uniqueCheck(newProjectName, path)){
-				newProjectName = projectName + "_" + compareName + "_compare"+i;
-				i++;
-				if(i > 1000000){
-					exception.throwException(10, null, true, newProjectName);
-				}
-			}
-		}
+		newProjectName = Tools.findAFreeProjectName(projectName + "_" + compareName + "_compare", path);
 		
 		//Save the .project file
 		projectWithChanges = false;
