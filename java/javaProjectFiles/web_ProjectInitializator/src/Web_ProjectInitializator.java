@@ -24,7 +24,7 @@ public class Web_ProjectInitializator {
 
 	private static String getAllFiles(String path){
 		File file = new File(path);
-		File[] fileList = file.listFiles();
+		File[] fileList = file.listFiles(); //TODO: Was ist mit einem falschen Pfad? Exception schmeiﬂen!
 		Progress p = new Progress(10,fileList.length);
 		try{
 			for(int i=0;i<fileList.length;i++){
