@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.7.3";
+	private static final String VERSION = "0.1.8.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -86,9 +86,7 @@ public class Web_TreeViewInitializator {
 		}
 		for(int i=0;i<filesNew.size();i++){
 			if(projectType.equals("normal")){
-				if(((ErrorFile) filesNew.get(i)).haveErrors()){
-					return ((ErrorFile) filesNew.get(i)).isHaveNoDBG();
-				}
+				return ((ErrorFile) filesNew.get(i)).haveErrors();
 			}else if(projectType.equals("compare")){
 				return ((CompareFile) filesNew.get(i)).haveChanges();
 			}else{
@@ -232,13 +230,13 @@ public class Web_TreeViewInitializator {
 			//Draw fileicons
 			if(projectType.equals("normal")){
 				if(!((ErrorFile) files.get(i)).haveErrors()){
-					javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileok.gif\"");
-				}else{
 					if(((ErrorFile) files.get(i)).isHaveNoDBG()){
 						javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileempty.gif\"");
 					}else{
-						javascript.add("doc"+i+".iconSrc = ICONPATH + \"filefail.gif\"");
+						javascript.add("doc"+i+".iconSrc = ICONPATH + \"fileok.gif\"");
 					}
+				}else{
+					javascript.add("doc"+i+".iconSrc = ICONPATH + \"filefail.gif\"");
 				}
 			}else if(projectType.equals("compare")){
 				if(!((CompareFile) files.get(i)).haveChanges()){

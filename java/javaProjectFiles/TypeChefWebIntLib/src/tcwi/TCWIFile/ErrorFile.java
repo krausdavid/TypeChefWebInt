@@ -97,21 +97,13 @@ public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 	}
 	
 	public boolean haveErrors(){
-		if(this.haveNoDBG){
+		if(this.isNotTrueSucceeded){
 			return true;
 		}else{
-			if(this.isEmptyFile){
+			if(this.haveTypeErrors){
 				return true;
 			}else{
-				if(this.isNotTrueSucceeded){
-					return true;
-				}else{
-					if(this.haveTypeErrors){
-						return true;
-					}else{
-						return false;
-					}
-				}
+				return false;
 			}
 		}
 	}
