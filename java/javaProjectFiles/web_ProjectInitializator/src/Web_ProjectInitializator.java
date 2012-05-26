@@ -9,11 +9,12 @@ import java.util.GregorianCalendar;
 import tcwi.TCWIFile.ErrorFile;
 import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
+import tcwi.progress.Progress;
 import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.1.5";
+	private static final String VERSION = "0.1.2.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -24,6 +25,7 @@ public class Web_ProjectInitializator {
 	private static String getAllFiles(String path){
 		File file = new File(path);
 		File[] fileList = file.listFiles();
+		Progress p = new Progress(10,fileList.length);
 		try{
 			for(int i=0;i<fileList.length;i++){
 				if(fileList[i].isDirectory()){
@@ -39,10 +41,12 @@ public class Web_ProjectInitializator {
 						}
 					}
 				}
+				p.tickAndPrint();
 			}
 		}catch (Exception e){
 			return path;
 		}
+		System.out.println("");
 		return "";
 	}
 	
