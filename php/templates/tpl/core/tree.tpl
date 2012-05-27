@@ -1,6 +1,6 @@
 ﻿{strip}
 	{$langTXT_actualProject}:&nbsp;
-	<form method="post" action="{$_wud}/" style="display:inline">
+	<form method="post" action="{$_wud}/?lang={$smarty.get.lang}" style="display:inline">
 		<select name="project" size="1">
 			<optgroup label="{$langTXT_projects}">
 				{foreach from=$projects_list item=projects_list name=projects_list_name}
@@ -10,8 +10,8 @@
 				{/foreach}
 			</optgroup>
 				<optgroup label="{$langTXT_options}">
-				<option value="new" onclick="form.action='{$_wud}/project?choice=new';this.form.submit();">{$langTXT_newProject}</option>
-				<option value="match" onclick="form.action='{$_wud}/project?choice=match';this.form.submit();">{$langTXT_compareTwoProjects}</option>
+				<option value="new" onclick="form.action='{$_wud}/project?choice=new&lang={$smarty.get.lang}';this.form.submit();">{$langTXT_newProject}</option>
+				<option value="match" onclick="form.action='{$_wud}/project?choice=match&lang={$smarty.get.lang}';this.form.submit();">{$langTXT_compareTwoProjects}</option>
 			</optgroup>
 		</select>
 	</form>
