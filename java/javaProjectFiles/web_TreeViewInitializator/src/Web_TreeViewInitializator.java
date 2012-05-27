@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.8.4";
+	private static final String VERSION = "0.1.9.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -224,9 +224,9 @@ public class Web_TreeViewInitializator {
 
 			//Print the files!
 			if(pathArr.length==1){
-				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/project?choice=view&files="+newPath+"&project="+projectName+"\"))");
+				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1 + \""+newPath+"\" + P2))");
 			}else{
-				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", \""+defaultURI+"/project?choice=view&files="+newPath+"&project="+projectName+"\"))");
+				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1 + \""+newPath+"\" + P2))");
 			}
 
 			//Draw fileicons
@@ -263,7 +263,7 @@ public class Web_TreeViewInitializator {
 	 * @param projectName
 	 * @param iconPath
 	 */
-	public static void js_header(String projectFullNameAndVersion, String iconPath){
+	public static void js_header(String projectFullNameAndVersion, String iconPath, String prePath, String postPath){
 		javascript.add("USETEXTLINKS = 1");
 		javascript.add("STARTALLOPEN = 0");
 		javascript.add("USEICONS = 1");
@@ -271,6 +271,8 @@ public class Web_TreeViewInitializator {
 		javascript.add("USEFRAMES = 0");
 		javascript.add("PRESERVESTATE = 1");
 		javascript.add("HIGHLIGHT = 0");
+		javascript.add("P1 = \""+prePath+"\"");
+		javascript.add("P2 = \""+postPath+"\"");
 		javascript.add("ICONPATH = '"+iconPath+"'");
 		javascript.add("MAX_LENGTH = "+files.size());
 
@@ -347,13 +349,16 @@ public class Web_TreeViewInitializator {
 				getAllFiles(projectName,globalSettings);
 
 				System.out.println("Build header...");
+				
+				xpath = new String[]{"settings","global","website","defaultURI"};
+				String xpathDefaultURI = xmlParser.read_setting(xpath);
 
 				xpath = new String[]{"settings","website","generic","treeview","icons"};
-				js_header(projectFullName+" "+projectVersion,xmlParser.read_setting(xpath));
+				js_header(projectFullName+" "+projectVersion,xmlParser.read_setting(xpath),xpathDefaultURI+"/project?choice=view&files=","&project="+projectName);
 
 				System.out.println("Build folder tree...");
-				xpath = new String[]{"settings","global","website","defaultURI"};
-				js_tree_new(projectName,xmlParser.read_setting(xpath));
+				
+				js_tree_new(projectName,xpathDefaultURI);
 
 				System.out.println("Save folder tree...");
 				//Build the path for the javascript-path
