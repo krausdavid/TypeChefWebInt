@@ -9,19 +9,17 @@ import java.util.GregorianCalendar;
 import tcwi.TCWIFile.ErrorFile;
 import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
-import tcwi.progress.Progress;
 import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.2.2";
+	private static final String VERSION = "0.1.2.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
 	private static Parser parser;
 	private static boolean failureProject = false;
 	private static Exceptions exception = new Exceptions();
-	private static Progress p;
 
 	private static String getAllFiles(String path){
 		File file = new File(path);
@@ -34,7 +32,6 @@ public class Web_ProjectInitializator {
 					if(fileList[i].toString().substring(fileList[i].toString().length()-2, fileList[i].toString().length()).equals(".c")){
 						try{
 							ErrorFile errFile = new ErrorFile(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2),check.failFlags(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2)));
-							p.tickAndPrint();
 							files.add(errFile);
 						}catch (IOException e){
 							e.printStackTrace();
@@ -46,7 +43,6 @@ public class Web_ProjectInitializator {
 		}catch (Exception e){
 			return path;
 		}
-		System.out.println("");
 		return "";
 	}
 	
@@ -137,6 +133,8 @@ public class Web_ProjectInitializator {
 			String settingFile = args[5];
 			
 			System.out.println("Starting initialization from project "+projectName+"...");
+			
+			long time = System.currentTimeMillis();
 
 			parser = new Parser(settingFile);
 			String projectPath = parser.getSetting_ProjectPath();
@@ -154,13 +152,15 @@ public class Web_ProjectInitializator {
 			}
 			
 			File file = new File(path);
-			File[] fileList = file.listFiles();
-			p = new Progress(10,fileList.length);
+			if(!file.exists()){
+				exception.throwException(7, null, true, path);
+			}
+			
 			String str = getAllFiles(path);
 			if(str.equals("")){
 				System.out.println("Initialization DONE!");
 			}else{
-				exception.throwException(6, null, true, "");
+				exception.throwException(6, null, true, str);
 			}
 			
 			System.out.println("Sort files...");
@@ -183,6 +183,7 @@ public class Web_ProjectInitializator {
 			writeProjectXMLFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path);
 			
 			System.out.println("Writing DONE!\nScript DONE!");
+			System.out.printf("Duration: %.2f sec",(System.currentTimeMillis()-time)/1000.0);
 		}
 	}
 

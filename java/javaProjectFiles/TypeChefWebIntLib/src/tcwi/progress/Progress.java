@@ -63,5 +63,10 @@ public class Progress {
 		this.currentStatus = 0;
 		this.border = 0;
 	}
+	
+	public void addMaxTicks(int maxTicks){
+		this.maxTicks += maxTicks;
+		this.tick = this.maxTicks/this.tickSize;
+	}
 
 }

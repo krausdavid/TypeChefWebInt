@@ -13,7 +13,7 @@ public class Exceptions {
 		exception.put(4, "ERROR 4: Can't write the setting-file.");
 		exception.put(5, "ERROR 5: Project name already set!");
 		exception.put(6, "ERROR 6: Can't access the given path. Maybe you do not have the rights for it?");
-		exception.put(7, "ERROR 7: File doesn't exist.");
+		exception.put(7, "ERROR 7: File / Path doesn't exist.");
 		exception.put(8, "ERROR 8: Can't read / write the given file.");
 		exception.put(9, "ERROR 9: The 2 given projects are not from the same type!");
 		exception.put(10, "ERROR 10: The project has provided over one million times. Delete old projects of this type!");
