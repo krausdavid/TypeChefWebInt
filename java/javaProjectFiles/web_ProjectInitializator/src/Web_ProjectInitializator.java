@@ -35,13 +35,13 @@ public class Web_ProjectInitializator {
 						try{
 							ErrorFile errFile = new ErrorFile(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2),check.failFlags(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2)));
 							files.add(errFile);
+							p.tickAndPrint();
 						}catch (IOException e){
 							e.printStackTrace();
 							return fileList[i].getAbsolutePath();
 						}
 					}
 				}
-				p.tickAndPrint();
 			}
 		}catch (Exception e){
 			return path;
