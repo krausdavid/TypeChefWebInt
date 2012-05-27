@@ -7,6 +7,7 @@ public class Exceptions {
 	
 	public Exceptions(){
 		exception = new HashMap<Integer, String>();
+		exception.put(0, "ERROR 0: Wrong exception code!");
 		exception.put(1, "ERROR 1: Can't read the setting-file");
 		exception.put(2, "ERROR 2: Error during parse the setting-file. Is it malformed?");
 		exception.put(3, "ERROR 3: Can't generate and write the javascript file.");
@@ -23,6 +24,9 @@ public class Exceptions {
 	}
 	
 	public void throwException(int i, Exception e, boolean isExit, String pathInformation){
+		if(exception.get(i)==null){
+			i = 0;
+		}
 		if(pathInformation!=""){
 			System.err.println(exception.get(i) + " The Path is: " + pathInformation);
 		}else{
