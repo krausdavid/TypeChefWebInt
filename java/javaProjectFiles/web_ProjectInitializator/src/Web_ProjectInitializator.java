@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.2.3";
+	private static final String VERSION = "0.1.2.4";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -35,12 +35,12 @@ public class Web_ProjectInitializator {
 				if(fileList[i].isDirectory()){
 					getAllFiles(fileList[i].getAbsolutePath());
 				}else{
-					if(fileList[i].toString().substring(fileList[i].toString().length()-2, fileList[i].toString().length()).equals(".c")){
+					if(fileList[i].toString().endsWith(".c")){
 						try{
-							ErrorFile errFile = new ErrorFile(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2),check.failFlags(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2)));
+							String str = fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2);
+							ErrorFile errFile = new ErrorFile(str,check.failFlags(str));
 							files.add(errFile);
 						}catch (IOException e){
-							e.printStackTrace();
 							return fileList[i].getAbsolutePath();
 						}
 					}
