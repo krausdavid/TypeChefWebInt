@@ -4,3 +4,11 @@
 	font: 12px "Verdana";
 	border: #000000 1px solid;
 }
+.table_noborders{
+	margin: 0px;
+	padding: 0px;
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
+}
