@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.8.1";
+	private static final String VERSION = "0.1.8.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -157,11 +157,7 @@ public class Web_TreeViewInitializator {
 			String newPath = relativeFiles.get(i);
 			
 			String[] pathArr;
-			if(folderSeparator.equals("\\")){
-				pathArr = relativeFiles.get(i).split(folderSeparator+folderSeparator);
-			}else{
-				pathArr = relativeFiles.get(i).split(folderSeparator);
-			}
+			pathArr = relativeFiles.get(i).split(check.folderSeparator()+"");
 
 			//Search for differences between the new and the last file
 			for(int j=0;j<pathArr.length;j++){
@@ -331,7 +327,8 @@ public class Web_TreeViewInitializator {
 				
 				Parser parser = new Parser(project_settings_xml_path);
 				
-				projectPath = parser.getSetting_ProjectPath();
+				String[] xpathProjectPath = {"settings","global","project","path"};
+				projectPath = parser.read_setting(xpathProjectPath);
 				String[] xpathProjectName = {"settings","global","project","fullname"};
 				String projectFullName = parser.read_setting(xpathProjectName);
 				String[] xpathProjectVersion = {"settings","global","project","version"};
