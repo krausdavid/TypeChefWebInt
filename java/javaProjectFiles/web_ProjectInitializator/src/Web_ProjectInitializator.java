@@ -14,18 +14,18 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.2.1";
+	private static final String VERSION = "0.1.2.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
 	private static Parser parser;
 	private static boolean failureProject = false;
 	private static Exceptions exception = new Exceptions();
+	private static Progress p;
 
 	private static String getAllFiles(String path){
 		File file = new File(path);
 		File[] fileList = file.listFiles(); //TODO: Was ist mit einem falschen Pfad? Exception schmeiﬂen!
-		Progress p = new Progress(10,fileList.length);
 		try{
 			for(int i=0;i<fileList.length;i++){
 				if(fileList[i].isDirectory()){
@@ -34,8 +34,8 @@ public class Web_ProjectInitializator {
 					if(fileList[i].toString().substring(fileList[i].toString().length()-2, fileList[i].toString().length()).equals(".c")){
 						try{
 							ErrorFile errFile = new ErrorFile(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2),check.failFlags(fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2)));
-							files.add(errFile);
 							p.tickAndPrint();
+							files.add(errFile);
 						}catch (IOException e){
 							e.printStackTrace();
 							return fileList[i].getAbsolutePath();
@@ -153,6 +153,9 @@ public class Web_ProjectInitializator {
 				path = path.substring(0,path.length()-1);
 			}
 			
+			File file = new File(path);
+			File[] fileList = file.listFiles();
+			p = new Progress(10,fileList.length);
 			String str = getAllFiles(path);
 			if(str.equals("")){
 				System.out.println("Initialization DONE!");
