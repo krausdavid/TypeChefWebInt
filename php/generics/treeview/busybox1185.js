@@ -12,22 +12,22 @@ foldersTree.treeID = "Frameset"
 foldersTree.iconSrc = ICONPATH + "folderopenfail.gif"
 foldersTree.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
 dirapplets = insFld(foldersTree, gFld("applets", ""))
-dirapplets.iconSrc = ICONPATH + "folderopenfail.gif"
-dirapplets.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirapplets.iconSrc = ICONPATH + "folderopenok.gif"
+dirapplets.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc0 = insDoc(dirapplets, gLnk("S", "applet_tables", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=applets/applet_tables&project=busybox1185"))
-doc0.iconSrc = ICONPATH + "filefail.gif"
+doc0.iconSrc = ICONPATH + "fileempty.gif"
 doc0.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox0\"></td>"
 doc1 = insDoc(dirapplets, gLnk("S", "applets", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=applets/applets&project=busybox1185"))
 doc1.iconSrc = ICONPATH + "fileok.gif"
 doc1.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox1\"></td>"
 doc2 = insDoc(dirapplets, gLnk("S", "individual", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=applets/individual&project=busybox1185"))
-doc2.iconSrc = ICONPATH + "filefail.gif"
+doc2.iconSrc = ICONPATH + "fileempty.gif"
 doc2.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox2\"></td>"
 doc3 = insDoc(dirapplets, gLnk("S", "usage_pod", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=applets/usage_pod&project=busybox1185"))
-doc3.iconSrc = ICONPATH + "filefail.gif"
+doc3.iconSrc = ICONPATH + "fileempty.gif"
 doc3.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox3\"></td>"
 doc4 = insDoc(dirapplets, gLnk("S", "usage", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=applets/usage&project=busybox1185"))
-doc4.iconSrc = ICONPATH + "filefail.gif"
+doc4.iconSrc = ICONPATH + "fileempty.gif"
 doc4.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox4\"></td>"
 dirarchival = insFld(foldersTree, gFld("archival", ""))
 dirarchival.iconSrc = ICONPATH + "folderopenok.gif"
@@ -54,22 +54,22 @@ doc11 = insDoc(dirarchival, gLnk("S", "gzip", "http://www.mathematik.uni-marburg
 doc11.iconSrc = ICONPATH + "fileok.gif"
 doc11.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox11\"></td>"
 dirlibarchive = insFld(dirarchival, gFld("libarchive", ""))
-dirlibarchive.iconSrc = ICONPATH + "folderopenfail.gif"
-dirlibarchive.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirlibarchive.iconSrc = ICONPATH + "folderopenok.gif"
+dirlibarchive.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 dirbz = insFld(dirlibarchive, gFld("bz", ""))
-dirbz.iconSrc = ICONPATH + "folderopenfail.gif"
-dirbz.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirbz.iconSrc = ICONPATH + "folderopenok.gif"
+dirbz.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc12 = insDoc(dirbz, gLnk("S", "blocksort", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/bz/blocksort&project=busybox1185"))
-doc12.iconSrc = ICONPATH + "filefail.gif"
+doc12.iconSrc = ICONPATH + "fileempty.gif"
 doc12.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox12\"></td>"
 doc13 = insDoc(dirbz, gLnk("S", "bzlib", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/bz/bzlib&project=busybox1185"))
-doc13.iconSrc = ICONPATH + "filefail.gif"
+doc13.iconSrc = ICONPATH + "fileempty.gif"
 doc13.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox13\"></td>"
 doc14 = insDoc(dirbz, gLnk("S", "compress", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/bz/compress&project=busybox1185"))
-doc14.iconSrc = ICONPATH + "filefail.gif"
+doc14.iconSrc = ICONPATH + "fileempty.gif"
 doc14.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox14\"></td>"
 doc15 = insDoc(dirbz, gLnk("S", "huffman", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/bz/huffman&project=busybox1185"))
-doc15.iconSrc = ICONPATH + "filefail.gif"
+doc15.iconSrc = ICONPATH + "fileempty.gif"
 doc15.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox15\"></td>"
 doc16 = insDoc(dirlibarchive, gLnk("S", "data_align", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/data_align&project=busybox1185"))
 doc16.iconSrc = ICONPATH + "fileok.gif"
@@ -156,7 +156,7 @@ doc43 = insDoc(dirlibarchive, gLnk("S", "lzo1x_9x", "http://www.mathematik.uni-m
 doc43.iconSrc = ICONPATH + "fileok.gif"
 doc43.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox43\"></td>"
 doc44 = insDoc(dirlibarchive, gLnk("S", "lzo1x_c", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/lzo1x_c&project=busybox1185"))
-doc44.iconSrc = ICONPATH + "filefail.gif"
+doc44.iconSrc = ICONPATH + "fileempty.gif"
 doc44.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox44\"></td>"
 doc45 = insDoc(dirlibarchive, gLnk("S", "lzo1x_d", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/lzo1x_d&project=busybox1185"))
 doc45.iconSrc = ICONPATH + "fileok.gif"
@@ -174,16 +174,16 @@ doc49 = insDoc(dirlibarchive, gLnk("S", "unpack_ar_archive", "http://www.mathema
 doc49.iconSrc = ICONPATH + "fileok.gif"
 doc49.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox49\"></td>"
 dirunxz = insFld(dirlibarchive, gFld("unxz", ""))
-dirunxz.iconSrc = ICONPATH + "folderopenfail.gif"
-dirunxz.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirunxz.iconSrc = ICONPATH + "folderopenok.gif"
+dirunxz.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc50 = insDoc(dirunxz, gLnk("S", "xz_dec_bcj", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/unxz/xz_dec_bcj&project=busybox1185"))
-doc50.iconSrc = ICONPATH + "filefail.gif"
+doc50.iconSrc = ICONPATH + "fileempty.gif"
 doc50.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox50\"></td>"
 doc51 = insDoc(dirunxz, gLnk("S", "xz_dec_lzma2", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/unxz/xz_dec_lzma2&project=busybox1185"))
-doc51.iconSrc = ICONPATH + "filefail.gif"
+doc51.iconSrc = ICONPATH + "fileempty.gif"
 doc51.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox51\"></td>"
 doc52 = insDoc(dirunxz, gLnk("S", "xz_dec_stream", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/libarchive/unxz/xz_dec_stream&project=busybox1185"))
-doc52.iconSrc = ICONPATH + "filefail.gif"
+doc52.iconSrc = ICONPATH + "fileempty.gif"
 doc52.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox52\"></td>"
 doc53 = insDoc(dirarchival, gLnk("S", "lzop", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=archival/lzop&project=busybox1185"))
 doc53.iconSrc = ICONPATH + "fileok.gif"
@@ -381,7 +381,7 @@ doc114 = insDoc(dircoreutils, gLnk("S", "nohup", "http://www.mathematik.uni-marb
 doc114.iconSrc = ICONPATH + "fileok.gif"
 doc114.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox114\"></td>"
 doc115 = insDoc(dircoreutils, gLnk("S", "od_bloaty", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=coreutils/od_bloaty&project=busybox1185"))
-doc115.iconSrc = ICONPATH + "filefail.gif"
+doc115.iconSrc = ICONPATH + "fileempty.gif"
 doc115.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox115\"></td>"
 doc116 = insDoc(dircoreutils, gLnk("S", "od", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=coreutils/od&project=busybox1185"))
 doc116.iconSrc = ICONPATH + "fileok.gif"
@@ -519,322 +519,322 @@ doc158 = insDoc(dire2fsprogs, gLnk("S", "lsattr", "http://www.mathematik.uni-mar
 doc158.iconSrc = ICONPATH + "fileok.gif"
 doc158.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox158\"></td>"
 dirold_e2fsprogs = insFld(dire2fsprogs, gFld("old_e2fsprogs", ""))
-dirold_e2fsprogs.iconSrc = ICONPATH + "folderopenfail.gif"
-dirold_e2fsprogs.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirold_e2fsprogs.iconSrc = ICONPATH + "folderopenok.gif"
+dirold_e2fsprogs.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 dirblkid = insFld(dirold_e2fsprogs, gFld("blkid", ""))
-dirblkid.iconSrc = ICONPATH + "folderopenfail.gif"
-dirblkid.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirblkid.iconSrc = ICONPATH + "folderopenok.gif"
+dirblkid.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc159 = insDoc(dirblkid, gLnk("S", "blkid_getsize", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/blkid_getsize&project=busybox1185"))
-doc159.iconSrc = ICONPATH + "filefail.gif"
+doc159.iconSrc = ICONPATH + "fileempty.gif"
 doc159.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox159\"></td>"
 doc160 = insDoc(dirblkid, gLnk("S", "cache", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/cache&project=busybox1185"))
-doc160.iconSrc = ICONPATH + "filefail.gif"
+doc160.iconSrc = ICONPATH + "fileempty.gif"
 doc160.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox160\"></td>"
 doc161 = insDoc(dirblkid, gLnk("S", "devname", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/devname&project=busybox1185"))
-doc161.iconSrc = ICONPATH + "filefail.gif"
+doc161.iconSrc = ICONPATH + "fileempty.gif"
 doc161.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox161\"></td>"
 doc162 = insDoc(dirblkid, gLnk("S", "devno", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/devno&project=busybox1185"))
-doc162.iconSrc = ICONPATH + "filefail.gif"
+doc162.iconSrc = ICONPATH + "fileempty.gif"
 doc162.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox162\"></td>"
 doc163 = insDoc(dirblkid, gLnk("S", "dev", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/dev&project=busybox1185"))
-doc163.iconSrc = ICONPATH + "filefail.gif"
+doc163.iconSrc = ICONPATH + "fileempty.gif"
 doc163.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox163\"></td>"
 doc164 = insDoc(dirblkid, gLnk("S", "list", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/list&project=busybox1185"))
-doc164.iconSrc = ICONPATH + "filefail.gif"
+doc164.iconSrc = ICONPATH + "fileempty.gif"
 doc164.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox164\"></td>"
 doc165 = insDoc(dirblkid, gLnk("S", "probe", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/probe&project=busybox1185"))
-doc165.iconSrc = ICONPATH + "filefail.gif"
+doc165.iconSrc = ICONPATH + "fileempty.gif"
 doc165.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox165\"></td>"
 doc166 = insDoc(dirblkid, gLnk("S", "read", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/read&project=busybox1185"))
-doc166.iconSrc = ICONPATH + "filefail.gif"
+doc166.iconSrc = ICONPATH + "fileempty.gif"
 doc166.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox166\"></td>"
 doc167 = insDoc(dirblkid, gLnk("S", "resolve", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/resolve&project=busybox1185"))
-doc167.iconSrc = ICONPATH + "filefail.gif"
+doc167.iconSrc = ICONPATH + "fileempty.gif"
 doc167.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox167\"></td>"
 doc168 = insDoc(dirblkid, gLnk("S", "save", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/save&project=busybox1185"))
-doc168.iconSrc = ICONPATH + "filefail.gif"
+doc168.iconSrc = ICONPATH + "fileempty.gif"
 doc168.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox168\"></td>"
 doc169 = insDoc(dirblkid, gLnk("S", "tag", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/blkid/tag&project=busybox1185"))
-doc169.iconSrc = ICONPATH + "filefail.gif"
+doc169.iconSrc = ICONPATH + "fileempty.gif"
 doc169.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox169\"></td>"
 doc170 = insDoc(dirold_e2fsprogs, gLnk("S", "chattr", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/chattr&project=busybox1185"))
-doc170.iconSrc = ICONPATH + "filefail.gif"
+doc170.iconSrc = ICONPATH + "fileempty.gif"
 doc170.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox170\"></td>"
 doc171 = insDoc(dirold_e2fsprogs, gLnk("S", "e2fsck", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2fsck&project=busybox1185"))
-doc171.iconSrc = ICONPATH + "filefail.gif"
+doc171.iconSrc = ICONPATH + "fileempty.gif"
 doc171.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox171\"></td>"
 dire2p = insFld(dirold_e2fsprogs, gFld("e2p", ""))
-dire2p.iconSrc = ICONPATH + "folderopenfail.gif"
-dire2p.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dire2p.iconSrc = ICONPATH + "folderopenok.gif"
+dire2p.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc172 = insDoc(dire2p, gLnk("S", "feature", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/feature&project=busybox1185"))
-doc172.iconSrc = ICONPATH + "filefail.gif"
+doc172.iconSrc = ICONPATH + "fileempty.gif"
 doc172.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox172\"></td>"
 doc173 = insDoc(dire2p, gLnk("S", "fgetsetflags", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/fgetsetflags&project=busybox1185"))
-doc173.iconSrc = ICONPATH + "filefail.gif"
+doc173.iconSrc = ICONPATH + "fileempty.gif"
 doc173.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox173\"></td>"
 doc174 = insDoc(dire2p, gLnk("S", "fgetsetversion", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/fgetsetversion&project=busybox1185"))
-doc174.iconSrc = ICONPATH + "filefail.gif"
+doc174.iconSrc = ICONPATH + "fileempty.gif"
 doc174.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox174\"></td>"
 doc175 = insDoc(dire2p, gLnk("S", "hashstr", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/hashstr&project=busybox1185"))
-doc175.iconSrc = ICONPATH + "filefail.gif"
+doc175.iconSrc = ICONPATH + "fileempty.gif"
 doc175.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox175\"></td>"
 doc176 = insDoc(dire2p, gLnk("S", "iod", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/iod&project=busybox1185"))
-doc176.iconSrc = ICONPATH + "filefail.gif"
+doc176.iconSrc = ICONPATH + "fileempty.gif"
 doc176.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox176\"></td>"
 doc177 = insDoc(dire2p, gLnk("S", "ls", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/ls&project=busybox1185"))
-doc177.iconSrc = ICONPATH + "filefail.gif"
+doc177.iconSrc = ICONPATH + "fileempty.gif"
 doc177.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox177\"></td>"
 doc178 = insDoc(dire2p, gLnk("S", "mntopts", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/mntopts&project=busybox1185"))
-doc178.iconSrc = ICONPATH + "filefail.gif"
+doc178.iconSrc = ICONPATH + "fileempty.gif"
 doc178.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox178\"></td>"
 doc179 = insDoc(dire2p, gLnk("S", "ostype", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/ostype&project=busybox1185"))
-doc179.iconSrc = ICONPATH + "filefail.gif"
+doc179.iconSrc = ICONPATH + "fileempty.gif"
 doc179.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox179\"></td>"
 doc180 = insDoc(dire2p, gLnk("S", "parse_num", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/parse_num&project=busybox1185"))
-doc180.iconSrc = ICONPATH + "filefail.gif"
+doc180.iconSrc = ICONPATH + "fileempty.gif"
 doc180.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox180\"></td>"
 doc181 = insDoc(dire2p, gLnk("S", "pe", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/pe&project=busybox1185"))
-doc181.iconSrc = ICONPATH + "filefail.gif"
+doc181.iconSrc = ICONPATH + "fileempty.gif"
 doc181.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox181\"></td>"
 doc182 = insDoc(dire2p, gLnk("S", "pf", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/pf&project=busybox1185"))
-doc182.iconSrc = ICONPATH + "filefail.gif"
+doc182.iconSrc = ICONPATH + "fileempty.gif"
 doc182.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox182\"></td>"
 doc183 = insDoc(dire2p, gLnk("S", "ps", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/ps&project=busybox1185"))
-doc183.iconSrc = ICONPATH + "filefail.gif"
+doc183.iconSrc = ICONPATH + "fileempty.gif"
 doc183.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox183\"></td>"
 doc184 = insDoc(dire2p, gLnk("S", "uuid", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/e2p/uuid&project=busybox1185"))
-doc184.iconSrc = ICONPATH + "filefail.gif"
+doc184.iconSrc = ICONPATH + "fileempty.gif"
 doc184.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox184\"></td>"
 dirext2fs = insFld(dirold_e2fsprogs, gFld("ext2fs", ""))
-dirext2fs.iconSrc = ICONPATH + "folderopenfail.gif"
-dirext2fs.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirext2fs.iconSrc = ICONPATH + "folderopenok.gif"
+dirext2fs.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc185 = insDoc(dirext2fs, gLnk("S", "alloc_sb", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/alloc_sb&project=busybox1185"))
-doc185.iconSrc = ICONPATH + "filefail.gif"
+doc185.iconSrc = ICONPATH + "fileempty.gif"
 doc185.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox185\"></td>"
 doc186 = insDoc(dirext2fs, gLnk("S", "alloc_stats", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/alloc_stats&project=busybox1185"))
-doc186.iconSrc = ICONPATH + "filefail.gif"
+doc186.iconSrc = ICONPATH + "fileempty.gif"
 doc186.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox186\"></td>"
 doc187 = insDoc(dirext2fs, gLnk("S", "alloc_tables", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/alloc_tables&project=busybox1185"))
-doc187.iconSrc = ICONPATH + "filefail.gif"
+doc187.iconSrc = ICONPATH + "fileempty.gif"
 doc187.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox187\"></td>"
 doc188 = insDoc(dirext2fs, gLnk("S", "alloc", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/alloc&project=busybox1185"))
-doc188.iconSrc = ICONPATH + "filefail.gif"
+doc188.iconSrc = ICONPATH + "fileempty.gif"
 doc188.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox188\"></td>"
 doc189 = insDoc(dirext2fs, gLnk("S", "badblocks", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/badblocks&project=busybox1185"))
-doc189.iconSrc = ICONPATH + "filefail.gif"
+doc189.iconSrc = ICONPATH + "fileempty.gif"
 doc189.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox189\"></td>"
 doc190 = insDoc(dirext2fs, gLnk("S", "bb_compat", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/bb_compat&project=busybox1185"))
-doc190.iconSrc = ICONPATH + "filefail.gif"
+doc190.iconSrc = ICONPATH + "fileempty.gif"
 doc190.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox190\"></td>"
 doc191 = insDoc(dirext2fs, gLnk("S", "bb_inode", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/bb_inode&project=busybox1185"))
-doc191.iconSrc = ICONPATH + "filefail.gif"
+doc191.iconSrc = ICONPATH + "fileempty.gif"
 doc191.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox191\"></td>"
 doc192 = insDoc(dirext2fs, gLnk("S", "bitmaps", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/bitmaps&project=busybox1185"))
-doc192.iconSrc = ICONPATH + "filefail.gif"
+doc192.iconSrc = ICONPATH + "fileempty.gif"
 doc192.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox192\"></td>"
 doc193 = insDoc(dirext2fs, gLnk("S", "bitops", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/bitops&project=busybox1185"))
-doc193.iconSrc = ICONPATH + "filefail.gif"
+doc193.iconSrc = ICONPATH + "fileempty.gif"
 doc193.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox193\"></td>"
 doc194 = insDoc(dirext2fs, gLnk("S", "block", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/block&project=busybox1185"))
-doc194.iconSrc = ICONPATH + "filefail.gif"
+doc194.iconSrc = ICONPATH + "fileempty.gif"
 doc194.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox194\"></td>"
 doc195 = insDoc(dirext2fs, gLnk("S", "bmap", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/bmap&project=busybox1185"))
-doc195.iconSrc = ICONPATH + "filefail.gif"
+doc195.iconSrc = ICONPATH + "fileempty.gif"
 doc195.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox195\"></td>"
 doc196 = insDoc(dirext2fs, gLnk("S", "bmove", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/bmove&project=busybox1185"))
-doc196.iconSrc = ICONPATH + "filefail.gif"
+doc196.iconSrc = ICONPATH + "fileempty.gif"
 doc196.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox196\"></td>"
 doc197 = insDoc(dirext2fs, gLnk("S", "brel_ma", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/brel_ma&project=busybox1185"))
-doc197.iconSrc = ICONPATH + "filefail.gif"
+doc197.iconSrc = ICONPATH + "fileempty.gif"
 doc197.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox197\"></td>"
 doc198 = insDoc(dirext2fs, gLnk("S", "check_desc", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/check_desc&project=busybox1185"))
-doc198.iconSrc = ICONPATH + "filefail.gif"
+doc198.iconSrc = ICONPATH + "fileempty.gif"
 doc198.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox198\"></td>"
 doc199 = insDoc(dirext2fs, gLnk("S", "closefs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/closefs&project=busybox1185"))
-doc199.iconSrc = ICONPATH + "filefail.gif"
+doc199.iconSrc = ICONPATH + "fileempty.gif"
 doc199.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox199\"></td>"
 doc200 = insDoc(dirext2fs, gLnk("S", "cmp_bitmaps", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/cmp_bitmaps&project=busybox1185"))
-doc200.iconSrc = ICONPATH + "filefail.gif"
+doc200.iconSrc = ICONPATH + "fileempty.gif"
 doc200.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox200\"></td>"
 doc201 = insDoc(dirext2fs, gLnk("S", "dblist_dir", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/dblist_dir&project=busybox1185"))
-doc201.iconSrc = ICONPATH + "filefail.gif"
+doc201.iconSrc = ICONPATH + "fileempty.gif"
 doc201.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox201\"></td>"
 doc202 = insDoc(dirext2fs, gLnk("S", "dblist", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/dblist&project=busybox1185"))
-doc202.iconSrc = ICONPATH + "filefail.gif"
+doc202.iconSrc = ICONPATH + "fileempty.gif"
 doc202.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox202\"></td>"
 doc203 = insDoc(dirext2fs, gLnk("S", "dir_iterate", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/dir_iterate&project=busybox1185"))
-doc203.iconSrc = ICONPATH + "filefail.gif"
+doc203.iconSrc = ICONPATH + "fileempty.gif"
 doc203.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox203\"></td>"
 doc204 = insDoc(dirext2fs, gLnk("S", "dirblock", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/dirblock&project=busybox1185"))
-doc204.iconSrc = ICONPATH + "filefail.gif"
+doc204.iconSrc = ICONPATH + "fileempty.gif"
 doc204.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox204\"></td>"
 doc205 = insDoc(dirext2fs, gLnk("S", "dirhash", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/dirhash&project=busybox1185"))
-doc205.iconSrc = ICONPATH + "filefail.gif"
+doc205.iconSrc = ICONPATH + "fileempty.gif"
 doc205.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox205\"></td>"
 doc206 = insDoc(dirext2fs, gLnk("S", "dupfs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/dupfs&project=busybox1185"))
-doc206.iconSrc = ICONPATH + "filefail.gif"
+doc206.iconSrc = ICONPATH + "fileempty.gif"
 doc206.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox206\"></td>"
 doc207 = insDoc(dirext2fs, gLnk("S", "expanddir", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/expanddir&project=busybox1185"))
-doc207.iconSrc = ICONPATH + "filefail.gif"
+doc207.iconSrc = ICONPATH + "fileempty.gif"
 doc207.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox207\"></td>"
 doc208 = insDoc(dirext2fs, gLnk("S", "ext2fs_inline", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/ext2fs_inline&project=busybox1185"))
-doc208.iconSrc = ICONPATH + "filefail.gif"
+doc208.iconSrc = ICONPATH + "fileempty.gif"
 doc208.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox208\"></td>"
 doc209 = insDoc(dirext2fs, gLnk("S", "ext_attr", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/ext_attr&project=busybox1185"))
-doc209.iconSrc = ICONPATH + "filefail.gif"
+doc209.iconSrc = ICONPATH + "fileempty.gif"
 doc209.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox209\"></td>"
 doc210 = insDoc(dirext2fs, gLnk("S", "fileio", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/fileio&project=busybox1185"))
-doc210.iconSrc = ICONPATH + "filefail.gif"
+doc210.iconSrc = ICONPATH + "fileempty.gif"
 doc210.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox210\"></td>"
 doc211 = insDoc(dirext2fs, gLnk("S", "finddev", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/finddev&project=busybox1185"))
-doc211.iconSrc = ICONPATH + "filefail.gif"
+doc211.iconSrc = ICONPATH + "fileempty.gif"
 doc211.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox211\"></td>"
 doc212 = insDoc(dirext2fs, gLnk("S", "flushb", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/flushb&project=busybox1185"))
-doc212.iconSrc = ICONPATH + "filefail.gif"
+doc212.iconSrc = ICONPATH + "fileempty.gif"
 doc212.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox212\"></td>"
 doc213 = insDoc(dirext2fs, gLnk("S", "freefs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/freefs&project=busybox1185"))
-doc213.iconSrc = ICONPATH + "filefail.gif"
+doc213.iconSrc = ICONPATH + "fileempty.gif"
 doc213.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox213\"></td>"
 doc214 = insDoc(dirext2fs, gLnk("S", "gen_bitmap", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/gen_bitmap&project=busybox1185"))
-doc214.iconSrc = ICONPATH + "filefail.gif"
+doc214.iconSrc = ICONPATH + "fileempty.gif"
 doc214.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox214\"></td>"
 doc215 = insDoc(dirext2fs, gLnk("S", "get_pathname", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/get_pathname&project=busybox1185"))
-doc215.iconSrc = ICONPATH + "filefail.gif"
+doc215.iconSrc = ICONPATH + "fileempty.gif"
 doc215.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox215\"></td>"
 doc216 = insDoc(dirext2fs, gLnk("S", "getsectsize", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/getsectsize&project=busybox1185"))
-doc216.iconSrc = ICONPATH + "filefail.gif"
+doc216.iconSrc = ICONPATH + "fileempty.gif"
 doc216.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox216\"></td>"
 doc217 = insDoc(dirext2fs, gLnk("S", "getsize", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/getsize&project=busybox1185"))
-doc217.iconSrc = ICONPATH + "filefail.gif"
+doc217.iconSrc = ICONPATH + "fileempty.gif"
 doc217.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox217\"></td>"
 doc218 = insDoc(dirext2fs, gLnk("S", "icount", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/icount&project=busybox1185"))
-doc218.iconSrc = ICONPATH + "filefail.gif"
+doc218.iconSrc = ICONPATH + "fileempty.gif"
 doc218.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox218\"></td>"
 doc219 = insDoc(dirext2fs, gLnk("S", "imager", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/imager&project=busybox1185"))
-doc219.iconSrc = ICONPATH + "filefail.gif"
+doc219.iconSrc = ICONPATH + "fileempty.gif"
 doc219.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox219\"></td>"
 doc220 = insDoc(dirext2fs, gLnk("S", "ind_block", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/ind_block&project=busybox1185"))
-doc220.iconSrc = ICONPATH + "filefail.gif"
+doc220.iconSrc = ICONPATH + "fileempty.gif"
 doc220.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox220\"></td>"
 doc221 = insDoc(dirext2fs, gLnk("S", "initialize", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/initialize&project=busybox1185"))
-doc221.iconSrc = ICONPATH + "filefail.gif"
+doc221.iconSrc = ICONPATH + "fileempty.gif"
 doc221.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox221\"></td>"
 doc222 = insDoc(dirext2fs, gLnk("S", "inline", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/inline&project=busybox1185"))
-doc222.iconSrc = ICONPATH + "filefail.gif"
+doc222.iconSrc = ICONPATH + "fileempty.gif"
 doc222.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox222\"></td>"
 doc223 = insDoc(dirext2fs, gLnk("S", "inode_io", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/inode_io&project=busybox1185"))
-doc223.iconSrc = ICONPATH + "filefail.gif"
+doc223.iconSrc = ICONPATH + "fileempty.gif"
 doc223.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox223\"></td>"
 doc224 = insDoc(dirext2fs, gLnk("S", "inode", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/inode&project=busybox1185"))
-doc224.iconSrc = ICONPATH + "filefail.gif"
+doc224.iconSrc = ICONPATH + "fileempty.gif"
 doc224.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox224\"></td>"
 doc225 = insDoc(dirext2fs, gLnk("S", "io_manager", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/io_manager&project=busybox1185"))
-doc225.iconSrc = ICONPATH + "filefail.gif"
+doc225.iconSrc = ICONPATH + "fileempty.gif"
 doc225.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox225\"></td>"
 doc226 = insDoc(dirext2fs, gLnk("S", "irel_ma", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/irel_ma&project=busybox1185"))
-doc226.iconSrc = ICONPATH + "filefail.gif"
+doc226.iconSrc = ICONPATH + "fileempty.gif"
 doc226.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox226\"></td>"
 doc227 = insDoc(dirext2fs, gLnk("S", "ismounted", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/ismounted&project=busybox1185"))
-doc227.iconSrc = ICONPATH + "filefail.gif"
+doc227.iconSrc = ICONPATH + "fileempty.gif"
 doc227.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox227\"></td>"
 doc228 = insDoc(dirext2fs, gLnk("S", "link", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/link&project=busybox1185"))
-doc228.iconSrc = ICONPATH + "filefail.gif"
+doc228.iconSrc = ICONPATH + "fileempty.gif"
 doc228.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox228\"></td>"
 doc229 = insDoc(dirext2fs, gLnk("S", "lookup", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/lookup&project=busybox1185"))
-doc229.iconSrc = ICONPATH + "filefail.gif"
+doc229.iconSrc = ICONPATH + "fileempty.gif"
 doc229.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox229\"></td>"
 doc230 = insDoc(dirext2fs, gLnk("S", "mkdir", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/mkdir&project=busybox1185"))
-doc230.iconSrc = ICONPATH + "filefail.gif"
+doc230.iconSrc = ICONPATH + "fileempty.gif"
 doc230.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox230\"></td>"
 doc231 = insDoc(dirext2fs, gLnk("S", "mkjournal", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/mkjournal&project=busybox1185"))
-doc231.iconSrc = ICONPATH + "filefail.gif"
+doc231.iconSrc = ICONPATH + "fileempty.gif"
 doc231.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox231\"></td>"
 doc232 = insDoc(dirext2fs, gLnk("S", "namei", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/namei&project=busybox1185"))
-doc232.iconSrc = ICONPATH + "filefail.gif"
+doc232.iconSrc = ICONPATH + "fileempty.gif"
 doc232.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox232\"></td>"
 doc233 = insDoc(dirext2fs, gLnk("S", "newdir", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/newdir&project=busybox1185"))
-doc233.iconSrc = ICONPATH + "filefail.gif"
+doc233.iconSrc = ICONPATH + "fileempty.gif"
 doc233.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox233\"></td>"
 doc234 = insDoc(dirext2fs, gLnk("S", "openfs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/openfs&project=busybox1185"))
-doc234.iconSrc = ICONPATH + "filefail.gif"
+doc234.iconSrc = ICONPATH + "fileempty.gif"
 doc234.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox234\"></td>"
 doc235 = insDoc(dirext2fs, gLnk("S", "read_bb_file", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/read_bb_file&project=busybox1185"))
-doc235.iconSrc = ICONPATH + "filefail.gif"
+doc235.iconSrc = ICONPATH + "fileempty.gif"
 doc235.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox235\"></td>"
 doc236 = insDoc(dirext2fs, gLnk("S", "read_bb", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/read_bb&project=busybox1185"))
-doc236.iconSrc = ICONPATH + "filefail.gif"
+doc236.iconSrc = ICONPATH + "fileempty.gif"
 doc236.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox236\"></td>"
 doc237 = insDoc(dirext2fs, gLnk("S", "res_gdt", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/res_gdt&project=busybox1185"))
-doc237.iconSrc = ICONPATH + "filefail.gif"
+doc237.iconSrc = ICONPATH + "fileempty.gif"
 doc237.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox237\"></td>"
 doc238 = insDoc(dirext2fs, gLnk("S", "rs_bitmap", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/rs_bitmap&project=busybox1185"))
-doc238.iconSrc = ICONPATH + "filefail.gif"
+doc238.iconSrc = ICONPATH + "fileempty.gif"
 doc238.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox238\"></td>"
 doc239 = insDoc(dirext2fs, gLnk("S", "rw_bitmaps", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/rw_bitmaps&project=busybox1185"))
-doc239.iconSrc = ICONPATH + "filefail.gif"
+doc239.iconSrc = ICONPATH + "fileempty.gif"
 doc239.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox239\"></td>"
 doc240 = insDoc(dirext2fs, gLnk("S", "sparse", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/sparse&project=busybox1185"))
-doc240.iconSrc = ICONPATH + "filefail.gif"
+doc240.iconSrc = ICONPATH + "fileempty.gif"
 doc240.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox240\"></td>"
 doc241 = insDoc(dirext2fs, gLnk("S", "swapfs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/swapfs&project=busybox1185"))
-doc241.iconSrc = ICONPATH + "filefail.gif"
+doc241.iconSrc = ICONPATH + "fileempty.gif"
 doc241.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox241\"></td>"
 doc242 = insDoc(dirext2fs, gLnk("S", "test_io", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/test_io&project=busybox1185"))
-doc242.iconSrc = ICONPATH + "filefail.gif"
+doc242.iconSrc = ICONPATH + "fileempty.gif"
 doc242.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox242\"></td>"
 doc243 = insDoc(dirext2fs, gLnk("S", "unix_io", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/unix_io&project=busybox1185"))
-doc243.iconSrc = ICONPATH + "filefail.gif"
+doc243.iconSrc = ICONPATH + "fileempty.gif"
 doc243.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox243\"></td>"
 doc244 = insDoc(dirext2fs, gLnk("S", "unlink", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/unlink&project=busybox1185"))
-doc244.iconSrc = ICONPATH + "filefail.gif"
+doc244.iconSrc = ICONPATH + "fileempty.gif"
 doc244.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox244\"></td>"
 doc245 = insDoc(dirext2fs, gLnk("S", "valid_blk", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/valid_blk&project=busybox1185"))
-doc245.iconSrc = ICONPATH + "filefail.gif"
+doc245.iconSrc = ICONPATH + "fileempty.gif"
 doc245.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox245\"></td>"
 doc246 = insDoc(dirext2fs, gLnk("S", "version", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/version&project=busybox1185"))
-doc246.iconSrc = ICONPATH + "filefail.gif"
+doc246.iconSrc = ICONPATH + "fileempty.gif"
 doc246.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox246\"></td>"
 doc247 = insDoc(dirext2fs, gLnk("S", "write_bb_file", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/ext2fs/write_bb_file&project=busybox1185"))
-doc247.iconSrc = ICONPATH + "filefail.gif"
+doc247.iconSrc = ICONPATH + "fileempty.gif"
 doc247.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox247\"></td>"
 doc248 = insDoc(dirold_e2fsprogs, gLnk("S", "fsck", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/fsck&project=busybox1185"))
-doc248.iconSrc = ICONPATH + "filefail.gif"
+doc248.iconSrc = ICONPATH + "fileempty.gif"
 doc248.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox248\"></td>"
 doc249 = insDoc(dirold_e2fsprogs, gLnk("S", "lsattr", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/lsattr&project=busybox1185"))
-doc249.iconSrc = ICONPATH + "filefail.gif"
+doc249.iconSrc = ICONPATH + "fileempty.gif"
 doc249.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox249\"></td>"
 doc250 = insDoc(dirold_e2fsprogs, gLnk("S", "mke2fs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/mke2fs&project=busybox1185"))
-doc250.iconSrc = ICONPATH + "filefail.gif"
+doc250.iconSrc = ICONPATH + "fileempty.gif"
 doc250.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox250\"></td>"
 doc251 = insDoc(dirold_e2fsprogs, gLnk("S", "tune2fs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/tune2fs&project=busybox1185"))
-doc251.iconSrc = ICONPATH + "filefail.gif"
+doc251.iconSrc = ICONPATH + "fileempty.gif"
 doc251.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox251\"></td>"
 doc252 = insDoc(dirold_e2fsprogs, gLnk("S", "util", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/util&project=busybox1185"))
-doc252.iconSrc = ICONPATH + "filefail.gif"
+doc252.iconSrc = ICONPATH + "fileempty.gif"
 doc252.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox252\"></td>"
 diruuid = insFld(dirold_e2fsprogs, gFld("uuid", ""))
-diruuid.iconSrc = ICONPATH + "folderopenfail.gif"
-diruuid.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+diruuid.iconSrc = ICONPATH + "folderopenok.gif"
+diruuid.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc253 = insDoc(diruuid, gLnk("S", "compare", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/uuid/compare&project=busybox1185"))
-doc253.iconSrc = ICONPATH + "filefail.gif"
+doc253.iconSrc = ICONPATH + "fileempty.gif"
 doc253.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox253\"></td>"
 doc254 = insDoc(diruuid, gLnk("S", "gen_uuid", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/uuid/gen_uuid&project=busybox1185"))
-doc254.iconSrc = ICONPATH + "filefail.gif"
+doc254.iconSrc = ICONPATH + "fileempty.gif"
 doc254.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox254\"></td>"
 doc255 = insDoc(diruuid, gLnk("S", "pack", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/uuid/pack&project=busybox1185"))
-doc255.iconSrc = ICONPATH + "filefail.gif"
+doc255.iconSrc = ICONPATH + "fileempty.gif"
 doc255.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox255\"></td>"
 doc256 = insDoc(diruuid, gLnk("S", "parse", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/uuid/parse&project=busybox1185"))
-doc256.iconSrc = ICONPATH + "filefail.gif"
+doc256.iconSrc = ICONPATH + "fileempty.gif"
 doc256.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox256\"></td>"
 doc257 = insDoc(diruuid, gLnk("S", "unpack", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/uuid/unpack&project=busybox1185"))
-doc257.iconSrc = ICONPATH + "filefail.gif"
+doc257.iconSrc = ICONPATH + "fileempty.gif"
 doc257.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox257\"></td>"
 doc258 = insDoc(diruuid, gLnk("S", "unparse", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/uuid/unparse&project=busybox1185"))
-doc258.iconSrc = ICONPATH + "filefail.gif"
+doc258.iconSrc = ICONPATH + "fileempty.gif"
 doc258.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox258\"></td>"
 doc259 = insDoc(diruuid, gLnk("S", "uuid_time", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/old_e2fsprogs/uuid/uuid_time&project=busybox1185"))
-doc259.iconSrc = ICONPATH + "filefail.gif"
+doc259.iconSrc = ICONPATH + "fileempty.gif"
 doc259.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox259\"></td>"
 doc260 = insDoc(dire2fsprogs, gLnk("S", "tune2fs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=e2fsprogs/tune2fs&project=busybox1185"))
 doc260.iconSrc = ICONPATH + "fileok.gif"
@@ -855,10 +855,10 @@ doc264 = insDoc(direditors, gLnk("S", "ed", "http://www.mathematik.uni-marburg.d
 doc264.iconSrc = ICONPATH + "fileok.gif"
 doc264.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox264\"></td>"
 doc265 = insDoc(direditors, gLnk("S", "patch_bbox", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=editors/patch_bbox&project=busybox1185"))
-doc265.iconSrc = ICONPATH + "filefail.gif"
+doc265.iconSrc = ICONPATH + "fileempty.gif"
 doc265.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox265\"></td>"
 doc266 = insDoc(direditors, gLnk("S", "patch_toybox", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=editors/patch_toybox&project=busybox1185"))
-doc266.iconSrc = ICONPATH + "filefail.gif"
+doc266.iconSrc = ICONPATH + "fileempty.gif"
 doc266.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox266\"></td>"
 doc267 = insDoc(direditors, gLnk("S", "patch", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=editors/patch&project=busybox1185"))
 doc267.iconSrc = ICONPATH + "fileok.gif"
@@ -924,7 +924,7 @@ doc284 = insDoc(dirlibbb, gLnk("S", "bb_qsort", "http://www.mathematik.uni-marbu
 doc284.iconSrc = ICONPATH + "fileok.gif"
 doc284.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox284\"></td>"
 doc285 = insDoc(dirlibbb, gLnk("S", "bb_strtod", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/bb_strtod&project=busybox1185"))
-doc285.iconSrc = ICONPATH + "filefail.gif"
+doc285.iconSrc = ICONPATH + "fileempty.gif"
 doc285.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox285\"></td>"
 doc286 = insDoc(dirlibbb, gLnk("S", "bb_strtonum", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/bb_strtonum&project=busybox1185"))
 doc286.iconSrc = ICONPATH + "fileok.gif"
@@ -1023,7 +1023,7 @@ doc317 = insDoc(dirlibbb, gLnk("S", "hash_md5_sha", "http://www.mathematik.uni-m
 doc317.iconSrc = ICONPATH + "fileok.gif"
 doc317.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox317\"></td>"
 doc318 = insDoc(dirlibbb, gLnk("S", "hash_md5prime", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/hash_md5prime&project=busybox1185"))
-doc318.iconSrc = ICONPATH + "filefail.gif"
+doc318.iconSrc = ICONPATH + "fileempty.gif"
 doc318.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox318\"></td>"
 doc319 = insDoc(dirlibbb, gLnk("S", "herror_msg", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/herror_msg&project=busybox1185"))
 doc319.iconSrc = ICONPATH + "fileok.gif"
@@ -1128,13 +1128,13 @@ doc352 = insDoc(dirlibbb, gLnk("S", "ptr_to_globals", "http://www.mathematik.uni
 doc352.iconSrc = ICONPATH + "fileok.gif"
 doc352.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox352\"></td>"
 doc353 = insDoc(dirlibbb, gLnk("S", "pw_encrypt_des", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/pw_encrypt_des&project=busybox1185"))
-doc353.iconSrc = ICONPATH + "filefail.gif"
+doc353.iconSrc = ICONPATH + "fileempty.gif"
 doc353.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox353\"></td>"
 doc354 = insDoc(dirlibbb, gLnk("S", "pw_encrypt_md5", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/pw_encrypt_md5&project=busybox1185"))
-doc354.iconSrc = ICONPATH + "filefail.gif"
+doc354.iconSrc = ICONPATH + "fileempty.gif"
 doc354.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox354\"></td>"
 doc355 = insDoc(dirlibbb, gLnk("S", "pw_encrypt_sha", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/pw_encrypt_sha&project=busybox1185"))
-doc355.iconSrc = ICONPATH + "filefail.gif"
+doc355.iconSrc = ICONPATH + "fileempty.gif"
 doc355.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox355\"></td>"
 doc356 = insDoc(dirlibbb, gLnk("S", "pw_encrypt", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/pw_encrypt&project=busybox1185"))
 doc356.iconSrc = ICONPATH + "fileok.gif"
@@ -1245,7 +1245,7 @@ doc391 = insDoc(dirlibbb, gLnk("S", "write", "http://www.mathematik.uni-marburg.
 doc391.iconSrc = ICONPATH + "fileok.gif"
 doc391.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox391\"></td>"
 doc392 = insDoc(dirlibbb, gLnk("S", "xatonum_template", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/xatonum_template&project=busybox1185"))
-doc392.iconSrc = ICONPATH + "filefail.gif"
+doc392.iconSrc = ICONPATH + "fileempty.gif"
 doc392.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox392\"></td>"
 doc393 = insDoc(dirlibbb, gLnk("S", "xatonum", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libbb/xatonum&project=busybox1185"))
 doc393.iconSrc = ICONPATH + "fileok.gif"
@@ -1278,10 +1278,10 @@ doc402 = insDoc(dirlibbb, gLnk("S", "xregcomp", "http://www.mathematik.uni-marbu
 doc402.iconSrc = ICONPATH + "fileok.gif"
 doc402.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox402\"></td>"
 dirlibpwdgrp = insFld(foldersTree, gFld("libpwdgrp", ""))
-dirlibpwdgrp.iconSrc = ICONPATH + "folderopenfail.gif"
-dirlibpwdgrp.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirlibpwdgrp.iconSrc = ICONPATH + "folderopenok.gif"
+dirlibpwdgrp.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc403 = insDoc(dirlibpwdgrp, gLnk("S", "pwd_grp_internal", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libpwdgrp/pwd_grp_internal&project=busybox1185"))
-doc403.iconSrc = ICONPATH + "filefail.gif"
+doc403.iconSrc = ICONPATH + "fileempty.gif"
 doc403.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox403\"></td>"
 doc404 = insDoc(dirlibpwdgrp, gLnk("S", "pwd_grp", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=libpwdgrp/pwd_grp&project=busybox1185"))
 doc404.iconSrc = ICONPATH + "fileok.gif"
@@ -1533,10 +1533,10 @@ doc481 = insDoc(dirnetworking, gLnk("S", "hostname", "http://www.mathematik.uni-
 doc481.iconSrc = ICONPATH + "fileok.gif"
 doc481.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox481\"></td>"
 doc482 = insDoc(dirnetworking, gLnk("S", "httpd_indexcgi", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=networking/httpd_indexcgi&project=busybox1185"))
-doc482.iconSrc = ICONPATH + "filefail.gif"
+doc482.iconSrc = ICONPATH + "fileempty.gif"
 doc482.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox482\"></td>"
 doc483 = insDoc(dirnetworking, gLnk("S", "httpd_ssi", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=networking/httpd_ssi&project=busybox1185"))
-doc483.iconSrc = ICONPATH + "filefail.gif"
+doc483.iconSrc = ICONPATH + "fileempty.gif"
 doc483.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox483\"></td>"
 doc484 = insDoc(dirnetworking, gLnk("S", "httpd", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=networking/httpd&project=busybox1185"))
 doc484.iconSrc = ICONPATH + "fileok.gif"
@@ -1623,7 +1623,7 @@ doc510 = insDoc(dirnetworking, gLnk("S", "nbd-client", "http://www.mathematik.un
 doc510.iconSrc = ICONPATH + "fileok.gif"
 doc510.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox510\"></td>"
 doc511 = insDoc(dirnetworking, gLnk("S", "nc_bloaty", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=networking/nc_bloaty&project=busybox1185"))
-doc511.iconSrc = ICONPATH + "filefail.gif"
+doc511.iconSrc = ICONPATH + "fileempty.gif"
 doc511.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox511\"></td>"
 doc512 = insDoc(dirnetworking, gLnk("S", "nc", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=networking/nc&project=busybox1185"))
 doc512.iconSrc = ICONPATH + "fileok.gif"
@@ -1635,7 +1635,7 @@ doc514 = insDoc(dirnetworking, gLnk("S", "nslookup", "http://www.mathematik.uni-
 doc514.iconSrc = ICONPATH + "fileok.gif"
 doc514.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox514\"></td>"
 doc515 = insDoc(dirnetworking, gLnk("S", "ntpd_simple", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=networking/ntpd_simple&project=busybox1185"))
-doc515.iconSrc = ICONPATH + "filefail.gif"
+doc515.iconSrc = ICONPATH + "fileempty.gif"
 doc515.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox515\"></td>"
 doc516 = insDoc(dirnetworking, gLnk("S", "ntpd", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=networking/ntpd&project=busybox1185"))
 doc516.iconSrc = ICONPATH + "fileok.gif"
@@ -1659,7 +1659,7 @@ doc522 = insDoc(dirnetworking, gLnk("S", "tcpudp", "http://www.mathematik.uni-ma
 doc522.iconSrc = ICONPATH + "fileok.gif"
 doc522.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox522\"></td>"
 doc523 = insDoc(dirnetworking, gLnk("S", "tc", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=networking/tc&project=busybox1185"))
-doc523.iconSrc = ICONPATH + "filefail.gif"
+doc523.iconSrc = ICONPATH + "fileempty.gif"
 doc523.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox523\"></td>"
 doc524 = insDoc(dirnetworking, gLnk("S", "telnetd", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=networking/telnetd&project=busybox1185"))
 doc524.iconSrc = ICONPATH + "fileok.gif"
@@ -1809,94 +1809,94 @@ doc568 = insDoc(dirrunit, gLnk("S", "sv", "http://www.mathematik.uni-marburg.de/
 doc568.iconSrc = ICONPATH + "fileok.gif"
 doc568.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox568\"></td>"
 dirscripts = insFld(foldersTree, gFld("scripts", ""))
-dirscripts.iconSrc = ICONPATH + "folderopenfail.gif"
-dirscripts.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirscripts.iconSrc = ICONPATH + "folderopenok.gif"
+dirscripts.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 dirbasic = insFld(dirscripts, gFld("basic", ""))
-dirbasic.iconSrc = ICONPATH + "folderopenfail.gif"
-dirbasic.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirbasic.iconSrc = ICONPATH + "folderopenok.gif"
+dirbasic.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc569 = insDoc(dirbasic, gLnk("S", "docproc", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/basic/docproc&project=busybox1185"))
-doc569.iconSrc = ICONPATH + "filefail.gif"
+doc569.iconSrc = ICONPATH + "fileempty.gif"
 doc569.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox569\"></td>"
 doc570 = insDoc(dirbasic, gLnk("S", "fixdep", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/basic/fixdep&project=busybox1185"))
-doc570.iconSrc = ICONPATH + "filefail.gif"
+doc570.iconSrc = ICONPATH + "fileempty.gif"
 doc570.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox570\"></td>"
 doc571 = insDoc(dirbasic, gLnk("S", "split-include", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/basic/split-include&project=busybox1185"))
-doc571.iconSrc = ICONPATH + "filefail.gif"
+doc571.iconSrc = ICONPATH + "fileempty.gif"
 doc571.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox571\"></td>"
 doc572 = insDoc(dirscripts, gLnk("S", "echo", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/echo&project=busybox1185"))
-doc572.iconSrc = ICONPATH + "filefail.gif"
+doc572.iconSrc = ICONPATH + "fileempty.gif"
 doc572.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox572\"></td>"
 dirkconfig = insFld(dirscripts, gFld("kconfig", ""))
-dirkconfig.iconSrc = ICONPATH + "folderopenfail.gif"
-dirkconfig.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirkconfig.iconSrc = ICONPATH + "folderopenok.gif"
+dirkconfig.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc573 = insDoc(dirkconfig, gLnk("S", "confdata", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/confdata&project=busybox1185"))
-doc573.iconSrc = ICONPATH + "filefail.gif"
+doc573.iconSrc = ICONPATH + "fileempty.gif"
 doc573.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox573\"></td>"
 doc574 = insDoc(dirkconfig, gLnk("S", "conf", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/conf&project=busybox1185"))
-doc574.iconSrc = ICONPATH + "filefail.gif"
+doc574.iconSrc = ICONPATH + "fileempty.gif"
 doc574.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox574\"></td>"
 doc575 = insDoc(dirkconfig, gLnk("S", "expr", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/expr&project=busybox1185"))
-doc575.iconSrc = ICONPATH + "filefail.gif"
+doc575.iconSrc = ICONPATH + "fileempty.gif"
 doc575.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox575\"></td>"
 doc576 = insDoc(dirkconfig, gLnk("S", "gconf", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/gconf&project=busybox1185"))
-doc576.iconSrc = ICONPATH + "filefail.gif"
+doc576.iconSrc = ICONPATH + "fileempty.gif"
 doc576.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox576\"></td>"
 doc577 = insDoc(dirkconfig, gLnk("S", "images", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/images&project=busybox1185"))
-doc577.iconSrc = ICONPATH + "filefail.gif"
+doc577.iconSrc = ICONPATH + "fileempty.gif"
 doc577.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox577\"></td>"
 doc578 = insDoc(dirkconfig, gLnk("S", "kconfig_load", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/kconfig_load&project=busybox1185"))
-doc578.iconSrc = ICONPATH + "filefail.gif"
+doc578.iconSrc = ICONPATH + "fileempty.gif"
 doc578.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox578\"></td>"
 doc579 = insDoc(dirkconfig, gLnk("S", "kxgettext", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/kxgettext&project=busybox1185"))
-doc579.iconSrc = ICONPATH + "filefail.gif"
+doc579.iconSrc = ICONPATH + "fileempty.gif"
 doc579.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox579\"></td>"
 doc580 = insDoc(dirkconfig, gLnk("S", "lex.zconf", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/lex.zconf&project=busybox1185"))
-doc580.iconSrc = ICONPATH + "filefail.gif"
+doc580.iconSrc = ICONPATH + "fileempty.gif"
 doc580.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox580\"></td>"
 dirlxdialog = insFld(dirkconfig, gFld("lxdialog", ""))
-dirlxdialog.iconSrc = ICONPATH + "folderopenfail.gif"
-dirlxdialog.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirlxdialog.iconSrc = ICONPATH + "folderopenok.gif"
+dirlxdialog.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc581 = insDoc(dirlxdialog, gLnk("S", "checklist", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/lxdialog/checklist&project=busybox1185"))
-doc581.iconSrc = ICONPATH + "filefail.gif"
+doc581.iconSrc = ICONPATH + "fileempty.gif"
 doc581.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox581\"></td>"
 doc582 = insDoc(dirlxdialog, gLnk("S", "inputbox", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/lxdialog/inputbox&project=busybox1185"))
-doc582.iconSrc = ICONPATH + "filefail.gif"
+doc582.iconSrc = ICONPATH + "fileempty.gif"
 doc582.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox582\"></td>"
 doc583 = insDoc(dirlxdialog, gLnk("S", "lxdialog", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/lxdialog/lxdialog&project=busybox1185"))
-doc583.iconSrc = ICONPATH + "filefail.gif"
+doc583.iconSrc = ICONPATH + "fileempty.gif"
 doc583.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox583\"></td>"
 doc584 = insDoc(dirlxdialog, gLnk("S", "menubox", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/lxdialog/menubox&project=busybox1185"))
-doc584.iconSrc = ICONPATH + "filefail.gif"
+doc584.iconSrc = ICONPATH + "fileempty.gif"
 doc584.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox584\"></td>"
 doc585 = insDoc(dirlxdialog, gLnk("S", "msgbox", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/lxdialog/msgbox&project=busybox1185"))
-doc585.iconSrc = ICONPATH + "filefail.gif"
+doc585.iconSrc = ICONPATH + "fileempty.gif"
 doc585.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox585\"></td>"
 doc586 = insDoc(dirlxdialog, gLnk("S", "textbox", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/lxdialog/textbox&project=busybox1185"))
-doc586.iconSrc = ICONPATH + "filefail.gif"
+doc586.iconSrc = ICONPATH + "fileempty.gif"
 doc586.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox586\"></td>"
 doc587 = insDoc(dirlxdialog, gLnk("S", "util", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/lxdialog/util&project=busybox1185"))
-doc587.iconSrc = ICONPATH + "filefail.gif"
+doc587.iconSrc = ICONPATH + "fileempty.gif"
 doc587.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox587\"></td>"
 doc588 = insDoc(dirlxdialog, gLnk("S", "yesno", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/lxdialog/yesno&project=busybox1185"))
-doc588.iconSrc = ICONPATH + "filefail.gif"
+doc588.iconSrc = ICONPATH + "fileempty.gif"
 doc588.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox588\"></td>"
 doc589 = insDoc(dirkconfig, gLnk("S", "mconf", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/mconf&project=busybox1185"))
-doc589.iconSrc = ICONPATH + "filefail.gif"
+doc589.iconSrc = ICONPATH + "fileempty.gif"
 doc589.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox589\"></td>"
 doc590 = insDoc(dirkconfig, gLnk("S", "menu", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/menu&project=busybox1185"))
-doc590.iconSrc = ICONPATH + "filefail.gif"
+doc590.iconSrc = ICONPATH + "fileempty.gif"
 doc590.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox590\"></td>"
 doc591 = insDoc(dirkconfig, gLnk("S", "symbol", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/symbol&project=busybox1185"))
-doc591.iconSrc = ICONPATH + "filefail.gif"
+doc591.iconSrc = ICONPATH + "fileempty.gif"
 doc591.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox591\"></td>"
 doc592 = insDoc(dirkconfig, gLnk("S", "util", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/util&project=busybox1185"))
-doc592.iconSrc = ICONPATH + "filefail.gif"
+doc592.iconSrc = ICONPATH + "fileempty.gif"
 doc592.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox592\"></td>"
 doc593 = insDoc(dirkconfig, gLnk("S", "zconf.hash", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/zconf.hash&project=busybox1185"))
-doc593.iconSrc = ICONPATH + "filefail.gif"
+doc593.iconSrc = ICONPATH + "fileempty.gif"
 doc593.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox593\"></td>"
 doc594 = insDoc(dirkconfig, gLnk("S", "zconf.tab", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=scripts/kconfig/zconf.tab&project=busybox1185"))
-doc594.iconSrc = ICONPATH + "filefail.gif"
+doc594.iconSrc = ICONPATH + "fileempty.gif"
 doc594.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox594\"></td>"
 dirselinux = insFld(foldersTree, gFld("selinux", ""))
 dirselinux.iconSrc = ICONPATH + "folderopenok.gif"
@@ -1941,16 +1941,16 @@ doc606 = insDoc(dirshell, gLnk("S", "ash_ptr_hack", "http://www.mathematik.uni-m
 doc606.iconSrc = ICONPATH + "fileok.gif"
 doc606.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox606\"></td>"
 dirash_test = insFld(dirshell, gFld("ash_test", ""))
-dirash_test.iconSrc = ICONPATH + "folderopenfail.gif"
-dirash_test.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
+dirash_test.iconSrc = ICONPATH + "folderopenok.gif"
+dirash_test.iconSrcClosed = ICONPATH + "folderclosedok.gif"
 doc607 = insDoc(dirash_test, gLnk("S", "printenv", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=shell/ash_test/printenv&project=busybox1185"))
-doc607.iconSrc = ICONPATH + "filefail.gif"
+doc607.iconSrc = ICONPATH + "fileempty.gif"
 doc607.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox607\"></td>"
 doc608 = insDoc(dirash_test, gLnk("S", "recho", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=shell/ash_test/recho&project=busybox1185"))
-doc608.iconSrc = ICONPATH + "filefail.gif"
+doc608.iconSrc = ICONPATH + "fileempty.gif"
 doc608.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox608\"></td>"
 doc609 = insDoc(dirash_test, gLnk("S", "zecho", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=shell/ash_test/zecho&project=busybox1185"))
-doc609.iconSrc = ICONPATH + "filefail.gif"
+doc609.iconSrc = ICONPATH + "fileempty.gif"
 doc609.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox609\"></td>"
 doc610 = insDoc(dirshell, gLnk("S", "ash", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=shell/ash&project=busybox1185"))
 doc610.iconSrc = ICONPATH + "fileok.gif"
@@ -1980,7 +1980,7 @@ doc617 = insDoc(dirsysklogd, gLnk("S", "klogd", "http://www.mathematik.uni-marbu
 doc617.iconSrc = ICONPATH + "fileok.gif"
 doc617.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox617\"></td>"
 doc618 = insDoc(dirsysklogd, gLnk("S", "logger", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=sysklogd/logger&project=busybox1185"))
-doc618.iconSrc = ICONPATH + "filefail.gif"
+doc618.iconSrc = ICONPATH + "fileempty.gif"
 doc618.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox618\"></td>"
 doc619 = insDoc(dirsysklogd, gLnk("S", "logread", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=sysklogd/logread&project=busybox1185"))
 doc619.iconSrc = ICONPATH + "fileok.gif"
@@ -1989,7 +1989,7 @@ doc620 = insDoc(dirsysklogd, gLnk("S", "syslogd_and_logger", "http://www.mathema
 doc620.iconSrc = ICONPATH + "fileok.gif"
 doc620.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox620\"></td>"
 doc621 = insDoc(dirsysklogd, gLnk("S", "syslogd", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=sysklogd/syslogd&project=busybox1185"))
-doc621.iconSrc = ICONPATH + "filefail.gif"
+doc621.iconSrc = ICONPATH + "fileempty.gif"
 doc621.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox621\"></td>"
 dirutil_linux = insFld(foldersTree, gFld("util-linux", ""))
 dirutil_linux.iconSrc = ICONPATH + "folderopenok.gif"
@@ -2013,19 +2013,19 @@ doc627 = insDoc(dirutil_linux, gLnk("S", "fdformat", "http://www.mathematik.uni-
 doc627.iconSrc = ICONPATH + "fileok.gif"
 doc627.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox627\"></td>"
 doc628 = insDoc(dirutil_linux, gLnk("S", "fdisk_aix", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/fdisk_aix&project=busybox1185"))
-doc628.iconSrc = ICONPATH + "filefail.gif"
+doc628.iconSrc = ICONPATH + "fileempty.gif"
 doc628.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox628\"></td>"
 doc629 = insDoc(dirutil_linux, gLnk("S", "fdisk_gpt", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/fdisk_gpt&project=busybox1185"))
-doc629.iconSrc = ICONPATH + "filefail.gif"
+doc629.iconSrc = ICONPATH + "fileempty.gif"
 doc629.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox629\"></td>"
 doc630 = insDoc(dirutil_linux, gLnk("S", "fdisk_osf", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/fdisk_osf&project=busybox1185"))
-doc630.iconSrc = ICONPATH + "filefail.gif"
+doc630.iconSrc = ICONPATH + "fileempty.gif"
 doc630.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox630\"></td>"
 doc631 = insDoc(dirutil_linux, gLnk("S", "fdisk_sgi", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/fdisk_sgi&project=busybox1185"))
-doc631.iconSrc = ICONPATH + "filefail.gif"
+doc631.iconSrc = ICONPATH + "fileempty.gif"
 doc631.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox631\"></td>"
 doc632 = insDoc(dirutil_linux, gLnk("S", "fdisk_sun", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/fdisk_sun&project=busybox1185"))
-doc632.iconSrc = ICONPATH + "filefail.gif"
+doc632.iconSrc = ICONPATH + "fileempty.gif"
 doc632.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox632\"></td>"
 doc633 = insDoc(dirutil_linux, gLnk("S", "fdisk", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/fdisk&project=busybox1185"))
 doc633.iconSrc = ICONPATH + "fileok.gif"
@@ -2127,7 +2127,7 @@ doc665 = insDoc(dirutil_linux, gLnk("S", "umount", "http://www.mathematik.uni-ma
 doc665.iconSrc = ICONPATH + "fileok.gif"
 doc665.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox665\"></td>"
 doc666 = insDoc(dirutil_linux, gLnk("S", "um", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/um&project=busybox1185"))
-doc666.iconSrc = ICONPATH + "filefail.gif"
+doc666.iconSrc = ICONPATH + "fileempty.gif"
 doc666.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox666\"></td>"
 dirvolume_id = insFld(dirutil_linux, gFld("volume_id", ""))
 dirvolume_id.iconSrc = ICONPATH + "folderopenok.gif"
@@ -2184,43 +2184,43 @@ doc683 = insDoc(dirvolume_id, gLnk("S", "udf", "http://www.mathematik.uni-marbur
 doc683.iconSrc = ICONPATH + "fileok.gif"
 doc683.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox683\"></td>"
 doc684 = insDoc(dirvolume_id, gLnk("S", "unused_highpoint", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_highpoint&project=busybox1185"))
-doc684.iconSrc = ICONPATH + "filefail.gif"
+doc684.iconSrc = ICONPATH + "fileempty.gif"
 doc684.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox684\"></td>"
 doc685 = insDoc(dirvolume_id, gLnk("S", "unused_hpfs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_hpfs&project=busybox1185"))
-doc685.iconSrc = ICONPATH + "filefail.gif"
+doc685.iconSrc = ICONPATH + "fileempty.gif"
 doc685.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox685\"></td>"
 doc686 = insDoc(dirvolume_id, gLnk("S", "unused_isw_raid", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_isw_raid&project=busybox1185"))
-doc686.iconSrc = ICONPATH + "filefail.gif"
+doc686.iconSrc = ICONPATH + "fileempty.gif"
 doc686.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox686\"></td>"
 doc687 = insDoc(dirvolume_id, gLnk("S", "unused_lsi_raid", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_lsi_raid&project=busybox1185"))
-doc687.iconSrc = ICONPATH + "filefail.gif"
+doc687.iconSrc = ICONPATH + "fileempty.gif"
 doc687.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox687\"></td>"
 doc688 = insDoc(dirvolume_id, gLnk("S", "unused_lvm", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_lvm&project=busybox1185"))
-doc688.iconSrc = ICONPATH + "filefail.gif"
+doc688.iconSrc = ICONPATH + "fileempty.gif"
 doc688.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox688\"></td>"
 doc689 = insDoc(dirvolume_id, gLnk("S", "unused_mac", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_mac&project=busybox1185"))
-doc689.iconSrc = ICONPATH + "filefail.gif"
+doc689.iconSrc = ICONPATH + "fileempty.gif"
 doc689.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox689\"></td>"
 doc690 = insDoc(dirvolume_id, gLnk("S", "unused_minix", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_minix&project=busybox1185"))
-doc690.iconSrc = ICONPATH + "filefail.gif"
+doc690.iconSrc = ICONPATH + "fileempty.gif"
 doc690.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox690\"></td>"
 doc691 = insDoc(dirvolume_id, gLnk("S", "unused_msdos", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_msdos&project=busybox1185"))
-doc691.iconSrc = ICONPATH + "filefail.gif"
+doc691.iconSrc = ICONPATH + "fileempty.gif"
 doc691.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox691\"></td>"
 doc692 = insDoc(dirvolume_id, gLnk("S", "unused_nvidia_raid", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_nvidia_raid&project=busybox1185"))
-doc692.iconSrc = ICONPATH + "filefail.gif"
+doc692.iconSrc = ICONPATH + "fileempty.gif"
 doc692.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox692\"></td>"
 doc693 = insDoc(dirvolume_id, gLnk("S", "unused_promise_raid", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_promise_raid&project=busybox1185"))
-doc693.iconSrc = ICONPATH + "filefail.gif"
+doc693.iconSrc = ICONPATH + "fileempty.gif"
 doc693.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox693\"></td>"
 doc694 = insDoc(dirvolume_id, gLnk("S", "unused_silicon_raid", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_silicon_raid&project=busybox1185"))
-doc694.iconSrc = ICONPATH + "filefail.gif"
+doc694.iconSrc = ICONPATH + "fileempty.gif"
 doc694.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox694\"></td>"
 doc695 = insDoc(dirvolume_id, gLnk("S", "unused_ufs", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_ufs&project=busybox1185"))
-doc695.iconSrc = ICONPATH + "filefail.gif"
+doc695.iconSrc = ICONPATH + "fileempty.gif"
 doc695.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox695\"></td>"
 doc696 = insDoc(dirvolume_id, gLnk("S", "unused_via_raid", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/unused_via_raid&project=busybox1185"))
-doc696.iconSrc = ICONPATH + "filefail.gif"
+doc696.iconSrc = ICONPATH + "fileempty.gif"
 doc696.prependHTML = "<td valign=middle><input type=checkbox id=\"chkbox696\"></td>"
 doc697 = insDoc(dirvolume_id, gLnk("S", "util", "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files=util-linux/volume_id/util&project=busybox1185"))
 doc697.iconSrc = ICONPATH + "fileok.gif"
