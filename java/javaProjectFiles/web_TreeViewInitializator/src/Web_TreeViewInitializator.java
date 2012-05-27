@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.9.0";
+	private static final String VERSION = "0.1.9.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -224,9 +224,9 @@ public class Web_TreeViewInitializator {
 
 			//Print the files!
 			if(pathArr.length==1){
-				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1 + \""+newPath+"\" + P2))");
+				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1+\""+newPath+"\"+P2))");
 			}else{
-				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1 + \""+newPath+"\" + P2))");
+				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1+\""+newPath+"\"+P2))");
 			}
 
 			//Draw fileicons
@@ -251,7 +251,7 @@ public class Web_TreeViewInitializator {
 			}
 
 			//Add checkboxes
-			javascript.add("doc"+i+".prependHTML = \"<td valign=middle><input type=checkbox id=\\\"chkbox"+i+"\\\"></td>\"");
+			javascript.add("doc"+i+".prependHTML = C1+\""+i+"\"+C2");
 
 			oldArr = pathArr;			
 			
@@ -273,6 +273,8 @@ public class Web_TreeViewInitializator {
 		javascript.add("HIGHLIGHT = 0");
 		javascript.add("P1 = \""+prePath+"\"");
 		javascript.add("P2 = \""+postPath+"\"");
+		javascript.add("C1 = \"<td valign=middle><input type=checkbox id=\\\"chkbox\"");
+		javascript.add("C2 = \"\\\"></td>\"");
 		javascript.add("ICONPATH = '"+iconPath+"'");
 		javascript.add("MAX_LENGTH = "+files.size());
 
