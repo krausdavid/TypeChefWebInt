@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.8.0";
+	private static final String VERSION = "0.1.8.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -331,8 +331,7 @@ public class Web_TreeViewInitializator {
 				
 				Parser parser = new Parser(project_settings_xml_path);
 				
-				String[] xpathProjectPath = {"settings","global","project","path"};
-				projectPath = parser.read_setting(xpathProjectPath);
+				projectPath = parser.getSetting_ProjectPath();
 				String[] xpathProjectName = {"settings","global","project","fullname"};
 				String projectFullName = parser.read_setting(xpathProjectName);
 				String[] xpathProjectVersion = {"settings","global","project","version"};
