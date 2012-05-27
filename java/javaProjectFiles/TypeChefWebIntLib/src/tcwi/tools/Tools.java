@@ -29,16 +29,16 @@ public class Tools {
 	 */
 	public static String findAFreeProjectName(String str, String path){
 		String newProjectName = str;
-		if(!check.uniqueCheck(str, path)){
-			int i = 0;
-			while(!check.uniqueCheck(str, path)){
-				newProjectName = str+i;
+		if(!check.uniqueCheck(newProjectName, path)){
+			int i = 1;
+			while(!check.uniqueCheck(newProjectName, path)){
+				newProjectName = str+"_"+i;
 				i++;
 				if(i > 1000000){
 					exception.throwException(10, null, true, newProjectName);
 				}
 			}
 		}
-		return str;
+		return newProjectName;
 	}
 }

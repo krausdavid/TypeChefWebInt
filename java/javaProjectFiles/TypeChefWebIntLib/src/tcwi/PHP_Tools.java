@@ -5,7 +5,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class PHP_Tools {
-	private static final String VERSION = "0.0.0.2";
+	private static final String VERSION = "0.0.0.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Exceptions exception = new Exceptions();
 	
