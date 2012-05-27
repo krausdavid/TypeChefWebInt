@@ -183,7 +183,7 @@ public class Web_ProjectInitializator {
 			writeProjectXMLFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path);
 			
 			System.out.println("Writing DONE!\nScript DONE!");
-			System.out.printf("Duration: %.2f sec",(System.currentTimeMillis()-time)/1000.0);
+			System.out.printf("Duration: %.2f sec\n",(System.currentTimeMillis()-time)/1000.0);
 		}
 	}
 
