@@ -21,9 +21,15 @@ public class Web_ProjectInitializator {
 	private static boolean failureProject = false;
 	private static Exceptions exception = new Exceptions();
 
+	/**
+	 * Recursive method for get all files in a given path ends with ".c"
+	 * It saves this files into <tt>files</tt>
+	 * @param path
+	 * @return An error-string
+	 */
 	private static String getAllFiles(String path){
 		File file = new File(path);
-		File[] fileList = file.listFiles(); //TODO: Was ist mit einem falschen Pfad? Exception schmeiﬂen!
+		File[] fileList = file.listFiles();
 		try{
 			for(int i=0;i<fileList.length;i++){
 				if(fileList[i].isDirectory()){
