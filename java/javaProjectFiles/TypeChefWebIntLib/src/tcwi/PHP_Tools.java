@@ -5,12 +5,12 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class PHP_Tools {
-	private static final String VERSION = "0.0.0.1";
+	private static final String VERSION = "0.0.0.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Exceptions exception = new Exceptions();
 	
 	public static void main(String[] args) {
-		if(args.length!=2){
+		if(args.length<=2){
 			System.out.println("Help - PHP_Tools "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
 			System.out.println("\nUsage: PHP_Tools [FUNCTION] [GLOBAL_SETTINGS] [OPTIONAL1] [OPTIONAL2] ...");
