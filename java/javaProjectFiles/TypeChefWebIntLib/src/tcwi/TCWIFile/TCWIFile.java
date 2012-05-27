@@ -21,7 +21,7 @@ public class TCWIFile {
 		String str = file.readLine();
 		while(str!=null){
 			String[] strArr = str.split("\t");
-			CompareFile compareFile = new CompareFile(strArr[0],strArr[1],strArr[2],strArr[3],strArr[4]);
+			CompareFile compareFile = new CompareFile(strArr[0],strArr[1],strArr[2],strArr[3]);
 			fileArr.add(compareFile);
 			str = file.readLine();
 		}
@@ -45,7 +45,7 @@ public class TCWIFile {
 		String str = file.readLine();
 		while(str!=null){
 			String[] strArr = str.split("\t");
-			ErrorFile errFile = new ErrorFile(strArr[0],strArr[1],strArr[2],strArr[3],strArr[4]);
+			ErrorFile errFile = new ErrorFile(strArr[0],strArr[1],strArr[2],strArr[3]);
 			errFileArr.add(errFile);
 			str = file.readLine();
 		}

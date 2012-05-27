@@ -5,22 +5,19 @@ import tcwi.exception.Exceptions;
 public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
 	protected String path;
 	protected String haveNoDBG;
-	protected String isEmptyFile;
 	protected String isNotTrueSucceeded;
 	protected String haveTypeErrors;
 	
 	public CompareFile(){
 		this.path = "";
 		this.haveNoDBG = "";
-		this.isEmptyFile = "";
 		this.isNotTrueSucceeded = "";
 		this.haveTypeErrors = "";
 	}
 
-	public CompareFile(String path, String haveNoDBG, String isEmptyFile, String isNotTrueSucceeded, String haveTypeErrors) {
+	public CompareFile(String path, String haveNoDBG, String isNotTrueSucceeded, String haveTypeErrors) {
 		this.path = path;
 		this.haveNoDBG = haveNoDBG;
-		this.isEmptyFile = isEmptyFile;
 		this.isNotTrueSucceeded = isNotTrueSucceeded;
 		this.haveTypeErrors = haveTypeErrors;
 	}
@@ -31,14 +28,6 @@ public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
 
 	public void setPath(String path) {
 		this.path = path;
-	}
-
-	public String isEmptyFile() {
-		return isEmptyFile;
-	}
-
-	public void setEmptyFile(String isEmptyFile) {
-		this.isEmptyFile = isEmptyFile;
 	}
 
 	public String isNotTrueSucceeded() {
@@ -71,25 +60,20 @@ public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
 	 */
 	public boolean haveChanges(){
 		String[] noDBG = this.haveNoDBG.split("|");
-		String[] emptyFile = this.isEmptyFile.split("|");
 		String[] notTrueSucc = this.isNotTrueSucceeded.split("|");
 		String[] haveTypeErr = this.haveTypeErrors.split("|");
 
-		if(noDBG.length >= 2 && emptyFile.length >= 2 && notTrueSucc.length >= 2 && haveTypeErr.length >= 2){
+		if(noDBG.length >= 2 && notTrueSucc.length >= 2 && haveTypeErr.length >= 2){
 			if(!noDBG[0].equals(noDBG[1])){
 				return true;
 			}else{
-				if(!emptyFile[0].equals(emptyFile[1])){
+				if(!notTrueSucc[0].equals(notTrueSucc[1])){
 					return true;
 				}else{
-					if(!notTrueSucc[0].equals(notTrueSucc[1])){
+					if(!haveTypeErr[0].equals(haveTypeErr[1])){
 						return true;
 					}else{
-						if(!haveTypeErr[0].equals(haveTypeErr[1])){
-							return true;
-						}else{
-							return false;
-						}
+						return false;
 					}
 				}
 			}		
@@ -102,7 +86,7 @@ public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
 	
 	@Override
 	public String toString() {
-		return this.path+"\t"+haveNoDBG+"\t"+isEmptyFile+"\t"+isNotTrueSucceeded+"\t"+haveTypeErrors;
+		return this.path+"\t"+haveNoDBG+"\t"+isNotTrueSucceeded+"\t"+haveTypeErrors;
 	}
 
 	@Override

@@ -141,14 +141,10 @@ public class Web_ProjectCompare {
 				for(int i = 0;i<mainProjectErrArr.size();i++){
 					if(((ErrorFile) mainProjectErrArr.get(i)).getPath().equals(((ErrorFile) compareProjectErrArr.get(i)).getPath())){
 						String haveNoDBG = ((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG();
-						String isEmptyFile = ((ErrorFile) mainProjectErrArr.get(i)).isEmptyFile()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isEmptyFile();
 						String isNotTrueSucceeded = ((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded();;
 						String haveTypeErrors = ((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors();
 						if(((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG()!=((ErrorFile) compareProjectErrArr.get(i)).isHaveNoDBG()){
 							haveNoDBG = ((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isHaveNoDBG();
-						}
-						if(((ErrorFile) mainProjectErrArr.get(i)).isEmptyFile()!=((ErrorFile) compareProjectErrArr.get(i)).isEmptyFile()){
-							isEmptyFile = ((ErrorFile) mainProjectErrArr.get(i)).isEmptyFile()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isEmptyFile();
 						}
 						if(((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded()!=((ErrorFile) compareProjectErrArr.get(i)).isNotTrueSucceeded()){
 							isNotTrueSucceeded = ((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isNotTrueSucceeded();
@@ -156,8 +152,8 @@ public class Web_ProjectCompare {
 						if(((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors()!=((ErrorFile) compareProjectErrArr.get(i)).isHaveTypeErrors()){
 							haveTypeErrors = ((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isHaveTypeErrors();
 						}
-						if(!(haveNoDBG.equals("") && isEmptyFile.equals("") && isNotTrueSucceeded.equals("") && haveTypeErrors.equals(""))){
-							CompareFile compFile = new CompareFile(((ErrorFile) mainProjectErrArr.get(i)).getPath(),haveNoDBG,isEmptyFile,isNotTrueSucceeded,haveTypeErrors);
+						if(!(haveNoDBG.equals("") && isNotTrueSucceeded.equals("") && haveTypeErrors.equals(""))){
+							CompareFile compFile = new CompareFile(((ErrorFile) mainProjectErrArr.get(i)).getPath(),haveNoDBG,isNotTrueSucceeded,haveTypeErrors);
 							compFileArr.add(compFile);
 						}
 					}else{

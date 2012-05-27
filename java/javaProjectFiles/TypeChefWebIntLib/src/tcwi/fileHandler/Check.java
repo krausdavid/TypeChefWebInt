@@ -39,27 +39,6 @@ public class Check {
 			return "FAIL";
 		}
 	}
-	
-	/**
-	 * Check if a given file is empty
-	 * @param path
-	 * @return
-	 * @throws IOException
-	 */
-	public boolean isEmpty(String path) throws IOException{
-		if(!hasNoDBG(path)){
-			RandomAccessFile file = new RandomAccessFile(path+".dbg","r");
-			if(file.length()==0){
-				file.close();
-				return true;
-			}else{
-				file.close();
-				return false;
-			}
-		}else{
-			return true;
-		}
-	}
 
 	/**
 	 * Returns for a file <tt>true</tt> or <tt>false</tt> if TypeChef said "No type errors found." or not
@@ -94,7 +73,7 @@ public class Check {
 	public boolean isNotAFailFile(String path) throws IOException{
 		boolean[] flags = failFlags(path);
 		if(flags[0]==false){
-			return !flags[1]&&!flags[2]&&!flags[3];
+			return !flags[1]&&!flags[2];
 		}else{
 			return false;
 		}
@@ -113,19 +92,15 @@ public class Check {
 	public boolean[] failFlags(String path) throws IOException{
 		if(!hasNoDBG(path)){
 			RandomAccessFile file = new RandomAccessFile(path+".dbg","r");
-			boolean[] flags = {false,true,true,true};
+			boolean[] flags = {false,true,true};
 
-			if(file.length()!=0){
-				flags[1] = false;
-			}
-			
 			String str = file.readLine();
 			while(str!=null){
 				if(str.contains("True\tsucceeded")){
-					flags[2] = false;
+					flags[1] = false;
 				}
 				if(str.contains("No type errors found.")){
-					flags[3] = false;
+					flags[2] = false;
 					break;
 				}
 				str = file.readLine();
@@ -135,7 +110,7 @@ public class Check {
 
 			return flags;
 		}else{
-			boolean[] flags = {true,true,true,true};
+			boolean[] flags = {true,true,true};
 			return flags;
 		}
 	}
