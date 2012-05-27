@@ -14,7 +14,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.2.0";
+	private static final String VERSION = "0.1.2.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
