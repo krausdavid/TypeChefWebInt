@@ -30,6 +30,10 @@ $template->assign("langINFTXT_deletedProject_PART1", "Your current project has b
 $template->assign("langINFTXT_deletedProject_PART2", "to");
 $template->assign("langINFTXT_deletedProject_PART3", ". This project has been marked as favorite.");
 
+$template->assign("langINFTXT_emptyFields", "At least one field was left blank.");
+$template->assign("langINFTXT_nicknameAlreadySet", "The project name is already set! Another possibility is set in the field \"Nickname\".");
+$template->assign("langINFTXT_nicknameContainsBadCharacter", "The project chosen nickname contains characters that are not allowed. Allowed are letters, digits, dots, underscores and hyphens.");
+
 $template->assign("langTXT_actualProject", "Actual project");
 $template->assign("langTXT_compareTwoProjects", "Compare two projects");
 $template->assign("langTXT_hello", "Hello");
@@ -58,5 +62,7 @@ $template->assign("langTXTHOME_legendPoint3", "This C-File was excluded from ana
 $template->assign("langTXTHOME_legendPoint4", "The tested C-File has errors");
 $template->assign("langTXTHOME_legendPoint5", "The tested C-File hasn't errors");
 
+$template->assign("langTXTNEWPROJECT_loadSuccessfull", "The project was successfully loaded.");
+$template->assign("langTXTNEWPROJECT_loadError", "There was an error. Probably one of the parameters entered were incorrect.");
 $template->assign("langTXTNEWPROJECT_topic", "Enter the data for the new project");
 ?>

@@ -8,8 +8,17 @@
 	font-family: Verdana,Arial,sans-serif;
 	font-size:11px;
 }
+.text_small_red{
+	width: 200px;
+	margin: 0px;
+	padding: 2px;
+	border: 1px solid #FF3333;
+	color: #000000;
+	background: #FFFFFF;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:11px;
+}
 .button{
-	width: 80px;
 	border: 1px solid #000000;
 	color: #000000;
 	background: #DDDDDD;

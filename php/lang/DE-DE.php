@@ -31,6 +31,10 @@ $template->assign("langINFTXT_deletedProject_PART1", "Ihr aktuelles Projekt wurd
 $template->assign("langINFTXT_deletedProject_PART2", "nach");
 $template->assign("langINFTXT_deletedProject_PART3", "weitergeleitet. Dieses Projekt wurde als Favorit gekennzeichnet.");
 
+$template->assign("langINFTXT_emptyFields", "Mindestens 1 Feld wurde leer gelassen.");
+$template->assign("langINFTXT_nicknameAlreadySet", "Der Projekt-Nickname ist bereits vergeben! Eine andere Nickname-Möglichkeit wurde bereits in das Feld \"Nickname\" eingetragen.");
+$template->assign("langINFTXT_nicknameContainsBadCharacter", "Der gewählte Projekt-Nickname beinhaltet Zeichen, die nicht erlaubt sind. Erlaubt sind Buchstaben, Zahlen, Punkt, Unterstrich und Bindestrich.");
+
 $template->assign("langTXT_actualProject", "Aktuelles Projekt");
 $template->assign("langTXT_compareTwoProjects", "Zwei Projekte vergleichen");
 $template->assign("langTXT_hello", "Hallo");
@@ -59,6 +63,8 @@ $template->assign("langTXTHOME_legendPoint3", "Diese C-Datei wurde von der Analy
 $template->assign("langTXTHOME_legendPoint4", "Die geprüfte C-Datei weist Fehler auf");
 $template->assign("langTXTHOME_legendPoint5", "Die C-Datei enthält keine Fehler");
 
+$template->assign("langTXTNEWPROJECT_loadSuccessfull", "Das Projekt wurde erfolgreich geladen.");
+$template->assign("langTXTNEWPROJECT_loadError", "Es ist ein Fehler aufgetreten. Vermutlich war einer der eingegebenen Parameter falsch.");
 $template->assign("langTXTNEWPROJECT_topic", "Tragen Sie hier die Daten für das neue Projekt ein");
 
 ?>

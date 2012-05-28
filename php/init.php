@@ -19,8 +19,9 @@
 require("./run/core/tools.php");
 
 $WEBSITE_DEFAULT_URI = "";
+define("GLOBAL_SETTINGS", "/app/home/eifx/public_html/TypeChefWebInt/global_settings.xml"); //TODO: Make dynamic!!! (Maybe in the settings-dialog)
 
-$string = tools::readXMLFile("../global_settings.xml");
+$string = tools::readXMLFile(GLOBAL_SETTINGS);
 $xml = simplexml_load_string($string);
 foreach($xml->global->website[0]->attributes() as $a => $b) {
     if($a=="defaultURI"){
@@ -30,7 +31,7 @@ foreach($xml->global->website[0]->attributes() as $a => $b) {
 
 $WEBSITE_SESSION_PATH = "";
 
-$string = tools::readXMLFile("../global_settings.xml");
+$string = tools::readXMLFile(GLOBAL_SETTINGS);
 $xml = simplexml_load_string($string);
 foreach($xml->global->webint[0]->attributes() as $a => $b) {
     if($a=="path"){
@@ -40,7 +41,7 @@ foreach($xml->global->webint[0]->attributes() as $a => $b) {
 
 $WEBSITE_PROJECT_PATH = "";
 
-$string = tools::readXMLFile("../global_settings.xml");
+$string = tools::readXMLFile(GLOBAL_SETTINGS);
 $xml = simplexml_load_string($string);
 foreach($xml->global->projects[0]->attributes() as $a => $b) {
     if($a=="path"){
@@ -49,7 +50,7 @@ foreach($xml->global->projects[0]->attributes() as $a => $b) {
 }
 
 define("WEBSITE_NAME", "TypeChefWebInt");
-define("WEBSITE_VERSION", "0.1.6.0");
+define("WEBSITE_VERSION", "0.1.7.0");
 define("WEBSITE_AUTOR", "Alexander 'EifX' Eifler, David 'hullleman' Kraus");
 define("WEBSITE_SESSION_NAME", "session");
 
