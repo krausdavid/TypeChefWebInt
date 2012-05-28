@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.9.1";
+	private static final String VERSION = "0.1.9.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -224,9 +224,9 @@ public class Web_TreeViewInitializator {
 
 			//Print the files!
 			if(pathArr.length==1){
-				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1+\""+newPath+"\"+P2))");
+				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1+\""+newPath+".c\"+P2))");
 			}else{
-				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1+\""+newPath+"\"+P2))");
+				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+"\", P1+\""+newPath+".c\"+P2))");
 			}
 
 			//Draw fileicons
