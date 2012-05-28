@@ -21,6 +21,7 @@ public class Exceptions {
 		exception.put(11, "ERROR 11: Error in parsing the .project-File. It's an CompareFile. Wrong format?");
 		exception.put(12, "ERROR 12: Wrong project-type!");
 		exception.put(13, "ERROR 13: Wrong count of parameters!");
+		exception.put(14, "ERROR 14: This filename contains bad characters!");
 	}
 	
 	public void throwException(int i, Exception e, boolean isExit, String pathInformation){
