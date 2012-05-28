@@ -36,8 +36,10 @@ if($_REQUEST['cmd_send']){
 				$template->assign("project_version_new",$_POST['txt_version']);
 				$template->assign("project_path_new",$_POST['txt_path']);
 			}else{
-			echo "java -jar ../java/Web_ProjectInitializator.jar ".$_POST['txt_path']." ".$project_name_new[0]." ".$_POST['txt_name']." ".$_POST['txt_version']." ".$session->get("username")." ".GLOBAL_SETTINGS;
-				$shell_execute =nl2br(shell_exec("java -jar ../java/Web_ProjectInitializator.jar ".$_POST['txt_path']." ".$project_name_new[0]." ".$_POST['txt_name']." ".$_POST['txt_version']." ".$session->get("username")." ".GLOBAL_SETTINGS));
+				$shell_execute = nl2br(shell_exec("java -jar ../java/Web_ProjectInitializator.jar ".$_POST['txt_path']." ".$project_name_new[0]." ".$_POST['txt_name']." ".$_POST['txt_version']." ".$session->get("username")." ".GLOBAL_SETTINGS));
+				if($shell_execute!=""){
+					$shell_execute = $shell_execute."<br/>".nl2br(shell_exec("java -jar ../java/Web_TreeViewInitializator.jar ".$project_name_new[0]." ".GLOBAL_SETTINGS));
+				}
 				$template->assign("java_output", $shell_execute);
 			}
 		}

@@ -18,7 +18,7 @@
  */
  
 ob_start();
-error_reporting(0);
+error_reporting(E_ALL);
 
 header("HTTP/1.1 200 OK");
 header("Content-Type: text/html; charset=UTF-8");

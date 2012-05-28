@@ -5,5 +5,5 @@ BUILDALL = 0
 USEFRAMES = 0
 PRESERVESTATE = 1
 HIGHLIGHT = 0
-foldersTree = gFld("Dies ist ein leeres Projekt.", "")
+foldersTree = gFld("", "")
 foldersTree.treeID = "Frameset"

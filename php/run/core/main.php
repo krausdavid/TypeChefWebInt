@@ -72,6 +72,7 @@ if($session->get('login')!=true){
 
 	//List all projects in the treeview-option-box
 	$handle = opendir($WEBSITE_PROJECT_PATH);
+	$file_exist = false;
 	$i=0;
 	while($file = readdir($handle)){
 		if(substr($file,-8)==".project"){
@@ -79,14 +80,24 @@ if($session->get('login')!=true){
 			$projects_list[$i]['id'] = $i;
 			if($PROJECT_NAME==substr($file,0,-8)){
 				$projects_list[$i]['selected'] = true;
+				$file_exist = true;
 			}else{
 				$projects_list[$i]['selected'] = false;
 			}
 			$i++;
 		}
 	}
+	//Check if the current project were deleted
+	if(!$file_exist){
+		if(count($projects_list)>0){
+			$PROJECT_NAME = $projects_list[0]['name'];
+			$projects_list[0]['selected'] = true;
+		}
+	}
+
 	closedir($handle);
 	$template->assign("projects_list", $projects_list);
+	
 
 	//Check if the given project from the database is exist
 	if(count($projects_list)!=0){
@@ -126,6 +137,12 @@ if($session->get('login')!=true){
 				$PROJECT_PATH = $b."/";
 			}
 		}
+	}
+	
+	//Checks if the user want to delete a project
+	if($_REQUEST['cmd_delete_project']){
+		exec("java -jar ../java/Web_DeleteProject.jar ".$PROJECT_NAME." ".GLOBAL_SETTINGS);
+		header('Location: '.$WEBSITE_DEFAULT_URI.'/?lang='.$session->get("lang"));
 	}
 	
 	switch ($_GET['root']) {

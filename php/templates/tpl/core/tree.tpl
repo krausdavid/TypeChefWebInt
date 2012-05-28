@@ -15,6 +15,13 @@
 			</optgroup>
 		</select>
 	</form>
+	
+	{if $project_name neq "emptytree/empty"}
+	<form method="post" action="{$_wud}/?lang={$smarty.get.lang}" style="display:inline">
+		&nbsp;<input type="submit" value="{$langTXT_deleteProject}" name="cmd_delete_project" class="button" />
+	</form>
+	{/if}
+	
 	<div style="position:absolute; top:0; left:0;"><table border=0><tr><td><font size=-2><a style="font-size:6pt;text-decoration:none;color:black" href="http://www.treemenu.net/" target=_blank>with Javascript Tree Menu</a></font></td></tr></table></div>
 	<div class="treeview">
 		<script>initializeDocument()</script>
@@ -22,5 +29,7 @@
 			{$langTXT_pleaseActivateJavaScript}
 		</noscript>
 	</div>
-	<input type="button" onClick="check_boxes();" value="Evaluation" />
+	{if $project_name neq "emptytree/empty"}
+		<input type="button" onClick="check_boxes();" value="{$langTXT_evaluation}" class="button" />
+	{/if}
 {/strip}

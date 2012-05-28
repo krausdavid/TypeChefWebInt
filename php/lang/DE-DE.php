@@ -37,6 +37,8 @@ $template->assign("langINFTXT_nicknameContainsBadCharacter", "Der gewählte Proj
 
 $template->assign("langTXT_actualProject", "Aktuelles Projekt");
 $template->assign("langTXT_compareTwoProjects", "Zwei Projekte vergleichen");
+$template->assign("langTXT_deleteProject", "Projekt löschen");
+$template->assign("langTXT_evaluation", "Auswertung");
 $template->assign("langTXT_hello", "Hallo");
 $template->assign("langTXT_homepage", "Startseite");
 $template->assign("langTXT_login", "Login");
