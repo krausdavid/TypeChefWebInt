@@ -254,15 +254,20 @@ class textdb{
 						$arr_entry_str .= $arr_entry[$j].";";
 					}
 					
-					if(substr($arr_entry_str,-strlen($this->LINE_ENDING))==$this->LINE_ENDING){
-						$arr_entry_str = substr($arr_entry_str,0,-1-strlen($this->LINE_ENDING));
+					if(substr($arr_entry_str,-strlen($this->LINE_ENDING))!=$this->LINE_ENDING){
+						$arr_entry_str .= $this->LINE_ENDING;
 					}
-					
-					$arr_all_str .= $arr_entry_str.$this->LINE_ENDING;
+					$this->arr_all[$i] = $arr_entry_str;
 				}
 			}
-			$arr_all_str = substr($arr_all_str,0,-1-strlen($this->LINE_ENDING));
-			$this->dbc = $this->arr_all[0].$this->LINE_ENDING.$arr_all_str;
+			$this->dbc = "";
+			for($i=0;$i<count($this->arr_header);$i++){
+				if(substr($this->arr_all[$i],-strlen($this->LINE_ENDING))!=$this->LINE_ENDING){
+					$this->dbc .= $this->arr_all[$i].$this->LINE_ENDING;
+				}else{
+					$this->dbc .= $this->arr_all[$i];
+				}
+			}
 			
 		}else{
 			return false;
