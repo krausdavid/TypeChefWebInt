@@ -83,6 +83,17 @@ class textdb{
 		unlink($filepath.".lock");
 		fclose($handle);
 	}
+	
+	//Get the ID from an given DB-Field
+	private function getID($searchFieldName){
+		$fieldID=-1;
+		for($i=0;$i<count($this->arr_header);$i++){
+			if($searchFieldName==$this->arr_header[$i]){
+				$fieldID=$i;
+			}
+		}
+		return $fieldID;
+	}
 
 	//Connect the db with the local text-variable
 	//Implements some needed variables
@@ -118,12 +129,7 @@ class textdb{
 	//Returns an array with selected fields
 	function select_all($fieldname,$fieldval){
 		if(count($this->arr_header)>0){
-			$fieldID=-1;
-			for($i=0;$i<count($this->arr_header);$i++){
-				if($fieldname==$this->arr_header[$i]){
-					$fieldID=$i;
-				}
-			}
+			$fieldID=$this->getID($fieldname);
 			
 			if($fieldID==-1){
 				return false;
@@ -191,12 +197,7 @@ class textdb{
 	//Deletes an entry in the database
 	function delete($fieldname,$fieldval){
 		if(count($this->arr_header)>0){
-			$fieldID=-1;
-			for($i=0;$i<count($this->arr_header);$i++){
-				if($fieldname==$this->arr_header[$i]){
-					$fieldID=$i;
-				}
-			}
+			$fieldID=$this->getID($fieldname);
 			
 			if($fieldID==-1){
 				return false;
@@ -220,28 +221,16 @@ class textdb{
 	//Updates one or many entries
 	function update($updatefieldname,$updatefieldval,$searchfieldname,$searchfieldval){
 		if(count($this->arr_header)>0){
-			$fieldID=-1;
-			for($i=0;$i<count($this->arr_header);$i++){
-				if($searchfieldname==$this->arr_header[$i]){
-					$fieldID=$i;
-				}
-			}
+			$fieldID=$this->getID($searchfieldname);
 			
 			if($fieldID==-1){
 				return false;
 			}
 			
-			$arr_all_str="";
 			for($i=1;$i<count($this->arr_all);$i++){
 				$arr_entry = explode(";",$this->arr_all[$i]);
 				if($arr_entry[$fieldID]==$searchfieldval){
-					$fieldUpdateID=-1;
-					
-					for($j=0;$j<count($this->arr_header);$j++){
-						if($updatefieldname==$this->arr_header[$j]){
-							$fieldUpdateID=$j;
-						}
-					}
+					$fieldUpdateID=$this->getID($updatefieldname);
 					
 					if($fieldUpdateID==-1){
 						return false;
@@ -253,22 +242,20 @@ class textdb{
 					for($j=0;$j<count($arr_entry);$j++){
 						$arr_entry_str .= $arr_entry[$j].";";
 					}
+					$arr_entry_str = substr($arr_entry_str,0,-1);
 					
-					if(substr($arr_entry_str,-strlen($this->LINE_ENDING))!=$this->LINE_ENDING){
-						$arr_entry_str .= $this->LINE_ENDING;
-					}
 					$this->arr_all[$i] = $arr_entry_str;
 				}
 			}
 			$this->dbc = "";
-			for($i=0;$i<count($this->arr_header);$i++){
+			for($i=0;$i<count($this->arr_all);$i++){
 				if(substr($this->arr_all[$i],-strlen($this->LINE_ENDING))!=$this->LINE_ENDING){
 					$this->dbc .= $this->arr_all[$i].$this->LINE_ENDING;
 				}else{
 					$this->dbc .= $this->arr_all[$i];
 				}
 			}
-			
+			$this->dbc = substr($this->dbc,0,-strlen($this->LINE_ENDING));
 		}else{
 			return false;
 		}
@@ -277,12 +264,7 @@ class textdb{
 	//Count the given entries
 	function count($fieldname,$fieldval){
 		if(count($this->arr_header)>0){
-			$fieldID=-1;
-			for($i=0;$i<count($this->arr_header);$i++){
-				if($fieldname==$this->arr_header[$i]){
-					$fieldID=$i;
-				}
-			}
+			$fieldID=$this->getID($fieldname);
 			
 			if($fieldID==-1){
 				return false;
