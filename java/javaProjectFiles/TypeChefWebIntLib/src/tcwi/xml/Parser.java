@@ -150,4 +150,14 @@ public class Parser {
 		String[] xpath = {"settings","global","project","path"};
 		return this.getSetting(xpath);
 	}
+	
+	/**
+	 * A specific method to get the information, if the project have failures
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_ProjectFailureProject(){
+		String[] xpath = {"settings","global","project","failureProject"};
+		return this.getSetting(xpath);
+	}
 }

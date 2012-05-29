@@ -12,11 +12,10 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.9.5";
+	private static final String VERSION = "0.1.9.6";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
-	private static String folderSeparator;
 	private static Check check = new Check();
 	private static boolean failureProject = false;
 	private static String projectPath;
@@ -31,17 +30,7 @@ public class Web_TreeViewInitializator {
 	 * @param settingsFile
 	 */
 	public static void getAllFiles(String projectName, String settingsFile){
-		String[] xpathProject = null;
 		try{
-			//If the project have minimal one error, the main-folder in the tree-list is a fail folder
-			Parser projectParser = new Parser(project_settings_xml_path);
-
-			xpathProject = new String[]{"settings","global","projects","failureProject"};
-			if(projectParser.read_setting(xpathProject).equals("true")){
-				failureProject = true;
-			}else{
-				failureProject = false;
-			}
 			if(projectType.equals("normal")){
 				files = TCWIFile.createTCWIFileArrayFromErrorFile(project_settings_path);
 			}else if(projectType.equals("compare")){
@@ -51,16 +40,6 @@ public class Web_TreeViewInitializator {
 			}
 		}catch(IOException e){
 			exception.throwException(1, e, true, "");
-		} catch (Exception e) {
-			if(xpathProject!=null){
-				String path = "";
-				for(int i=0;i<xpathProject.length;i++){
-					path += xpathProject[i]+" ";
-				}
-				exception.throwException(2, e, true, path);
-			}else{
-				exception.throwException(2, e, true, "");
-			}
 		}
 	}
 	
@@ -194,7 +173,7 @@ public class Web_TreeViewInitializator {
 					//Draw foldericons
 					String p = "";
 					for(int k=0;k<=j;k++){
-						p+=folderSeparator+pathArr[k];
+						p+=check.folderSeparator()+pathArr[k];
 					}
 					p = projectPath+p;
 					if(projectType.equals("normal")){
@@ -323,8 +302,6 @@ public class Web_TreeViewInitializator {
 				
 				System.out.println("\nRead needed variables...");
 
-				folderSeparator = check.folderSeparator()+"";
-				
 				//Init the XMLParser
 				Parser xmlParser = new Parser(globalSettings);
 				
@@ -334,6 +311,10 @@ public class Web_TreeViewInitializator {
 				//Read the project dir
 				project_settings_path = WebIntProjectsPath+check.folderSeparator()+projectName+".project";
 				project_settings_xml_path = WebIntProjectsPath+check.folderSeparator()+projectName+".project.xml";
+
+				//If the project have minimal one error, the main-folder in the tree-list is a fail folder
+				Parser projectParser = new Parser(project_settings_xml_path);
+				failureProject = projectParser.getSetting_ProjectFailureProject().equals("true");
 				
 				Parser parser = new Parser(project_settings_xml_path);
 				
@@ -367,11 +348,12 @@ public class Web_TreeViewInitializator {
 				xpath = new String[]{"settings","website","generic","treeview","path"};
 				String readedPath = xmlParser.read_setting(xpath);
 
-				writeTxt(readedPath+folderSeparator+projectName+".js");
+				writeTxt(readedPath+check.folderSeparator()+projectName+".js");
 				System.out.println("DONE!");
 			} catch (IOException e) {
 				exception.throwException(1, e, true, "");
 			} catch (Exception e) {
+				e.printStackTrace();
 				if(xpath!=null){
 					String path = "";
 					for(int i=0;i<xpath.length;i++){
