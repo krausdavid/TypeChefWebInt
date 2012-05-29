@@ -7,13 +7,6 @@ public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
 	protected String haveNoDBG;
 	protected String isNotTrueSucceeded;
 	protected String haveTypeErrors;
-	
-	public CompareFile(){
-		this.path = "";
-		this.haveNoDBG = "";
-		this.isNotTrueSucceeded = "";
-		this.haveTypeErrors = "";
-	}
 
 	public CompareFile(String path, String haveNoDBG, String isNotTrueSucceeded, String haveTypeErrors) {
 		this.path = path;
@@ -59,9 +52,9 @@ public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
 	 * @return
 	 */
 	public boolean haveChanges(){
-		String[] noDBG = this.haveNoDBG.split("|");
-		String[] notTrueSucc = this.isNotTrueSucceeded.split("|");
-		String[] haveTypeErr = this.haveTypeErrors.split("|");
+		String[] noDBG = this.haveNoDBG.split("\\|");
+		String[] notTrueSucc = this.isNotTrueSucceeded.split("\\|");
+		String[] haveTypeErr = this.haveTypeErrors.split("\\|");
 
 		if(noDBG.length >= 2 && notTrueSucc.length >= 2 && haveTypeErr.length >= 2){
 			if(!noDBG[0].equals(noDBG[1])){
