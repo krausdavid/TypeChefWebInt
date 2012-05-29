@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.1.9.4";
+	private static final String VERSION = "0.1.9.5";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<TCWIFile> files;
@@ -282,7 +282,7 @@ public class Web_TreeViewInitializator {
 		javascript.add("foldersTree.treeID = \"Frameset\"");
 
 		if(projectType.equals("normal")){
-			if(failureProject){
+			if(!failureProject){
 				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
 				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
 			}else{
@@ -290,7 +290,7 @@ public class Web_TreeViewInitializator {
 				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
 			}
 		}else if(projectType.equals("compare")){
-			if(failureProject){
+			if(!failureProject){
 				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenidentical.gif\"");
 				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedidentical.gif\"");
 			}else{
