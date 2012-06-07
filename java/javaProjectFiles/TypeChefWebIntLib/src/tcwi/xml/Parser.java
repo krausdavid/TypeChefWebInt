@@ -160,4 +160,24 @@ public class Parser {
 		String[] xpath = {"settings","global","project","failureProject"};
 		return this.getSetting(xpath);
 	}
+	
+	/**
+	 * A specific method to get the full project name
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_ProjectFullname(){
+		String[] xpath = {"settings","global","project","fullname"};
+		return this.getSetting(xpath);
+	}
+	
+	/**
+	 * A specific method to get the information about the project type
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_ProjectType(){
+		String[] xpath = {"settings","global","project","type"};
+		return this.getSetting(xpath);
+	}
 }

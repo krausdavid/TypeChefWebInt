@@ -19,9 +19,11 @@
 		<link rel="shortcut icon" type="image/ico" href="{$_wud}/include/icons/favicon.ico"/>
 		{if $login eq true}
 			{* Scripts for TreeView *}
-			<script src="{$_wud}/include/javascripts/treeview/ua.js"></script>
-			<script src="{$_wud}/include/javascripts/treeview/ftiens4.js"></script>
-			<script src="{$_wud}/generics/treeview/{$project_name}.js"></script>
+			<script src="{$_wud}/include/javascripts/jsTree/jquery.cookie.js"></script>
+			<script src="{$_wud}/include/javascripts/jsTree/jquery.hotkeys.js"></script>
+			<script src="{$_wud}/include/javascripts/jsTree/jquery.js"></script>
+			<script src="{$_wud}/include/javascripts/jsTree/jquery.jstree.js"></script>
+			<link rel="stylesheet" type="text/css" href="{$_wud}/include/stylesheets/jsTree/style.css"/>
 			{* Scripts for SyntaxHighlighter *}
 			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shCore.js"></script>
 			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shBrushCpp.js"></script>
