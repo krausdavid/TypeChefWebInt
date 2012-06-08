@@ -22,13 +22,105 @@
 	</form>
 	{/if}
 	
-	<div style="position:absolute; top:0; left:0;"><table border=0><tr><td><font size=-2><a style="font-size:6pt;text-decoration:none;color:black" href="http://www.treemenu.net/" target=_blank>with Javascript Tree Menu</a></font></td></tr></table></div>
-	<div class="treeview">
-		<script>initializeDocument()</script>
-		<noscript>
-			{$langTXT_pleaseActivateJavaScript}
-		</noscript>
-	</div>
+	<div id="thetree" class="demo"></div>
+	{literal}
+		<script type="text/javascript" class="source">
+		$(function () {
+			$("#thetree").jstree({
+				"plugins" : [ "themes", "json_data", "ui", "checkbox", "cookies", "sort", "types"],
+				"types" : {
+					"types" : {
+						"folderfail" : {
+							"icon" : {
+								"image" : "../../images/jsTree/folderclosedfail.gif"
+							},
+							"icon_open" : {
+								"image" : "../../images/jsTree/folderopenfail.gif"
+							}
+						},
+						"folderok" : {
+							"icon" : {
+								"image" : "../../images/jsTree/folderclosedok.gif"
+							},
+							"icon_open" : {
+								"image" : "../../images/jsTree/folderopenok.gif"
+							}
+						},
+						"folderdifference" : {
+							"icon" : {
+								"image" : "../../images/jsTree/foldercloseddifference.gif"
+							},
+							"icon_open" : {
+								"image" : "../../images/jsTree/folderopendifference.gif"
+							}
+						},
+						"folderidentical" : {
+							"icon" : {
+								"image" : "../../images/jsTree/folderclosedidentical.gif"
+							},
+							"icon_open" : {
+								"image" : "../../images/jsTree/folderopenidentical.gif"
+							}
+						},
+						"filefail" : {
+							"icon" : {
+								"image" : "../../images/jsTree/filefail.gif"
+							}
+						},
+						"fileok" : {
+							"icon" : {
+								"image" : "../../images/jsTree/fileok.gif"
+							}
+						},
+						"fileempty" : {
+							"icon" : {
+								"image" : "../../images/jsTree/fileempty.gif"
+							}
+						},
+						"filedifference" : {
+							"icon" : {
+								"image" : "../../images/jsTree/filedifference.gif"
+							}
+						},
+						"fileidentical" : {
+							"icon" : {
+								"image" : "../../images/jsTree/fileidentical.gif"
+							}
+						}
+					}
+				},
+
+				"themes" : {
+					"theme" : "classic",
+					"dots" : true,
+					"icons" : true
+				},
+				
+				"core" : {
+					"animation" : 0
+				},
+				
+				"cookies" : {
+					"save_selected" : false
+				},
+
+				"json_data" : {
+					"ajax" : {
+						{/literal}
+						"url" : "../../../generics/jsTree/{$project_name}.json",
+						{literal}
+						"data" : function (n) {
+							return { id : n.attr ? n.attr("id") : 0 };
+						}
+					},
+
+				},
+		//	}).bind("select_node.jstree", function (e, data) { alert($('#test').jstree('get_checked')[0].id); });
+			}).bind("select_node.jstree", function (e, data) { alert(data.rslt.obj.data("link")); });
+		});
+		</script>
+	{/literal}
+	
 	{if $project_name neq "emptytree/empty"}
 		<input type="button" onClick="check_boxes();" value="{$langTXT_evaluation}" class="button" />
 	{/if}
