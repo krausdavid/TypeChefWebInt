@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.2.0.1";
+	private static final String VERSION = "0.2.0.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<TCWIFile> files;
 	private static Check check = new Check();
@@ -256,7 +256,7 @@ public class Web_TreeViewInitializator {
 					if(isADirChange(oldArr,pathArr)){
 						jsonString += "}]";
 					}else{
-						jsonString += "}],";
+						jsonString += "}]},{";
 					}
 				}else{
 					jsonString += "}]";
