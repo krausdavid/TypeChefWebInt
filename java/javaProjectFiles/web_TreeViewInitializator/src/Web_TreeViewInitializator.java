@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.2.0.0";
+	private static final String VERSION = "0.2.0.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<TCWIFile> files;
 	private static Check check = new Check();
@@ -23,7 +23,7 @@ public class Web_TreeViewInitializator {
 	 * @param projectName
 	 * @param settingsFile
 	 */
-	public static void getAllFiles(String projectName, String settingsFile, String projectType, String project_settings_path){
+	private static void getAllFiles(String projectName, String settingsFile, String projectType, String project_settings_path){
 		try{
 			if(projectType.equals("normal")){
 				files = TCWIFile.createTCWIFileArrayFromErrorFile(project_settings_path);
@@ -42,7 +42,7 @@ public class Web_TreeViewInitializator {
 	 * @param path
 	 * @return
 	 */
-	public static boolean isAFailFolder(String path, String projectType){
+	private static boolean isAFailFolder(String path, String projectType){
 		ArrayList<TCWIFile> filesNew = new ArrayList<TCWIFile>();
 		for(int i=0;i<files.size();i++){
 			if(projectType.equals("normal")){
@@ -80,7 +80,7 @@ public class Web_TreeViewInitializator {
 	 * @param path
 	 * @param prettyOutput
 	 */
-	public static void writeTxt(String path, String txt){
+	private static void writeTxt(String path, String txt){
 		try{
 			File f = new File(path);
 			f.delete();
@@ -92,24 +92,6 @@ public class Web_TreeViewInitializator {
 		}
 	}
 
-	/**
-	 * This method cleans a string. Only letters and numbers are excepted in a string, all other
-	 * values are replaced by an underscore.
-	 * @param str
-	 * @return a clean String
-	 */
-	public static String cleanStr(String str){
-		String newStr = "";
-		for(int i=0;i<str.length();i++){
-			if(((str.charAt(i)>=65)&&(str.charAt(i)<=90))||((str.charAt(i)>=97)&&(str.charAt(i)<=122))||((str.charAt(i)>=48)&&(str.charAt(i)<=57))){
-				newStr += str.charAt(i);
-			}else{
-				newStr += "_";
-			}
-		}
-		return "dir"+newStr;
-	}
-	
 	/**
 	 * Get the right icon for the treeview
 	 * @param path
@@ -170,7 +152,7 @@ public class Web_TreeViewInitializator {
 	 * @param pathNew
 	 * @return
 	 */
-	private static int getFolderDifference(String[] pathOld, String[] pathNew){
+	public static int getFolderDifference(String[] pathOld, String[] pathNew){
 		int diff = 0;
 		int maxLen = 0;
 		if(pathOld.length>pathNew.length){
@@ -190,6 +172,30 @@ public class Web_TreeViewInitializator {
 		}
 		
 		return 0;
+	}
+	
+	/**
+	 * Look, if a path change is a "DirChange"<br>
+	 * Ex:<br>
+	 * /foo/bar/bar.c<br>
+	 * /foo/ber.c<br>
+	 * This is not an dir change, because you go from a higher level dir to a lower level dir
+	 * 
+	 * @param oldArr
+	 * @param newArr
+	 * @return
+	 */
+	private static boolean isADirChange(String[] oldArr, String[] newArr){
+		if(oldArr.length<=newArr.length){
+			return false;
+		}else{
+			for(int i=0;i<newArr.length-1;i++){
+				if(!oldArr[i].equals(newArr[i])){
+					return false;
+				}
+			}
+		}
+		return true;
 	}
 	
 	/**
@@ -242,16 +248,23 @@ public class Web_TreeViewInitializator {
 
 			//If the path has changed, draw the missing parts
 			String p = "";
-			if(pathArr.length-1!=notEqual){
-				int foldDiff = getFolderDifference(oldArr,pathArr);
-				for(int j=1;j<=foldDiff;j++){
-					if(j==foldDiff){
-						jsonString += "}],";
-					}else{
+
+			//If a path is change, maybe a "}]" must set
+			int foldDiff = getFolderDifference(oldArr,pathArr);
+			for(int j=1;j<=foldDiff;j++){
+				if(j==foldDiff){
+					if(isADirChange(oldArr,pathArr)){
 						jsonString += "}]";
+					}else{
+						jsonString += "}],";
 					}
+				}else{
+					jsonString += "}]";
 				}
-				
+			}
+			
+			//Write folders
+			if(pathArr.length-1!=notEqual){
 				for(int j=notEqual;j<pathArr.length-1;j++){
 					for(int k=0;k<=j;k++){
 						p+=check.folderSeparator()+pathArr[k];
@@ -262,18 +275,19 @@ public class Web_TreeViewInitializator {
 						jsonString += "},{";
 					}
 					
-					jsonString += "\"data\":\""+pathArr[j]+"\",\"attr\":{\"id\":\"dir"+i+""+j+"\",\"rel\":\""+getIcon(p,projectType)+"\"},\"children\":[{";
+					jsonString += "\"data\":\""+pathArr[j].replace("\"", "_")+"\",\"attr\":{\"id\":\"dir"+i+""+j+"\",\"rel\":\""+getIcon(p,projectType)+"\"},\"children\":[{";
 
 				}
 			}else{
 				jsonString += "},{";
 				p = oldP;
 			}
-
+			
+			//Write files
 			newPath = newPath.replace("\\", "/");
 			newPath = newPath.replace(" ", "_");
 			
-			jsonString += "\"data\":\""+pathArr[pathArr.length-1]+"\",\"attr\":{\"id\":\"chkbox"+i+"\",\"rel\":\""+getIcon(files.get(i),projectType)+"\"},\"metadata\":{\"link\":\""+newPath+"\"}";
+			jsonString += "\"data\":\""+pathArr[pathArr.length-1].replace("\"", "_")+"\",\"attr\":{\"id\":\"chkbox"+i+"\",\"rel\":\""+getIcon(files.get(i),projectType)+"\"},\"metadata\":{\"link\":\""+newPath+"\"}";
 
 			oldArr = pathArr;
 			oldP = p;
