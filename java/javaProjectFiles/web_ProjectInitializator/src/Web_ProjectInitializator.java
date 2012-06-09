@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.2.4";
+	private static final String VERSION = "0.1.2.5";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -69,7 +69,7 @@ public class Web_ProjectInitializator {
 						failureProject = true;
 					}
 				}
-				file.writeBytes(files.get(i)+"\r\n");
+				file.writeBytes(files.get(i)+".c\r\n");
 			}
 			file.close();
 		}catch (IOException e){
