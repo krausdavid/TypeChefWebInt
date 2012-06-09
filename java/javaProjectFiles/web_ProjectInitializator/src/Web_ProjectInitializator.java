@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.2.5";
+	private static final String VERSION = "0.1.2.6";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -37,7 +37,7 @@ public class Web_ProjectInitializator {
 				}else{
 					if(fileList[i].toString().endsWith(".c")){
 						try{
-							String str = fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2);
+							String str = fileList[i].getAbsolutePath();
 							ErrorFile errFile = new ErrorFile(str,check.failFlags(str));
 							files.add(errFile);
 						}catch (IOException e){
@@ -69,7 +69,7 @@ public class Web_ProjectInitializator {
 						failureProject = true;
 					}
 				}
-				file.writeBytes(files.get(i)+".c\r\n");
+				file.writeBytes(files.get(i)+"\r\n");
 			}
 			file.close();
 		}catch (IOException e){
