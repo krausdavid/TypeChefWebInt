@@ -145,6 +145,8 @@ if($session->get('login')!=true){
 		header('Location: '.$WEBSITE_DEFAULT_URI.'/?lang='.$session->get("lang"));
 	}
 	
+	$template->assign("JSONTree", tools::read_simple_file($WEBSITE_TREEVIEW_PATH."/".$PROJECT_NAME.".json"));
+	
 	switch ($_GET['root']) {
 		case "":
 			require("./run/site/main.php");

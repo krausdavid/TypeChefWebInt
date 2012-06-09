@@ -27,71 +27,71 @@
 		<script type="text/javascript" class="source">
 		$(function () {
 			$("#thetree").jstree({
-				"plugins" : [ "themes", "json_data", "ui", "checkbox", "cookies", "sort", "types"],
+				"plugins" : [ "themes", "json_data", "ui", "checkbox", "cookies", "types"],
 				"types" : {
 					"types" : {
 						"folderfail" : {
 							"icon" : {
-								"image" : "../../images/jsTree/folderclosedfail.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/folderclosedfail.gif"
 							},
 							"icon_open" : {
-								"image" : "../../images/jsTree/folderopenfail.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/folderopenfail.gif"
 							}
 						},
 						"folderok" : {
 							"icon" : {
-								"image" : "../../images/jsTree/folderclosedok.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/folderclosedok.gif"
 							},
 							"icon_open" : {
-								"image" : "../../images/jsTree/folderopenok.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/folderopenok.gif"
 							}
 						},
 						"folderdifference" : {
 							"icon" : {
-								"image" : "../../images/jsTree/foldercloseddifference.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/foldercloseddifference.gif"
 							},
 							"icon_open" : {
-								"image" : "../../images/jsTree/folderopendifference.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/folderopendifference.gif"
 							}
 						},
 						"folderidentical" : {
 							"icon" : {
-								"image" : "../../images/jsTree/folderclosedidentical.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/folderclosedidentical.gif"
 							},
 							"icon_open" : {
-								"image" : "../../images/jsTree/folderopenidentical.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/folderopenidentical.gif"
 							}
 						},
 						"filefail" : {
 							"icon" : {
-								"image" : "../../images/jsTree/filefail.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/filefail.gif"
 							}
 						},
 						"fileok" : {
 							"icon" : {
-								"image" : "../../images/jsTree/fileok.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/fileok.gif"
 							}
 						},
 						"fileempty" : {
 							"icon" : {
-								"image" : "../../images/jsTree/fileempty.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/fileempty.gif"
 							}
 						},
 						"filedifference" : {
 							"icon" : {
-								"image" : "../../images/jsTree/filedifference.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/filedifference.gif"
 							}
 						},
 						"fileidentical" : {
 							"icon" : {
-								"image" : "../../images/jsTree/fileidentical.gif"
+								"image" : "{/literal}{$_wud}{literal}/include/images/jsTree/fileidentical.gif"
 							}
 						}
 					}
 				},
 
 				"themes" : {
-					"theme" : "classic",
+					"theme" : "default",
 					"dots" : true,
 					"icons" : true
 				},
@@ -103,18 +103,11 @@
 				"cookies" : {
 					"save_selected" : false
 				},
-
 				"json_data" : {
-					"ajax" : {
-						{/literal}
-						"url" : "../../../generics/jsTree/{$project_name}.json",
-						{literal}
-						"data" : function (n) {
-							return { id : n.attr ? n.attr("id") : 0 };
-						}
-					},
-
-				},
+				{/literal}
+				"data" : {$JSONTree}
+				{literal}
+				}
 		//	}).bind("select_node.jstree", function (e, data) { alert($('#test').jstree('get_checked')[0].id); });
 			}).bind("select_node.jstree", function (e, data) { alert(data.rslt.obj.data("link")); });
 		});

@@ -9,7 +9,7 @@
 	</global>
 	<website>
 		<generic>
-			<treeview path="/app/home/eifx/public_html/TypeChefWebInt/php/generics/treeview" icons="http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/include/images/treeview/" />
+			<treeview path="/app/home/eifx/public_html/TypeChefWebInt/php/generics/jsTree" icons="http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/include/images/treeview/" />
 		</generic>
 	</website>
 </settings>

@@ -74,6 +74,18 @@ class tools
 		return str_replace("/r", "<br>", $fcontent);
 	}
 	
+	function read_simple_file($file)
+	{
+		$handle = fopen($file, "r");
+		$fcontent = "";
+		if ($handle){
+			while(!feof($handle)){
+				$fcontent = $fcontent.fgets($handle);
+			}
+			fclose($handle);
+		}
+		return $fcontent;
+	}	
 	function readXMLFile($settingXMLPath){
 		$var="";
 		$handle = fopen($settingXMLPath,"r");
