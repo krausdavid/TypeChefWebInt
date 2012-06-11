@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.2.1.0";
+	private static final String VERSION = "0.2.1.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<TCWIFile> files;
 	private static Check check = new Check();
@@ -187,7 +187,7 @@ public class Web_TreeViewInitializator {
 				if(i<newLen){
 					if(!oldArr[i].equals(newArr[i])){
 						output[0] = oldLen-i;
-						output[1] = 0;
+						output[1] = newLen-i;
 						return output;
 					}
 				}
@@ -211,7 +211,7 @@ public class Web_TreeViewInitializator {
 				if(i<oldLen){
 					if(!newArr[i].equals(oldArr[i])){
 						output[0] = oldLen-i;
-						output[1] = newLen-oldLen+i;
+						output[1] = newLen-i;
 						return output;
 					}
 				}
@@ -370,7 +370,6 @@ public class Web_TreeViewInitializator {
 			
 			String JSONString = "[{\"data\":\""+projectFullName+" "+projectVersion+"\",\"attr\":{\"id\":\"maindir\",\"rel\":\""+folderMood+"\"},\"state\":\"open\",\"children\":[{"+generateJSONString(projectName,projectType,projectPath)+"}]}]";
 			System.out.println("Save folder tree...");
-			
 			//Build the path for the JSON-path
 			writeTxt(TreeViewPath+check.folderSeparator()+projectName+".json",JSONString);
 			System.out.println("DONE!");
