@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.2.0.4";
+	private static final String VERSION = "0.2.1.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<TCWIFile> files;
 	private static Check check = new Check();
@@ -147,34 +147,6 @@ public class Web_TreeViewInitializator {
 	}
 
 	/**
-	 * Count how many "}]" needed to close an dir
-	 * @param pathOld
-	 * @param pathNew
-	 * @return
-	 */
-	public static int getFolderDifference(String[] pathOld, String[] pathNew){
-		int diff = 0;
-		int maxLen = 0;
-		if(pathOld.length>pathNew.length){
-			maxLen = pathNew.length-1;
-			diff = pathOld.length-pathNew.length;
-		}else{
-			maxLen = pathOld.length-1;
-		}
-		
-		for(int i=0;i<pathOld.length-1;i++){
-			if(i>pathNew.length-1){
-				return diff;
-			}
-			if(!pathOld[i].equals(pathNew[i])){
-				return maxLen-i+diff;
-			}
-		}
-		
-		return 0;
-	}
-	
-	/**
 	 * Look, if a path change is a "DirChange"<br>
 	 * Ex:<br>
 	 * /foo/bar/bar.c<br>
@@ -196,6 +168,58 @@ public class Web_TreeViewInitializator {
 			}
 		}
 		return true;
+	}
+	
+	/**
+	 * Checks the difference between the old and the new path and
+	 * deletes or creates folders
+	 * @param oldArr
+	 * @param newArr
+	 * @return
+	 */
+	public static int[] dirDecision(String[] oldArr, String[] newArr){
+		int oldLen = oldArr.length-1;
+		int newLen = newArr.length-1;
+		int[] output = {0,0};			//Left: Folder to delete, Right: Folder to create
+		
+		if(oldLen>newLen){
+			for(int i=0;i<oldLen;i++){
+				if(i<newLen){
+					if(!oldArr[i].equals(newArr[i])){
+						output[0] = oldLen-i;
+						output[1] = 0;
+						return output;
+					}
+				}
+			}
+			output[0] = oldLen-newLen;
+			output[1] = 0;
+			return output;
+		}else if(oldLen==newLen){
+			for(int i=0;i<oldLen;i++){
+				if(i<newLen){
+					if(!oldArr[i].equals(newArr[i])){
+						output[0] = oldLen-i;
+						output[1] = oldLen-i;
+						return output;
+					}
+				}
+			}
+			return output;
+		}else{
+			for(int i=0;i<newLen;i++){
+				if(i<oldLen){
+					if(!newArr[i].equals(oldArr[i])){
+						output[0] = oldLen-i;
+						output[1] = newLen-oldLen+i;
+						return output;
+					}
+				}
+			}
+			output[0] = 0;
+			output[1] = newLen-oldLen;
+			return output;
+		}
 	}
 	
 	/**
@@ -222,37 +246,18 @@ public class Web_TreeViewInitializator {
 		String oldP = "";
 		int pathArrLen = 0;
 		for(int i=0;i<relativeFiles.size();i++){
-			int notEqual = -1;
 			String newPath = relativeFiles.get(i);
 			
 			String[] pathArr;
 			pathArr = relativeFiles.get(i).split(check.folderSeparator()+"");
-			
-			//Search for differences between the new and the last file
-			for(int j=0;j<pathArr.length;j++){
-				if(oldArr.length>j){
-					if(!pathArr[j].equals(oldArr[j])){
-						notEqual = j;
-						break;
-					}
-				}else{
-					notEqual = j;
-					break;
-				}
-			}
-			
-			//If a file exists in the tree, do nothing
-			if(notEqual==-1){
-				break;
-			}
 
 			//If the path has changed, draw the missing parts
 			String p = "";
-
 			//If a path is change, maybe a "}]" must set
-			int foldDiff = getFolderDifference(oldArr,pathArr);
-			for(int j=1;j<=foldDiff;j++){
-				if(j==foldDiff){
+			int[] dir = dirDecision(oldArr, pathArr);
+
+			for(int j=0;j<dir[0];j++){
+				if(j==dir[0]-1){
 					if(isADirChange(oldArr,pathArr)){
 						jsonString += "}]";
 					}else{
@@ -263,15 +268,16 @@ public class Web_TreeViewInitializator {
 				}
 			}
 			
+			
 			//Write folders
-			if(pathArr.length-1!=notEqual){
-				for(int j=notEqual;j<pathArr.length-1;j++){
+			if(dir[1]>0){
+				for(int j=0;j<dir[1];j++){
 					for(int k=0;k<=j;k++){
 						p+=check.folderSeparator()+pathArr[k];
 					}
 					p = projectPath+p;
 					
-					if(i!=0&&foldDiff==0&&j==notEqual){
+					if(i!=0&&dir[0]==0){
 						jsonString += "},{";
 					}
 					
@@ -279,7 +285,9 @@ public class Web_TreeViewInitializator {
 
 				}
 			}else{
-				jsonString += "},{";
+				if(i!=0){
+					jsonString += "},{";
+				}
 				p = oldP;
 			}
 			
@@ -361,7 +369,7 @@ public class Web_TreeViewInitializator {
 			}
 			
 			String JSONString = "[{\"data\":\""+projectFullName+" "+projectVersion+"\",\"attr\":{\"id\":\"maindir\",\"rel\":\""+folderMood+"\"},\"state\":\"open\",\"children\":[{"+generateJSONString(projectName,projectType,projectPath)+"}]}]";
-			
+			System.err.println(JSONString);
 			System.out.println("Save folder tree...");
 			
 			//Build the path for the JSON-path
