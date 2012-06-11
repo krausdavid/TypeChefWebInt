@@ -369,7 +369,6 @@ public class Web_TreeViewInitializator {
 			}
 			
 			String JSONString = "[{\"data\":\""+projectFullName+" "+projectVersion+"\",\"attr\":{\"id\":\"maindir\",\"rel\":\""+folderMood+"\"},\"state\":\"open\",\"children\":[{"+generateJSONString(projectName,projectType,projectPath)+"}]}]";
-			System.err.println(JSONString);
 			System.out.println("Save folder tree...");
 			
 			//Build the path for the JSON-path
