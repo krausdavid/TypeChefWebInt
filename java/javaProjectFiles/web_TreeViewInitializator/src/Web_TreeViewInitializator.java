@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.3.0.0";
+	private static final String VERSION = "0.3.0.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<TCWIFile> files;
 	private static Check check = new Check();
@@ -156,37 +156,46 @@ public class Web_TreeViewInitializator {
 	 * @param newArr
 	 * @return
 	 */
-	private static int dirDecision(String[] oldArr, String[] newArr){
+	private static int[] dirDecision(String[] oldArr, String[] newArr){
 		int oldLen = oldArr.length-1;
 		int newLen = newArr.length-1;
+		int[] output = {0,0};
 		
 		if(oldLen>newLen){
 			for(int i=0;i<oldLen;i++){
 				if(i<newLen){
 					if(!oldArr[i].equals(newArr[i])){
-						return newLen-i;
+						output[0] = newLen-i;
+						output[1] = i;
+						return output;
 					}
 				}
 			}
-			return 0;
+			return output;
 		}else if(oldLen==newLen){
 			for(int i=0;i<oldLen;i++){
 				if(i<newLen){
 					if(!oldArr[i].equals(newArr[i])){
-						return oldLen-i;
+						output[0] = oldLen-i;
+						output[1] = i;
+						return output;
 					}
 				}
 			}
-			return 0;
+			return output;
 		}else{
 			for(int i=0;i<newLen;i++){
 				if(i<oldLen){
 					if(!newArr[i].equals(oldArr[i])){
-						return newLen-i;
+						output[0] = newLen-i;
+						output[1] = i;
+						return output;
 					}
 				}
 			}
-			return newLen-oldLen;
+			output[0] = newLen-oldLen;
+			output[1] = oldLen;
+			return output;
 		}
 	}
 	
@@ -236,11 +245,11 @@ public class Web_TreeViewInitializator {
 
 //			//If the path has changed, draw the missing parts
 			String p = "";
-			int dir = dirDecision(oldArr, pathArr);
+			int[] dir = dirDecision(oldArr, pathArr);
 			
 			//Write folders
-			if(dir>0){
-				for(int j=0;j<dir;j++){
+			if(dir[0]>0){
+				for(int j=dir[1];j<(dir[0]+dir[1]);j++){
 					if(j==0){
 						javascript.add(cleanStr(pathArr[0])+" = insFld(foldersTree, gFld(\""+pathArr[0]+"\", \"\"))");
 					}else{
