@@ -88,7 +88,6 @@ public class Web_TreeViewInitializator {
 			RandomAccessFile file = new RandomAccessFile(path,"rw");
 			for(int i=0;i<javascript.size();i++){
 				file.writeBytes(javascript.get(i)+"\r\n");
-				System.out.println(javascript.get(i));
 			}
 			file.close();
 		}catch (IOException e){
