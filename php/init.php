@@ -49,17 +49,8 @@ foreach($xml->global->projects[0]->attributes() as $a => $b) {
 	}
 }
 
-$WEBSITE_TREEVIEW_PATH = "";
-
-$string = tools::readXMLFile(GLOBAL_SETTINGS);
-$xml = simplexml_load_string($string);
-foreach($xml->website->generic->treeview[0]->attributes() as $a => $b) {
-    if($a=="path"){
-		$WEBSITE_TREEVIEW_PATH = $b;
-	}
-}
 define("WEBSITE_NAME", "TypeChefWebInt");
-define("WEBSITE_VERSION", "0.2.0.0");
+define("WEBSITE_VERSION", "0.2.1.0");
 define("WEBSITE_AUTOR", "Alexander 'EifX' Eifler, David 'hullleman' Kraus");
 define("WEBSITE_SESSION_NAME", "session");
 

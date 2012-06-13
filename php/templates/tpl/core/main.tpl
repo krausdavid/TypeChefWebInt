@@ -19,16 +19,15 @@
 		<link rel="shortcut icon" type="image/ico" href="{$_wud}/include/icons/favicon.ico"/>
 		{if $login eq true}
 			{* Scripts for TreeView *}
-			<script src="{$_wud}/include/javascripts/jsTree/_lib/jquery.js"></script>
-			<script src="{$_wud}/include/javascripts/jsTree/_lib/jquery.cookie.js"></script>
-			<script src="{$_wud}/include/javascripts/jsTree/_lib/jquery.hotkeys.js"></script>
-			<script src="{$_wud}/include/javascripts/jsTree/jquery.jstree.js"></script>
+			<script src="{$_wud}/include/javascripts/treeview/ua.js"></script>
+			<script src="{$_wud}/include/javascripts/treeview/ftiens4.js"></script>
+			<script src="{$_wud}/generics/treeview/{$project_name}.js"></script>
 			{* Scripts for SyntaxHighlighter *}
 			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shCore.js"></script>
 			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shBrushCpp.js"></script>
 			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shBrushXml.js"></script>
 			<link type="text/css" rel="stylesheet" href="{$_wud}/include/stylesheets/syntaxhighlighter/shCoreDefault.css"/>
-			<script type="text/javascript">SyntaxHighlighter.all();</script>		
+			<script type="text/javascript">SyntaxHighlighter.all();</script>
 		{/if}
 			<script>
 				function check_boxes(){literal}{
