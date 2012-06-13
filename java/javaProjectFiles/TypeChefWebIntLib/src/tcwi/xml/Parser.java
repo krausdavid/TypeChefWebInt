@@ -130,6 +130,26 @@ public class Parser {
 		String[] xpath = {"settings","website","generic","treeview","path"};
 		return this.getSetting(xpath);
 	}
+
+	/**
+	 * A specific method to get the treeview-icons-path
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_TreeviewIconsPath(){
+		String[] xpath = {"settings","website","generic","treeview","icons"};
+		return this.getSetting(xpath);
+	}
+
+	/**
+	 * A specific method to get the project default URI
+	 * @param globalSettings
+	 * @return
+	 */
+	public String getSetting_WebsiteDefaultURI(){
+		String[] xpath = {"settings","global","website","defaultURI"};
+		return this.getSetting(xpath);
+	}
 	
 	/**
 	 * A specific method to get the version from an project
