@@ -52,7 +52,11 @@ if($_GET['lang']=="DE-DE" ||$_GET['lang']=="EN-US"){
 	$session->set("lang",$_GET['lang']);
 }
 
-require("./lang/".$session->get("lang").".php");
+if($session->get("lang")!=""){
+	require("./lang/".$session->get("lang").".php");
+}else{
+	require("./lang/EN-US.php");
+}
 
 //Check if the user is logged in
 if($session->get('login')!=true){

@@ -18,5 +18,7 @@
  */
 
 $session->kill();
+$guest_login=true;
+require("./run/account/login.php");
 header('Location: '.$WEBSITE_DEFAULT_URI.'/');
 ?>
