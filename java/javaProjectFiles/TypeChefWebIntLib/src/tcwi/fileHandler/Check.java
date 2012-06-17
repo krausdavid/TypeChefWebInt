@@ -119,7 +119,7 @@ public class Check {
 	 * This method returns the OS typical folder separator
 	 * @return The separator
 	 */
-	public String folderSeparator(){
+	public static String folderSeparator(){
 		File f = new File("");
 		if(f.getAbsolutePath().charAt(0)=='/'){
 			return "/";
