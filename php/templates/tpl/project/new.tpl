@@ -20,7 +20,7 @@
 	<br/><br/>
 {/if}
 {if $java_output eq ""}
-	<form action="{$_wud}/project?choice=new&lang={$smarty.get.lang}" method="post">
+	<form action="{$_wud}/project?choice=new" method="post">
 		{$langTXTNEWPROJECT_topic}:<br/><br/>
 		<table align="left" border="0" cellpadding=2" cellspacing="2" class="table_noborders">
 			<tr>

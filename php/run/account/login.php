@@ -37,7 +37,7 @@ if($guest_login==true){
 				$session->set("initial_project", $textdb_login->select_once("username",$_POST['txt_name'],"initial_project"));
 				$session->set("current_project", $textdb_login->select_once("username",$_POST['txt_name'],"initial_project"));
 				$session->set("lang", $textdb_login->select_once("username",$_POST['txt_name'],"language"));
-				header('Location: '.$WEBSITE_DEFAULT_URI.'/?lang='.$session->get("lang"));
+				header('Location: '.$WEBSITE_DEFAULT_URI.'/');
 			}else{
 				$template->assign("loginFailed", true);
 			}

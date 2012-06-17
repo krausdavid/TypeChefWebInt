@@ -63,7 +63,7 @@
 						<tr valign="top" class="body_main">
 							<th rowspan="2" class="body_tree" align="left">{include file="./core/tree.tpl"}</th>
 							<td height="25" class="body_menu">
-								<a href="{$_wud}/?lang={$smarty.get.lang}" class="menu_link">{$langTXT_homepage}</a> - {$langTXT_hello} {$login_username} - {if $rights neq true}<a href="{$_wud}/login?lang={$smarty.get.lang}" class="menu_link">{$langTXT_login}</a>{else}{$langTXT_settings} - <a href="{$_wud}/logout?lang={$smarty.get.lang}" class="menu_link">{$langTXT_logout}</a>{/if}
+								<a href="{$_wud}/" class="menu_link">{$langTXT_homepage}</a> - {$langTXT_hello} {$login_username} - {if $rights neq true}<a href="{$_wud}/login" class="menu_link">{$langTXT_login}</a>{else}{$langTXT_settings} - <a href="{$_wud}/logout" class="menu_link">{$langTXT_logout}</a>{/if}
 							</td>
 						</tr>
 						<tr>

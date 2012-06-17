@@ -48,15 +48,11 @@ $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
 //Check website language
-$LANG="";
-if($_GET['lang']==""){
-	$LANG = "EN-US";
-}
 if($_GET['lang']=="DE-DE" ||$_GET['lang']=="EN-US"){
-	$LANG = $_GET['lang'];
+	$session->set("lang",$_GET['lang']);
 }
 
-require("./lang/".$LANG.".php");
+require("./lang/".$session->get("lang").".php");
 
 //Check if the user is logged in
 if($session->get('login')!=true){
@@ -145,7 +141,7 @@ if($session->get('login')!=true){
 	//Checks if the user want to delete a project
 	if($_REQUEST['cmd_delete_project']){
 		exec("java -jar ../java/Web_DeleteProject.jar ".$PROJECT_NAME." ".GLOBAL_SETTINGS);
-		header('Location: '.$WEBSITE_DEFAULT_URI.'/?lang='.$session->get("lang"));
+		header('Location: '.$WEBSITE_DEFAULT_URI.'/');
 	}
 	
 	$template->assign("rights", $session->get("rights"));

@@ -6,7 +6,7 @@
 		</div>
 		<br/><br/>
 	{/if}
-	<form action="{$_wud}/login?lang={$smarty.get.lang}" method="post">
+	<form action="{$_wud}/login" method="post">
 		{$langTXT_name}:<br/>
 		<input type="text" name="txt_name" class="text_small" /><br/><br/>
 		{$langTXT_password}:<br/>
