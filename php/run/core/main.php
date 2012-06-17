@@ -60,6 +60,7 @@ require("./lang/".$LANG.".php");
 
 //Check if the user is logged in
 if($session->get('login')!=true){
+	$guest_login=true;
 	require("./run/account/login.php");
 }else{
 
@@ -114,7 +115,9 @@ if($session->get('login')!=true){
 			$session->set('initial_project', $projects_list[0]['name']);
 			$session->set('current_project', $projects_list[0]['name']);
 			$PROJECT_NAME = $projects_list[0]['name'];
-			$textdb_login->update("initial_project",$projects_list[0]['name'],"id",$session->get('id'));
+			if($session->get("id")!=0){
+				$textdb_login->update("initial_project",$projects_list[0]['name'],"id",$session->get('id'));
+			}
 		}
 	}
 	
@@ -144,6 +147,8 @@ if($session->get('login')!=true){
 		exec("java -jar ../java/Web_DeleteProject.jar ".$PROJECT_NAME." ".GLOBAL_SETTINGS);
 		header('Location: '.$WEBSITE_DEFAULT_URI.'/?lang='.$session->get("lang"));
 	}
+	
+	$template->assign("rights", $session->get("rights"));
 	
 	switch ($_GET['root']) {
 		case "":

@@ -61,14 +61,14 @@
 							</td>
 						</tr>
 						<tr valign="top" class="body_main">
-							<th rowspan="2" class="body_tree" align="left">{if $login eq true}{include file="./core/tree.tpl"}{else}&nbsp;{/if}</th>
+							<th rowspan="2" class="body_tree" align="left">{include file="./core/tree.tpl"}</th>
 							<td height="25" class="body_menu">
-								<a href="{$_wud}/?lang={$smarty.get.lang}" class="menu_link">{$langTXT_homepage}</a> - {if $login neq true}<a href="{$_wud}/login?lang={$smarty.get.lang}" class="menu_link">{$langTXT_login}</a>{else}{$langTXT_hello} {$login_username} - {$langTXT_settings} - <a href="{$_wud}/logout?lang={$smarty.get.lang}" class="menu_link">{$langTXT_logout}</a>{/if}
+								<a href="{$_wud}/?lang={$smarty.get.lang}" class="menu_link">{$langTXT_homepage}</a> - {$langTXT_hello} {$login_username} - {if $rights neq true}<a href="{$_wud}/login?lang={$smarty.get.lang}" class="menu_link">{$langTXT_login}</a>{else}{$langTXT_settings} - <a href="{$_wud}/logout?lang={$smarty.get.lang}" class="menu_link">{$langTXT_logout}</a>{/if}
 							</td>
 						</tr>
 						<tr>
 							<td valign="top" class="body_main">
-								{if $error_projectDeleted eq true}
+								{if $error_projectDeleted eq true && $rights eq true}
 									<div class="info_message">
 										<b>{$langINF_information}</b><br/><br/>
 										{$langINFTXT_deletedProject_PART1} {$error_projectDeleted_project_old} {$langINFTXT_deletedProject_PART2} {$error_projectDeleted_project_new} {$langINFTXT_deletedProject_PART3}
