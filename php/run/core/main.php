@@ -161,6 +161,9 @@ if($session->get('login')!=true){
 		case "execute":
 			require("./run/execute/main.php");
 			break;
+		case "file":
+			require("./run/site/permalink.php");
+			break;
 		case "login":
 			require("./run/account/login.php");
 			break;
