@@ -16,8 +16,7 @@
  * There are currently no notes.
  * =====================================================
  */
-//$string = tools::readXMLFile($PROJECT_PATH.$_GET['files'].".c.xml");
-$string = tools::readXMLFile("/app/home/eifx/samle.xml");
+$string = tools::readXMLFile($PROJECT_PATH.$_GET['files'].".c.xml");
 $xml = simplexml_load_string($string);
 
 $i=0;
@@ -25,10 +24,9 @@ while(true){
 	if($xml->parsererror[$i]->featurestr!=""){
 		$parsererror[$i]['featurestr'] = $xml->parsererror[$i]->featurestr;
 		$parsererror[$i]['msg'] = $xml->parsererror[$i]->msg;
-		$parsererror[$i]['file'] = $xml->parsererror[$i]->position->file;
 		$parsererror[$i]['line'] = $xml->parsererror[$i]->position->line;
 		$parsererror[$i]['col'] = $xml->parsererror[$i]->position->col;
-		$parsererror[$i]['id'] = $i;
+		$parsererror[$i]['id'] = $i+1;
 	}else{
 		break;
 	}
@@ -41,10 +39,9 @@ while(true){
 		$typeerror[$i]['featurestr'] = $xml->typeerror[$i]->featurestr;
 		$typeerror[$i]['severity'] = $xml->typeerror[$i]->severity;
 		$typeerror[$i]['msg'] = $xml->typeerror[$i]->msg;
-		$typeerror[$i]['file'] = $xml->typeerror[$i]->position->file;
 		$typeerror[$i]['line'] = $xml->typeerror[$i]->position->line;
 		$typeerror[$i]['col'] = $xml->typeerror[$i]->position->col;
-		$parsererror[$i]['id'] = $i;
+		$parsererror[$i]['id'] = $i+1;
 	}else{
 		break;
 	}
@@ -55,6 +52,7 @@ $template->assign("parsererror", $parsererror);
 $template->assign("parsererrorCount", count($parsererror));
 $template->assign("typeerror", $typeerror);
 $template->assign("typeerrorCount", count($typeerror));
+$template->assign("errorCount", count($typeerror)+count($parsererror));
 
 $template->assign("title", "Projekt '".$_GET['project']."' Dateien: ".$_GET['files'].".*");
 $template->assign("template", "./project/view.tpl"); 

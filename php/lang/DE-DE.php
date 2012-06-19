@@ -69,7 +69,7 @@ $template->assign("langTXTNEWPROJECT_loadSuccessfull", "Das Projekt wurde erfolg
 $template->assign("langTXTNEWPROJECT_loadError", "Es ist ein Fehler aufgetreten. Vermutlich war einer der eingegebenen Parameter falsch.");
 $template->assign("langTXTNEWPROJECT_topic", "Tragen Sie hier die Daten für das neue Projekt ein");
 
-$template->assign("langTXTVIEWPROJECT_error", "Das Projekt enthält Fehler.");
-$template->assign("langTXTVIEWPROJECT_noerror", "Das Projekt enthält keine Fehler.");
+$template->assign("langTXTVIEWPROJECT_error", "Diese C-Datei enthält Fehler.");
+$template->assign("langTXTVIEWPROJECT_noerror", "Diese C-Datei enthält keine Fehler.");
 
 ?>

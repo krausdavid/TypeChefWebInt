@@ -68,7 +68,7 @@ $template->assign("langTXTNEWPROJECT_loadSuccessfull", "The project was successf
 $template->assign("langTXTNEWPROJECT_loadError", "There was an error. Probably one of the parameters entered were incorrect.");
 $template->assign("langTXTNEWPROJECT_topic", "Enter the data for the new project");
 
-$template->assign("langTXTVIEWPROJECT_error", "This project contains errors.");
-$template->assign("langTXTVIEWPROJECT_noerror", "This project contains no error.");
+$template->assign("langTXTVIEWPROJECT_error", "This C-file contains errors.");
+$template->assign("langTXTVIEWPROJECT_noerror", "This C-file contains no errors.");
 
 ?>
