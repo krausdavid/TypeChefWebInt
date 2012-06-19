@@ -94,18 +94,18 @@ class tools
 			fclose($handle);
 		}
 		return $fcontent;
-	}	
+	}
+	
 	function readXMLFile($settingXMLPath){
 		$var="";
 		$handle = fopen($settingXMLPath,"r");
 		if($handle){
 			while(!feof($handle)){
-				$var.=fgets($handle);
+				$var .= fgets($handle);
 			}
+			fclose($handle);
 		}
 		return $var;
 	}
-
 }
-
 ?>
