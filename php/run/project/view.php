@@ -28,6 +28,7 @@ while(true){
 		$parsererror[$i]['file'] = $xml->parsererror[$i]->position->file;
 		$parsererror[$i]['line'] = $xml->parsererror[$i]->position->line;
 		$parsererror[$i]['col'] = $xml->parsererror[$i]->position->col;
+		$parsererror[$i]['id'] = $i;
 	}else{
 		break;
 	}
@@ -43,15 +44,17 @@ while(true){
 		$typeerror[$i]['file'] = $xml->typeerror[$i]->position->file;
 		$typeerror[$i]['line'] = $xml->typeerror[$i]->position->line;
 		$typeerror[$i]['col'] = $xml->typeerror[$i]->position->col;
+		$parsererror[$i]['id'] = $i;
 	}else{
 		break;
 	}
 	$i++;
 }
 
-$template->assign("errorcount", (count($parsererror)+count($typeerror)));
 $template->assign("parsererror", $parsererror);
+$template->assign("parsererrorCount", count($parsererror));
 $template->assign("typeerror", $typeerror);
+$template->assign("typeerrorCount", count($typeerror));
 
 $template->assign("title", "Projekt '".$_GET['project']."' Dateien: ".$_GET['files'].".*");
 $template->assign("template", "./project/view.tpl"); 
