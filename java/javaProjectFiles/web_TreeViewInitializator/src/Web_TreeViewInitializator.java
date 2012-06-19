@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.3.0.2";
+	private static final String VERSION = "0.3.1.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<TCWIFile> files;
 	private static Exceptions exception;
@@ -81,13 +81,19 @@ public class Web_TreeViewInitializator {
 	 * @param path
 	 * @param prettyOutput
 	 */
-	private static void writeTxt(String path){
+	private static void writeTxt(String path, boolean noChk){
 		try{
 			File f = new File(path);
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path,"rw");
 			for(int i=0;i<javascript.size();i++){
-				file.writeBytes(javascript.get(i)+"\r\n");
+				if(noChk){
+					if(!javascript.get(i).contains(".prependHTML =")){
+						file.writeBytes(javascript.get(i)+"\r\n");
+					}
+				}else{
+					file.writeBytes(javascript.get(i)+"\r\n");
+				}
 			}
 			file.close();
 		}catch (IOException e){
@@ -385,7 +391,8 @@ public class Web_TreeViewInitializator {
 			System.out.println("Save folder tree...");
 			
 			//Build the path for the JSON-path
-			writeTxt(TreeViewPath+folderSeparator+projectName+".js");
+			writeTxt(TreeViewPath+folderSeparator+projectName+".js",false);
+			writeTxt(TreeViewPath+folderSeparator+projectName+".nochk.js",true);
 			System.out.println("DONE!");
 		}
 	}
