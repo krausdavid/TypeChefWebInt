@@ -21,7 +21,6 @@
 require("./run/_lib/smarty/Smarty.class.php");
 require("./run/_lib/textdb/textdb.php");
 require("./run/core/session.php");
-require("./run/account/manage.php");
 
 //Set up the connection to the login database
 $textdb_login = new textdb();

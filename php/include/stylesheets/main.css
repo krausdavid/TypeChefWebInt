@@ -44,6 +44,22 @@
 	padding:5px;
 	border-bottom: #000000 1px solid;
 }
+.content{
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
+	background-color: #ffffff;
+	padding:5px;
+}
+.content_bigger{
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:16px;
+	background-color: #ffffff;
+	padding:5px;
+}
 .body_footer{
 	color: #FFFFFF;
 	text-decoration: none;

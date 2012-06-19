@@ -1,9 +1,9 @@
 ﻿{strip}
-	<div class="body_header">
+	<div class="content_bigger">
 		ERROR 403 : {$langERR_403Forbidden}
 	</div>
 	<br>
-	<div class="body">
+	<div class="content">
 		{$langERRTXT_403ErrorMessage}
 	</div>
 {/strip}
