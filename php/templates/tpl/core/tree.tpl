@@ -9,14 +9,16 @@
 					<option value="_" selected>{$langTXT_noProjectsExist}</option>
 				{/foreach}
 			</optgroup>
+			{if $rights eq true}
 				<optgroup label="{$langTXT_options}">
-				<option value="new" onclick="form.action='{$_wud}/project?choice=new';this.form.submit();">{$langTXT_newProject}</option>
-				<option value="match" onclick="form.action='{$_wud}/project?choice=match';this.form.submit();">{$langTXT_compareTwoProjects}</option>
-			</optgroup>
+					<option value="new" onclick="form.action='{$_wud}/project?choice=new';this.form.submit();">{$langTXT_newProject}</option>
+					<option value="match" onclick="form.action='{$_wud}/project?choice=match';this.form.submit();">{$langTXT_compareTwoProjects}</option>
+				</optgroup>
+			{/if}
 		</select>
 	</form>
 	
-	{if $project_name neq "emptytree/empty"}
+	{if $project_name neq "emptytree/empty" && $rights eq true}
 		<form method="post" action="{$_wud}/" style="display:inline">
 			&nbsp;<input type="submit" value="{$langTXT_deleteProject}" name="cmd_delete_project" class="button" />
 		</form>
@@ -29,7 +31,7 @@
 	{$langTXT_pleaseActivateJavaScript}
 	</noscript>
 	</div>
-	{if $project_name neq "emptytree/empty"}
+	{if $project_name neq "emptytree/empty" && $rights eq true}
 		<input type="button" onClick="check_boxes();" value="{$langTXT_evaluation}" class="button" />
 	{/if}
 {/strip}

@@ -16,6 +16,7 @@
  * There are currently no notes.
  * =====================================================
  */
+tools::right_exists();
 
 $template->assign("title", "Projekte vergleichen");
 $template->assign("template", "./project/match.tpl"); 
