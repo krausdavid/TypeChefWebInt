@@ -16,6 +16,8 @@
  * There are currently no notes.
  * =====================================================
  */
+tools::right_exists();
+
 	//TODO Projekt dynamisch machen 
 	echo "Anfrage wird bearbeitet...<br><br>";
 	echo "Web_WriteFileList wird ausgeführt<br>";

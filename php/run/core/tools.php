@@ -19,6 +19,15 @@
 
 class tools
 {
+	function have_rights(){
+		return $_SESSION["rights"];
+	}
+
+	function right_exists(){
+		if($_SESSION["rights"]==false){
+			header("Location: ".$WUD."403_forbidden");
+		}
+	}
 	
 	function read_settings($setting){
 		$handle = fopen(SETTING_FILE,"r");

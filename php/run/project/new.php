@@ -16,6 +16,8 @@
  * There are currently no notes.
  * =====================================================
  */
+tools::right_exists();
+
 if($_REQUEST['cmd_send']){
 	if($_POST['txt_name']=="" || $_POST['txt_nickname']=="" || $_POST['txt_version']=="" || $_POST['txt_path']==""){
 		$template->assign("error_emptyFields",true);

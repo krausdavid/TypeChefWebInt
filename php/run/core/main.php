@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
  * #####################################################
@@ -21,6 +21,7 @@
 require("./run/_lib/smarty/Smarty.class.php");
 require("./run/_lib/textdb/textdb.php");
 require("./run/core/session.php");
+require("./run/account/manage.php");
 
 //Set up the connection to the login database
 $textdb_login = new textdb();
@@ -195,6 +196,7 @@ $template->assign("_website_autor", WEBSITE_AUTOR);
 $template->assign("_website_year", date("Y",time()));
 $template->assign("login", $session->get('login'));
 $template->assign("login_username", $session->get('username'));
+$template->assign("rights", tools::have_rights());
 $template->assign("_wud", $WEBSITE_DEFAULT_URI);
 $template->display("./core/main.tpl");
 ?>
