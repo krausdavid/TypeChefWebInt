@@ -50,7 +50,7 @@ foreach($xml->global->projects[0]->attributes() as $a => $b) {
 }
 
 define("WEBSITE_NAME", "TypeChefWebInt");
-define("WEBSITE_VERSION", "0.2.1.4");
+define("WEBSITE_VERSION", "0.2.2.0");
 define("WEBSITE_AUTOR", "Alexander 'EifX' Eifler, David 'hullleman' Kraus");
 define("WEBSITE_SESSION_NAME", "session");
 
