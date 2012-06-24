@@ -14,10 +14,9 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.2.4";
+	private static final String VERSION = "0.0.2.5";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
-	private static Check check = new Check();
 	private static Exceptions exception = new Exceptions();
 	private static String newProjectName;
 	private static boolean projectWithChanges;
@@ -29,14 +28,14 @@ public class Web_ProjectCompare {
 	 */
 	private static void writeCompareFile(String path, String projectName, String compareName, ArrayList<TCWIFile> compFileArr){
 		//Try to find a free name
-		newProjectName = Tools.findAFreeProjectName(projectName + "_" + compareName + "_compare", path);
+		newProjectName = Tools.findAFreeProjectName(projectName + "_" + compareName + "_compare", path,false);
 		
 		//Save the .project file
 		projectWithChanges = false;
 		try{
-			File f = new File(path+check.folderSeparator()+newProjectName+".project");
+			File f = new File(path+Check.folderSeparator()+newProjectName+".project");
 			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+newProjectName+".project","rw");
+			RandomAccessFile file = new RandomAccessFile(path+Check.folderSeparator()+newProjectName+".project","rw");
 			for(int i=0;i<compFileArr.size();i++){
 				//Check if the project has changes. The result will be saved in the project.xml
 				if(projectWithChanges==false){
@@ -67,9 +66,9 @@ public class Web_ProjectCompare {
 			String minute = Tools.correctCalendarForm(c.get(GregorianCalendar.MINUTE));
 			String second = Tools.correctCalendarForm(c.get(GregorianCalendar.SECOND));
 
-			File f = new File(path+check.folderSeparator()+newProjectName+".project.xml");
+			File f = new File(path+Check.folderSeparator()+newProjectName+".project.xml");
 			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+newProjectName+".project.xml","rw");
+			RandomAccessFile file = new RandomAccessFile(path+Check.folderSeparator()+newProjectName+".project.xml","rw");
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
 			file.writeBytes("<settings>\r\n");
 			file.writeBytes("     <global>\r\n");
@@ -117,15 +116,15 @@ public class Web_ProjectCompare {
 			ArrayList<TCWIFile> mainProjectErrArr = null;
 			ArrayList<TCWIFile> compareProjectErrArr = null;
 			try{
-				path = projectPath + check.folderSeparator() + mainProject + ".project.xml";
-				pathProject = projectPath + check.folderSeparator() + mainProject + ".project";
+				path = projectPath + Check.folderSeparator() + mainProject + ".project.xml";
+				pathProject = projectPath + Check.folderSeparator() + mainProject + ".project";
 				parser = new Parser(path);
 				mainProjectVersion = parser.getSetting_ProjectVersion();
 				mainProjectPath = parser.getSetting_ProjectBasePath();
 				mainProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(pathProject);
 				
-				path = projectPath + check.folderSeparator() + compareProject + ".project.xml";
-				pathProject = projectPath + check.folderSeparator() + compareProject + ".project";
+				path = projectPath + Check.folderSeparator() + compareProject + ".project.xml";
+				pathProject = projectPath + Check.folderSeparator() + compareProject + ".project";
 				parser = new Parser(path);
 				compareProjectVersion = parser.getSetting_ProjectVersion();
 				compareProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(pathProject);

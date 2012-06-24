@@ -27,8 +27,11 @@ public class Tools {
 	 * @param path
 	 * @return
 	 */
-	public static String findAFreeProjectName(String str, String path){
+	public static String findAFreeProjectName(String str, String path, boolean searchAFreeDelta){
 		String newProjectName = str;
+		if(searchAFreeDelta){
+			newProjectName = str+"_d";
+		}
 		if(!check.uniqueCheck(newProjectName, path)){
 			int i = 1;
 			while(!check.uniqueCheck(newProjectName, path)){

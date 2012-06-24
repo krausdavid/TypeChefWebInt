@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.2.7";
+	private static final String VERSION = "0.1.3.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -59,9 +59,9 @@ public class Web_ProjectInitializator {
 	 */
 	private static void writeProjectFile(String path, String projectName){
 		try{
-			File f = new File(path+check.folderSeparator()+projectName+".project");
+			File f = new File(path+Check.folderSeparator()+projectName+".project");
 			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project","rw");
+			RandomAccessFile file = new RandomAccessFile(path+Check.folderSeparator()+projectName+".project","rw");
 			for(int i=0;i<files.size();i++){
 				//Check if the project has errors. The result will be saved in the project.xml
 				if(failureProject==false){
@@ -83,7 +83,7 @@ public class Web_ProjectInitializator {
 	 * @param projectName
 	 * @param projectPath
 	 */
-	private static void writeProjectXMLFile(String path, String projectName, String projectFullName, String projectVersion, String projectAuthor, String projectPath){
+	private static void writeProjectXMLFile(String path, String projectName, String projectFullName, String projectVersion, String projectAuthor, String projectPath, String projectHasDeltas, String projectDeltaMain){
 		try{
 			Calendar c = new GregorianCalendar();
 			String month = Tools.correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
@@ -92,13 +92,18 @@ public class Web_ProjectInitializator {
 			String minute = Tools.correctCalendarForm(c.get(GregorianCalendar.MINUTE));
 			String second = Tools.correctCalendarForm(c.get(GregorianCalendar.SECOND));
 
-			File f = new File(path+check.folderSeparator()+projectName+".project.xml");
+			File f = new File(path+Check.folderSeparator()+projectName+".project.xml");
 			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+check.folderSeparator()+projectName+".project.xml","rw");
+			RandomAccessFile file = new RandomAccessFile(path+Check.folderSeparator()+projectName+".project.xml","rw");
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
 			file.writeBytes("<settings>\r\n");
 			file.writeBytes("     <global>\r\n");
 			file.writeBytes("          <project idname=\""+projectName+"\" fullname=\""+projectFullName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+failureProject+"\" type=\"normal\" />\r\n");
+			if(projectHasDeltas.equals("true")){
+				file.writeBytes("          <delta hasDeltas=\"true\" mainProject=\""+projectDeltaMain+"\" />\r\n");
+			}else{
+				file.writeBytes("          <delta hasDeltas=\"false\" mainProject=\"_\" />\r\n");
+			}
 			file.writeBytes("          <init builder=\""+projectAuthor+"\" buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
 			file.writeBytes("     </global>\r\n");
 			file.writeBytes("</settings>\r\n");
@@ -113,7 +118,7 @@ public class Web_ProjectInitializator {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		if(args.length!=6){
+		if(args.length!=7){
 			System.out.println("Help - Web_ProjectInitializator "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
 			System.out.println("\nUsage: Web_ProjectInitializator [PROJECTPATH] [PROJECTNAME] [PROJECTFULLNAME] ");
@@ -128,6 +133,10 @@ public class Web_ProjectInitializator {
 			System.out.println("     Project version\n");
 			System.out.println("[PROJECTAUTHOR]");
 			System.out.println("     Project author\n");
+			System.out.println("[DELTAPROJECT]");
+			System.out.println("     true or false, if the project has deltas\n");
+			System.out.println("[DELTAMAIN]");
+			System.out.println("     The main-project who belongs to this delta. Type _ if this is the main-project\n");
 			System.out.println("[GLOBAL_SETTINGS]");
 			System.out.println("     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
@@ -136,7 +145,9 @@ public class Web_ProjectInitializator {
 			String projectFullName = args[2];
 			String projectVersion = args[3];
 			String projectAuthor = args[4];
-			String settingFile = args[5];
+			String projectHasDeltas = args[5];
+			String projectDeltaMain = args[6];
+			String settingFile = args[7];
 			
 			System.out.println("Starting initialization from project "+projectName+"...");
 			
@@ -153,7 +164,7 @@ public class Web_ProjectInitializator {
 			
 			//Removes an additional folder separator from an path end
 			//ex. /app/home/foo/bar/ --> /app/home/foo/bar
-			if(path.endsWith(check.folderSeparator()+"")){
+			if(path.endsWith(Check.folderSeparator()+"")){
 				path = path.substring(0,path.length()-1);
 			}
 			
@@ -185,8 +196,14 @@ public class Web_ProjectInitializator {
 			System.out.println("Sorting DONE!");
 			System.out.println("Writing down the project file...");
 			
-			writeProjectFile(projectPath,projectName);
-			writeProjectXMLFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path);
+			if(projectDeltaMain.equals("_")){
+				writeProjectFile(projectPath,projectName);
+				writeProjectXMLFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,projectDeltaMain);
+			}else{
+				String newProjectName = Tools.findAFreeProjectName(projectName, path, true);
+				writeProjectFile(projectPath,newProjectName);
+				writeProjectXMLFile(projectPath,newProjectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,projectDeltaMain);
+			}
 			
 			System.out.println("Writing DONE!\nScript DONE!");
 			System.out.printf("Duration: %.2f sec\n",(System.currentTimeMillis()-time)/1000.0);
