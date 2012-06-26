@@ -1,5 +1,5 @@
 ﻿{strip}
-	{$langTXT_actualProject}:&nbsp;
+	{$langTXT_actualProject}:<br/>
 	<form method="post" action="{$_wud}/" style="display:inline">
 		<select name="project" size="1">
 			<optgroup label="{$langTXT_projects}">
@@ -17,12 +17,12 @@
 			{/if}
 		</select>
 	</form>
-	
 	{if $project_name neq "emptytree/empty" && $rights eq true}
 		<form method="post" action="{$_wud}/" style="display:inline">
 			&nbsp;<input type="submit" value="{$langTXT_deleteProject}" name="cmd_delete_project" class="button" />
 		</form>
 	{/if}
+	<br/><br/>
 	
 	<div style="position:absolute; top:0; left:0;"><table border=0><tr><td><font size=-2><a style="font-size:6pt;text-decoration:none;color:black" href="http://www.treemenu.net/" target=_blank>with Javascript Tree Menu</a></font></td></tr></table></div>
 	<div class="treeview">

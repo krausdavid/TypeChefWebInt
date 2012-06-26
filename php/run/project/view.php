@@ -41,7 +41,7 @@ while(true){
 		$typeerror[$i]['msg'] = $xml->typeerror[$i]->msg;
 		$typeerror[$i]['line'] = $xml->typeerror[$i]->position->line;
 		$typeerror[$i]['col'] = $xml->typeerror[$i]->position->col;
-		$parsererror[$i]['id'] = $i+1;
+		$typeerror[$i]['id'] = $i+1;
 	}else{
 		break;
 	}

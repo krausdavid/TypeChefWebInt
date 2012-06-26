@@ -2,6 +2,7 @@
 <settings>
      <global>
           <project idname="busybox1185" fullname="BusyBox" version="1.18.5" path="/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5" failureProject="true" type="normal" />
-          <init builder="EifX" buildday="2012-06-19" buildtime="10:53:10" />
+          <delta hasDeltas="false" mainProject="_" />
+          <init builder="EifX" buildday="2012-06-26" buildtime="16:01:04" />
      </global>
 </settings>
