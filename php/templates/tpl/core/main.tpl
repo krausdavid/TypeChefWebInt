@@ -49,7 +49,7 @@
 		<table align="center" border="0" cellpadding="0" cellspacing="0">
 			<tr>
 				<td align="right">
-					<a href="{$_wud}/?lang=DE-DE"><img src="{$_wud}/include/images/lang/DE-DE.png" border="0" alt="DE-DE" /></a> <a href="{$_wud}/?lang=EN-US"><img src="{$_wud}/include/images/lang/EN-US.png" border="0" alt="EN-US" /></a>
+					<a href="{$_wud}/?lang=DE-DE&redirect={$redirectURL}"><img src="{$_wud}/include/images/lang/DE-DE.png" border="0" alt="DE-DE" /></a> <a href="{$_wud}/?lang=EN-US&redirect={$redirectURL}"><img src="{$_wud}/include/images/lang/EN-US.png" border="0" alt="EN-US" /></a>
 					<table align="center" border="0" cellpadding="0" cellspacing="0" class="table">
 						<colgroup>
 							<col width="400">

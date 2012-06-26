@@ -58,6 +58,12 @@ if($session->get("lang")!=""){
 	require("./lang/EN-US.php");
 }
 
+//Read the current URL for language-switch
+$template->assign("redirectURL",urlencode($_SERVER['REQUEST_URI']));
+if($_GET['redirect']!=""){
+	header('Location: '.$_GET['redirect']);
+}
+
 //Check if the user is logged in
 if($session->get('login')!=true){
 	$guest_login=true;
