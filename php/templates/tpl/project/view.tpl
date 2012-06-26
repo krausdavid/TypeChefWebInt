@@ -9,59 +9,30 @@
 	<br/>
 	Permalink: <a href="{$_wud}/file?p={$smarty.get.project}/{$smarty.get.files}" class="link">{$_wud}/file?p={$smarty.get.project}/{$smarty.get.files}</a>
 	<br/><br/>
-	{if $parseerrorCount neq "0"}
-		<table align="left" border="0" cellpadding="0" cellspacing="0" class="content" width="100%">
+	
+	{if $parsererrorCount neq "0" || $typeerrorCount neq "0"}
+		{$langTXTVIEWPROJECT_result}:
+	{/if}
+	
+	{if $parsererrorCount neq "0"}
+		<div class="teletype">
+			Parser-Errors:<br/><br/>
 			{foreach from=$parsererror item=parsererror name=parsererror_name}
-				<tr>
-					<td nowrap>ParserError Nr.</td>
-					<td>{$parsererror.id}</td>
-				</tr>
-				<tr>
-					<td>Feature String</td>
-					<td>{$parsererror.featurestr}</td>
-				</tr>
-				<tr>
-					<td>Message</td>
-					<td>{$parsererror.msg}</td>
-				</tr>
-				<tr>
-					<td>Position</td>
-					<td>Line: {$parsererror.line}, Col: {$parsererror.col}</td>
-				</tr>
-				<tr>
-					<td colspan="2"><hr/></td>
-				</tr>
+				Error Nr. {$parsererror.id}:<br/>
+				You've got an error with the following configuration: {$parsererror.featurestr}<br/>{$parsererror.msg}<br/>
+				Error in line {$parsererror.line}:{$parsererror.col} in the PI-file.<br/><br/>
 			{/foreach}
-		</table>
+		</div>
 	{/if}
 	<br/><br/>
 	{if $typeerrorCount neq "0"}
-		<table align="left" border="0" cellpadding="0" cellspacing="0" class="content" width="100%">
+		<div class="teletype">
+			Type-Errors:<br/><br/>
 			{foreach from=$typeerror item=typeerror name=typeerror_name}
-				<tr>
-					<td nowrap>TypeError Nr.</td>
-					<td>{$typeerror.id}</td>
-				</tr>
-				<tr>
-					<td>Feature String</td>
-					<td>{$typeerror.featurestr}</td>
-				</tr>
-				<tr>
-					<td>Severity</td>
-					<td>{$typeerror.severity}</td>
-				</tr>
-				<tr>
-					<td>Message</td>
-					<td>{$typeerror.msg}</td>
-				</tr>
-				<tr>
-					<td>Position</td>
-					<td>Line: {$typeerror.line}, Col: {$typeerror.col}</td>
-				</tr>
-				<tr>
-					<td colspan="2"><hr/></td>
-				</tr>
+				Error Nr. {$typeerror.id}:<br/>
+				You've got an <b>{$typeerror.severity}</b> with the following configuration: {$typeerror.featurestr}<br/>{$typeerror.msg}<br/>
+				Error in line {$typeerror.line}:{$typeerror.col} in the PI-file.<br/><br/>
 			{/foreach}
-		</table>
+		</div>
 	{/if}
 {/strip}
