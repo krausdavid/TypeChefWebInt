@@ -11,6 +11,18 @@ public class TypeError {
 	private String toLine;
 	private String toCol;
 	
+	public TypeError(){
+		this.featurestr="";
+		this.msg="";
+		this.severity="";
+		this.fromFile="";
+		this.fromLine="";
+		this.fromCol="";
+		this.toFile="";
+		this.toLine="";
+		this.toCol="";
+	}
+	
 	public TypeError(String featurestr, String msg, String severity, String fromFile, String fromLine, String fromCol, String toFile, String toLine, String toCol) {
 		this.featurestr = featurestr;
 		this.msg = msg;

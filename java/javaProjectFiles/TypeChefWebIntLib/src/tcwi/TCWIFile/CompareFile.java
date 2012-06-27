@@ -1,18 +1,19 @@
 package tcwi.TCWIFile;
 
-import tcwi.exception.Exceptions;
+import java.util.ArrayList;
 
 public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
-	protected String path;
-	protected String haveNoDBG;
-	protected String isNotTrueSucceeded;
-	protected String haveTypeErrors;
 
-	public CompareFile(String path, String haveNoDBG, String isNotTrueSucceeded, String haveTypeErrors) {
-		this.path = path;
-		this.haveNoDBG = haveNoDBG;
-		this.isNotTrueSucceeded = isNotTrueSucceeded;
-		this.haveTypeErrors = haveTypeErrors;
+	protected String path;
+	protected boolean fileExist;
+	protected boolean compileError;
+	protected ArrayList<ParserErrorCompare> parserError;
+	protected ArrayList<TypeErrorCompare> typeError;
+	
+	public CompareFile(){
+		this.path = "";
+		parserError = new ArrayList<ParserErrorCompare>();
+		typeError = new ArrayList<TypeErrorCompare>();
 	}
 
 	public String getPath() {
@@ -23,77 +24,75 @@ public class CompareFile extends TCWIFile implements Comparable<CompareFile>{
 		this.path = path;
 	}
 
-	public String isNotTrueSucceeded() {
-		return isNotTrueSucceeded;
+	public boolean isFileExist() {
+		return fileExist;
 	}
 
-	public void setNotTrueSucceeded(String isNotTrueSucceeded) {
-		this.isNotTrueSucceeded = isNotTrueSucceeded;
+	public void setFileExist(boolean fileExist) {
+		this.fileExist = fileExist;
 	}
 
-	public String isHaveTypeErrors() {
-		return haveTypeErrors;
+	public boolean isCompileError() {
+		return compileError;
 	}
 
-	public void setHaveTypeErrors(String haveTypeErrors) {
-		this.haveTypeErrors = haveTypeErrors;
-	}
-	
-	public String isHaveNoDBG() {
-		return haveNoDBG;
+	public void setCompileError(boolean compileError) {
+		this.compileError = compileError;
 	}
 
-	public void setHaveNoDBG(String haveNoDBG) {
-		this.haveNoDBG = haveNoDBG;
-	}
-	
-	/**
-	 * Check if the CompareFile have changes
-	 * @return
-	 */
-	public boolean haveChanges(){
-		String[] noDBG = this.haveNoDBG.split("\\|");
-		String[] notTrueSucc = this.isNotTrueSucceeded.split("\\|");
-		String[] haveTypeErr = this.haveTypeErrors.split("\\|");
-
-		if(noDBG.length >= 2 && notTrueSucc.length >= 2 && haveTypeErr.length >= 2){
-			if(!noDBG[0].equals(noDBG[1])){
-				return true;
-			}else{
-				if(!notTrueSucc[0].equals(notTrueSucc[1])){
-					return true;
-				}else{
-					if(!haveTypeErr[0].equals(haveTypeErr[1])){
-						return true;
-					}else{
-						return false;
-					}
-				}
-			}		
-		}else{
-			Exceptions exception = new Exceptions();
-			exception.throwException(11, null, true, "");
-			return true;
+	public void addDifference(Object first, Object second){
+		if(first instanceof ParserError && second instanceof ParserError){
+			ParserErrorCompare e = new ParserErrorCompare((ParserError) first,(ParserError) second);
+			parserError.add(e);
+		}
+		if(first instanceof TypeError && second instanceof TypeError){
+			TypeErrorCompare e = new TypeErrorCompare((TypeError) first, (TypeError) second);
+			typeError.add(e);
 		}
 	}
 	
-	@Override
-	public String toString() {
-		return this.path+"\t"+haveNoDBG+"\t"+isNotTrueSucceeded+"\t"+haveTypeErrors;
+	public ArrayList<ParserErrorCompare> getParserErrorCompare() {
+		return parserError;
 	}
 
+	public ArrayList<TypeErrorCompare> getTypeErrorCompare() {
+		return typeError;
+	}
+	
+	public int getParserErrorDiffCount(){
+		int pErr = 0;
+		for(int i=0;i<parserError.size();i++){
+			if(parserError.get(i).haveDiff())
+				pErr++;
+		}
+		return pErr;
+	}
+	
+	public int getTypeErrorDiffCount(){
+		int tErr = 0;
+		for(int i=0;i<typeError.size();i++){
+			if(typeError.get(i).haveDiff())
+				tErr++;
+		}
+		return tErr;
+	}
+
+	public boolean haveDifferences(){
+		return (getParserErrorDiffCount()+getTypeErrorDiffCount())>0 ? true : false;
+	}
+	
 	@Override
 	/**
 	 * Comparing filenames
 	 */
-	public int compareTo(CompareFile compareFile) {
-		if(compareFile.getPath().equals(this.path)){
+	public int compareTo(CompareFile errFile) {
+		if(errFile.getPath().equals(this.path)){
 			return 0;
 		}
-		for(int i=0;i<compareFile.getPath().length();i++){
+		for(int i=0;i<errFile.getPath().length();i++){
 			if(this.path.length()>i){
-				if(compareFile.getPath().charAt(i)!=this.getPath().charAt(i)){
-					if(compareFile.getPath().charAt(i)>this.getPath().charAt(i)){
+				if(errFile.getPath().charAt(i)!=this.getPath().charAt(i)){
+					if(errFile.getPath().charAt(i)>this.getPath().charAt(i)){
 						return -1;
 					}else{
 						return 1;

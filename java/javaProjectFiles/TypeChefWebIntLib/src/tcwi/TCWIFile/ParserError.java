@@ -7,6 +7,14 @@ public class ParserError {
 	private String line;
 	private String col;
 
+	public ParserError(){
+		this.featurestr="";
+		this.msg="";
+		this.file="";
+		this.line="";
+		this.col="";
+	}
+	
 	public ParserError(String featurestr, String msg, String file, String line, String col) {
 		this.featurestr = featurestr;
 		this.msg = msg;
