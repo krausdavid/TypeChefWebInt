@@ -2,7 +2,7 @@ package tcwi.TCWIFile;
 
 import java.util.ArrayList;
 
-public class ErrorFile extends TCWIFile{ //implements Comparable<ErrorFile>{
+public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 
 	protected String path;
 	protected ArrayList<ParserError> parserError;
@@ -49,28 +49,28 @@ public class ErrorFile extends TCWIFile{ //implements Comparable<ErrorFile>{
 		return (parserError.size()+typeError.size())>0 ? true : false;
 	}
 	
-//	@Override
+	@Override
 	/**
 	 * Comparing filenames
 	 */
-//	public int compareTo(ErrorFile errFile) {
-//		if(errFile.getPath().equals(this.path)){
-//			return 0;
-//		}
-//		for(int i=0;i<errFile.getPath().length();i++){
-//			if(this.path.length()>i){
-//				if(errFile.getPath().charAt(i)!=this.getPath().charAt(i)){
-//					if(errFile.getPath().charAt(i)>this.getPath().charAt(i)){
-//						return -1;
-//					}else{
-//						return 1;
-//					}
-//				}
-//			}else{
-//				return 1;
-//			}
-//		}
-//		
-//		return 0;
-//	}
+	public int compareTo(ErrorFile errFile) {
+		if(errFile.getPath().equals(this.path)){
+			return 0;
+		}
+		for(int i=0;i<errFile.getPath().length();i++){
+			if(this.path.length()>i){
+				if(errFile.getPath().charAt(i)!=this.getPath().charAt(i)){
+					if(errFile.getPath().charAt(i)>this.getPath().charAt(i)){
+						return -1;
+					}else{
+						return 1;
+					}
+				}
+			}else{
+				return 1;
+			}
+		}
+		
+		return 0;
+	}
 }
