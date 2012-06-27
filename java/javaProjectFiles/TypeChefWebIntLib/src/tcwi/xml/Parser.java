@@ -308,7 +308,6 @@ public class Parser {
 			    				}
 			    			}
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("compileerror")){
-			    				file.setPath(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
 			    				if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue().equals("true")){
 			    					file.setCompileError(true);
 			    				}else{
