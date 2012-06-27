@@ -11,6 +11,9 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import tcwi.TCWIFile.ErrorFile;
+import tcwi.TCWIFile.ParserError;
+import tcwi.TCWIFile.TypeError;
 import tcwi.exception.Exceptions;
 
 /**
@@ -81,6 +84,121 @@ public class Parser {
 	    }
 
 		return "";
+	}
+	
+	private static String removeWhites(String str){
+		str = str.replace("\t", "");
+		str = str.replace("\r", "");
+		str = str.replace("\n", "");
+		
+		String newStr = str;
+		for(int i=0;i<newStr.length();i++){
+			if(newStr.charAt(i)==' '){
+				str = str.substring(1);
+			}else{
+				break;
+			}
+		}
+		newStr = str;
+		for(int i=newStr.length()-1;i>0;i--){
+			if(newStr.charAt(i)==' '){
+				str = str.substring(0,str.length()-1);
+			}else{
+				break;
+			}
+		}
+		return str;
+	}
+	
+	/**
+	 * This method get all data from given .c.xml and returns it as an ErrorFile
+	 * @param path
+	 * @return
+	 * @throws ParserConfigurationException
+	 * @throws SAXException
+	 * @throws IOException
+	 */
+	public static ErrorFile getAllErrors(String path) throws ParserConfigurationException, SAXException, IOException{
+		ErrorFile err = new ErrorFile();
+		err.setPath(path.substring(0,path.length()-6));
+		
+	    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	    DocumentBuilder builder = factory.newDocumentBuilder();
+	    Document document = builder.parse(new File(path));
+	    NodeList list = document.getChildNodes().item(0).getChildNodes();
+				    
+	    for(int i=0;i<list.getLength();i++){
+	    	if(list.item(i).getNodeName().equals("typeerror")){
+	    		String featurestr = "", msg = "", severity = "", fromFile = "",  fromLine = "", fromCol = "", toFile = "", toLine = "", toCol = "";
+		    	boolean firstPos = true;
+	    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("featurestr")){
+	    				featurestr = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+	    			}
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("msg")){
+	    				msg = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+	    			}
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("severity")){
+	    				severity = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+	    			}
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("position")){
+	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
+		    				if(firstPos==true){
+		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("file")){
+				    				fromFile = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+		    					}
+		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("line")){
+				    				fromLine = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+		    					}
+		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("col")){
+				    				fromCol = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+		    					}
+		    					firstPos = false;
+		    				}else{
+		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("file")){
+				    				toFile = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+		    					}
+		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("line")){
+				    				toLine = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+		    					}
+		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("col")){
+				    				toCol = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+		    					}
+		    				}
+	    				}
+	    			}
+	    		}
+	    		TypeError tErr = new TypeError(featurestr, msg, severity, fromFile,  fromLine, fromCol, toFile, toLine, toCol);
+	    		err.addError(tErr);
+	    	}
+	    	if(list.item(i).getNodeName().equals("parsererror")){
+	    		String featurestr = "", msg = "", file = "", line = "", col = "";
+	    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("featurestr")){
+	    				featurestr = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+	    			}
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("msg")){
+	    				msg = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+	    			}
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("position")){
+	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
+	    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("file")){
+			    				file = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+	    					}
+	    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("line")){
+			    				line = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+	    					}
+	    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("col")){
+			    				col = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+	    					}
+	    				}
+	    			}
+	    		}
+	    		ParserError pErr = new ParserError(featurestr, msg, file, line, col);
+	    		err.addError(pErr);
+	    	}
+	    }
+	    return err;
 	}
 
 	public String getSetting_file() {

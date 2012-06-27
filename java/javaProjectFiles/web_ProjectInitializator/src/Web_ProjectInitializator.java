@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.1.3.2";
+	private static final String VERSION = "0.2.0.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -38,7 +38,7 @@ public class Web_ProjectInitializator {
 					if(fileList[i].toString().endsWith(".c")){
 						try{
 							String str = fileList[i].getAbsolutePath().substring(0,fileList[i].getAbsolutePath().length()-2);
-							ErrorFile errFile = new ErrorFile(str,check.failFlags(str));
+							ErrorFile errFile = Parser.getAllErrors(str+".c.xml");
 							files.add(errFile);
 						}catch (IOException e){
 							return fileList[i].getAbsolutePath();
@@ -53,37 +53,17 @@ public class Web_ProjectInitializator {
 	}
 	
 	/**
-	 * Write the .project file
-	 * @param path
-	 * @param projectName
-	 */
-	private static void writeProjectFile(String path, String projectName){
-		try{
-			File f = new File(path+Check.folderSeparator()+projectName+".project");
-			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+Check.folderSeparator()+projectName+".project","rw");
-			for(int i=0;i<files.size();i++){
-				//Check if the project has errors. The result will be saved in the project.xml
-				if(failureProject==false){
-					if(files.get(i).haveErrors()){
-						failureProject = true;
-					}
-				}
-				file.writeBytes(files.get(i)+"\r\n");
-			}
-			file.close();
-		}catch (IOException e){
-			exception.throwException(4, e, true, path);
-		}
-	}
-
-	/**
-	 * Write the .project.xml file
-	 * @param path
-	 * @param projectName
+	 * Write the .project.xml-file
 	 * @param projectPath
+	 * @param projectName
+	 * @param projectFullName
+	 * @param projectVersion
+	 * @param projectAuthor
+	 * @param path
+	 * @param projectHasDeltas
+	 * @param projectDeltaMain
 	 */
-	private static void writeProjectXMLFile(String path, String projectName, String projectFullName, String projectVersion, String projectAuthor, String projectPath, String projectHasDeltas, String projectDeltaMain){
+	private static void writeProjectFile_(String projectPath, String projectName, String projectFullName, String projectVersion, String projectAuthor, String path, String projectHasDeltas, String projectDeltaMain) {
 		try{
 			Calendar c = new GregorianCalendar();
 			String month = Tools.correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
@@ -95,19 +75,88 @@ public class Web_ProjectInitializator {
 			File f = new File(path+Check.folderSeparator()+projectName+".project.xml");
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path+Check.folderSeparator()+projectName+".project.xml","rw");
-			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
-			file.writeBytes("<settings>\r\n");
-			file.writeBytes("     <global>\r\n");
-			file.writeBytes("          <project idname=\""+projectName+"\" fullname=\""+projectFullName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+failureProject+"\" type=\"normal\" />\r\n");
+			file.writeBytes("<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\r\n");
+			file.writeBytes("<project>\r\n");
+			file.writeBytes("	<header>\r\n");
+			file.writeBytes("		<project>\r\n");
+			file.writeBytes("			<idname>"+projectName+"</idname>\r\n");
+			file.writeBytes("			<fullname>"+projectFullName+"</fullname>\r\n");
+			file.writeBytes("			<version>"+projectVersion+"</version>\r\n");
+			file.writeBytes("			<path>"+projectPath+"</path>\r\n");
+			file.writeBytes("			<failureProject>"+failureProject+"</failureProject>\r\n");
+			file.writeBytes("			<type>normal</type>\r\n");
+			file.writeBytes("		</project>\r\n");
+			file.writeBytes("		<delta>\r\n");
 			if(projectHasDeltas.equals("true")){
-				file.writeBytes("          <delta hasDeltas=\"true\" mainProject=\""+projectDeltaMain+"\" />\r\n");
+				file.writeBytes("			<hasdeltas>true</hasdeltas>\r\n");
+				file.writeBytes("			<mainproject>"+projectDeltaMain+"</mainproject>\r\n");
 			}else{
-				file.writeBytes("          <delta hasDeltas=\"false\" mainProject=\"_\" />\r\n");
+				file.writeBytes("			<hasdeltas>false</hasdeltas>\r\n");
+				file.writeBytes("			<mainproject>_</mainproject>\r\n");
 			}
-			file.writeBytes("          <init builder=\""+projectAuthor+"\" buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
-			file.writeBytes("     </global>\r\n");
-			file.writeBytes("</settings>\r\n");
+			file.writeBytes("		</delta>\r\n");
+			file.writeBytes("		<build>\r\n");
+			file.writeBytes("			<builder>"+projectAuthor+"</builder>\r\n");
+			file.writeBytes("			<date>"+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"</date>\r\n");
+			file.writeBytes("			<time>"+hour+":"+minute+":"+second+"</time>\r\n");
+			file.writeBytes("		</build>\r\n");
+			file.writeBytes("		<stats>\r\n");
+			int pErrs = 0, tErrs = 0;
+			for(int i=0;i<files.size();i++){
+				pErrs += files.get(i).getParserError().size();
+				tErrs += files.get(i).getTypeError().size();
+			}
+			file.writeBytes("			<parsererrors>"+pErrs+"</parsererrors>\r\n");
+			file.writeBytes("			<typeerrors>"+tErrs+"</typeerrors>\r\n");
+			file.writeBytes("		</stats>\r\n");
+			file.writeBytes("	</header>\r\n");
+			file.writeBytes("	<errors>\r\n");
+			
+			for(int i=0;i<files.size();i++){
+				file.writeBytes("		<file>\r\n");
+				file.writeBytes("			<path>"+files.get(i).getPath()+"</path>\r\n");
+				file.writeBytes("			<summary>\r\n");
+				file.writeBytes("				<parsererrors>"+files.get(i).getParserError().size()+"</parsererrors>\r\n");
+				file.writeBytes("				<typeerrors>"+files.get(i).getTypeError().size()+"</typeerrors>\r\n");
+				file.writeBytes("			</summary>\r\n");
+				file.writeBytes("			<errorlist>\r\n");
+				for(int j=0;j<files.get(i).getParserError().size();j++){
+					file.writeBytes("				<parsererror>\r\n");
+					file.writeBytes("					<featurestr>"+files.get(i).getParserError().get(j).getFeaturestr()+"</featurestr>\r\n");
+					file.writeBytes("					<msg>"+files.get(i).getParserError().get(j).getMsg()+"</msg>\r\n");
+					file.writeBytes("					<position>\r\n");
+					file.writeBytes("						<file>"+files.get(i).getParserError().get(j).getFile()+"</file>\r\n");
+					file.writeBytes("						<line>"+files.get(i).getParserError().get(j).getLine()+"</line>\r\n");
+					file.writeBytes("						<col>"+files.get(i).getParserError().get(j).getCol()+"</col>\r\n");
+					file.writeBytes("					</position>\r\n");
+					file.writeBytes("				</parsererror>\r\n");
+				}
+				for(int j=0;j<files.get(i).getTypeError().size();j++){
+					file.writeBytes("				<typeerror>\r\n");
+					file.writeBytes("					<featurestr>"+files.get(i).getTypeError().get(j).getFeaturestr()+"</featurestr>\r\n");
+					file.writeBytes("					<severity>"+files.get(i).getTypeError().get(j).getSeverity()+"</severity>\r\n");
+					file.writeBytes("					<msg>"+files.get(i).getTypeError().get(j).getMsg()+"</msg>\r\n");
+					file.writeBytes("					<position>\r\n");
+					file.writeBytes("						<file>"+files.get(i).getTypeError().get(j).getFromFile()+"</file>\r\n");
+					file.writeBytes("						<line>"+files.get(i).getTypeError().get(j).getFromLine()+"</line>\r\n");
+					file.writeBytes("						<col>"+files.get(i).getTypeError().get(j).getFromCol()+"</col>\r\n");
+					file.writeBytes("					</position>\r\n");
+					file.writeBytes("					<position>\r\n");
+					file.writeBytes("						<file>"+files.get(i).getTypeError().get(j).getToFile()+"</file>\r\n");
+					file.writeBytes("						<line>"+files.get(i).getTypeError().get(j).getToLine()+"</line>\r\n");
+					file.writeBytes("						<col>"+files.get(i).getTypeError().get(j).getToCol()+"</col>\r\n");
+					file.writeBytes("					</position>\r\n");
+					file.writeBytes("				</typeerror>\r\n");
+				}
+				file.writeBytes("			</errorlist>\r\n");
+				file.writeBytes("		</file>\r\n");
+			}
+			
+
+			file.writeBytes("	</errors>\r\n");
+			file.writeBytes("</project>\r\n");
 			file.close();
+		
 		}catch (IOException e){
 			exception.throwException(4, e, true, path);
 		}
@@ -197,18 +246,14 @@ public class Web_ProjectInitializator {
 			System.out.println("Sorting DONE!");
 			System.out.println("Writing down the project file...");
 			
-			if(projectDeltaMain.equals("_")){
-				writeProjectFile(projectPath,projectName);
-				writeProjectXMLFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,projectDeltaMain);
-			}else{
-				String newProjectName = Tools.findAFreeProjectName(projectDeltaMain, path, true);
-				writeProjectFile(projectPath,newProjectName);
-				writeProjectXMLFile(projectPath,newProjectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,projectDeltaMain);
+			if(!projectDeltaMain.equals("_")){
+				projectName = Tools.findAFreeProjectName(projectDeltaMain, path, true);
 			}
+			
+			writeProjectFile_(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,projectDeltaMain);
 			
 			System.out.println("Writing DONE!\nScript DONE!");
 			System.out.printf("Duration: %.2f sec\n",(System.currentTimeMillis()-time)/1000.0);
 		}
 	}
-
 }
