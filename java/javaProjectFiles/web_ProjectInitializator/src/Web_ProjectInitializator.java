@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.0.2";
+	private static final String VERSION = "0.2.1.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -114,7 +114,8 @@ public class Web_ProjectInitializator {
 			
 			for(int i=0;i<files.size();i++){
 				file.writeBytes("		<file>\r\n");
-				file.writeBytes("			<path>"+files.get(i).getPath()+"</path>\r\n");
+				file.writeBytes("			<path>"+files.get(i).getPath().substring(path.length())+"</path>\r\n");
+				file.writeBytes("			<fileexist>"+files.get(i).isFileExist()+"</fileexist>\r\n");
 				file.writeBytes("			<summary>\r\n");
 				file.writeBytes("				<parsererrors>"+files.get(i).getParserError().size()+"</parsererrors>\r\n");
 				file.writeBytes("				<typeerrors>"+files.get(i).getTypeError().size()+"</typeerrors>\r\n");

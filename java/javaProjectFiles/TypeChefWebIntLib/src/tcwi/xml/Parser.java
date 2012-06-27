@@ -86,6 +86,13 @@ public class Parser {
 		return "";
 	}
 	
+	/**
+	 * Remove whitespaces, tabs and returns from a given string. Whitespaces will be removed
+	 * at the begin and at the end of the string.<br>
+	 * Ex. String "   this is a test  " --> "this is a test"
+	 * @param str
+	 * @return
+	 */
 	private static String removeWhites(String str){
 		str = str.replace("\t", "");
 		str = str.replace("\r", "");
@@ -122,82 +129,86 @@ public class Parser {
 		ErrorFile err = new ErrorFile();
 		err.setPath(path.substring(0,path.length()-6));
 		
-	    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-	    DocumentBuilder builder = factory.newDocumentBuilder();
-	    Document document = builder.parse(new File(path));
-	    NodeList list = document.getChildNodes().item(0).getChildNodes();
-				    
-	    for(int i=0;i<list.getLength();i++){
-	    	if(list.item(i).getNodeName().equals("typeerror")){
-	    		String featurestr = "", msg = "", severity = "", fromFile = "",  fromLine = "", fromCol = "", toFile = "", toLine = "", toCol = "";
-		    	boolean firstPos = true;
-	    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
-	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("featurestr")){
-	    				featurestr = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
-	    			}
-	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("msg")){
-	    				msg = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
-	    			}
-	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("severity")){
-	    				severity = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
-	    			}
-	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("position")){
-	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
-		    				if(firstPos==true){
+		File f = new File(path);
+		err.setFileExist(f.exists());
+		if(err.isFileExist()){
+		    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		    DocumentBuilder builder = factory.newDocumentBuilder();
+		    Document document = builder.parse(new File(path));
+		    NodeList list = document.getChildNodes().item(0).getChildNodes();
+					    
+		    for(int i=0;i<list.getLength();i++){
+		    	if(list.item(i).getNodeName().equals("typeerror")){
+		    		String featurestr = "", msg = "", severity = "", fromFile = "",  fromLine = "", fromCol = "", toFile = "", toLine = "", toCol = "";
+			    	boolean firstPos = true;
+		    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
+		    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("featurestr")){
+		    				featurestr = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+		    			}
+		    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("msg")){
+		    				msg = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+		    			}
+		    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("severity")){
+		    				severity = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+		    			}
+		    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("position")){
+		    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
+			    				if(firstPos==true){
+			    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("file")){
+					    				fromFile = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+			    					}
+			    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("line")){
+					    				fromLine = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+			    					}
+			    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("col")){
+					    				fromCol = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+			    					}
+			    					firstPos = false;
+			    				}else{
+			    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("file")){
+					    				toFile = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+			    					}
+			    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("line")){
+					    				toLine = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+			    					}
+			    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("col")){
+					    				toCol = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+			    					}
+			    				}
+		    				}
+		    			}
+		    		}
+		    		TypeError tErr = new TypeError(featurestr, msg, severity, fromFile,  fromLine, fromCol, toFile, toLine, toCol);
+		    		err.addError(tErr);
+		    	}
+		    	if(list.item(i).getNodeName().equals("parsererror")){
+		    		String featurestr = "", msg = "", file = "", line = "", col = "";
+		    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
+		    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("featurestr")){
+		    				featurestr = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+		    			}
+		    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("msg")){
+		    				msg = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
+		    			}
+		    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("position")){
+		    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
 		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("file")){
-				    				fromFile = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+				    				file = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
 		    					}
 		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("line")){
-				    				fromLine = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+				    				line = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
 		    					}
 		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("col")){
-				    				fromCol = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
-		    					}
-		    					firstPos = false;
-		    				}else{
-		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("file")){
-				    				toFile = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
-		    					}
-		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("line")){
-				    				toLine = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
-		    					}
-		    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("col")){
-				    				toCol = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+				    				col = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
 		    					}
 		    				}
-	    				}
-	    			}
-	    		}
-	    		TypeError tErr = new TypeError(featurestr, msg, severity, fromFile,  fromLine, fromCol, toFile, toLine, toCol);
-	    		err.addError(tErr);
-	    	}
-	    	if(list.item(i).getNodeName().equals("parsererror")){
-	    		String featurestr = "", msg = "", file = "", line = "", col = "";
-	    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
-	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("featurestr")){
-	    				featurestr = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
-	    			}
-	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("msg")){
-	    				msg = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(0).getNodeValue());
-	    			}
-	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("position")){
-	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
-	    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("file")){
-			    				file = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
-	    					}
-	    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("line")){
-			    				line = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
-	    					}
-	    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("col")){
-			    				col = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
-	    					}
-	    				}
-	    			}
-	    		}
-	    		ParserError pErr = new ParserError(featurestr, msg, file, line, col);
-	    		err.addError(pErr);
-	    	}
-	    }
+		    			}
+		    		}
+		    		ParserError pErr = new ParserError(featurestr, msg, file, line, col);
+		    		err.addError(pErr);
+		    	}
+		    }
+		}
 	    return err;
 	}
 
