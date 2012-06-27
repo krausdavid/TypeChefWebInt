@@ -6,6 +6,7 @@ public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 
 	protected String path;
 	protected boolean fileExist;
+	protected boolean compileError;
 	protected ArrayList<ParserError> parserError;
 	protected ArrayList<TypeError> typeError;
 	
@@ -15,9 +16,10 @@ public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 		typeError = new ArrayList<TypeError>();
 	}
 
-	public ErrorFile(String path, boolean fileExist, ArrayList<ParserError> parserError, ArrayList<TypeError> typeError) {
+	public ErrorFile(String path, boolean fileExist, boolean compileError, ArrayList<ParserError> parserError, ArrayList<TypeError> typeError) {
 		this.path = path;
 		this.fileExist = fileExist;
+		this.compileError = compileError;
 		this.parserError = parserError;
 		this.typeError = typeError;
 	}
@@ -32,6 +34,14 @@ public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 
 	public boolean isFileExist() {
 		return fileExist;
+	}
+
+	public boolean isCompileError() {
+		return compileError;
+	}
+
+	public void setCompileError(boolean compileError) {
+		this.compileError = compileError;
 	}
 
 	public void setFileExist(boolean fileExist) {

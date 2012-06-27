@@ -131,6 +131,13 @@ public class Parser {
 		
 		File f = new File(path);
 		err.setFileExist(f.exists());
+		File fDBG = new File(path.substring(0,path.length()-6)+".dbg");
+		if(fDBG.exists()&&!f.exists()){
+			err.setCompileError(true);
+		}else{
+			err.setCompileError(false);
+		}
+		
 		if(err.isFileExist()){
 		    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		    DocumentBuilder builder = factory.newDocumentBuilder();
