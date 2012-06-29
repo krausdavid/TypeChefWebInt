@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.2.1";
+	private static final String VERSION = "0.2.2.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -103,7 +103,7 @@ public class Web_ProjectInitializator {
 			for(int i=0;i<files.size();i++){
 				pErrs += files.get(i).getParserError().size();
 				tErrs += files.get(i).getTypeError().size();
-				if(files.get(i).isFileExist()){
+				if(files.get(i).isExcluded()){
 					excluded++;
 				}
 				if(files.get(i).isCompileError()){
@@ -121,7 +121,7 @@ public class Web_ProjectInitializator {
 			for(int i=0;i<files.size();i++){
 				file.writeBytes("		<file>\r\n");
 				file.writeBytes("			<path>"+files.get(i).getPath().substring(path.length()+1)+"</path>\r\n");
-				file.writeBytes("			<excluded>"+(!files.get(i).isFileExist())+"</excluded>\r\n");
+				file.writeBytes("			<excluded>"+files.get(i).isExcluded()+"</excluded>\r\n");
 				file.writeBytes("			<compileerror>"+files.get(i).isCompileError()+"</compileerror>\r\n");
 				file.writeBytes("			<summary>\r\n");
 				file.writeBytes("				<parsererrors>"+files.get(i).getParserError().size()+"</parsererrors>\r\n");
