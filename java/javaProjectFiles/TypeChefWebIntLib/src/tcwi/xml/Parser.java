@@ -22,7 +22,6 @@ import tcwi.exception.Exceptions;
  */
 public class Parser {
 	private String setting_file;
-	private Exceptions exception = new Exceptions();
 	
 	/**
 	 * Creates an XML Object
@@ -407,13 +406,13 @@ public class Parser {
 		try{
 			pathOutput = parser.read_setting(xpath);
 		} catch (IOException e) {
-			exception.throwException(1, e, true, "");
+			Exceptions.throwException(1, e, true, "");
 		} catch (Exception e) {
 			String path = "";
 			for(int i=0;i<xpath.length;i++){
 				path += xpath[i]+" ";
 			}
-			exception.throwException(2, e, true, path);
+			Exceptions.throwException(2, e, true, path);
 		}
 		return pathOutput;		
 	}

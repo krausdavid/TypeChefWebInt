@@ -7,7 +7,6 @@ import tcwi.xml.Parser;
 public class PHP_Tools {
 	private static final String VERSION = "0.0.0.7";
 	private static final String AUTHORS = "EifX & hulllemann";
-	private static Exceptions exception = new Exceptions();
 	
 	public static void main(String[] args) {
 		if(args.length<=2){
@@ -31,12 +30,12 @@ public class PHP_Tools {
 			
 			if(function.equals("FINDPROJECTNAME")){
 				if(args.length!=3){
-					exception.throwException(13, null, true, "");
+					Exceptions.throwException(13, null, true, "");
 				}else{
 					if(args[2].matches("[a-zA-Z0-9._\\-]*")){
 						System.out.println(Tools.findAFreeProjectName(args[2], parser.getSetting_ProjectPath(),false));
 					}else{
-						exception.throwException(14, null, true, args[2]);
+						Exceptions.throwException(14, null, true, args[2]);
 					}
 				}
 			}

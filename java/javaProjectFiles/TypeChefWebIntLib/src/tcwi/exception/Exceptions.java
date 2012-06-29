@@ -3,9 +3,9 @@ package tcwi.exception;
 import java.util.HashMap;
 
 public class Exceptions {
-	private HashMap<Integer, String> exception;
+	private static HashMap<Integer, String> exception;
 	
-	public Exceptions(){
+	private static void init(){
 		exception = new HashMap<Integer, String>();
 		exception.put(0, "ERROR 0: Wrong exception code!");
 		exception.put(1, "ERROR 1: Can't read the setting-file");
@@ -24,7 +24,8 @@ public class Exceptions {
 		exception.put(14, "ERROR 14: This filename contains bad characters!");
 	}
 	
-	public void throwException(int i, Exception e, boolean isExit, String pathInformation){
+	public static void throwException(int i, Exception e, boolean isExit, String pathInformation){
+		init();
 		if(exception.get(i)==null){
 			i = 0;
 		}

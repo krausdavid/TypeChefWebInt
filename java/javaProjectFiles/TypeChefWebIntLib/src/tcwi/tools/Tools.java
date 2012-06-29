@@ -5,7 +5,6 @@ import tcwi.fileHandler.Check;
 
 public class Tools {
 	private static Check check = new Check();
-	private static Exceptions exception = new Exceptions();
 	/**
 	 * Returns a correct formatted number
 	 * @param str
@@ -38,7 +37,7 @@ public class Tools {
 				newProjectName = str+"_"+i;
 				i++;
 				if(i > 1000000){
-					exception.throwException(10, null, true, newProjectName);
+					Exceptions.throwException(10, null, true, newProjectName);
 				}
 			}
 		}

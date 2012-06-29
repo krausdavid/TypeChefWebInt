@@ -12,7 +12,6 @@ public class Web_TreeViewInitializator {
 
 	private static final String VERSION = "0.4.0.5";
 	private static final String AUTHORS = "EifX & hulllemann";
-	private static Exceptions exception;
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
 	private static ProjectFile pFile;
@@ -64,7 +63,7 @@ public class Web_TreeViewInitializator {
 			}
 			file.close();
 		}catch (IOException e){
-			exception.throwException(3, e, true, path);
+			Exceptions.throwException(3, e, true, path);
 		}
 	}
 
@@ -302,9 +301,9 @@ public class Web_TreeViewInitializator {
 			try {
 				pFile = Parser.getProject(project_settings_xml_path);
 			} catch (IOException e) {
-				exception.throwException(1, e, true, project_settings_xml_path);
+				Exceptions.throwException(1, e, true, project_settings_xml_path);
 			} catch (Exception e) {
-				exception.throwException(2, e, true, project_settings_xml_path);
+				Exceptions.throwException(2, e, true, project_settings_xml_path);
 			}
 
 			System.out.println("Build JavaScript-File...");

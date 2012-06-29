@@ -18,7 +18,6 @@ public class Web_ProjectInitializator {
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
 	private static Parser parser;
-	private static Exceptions exception = new Exceptions();
 
 	/**
 	 * Recursive method for get all files in a given path ends with ".c"
@@ -166,7 +165,7 @@ public class Web_ProjectInitializator {
 			file.close();
 		
 		}catch (IOException e){
-			exception.throwException(4, e, true, path);
+			Exceptions.throwException(4, e, true, path);
 		}
 	}
 	
@@ -217,7 +216,7 @@ public class Web_ProjectInitializator {
 			if(check.uniqueCheck(projectName, projectPath)){
 				System.out.println("Project name is OK!");
 			}else{
-				exception.throwException(5, null, true, "");
+				Exceptions.throwException(5, null, true, "");
 			}
 			
 			//Removes an additional folder separator from an path end
@@ -228,14 +227,14 @@ public class Web_ProjectInitializator {
 			
 			File file = new File(path);
 			if(!file.exists()){
-				exception.throwException(7, null, true, path);
+				Exceptions.throwException(7, null, true, path);
 			}
 			
 			String str = getAllFiles(path);
 			if(str.equals("")){
 				System.out.println("Initialization DONE!");
 			}else{
-				exception.throwException(6, null, true, str);
+				Exceptions.throwException(6, null, true, str);
 			}
 			
 			System.out.println("Sort files...");
