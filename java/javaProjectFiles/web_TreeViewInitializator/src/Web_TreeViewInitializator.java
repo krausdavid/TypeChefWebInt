@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import tcwi.xml.*;
 import tcwi.exception.Exceptions;
+import tcwi.fileHandler.Check;
 import tcwi.TCWIFile.CompareFile;
 import tcwi.TCWIFile.ErrorFile;
 import tcwi.TCWIFile.TCWIFile;
@@ -15,8 +16,7 @@ public class Web_TreeViewInitializator {
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Exceptions exception;
 	private static ArrayList<String> javascript = new ArrayList<String>();
-	//private static String folderSeparator = Check.folderSeparator();
-	private static String folderSeparator = "/";
+	private static String folderSeparator = Check.folderSeparator();
 	private static ProjectFile pFile;
 	
 	/**
