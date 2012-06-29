@@ -5,18 +5,18 @@ import java.util.ArrayList;
 
 import tcwi.xml.*;
 import tcwi.exception.Exceptions;
-import tcwi.fileHandler.*;
 import tcwi.TCWIFile.CompareFile;
 import tcwi.TCWIFile.ErrorFile;
 import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.0.2";
+	private static final String VERSION = "0.4.0.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Exceptions exception;
 	private static ArrayList<String> javascript = new ArrayList<String>();
-	private static String folderSeparator = Check.folderSeparator();
+	//private static String folderSeparator = Check.folderSeparator();
+	private static String folderSeparator = "/";
 	private static ProjectFile pFile;
 	
 	/**
@@ -233,7 +233,6 @@ public class Web_TreeViewInitializator {
 //			//If the path has changed, draw the missing parts
 			String p = "";
 			int[] dir = dirDecision(oldArr, pathArr);
-			
 			//Write folders
 			if(dir[0]>0){
 				for(int j=dir[1];j<(dir[0]+dir[1]);j++){
@@ -247,7 +246,7 @@ public class Web_TreeViewInitializator {
 					for(int k=0;k<=j;k++){
 						p+=folderSeparator+pathArr[k];
 					}
-					p = pFile.getPath()+p;
+					p = p.substring(1);
 					
 					javascript.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \""+getIcon(p,"open")+".gif\"");
 					javascript.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \""+getIcon(p,"closed")+".gif\"");

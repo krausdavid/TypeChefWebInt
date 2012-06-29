@@ -226,8 +226,6 @@ public class Parser {
 	    Document document = builder.parse(new File(path));
 	    NodeList list = document.getChildNodes().item(0).getChildNodes();
 		
-	    System.out.println(list.item(1).getChildNodes().item(1).getChildNodes().item(1).getChildNodes().item(0).getNodeValue());
-	    
 	    for(int i=0;i<list.getLength();i++){
 	    	if(list.item(i).getNodeName().equals("header")){
 	    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
