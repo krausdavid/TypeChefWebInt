@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 
 	protected String path;
-	protected boolean fileExist;
+	protected boolean excluded;
 	protected boolean compileError;
 	protected ArrayList<ParserError> parserError;
 	protected ArrayList<TypeError> typeError;
@@ -24,12 +24,12 @@ public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 		this.path = path;
 	}
 
-	public boolean isFileExist() {
-		return fileExist;
+	public boolean isExcluded() {
+		return excluded;
 	}
 
-	public void setFileExist(boolean fileExist) {
-		this.fileExist = fileExist;
+	public void setExcluded(boolean excluded) {
+		this.excluded = excluded;
 	}
 
 	public boolean isCompileError() {

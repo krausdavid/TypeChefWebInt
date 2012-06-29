@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.0.4";
+	private static final String VERSION = "0.4.0.5";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Exceptions exception;
 	private static ArrayList<String> javascript = new ArrayList<String>();
@@ -42,7 +42,7 @@ public class Web_TreeViewInitializator {
 		for(int i=0;i<filesNew.size();i++){
 			if(pFile.getType().equals("normal")){
 				if(((ErrorFile) filesNew.get(i)).haveErrors()){
-					if(((ErrorFile) filesNew.get(i)).isFileExist()){
+					if(!((ErrorFile) filesNew.get(i)).isExcluded()){
 						return true;
 					}
 				}else{
@@ -122,15 +122,13 @@ public class Web_TreeViewInitializator {
 			if(!((ErrorFile) file).haveErrors()){
 				if(((ErrorFile) file).isCompileError()){
 					return "filecompilefail";
+				}else if(((ErrorFile) file).isExcluded()){
+					return "fileempty";
 				}else{
 					return "fileok";
 				}
 			}else{
-				if(!((ErrorFile) file).isFileExist()){
-					return "fileempty";
-				}else{
-					return "filefail";
-				}
+				return "filefail";
 			}
 		}else if(pFile.getType().equals("compare")){
 			if(!((CompareFile) file).haveDifferences()){

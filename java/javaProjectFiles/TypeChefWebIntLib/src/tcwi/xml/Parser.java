@@ -130,7 +130,7 @@ public class Parser {
 		err.setPath(path.substring(0,path.length()-6));
 		
 		File f = new File(path);
-		err.setFileExist(f.exists());
+		err.setExcluded(!f.exists());
 		File fDBG = new File(path.substring(0,path.length()-6)+".dbg");
 		if(fDBG.exists()&&!f.exists()){
 			err.setCompileError(true);
@@ -138,7 +138,7 @@ public class Parser {
 			err.setCompileError(false);
 		}
 		
-		if(err.isFileExist()){
+		if(!err.isExcluded()){
 		    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		    DocumentBuilder builder = factory.newDocumentBuilder();
 		    Document document = builder.parse(new File(path));
@@ -298,11 +298,11 @@ public class Parser {
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("path")){
 			    				file.setPath(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
 			    			}
-			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("fileexist")){
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("excluded")){
 			    				if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue().equals("true")){
-			    					file.setFileExist(true);
+			    					file.setExcluded(true);
 			    				}else{
-			    					file.setFileExist(false);
+			    					file.setExcluded(false);
 			    				}
 			    			}
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("compileerror")){
