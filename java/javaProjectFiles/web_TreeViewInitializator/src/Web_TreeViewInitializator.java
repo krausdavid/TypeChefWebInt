@@ -6,9 +6,7 @@ import java.util.ArrayList;
 import tcwi.xml.*;
 import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
-import tcwi.TCWIFile.CompareFile;
 import tcwi.TCWIFile.ErrorFile;
-import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
@@ -25,37 +23,21 @@ public class Web_TreeViewInitializator {
 	 * @return
 	 */
 	private static boolean isAFailFolder(String path){
-		ArrayList<TCWIFile> filesNew = new ArrayList<TCWIFile>();
+		ArrayList<ErrorFile> filesNew = new ArrayList<ErrorFile>();
 		for(int i=0;i<pFile.getFiles().size();i++){
-			if(pFile.getType().equals("normal")){
-				if(((ErrorFile) pFile.getFiles().get(i)).getPath().contains(path)){
-					filesNew.add((ErrorFile) pFile.getFiles().get(i));
-				}
-			}else if(pFile.getType().equals("compare")){
-				if(((CompareFile) pFile.getFiles().get(i)).getPath().contains(path)){
-					filesNew.add((CompareFile) pFile.getFiles().get(i));
-				}
-			}else{
-				exception.throwException(12, null, true, "");
+			if(pFile.getFiles().get(i).getPath().contains(path)){
+				filesNew.add((ErrorFile) pFile.getFiles().get(i));
 			}
 		}
 		for(int i=0;i<filesNew.size();i++){
-			if(pFile.getType().equals("normal")){
-				if(((ErrorFile) filesNew.get(i)).haveErrors()){
-					if(!((ErrorFile) filesNew.get(i)).isExcluded()){
-						return true;
-					}
-				}else{
-					if(((ErrorFile) filesNew.get(i)).isCompileError()){
-						return true;
-					}
-				}
-			}else if(pFile.getType().equals("compare")){
-				if(((CompareFile) filesNew.get(i)).haveDifferences()){
+			if(filesNew.get(i).haveErrors()){
+				if(!filesNew.get(i).isExcluded()){
 					return true;
 				}
 			}else{
-				exception.throwException(12, null, true, "");
+				if(filesNew.get(i).isCompileError()){
+					return true;
+				}
 			}
 		}
 		return false;
@@ -93,21 +75,10 @@ public class Web_TreeViewInitializator {
 	 * @return
 	 */
 	private static String getIcon(String path, String dirType){
-		if(pFile.getType().equals("normal")){
-			if(!isAFailFolder(path)){
-				return "folder"+dirType+"ok";
-			}else{
-				return "folder"+dirType+"fail";
-			}
-		}else if(pFile.getType().equals("compare")){
-			if(!isAFailFolder(path)){
-				return "folder"+dirType+"identical";
-			}else{
-				return "folder"+dirType+"difference";
-			}
+		if(!isAFailFolder(path)){
+			return "folder"+dirType+"ok";
 		}else{
-			exception.throwException(12, null, true, "");
-			return "";
+			return "folder"+dirType+"fail";
 		}
 	}
 	
@@ -117,28 +88,17 @@ public class Web_TreeViewInitializator {
 	 * @param projectType
 	 * @return
 	 */
-	private static String getIcon(TCWIFile file){
-		if(pFile.getType().equals("normal")){
-			if(!((ErrorFile) file).haveErrors()){
-				if(((ErrorFile) file).isCompileError()){
-					return "filecompilefail";
-				}else if(((ErrorFile) file).isExcluded()){
-					return "fileempty";
-				}else{
-					return "fileok";
-				}
+	private static String getIcon(ErrorFile file){
+		if(!file.haveErrors()){
+			if(file.isCompileError()){
+				return "filecompilefail";
+			}else if(file.isExcluded()){
+				return "fileempty";
 			}else{
-				return "filefail";
-			}
-		}else if(pFile.getType().equals("compare")){
-			if(!((CompareFile) file).haveDifferences()){
-				return "fileidentical";
-			}else{
-				return "filedifference";
+				return "fileok";
 			}
 		}else{
-			exception.throwException(12, null, true, "");
-			return "";
+			return "filefail";
 		}
 	}
 
@@ -219,13 +179,7 @@ public class Web_TreeViewInitializator {
 	private static void generateJSTree(){
 		ArrayList<String> relativeFiles = new ArrayList<String>();
 		for(int i=0;i<pFile.getFiles().size();i++){
-			if(pFile.getType().equals("normal")){
-				relativeFiles.add(((ErrorFile) pFile.getFiles().get(i)).getPath());
-			}else if(pFile.getType().equals("compare")){
-				relativeFiles.add(((CompareFile) pFile.getFiles().get(i)).getPath());
-			}else{
-				exception.throwException(12, null, true, "");
-			}
+			relativeFiles.add(pFile.getFiles().get(i).getPath());
 		}
 		
 		String[] oldArr = {""};
@@ -306,24 +260,12 @@ public class Web_TreeViewInitializator {
 		javascript.add("foldersTree = gFld(\"<i>"+pFile.getFullname()+" "+pFile.getVersion()+"</i>\", \"\")");
 		javascript.add("foldersTree.treeID = \"Frameset\"");
 		
-		if(pFile.getType().equals("normal")){
-			if(!pFile.haveErrors()){
-				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
-				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
-			}else{
-				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
-				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
-			}
-		}else if(pFile.getType().equals("compare")){
-			if(!pFile.haveErrors()){
-				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenidentical.gif\"");
-				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedidentical.gif\"");
-			}else{
-				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopendifference.gif\"");
-				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"foldercloseddifference.gif\"");
-			}
+		if(!pFile.haveErrors()){
+			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
+			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
 		}else{
-			exception.throwException(12, null, true, "");
+			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
+			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
 		}
 	}
 

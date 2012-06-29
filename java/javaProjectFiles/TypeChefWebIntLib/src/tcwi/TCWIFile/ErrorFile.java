@@ -2,7 +2,7 @@ package tcwi.TCWIFile;
 
 import java.util.ArrayList;
 
-public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
+public class ErrorFile implements Comparable<ErrorFile>{
 
 	protected String path;
 	protected boolean excluded;
@@ -14,6 +14,15 @@ public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 		this.path = "";
 		parserError = new ArrayList<ParserError>();
 		typeError = new ArrayList<TypeError>();
+	}
+
+	public void addError(Object error){
+		if(error instanceof ParserError){
+			parserError.add((ParserError) error);
+		}
+		if(error instanceof TypeError){
+			typeError.add((TypeError) error);
+		}
 	}
 	
 	public String getPath() {
@@ -40,15 +49,6 @@ public class ErrorFile extends TCWIFile implements Comparable<ErrorFile>{
 		this.compileError = compileError;
 	}
 
-	public void addError(Object error){
-		if(error instanceof ParserError){
-			parserError.add((ParserError) error);
-		}
-		if(error instanceof TypeError){
-			typeError.add((TypeError) error);
-		}
-	}
-	
 	public ArrayList<ParserError> getParserError() {
 		return parserError;
 	}

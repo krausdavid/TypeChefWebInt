@@ -1,14 +1,14 @@
 package tcwi.xml;
 
 import java.util.ArrayList;
-import tcwi.TCWIFile.TCWIFile;
+
+import tcwi.TCWIFile.ErrorFile;
 
 public class ProjectFile {
 	private String idname;
 	private String fullname;
 	private String version;
 	private String path;
-	private String type;
 	private String hasDeltas;
 	private String mainproject;
 	private String builder;
@@ -18,14 +18,13 @@ public class ProjectFile {
 	private String typeerrors;
 	private String excludedfiles;
 	private String compileerrors;
-	private ArrayList<TCWIFile> files;
+	private ArrayList<ErrorFile> files;
 
 	public ProjectFile(){
 		this.idname="";
 		this.fullname="";
 		this.version="";
 		this.path="";
-		this.type="";
 		this.hasDeltas="";
 		this.mainproject="";
 		this.builder="";
@@ -35,7 +34,7 @@ public class ProjectFile {
 		this.typeerrors="";
 		this.excludedfiles="";
 		this.compileerrors="";
-		this.files = new ArrayList<TCWIFile>();
+		this.files = new ArrayList<ErrorFile>();
 	}
 
 	public String getIdname() {
@@ -68,14 +67,6 @@ public class ProjectFile {
 
 	public void setPath(String path) {
 		this.path = path;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
 	}
 
 	public String getHasDeltas() {
@@ -150,11 +141,11 @@ public class ProjectFile {
 		this.compileerrors = compileerrors;
 	}
 
-	public ArrayList<TCWIFile> getFiles() {
+	public ArrayList<ErrorFile> getFiles() {
 		return files;
 	}
 
-	public void addFile(TCWIFile file) {
+	public void addFile(ErrorFile file) {
 		this.files.add(file);
 	}
 

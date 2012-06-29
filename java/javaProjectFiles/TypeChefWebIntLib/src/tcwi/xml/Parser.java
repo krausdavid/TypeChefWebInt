@@ -243,9 +243,6 @@ public class Parser {
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("path")){
 			    				p.setPath(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
 			    			}
-			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("type")){
-			    				p.setType(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
-			    			}
 	    				}
 	    			}
 	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("delta")){
@@ -292,7 +289,6 @@ public class Parser {
 	    	if(list.item(i).getNodeName().equals("errors")){
 	    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
 	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("file")){
-	    				//TODO: Decision between CompareFile and ErrorFile
 	    				ErrorFile file = new ErrorFile();
 	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("path")){
