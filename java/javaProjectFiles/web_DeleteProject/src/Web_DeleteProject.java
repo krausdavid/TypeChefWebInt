@@ -4,10 +4,9 @@ import tcwi.xml.Parser;
 
 
 public class Web_DeleteProject {
-	private static final String VERSION = "0.0.1.0";
+	private static final String VERSION = "0.0.1.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
-	private static Check check = new Check();
 	
 	public static void main(String[] args) {
 		if(args.length!=2){
@@ -25,14 +24,13 @@ public class Web_DeleteProject {
 			String webIntProjectsPath = parser.getSetting_ProjectPath();
 			String webIntTreeviewPath = parser.getSetting_TreeviewPath();
 			
-			File f = new File(webIntTreeviewPath + check.folderSeparator() + args[0] + ".js");
+			File f = new File(webIntTreeviewPath + Check.folderSeparator() + args[0] + ".js");
 			f.delete();
-			
-			f = new File(webIntProjectsPath + check.folderSeparator() + args[0] + ".project");
+			f = new File(webIntTreeviewPath + Check.folderSeparator() + args[0] + ".nochk.js");
 			f.delete();
-			f = new File(webIntProjectsPath + check.folderSeparator() + args[0] + ".project.xml");
+			f = new File(webIntProjectsPath + Check.folderSeparator() + args[0] + ".project.xml");
 			f.delete();
-			f = new File(webIntProjectsPath + check.folderSeparator() + args[0] + ".lst");
+			f = new File(webIntProjectsPath + Check.folderSeparator() + args[0] + ".lst");
 			f.delete();
 			System.out.println("Project "+ args[0] +" successfully deleted!");
 		}
