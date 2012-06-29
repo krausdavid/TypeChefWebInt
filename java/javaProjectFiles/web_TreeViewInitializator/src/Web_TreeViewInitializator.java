@@ -12,7 +12,7 @@ import tcwi.TCWIFile.TCWIFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.0.3";
+	private static final String VERSION = "0.4.0.4";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Exceptions exception;
 	private static ArrayList<String> javascript = new ArrayList<String>();
@@ -43,6 +43,10 @@ public class Web_TreeViewInitializator {
 			if(pFile.getType().equals("normal")){
 				if(((ErrorFile) filesNew.get(i)).haveErrors()){
 					if(((ErrorFile) filesNew.get(i)).isFileExist()){
+						return true;
+					}
+				}else{
+					if(((ErrorFile) filesNew.get(i)).isCompileError()){
 						return true;
 					}
 				}
@@ -116,7 +120,11 @@ public class Web_TreeViewInitializator {
 	private static String getIcon(TCWIFile file){
 		if(pFile.getType().equals("normal")){
 			if(!((ErrorFile) file).haveErrors()){
-				return "fileok";
+				if(((ErrorFile) file).isCompileError()){
+					return "filecompilefail";
+				}else{
+					return "fileok";
+				}
 			}else{
 				if(!((ErrorFile) file).isFileExist()){
 					return "fileempty";

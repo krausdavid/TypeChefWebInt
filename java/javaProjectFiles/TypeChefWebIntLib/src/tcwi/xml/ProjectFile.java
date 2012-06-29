@@ -1,9 +1,6 @@
 package tcwi.xml;
 
 import java.util.ArrayList;
-
-import tcwi.TCWIFile.CompareFile;
-import tcwi.TCWIFile.ErrorFile;
 import tcwi.TCWIFile.TCWIFile;
 
 public class ProjectFile {
@@ -161,37 +158,7 @@ public class ProjectFile {
 		this.files.add(file);
 	}
 
-	public int getParserErrorsCount() {
-		int pErr = 0;
-		for(int i=0;i<files.size();i++){
-			if(this.type.equals("normal")){
-				ErrorFile e = (ErrorFile) files.get(i);
-				pErr += e.getParserError().size();
-			}
-			if(this.type.equals("compare")){
-				CompareFile c = (CompareFile) files.get(i);
-				pErr += c.getParserErrorDiffCount();
-			}
-		}
-		return pErr;
-	}
-
-	public int getTypeErrorsCount() {
-		int tErr = 0;
-		for(int i=0;i<files.size();i++){
-			if(this.type.equals("normal")){
-				ErrorFile e = (ErrorFile) files.get(i);
-				tErr += e.getTypeError().size();
-			}
-			if(this.type.equals("compare")){
-				CompareFile c = (CompareFile) files.get(i);
-				tErr += c.getTypeErrorDiffCount();
-			}
-		}
-		return tErr;
-	}
-	
 	public boolean haveErrors(){
-		return (getParserErrorsCount()+getTypeErrorsCount())>0 ? true : false;
+		return (!parsererrors.equals("0")&&!typeerrors.equals("0")&&!compileerrors.equals("0")) ? true : false;
 	}
 }
