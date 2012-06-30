@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.3.0";
+	private static final String VERSION = "0.2.3.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -76,8 +76,6 @@ public class Web_ProjectInitializator {
 			String minute = Tools.correctCalendarForm(c.get(GregorianCalendar.MINUTE));
 			String second = Tools.correctCalendarForm(c.get(GregorianCalendar.SECOND));
 
-			File f = new File(projectPath+Check.folderSeparator()+projectName+".project.xml");
-			f.delete();
 			RandomAccessFile file = new RandomAccessFile(projectPath+Check.folderSeparator()+projectName+".project.xml","rw");
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\r\n");
 			file.writeBytes("<project>\r\n");
@@ -87,7 +85,6 @@ public class Web_ProjectInitializator {
 			file.writeBytes("			<fullname>"+escapeString(projectFullName)+"</fullname>\r\n");
 			file.writeBytes("			<version>"+escapeString(projectVersion)+"</version>\r\n");
 			file.writeBytes("			<path>"+path+"</path>\r\n");
-			file.writeBytes("			<type>normal</type>\r\n");
 			file.writeBytes("		</project>\r\n");
 			file.writeBytes("		<delta>\r\n");
 			if(projectHasDeltas.equals("true")){
