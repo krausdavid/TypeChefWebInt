@@ -82,16 +82,18 @@ if($session->get('login')!=true){
 	$file_exist = false;
 	$i=0;
 	while($file = readdir($handle)){
-		if(substr($file,-8)==".project"){
-			$projects_list[$i]['name'] = substr($file,0,-8);
-			$projects_list[$i]['id'] = $i;
-			if($PROJECT_NAME==substr($file,0,-8)){
-				$projects_list[$i]['selected'] = true;
-				$file_exist = true;
-			}else{
-				$projects_list[$i]['selected'] = false;
+		if(strlen($file)>12){
+			if(substr($file,-12)==".project.xml"){
+				$projects_list[$i]['name'] = substr($file,0,-12);
+				$projects_list[$i]['id'] = $i;
+				if($PROJECT_NAME==substr($file,0,-12)){
+					$projects_list[$i]['selected'] = true;
+					$file_exist = true;
+				}else{
+					$projects_list[$i]['selected'] = false;
+				}
+				$i++;
 			}
-			$i++;
 		}
 	}
 	//Check if the current project were deleted
@@ -141,11 +143,7 @@ if($session->get('login')!=true){
 		$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".project.xml");
 		$xml = simplexml_load_string($string);
 		
-		foreach($xml->global->project[0]->attributes() as $a => $b) {
-			if($a=="path"){
-				$PROJECT_PATH = $b."/";
-			}
-		}
+		$PROJECT_PATH = $xml->header->project->path."/";
 	}
 	
 	//Checks if the user want to delete a project
