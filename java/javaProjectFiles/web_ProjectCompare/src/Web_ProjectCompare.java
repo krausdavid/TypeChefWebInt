@@ -2,63 +2,215 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import tcwi.TCWIFile.CompareFile;
 import tcwi.TCWIFile.ErrorFile;
-import tcwi.TCWIFile.TCWIFile;
+import tcwi.TCWIFile.ParserError;
+import tcwi.TCWIFile.TypeError;
 import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
 import tcwi.tools.Tools;
 import tcwi.xml.Parser;
+import tcwi.xml.ProjectFile;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.0.2.5";
+	private static final String VERSION = "0.1.0.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
-	private static Exceptions exception = new Exceptions();
-	private static String newProjectName;
-	private static boolean projectWithChanges;
+	private static String folderSeparator = Check.folderSeparator();
 
 	/**
-	 * Write the .project.compare file
-	 * @param path
-	 * @param projectName
+	 * This method compare two files and returns a compare-summary
+	 * @param main
+	 * @param compare
+	 * @return
 	 */
-	private static void writeCompareFile(String path, String projectName, String compareName, ArrayList<TCWIFile> compFileArr){
-		//Try to find a free name
-		newProjectName = Tools.findAFreeProjectName(projectName + "_" + compareName + "_compare", path,false);
-		
-		//Save the .project file
-		projectWithChanges = false;
-		try{
-			File f = new File(path+Check.folderSeparator()+newProjectName+".project");
-			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+Check.folderSeparator()+newProjectName+".project","rw");
-			for(int i=0;i<compFileArr.size();i++){
-				//Check if the project has changes. The result will be saved in the project.xml
-				if(projectWithChanges==false){
-					if(((CompareFile) compFileArr.get(i)).haveChanges()){
-						projectWithChanges = true;
-					}
-				}
-				file.writeBytes(compFileArr.get(i)+"\r\n");
-			}
-			file.close();
-		}catch (IOException e){
-			exception.throwException(4, e, true, path);
+	private static ErrorField getCompareStatus(ErrorFile main, ErrorFile compare){
+		if(main==null){
+			main = new ErrorFile();
 		}
+		if(compare==null){
+			compare = new ErrorFile();
+		}
+		
+		ErrorField err = new ErrorField();
+
+		ListDifferences<ParserError> pLD = new ListDifferences<ParserError>();
+		ArrayList<ParserError> pDeletedMain = pLD.getListDiffs(main.getParserError(),compare.getParserError()).k.k;
+		ArrayList<ParserError> pDeletedCompare = pLD.getListDiffs(main.getParserError(),compare.getParserError()).v.k;
+		err.setDelParserErrorsMain(pDeletedMain);
+		err.setDelParserErrorsCompare(pDeletedCompare);
+
+		ListDifferences<TypeError> tLD = new ListDifferences<TypeError>();
+		ArrayList<TypeError> tDeletedMain = tLD.getListDiffs(main.getTypeError(),compare.getTypeError()).k.k;
+		ArrayList<TypeError> tDeletedCompare = tLD.getListDiffs(main.getTypeError(),compare.getTypeError()).v.k;
+		err.setDelTypeErrorsMain(tDeletedMain);
+		err.setDelTypeErrorsCompare(tDeletedCompare);
+		
+		if(main.isCompileError()&&compare.isCompileError())
+			err.setCompileerror(ErrorState.COMPILEERROR);
+		if(!main.isCompileError()&&compare.isCompileError())
+			err.setCompileerror(ErrorState.NOWCOMPILEERROR);
+		if(main.isCompileError()&&!compare.isCompileError())
+			err.setCompileerror(ErrorState.NOWNOCOMPILEERROR);
+		if(!main.isCompileError()&&!compare.isCompileError())
+			err.setCompileerror(ErrorState.NOTHING);
+		
+		if(main.isExcluded()&&compare.isExcluded())
+			err.setExcluded(ErrorState.EXCLUDED);
+		if(!main.isExcluded()&&compare.isExcluded())
+			err.setExcluded(ErrorState.NOWEXCLUDED);
+		if(main.isExcluded()&&!compare.isExcluded())
+			err.setExcluded(ErrorState.NOWNOEXCLUDED);
+		if(!main.isExcluded()&&!compare.isExcluded())
+			err.setExcluded(ErrorState.NOTHING);
+		
+		err.setFilestat(ErrorState.NOCHANGE);
+		return err;
 	}
 	
 	/**
-	 * Write the .project.xml file
-	 * @param path
-	 * @param projectName
-	 * @param projectPath
+	 * This Method is the main-analyse method. It gets all file differences and returns an project-compare-summary
+	 * @param main
+	 * @param compare
+	 * @return
 	 */
-	private static void writeProjectXMLFile(String path, String projectVersion, String projectAuthor, String projectPath){
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	private static ArrayList<Tuple<String,ErrorField>> analyseFiles(ProjectFile main, ProjectFile compare){
+		System.out.println("Check for differences...");
+		//Get all Differences
+		ListDifferences<ErrorFile> ld = new ListDifferences<ErrorFile>();
+		ArrayList<ErrorFile> deletedMain = ld.getListDiffs(main.getFiles(),compare.getFiles()).k.k;
+		ArrayList<ErrorFile> withoutDeletedMain = ld.getListDiffs(main.getFiles(),compare.getFiles()).k.v;
+		ArrayList<ErrorFile> deletedCompare = ld.getListDiffs(main.getFiles(),compare.getFiles()).v.k;
+		ArrayList<ErrorFile> withoutDeletedCompare = ld.getListDiffs(main.getFiles(),compare.getFiles()).v.v;
+		
+		ArrayList<Tuple<String,ErrorField>> result = new ArrayList<Tuple<String,ErrorField>>();
+		
+		//All files without deleted or new created files
+		for(int i=0;i<withoutDeletedMain.size();i++){
+			Tuple<String,ErrorField> t = new Tuple<String,ErrorField>(withoutDeletedMain.get(i).getPath(),getCompareStatus(withoutDeletedMain.get(i), withoutDeletedCompare.get(i)));
+			result.add(t);
+		}
+		//All deleted files
+		for(int i=0;i<deletedMain.size();i++){
+			ErrorField e = getCompareStatus(deletedMain.get(i),null);
+			e.setFilestat(ErrorState.DELETED);
+			Tuple<String,ErrorField> t = new Tuple<String,ErrorField>(deletedMain.get(i).getPath(),e);
+			result.add(t);
+		}
+		//All new created files
+		for(int i=0;i<deletedCompare.size();i++){
+			ErrorField e = getCompareStatus(null,deletedCompare.get(i));
+			e.setFilestat(ErrorState.CREATED);
+			Tuple<String,ErrorField> t = new Tuple<String,ErrorField>(deletedCompare.get(i).getPath(),e);
+			result.add(t);
+		}
+		
+		System.out.println("Sort files...");
+		//Sort files
+		Tuple[] tuple = new Tuple[result.size()];
+		for(int i=0;i<result.size();i++){
+			tuple[i] = result.get(i);
+		}
+
+		Arrays.sort(tuple);
+		result.clear();
+		for(int i=0;i<tuple.length;i++){
+			result.add(tuple[i]);
+		}
+		
+		return result;
+	}
+	
+	/**
+	 * This Method returns a count about all parser errors
+	 * @param res
+	 * @return
+	 */
+	private static int getPErrsCount(ArrayList<Tuple<String,ErrorField>> res){
+		int val=0;
+		for(int i=0;i<res.size();i++){
+			val += res.get(i).v.getParsererrors();
+		}
+		return val;
+	}
+	
+	/**
+	 * This Method returns a count about all type errors
+	 * @param res
+	 * @return
+	 */
+	private static int getTErrsCount(ArrayList<Tuple<String,ErrorField>> res){
+		int val=0;
+		for(int i=0;i<res.size();i++){
+			val += res.get(i).v.getTypeerrors();
+		}
+		return val;
+	}
+	
+	/**
+	 * This Method returns a count about all files who are new created or deleted
+	 * @param res
+	 * @return
+	 */
+	private static int getExFilesCount(ArrayList<Tuple<String,ErrorField>> res){
+		int val=0;
+		for(int i=0;i<res.size();i++){
+			if(res.get(i).v.getExcluded()==ErrorState.NOWEXCLUDED||res.get(i).v.getExcluded()==ErrorState.NOWNOEXCLUDED)
+				val++;
+		}
+		return val;
+	}
+	
+	/**
+	 * This Method returns a count about all compile errors
+	 * @param res
+	 * @return
+	 */
+	private static int getCompFilesCount(ArrayList<Tuple<String,ErrorField>> res){
+		int val=0;
+		for(int i=0;i<res.size();i++){
+			if(res.get(i).v.getCompileerror()==ErrorState.NOWCOMPILEERROR||res.get(i).v.getCompileerror()==ErrorState.NOWNOCOMPILEERROR)
+				val++;
+		}
+		return val;
+	}	
+	
+	/**
+	 * This Method returns a count about all new files
+	 * @param res
+	 * @return
+	 */
+	private static int getNewFilesCount(ArrayList<Tuple<String,ErrorField>> res){
+		int val=0;
+		for(int i=0;i<res.size();i++){
+			if(res.get(i).v.getFilestat()==ErrorState.CREATED)
+				val++;
+		}
+		return val;
+	}	
+	
+	/**
+	 * This Method returns a count about all new files
+	 * @param res
+	 * @return
+	 */
+	private static int getDeletedFilesCount(ArrayList<Tuple<String,ErrorField>> res){
+		int val=0;
+		for(int i=0;i<res.size();i++){
+			if(res.get(i).v.getFilestat()==ErrorState.DELETED)
+				val++;
+		}
+		return val;
+	}
+	
+	private static void writeOutputFile(ProjectFile main, ProjectFile compare, String projectAuthor, String path){
 		try{
+			ArrayList<Tuple<String,ErrorField>> analyse = analyseFiles(main, compare);
+			
 			Calendar c = new GregorianCalendar();
 			String month = Tools.correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
 			String day = Tools.correctCalendarForm(c.get(GregorianCalendar.DAY_OF_MONTH));
@@ -66,19 +218,113 @@ public class Web_ProjectCompare {
 			String minute = Tools.correctCalendarForm(c.get(GregorianCalendar.MINUTE));
 			String second = Tools.correctCalendarForm(c.get(GregorianCalendar.SECOND));
 
-			File f = new File(path+Check.folderSeparator()+newProjectName+".project.xml");
+			System.out.println("Write compare-file...");
+			File f = new File(main.getIdname()+"_"+compare.getIdname()+".compare.xml");
 			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+Check.folderSeparator()+newProjectName+".project.xml","rw");
-			file.writeBytes("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");//TODO: Datei wird nicht als UTF-8 abgespeichert
-			file.writeBytes("<settings>\r\n");
-			file.writeBytes("     <global>\r\n");
-			file.writeBytes("          <project idname=\""+newProjectName+"\" fullname=\""+newProjectName+"\" version=\""+projectVersion+"\" path=\""+projectPath+"\" failureProject=\""+projectWithChanges+"\" type=\"compare\" />\r\n");
-			file.writeBytes("          <init builder=\""+projectAuthor+"\" buildday=\""+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"\" buildtime=\""+hour+":"+minute+":"+second+"\" />\r\n");
-			file.writeBytes("     </global>\r\n");
-			file.writeBytes("</settings>\r\n");
+			RandomAccessFile file = new RandomAccessFile(path+folderSeparator+main.getIdname()+"_"+compare.getIdname()+".compare.xml","rw");
+			file.writeBytes("<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\r\n");
+			file.writeBytes("<project>\r\n");
+			file.writeBytes("	<header>\r\n");
+			file.writeBytes("		<project>\r\n");
+			file.writeBytes("			<idname>"+main.getIdname()+"_"+compare.getIdname()+"</idname>\r\n");
+			file.writeBytes("			<fullname>"+main.getFullname()+"_"+compare.getFullname()+"</fullname>\r\n");
+			file.writeBytes("			<path>"+main.getPath()+"</path>\r\n");
+			file.writeBytes("		</project>\r\n");
+			file.writeBytes("		<build>\r\n");
+			file.writeBytes("			<builder>"+projectAuthor+"</builder>\r\n");
+			file.writeBytes("			<date>"+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"</date>\r\n");
+			file.writeBytes("			<time>"+hour+":"+minute+":"+second+"</time>\r\n");
+			file.writeBytes("		</build>\r\n");
+			file.writeBytes("		<stats>\r\n");
+			file.writeBytes("			<parsererrors>"+getPErrsCount(analyse)+"</parsererrors>\r\n");
+			file.writeBytes("			<typeerrors>"+getTErrsCount(analyse)+"</typeerrors>\r\n");
+			file.writeBytes("			<excludedfiles>"+getExFilesCount(analyse)+"</excludedfiles>\r\n");
+			file.writeBytes("			<compileerrors>"+getCompFilesCount(analyse)+"</compileerrors>\r\n");
+			file.writeBytes("			<newfiles>"+getNewFilesCount(analyse)+"</newfiles>\r\n");
+			file.writeBytes("			<deletedfiles>"+getDeletedFilesCount(analyse)+"</deletedfiles>\r\n");
+			file.writeBytes("		</stats>\r\n");
+			file.writeBytes("	</header>\r\n");
+			file.writeBytes("	<errors>\r\n");
+
+
+			for(int i=0;i<analyse.size();i++){
+				Tuple<String,ErrorField> act = analyse.get(i);
+				
+				file.writeBytes("		<file>\r\n");
+				file.writeBytes("			<path>"+act.k+"</path>\r\n");
+				file.writeBytes("			<excluded>"+act.v.getExcluded().getString()+"</excluded>\r\n");
+				file.writeBytes("			<compileerror>"+act.v.getCompileerror().getString()+"</compileerror>\r\n");
+				file.writeBytes("			<filestate>"+act.v.getFilestat().getString()+"</filestate>\r\n");
+				file.writeBytes("			<summary>\r\n");
+				file.writeBytes("				<parsererrors>"+act.v.getParsererrors()+"</parsererrors>\r\n");
+				file.writeBytes("				<typeerrors>"+act.v.getTypeerrors()+"</typeerrors>\r\n");
+				file.writeBytes("			</summary>\r\n");
+				file.writeBytes("			<errorlist>\r\n");
+				for(int j=0;j<act.v.getDelParserErrorsMain().size();j++){
+					file.writeBytes("				<oldparsererror>\r\n");
+					file.writeBytes("					<featurestr>"+act.v.getDelParserErrorsMain().get(j).getFeaturestr()+"</featurestr>\r\n");
+					file.writeBytes("					<msg>"+act.v.getDelParserErrorsMain().get(j).getMsg()+"</msg>\r\n");
+					file.writeBytes("					<position>\r\n");
+					file.writeBytes("						<file>"+act.v.getDelParserErrorsMain().get(j).getFile()+"</file>\r\n");
+					file.writeBytes("						<line>"+act.v.getDelParserErrorsMain().get(j).getLine()+"</line>\r\n");
+					file.writeBytes("						<col>"+act.v.getDelParserErrorsMain().get(j).getCol()+"</col>\r\n");
+					file.writeBytes("					</position>\r\n");
+					file.writeBytes("				</oldparsererror>\r\n");
+				}
+				for(int j=0;j<act.v.getDelParserErrorsCompare().size();j++){
+					file.writeBytes("				<newparsererror>\r\n");
+					file.writeBytes("					<featurestr>"+act.v.getDelParserErrorsCompare().get(j).getFeaturestr()+"</featurestr>\r\n");
+					file.writeBytes("					<msg>"+act.v.getDelParserErrorsCompare().get(j).getMsg()+"</msg>\r\n");
+					file.writeBytes("					<position>\r\n");
+					file.writeBytes("						<file>"+act.v.getDelParserErrorsCompare().get(j).getFile()+"</file>\r\n");
+					file.writeBytes("						<line>"+act.v.getDelParserErrorsCompare().get(j).getLine()+"</line>\r\n");
+					file.writeBytes("						<col>"+act.v.getDelParserErrorsCompare().get(j).getCol()+"</col>\r\n");
+					file.writeBytes("					</position>\r\n");
+					file.writeBytes("				</newparsererror>\r\n");
+				}
+				for(int j=0;j<act.v.getDelTypeErrorsMain().size();j++){
+					file.writeBytes("				<oldtypeerror>\r\n");
+					file.writeBytes("					<featurestr>"+act.v.getDelTypeErrorsMain().get(j).getFeaturestr()+"</featurestr>\r\n");
+					file.writeBytes("					<severity>"+act.v.getDelTypeErrorsMain().get(j).getSeverity()+"</severity>\r\n");
+					file.writeBytes("					<msg>"+act.v.getDelTypeErrorsMain().get(j).getMsg()+"</msg>\r\n");
+					file.writeBytes("					<position>\r\n");
+					file.writeBytes("						<file>"+act.v.getDelTypeErrorsMain().get(j).getFromFile()+"</file>\r\n");
+					file.writeBytes("						<line>"+act.v.getDelTypeErrorsMain().get(j).getFromLine()+"</line>\r\n");
+					file.writeBytes("						<col>"+act.v.getDelTypeErrorsMain().get(j).getFromCol()+"</col>\r\n");
+					file.writeBytes("					</position>\r\n");
+					file.writeBytes("					<position>\r\n");
+					file.writeBytes("						<file>"+act.v.getDelTypeErrorsMain().get(j).getToFile()+"</file>\r\n");
+					file.writeBytes("						<line>"+act.v.getDelTypeErrorsMain().get(j).getToLine()+"</line>\r\n");
+					file.writeBytes("						<col>"+act.v.getDelTypeErrorsMain().get(j).getToCol()+"</col>\r\n");
+					file.writeBytes("					</position>\r\n");
+					file.writeBytes("				</oldtypeerror>\r\n");
+				}
+				for(int j=0;j<act.v.getDelTypeErrorsCompare().size();j++){
+					file.writeBytes("				<newtypeerror>\r\n");
+					file.writeBytes("					<featurestr>"+act.v.getDelTypeErrorsCompare().get(j).getFeaturestr()+"</featurestr>\r\n");
+					file.writeBytes("					<severity>"+act.v.getDelTypeErrorsCompare().get(j).getSeverity()+"</severity>\r\n");
+					file.writeBytes("					<msg>"+act.v.getDelTypeErrorsCompare().get(j).getMsg()+"</msg>\r\n");
+					file.writeBytes("					<position>\r\n");
+					file.writeBytes("						<file>"+act.v.getDelTypeErrorsCompare().get(j).getFromFile()+"</file>\r\n");
+					file.writeBytes("						<line>"+act.v.getDelTypeErrorsCompare().get(j).getFromLine()+"</line>\r\n");
+					file.writeBytes("						<col>"+act.v.getDelTypeErrorsCompare().get(j).getFromCol()+"</col>\r\n");
+					file.writeBytes("					</position>\r\n");
+					file.writeBytes("					<position>\r\n");
+					file.writeBytes("						<file>"+act.v.getDelTypeErrorsCompare().get(j).getToFile()+"</file>\r\n");
+					file.writeBytes("						<line>"+act.v.getDelTypeErrorsCompare().get(j).getToLine()+"</line>\r\n");
+					file.writeBytes("						<col>"+act.v.getDelTypeErrorsCompare().get(j).getToCol()+"</col>\r\n");
+					file.writeBytes("					</position>\r\n");
+					file.writeBytes("				</newtypeerror>\r\n");
+				}
+				file.writeBytes("			</errorlist>\r\n");
+				file.writeBytes("		</file>\r\n");
+			}
+			file.writeBytes("	</errors>\r\n");
+			file.writeBytes("</project>\r\n");
 			file.close();
+		
 		}catch (IOException e){
-			exception.throwException(4, e, true, path);
+			Exceptions.throwException(4, e, true, main.getIdname()+"_"+compare.getIdname()+".compare.xml");
 		}
 	}
 	
@@ -96,75 +342,39 @@ public class Web_ProjectCompare {
 			System.out.println("[GLOBAL_SETTINGS]");
 			System.out.println("     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
-			String mainProject = args[0];
-			String compareProject = args[1];
+			String mainProjectName = args[0];
+			String compareProjectName = args[1];
 			String projectAuthor = args[2];
 			String globalSettings = args[3];
 			
-			System.out.println("Starting compare "+mainProject+" with "+compareProject);
+			System.out.println("Starting compare "+mainProjectName+" with "+compareProjectName);
 
 			parser = new Parser(globalSettings);
 			String projectPath = parser.getSetting_ProjectPath();
 			
 			System.out.println("Load Projects...");
-			String mainProjectVersion = "";
-			String compareProjectVersion = "";
-			String mainProjectPath = "";
+
+			ProjectFile mainProject = null;
+			ProjectFile compareProject = null;
 			
-			String path = "";
-			String pathProject = "";
-			ArrayList<TCWIFile> mainProjectErrArr = null;
-			ArrayList<TCWIFile> compareProjectErrArr = null;
-			try{
-				path = projectPath + Check.folderSeparator() + mainProject + ".project.xml";
-				pathProject = projectPath + Check.folderSeparator() + mainProject + ".project";
-				parser = new Parser(path);
-				mainProjectVersion = parser.getSetting_ProjectVersion();
-				mainProjectPath = parser.getSetting_ProjectBasePath();
-				mainProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(pathProject);
-				
-				path = projectPath + Check.folderSeparator() + compareProject + ".project.xml";
-				pathProject = projectPath + Check.folderSeparator() + compareProject + ".project";
-				parser = new Parser(path);
-				compareProjectVersion = parser.getSetting_ProjectVersion();
-				compareProjectErrArr = TCWIFile.createTCWIFileArrayFromErrorFile(pathProject);
-			}catch (IOException e){
-				exception.throwException(8, e, true, path);
+			try {
+				mainProject = Parser.getProject(projectPath+folderSeparator+mainProjectName+".project.xml");
+				compareProject = Parser.getProject(projectPath+folderSeparator+compareProjectName+".project.xml");
+			} catch (IOException e) {
+				Exceptions.throwException(1, e, true, "");
+			} catch (Exception e) {
+				Exceptions.throwException(2, e, true, "");
 			}
 			
-			System.out.println("Compare Projects...");
+			if(mainProject==null||compareProject==null)
+				Exceptions.throwException(2, null, true, "");
 			
-			ArrayList<TCWIFile> compFileArr = new ArrayList<TCWIFile>();
-			
-			if(mainProjectErrArr.size()==compareProjectErrArr.size()){
-				for(int i = 0;i<mainProjectErrArr.size();i++){
-					if(((ErrorFile) mainProjectErrArr.get(i)).getPath().equals(((ErrorFile) compareProjectErrArr.get(i)).getPath())){
-						String haveNoDBG = ((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG();
-						String isNotTrueSucceeded = ((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded();;
-						String haveTypeErrors = ((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors()+"|"+((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors();
-						if(((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG()!=((ErrorFile) compareProjectErrArr.get(i)).isHaveNoDBG()){
-							haveNoDBG = ((ErrorFile) mainProjectErrArr.get(i)).isHaveNoDBG()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isHaveNoDBG();
-						}
-						if(((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded()!=((ErrorFile) compareProjectErrArr.get(i)).isNotTrueSucceeded()){
-							isNotTrueSucceeded = ((ErrorFile) mainProjectErrArr.get(i)).isNotTrueSucceeded()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isNotTrueSucceeded();
-						}
-						if(((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors()!=((ErrorFile) compareProjectErrArr.get(i)).isHaveTypeErrors()){
-							haveTypeErrors = ((ErrorFile) mainProjectErrArr.get(i)).isHaveTypeErrors()+"|"+((ErrorFile) compareProjectErrArr.get(i)).isHaveTypeErrors();
-						}
-						if(!(haveNoDBG.equals("") && isNotTrueSucceeded.equals("") && haveTypeErrors.equals(""))){
-							CompareFile compFile = new CompareFile(((ErrorFile) mainProjectErrArr.get(i)).getPath(),haveNoDBG,isNotTrueSucceeded,haveTypeErrors);
-							compFileArr.add(compFile);
-						}
-					}else{
-						exception.throwException(9, null, true, "");
-					}
-				}
-			}else{
-				exception.throwException(9, null, true, "");
+			if(!mainProject.getPath().equals(compareProject.getPath())){
+				Exceptions.throwException(9, null, true, "");
 			}
 			
-			writeCompareFile(projectPath,mainProject,compareProject,compFileArr);
-			writeProjectXMLFile(projectPath,mainProjectVersion+"|"+compareProjectVersion,projectAuthor,mainProjectPath);
+			writeOutputFile(mainProject, compareProject, projectAuthor, projectPath);
+
 			System.out.println("Done!");
 			
 		}

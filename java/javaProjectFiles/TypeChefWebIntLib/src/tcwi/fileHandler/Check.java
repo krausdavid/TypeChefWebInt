@@ -122,7 +122,7 @@ public class Check {
 		if(f.getAbsolutePath().charAt(0)=='/'){
 			return "/";
 		}else{
-			return "\\\\";
+			return "\\";
 		}
 		
 	}

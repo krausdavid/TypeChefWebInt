@@ -85,4 +85,15 @@ public class ErrorFile implements Comparable<ErrorFile>{
 		
 		return 0;
 	}
+
+	@Override
+	public boolean equals(Object arg0) {
+		if(arg0 instanceof ErrorFile){
+			return this.path.equals(((ErrorFile) arg0).getPath());
+		}else{
+			return false;
+		}
+	}
+	
+	
 }

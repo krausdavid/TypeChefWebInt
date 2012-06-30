@@ -309,9 +309,8 @@ public class Parser {
 			    			}
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("errorlist")){
 			    				NodeList shortList = list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes();
-			    				
 			    				for(int l=0;l<shortList.getLength();l++){
-			    					if(shortList.item(l).getNodeName().equals("parsererrors")){
+			    					if(shortList.item(l).getNodeName().equals("parsererror")){
 			    						ParserError pErr = new ParserError();
 		    							for(int m=0;m<shortList.item(l).getChildNodes().getLength();m++){
 		    								if(shortList.item(l).getChildNodes().item(m).getNodeName().equals("featurestr")){
@@ -336,7 +335,7 @@ public class Parser {
 		    							}
 			    						file.addError(pErr);
 			    					}
-			    					if(shortList.item(l).getNodeName().equals("typeerrors")){
+			    					if(shortList.item(l).getNodeName().equals("typeerror")){
 			    						TypeError tErr = new TypeError();
 			    						boolean firstPos = true;
 		    							for(int m=0;m<shortList.item(l).getChildNodes().getLength();m++){

@@ -16,9 +16,9 @@ public class Exceptions {
 		exception.put(6, "ERROR 6: Can't access the given path. Maybe you do not have the rights for it?");
 		exception.put(7, "ERROR 7: File / Path doesn't exist.");
 		exception.put(8, "ERROR 8: Can't read / write the given file.");
-		exception.put(9, "ERROR 9: The 2 given projects are not from the same type!");
+		exception.put(9, "ERROR 9: The 2 given projects are not from the same path!");
 		exception.put(10, "ERROR 10: The project has provided over one million times. Delete old projects of this type!");
-		exception.put(11, "ERROR 11: Error in parsing the .project-File. It's an CompareFile. Wrong format?");
+		//exception.put(11, "ERROR 11: Error in parsing the .project-File. It's an CompareFile. Wrong format?");
 		//exception.put(12, "ERROR 12: Wrong project-type!");
 		exception.put(13, "ERROR 13: Wrong count of parameters!");
 		exception.put(14, "ERROR 14: This filename contains bad characters!");
