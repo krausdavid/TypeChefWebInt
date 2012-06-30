@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.2.2";
+	private static final String VERSION = "0.2.3.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -50,6 +50,12 @@ public class Web_ProjectInitializator {
 		return "";
 	}
 	
+	private static String escapeString(String str){
+		str = str.replace("&", "AND");
+		str = str.replace("|", "OR");
+		return str;
+	}
+	
 	/**
 	 * Write the .project.xml-file
 	 * @param projectPath
@@ -78,8 +84,8 @@ public class Web_ProjectInitializator {
 			file.writeBytes("	<header>\r\n");
 			file.writeBytes("		<project>\r\n");
 			file.writeBytes("			<idname>"+projectName+"</idname>\r\n");
-			file.writeBytes("			<fullname>"+projectFullName+"</fullname>\r\n");
-			file.writeBytes("			<version>"+projectVersion+"</version>\r\n");
+			file.writeBytes("			<fullname>"+escapeString(projectFullName)+"</fullname>\r\n");
+			file.writeBytes("			<version>"+escapeString(projectVersion)+"</version>\r\n");
 			file.writeBytes("			<path>"+path+"</path>\r\n");
 			file.writeBytes("			<type>normal</type>\r\n");
 			file.writeBytes("		</project>\r\n");
@@ -93,7 +99,7 @@ public class Web_ProjectInitializator {
 			}
 			file.writeBytes("		</delta>\r\n");
 			file.writeBytes("		<build>\r\n");
-			file.writeBytes("			<builder>"+projectAuthor+"</builder>\r\n");
+			file.writeBytes("			<builder>"+escapeString(projectAuthor)+"</builder>\r\n");
 			file.writeBytes("			<date>"+c.get(GregorianCalendar.YEAR)+"-"+month+"-"+day+"</date>\r\n");
 			file.writeBytes("			<time>"+hour+":"+minute+":"+second+"</time>\r\n");
 			file.writeBytes("		</build>\r\n");
@@ -129,8 +135,8 @@ public class Web_ProjectInitializator {
 				file.writeBytes("			<errorlist>\r\n");
 				for(int j=0;j<files.get(i).getParserError().size();j++){
 					file.writeBytes("				<parsererror>\r\n");
-					file.writeBytes("					<featurestr>"+files.get(i).getParserError().get(j).getFeaturestr()+"</featurestr>\r\n");
-					file.writeBytes("					<msg>"+files.get(i).getParserError().get(j).getMsg()+"</msg>\r\n");
+					file.writeBytes("					<featurestr>"+escapeString(files.get(i).getParserError().get(j).getFeaturestr())+"</featurestr>\r\n");
+					file.writeBytes("					<msg>"+escapeString(files.get(i).getParserError().get(j).getMsg())+"</msg>\r\n");
 					file.writeBytes("					<position>\r\n");
 					file.writeBytes("						<file>"+files.get(i).getParserError().get(j).getFile()+"</file>\r\n");
 					file.writeBytes("						<line>"+files.get(i).getParserError().get(j).getLine()+"</line>\r\n");
@@ -140,9 +146,9 @@ public class Web_ProjectInitializator {
 				}
 				for(int j=0;j<files.get(i).getTypeError().size();j++){
 					file.writeBytes("				<typeerror>\r\n");
-					file.writeBytes("					<featurestr>"+files.get(i).getTypeError().get(j).getFeaturestr()+"</featurestr>\r\n");
+					file.writeBytes("					<featurestr>"+escapeString(files.get(i).getTypeError().get(j).getFeaturestr())+"</featurestr>\r\n");
 					file.writeBytes("					<severity>"+files.get(i).getTypeError().get(j).getSeverity()+"</severity>\r\n");
-					file.writeBytes("					<msg>"+files.get(i).getTypeError().get(j).getMsg()+"</msg>\r\n");
+					file.writeBytes("					<msg>"+escapeString(files.get(i).getTypeError().get(j).getMsg())+"</msg>\r\n");
 					file.writeBytes("					<position>\r\n");
 					file.writeBytes("						<file>"+files.get(i).getTypeError().get(j).getFromFile()+"</file>\r\n");
 					file.writeBytes("						<line>"+files.get(i).getTypeError().get(j).getFromLine()+"</line>\r\n");
