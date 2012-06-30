@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<settings>
-     <global>
-          <project idname="linux26333" fullname="Linux" version="2.6.33.3" path="/app/archive/kos/share/TypeChef/linux/linux-2.6.33.3" failureProject="true" type="normal" />
-          <delta hasDeltas="true" mainProject="_" />
-          <init builder="EifX" buildday="2012-06-26" buildtime="16:03:19" />
-     </global>
-</settings>
