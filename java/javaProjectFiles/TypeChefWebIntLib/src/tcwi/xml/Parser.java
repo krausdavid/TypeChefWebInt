@@ -352,24 +352,48 @@ public class Parser {
 		    									for(int n=0;n<shortList.item(l).getChildNodes().item(m).getChildNodes().getLength();n++){
 			    									if(firstPos){
 			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("file")){
-			    											tErr.setFromFile(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											try{
+			    												tErr.setFromFile(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
 			    										}
 			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("line")){
-			    											tErr.setFromLine(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											try{
+			    												tErr.setFromLine(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
 			    										}
 			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("col")){
-			    											tErr.setFromCol(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											try{
+			    												tErr.setFromCol(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
+			    											firstPos = false;
 			    										}
-				    									firstPos = false;
 			    									}else{
 			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("file")){
-			    											tErr.setToFile(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											try{
+				    											tErr.setToFile(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
 			    										}
 			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("line")){
-			    											tErr.setToLine(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											try{
+				    											tErr.setToLine(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
 			    										}
 			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("col")){
-			    											tErr.setToCol(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											try{
+				    											tErr.setToCol(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
 			    										}
 			    									}
 		    									}

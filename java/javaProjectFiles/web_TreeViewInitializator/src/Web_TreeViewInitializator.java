@@ -17,7 +17,7 @@ public class Web_TreeViewInitializator {
 	private static ProjectFile pFile;
 	
 	/**
-	 * Check a given folder for failure dbg-files.
+	 * Check a given folder has files with errors in it
 	 * @param path
 	 * @return
 	 */
@@ -43,7 +43,7 @@ public class Web_TreeViewInitializator {
 	}
 
 	/**
-	 * Write the output filefalse
+	 * Write the output file
 	 * @param path
 	 * @param prettyOutput
 	 */
@@ -68,7 +68,7 @@ public class Web_TreeViewInitializator {
 	}
 
 	/**
-	 * Get the right icon for the treeview
+	 * Get the right dir-icon for the treeview
 	 * @param path
 	 * @param projectType
 	 * @return
@@ -82,7 +82,7 @@ public class Web_TreeViewInitializator {
 	}
 	
 	/**
-	 * Get the right icon for the treeview
+	 * Get the right file-icon for the treeview
 	 * @param file
 	 * @param projectType
 	 * @return
@@ -103,7 +103,10 @@ public class Web_TreeViewInitializator {
 
 	/**
 	 * Checks the difference between the old and the new path and
-	 * deletes or creates folders
+	 * deletes or creates folders<br>
+	 * The method returns an int-array. The first number in the array counts
+	 * how many folders must be go back. The second number in the array counts
+	 * how many folder must be go up (or must be created).
 	 * @param oldArr
 	 * @param newArr
 	 * @return
@@ -189,7 +192,7 @@ public class Web_TreeViewInitializator {
 			String[] pathArr;
 			pathArr = relativeFiles.get(i).split(folderSeparator);
 
-//			//If the path has changed, draw the missing parts
+			//If the path has changed, draw the missing parts
 			String p = "";
 			int[] dir = dirDecision(oldArr, pathArr);
 			//Write folders
