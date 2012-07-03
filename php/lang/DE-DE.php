@@ -16,7 +16,7 @@
  * There are currently no notes.
  * =====================================================
  */
- 
+require("./lang/EN-US.php");
 $template->assign("langERR_403Forbidden", "KEIN ZUGRIFF");
 $template->assign("langERR_403NotFound", "SEITE NICHT GEFUNDEN");
 $template->assign("langERR_501NotImplemented", "NICHT ENTWICKELT");
@@ -38,11 +38,13 @@ $template->assign("langINFTXT_nicknameContainsBadCharacter", "Der gewählte Proj
 $template->assign("langTXT_actualProject", "Aktuelles Projekt");
 $template->assign("langTXT_compareTwoProjects", "Zwei Projekte vergleichen");
 $template->assign("langTXT_deleteProject", "Projekt löschen");
+$template->assign("langTXT_deltas", "Deltas");
 $template->assign("langTXT_evaluation", "Auswertung");
 $template->assign("langTXT_hello", "Hallo");
 $template->assign("langTXT_homepage", "Startseite");
 $template->assign("langTXT_login", "Login");
 $template->assign("langTXT_logout", "Logout");
+$template->assign("langTXT_mainproject", "Hauptproject");
 $template->assign("langTXT_name", "Name");
 $template->assign("langTXT_nickname", "Nickname");
 $template->assign("langTXT_newProject", "Neues Projekt...");

@@ -37,11 +37,13 @@ $template->assign("langINFTXT_nicknameContainsBadCharacter", "The project chosen
 $template->assign("langTXT_actualProject", "Actual project");
 $template->assign("langTXT_compareTwoProjects", "Compare two projects");
 $template->assign("langTXT_deleteProject", "Delete project");
+$template->assign("langTXT_deltas", "Deltas");
 $template->assign("langTXT_evaluation", "Evaluation");
 $template->assign("langTXT_hello", "Hello");
 $template->assign("langTXT_homepage", "Home");
 $template->assign("langTXT_login", "Login");
 $template->assign("langTXT_logout", "Logout");
+$template->assign("langTXT_mainproject", "Main project");
 $template->assign("langTXT_name", "Name");
 $template->assign("langTXT_nickname", "Nickname");
 $template->assign("langTXT_newProject", "New project...");

@@ -17,6 +17,15 @@
 			{/if}
 		</select>
 	</form>
+	{$langTXT_deltas}:
+	<form method="post" action="{$_wud}/" style="display:inline">
+		<select name="deltas" size="1">
+			<option value="-">{$langTXT_mainproject}</option>
+				{foreach from=$projects_deltas item=projects_deltas name=projects_deltas_name}
+					<option value="{$projects_deltas.id} {if $projects_deltas.selected eq true}selected{/if}>{$projects_deltas.name}</option>
+				{/if}
+		</select>
+	</form>
 	{if $project_name neq "emptytree/empty" && $rights eq true}
 		<form method="post" action="{$_wud}/" style="display:inline">
 			&nbsp;<input type="submit" value="{$langTXT_deleteProject}" name="cmd_delete_project" class="button" />
