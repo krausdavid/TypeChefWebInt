@@ -1,31 +1,42 @@
 ﻿{strip}
-	{$langTXT_actualProject}:<br/>
-	<form method="post" action="{$_wud}/" style="display:inline">
-		<select name="project" size="1">
-			<optgroup label="{$langTXT_projects}">
-				{foreach from=$projects_list item=projects_list name=projects_list_name}
-					<option value="_{$projects_list.name}" {if $projects_list.selected eq true}selected{/if} onclick="this.form.submit();">{$projects_list.name}</option>
-				{foreachelse}
-					<option value="_" selected>{$langTXT_noProjectsExist}</option>
-				{/foreach}
-			</optgroup>
-			{if $rights eq true}
-				<optgroup label="{$langTXT_options}">
-					<option value="new" onclick="form.action='{$_wud}/project?choice=new';this.form.submit();">{$langTXT_newProject}</option>
-					<option value="match" onclick="form.action='{$_wud}/project?choice=match';this.form.submit();">{$langTXT_compareTwoProjects}</option>
-				</optgroup>
-			{/if}
-		</select>
-	</form>
-	{$langTXT_deltas}:
-	<form method="post" action="{$_wud}/" style="display:inline">
-		<select name="deltas" size="1">
-			<option value="-">{$langTXT_mainproject}</option>
-				{foreach from=$projects_deltas item=projects_deltas name=projects_deltas_name}
-					<option value="{$projects_deltas.id} {if $projects_deltas.selected eq true}selected{/if}>{$projects_deltas.name}</option>
-				{/if}
-		</select>
-	</form>
+	<table align="left" border="0" cellpadding="0" cellspacing="0" class="content">
+		<tr>
+			<td><b>{$langTXT_actualProject}</b></td>
+			<td><b>{$langTXT_deltas}</b></td>
+		</tr>
+		<tr>
+			<td>
+				<form method="post" action="{$_wud}/" style="display:inline">
+					<select name="project" size="1">
+						<optgroup label="{$langTXT_projects}">
+							{foreach from=$projects_list item=projects_list name=projects_list_name}
+								<option value="_{$projects_list.name}" {if $projects_list.selected eq true}selected{/if} onclick="this.form.submit();">{$projects_list.name}</option>
+							{foreachelse}
+								<option value="_" selected>{$langTXT_noProjectsExist}</option>
+							{/foreach}
+						</optgroup>
+						{if $rights eq true}
+							<optgroup label="{$langTXT_options}">
+								<option value="new" onclick="form.action='{$_wud}/project?choice=new';this.form.submit();">{$langTXT_newProject}</option>
+								<option value="match" onclick="form.action='{$_wud}/project?choice=match';this.form.submit();">{$langTXT_compareTwoProjects}</option>
+							</optgroup>
+						{/if}
+					</select>
+				</form>
+			</td>
+			<td>
+				<form method="post" action="{$_wud}/" style="display:inline">
+					<select name="deltas" size="1">
+						<option value="-">{$langTXT_mainproject}</option>
+							{foreach from=$projects_deltas item=projects_deltas name=projects_deltas_name}
+								<option value="{$projects_deltas.id} {if $projects_deltas.selected eq true}selected{/if}>{$projects_deltas.name}</option>
+							{/foreach}
+					</select>
+				</form>
+			</td>
+		</tr>
+	</table>
+	<br/>
 	{if $project_name neq "emptytree/empty" && $rights eq true}
 		<form method="post" action="{$_wud}/" style="display:inline">
 			&nbsp;<input type="submit" value="{$langTXT_deleteProject}" name="cmd_delete_project" class="button" />

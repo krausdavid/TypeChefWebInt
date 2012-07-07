@@ -6,5 +6,6 @@
 	<img src="{$_wud}/include/images/treeview/folderclosedok.gif" border="0"/>: {$langTXTHOME_legendPoint2}<br/>
 	<img src="{$_wud}/include/images/treeview/fileempty.gif" border="0"/>: {$langTXTHOME_legendPoint3}<br/>
 	<img src="{$_wud}/include/images/treeview/filefail.gif" border="0"/>: {$langTXTHOME_legendPoint4}<br/>
-	<img src="{$_wud}/include/images/treeview/fileok.gif" border="0"/>: {$langTXTHOME_legendPoint5}<br/>
+	<img src="{$_wud}/include/images/treeview/filecompilefail.gif" border="0"/>: {$langTXTHOME_legendPoint5}<br/>
+	<img src="{$_wud}/include/images/treeview/fileok.gif" border="0"/>: {$langTXTHOME_legendPoint6}<br/>
 {/strip}

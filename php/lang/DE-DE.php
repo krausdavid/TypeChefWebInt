@@ -65,7 +65,8 @@ $template->assign("langTXTHOME_legendPoint1", "In diesem Ordner sind Fehler von 
 $template->assign("langTXTHOME_legendPoint2", "In diesem Ordner sind keine Fehler von TypeChef gefunden worden");
 $template->assign("langTXTHOME_legendPoint3", "Diese C-Datei wurde von der Analyse ausgeschlossen");
 $template->assign("langTXTHOME_legendPoint4", "Die geprüfte C-Datei weist Fehler auf");
-$template->assign("langTXTHOME_legendPoint5", "Die C-Datei enthält keine Fehler");
+$template->assign("langTXTHOME_legendPoint5", "Typechef konnte diese C-Datei nicht Parsen: Es trat ein Fehler auf");
+$template->assign("langTXTHOME_legendPoint6", "Die C-Datei enthält keine Fehler");
 
 $template->assign("langTXTNEWPROJECT_loadSuccessfull", "Das Projekt wurde erfolgreich geladen.");
 $template->assign("langTXTNEWPROJECT_loadError", "Es ist ein Fehler aufgetreten. Vermutlich war einer der eingegebenen Parameter falsch.");

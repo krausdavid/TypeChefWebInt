@@ -59,6 +59,10 @@ if($session->get("lang")!=""){
 }
 
 //Read the current URL for language-switch
+if(strpos($_SERVER['REQUEST_URI'],"lang=")>0){
+	header('Location: '.$WEBSITE_DEFAULT_URI);
+}
+
 $template->assign("redirectURL",urlencode($_SERVER['REQUEST_URI']));
 if($_GET['redirect']!=""){
 	header('Location: '.$_GET['redirect']);

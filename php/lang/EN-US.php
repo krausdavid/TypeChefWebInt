@@ -64,7 +64,8 @@ $template->assign("langTXTHOME_legendPoint1", "This folder contains errors were 
 $template->assign("langTXTHOME_legendPoint2", "This folder contains no errors were found by TypeChef");
 $template->assign("langTXTHOME_legendPoint3", "This C-File was excluded from analysis");
 $template->assign("langTXTHOME_legendPoint4", "The tested C-File has errors");
-$template->assign("langTXTHOME_legendPoint5", "The tested C-File hasn't errors");
+$template->assign("langTXTHOME_legendPoint5", "Typechef couldn't parse the C-File: An error occured.");
+$template->assign("langTXTHOME_legendPoint6", "The tested C-File hasn't errors");
 
 $template->assign("langTXTNEWPROJECT_loadSuccessfull", "The project was successfully loaded.");
 $template->assign("langTXTNEWPROJECT_loadError", "There was an error. Probably one of the parameters entered were incorrect.");
