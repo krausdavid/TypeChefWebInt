@@ -10,7 +10,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.1.4";
+	private static final String VERSION = "0.4.1.5";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
@@ -297,12 +297,12 @@ public class Web_TreeViewInitializator {
 		javascript.add("foldersTree = gFld(\"<i>"+pFile.getFullname()+" "+pFile.getVersion()+"</i>\", \"\")");
 		javascript.add("foldersTree.treeID = \"Frameset\"");
 		
-		if(!pFile.haveErrors()){
-			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
-			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
-		}else{
+		if(pFile.haveErrors()){
 			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
 			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
+		}else{
+			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
+			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
 		}
 	}
 

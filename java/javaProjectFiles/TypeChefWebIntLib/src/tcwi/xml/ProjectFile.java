@@ -150,6 +150,6 @@ public class ProjectFile {
 	}
 
 	public boolean haveErrors(){
-		return (!parsererrors.equals("0")&&!typeerrors.equals("0")&&!compileerrors.equals("0")) ? true : false;
+		return (!parsererrors.equals("0")||!typeerrors.equals("0")||!compileerrors.equals("0")) ? true : false;
 	}
 }
