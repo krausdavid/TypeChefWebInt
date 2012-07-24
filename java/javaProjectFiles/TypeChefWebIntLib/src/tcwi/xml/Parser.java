@@ -286,7 +286,16 @@ public class Parser {
 	    		}
 	    	}
 	    	if(list.item(i).getNodeName().equals("errors")){
+	    		System.out.println("Analyse error files...");
 	    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
+	    			for(int x=1;x<=10;x++){
+	    				if(x!=10){
+	    					if(list.item(i).getChildNodes().getLength()/10*x==j){System.out.print(x+"0%..");}
+	    				}else{
+	    					if(list.item(i).getChildNodes().getLength()/10*x==j){System.out.print(x+"0%\r");}
+	    				}
+	    			}
+	    			
 	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("file")){
 	    				ErrorFile file = new ErrorFile();
 	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){

@@ -10,7 +10,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.1.5";
+	private static final String VERSION = "0.4.1.6";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
@@ -320,7 +320,7 @@ public class Web_TreeViewInitializator {
 			System.out.println("\n[GLOBAL_SETTINGS]");
 			System.out.println("\n     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
-			System.out.println("\nRead needed variables...");
+			System.out.println("Read needed variables...");
 			String projectName = args[0];
 			String globalSettings = args[1];
 			
