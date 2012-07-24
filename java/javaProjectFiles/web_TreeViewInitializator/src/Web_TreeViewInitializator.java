@@ -10,7 +10,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.1.0";
+	private static final String VERSION = "0.4.1.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
@@ -23,7 +23,12 @@ public class Web_TreeViewInitializator {
 	 * @return
 	 */
 	private static boolean isAFailFolder(String path){
-		String str = path.substring(0,path.lastIndexOf(folderSeparator));
+		String str = "";
+		if(path.lastIndexOf(folderSeparator)>0){
+			str = path.substring(0,path.lastIndexOf(folderSeparator));
+		}else{
+			str = path;
+		}
 		for(int i=0;i<errFailFolders.size();i++){
 			if(errFailFolders.get(i).getPath().equals(str)){
 				return errFailFolders.get(i).isFail();
@@ -53,7 +58,12 @@ public class Web_TreeViewInitializator {
 		errFailFolders = new ArrayList<FolderElem>();
 		for(int i=0;i<pFile.getFiles().size();i++){
 			ErrorFile eFile = pFile.getFiles().get(i);
-			String str = eFile.getPath().substring(0,eFile.getPath().lastIndexOf(folderSeparator));
+			String str = "";
+			if(eFile.getPath().lastIndexOf(folderSeparator)>0){
+				str = eFile.getPath().substring(0,eFile.getPath().lastIndexOf(folderSeparator));
+			}else{
+				str = eFile.getPath();
+			}
 			FolderElem e = new FolderElem(eFile.haveErrors(),eFile.getPath());
 			
 			int errNr = isExistInErrFailFolders(str);
