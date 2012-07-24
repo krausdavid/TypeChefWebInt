@@ -10,7 +10,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.1.3";
+	private static final String VERSION = "0.4.1.4";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
@@ -64,7 +64,7 @@ public class Web_TreeViewInitializator {
 			}else{
 				str = eFile.getPath();
 			}
-			FolderElem e = new FolderElem(eFile.haveErrors(),str);
+			FolderElem e = new FolderElem(eFile.haveErrors()||eFile.isCompileError(),str);
 			
 			int errNr = isExistInErrFailFolders(str);
 			if(errNr==-1){
