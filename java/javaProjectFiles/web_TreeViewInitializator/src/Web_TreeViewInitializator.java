@@ -10,11 +10,12 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.0.5";
+	private static final String VERSION = "0.4.1.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
 	private static ProjectFile pFile;
+	private static ArrayList<FolderElem> errFailFolders;
 	
 	/**
 	 * Check a given folder has files with errors in it
@@ -22,26 +23,50 @@ public class Web_TreeViewInitializator {
 	 * @return
 	 */
 	private static boolean isAFailFolder(String path){
-		ArrayList<ErrorFile> filesNew = new ArrayList<ErrorFile>();
-		for(int i=0;i<pFile.getFiles().size();i++){
-			if(pFile.getFiles().get(i).getPath().contains(path)){
-				filesNew.add((ErrorFile) pFile.getFiles().get(i));
+		String str = path.substring(0,path.lastIndexOf(folderSeparator));
+		for(int i=0;i<errFailFolders.size();i++){
+			if(errFailFolders.get(i).getPath().equals(str)){
+				return errFailFolders.get(i).isFail();
 			}
 		}
-		for(int i=0;i<filesNew.size();i++){
-			if(filesNew.get(i).haveErrors()){
-				if(!filesNew.get(i).isExcluded()){
-					return true;
-				}
-			}else{
-				if(filesNew.get(i).isCompileError()){
-					return true;
-				}
-			}
-		}
-		return false;
+		return true;
 	}
 
+	/**
+	 * Helper-Method for analyseFailFolders
+	 * @param path
+	 * @return
+	 */
+	private static int isExistInErrFailFolders(String path){
+		for(int i=0;i<errFailFolders.size();i++){
+			if(errFailFolders.get(i).getPath().equals(path)){
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	/**
+	 * Analyse all folders and check, if it is a fail-folder or not
+	 */
+	private static void analyseFailFolders(){
+		errFailFolders = new ArrayList<FolderElem>();
+		for(int i=0;i<pFile.getFiles().size();i++){
+			ErrorFile eFile = pFile.getFiles().get(i);
+			String str = eFile.getPath().substring(0,eFile.getPath().lastIndexOf(folderSeparator));
+			FolderElem e = new FolderElem(eFile.haveErrors(),eFile.getPath());
+			
+			int errNr = isExistInErrFailFolders(str);
+			if(errNr==-1){
+				errFailFolders.add(e);
+			}else{
+				if(eFile.haveErrors()){
+					errFailFolders.get(errNr).setFail(true);
+				}
+			}
+		}
+	}
+	
 	/**
 	 * Write the output file
 	 * @param path
@@ -289,6 +314,8 @@ public class Web_TreeViewInitializator {
 			String projectName = args[0];
 			String globalSettings = args[1];
 			
+			long time = System.currentTimeMillis();
+			
 			//Init the XMLParser
 			Parser settingsParser = new Parser(globalSettings);
 			String WebIntProjectsPath = settingsParser.getSetting_ProjectPath();
@@ -308,7 +335,11 @@ public class Web_TreeViewInitializator {
 			} catch (Exception e) {
 				Exceptions.throwException(2, e, true, project_settings_xml_path);
 			}
+			
+			System.out.println("Analyse fail-folders...");
 
+			analyseFailFolders();
+			
 			System.out.println("Build JavaScript-File...");
 			
 			generateJSHeader(TreeViewIconsPath, WebsiteDefaultURL);
@@ -320,6 +351,7 @@ public class Web_TreeViewInitializator {
 			writeTxt(TreeViewPath+folderSeparator+projectName+".js",false);
 			writeTxt(TreeViewPath+folderSeparator+projectName+".nochk.js",true);
 			System.out.println("DONE!");
+			System.out.printf("Duration: %.2f sec\n",(System.currentTimeMillis()-time)/1000.0);
 		}
 	}
 
