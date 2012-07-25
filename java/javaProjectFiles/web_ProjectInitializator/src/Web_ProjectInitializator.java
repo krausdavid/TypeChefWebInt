@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.3.2";
+	private static final String VERSION = "0.2.3.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -53,6 +53,8 @@ public class Web_ProjectInitializator {
 	private static String escapeString(String str){
 		str = str.replace("&", "AND");
 		str = str.replace("|", "OR");
+		str = str.replace("<", "GREATER");
+		str = str.replace(">", "LOWER");
 		return str;
 	}
 	
