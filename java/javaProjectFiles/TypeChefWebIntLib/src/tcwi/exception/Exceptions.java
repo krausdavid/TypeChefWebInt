@@ -22,6 +22,7 @@ public class Exceptions {
 		//exception.put(12, "ERROR 12: Wrong project-type!");
 		exception.put(13, "ERROR 13: Wrong count of parameters!");
 		exception.put(14, "ERROR 14: This filename contains bad characters!");
+		exception.put(15, "ERROR 15: Compare-Projects are not allowed!");
 	}
 	
 	public static void throwException(int i, Exception e, boolean isExit, String pathInformation){

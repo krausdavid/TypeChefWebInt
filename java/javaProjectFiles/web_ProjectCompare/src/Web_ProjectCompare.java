@@ -16,7 +16,7 @@ import tcwi.xml.Parser;
 import tcwi.xml.ProjectFile;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.1.0.0";
+	private static final String VERSION = "0.1.1.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static String folderSeparator = Check.folderSeparator();
@@ -219,6 +219,7 @@ public class Web_ProjectCompare {
 			String second = Tools.correctCalendarForm(c.get(GregorianCalendar.SECOND));
 
 			System.out.println("Write compare-file...");
+			
 			File f = new File(main.getIdname()+"_"+compare.getIdname()+".compare.xml");
 			f.delete();
 			RandomAccessFile file = new RandomAccessFile(path+folderSeparator+main.getIdname()+"_"+compare.getIdname()+".compare.xml","rw");
@@ -334,9 +335,9 @@ public class Web_ProjectCompare {
 			System.out.println("----------------------------------------------------");
 			System.out.println("\nUsage: Web_ProjectCompare [MAINPROJECT] [COMPAREPROJECT] [GLOBAL_SETTINGS]");
 			System.out.println("\n[MAINPROJECT]");
-			System.out.println("     Base-Project\n");
+			System.out.println("     Base-Project + project-type\n     Ex:example.project OR example.deltaproject\n");
 			System.out.println("[COMPAREPROJECT]");
-			System.out.println("     Compare-Project\n");
+			System.out.println("     Compare-Project + project-type\n     Ex:example.project OR example.deltaproject\n");
 			System.out.println("[PROJECTAUTHOR]");
 			System.out.println("     Project author\n");
 			System.out.println("[GLOBAL_SETTINGS]");
@@ -357,9 +358,12 @@ public class Web_ProjectCompare {
 			ProjectFile mainProject = null;
 			ProjectFile compareProject = null;
 			
+			if(mainProjectName.endsWith("compare")||compareProjectName.endsWith("compare"))
+				Exceptions.throwException(15, null, true, "");
+			
 			try {
-				mainProject = Parser.getProject(projectPath+folderSeparator+mainProjectName+".project.xml");
-				compareProject = Parser.getProject(projectPath+folderSeparator+compareProjectName+".project.xml");
+				mainProject = Parser.getProject(projectPath+folderSeparator+mainProjectName+".xml");
+				compareProject = Parser.getProject(projectPath+folderSeparator+compareProjectName+".xml");
 			} catch (IOException e) {
 				Exceptions.throwException(1, e, true, "");
 			} catch (Exception e) {
