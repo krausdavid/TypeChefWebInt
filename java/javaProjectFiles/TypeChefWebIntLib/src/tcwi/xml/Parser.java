@@ -250,8 +250,12 @@ public class Parser {
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("hasdeltas")){
 			    				p.setIsDelta(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
 			    			}
-			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("mainproject")){
-			    				p.setMainproject(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			try{
+				    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("mainproject")){
+				    				p.setMainproject(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+				    			}
+			    			}catch(Exception e){
+			    				p.setMainproject("");
 			    			}
 	    				}
 	    			}
