@@ -10,7 +10,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.1.6";
+	private static final String VERSION = "0.4.2.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
@@ -23,14 +23,8 @@ public class Web_TreeViewInitializator {
 	 * @return
 	 */
 	private static boolean isAFailFolder(String path){
-		String str = "";
-		if(path.lastIndexOf(folderSeparator)>0){
-			str = path.substring(0,path.lastIndexOf(folderSeparator));
-		}else{
-			str = path;
-		}
 		for(int i=0;i<errFailFolders.size();i++){
-			if(errFailFolders.get(i).getPath().equals(str)){
+			if(errFailFolders.get(i).getPath().equals(path)){
 				return errFailFolders.get(i).isFail();
 			}
 		}
@@ -38,7 +32,7 @@ public class Web_TreeViewInitializator {
 	}
 
 	/**
-	 * Helper-Method for analyseFailFolders
+	 * Returns position number from an element in errFailFolders
 	 * @param path
 	 * @return
 	 */
@@ -49,6 +43,32 @@ public class Web_TreeViewInitializator {
 			}
 		}
 		return -1;
+	}
+	
+	/**
+	 * Helper method for analyseFailFolders
+	 * @param elem
+	 */
+	private static void addInFailFolders(FolderElem elem){
+		String[] strArr = elem.getPath().split(folderSeparator);
+		String str = "";
+		for(int i=0;i<strArr.length;i++){
+			if(i==0)
+				str = strArr[0];
+			else
+				str = str+folderSeparator+strArr[i];
+			
+			int failNr = isExistInErrFailFolders(str);
+			if(failNr==-1){
+				FolderElem e = new FolderElem(elem.isFail(),str);
+				errFailFolders.add(e);
+			}else{
+				if(elem.isFail()){
+					errFailFolders.get(failNr).setFail(true);
+				}
+			}
+			
+		}
 	}
 	
 	/**
@@ -64,16 +84,9 @@ public class Web_TreeViewInitializator {
 			}else{
 				str = eFile.getPath();
 			}
-			FolderElem e = new FolderElem(eFile.haveErrors()||eFile.isCompileError(),str);
 			
-			int errNr = isExistInErrFailFolders(str);
-			if(errNr==-1){
-				errFailFolders.add(e);
-			}else{
-				if(eFile.haveErrors()||eFile.isCompileError()){
-					errFailFolders.get(errNr).setFail(true);
-				}
-			}
+			FolderElem e = new FolderElem(eFile.haveErrors()||eFile.isCompileError(),str);
+			addInFailFolders(e);
 		}
 	}
 	
@@ -108,8 +121,8 @@ public class Web_TreeViewInitializator {
 	 * @param projectType
 	 * @return
 	 */
-	private static String getIcon(String path, String dirType){
-		if(!isAFailFolder(path)){
+	private static String getIcon(String dirType, boolean isFail){
+		if(!isFail){
 			return "folder"+dirType+"ok";
 		}else{
 			return "folder"+dirType+"fail";
@@ -243,13 +256,15 @@ public class Web_TreeViewInitializator {
 					for(int k=0;k<=j;k++){
 						p+=folderSeparator+pathArr[k];
 					}
-					p = p.substring(1);
+					if(p.startsWith(folderSeparator)){
+						p = p.substring(folderSeparator.length());
+					}
 					
-					javascript.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \""+getIcon(p,"open")+".gif\"");
-					javascript.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \""+getIcon(p,"closed")+".gif\"");
+					boolean isFail = isAFailFolder(p);
+					javascript.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \""+getIcon("open",isFail)+".gif\"");
+					javascript.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \""+getIcon("closed",isFail)+".gif\"");
+					p="";
 				}
-			}else{
-				//p = oldP;
 			}
 			
 			//Write files

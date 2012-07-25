@@ -292,7 +292,7 @@ public class Parser {
 	    				if(x!=10){
 	    					if(list.item(i).getChildNodes().getLength()/10*x==j){System.out.print(x+"0%..");}
 	    				}else{
-	    					if(list.item(i).getChildNodes().getLength()/10*x==j){System.out.print(x+"0%\r");}
+	    					if(list.item(i).getChildNodes().getLength()/10*x==j){System.out.print(x+"0%\r\n");}
 	    				}
 	    			}
 	    			
