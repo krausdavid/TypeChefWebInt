@@ -16,7 +16,7 @@ import tcwi.xml.Parser;
 import tcwi.xml.ProjectFile;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.1.1.0";
+	private static final String VERSION = "0.1.2.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static String folderSeparator = Check.folderSeparator();
@@ -219,15 +219,26 @@ public class Web_ProjectCompare {
 			String second = Tools.correctCalendarForm(c.get(GregorianCalendar.SECOND));
 
 			System.out.println("Write compare-file...");
+	
+			String mainProjectType ="";
+			String compareProjectType ="";
+			if(main.getIsDelta().equals("true"))
+				mainProjectType = "D";
+			else
+				mainProjectType = "P";
+			if(compare.getIsDelta().equals("true"))
+				compareProjectType = "D";
+			else
+				compareProjectType = "P";
 			
-			File f = new File(main.getIdname()+"_"+compare.getIdname()+".compare.xml");
+			File f = new File(path+folderSeparator+main.getIdname()+mainProjectType+"_"+compare.getIdname()+compareProjectType+".compare.xml");
 			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+folderSeparator+main.getIdname()+"_"+compare.getIdname()+".compare.xml","rw");
+			RandomAccessFile file = new RandomAccessFile(path+folderSeparator+main.getIdname()+mainProjectType+"_"+compare.getIdname()+compareProjectType+".compare.xml","rw");
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\r\n");
 			file.writeBytes("<project>\r\n");
 			file.writeBytes("	<header>\r\n");
 			file.writeBytes("		<project>\r\n");
-			file.writeBytes("			<idname>"+main.getIdname()+"_"+compare.getIdname()+"</idname>\r\n");
+			file.writeBytes("			<idname>"+main.getIdname()+mainProjectType+"_"+compare.getIdname()+compareProjectType+"</idname>\r\n");
 			file.writeBytes("			<fullname>"+main.getFullname()+"_"+compare.getFullname()+"</fullname>\r\n");
 			file.writeBytes("			<path>"+main.getPath()+"</path>\r\n");
 			file.writeBytes("		</project>\r\n");
