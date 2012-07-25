@@ -72,7 +72,9 @@ $template->assign("langTXTNEWPROJECT_loadError", "There was an error. Probably o
 $template->assign("langTXTNEWPROJECT_topic", "Enter the data for the new project");
 
 $template->assign("langTXTVIEWPROJECT_error", "This C-file contains errors.");
+$template->assign("langTXTVIEWPROJECT_error_compileerror", "This C-file have a compile-error caused by TypeChef");
 $template->assign("langTXTVIEWPROJECT_result", "Results");
 $template->assign("langTXTVIEWPROJECT_noerror", "This C-file contains no errors.");
+$template->assign("langTXTVIEWPROJECT_noerror_excluded", "This C-file was excluded from analysis.");
 
 ?>

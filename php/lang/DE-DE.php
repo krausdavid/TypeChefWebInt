@@ -44,7 +44,7 @@ $template->assign("langTXT_hello", "Hallo");
 $template->assign("langTXT_homepage", "Startseite");
 $template->assign("langTXT_login", "Login");
 $template->assign("langTXT_logout", "Logout");
-$template->assign("langTXT_mainproject", "Hauptproject");
+$template->assign("langTXT_mainproject", "Hauptprojekt");
 $template->assign("langTXT_name", "Name");
 $template->assign("langTXT_nickname", "Nickname");
 $template->assign("langTXT_newProject", "Neues Projekt...");
@@ -73,7 +73,9 @@ $template->assign("langTXTNEWPROJECT_loadError", "Es ist ein Fehler aufgetreten.
 $template->assign("langTXTNEWPROJECT_topic", "Tragen Sie hier die Daten für das neue Projekt ein");
 
 $template->assign("langTXTVIEWPROJECT_error", "Diese C-Datei enthält Fehler.");
+$template->assign("langTXTVIEWPROJECT_error_compileerror", "Diese C-Datei hat einen Kompilierungs-Fehler, der durch TypeChef verursacht wurde.");
 $template->assign("langTXTVIEWPROJECT_result", "Ergebnisse");
 $template->assign("langTXTVIEWPROJECT_noerror", "Diese C-Datei enthält keine Fehler.");
+$template->assign("langTXTVIEWPROJECT_noerror_excluded", "Diese C-Datei wurde von der Analyse ausgeschlossen.");
 
 ?>

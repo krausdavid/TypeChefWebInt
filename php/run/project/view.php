@@ -16,36 +16,36 @@
  * There are currently no notes.
  * =====================================================
  */
-$string = tools::readXMLFile($PROJECT_PATH.$_GET['files'].".c.xml");
+
+$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$_GET['project'].".project.xml");
 $xml = simplexml_load_string($string);
 
-$i=0;
-while(true){
-	if($xml->parsererror[$i]->featurestr!=""){
-		$parsererror[$i]['featurestr'] = $xml->parsererror[$i]->featurestr;
-		$parsererror[$i]['msg'] = $xml->parsererror[$i]->msg;
-		$parsererror[$i]['line'] = $xml->parsererror[$i]->position->line;
-		$parsererror[$i]['col'] = $xml->parsererror[$i]->position->col;
-		$parsererror[$i]['id'] = $i+1;
-	}else{
-		break;
+for($i=0;$i<$xml->errors[0]->file->count();$i++){
+	if($xml->errors[0]->file[$i]->path==$_GET['files']){
+		for($j=0;$j<$xml->errors[0]->file[$i]->errorlist[0]->parsererror->count();$j++){
+			$parsererror[$j]['featurestr'] = $xml->errors[0]->file[$i]->errorlist[0]->parsererror[$j]->featurestr;
+			$parsererror[$j]['msg'] = $xml->errors[0]->file[$i]->errorlist[0]->parsererror[$j]->msg;
+			$parsererror[$j]['line'] = $xml->errors[0]->file[$i]->errorlist[0]->parsererror[$j]->position->line;
+			$parsererror[$j]['col'] = $xml->errors[0]->file[$i]->errorlist[0]->parsererror[$j]->position->col;
+			$parsererror[$j]['id'] = $j+1;
+		}
+		for($j=0;$j<$xml->errors[0]->file[$i]->errorlist[0]->typererror->count();$j++){
+			$typeerror[$j]['featurestr'] = $xml->errors[0]->file[$i]->errorlist[0]->typeerror[$j]->featurestr;
+			$typeerror[$j]['severity'] = $xml->errors[0]->file[$i]->errorlist[0]->typeerror[$j]->severity;
+			$typeerror[$j]['msg'] = $xml->errors[0]->file[$i]->errorlist[0]->typeerror[$j]->msg;
+			$typeerror[$j]['fromline'] = $xml->errors[0]->file[$i]->errorlist[0]->typeerror[$j]->position[0]->line;
+			$typeerror[$j]['fromcol'] = $xml->errors[0]->file[$i]->errorlist[0]->typeerror[$j]->position[0]->col;
+			$typeerror[$j]['toline'] = $xml->errors[0]->file[$i]->errorlist[0]->typeerror[$j]->position[1]->line;
+			$typeerror[$j]['tocol'] = $xml->errors[0]->file[$i]->errorlist[0]->typeerror[$j]->position[1]->col;
+			$typeerror[$j]['id'] = $j+1;
+		}
+		if($xml->errors[0]->file[$i]->excluded=="true"){
+			$template->assign("excluded", true);
+		}
+		if($xml->errors[0]->file[$i]->compileerror=="true"){
+			$template->assign("compileerror", true);
+		}
 	}
-	$i++;
-}
-
-$i=0;
-while(true){
-	if($xml->typeerror[$i]->featurestr!=""){
-		$typeerror[$i]['featurestr'] = $xml->typeerror[$i]->featurestr;
-		$typeerror[$i]['severity'] = $xml->typeerror[$i]->severity;
-		$typeerror[$i]['msg'] = $xml->typeerror[$i]->msg;
-		$typeerror[$i]['line'] = $xml->typeerror[$i]->position->line;
-		$typeerror[$i]['col'] = $xml->typeerror[$i]->position->col;
-		$typeerror[$i]['id'] = $i+1;
-	}else{
-		break;
-	}
-	$i++;
 }
 
 $template->assign("parsererror", $parsererror);

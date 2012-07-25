@@ -1,9 +1,17 @@
 ﻿{strip}
 	<div class="content_bigger">
-		{if $errorCount eq 0}
-			<img src="{$_wud}/include/images/style/fileok32x32.png" border="0" alt="NoError" style="position:relative; top:10px;"/>&nbsp;{$langTXTVIEWPROJECT_noerror}
+		{if $errorCount eq 0 && $compileerror neq true}
+			{if $excluded eq true}
+				<img src="{$_wud}/include/images/style/fileok32x32.png" border="0" alt="Error" style="position:relative; top:10px;"/>&nbsp;{$langTXTVIEWPROJECT_noerror_excluded}
+			{else}
+				<img src="{$_wud}/include/images/style/fileok32x32.png" border="0" alt="NoError" style="position:relative; top:10px;"/>&nbsp;{$langTXTVIEWPROJECT_noerror}
+			{/if}
 		{else}
+			{if $compileerror eq true}
+				<img src="{$_wud}/include/images/style/fileerr32x32.png" border="0" alt="Error" style="position:relative; top:10px;"/>&nbsp;{$langTXTVIEWPROJECT_error_compileerror}
+			{else}
 			<img src="{$_wud}/include/images/style/fileerr32x32.png" border="0" alt="Error" style="position:relative; top:10px;"/>&nbsp;{$langTXTVIEWPROJECT_error}
+			{/if}
 		{/if}
 	</div>
 	<br/>
@@ -31,7 +39,7 @@
 			{foreach from=$typeerror item=typeerror name=typeerror_name}
 				Error Nr. {$typeerror.id}:<br/>
 				You've got an <b>{$typeerror.severity}</b> with the following configuration: {$typeerror.featurestr}<br/>{$typeerror.msg}<br/>
-				Error in line {$typeerror.line}:{$typeerror.col} in the PI-file.<br/><br/>
+				Error from {$typeerror.fromline}:{$typeerror.fromcol} to {$typeerror.toline}:{$typeerror.tocol} in the PI-file.<br/><br/>
 			{/foreach}
 		</div>
 	{/if}
