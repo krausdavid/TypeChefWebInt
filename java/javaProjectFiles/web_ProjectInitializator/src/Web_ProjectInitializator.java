@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.3.3";
+	private static final String VERSION = "0.2.4.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -94,7 +94,7 @@ public class Web_ProjectInitializator {
 				file.writeBytes("			<mainproject>"+projectDeltaMain+"</mainproject>\r\n");
 			}else{
 				file.writeBytes("			<hasdeltas>false</hasdeltas>\r\n");
-				file.writeBytes("			<mainproject>_</mainproject>\r\n");
+				file.writeBytes("			<mainproject></mainproject>\r\n");
 			}
 			file.writeBytes("		</delta>\r\n");
 			file.writeBytes("		<build>\r\n");
@@ -179,7 +179,7 @@ public class Web_ProjectInitializator {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		if(args.length!=8){
+		if(args.length!=7){
 			System.out.println("Help - Web_ProjectInitializator "+VERSION+" by "+AUTHORS);
 			System.out.println("----------------------------------------------------");
 			System.out.println("\nUsage: Web_ProjectInitializator [PROJECTPATH] [PROJECTNAME] [PROJECTFULLNAME] ");
@@ -197,8 +197,6 @@ public class Web_ProjectInitializator {
 			System.out.println("     Project author\n");
 			System.out.println("[DELTAPROJECT]");
 			System.out.println("     true or false, if the project has deltas\n");
-			System.out.println("[DELTAMAIN]");
-			System.out.println("     The main-project who belongs to this delta. Type _ if this is the\nmain-project\n");
 			System.out.println("[GLOBAL_SETTINGS]");
 			System.out.println("     Absolute Path for the global_settings.xml\n     (include the name of the settings file)\n");
 		}else{
@@ -208,8 +206,7 @@ public class Web_ProjectInitializator {
 			String projectVersion = args[3];
 			String projectAuthor = args[4];
 			String projectHasDeltas = args[5];
-			String projectDeltaMain = args[6];
-			String settingFile = args[7];
+			String settingFile = args[6];
 			
 			System.out.println("Starting initialization from project "+projectName+"...");
 			
@@ -258,11 +255,11 @@ public class Web_ProjectInitializator {
 			System.out.println("Sorting DONE!");
 			System.out.println("Writing down the project file...");
 			
-			if(!projectDeltaMain.equals("_")){
-				projectName = Tools.findAFreeProjectName(projectDeltaMain, path, true);
+			if(projectHasDeltas.equals("true")){
+				projectName = Tools.findAFreeProjectName(projectName, path, true);
 			}
 			
-			writeProjectFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,projectDeltaMain);
+			writeProjectFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,args[1]);
 			
 			System.out.println("Writing DONE!\nScript DONE!");
 			System.out.printf("Duration: %.2f sec\n",(System.currentTimeMillis()-time)/1000.0);
