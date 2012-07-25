@@ -1,117 +1,7 @@
 package tcwi.fileHandler;
-
 import java.io.File;
 
-/**
- * 
- * @version 0.0.1.1
- *
- */
 public class Check {
-	
-//	public boolean hasNoDBG(String path){
-//		File f = new File(path+".dbg");
-//		return !f.exists();
-//	}
-	
-	/**
-	 * Returns for a file <tt>true</tt> or <tt>false</tt> if TypeChef said "True succeeded" or not
-	 * @param path
-	 * @return
-	 * @throws IOException
-	 */
-//	public String ifTrueSucc(String path) throws IOException{
-//		if(!hasNoDBG(path)){
-//			RandomAccessFile file = new RandomAccessFile(path+".dbg","r");
-//			String str = file.readLine();
-//			while(str!=null){
-//				if(str.contains("True\tsucceeded")){
-//					file.close();
-//					return " OK ";
-//				}
-//				str = file.readLine();
-//			}
-//			file.close();
-//			return "FAIL";
-//		}else{
-//			return "FAIL";
-//		}
-//	}
-
-	/**
-	 * Returns for a file <tt>true</tt> or <tt>false</tt> if TypeChef said "No type errors found." or not
-	 * @param path
-	 * @return
-	 * @throws IOException
-	 */
-//	public String ifNoTypeError(String path) throws IOException{
-//		if(!hasNoDBG(path)){
-//			RandomAccessFile file = new RandomAccessFile(path+".dbg","r");
-//			String str = file.readLine();
-//			while(str!=null){
-//				if(str.contains("No type errors found.")){
-//					file.close();
-//					return " OK ";
-//				}
-//				str = file.readLine();
-//			}
-//			file.close();
-//			return "FAIL";
-//		}else{
-//			return "FAIL";
-//		}
-//	}
-	
-	/**
-	 * Test a given file if it is a failure file
-	 * @param path
-	 * @return
-	 * @throws IOException
-	 */
-//	public boolean isNotAFailFile(String path) throws IOException{
-//		boolean[] flags = failFlags(path);
-//		if(flags[0]==false){
-//			return !flags[1]&&!flags[2];
-//		}else{
-//			return false;
-//		}
-//	}
-	
-	/**
-	 * Return a failure-flag-array from a given File<br>
-	 * The failure-flag-array has the following 3 boolean flags:<br><br>
-	 * [0] = Is an empty file?<br>
-	 * [1] = Is not an true succeeded file?<br>
-	 * [2] = Type-errors?<br>
-	 * @param path
-	 * @return 3 boolean-flags as an array
-	 * @throws IOException
-	 */
-//	public boolean[] failFlags(String path) throws IOException{
-//		if(!hasNoDBG(path)){
-//			RandomAccessFile file = new RandomAccessFile(path+".dbg","r");
-//			boolean[] flags = {false,true,true};
-//
-//			String str = file.readLine();
-//			while(str!=null){
-//				if(str.contains("True\tsucceeded")){
-//					flags[1] = false;
-//				}
-//				if(str.contains("No type errors found.")){
-//					flags[2] = false;
-//					break;
-//				}
-//				str = file.readLine();
-//			}
-//	
-//			file.close();
-//
-//			return flags;
-//		}else{
-//			boolean[] flags = {true,true,true};
-//			return flags;
-//		}
-//	}
 	
 	/**
 	 * This method returns the OS typical folder separator
@@ -134,16 +24,8 @@ public class Check {
 	 * @return
 	 */
 	public boolean uniqueCheck(String projectName, String projectPath){
-		File f = new File(projectPath);
-		File[] farr = f.listFiles();
-		for(int i=0;i<farr.length;i++){
-			if(farr[i].getName().endsWith(".project.xml")){
-				if(farr[i].getName().substring(0, farr[i].getName().indexOf(".project.xml")).equals(projectName)){
-					return false;
-				}
-			}
-		}
-		return true;
+		File f = new File(projectPath+folderSeparator()+projectName+".project.xml");
+		return f.exists();
 	}
 	
 }

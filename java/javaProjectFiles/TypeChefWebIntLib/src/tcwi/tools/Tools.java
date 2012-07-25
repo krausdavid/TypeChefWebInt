@@ -31,9 +31,9 @@ public class Tools {
 		if(searchAFreeDelta){
 			newProjectName = str+"_d";
 		}
-		if(!check.uniqueCheck(newProjectName, path)){
+		if(check.uniqueCheck(newProjectName, path)){
 			int i = 1;
-			while(!check.uniqueCheck(newProjectName, path)){
+			while(check.uniqueCheck(newProjectName, path)){
 				newProjectName = str+"_"+i;
 				i++;
 				if(i > 1000000){
