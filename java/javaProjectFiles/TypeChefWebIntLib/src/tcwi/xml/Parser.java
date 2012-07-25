@@ -180,6 +180,7 @@ public class Parser {
 			    					if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("col")){
 					    				toCol = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
 			    					}
+			    					firstPos = true;
 			    				}
 		    				}
 		    			}
