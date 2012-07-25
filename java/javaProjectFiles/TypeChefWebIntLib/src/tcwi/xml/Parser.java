@@ -248,7 +248,7 @@ public class Parser {
 	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("delta")){
 	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("hasdeltas")){
-			    				p.setHasDeltas(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    				p.setIsDelta(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
 			    			}
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("mainproject")){
 			    				p.setMainproject(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));

@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.5.0";
+	private static final String VERSION = "0.2.5.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -94,10 +94,10 @@ public class Web_ProjectInitializator {
 			file.writeBytes("		</project>\r\n");
 			file.writeBytes("		<delta>\r\n");
 			if(projectHasDeltas.equals("true")){
-				file.writeBytes("			<hasdeltas>true</hasdeltas>\r\n");
+				file.writeBytes("			<isdelta>true</isdelta>\r\n");
 				file.writeBytes("			<mainproject>"+projectDeltaMain+"</mainproject>\r\n");
 			}else{
-				file.writeBytes("			<hasdeltas>false</hasdeltas>\r\n");
+				file.writeBytes("			<isdelta>false</isdelta>\r\n");
 				file.writeBytes("			<mainproject></mainproject>\r\n");
 			}
 			file.writeBytes("		</delta>\r\n");

@@ -9,7 +9,7 @@ public class ProjectFile {
 	private String fullname;
 	private String version;
 	private String path;
-	private String hasDeltas;
+	private String isDelta;
 	private String mainproject;
 	private String builder;
 	private String date;
@@ -25,7 +25,7 @@ public class ProjectFile {
 		this.fullname="";
 		this.version="";
 		this.path="";
-		this.hasDeltas="";
+		this.isDelta="";
 		this.mainproject="";
 		this.builder="";
 		this.date="";
@@ -69,12 +69,12 @@ public class ProjectFile {
 		this.path = path;
 	}
 
-	public String getHasDeltas() {
-		return hasDeltas;
+	public String getIsDelta() {
+		return isDelta;
 	}
 
-	public void setHasDeltas(String hasDeltas) {
-		this.hasDeltas = hasDeltas;
+	public void setIsDelta(String hasDeltas) {
+		this.isDelta = hasDeltas;
 	}
 
 	public String getMainproject() {
