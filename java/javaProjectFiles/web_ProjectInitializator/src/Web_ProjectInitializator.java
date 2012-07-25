@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.4.5";
+	private static final String VERSION = "0.2.5.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -69,7 +69,7 @@ public class Web_ProjectInitializator {
 	 * @param projectHasDeltas
 	 * @param projectDeltaMain
 	 */
-	private static void writeProjectFile(String projectPath, String projectName, String projectFullName, String projectVersion, String projectAuthor, String path, String projectHasDeltas, String projectDeltaMain) {
+	private static void writeProjectFile(String projectPath, String projectName, String projectFullName, String projectVersion, String projectAuthor, String path, String projectHasDeltas, String projectDeltaMain, boolean isADelta) {
 		try{
 			Calendar c = new GregorianCalendar();
 			String month = Tools.correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
@@ -78,7 +78,11 @@ public class Web_ProjectInitializator {
 			String minute = Tools.correctCalendarForm(c.get(GregorianCalendar.MINUTE));
 			String second = Tools.correctCalendarForm(c.get(GregorianCalendar.SECOND));
 
-			RandomAccessFile file = new RandomAccessFile(projectPath+Check.folderSeparator()+projectName+".project.xml","rw");
+			String projectType = "project";
+			if(isADelta==true)
+				projectType="deltaproject";
+			
+			RandomAccessFile file = new RandomAccessFile(projectPath+Check.folderSeparator()+projectName+"."+projectType+".xml","rw");
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\r\n");
 			file.writeBytes("<project>\r\n");
 			file.writeBytes("	<header>\r\n");
@@ -255,11 +259,13 @@ public class Web_ProjectInitializator {
 			System.out.println("Sorting DONE!");
 			System.out.println("Writing down the project file...");
 			
-			if(projectHasDeltas.equals("true")){
-				projectName = Tools.findAFreeProjectName(projectName, path);
+			boolean isDelta = false;
+			if(projectHasDeltas.equals("true")&&check.projectExist(projectName, projectPath)){
+				projectName = Tools.findAFreeProjectName(projectName, projectPath);
+				isDelta = true;
 			}
 			
-			writeProjectFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,args[1]);
+			writeProjectFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,args[1],isDelta);
 			
 			System.out.println("Writing DONE!\nScript DONE!");
 			System.out.printf("Duration: %.2f sec\n",(System.currentTimeMillis()-time)/1000.0);

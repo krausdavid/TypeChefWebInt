@@ -27,5 +27,16 @@ public class Check {
 		File f = new File(projectPath+folderSeparator()+projectName+".project.xml");
 		return f.exists();
 	}
+
+	/**
+	 * Checks whether the given project-delta name is already taken
+	 * @param projectName
+	 * @param projectPath
+	 * @return
+	 */
+	public boolean projectDeltaExist(String projectName, String projectPath){
+		File f = new File(projectPath+folderSeparator()+projectName+".deltaproject.xml");
+		return f.exists();
+	}
 	
 }

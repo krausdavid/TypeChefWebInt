@@ -27,15 +27,13 @@ public class Tools {
 	 * @return
 	 */
 	public static String findAFreeProjectName(String str, String path){
-		String newProjectName = str;
-		if(check.projectExist(newProjectName, path)){
-			int i = 1;
-			while(!check.projectExist(newProjectName, path)){
-				newProjectName = str+"_"+i;
-				i++;
-				if(i > 1000000){
-					Exceptions.throwException(10, null, true, newProjectName);
-				}
+		int i = 1;
+		String newProjectName = str+"_"+i;
+		while(check.projectDeltaExist(newProjectName, path)){
+			newProjectName = str+"_"+i;
+			i++;
+			if(i > 1000000){
+				Exceptions.throwException(10, null, true, newProjectName);
 			}
 		}
 		return newProjectName;
