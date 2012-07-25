@@ -28,12 +28,12 @@ public class PHP_Tools {
 			
 			Parser parser = new Parser(globalSettings);
 			
-			if(function.equals("FINDPROJECTNAME")){
+			if(function.equals("FINDPROJECTNAME")){//TODO!!! REWRITE
 				if(args.length!=3){
 					Exceptions.throwException(13, null, true, "");
 				}else{
 					if(args[2].matches("[a-zA-Z0-9._\\-]*")){
-						System.out.println(Tools.findAFreeProjectName(args[2], parser.getSetting_ProjectPath(),false));
+						System.out.println(Tools.findAFreeProjectName(args[2], parser.getSetting_ProjectPath()));
 					}else{
 						Exceptions.throwException(14, null, true, args[2]);
 					}

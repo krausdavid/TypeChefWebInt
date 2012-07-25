@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.4.4";
+	private static final String VERSION = "0.2.4.5";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -215,7 +215,7 @@ public class Web_ProjectInitializator {
 			parser = new Parser(settingFile);
 			String projectPath = parser.getSetting_ProjectPath();
 			
-			if(!check.uniqueCheck(projectName, projectPath)||projectHasDeltas.equals("true")){
+			if(!check.projectExist(projectName, projectPath)||projectHasDeltas.equals("true")){
 				System.out.println("Project name is OK!");
 			}else{
 				Exceptions.throwException(5, null, true, "");
@@ -256,7 +256,7 @@ public class Web_ProjectInitializator {
 			System.out.println("Writing down the project file...");
 			
 			if(projectHasDeltas.equals("true")){
-				projectName = Tools.findAFreeProjectName(projectName, path, true);
+				projectName = Tools.findAFreeProjectName(projectName, path);
 			}
 			
 			writeProjectFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,args[1]);

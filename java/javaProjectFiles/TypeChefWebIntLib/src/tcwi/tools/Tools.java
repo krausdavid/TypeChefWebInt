@@ -26,11 +26,11 @@ public class Tools {
 	 * @param path
 	 * @return
 	 */
-	public static String findAFreeProjectName(String str, String path, boolean searchAFreeDelta){
+	public static String findAFreeProjectName(String str, String path){
 		String newProjectName = str;
-		if(check.uniqueCheck(newProjectName, path)){
+		if(check.projectExist(newProjectName, path)){
 			int i = 1;
-			while(check.uniqueCheck(newProjectName, path)){
+			while(!check.projectExist(newProjectName, path)){
 				newProjectName = str+"_"+i;
 				i++;
 				if(i > 1000000){

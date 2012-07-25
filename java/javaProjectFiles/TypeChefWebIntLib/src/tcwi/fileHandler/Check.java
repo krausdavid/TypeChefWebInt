@@ -23,7 +23,7 @@ public class Check {
 	 * @param projectPath
 	 * @return
 	 */
-	public boolean uniqueCheck(String projectName, String projectPath){
+	public boolean projectExist(String projectName, String projectPath){
 		File f = new File(projectPath+folderSeparator()+projectName+".project.xml");
 		return f.exists();
 	}
