@@ -16,7 +16,7 @@ import tcwi.xml.Parser;
 import tcwi.xml.ProjectFile;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.1.2.1";
+	private static final String VERSION = "0.1.2.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static String folderSeparator = Check.folderSeparator();
@@ -239,7 +239,7 @@ public class Web_ProjectCompare {
 			file.writeBytes("	<header>\r\n");
 			file.writeBytes("		<project>\r\n");
 			file.writeBytes("			<idname>"+main.getIdname()+mainProjectType+"_"+compare.getIdname()+compareProjectType+"</idname>\r\n");
-			file.writeBytes("			<fullname>"+main.getFullname()+"_"+compare.getFullname()+"</fullname>\r\n");
+			file.writeBytes("			<fullname>"+main.getFullname()+" "+main.getVersion()+"_"+compare.getFullname()+" "+compare.getVersion()+"</fullname>\r\n");
 			file.writeBytes("			<path>"+main.getPath()+"</path>\r\n");
 			file.writeBytes("		</project>\r\n");
 			file.writeBytes("		<build>\r\n");
