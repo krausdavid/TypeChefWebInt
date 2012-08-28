@@ -16,7 +16,7 @@ import tcwi.xml.Parser;
 import tcwi.xml.ProjectFile;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.1.2.0";
+	private static final String VERSION = "0.1.2.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static String folderSeparator = Check.folderSeparator();
@@ -373,8 +373,8 @@ public class Web_ProjectCompare {
 				Exceptions.throwException(15, null, true, "");
 			
 			try {
-				mainProject = Parser.getProject(projectPath+folderSeparator+mainProjectName+".xml");
-				compareProject = Parser.getProject(projectPath+folderSeparator+compareProjectName+".xml");
+				mainProject = Parser.getProject(projectPath+folderSeparator+mainProjectName+".project.xml");
+				compareProject = Parser.getProject(projectPath+folderSeparator+compareProjectName+".project.xml");
 			} catch (IOException e) {
 				Exceptions.throwException(1, e, true, "");
 			} catch (Exception e) {
