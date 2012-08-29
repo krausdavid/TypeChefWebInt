@@ -2,12 +2,14 @@ package tcwi.TCWIFile;
 
 import java.util.ArrayList;
 
+import tcwi.enumFiles.ErrorState;
+
 public class ErrorCompareFile implements Comparable<ErrorFile>{
 
 	protected String path;
-	protected boolean excluded;
-	protected boolean compileError;
-	protected String filestate;
+	protected ErrorState excluded;
+	protected ErrorState compileError;
+	protected ErrorState filestate;
 	protected ArrayList<ParserError> oldParserError;
 	protected ArrayList<ParserError> newParserError;
 	protected ArrayList<TypeError> oldTypeError;
@@ -47,19 +49,19 @@ public class ErrorCompareFile implements Comparable<ErrorFile>{
 		this.path = path;
 	}
 
-	public boolean isExcluded() {
+	public ErrorState getExcluded() {
 		return excluded;
 	}
 
-	public void setExcluded(boolean excluded) {
+	public void setExcluded(ErrorState excluded) {
 		this.excluded = excluded;
 	}
 
-	public boolean isCompileError() {
+	public ErrorState getCompileError() {
 		return compileError;
 	}
 
-	public void setCompileError(boolean compileError) {
+	public void setCompileError(ErrorState compileError) {
 		this.compileError = compileError;
 	}
 
@@ -82,12 +84,46 @@ public class ErrorCompareFile implements Comparable<ErrorFile>{
 		return (oldParserError.size()+oldTypeError.size()+newParserError.size()+newTypeError.size())>0 ? true : false;
 	}
 	
-	public String getFilestate() {
+	public ErrorState getFilestate() {
 		return filestate;
 	}
 
-	public void setFilestate(String filestate) {
+	public void setFilestate(ErrorState filestate) {
 		this.filestate = filestate;
+	}
+	
+	public boolean isParserErrorCountChanged(){
+		boolean found = false;
+		for(int i=0;i<oldParserError.size();i++){
+			found = false;
+			for(int j=0;j<newParserError.size();j++){
+				if(newParserError.get(j).equals(oldParserError.get(i))){
+					found = true;
+					break;
+				}
+			}
+			if(!found){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public boolean isTypeErrorCountChanged(){
+		boolean found = false;
+		for(int i=0;i<oldTypeError.size();i++){
+			found = false;
+			for(int j=0;j<newTypeError.size();j++){
+				if(newTypeError.get(j).equals(oldTypeError.get(i))){
+					found = true;
+					break;
+				}
+			}
+			if(!found){
+				return false;
+			}
+		}
+		return true;
 	}
 
 	@Override

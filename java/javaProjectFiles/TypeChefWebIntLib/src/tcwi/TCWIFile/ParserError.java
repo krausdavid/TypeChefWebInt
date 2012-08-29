@@ -1,6 +1,6 @@
 package tcwi.TCWIFile;
 
-public class ParserError {
+public class ParserError{
 	private String featurestr;
 	private String msg;
 	private String file;
@@ -63,5 +63,11 @@ public class ParserError {
 		this.col = col;
 	}
 
-	
+	public boolean equals(ParserError o){
+		if(this.featurestr.equals(o.getFeaturestr()) && this.msg.equals(o.getMsg()) && this.file.equals(o.getFile()) && this.line.equals(o.getLine()) && this.col.equals(o.getCol())){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }

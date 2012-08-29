@@ -107,5 +107,11 @@ public class TypeError {
 		this.toCol = toCol;
 	}
 
-	
+	public boolean equals(TypeError o){
+		if(this.featurestr.equals(o.getFeaturestr()) && this.msg.equals(o.getMsg()) && this.severity.equals(o.getSeverity()) && this.fromFile.equals(o.getFromFile()) && this.fromLine.equals(o.getFromLine()) && this.fromCol.equals(o.getFromCol()) && this.toFile.equals(o.getToFile()) && this.toLine.equals(o.getToLine()) && this.toCol.equals(o.getToCol())){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }

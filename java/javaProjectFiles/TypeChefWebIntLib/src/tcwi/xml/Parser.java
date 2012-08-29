@@ -16,6 +16,7 @@ import tcwi.TCWIFile.ErrorFile;
 import tcwi.TCWIFile.ParserError;
 import tcwi.TCWIFile.TypeError;
 import tcwi.exception.Exceptions;
+import tcwi.enumFiles.*;
 
 /**
  * A XML-Parser for TypeChefWebInt
@@ -505,21 +506,46 @@ public class Parser {
 			    				file.setPath(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
 			    			}
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("excluded")){
-			    				if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue().equals("true")){
-			    					file.setExcluded(true);
-			    				}else{
-			    					file.setExcluded(false);
+			    				String val = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+			    				if(val.equals(ErrorState.NOWEXCLUDED.getString())){
+			    					file.setExcluded(ErrorState.NOWEXCLUDED);
+			    				}
+			    				if(val.equals(ErrorState.NOWNOEXCLUDED.getString())){
+			    					file.setExcluded(ErrorState.NOWNOEXCLUDED);
+			    				}
+			    				if(val.equals(ErrorState.EXCLUDED.getString())){
+			    					file.setExcluded(ErrorState.EXCLUDED);
+			    				}
+			    				if(val.equals(ErrorState.NOTHING.getString())){
+			    					file.setExcluded(ErrorState.NOTHING);
 			    				}
 			    			}
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("compileerror")){
-			    				if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue().equals("true")){
-			    					file.setCompileError(true);
-			    				}else{
-			    					file.setCompileError(false);
+			    				String val = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+			    				if(val.equals(ErrorState.NOWCOMPILEERROR.getString())){
+			    					file.setCompileError(ErrorState.NOWCOMPILEERROR);
+			    				}
+			    				if(val.equals(ErrorState.NOWNOCOMPILEERROR.getString())){
+			    					file.setCompileError(ErrorState.NOWNOCOMPILEERROR);
+			    				}
+			    				if(val.equals(ErrorState.COMPILEERROR.getString())){
+			    					file.setCompileError(ErrorState.COMPILEERROR);
+			    				}
+			    				if(val.equals(ErrorState.NOTHING.getString())){
+			    					file.setCompileError(ErrorState.NOTHING);
 			    				}
 			    			}
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("filestate")){
-			    				file.setFilestate(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    				String val = removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue());
+			    				if(val.equals(ErrorState.CREATED.getString())){
+			    					file.setFilestate(ErrorState.CREATED);
+			    				}
+			    				if(val.equals(ErrorState.DELETED.getString())){
+			    					file.setFilestate(ErrorState.DELETED);
+			    				}
+			    				if(val.equals(ErrorState.NOCHANGE.getString())){
+			    					file.setFilestate(ErrorState.NOCHANGE);
+			    				}
 			    			}
 			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("errorlist")){
 			    				NodeList shortList = list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes();

@@ -12,7 +12,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.5.0.0";
+	private static final String VERSION = "0.5.1.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
@@ -104,7 +104,7 @@ public class Web_TreeViewInitializator {
 					str = eFile.getPath();
 				}
 				
-				FolderElem e = new FolderElem(eFile.haveErrors()||eFile.isCompileError(),str);
+				FolderElem e = new FolderElem(eFile.haveErrors()||eFile.getCompileError()==ErrorState.NOWCOMPILEERROR||eFile.getCompileError()==ErrorState.COMPILEERROR,str);
 				addInFailFolders(e);
 			}
 		}
@@ -169,26 +169,20 @@ public class Web_TreeViewInitializator {
 		}
 	}
 	private static String getIcon(ErrorCompareFile file){
-		String err = "";
-		if(!file.haveErrors()){
-			if(file.isCompileError()){
-				err = "filecompilefail";
-			}else if(file.isExcluded()){
-				err = "fileempty";
-			}else{
-				err = "fileok";
-			}
-		}else{
-			err = "filefail";
+		if(file.getFilestate().equals(ErrorState.DELETED)){
+			return "filedelete";
+		}
+		if(file.getFilestate().equals(ErrorState.CREATED)&&file.haveErrors()){
+			return "filenewerror";
+		}
+		if(file.getFilestate().equals(ErrorState.CREATED)&&!file.haveErrors()){
+			return "filenew";
+		}
+		if(file.isParserErrorCountChanged() || file.isTypeErrorCountChanged()){
+			return "filedifference";
 		}
 		
-		if(file.getFilestate().equals(ErrorState.DELETED)){
-			err = err+"del";
-		}
-		if(file.getFilestate().equals(ErrorState.CREATED)){
-			err = err+"new";
-		}
-		return err;
+		return "fileidentical";
 	}
 
 	/**
