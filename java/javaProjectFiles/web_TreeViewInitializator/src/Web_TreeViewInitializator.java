@@ -4,18 +4,21 @@ import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
 import tcwi.xml.*;
+import tcwi.enumFiles.ErrorState;
 import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
+import tcwi.TCWIFile.ErrorCompareFile;
 import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.4.2.1";
+	private static final String VERSION = "0.5.0.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
-	private static ProjectFile pFile;
+	private static MasterFile pFile;
 	private static ArrayList<FolderElem> errFailFolders;
+	private static ProjectType projectType = ProjectType.PROJECT;
 	
 	/**
 	 * Check a given folder has files with errors in it
@@ -76,17 +79,34 @@ public class Web_TreeViewInitializator {
 	 */
 	private static void analyseFailFolders(){
 		errFailFolders = new ArrayList<FolderElem>();
-		for(int i=0;i<pFile.getFiles().size();i++){
-			ErrorFile eFile = pFile.getFiles().get(i);
-			String str = "";
-			if(eFile.getPath().lastIndexOf(folderSeparator)>0){
-				str = eFile.getPath().substring(0,eFile.getPath().lastIndexOf(folderSeparator));
-			}else{
-				str = eFile.getPath();
+		
+		if(projectType==ProjectType.PROJECT){
+			for(int i=0;i<((ProjectFile) pFile).getFiles().size();i++){
+				ErrorFile eFile = ((ProjectFile) pFile).getFiles().get(i);
+				String str = "";
+				if(eFile.getPath().lastIndexOf(folderSeparator)>0){
+					str = eFile.getPath().substring(0,eFile.getPath().lastIndexOf(folderSeparator));
+				}else{
+					str = eFile.getPath();
+				}
+				
+				FolderElem e = new FolderElem(eFile.haveErrors()||eFile.isCompileError(),str);
+				addInFailFolders(e);
 			}
-			
-			FolderElem e = new FolderElem(eFile.haveErrors()||eFile.isCompileError(),str);
-			addInFailFolders(e);
+		}
+		if(projectType==ProjectType.COMPARE){
+			for(int i=0;i<((CompareFile) pFile).getFiles().size();i++){
+				ErrorCompareFile eFile = ((CompareFile) pFile).getFiles().get(i);
+				String str = "";
+				if(eFile.getPath().lastIndexOf(folderSeparator)>0){
+					str = eFile.getPath().substring(0,eFile.getPath().lastIndexOf(folderSeparator));
+				}else{
+					str = eFile.getPath();
+				}
+				
+				FolderElem e = new FolderElem(eFile.haveErrors()||eFile.isCompileError(),str);
+				addInFailFolders(e);
+			}
 		}
 	}
 	
@@ -147,6 +167,28 @@ public class Web_TreeViewInitializator {
 		}else{
 			return "filefail";
 		}
+	}
+	private static String getIcon(ErrorCompareFile file){
+		String err = "";
+		if(!file.haveErrors()){
+			if(file.isCompileError()){
+				err = "filecompilefail";
+			}else if(file.isExcluded()){
+				err = "fileempty";
+			}else{
+				err = "fileok";
+			}
+		}else{
+			err = "filefail";
+		}
+		
+		if(file.getFilestate().equals(ErrorState.DELETED)){
+			err = err+"del";
+		}
+		if(file.getFilestate().equals(ErrorState.CREATED)){
+			err = err+"new";
+		}
+		return err;
 	}
 
 	/**
@@ -228,10 +270,16 @@ public class Web_TreeViewInitializator {
 	 */
 	private static void generateJSTree(){
 		ArrayList<String> relativeFiles = new ArrayList<String>();
-		for(int i=0;i<pFile.getFiles().size();i++){
-			relativeFiles.add(pFile.getFiles().get(i).getPath());
+		if(projectType == ProjectType.PROJECT){
+			for(int i=0;i<((ProjectFile)pFile).getFiles().size();i++){
+				relativeFiles.add(((ProjectFile)pFile).getFiles().get(i).getPath());
+			}
 		}
-		
+		if(projectType == ProjectType.COMPARE){
+			for(int i=0;i<((CompareFile) pFile).getFiles().size();i++){
+				relativeFiles.add(((CompareFile) pFile).getFiles().get(i).getPath());
+			}
+		}
 		String[] oldArr = {""};
 
 		for(int i=0;i<relativeFiles.size();i++){
@@ -278,7 +326,12 @@ public class Web_TreeViewInitializator {
 				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+".c\", P1+\""+newPath+"\"+P2))");
 			}
 			
-			javascript.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(pFile.getFiles().get(i))+".gif\"");
+			if(projectType==ProjectType.PROJECT){
+				javascript.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((ProjectFile) pFile).getFiles().get(i))+".gif\"");
+			}
+			if(projectType==ProjectType.COMPARE){
+				javascript.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((CompareFile) pFile).getFiles().get(i))+".gif\"");
+			}
 			javascript.add("doc"+i+".prependHTML = C1+\""+i+"\"+C2");
 			
 			oldArr = pathArr;
@@ -307,17 +360,33 @@ public class Web_TreeViewInitializator {
 		javascript.add("C1 = \"<td valign=middle><input type=checkbox id=\\\"chkbox\"");
 		javascript.add("C2 = \"\\\"></td>\"");
 		javascript.add("ICONPATH = '"+iconPath+"'");
-		javascript.add("MAX_LENGTH = "+pFile.getFiles().size());
-		
-		javascript.add("foldersTree = gFld(\"<i>"+pFile.getFullname()+" "+pFile.getVersion()+"</i>\", \"\")");
+		if(projectType == ProjectType.PROJECT){
+			javascript.add("MAX_LENGTH = "+((ProjectFile) pFile).getFiles().size());
+			javascript.add("foldersTree = gFld(\"<i>"+pFile.getFullname()+" "+((ProjectFile) pFile).getVersion()+"</i>\", \"\")");
+		}
+		if(projectType == ProjectType.COMPARE){
+			javascript.add("MAX_LENGTH = "+((CompareFile) pFile).getFiles().size());
+			javascript.add("foldersTree = gFld(\"<i>"+pFile.getFullname()+"</i>\", \"\")");
+		}
 		javascript.add("foldersTree.treeID = \"Frameset\"");
 		
-		if(pFile.haveErrors()){
-			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
-			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
-		}else{
-			javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
-			javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
+		if(projectType == ProjectType.PROJECT){
+			if(((ProjectFile) pFile).haveErrors()){
+				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
+				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
+			}else{
+				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
+				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
+			}
+		}
+		if(projectType == ProjectType.COMPARE){
+			if(((CompareFile) pFile).haveErrors()){
+				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenfail.gif\"");
+				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedfail.gif\"");
+			}else{
+				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
+				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
+			}
 		}
 	}
 
@@ -349,12 +418,24 @@ public class Web_TreeViewInitializator {
 			String WebsiteDefaultURL = settingsParser.getSetting_WebsiteDefaultURI();
 			
 			//Read the project dir
-			String project_settings_xml_path = WebIntProjectsPath+folderSeparator+projectName+".project.xml";
+			File f = new File( WebIntProjectsPath+folderSeparator+projectName+".project.xml");
+			String project_settings_xml_path = "";
+			if(f.exists()){
+				project_settings_xml_path = WebIntProjectsPath+folderSeparator+projectName+".project.xml";
+				projectType = ProjectType.PROJECT;
+			}else{
+				project_settings_xml_path = WebIntProjectsPath+folderSeparator+projectName+".compare.xml";
+				projectType = ProjectType.COMPARE;
+			}
 
 			//Do the work
 			System.out.println("Read folder tree...");
 			try {
-				pFile = Parser.getProject(project_settings_xml_path);
+				if(projectType == ProjectType.PROJECT){
+					pFile = Parser.getProject(project_settings_xml_path);
+				}else{
+					pFile = Parser.getCompare(project_settings_xml_path);
+				}
 			} catch (IOException e) {
 				Exceptions.throwException(1, e, true, project_settings_xml_path);
 			} catch (Exception e) {

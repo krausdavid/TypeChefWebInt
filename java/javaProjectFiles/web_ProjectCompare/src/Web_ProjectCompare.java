@@ -9,6 +9,7 @@ import java.util.GregorianCalendar;
 import tcwi.TCWIFile.ErrorFile;
 import tcwi.TCWIFile.ParserError;
 import tcwi.TCWIFile.TypeError;
+import tcwi.enumFiles.ErrorState;
 import tcwi.exception.Exceptions;
 import tcwi.fileHandler.Check;
 import tcwi.tools.Tools;

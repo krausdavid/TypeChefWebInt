@@ -11,6 +11,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import tcwi.TCWIFile.ErrorCompareFile;
 import tcwi.TCWIFile.ErrorFile;
 import tcwi.TCWIFile.ParserError;
 import tcwi.TCWIFile.TypeError;
@@ -426,6 +427,213 @@ public class Parser {
 	    return p;
 	}
 
+	public static CompareFile getCompare(String path) throws ParserConfigurationException, SAXException, IOException{
+		CompareFile c = new CompareFile();
+	    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	    DocumentBuilder builder = factory.newDocumentBuilder();
+	    Document document = builder.parse(new File(path));
+	    NodeList list = document.getChildNodes().item(0).getChildNodes();
+		
+	    for(int i=0;i<list.getLength();i++){
+	    	if(list.item(i).getNodeName().equals("header")){
+	    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("project")){
+	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("idname")){
+			    				c.setIdname(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("fullname")){
+			    				c.setFullname(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("path")){
+			    				c.setPath(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+	    				}
+	    			}
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("build")){
+	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("builder")){
+			    				c.setBuilder(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("date")){
+			    				c.setDate(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("time")){
+			    				c.setTime(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+	    				}
+	    			}
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("stats")){
+	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("parsererrors")){
+			    				c.setParsererrors(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("typeerrors")){
+			    				c.setTypeerrors(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("excludedfiles")){
+			    				c.setExcludedfiles(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("compileerrors")){
+			    				c.setCompileerrors(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("newfiles")){
+			    				c.setNewfiles(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("deletedfiles")){
+			    				c.setDeletedfiles(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+	    				}
+	    			}
+	    		}
+	    	}
+	    	if(list.item(i).getNodeName().equals("errors")){
+	    		System.out.println("Analyse error files...");
+	    		for(int j=0;j<list.item(i).getChildNodes().getLength();j++){
+	    			for(int x=1;x<=10;x++){
+	    				if(x!=10){
+	    					if(list.item(i).getChildNodes().getLength()/10*x==j){System.out.print(x+"0%..");}
+	    				}else{
+	    					if(list.item(i).getChildNodes().getLength()/10*x==j){System.out.print(x+"0%\r\n");}
+	    				}
+	    			}
+	    			
+	    			if(list.item(i).getChildNodes().item(j).getNodeName().equals("file")){
+	    				ErrorCompareFile file = new ErrorCompareFile();
+	    				for(int k=0;k<list.item(i).getChildNodes().item(j).getChildNodes().getLength();k++){
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("path")){
+			    				file.setPath(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("excluded")){
+			    				if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue().equals("true")){
+			    					file.setExcluded(true);
+			    				}else{
+			    					file.setExcluded(false);
+			    				}
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("compileerror")){
+			    				if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue().equals("true")){
+			    					file.setCompileError(true);
+			    				}else{
+			    					file.setCompileError(false);
+			    				}
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("filestate")){
+			    				file.setFilestate(removeWhites(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes().item(0).getNodeValue()));
+			    			}
+			    			if(list.item(i).getChildNodes().item(j).getChildNodes().item(k).getNodeName().equals("errorlist")){
+			    				NodeList shortList = list.item(i).getChildNodes().item(j).getChildNodes().item(k).getChildNodes();
+			    				for(int l=0;l<shortList.getLength();l++){
+			    					if(shortList.item(l).getNodeName().equals("oldparsererror")||shortList.item(l).getNodeName().equals("newparsererror")){
+			    						ParserError pErr = new ParserError();
+		    							for(int m=0;m<shortList.item(l).getChildNodes().getLength();m++){
+		    								if(shortList.item(l).getChildNodes().item(m).getNodeName().equals("featurestr")){
+		    									pErr.setFeaturestr(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(0).getNodeValue()));
+		    								}
+		    								if(shortList.item(l).getChildNodes().item(m).getNodeName().equals("msg")){
+		    									pErr.setMsg(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(0).getNodeValue()));
+		    								}
+		    								if(shortList.item(l).getChildNodes().item(m).getNodeName().equals("position")){
+		    									for(int n=0;n<shortList.item(l).getChildNodes().item(m).getChildNodes().getLength();n++){
+		    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("file")){
+		    											pErr.setFile(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+		    										}
+		    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("line")){
+		    											pErr.setLine(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+		    										}
+		    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("col")){
+		    											pErr.setCol(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+		    										}
+		    									}
+		    								}
+		    							}
+		    							if(shortList.item(l).getNodeName().equals("oldparsererror")){
+				    						file.addOldError(pErr);
+		    							}else{
+				    						file.addNewError(pErr);
+		    							}
+			    					}
+			    					if(shortList.item(l).getNodeName().equals("oldtypeerror")||shortList.item(l).getNodeName().equals("newtypeerror")){
+			    						TypeError tErr = new TypeError();
+			    						boolean firstPos = true;
+		    							for(int m=0;m<shortList.item(l).getChildNodes().getLength();m++){
+		    								if(shortList.item(l).getChildNodes().item(m).getNodeName().equals("featurestr")){
+		    									tErr.setFeaturestr(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(0).getNodeValue()));
+		    								}
+		    								if(shortList.item(l).getChildNodes().item(m).getNodeName().equals("severity")){
+		    									tErr.setFeaturestr(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(0).getNodeValue()));
+		    								}
+		    								if(shortList.item(l).getChildNodes().item(m).getNodeName().equals("msg")){
+		    									tErr.setMsg(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(0).getNodeValue()));
+		    								}
+		    								if(shortList.item(l).getChildNodes().item(m).getNodeName().equals("position")){
+		    									for(int n=0;n<shortList.item(l).getChildNodes().item(m).getChildNodes().getLength();n++){
+			    									if(firstPos){
+			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("file")){
+			    											try{
+			    												tErr.setFromFile(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
+			    										}
+			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("line")){
+			    											try{
+			    												tErr.setFromLine(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
+			    										}
+			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("col")){
+			    											try{
+			    												tErr.setFromCol(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
+			    											firstPos = false;
+			    										}
+			    									}else{
+			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("file")){
+			    											try{
+				    											tErr.setToFile(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
+			    										}
+			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("line")){
+			    											try{
+				    											tErr.setToLine(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
+			    										}
+			    										if(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getNodeName().equals("col")){
+			    											try{
+				    											tErr.setToCol(removeWhites(shortList.item(l).getChildNodes().item(m).getChildNodes().item(n).getChildNodes().item(0).getNodeValue()));
+			    											}catch(NullPointerException e){
+			    												tErr.setFromFile("");
+			    											}
+			    										}
+			    									}
+		    									}
+		    								}
+		    							}
+		    							if(shortList.item(l).getNodeName().equals("oldtypeerror")){
+				    						file.addOldError(tErr);
+		    							}else{
+				    						file.addNewError(tErr);
+		    							}
+			    					}
+			    				}
+			    			}
+	    				}
+	    				c.addFile(file);
+	    			}
+	    		}
+	    	}
+	    }
+	    return c;
+	}
+	
 	public String getSetting_file() {
 		return setting_file;
 	}

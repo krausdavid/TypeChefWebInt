@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import tcwi.TCWIFile.ParserError;
 import tcwi.TCWIFile.TypeError;
+import tcwi.enumFiles.ErrorState;
 
 
 public class ErrorField {
