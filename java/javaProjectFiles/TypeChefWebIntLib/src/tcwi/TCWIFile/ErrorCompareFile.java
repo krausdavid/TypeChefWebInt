@@ -103,10 +103,10 @@ public class ErrorCompareFile implements Comparable<ErrorFile>{
 				}
 			}
 			if(!found){
-				return false;
+				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 	
 	public boolean isTypeErrorCountChanged(){
@@ -120,10 +120,10 @@ public class ErrorCompareFile implements Comparable<ErrorFile>{
 				}
 			}
 			if(!found){
-				return false;
+				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 
 	@Override
