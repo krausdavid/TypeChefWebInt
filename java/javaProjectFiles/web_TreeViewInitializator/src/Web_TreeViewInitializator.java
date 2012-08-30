@@ -12,7 +12,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.5.2.0";
+	private static final String VERSION = "0.5.2.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<String> javascriptOnlyErrors = new ArrayList<String>();
@@ -355,8 +355,10 @@ public class Web_TreeViewInitializator {
 			
 			if(projectType==ProjectType.PROJECT){
 				javascript.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((ProjectFile) pFile).getFiles().get(i))+".gif\"");
-				if(getIcon(((ProjectFile) pFile).getFiles().get(i)).equals("fileok")){
+				
+				if(!getIcon(((ProjectFile) pFile).getFiles().get(i)).equals("fileok") && !getIcon(((ProjectFile) pFile).getFiles().get(i)).equals("fileempty")){
 					javascriptOnlyErrors.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((ProjectFile) pFile).getFiles().get(i))+".gif\"");
+					javascriptOnlyErrors.add("doc"+i+".prependHTML = C1+\""+i+"\"+C2");
 				}else{
 					javascriptOnlyErrors.remove(javascriptOnlyErrors.size()-1);
 				}
@@ -364,8 +366,10 @@ public class Web_TreeViewInitializator {
 			
 			if(projectType==ProjectType.COMPARE){
 				javascript.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((CompareFile) pFile).getFiles().get(i))+".gif\"");
-				if(getIcon(((CompareFile) pFile).getFiles().get(i)).equals("fileidentical")){
+				
+				if(!getIcon(((CompareFile) pFile).getFiles().get(i)).equals("fileidentical")){
 					javascriptOnlyErrors.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((CompareFile) pFile).getFiles().get(i))+".gif\"");
+					javascriptOnlyErrors.add("doc"+i+".prependHTML = C1+\""+i+"\"+C2");
 				}else{
 					javascriptOnlyErrors.remove(javascriptOnlyErrors.size()-1);
 				}
