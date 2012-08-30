@@ -55,6 +55,7 @@ $template->assign("langTXT_path", "Path");
 $template->assign("langTXT_projects", "Projects");
 $template->assign("langTXT_pleaseActivateJavaScript", "Please activate JavaScript!");
 $template->assign("langTXT_settings", "Settings");
+$template->assign("langTXT_showOnlyErrors", "Show Errors");
 $template->assign("langTXT_version", "Version");
 
 $template->assign("langTXTHOME_topic", "Hello and welcome at TypeChefWebInt");

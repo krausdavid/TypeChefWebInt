@@ -3,6 +3,7 @@
 		<tr>
 			<td><b>{$langTXT_actualProject}</b></td>
 			<td><b>{$langTXT_deltas}</b></td>
+			<td><b>{$langTXT_showOnlyErrors}</b></td>
 		</tr>
 		<tr>
 			<td>
@@ -29,9 +30,15 @@
 					<select name="deltas" size="1">
 						<option value="-">{$langTXT_mainproject}</option>
 							{foreach from=$projects_deltas item=projects_deltas name=projects_deltas_name}
-								<option value="{$projects_deltas.id} {if $projects_deltas.selected eq true}selected{/if}>{$projects_deltas.name}</option>
+								<option value="{$projects_deltas.id}" {if $projects_deltas.selected eq true}selected{/if}>{$projects_deltas.name}</option>
 							{/foreach}
 					</select>
+				</form>
+			</td>
+			<td>
+				<form method="post" action="{$_wud}/?redirect={$redirectURL}" style="display:inline">
+					<input type="checkbox" value="checked" name="chk_showOnlyErrors" onclick="this.form.submit();" {if $showOnlyErrors eq true}checked {/if}/>
+					<input type="hidden" name="showOnlyErrors_val" value="val" />
 				</form>
 			</td>
 		</tr>

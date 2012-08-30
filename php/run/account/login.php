@@ -25,6 +25,7 @@ if($guest_login==true){
 	$session->set("initial_project", "");
 	$session->set("current_project", "");
 	$session->set("lang", "EN-US");
+	$session->set("showOnlyErrors", false);
 	header('Location: '.$WEBSITE_DEFAULT_URI.'/?lang='.$session->get("lang"));
 }else{
 	if($_REQUEST['cmd_submit']){

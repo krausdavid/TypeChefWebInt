@@ -21,7 +21,7 @@
 			{* Scripts for TreeView *}
 			<script src="{$_wud}/include/javascripts/treeview/ua.js"></script>
 			<script src="{$_wud}/include/javascripts/treeview/ftiens4.js"></script>
-			<script src="{$_wud}/generics/treeview/{$project_name}{if $rights neq true}.nochk{/if}.js"></script>
+			<script src="{$_wud}/generics/treeview/{$project_name}{if $showOnlyErrors eq true}.err{/if}{if $rights neq true}.nochk{/if}.js"></script>
 			{* Scripts for SyntaxHighlighter *}
 			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shCore.js"></script>
 			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shBrushCpp.js"></script>

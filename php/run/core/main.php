@@ -58,6 +58,15 @@ if($session->get("lang")!=""){
 	require("./lang/EN-US.php");
 }
 
+//Check, if user has switched between "Show Errors" and "Show no Errors"
+if($_POST['chk_showOnlyErrors']=="checked" && $_POST['showOnlyErrors_val']=="val"){
+	$session->set("showOnlyErrors",true);
+}
+if($_POST['chk_showOnlyErrors']=="" && $_POST['showOnlyErrors_val']=="val"){
+	$session->set("showOnlyErrors",false);
+}
+$template->assign("showOnlyErrors", $session->get("showOnlyErrors"));
+
 //Read the current URL for language-switch
 if(strpos($_SERVER['REQUEST_URI'],"lang=")>0){
 	header('Location: '.$WEBSITE_DEFAULT_URI);
