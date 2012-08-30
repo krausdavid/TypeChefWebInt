@@ -12,7 +12,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.5.2.1";
+	private static final String VERSION = "0.5.2.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<String> javascriptOnlyErrors = new ArrayList<String>();
@@ -189,6 +189,7 @@ public class Web_TreeViewInitializator {
 			return "filefail";
 		}
 	}
+	
 	private static String getIcon(ErrorCompareFile file){
 		if(file.getFilestate().equals(ErrorState.DELETED)){
 			return "filedelete";
@@ -202,7 +203,10 @@ public class Web_TreeViewInitializator {
 		if(file.isParserErrorCountChanged() || file.isTypeErrorCountChanged()){
 			return "filedifference";
 		}
-		
+		if(!file.isParserErrorCountChanged() && !file.isTypeErrorCountChanged() && file.getFilestate().equals(ErrorState.NOCHANGE) && file.haveErrors()){
+			return "fileidenticalerror";
+		}
+			
 		return "fileidentical";
 	}
 

@@ -13,5 +13,6 @@
 	<img src="{$_wud}/include/images/treeview/filenew.gif" border="0"/>: {$langTXTHOME_legendPoint8}<br/>
 	<img src="{$_wud}/include/images/treeview/filenewerror.gif" border="0"/>: {$langTXTHOME_legendPoint9}<br/>
 	<img src="{$_wud}/include/images/treeview/fileidentical.gif" border="0"/>: {$langTXTHOME_legendPoint10}<br/>
-	<img src="{$_wud}/include/images/treeview/filedifference.gif" border="0"/>: {$langTXTHOME_legendPoint11}<br/>
+	<img src="{$_wud}/include/images/treeview/fileidenticalerror.gif" border="0"/>: {$langTXTHOME_legendPoint11}<br/>
+	<img src="{$_wud}/include/images/treeview/filedifference.gif" border="0"/>: {$langTXTHOME_legendPoint12}<br/>
 {/strip}

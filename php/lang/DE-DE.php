@@ -73,7 +73,8 @@ $template->assign("langTXTHOME_legendPoint7", "Diese C-Datei wurde in der neuere
 $template->assign("langTXTHOME_legendPoint8", "Diese C-Datei kam in der neuen Version hinzu");
 $template->assign("langTXTHOME_legendPoint9", "Diese C-Datei kam in der neuen Version hinzu, enthält aber Fehler");
 $template->assign("langTXTHOME_legendPoint10", "An dieser C-Datei hat sich nichts verändert");
-$template->assign("langTXTHOME_legendPoint11", "An dieser C-Datei gab es Veränderungen");
+$template->assign("langTXTHOME_legendPoint11", "An dieser C-Datei hat sich nichts verändert, enthält aber Fehler");
+$template->assign("langTXTHOME_legendPoint12", "An dieser C-Datei gab es Veränderungen");
 
 $template->assign("langTXTNEWPROJECT_loadSuccessfull", "Das Projekt wurde erfolgreich geladen.");
 $template->assign("langTXTNEWPROJECT_loadError", "Es ist ein Fehler aufgetreten. Vermutlich war einer der eingegebenen Parameter falsch.");

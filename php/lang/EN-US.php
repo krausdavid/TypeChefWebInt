@@ -72,7 +72,8 @@ $template->assign("langTXTHOME_legendPoint7", "This C-File was deleted in the ne
 $template->assign("langTXTHOME_legendPoint8", "This C-File was created in the newer Version");
 $template->assign("langTXTHOME_legendPoint9", "This C-File was created in the newer Version, but contains errors");
 $template->assign("langTXTHOME_legendPoint10", "There are no changes in this C-File");
-$template->assign("langTXTHOME_legendPoint11", "There are changes in this C-File");
+$template->assign("langTXTHOME_legendPoint11", "There are no changes in this C-File, but contains errors");
+$template->assign("langTXTHOME_legendPoint12", "There are changes in this C-File");
 
 $template->assign("langTXTNEWPROJECT_loadSuccessfull", "The project was successfully loaded.");
 $template->assign("langTXTNEWPROJECT_loadError", "There was an error. Probably one of the parameters entered were incorrect.");
