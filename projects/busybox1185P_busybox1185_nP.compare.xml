@@ -3,13 +3,13 @@
 	<header>
 		<project>
 			<idname>busybox1185P_busybox1185_nP</idname>
-			<fullname>BusyBox_BusyBox</fullname>
+			<fullname>BusyBox 1.18.5_BusyBox 1.18.5</fullname>
 			<path>/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5</path>
 		</project>
 		<build>
 			<builder>EifX</builder>
-			<date>2012-08-28</date>
-			<time>22:08:04</time>
+			<date>2012-08-29</date>
+			<time>23:15:30</time>
 		</build>
 		<stats>
 			<parsererrors>0</parsererrors>
