@@ -12,9 +12,10 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.5.1.2";
+	private static final String VERSION = "0.5.2.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
+	private static ArrayList<String> javascriptOnlyErrors = new ArrayList<String>();
 	private static String folderSeparator = Check.folderSeparator();
 	private static MasterFile pFile;
 	private static ArrayList<FolderElem> errFailFolders;
@@ -127,6 +128,26 @@ public class Web_TreeViewInitializator {
 					}
 				}else{
 					file.writeBytes(javascript.get(i)+"\r\n");
+				}
+			}
+			file.close();
+		}catch (IOException e){
+			Exceptions.throwException(3, e, true, path);
+		}
+	}
+	
+	private static void writeTxtOnlyErrors(String path, boolean noChk){
+		try{
+			File f = new File(path);
+			f.delete();
+			RandomAccessFile file = new RandomAccessFile(path,"rw");
+			for(int i=0;i<javascriptOnlyErrors.size();i++){
+				if(noChk){
+					if(!javascriptOnlyErrors.get(i).contains(".prependHTML =")){
+						file.writeBytes(javascriptOnlyErrors.get(i)+"\r\n");
+					}
+				}else{
+					file.writeBytes(javascriptOnlyErrors.get(i)+"\r\n");
 				}
 			}
 			file.close();
@@ -290,8 +311,10 @@ public class Web_TreeViewInitializator {
 				for(int j=dir[1];j<(dir[0]+dir[1]);j++){
 					if(j==0){
 						javascript.add(cleanStr(pathArr[0])+" = insFld(foldersTree, gFld(\""+pathArr[0]+"\", \"\"))");
+						javascriptOnlyErrors.add(cleanStr(pathArr[0])+" = insFld(foldersTree, gFld(\""+pathArr[0]+"\", \"\"))");
 					}else{
 						javascript.add(cleanStr(pathArr[j])+" = insFld("+cleanStr(pathArr[j-1])+", gFld(\""+pathArr[j]+"\", \"\"))");
+						javascriptOnlyErrors.add(cleanStr(pathArr[j])+" = insFld("+cleanStr(pathArr[j-1])+", gFld(\""+pathArr[j]+"\", \"\"))");
 					}
 					
 					
@@ -305,6 +328,14 @@ public class Web_TreeViewInitializator {
 					boolean isFail = isAFailFolder(p);
 					javascript.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \""+getIcon("open",isFail)+".gif\"");
 					javascript.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \""+getIcon("closed",isFail)+".gif\"");
+					
+					if(isFail){
+						javascriptOnlyErrors.add(cleanStr(pathArr[j])+".iconSrc = ICONPATH + \""+getIcon("open",isFail)+".gif\"");
+						javascriptOnlyErrors.add(cleanStr(pathArr[j])+".iconSrcClosed = ICONPATH + \""+getIcon("closed",isFail)+".gif\"");
+					}else{
+						javascriptOnlyErrors.remove(javascriptOnlyErrors.size()-1);
+					}
+					
 					p="";
 				}
 			}
@@ -316,15 +347,28 @@ public class Web_TreeViewInitializator {
 			//Print the files!
 			if(pathArr.length==1){
 				javascript.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+".c\", P1+\""+newPath+"\"+P2))");
+				javascriptOnlyErrors.add("doc"+i+" = insDoc(foldersTree, gLnk(\"S\", \""+pathArr[pathArr.length-1]+".c\", P1+\""+newPath+"\"+P2))");
 			}else{
 				javascript.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+".c\", P1+\""+newPath+"\"+P2))");
+				javascriptOnlyErrors.add("doc"+i+" = insDoc("+cleanStr(pathArr[pathArr.length-2])+", gLnk(\"S\", \""+pathArr[pathArr.length-1]+".c\", P1+\""+newPath+"\"+P2))");
 			}
 			
 			if(projectType==ProjectType.PROJECT){
 				javascript.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((ProjectFile) pFile).getFiles().get(i))+".gif\"");
+				if(getIcon(((ProjectFile) pFile).getFiles().get(i)).equals("fileok")){
+					javascriptOnlyErrors.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((ProjectFile) pFile).getFiles().get(i))+".gif\"");
+				}else{
+					javascriptOnlyErrors.remove(javascriptOnlyErrors.size()-1);
+				}
 			}
+			
 			if(projectType==ProjectType.COMPARE){
 				javascript.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((CompareFile) pFile).getFiles().get(i))+".gif\"");
+				if(getIcon(((CompareFile) pFile).getFiles().get(i)).equals("fileidentical")){
+					javascriptOnlyErrors.add("doc"+i+".iconSrc = ICONPATH + \""+getIcon(((CompareFile) pFile).getFiles().get(i))+".gif\"");
+				}else{
+					javascriptOnlyErrors.remove(javascriptOnlyErrors.size()-1);
+				}
 			}
 			javascript.add("doc"+i+".prependHTML = C1+\""+i+"\"+C2");
 			
@@ -381,6 +425,10 @@ public class Web_TreeViewInitializator {
 				javascript.add("foldersTree.iconSrc = ICONPATH + \"folderopenok.gif\"");
 				javascript.add("foldersTree.iconSrcClosed = ICONPATH + \"folderclosedok.gif\"");
 			}
+		}
+		
+		for(int i=0;i<javascript.size();i++){
+			javascriptOnlyErrors.add(javascript.get(i));
 		}
 	}
 
@@ -450,6 +498,8 @@ public class Web_TreeViewInitializator {
 			//Build the path for the JSON-path
 			writeTxt(TreeViewPath+folderSeparator+projectName+".js",false);
 			writeTxt(TreeViewPath+folderSeparator+projectName+".nochk.js",true);
+			writeTxtOnlyErrors(TreeViewPath+folderSeparator+projectName+".err.js",false);
+			writeTxtOnlyErrors(TreeViewPath+folderSeparator+projectName+".err.nochk.js",true);
 			System.out.println("DONE!");
 			System.out.printf("Duration: %.2f sec\n",(System.currentTimeMillis()-time)/1000.0);
 		}
