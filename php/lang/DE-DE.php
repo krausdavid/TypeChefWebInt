@@ -62,12 +62,18 @@ $template->assign("langTXT_version", "Version");
 $template->assign("langTXTHOME_topic", "Hallo und Willkommen beim TypeChefWebInt");
 $template->assign("langTXTHOME_descripton", "Links sehen Sie im Baum ein gerade geladenes Projekt. Sie können sich durch den Baum navigieren und eine Dateiengruppe Ihrer Wahl sich anzeigen lassen. Sobald Sie sich für eine Dateiengruppe entschieden haben, können Sie sich für eine bestimmte Datei entscheiden.");
 $template->assign("langTXTHOME_legendDescription", "Um die Symbole des Baumes besser verstehen zu können, hier eine kleine Legende:");
+$template->assign("langTXTHOME_legendDescriptionCompare", "Die folgenden Symbole treten auf, wenn Sie zwei Projekte miteinander vergleichen:");
 $template->assign("langTXTHOME_legendPoint1", "In diesem Ordner sind Fehler von TypeChef gefunden worden");
 $template->assign("langTXTHOME_legendPoint2", "In diesem Ordner sind keine Fehler von TypeChef gefunden worden");
 $template->assign("langTXTHOME_legendPoint3", "Diese C-Datei wurde von der Analyse ausgeschlossen");
 $template->assign("langTXTHOME_legendPoint4", "Die geprüfte C-Datei weist Fehler auf");
 $template->assign("langTXTHOME_legendPoint5", "Typechef konnte diese C-Datei nicht Parsen: Es trat ein Fehler auf");
 $template->assign("langTXTHOME_legendPoint6", "Die C-Datei enthält keine Fehler");
+$template->assign("langTXTHOME_legendPoint7", "Diese C-Datei wurde in der neueren Version gelöscht");
+$template->assign("langTXTHOME_legendPoint8", "Diese C-Datei kam in der neuen Version hinzu");
+$template->assign("langTXTHOME_legendPoint9", "Diese C-Datei kam in der neuen Version hinzu, enthält aber Fehler");
+$template->assign("langTXTHOME_legendPoint10", "An dieser C-Datei hat sich nichts verändert");
+$template->assign("langTXTHOME_legendPoint11", "An dieser C-Datei gab es Veränderungen");
 
 $template->assign("langTXTNEWPROJECT_loadSuccessfull", "Das Projekt wurde erfolgreich geladen.");
 $template->assign("langTXTNEWPROJECT_loadError", "Es ist ein Fehler aufgetreten. Vermutlich war einer der eingegebenen Parameter falsch.");

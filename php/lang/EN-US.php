@@ -61,12 +61,18 @@ $template->assign("langTXT_version", "Version");
 $template->assign("langTXTHOME_topic", "Hello and welcome at TypeChefWebInt");
 $template->assign("langTXTHOME_descripton", "On the left side you see an current loaded project. You can navigate through the tree and you can display a group of files of your choice. Once you have chosen a group of files, you can opt for a particular file.");
 $template->assign("langTXTHOME_legendDescription", "In order to understand the symbols of the tree better, here's a little legend:");
+$template->assign("langTXTHOME_legendDescriptionCompare", "The following icons appear when you compare two projects together:");
 $template->assign("langTXTHOME_legendPoint1", "This folder contains errors were found by TypeChef");
 $template->assign("langTXTHOME_legendPoint2", "This folder contains no errors were found by TypeChef");
 $template->assign("langTXTHOME_legendPoint3", "This C-File was excluded from analysis");
 $template->assign("langTXTHOME_legendPoint4", "The tested C-File has errors");
 $template->assign("langTXTHOME_legendPoint5", "Typechef couldn't parse the C-File: An error occured.");
 $template->assign("langTXTHOME_legendPoint6", "The tested C-File hasn't errors");
+$template->assign("langTXTHOME_legendPoint7", "This C-File was deleted in the newer Version");
+$template->assign("langTXTHOME_legendPoint8", "This C-File was created in the newer Version");
+$template->assign("langTXTHOME_legendPoint9", "This C-File was created in the newer Version, but contains errors");
+$template->assign("langTXTHOME_legendPoint10", "There are no changes in this C-File");
+$template->assign("langTXTHOME_legendPoint11", "There are changes in this C-File");
 
 $template->assign("langTXTNEWPROJECT_loadSuccessfull", "The project was successfully loaded.");
 $template->assign("langTXTNEWPROJECT_loadError", "There was an error. Probably one of the parameters entered were incorrect.");
