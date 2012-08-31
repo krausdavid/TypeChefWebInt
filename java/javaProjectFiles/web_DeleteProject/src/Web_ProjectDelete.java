@@ -4,7 +4,7 @@ import tcwi.xml.Parser;
 
 
 public class Web_ProjectDelete {
-	private static final String VERSION = "0.0.2.0";
+	private static final String VERSION = "0.0.2.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	
@@ -33,6 +33,8 @@ public class Web_ProjectDelete {
 			f = new File(webIntTreeviewPath + Check.folderSeparator() + args[0] + ".err.nochk.js");
 			f.delete();
 			f = new File(webIntProjectsPath + Check.folderSeparator() + args[0] + ".project.xml");
+			f.delete();
+			f = new File(webIntProjectsPath + Check.folderSeparator() + args[0] + ".compare.xml");
 			f.delete();
 			f = new File(webIntProjectsPath + Check.folderSeparator() + args[0] + ".lst");
 			f.delete();
