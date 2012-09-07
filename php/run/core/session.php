@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/core/session.php
+ *
+ * A self written helper-class for session-handling
  */
 
 class session{

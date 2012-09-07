@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/account/logout.php
+ *
+ * This little file do the logout
  */
 
 $session->kill();

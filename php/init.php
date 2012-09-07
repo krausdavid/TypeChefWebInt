@@ -15,6 +15,18 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./init.php
+ *
+ * This file defines some needed variables:
+ * - WEBSITE_DEFAULT_URI : Gets the standard-URI from
+ *        this website. It's needed for all HTML-Links,
+ *        because relative Links are not possible.
+ * - WEBSITE_SESSION_PATH : The temp-path for stored
+ *        sessions
+ * - WEBSITE_PROJECT_PATH : This variable stores the
+ *        the path, where the generated XML-projects
+ *        laid on the disk 
  */
 
 date_default_timezone_set('Europe/Berlin');

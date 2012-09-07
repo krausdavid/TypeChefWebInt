@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/site/main.php
+ *
+ * The main-site. It displayes the legend.
  */
 
 $template->assign("title", "Hauptseite");

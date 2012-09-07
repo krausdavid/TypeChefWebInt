@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/execute/main.php
+ *
+ * This file executes some java-classes
  */
 tools::right_exists();
 

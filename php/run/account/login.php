@@ -15,6 +15,12 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/account/login.php
+ *
+ * This file handles the login from a user.
+ * It saves all settings in the current session
+ * and reloads the page.
  */
 
 if($guest_login==true){

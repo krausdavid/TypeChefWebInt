@@ -15,9 +15,31 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/core/main.php
+ *
+ * This is the main file. This file decides, which way
+ * the user go. It defines some other needed variables
+ * and import needed libaries.
+ *
+ * Libaries:
+ *
+ * - Smarty.class.php : Smarty a template engine for PHP.
+ *        This template engine helps to cut HTML from PHP
+ *        and write HTML in special template-files. This
+ *        method is very simple and keeps the code prettier.
+ * - textdb.php : A self written text-database. Its used
+ *        for managing the user accounts. MySQL or another
+ *        database is too overdimensionised for this simple
+ *        task ;)
+ * - session.php : A self written session-management-class
+ *        with some useful methods
+ * - tools.php : A set of tools, needed for this project
+ *
+ * Look in the code for another annotations
  */
 
-//Import some required classes
+//Import some required libaries
 require("./run/_lib/smarty/Smarty.class.php");
 require("./run/_lib/textdb/textdb.php");
 require("./run/core/session.php");
@@ -47,7 +69,7 @@ $template->compile_dir = "./templates/php";
 $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
-//Check website language
+//Check website language and set the correct one, if changed
 if($_GET['lang']=="DE-DE" ||$_GET['lang']=="EN-US"){
 	$session->set("lang",$_GET['lang']);
 }
@@ -72,6 +94,9 @@ if(strpos($_SERVER['REQUEST_URI'],"lang=")>0){
 	header('Location: '.$WEBSITE_DEFAULT_URI);
 }
 
+//Handles redirect-tasks. Example: A language change should be made from all website-situations,
+//esp. in the settings or during view a project. The current uri-state will be saved and used
+//for the next website-reload
 $template->assign("redirectURL",urlencode($_SERVER['REQUEST_URI']));
 if($_GET['redirect']!=""){
 	header('Location: '.$_GET['redirect']);
@@ -146,7 +171,6 @@ if($session->get('login')!=true){
 	if(count($projects_list)==0){
 		$template->assign("project_name", "emptytree/empty");
 		$template->assign("login", true);
-		
 	}else{
 		//Read the current project-settings-file
 		$PROJECT_PATH = "";
@@ -167,6 +191,7 @@ if($session->get('login')!=true){
 	
 	$template->assign("rights", $session->get("rights"));
 	
+	//Decide which way the user choose
 	switch ($_GET['root']) {
 		case "":
 			require("./run/site/main.php");
@@ -206,6 +231,7 @@ if($session->get('login')!=true){
 }
 $textdb_login->close();
 
+//Defines some variables for Smarty
 $template->assign("_website_name", WEBSITE_NAME);
 $template->assign("_website_version", WEBSITE_VERSION);
 $template->assign("_website_autor", WEBSITE_AUTOR);

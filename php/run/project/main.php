@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/project/main.php
+ *
+ * This little file decide, which way the user go
  */
 
 switch($_GET['choice']){

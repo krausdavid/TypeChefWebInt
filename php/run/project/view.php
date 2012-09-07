@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/project/view.php
+ *
+ * This file shows single c-files from a given project
  */
 
 $string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$_GET['project'].".project.xml");

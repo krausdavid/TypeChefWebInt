@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/site/permalink.php
+ *
+ * This file will be used for permalinks
  */
 
 $p = $_GET['p'];

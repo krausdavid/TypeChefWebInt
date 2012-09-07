@@ -15,6 +15,12 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/_lib/textdb/textdb.php
+ *
+ * This little libary is a text-file-based database.
+ * Important: An given database is needed! It must contains
+ * row-headers!
  */
 class textdb{
 	var $dbc;			//Database in a string

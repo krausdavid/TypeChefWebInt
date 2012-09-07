@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/project/new.php
+ *
+ * This file helps to create a new project
  */
 tools::right_exists();
 

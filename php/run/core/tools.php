@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/core/tools.php
+ *
+ * A self written toolbox with needed little functions
  */
 
 class tools

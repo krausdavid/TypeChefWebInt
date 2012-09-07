@@ -15,6 +15,10 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./run/pages/404_not_found.php
+ *
+ * Little file for displaying an error-message
  */
 
 $template->assign("title", "Fehler 404: Nicht gefunden");

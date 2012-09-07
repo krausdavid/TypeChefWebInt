@@ -15,6 +15,11 @@
  * ===Notes=============================================
  * There are currently no notes.
  * =====================================================
+ *
+ * ./index.php
+ *
+ * This is the main file. From this file, all ways goes
+ * deeper ;)
  */
  
 ob_start();
