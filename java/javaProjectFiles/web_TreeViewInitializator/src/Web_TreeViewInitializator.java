@@ -12,7 +12,7 @@ import tcwi.TCWIFile.ErrorFile;
 
 public class Web_TreeViewInitializator {
 
-	private static final String VERSION = "0.5.2.2";
+	private static final String VERSION = "0.5.2.3";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<String> javascript = new ArrayList<String>();
 	private static ArrayList<String> javascriptOnlyErrors = new ArrayList<String>();
@@ -468,10 +468,14 @@ public class Web_TreeViewInitializator {
 			String WebsiteDefaultURL = settingsParser.getSetting_WebsiteDefaultURI();
 			
 			//Read the project dir
-			File f = new File( WebIntProjectsPath+folderSeparator+projectName+".project.xml");
+			File f1 = new File( WebIntProjectsPath+folderSeparator+projectName+".project.xml");
+			File f2 = new File( WebIntProjectsPath+folderSeparator+projectName+".deltaproject.xml");
 			String project_settings_xml_path = "";
-			if(f.exists()){
+			if(f1.exists()){
 				project_settings_xml_path = WebIntProjectsPath+folderSeparator+projectName+".project.xml";
+				projectType = ProjectType.PROJECT;
+			}else if(f2.exists()){
+				project_settings_xml_path = WebIntProjectsPath+folderSeparator+projectName+".deltaproject.xml";
 				projectType = ProjectType.PROJECT;
 			}else{
 				project_settings_xml_path = WebIntProjectsPath+folderSeparator+projectName+".compare.xml";
