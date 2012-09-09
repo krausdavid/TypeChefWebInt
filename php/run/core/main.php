@@ -134,6 +134,7 @@ if($session->get('login')!=true){
 			}
 		}
 	}
+	
 	//Check if the current project were deleted
 	if(!$file_exist){
 		if(count($projects_list)>0){
@@ -190,6 +191,9 @@ if($session->get('login')!=true){
 	}
 	
 	$template->assign("rights", $session->get("rights"));
+	
+	//Load all delta-projects
+	
 	
 	//Decide which way the user choose
 	switch ($_GET['root']) {
