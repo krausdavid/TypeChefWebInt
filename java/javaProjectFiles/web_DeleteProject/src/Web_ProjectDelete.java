@@ -4,7 +4,7 @@ import tcwi.xml.Parser;
 
 
 public class Web_ProjectDelete {
-	private static final String VERSION = "0.0.2.1";
+	private static final String VERSION = "0.0.2.2";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	
@@ -35,6 +35,8 @@ public class Web_ProjectDelete {
 			f = new File(webIntProjectsPath + Check.folderSeparator() + args[0] + ".project.xml");
 			f.delete();
 			f = new File(webIntProjectsPath + Check.folderSeparator() + args[0] + ".compare.xml");
+			f.delete();
+			f = new File(webIntProjectsPath + Check.folderSeparator() + args[0] + ".deltaproject.xml");
 			f.delete();
 			f = new File(webIntProjectsPath + Check.folderSeparator() + args[0] + ".lst");
 			f.delete();
