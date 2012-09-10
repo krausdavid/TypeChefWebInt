@@ -13,7 +13,7 @@
 							{foreach from=$projects_list item=projects_list name=projects_list_name}
 								<option value="_{$projects_list.name}" {if $projects_list.selected eq true}selected{/if} onclick="this.form.submit();">{$projects_list.name}</option>
 							{foreachelse}
-								<option value="_" selected>{$langTXT_noProjectsExist}</option>
+								<option value="-" selected>{$langTXT_noProjectsExist}</option>
 							{/foreach}
 						</optgroup>
 						{if $rights eq true}
@@ -28,9 +28,9 @@
 			<td>
 				<form method="post" action="{$_wud}/" style="display:inline">
 					<select name="deltas" size="1">
-						<option value="-">{$langTXT_mainproject}</option>
+						<option value="_{$project_name_origin}" onclick="this.form.submit();">{$langTXT_mainproject}</option>
 							{foreach from=$projects_deltas item=projects_deltas name=projects_deltas_name}
-								<option value="{$projects_deltas.id}" {if $projects_deltas.selected eq true}selected{/if}>{$projects_deltas.name}</option>
+								<option value="_{$projects_deltas.name}" {if $projects_deltas.selected eq true}selected{/if} onclick="this.form.submit();">{$projects_deltas.name}</option>
 							{/foreach}
 					</select>
 				</form>

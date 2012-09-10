@@ -112,13 +112,19 @@ if($session->get('login')!=true){
 	if(substr($_POST['project'],0,1)=="_"){
 		$session->set('current_project',substr($_POST['project'],1));
 	}
+	if(substr($_POST['deltas'],0,1)=="_"){
+		$session->set('current_project',substr($_POST['deltas'],1));
+	}
 	
 	$PROJECT_NAME = $session->get('current_project');
+	$PROJECT_TYPE = "project";
 
-	//List all projects in the treeview-option-box
+	//List all projects in the treeview-option-box and
+	//get all deltas for all projects
 	$handle = opendir($WEBSITE_PROJECT_PATH);
 	$file_exist = false;
 	$i=0;
+	$j=0;
 	while($file = readdir($handle)){
 		if(strlen($file)>12){
 			if(substr($file,-12)==".project.xml"){
@@ -127,14 +133,27 @@ if($session->get('login')!=true){
 				if($PROJECT_NAME==substr($file,0,-12)){
 					$projects_list[$i]['selected'] = true;
 					$file_exist = true;
+					$PROJECT_TYPE = "project";
 				}else{
 					$projects_list[$i]['selected'] = false;
 				}
 				$i++;
 			}
+			if(substr($file,-17)==".deltaproject.xml"){
+				$deltaprojects_list[$j]['name'] = substr($file,0,-17);
+				$deltaprojects_list[$j]['id'] = $j;
+				if($PROJECT_NAME==substr($file,0,-17)){
+					$deltaprojects_list[$j]['selected'] = true;
+					$file_exist = true;
+					$PROJECT_TYPE = "deltaproject";
+				}else{
+					$deltaprojects_list[$j]['selected'] = false;
+				}
+				$j++;
+			}
 		}
 	}
-	
+
 	//Check if the current project were deleted
 	if(!$file_exist){
 		if(count($projects_list)>0){
@@ -144,8 +163,6 @@ if($session->get('login')!=true){
 	}
 
 	closedir($handle);
-	$template->assign("projects_list", $projects_list);
-	
 
 	//Check if the given project from the database is exist
 	if(count($projects_list)!=0){
@@ -168,6 +185,46 @@ if($session->get('login')!=true){
 		}
 	}
 	
+	//Filter out all deltas, that are not belong to the main
+	//project
+	if($PROJECT_TYPE=="deltaproject"){
+		$proj_name_explode = explode("_",$PROJECT_NAME);
+		for($i=0;$i<count($proj_name_explode)-1;$i++){
+			$orign_project_name .= "_".$proj_name_explode[$i]; 
+		}
+		$orign_project_name = substr($orign_project_name,1);
+		$template->assign("project_name_origin",$orign_project_name);
+		
+		for($i=0;$i<count($projects_list);$i++){
+			if($orign_project_name==$projects_list[$i]['name']){
+				$projects_list[$i]['selected'] = true;
+			}else{
+				$projects_list[$i]['selected'] = false;
+			}
+		}
+		$template->assign("projects_deltas",$deltaprojects_list);
+	}elseif($PROJECT_TYPE=="project"){
+		$j=0;
+		for($i=0;$i<count($deltaprojects_list);$i++){
+			$delt_name_explode = explode("_",$deltaprojects_list[$i]['name']);
+			$orign_delta_name="";
+			for($j=0;$j<count($delt_name_explode)-1;$j++){
+				$orign_delta_name .= "_".$delt_name_explode[$j]; 
+			}
+			$orign_delta_name = substr($orign_delta_name,1);
+
+			if($orign_delta_name==$PROJECT_NAME){
+				$deltaprojects_list_new[$j]['id'] = $deltaprojects_list[$i]['id'];
+				$deltaprojects_list_new[$j]['name'] = $deltaprojects_list[$i]['name'];
+				$deltaprojects_list_new[$j]['selected'] = false;
+				$j++;
+			}
+		}
+		$template->assign("projects_deltas",$deltaprojects_list_new);
+	}
+	
+	$template->assign("projects_list", $projects_list);
+
 	//Checks whether projects are available
 	if(count($projects_list)==0){
 		$template->assign("project_name", "emptytree/empty");
@@ -178,7 +235,11 @@ if($session->get('login')!=true){
 		$template->assign("project_name", $PROJECT_NAME);
 		$template->assign("login", true);
 		
-		$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".project.xml");
+		if($PROJECT_TYPE=="project"){
+			$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".project.xml");
+		}elseif($PROJECT_TYPE=="deltaproject"){
+			$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".deltaproject.xml");
+		}
 		$xml = simplexml_load_string($string);
 		
 		$PROJECT_PATH = $xml->header->project->path."/";
@@ -191,9 +252,6 @@ if($session->get('login')!=true){
 	}
 	
 	$template->assign("rights", $session->get("rights"));
-	
-	//Load all delta-projects
-	
 	
 	//Decide which way the user choose
 	switch ($_GET['root']) {
