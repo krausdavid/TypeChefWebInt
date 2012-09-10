@@ -11,7 +11,7 @@ C1 = "<td valign=middle><input type=checkbox id=\"chkbox"
 C2 = "\"></td>"
 ICONPATH = 'http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/include/images/treeview/'
 MAX_LENGTH = 700
-foldersTree = gFld("<i>BusyBox 1.18.5</i>", "")
+foldersTree = gFld("<i>BusyBox 1.18.5 delta:1</i>", "")
 foldersTree.treeID = "Frameset"
 foldersTree.iconSrc = ICONPATH + "folderopenfail.gif"
 foldersTree.iconSrcClosed = ICONPATH + "folderclosedfail.gif"
