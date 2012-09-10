@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.5.1";
+	private static final String VERSION = "0.2.6.0";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -69,7 +69,7 @@ public class Web_ProjectInitializator {
 	 * @param projectHasDeltas
 	 * @param projectDeltaMain
 	 */
-	private static void writeProjectFile(String projectPath, String projectName, String projectFullName, String projectVersion, String projectAuthor, String path, String projectHasDeltas, String projectDeltaMain, boolean isADelta) {
+	private static void writeProjectFile(String projectPath, String projectName, String projectFullName, String projectVersion, String projectAuthor, String path, String projectHasDeltas, String projectDeltaMain, boolean isADelta, String diffProjectName) {
 		try{
 			Calendar c = new GregorianCalendar();
 			String month = Tools.correctCalendarForm(c.get(GregorianCalendar.MONTH)+1);
@@ -89,7 +89,11 @@ public class Web_ProjectInitializator {
 			file.writeBytes("		<project>\r\n");
 			file.writeBytes("			<idname>"+projectName+"</idname>\r\n");
 			file.writeBytes("			<fullname>"+escapeString(projectFullName)+"</fullname>\r\n");
-			file.writeBytes("			<version>"+escapeString(projectVersion)+"</version>\r\n");
+			if(projectHasDeltas.equals("true")){
+				file.writeBytes("			<version>"+escapeString(projectVersion)+" delta:"+diffProjectName+"</version>\r\n");
+			}else{
+				file.writeBytes("			<version>"+escapeString(projectVersion)+"</version>\r\n");
+			}
 			file.writeBytes("			<path>"+path+"</path>\r\n");
 			file.writeBytes("		</project>\r\n");
 			file.writeBytes("		<delta>\r\n");
@@ -260,12 +264,15 @@ public class Web_ProjectInitializator {
 			System.out.println("Writing down the project file...");
 			
 			boolean isDelta = false;
+			String diffProjectName="";
 			if(projectHasDeltas.equals("true")&&check.projectExist(projectName, projectPath)){
-				projectName = Tools.findAFreeProjectName(projectName, projectPath);
+				String newProjectName = Tools.findAFreeProjectName(projectName, projectPath);
+				diffProjectName = newProjectName.substring(projectName.length()+1);
+				projectName = newProjectName;
 				isDelta = true;
 			}
 			
-			writeProjectFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,args[1],isDelta);
+			writeProjectFile(projectPath,projectName,projectFullName,projectVersion,projectAuthor,path,projectHasDeltas,args[1],isDelta,diffProjectName);
 			
 			System.out.println("Writing DONE!\nScript DONE!");
 			System.out.printf("Duration: %.2f sec\n",(System.currentTimeMillis()-time)/1000.0);
