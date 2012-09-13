@@ -70,7 +70,7 @@ $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
 //Check website language and set the correct one, if changed
-if($_GET['lang']=="DE-DE" ||$_GET['lang']=="EN-US"){
+if($_GET['lang']=="DE-DE" || $_GET['lang']=="EN-US"){
 	$session->set("lang",$_GET['lang']);
 }
 
@@ -161,7 +161,6 @@ if($session->get('login')!=true){
 			$projects_list[0]['selected'] = true;
 		}
 	}
-
 	closedir($handle);
 
 	//Check if the given project from the database is exist
@@ -249,12 +248,43 @@ if($session->get('login')!=true){
 	
 	//Checks if the user want to delete a project
 	if($_REQUEST['cmd_delete_project']){
-		exec("java -jar ../java/Web_DeleteProject.jar ".$PROJECT_NAME." ".GLOBAL_SETTINGS);
+		exec("java -jar ../java/Web_ProjectDelete.jar ".$PROJECT_NAME." ".GLOBAL_SETTINGS);
 		header('Location: '.$WEBSITE_DEFAULT_URI.'/');
 	}
 	
 	$template->assign("rights", $session->get("rights"));
 	
+	//Checks if the user want to compare a project
+	if($_REQUEST['cmd_projects_deltas_compare']){
+		$act_pro_type = "";
+		if($PROJECT_TYPE=="project"){
+			$act_pro_type = "P";
+		}
+		if($PROJECT_TYPE=="deltaproject"){
+			$act_pro_type = "D";
+		}
+		
+		$comp_pro_type = "";
+		$comp_pro_name = $_POST['deltas_compare'];
+		if(substr($_POST['deltas_compare'],0,1)=="_"){
+			$comp_pro_type = "P";
+			$comp_pro_name = substr($_POST['deltas_compare'],1);
+		}else{
+			$comp_pro_type = "D";
+		}
+		
+		/* Checks if the compare-file exist already*/
+		$filename_possibility_1 = $WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.$act_pro_type."_".$comp_pro_name.$comp_pro_type.".compare.xml";
+		$filename_possibility_2 = $WEBSITE_PROJECT_PATH."/".$comp_pro_name.$comp_pro_type."_".$PROJECT_NAME.$act_pro_type.".compare.xml";
+		
+		if(file_exists($filename_possibility_1) || file_exists($filename_possibility_2)){
+			//Change Project
+		}else{
+			//Generate
+			//Change Project
+		}
+	}
+
 	//Decide which way the user choose
 	switch ($_GET['root']) {
 		case "":

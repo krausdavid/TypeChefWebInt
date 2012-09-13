@@ -43,14 +43,16 @@
 		</tr>
 		<tr>
 			<td colspan="3">
+				<br/>
 				<b>{$langTXT_compareItWithDelta}:</b>&nbsp;
 				<form method="post" action="{$_wud}/" style="display:inline">
 					<select name="deltas_compare" size="1">
-						<option value="_{$project_name_origin}" onclick="this.form.submit();">{$langTXT_mainproject}</option>
+						<option value="_{$project_name}">{$langTXT_mainproject}</option>
 							{foreach from=$projects_deltas_compare item=projects_deltas_compare name=projects_deltas_compare_name}
-								<option value="_{$projects_deltas_compare.name}" {if $projects_deltas_compare.selected eq true}selected{/if} onclick="this.form.submit();">{$projects_deltas_compare.name}</option>
+								{if $projects_deltas_compare.selected neq true}<option value="{$projects_deltas_compare.name}" onclick="this.form.submit();">{$projects_deltas_compare.name}</option>{/if}
 							{/foreach}
 					</select>
+					<input type="submit" value="{$langTXT_ok}" name="cmd_projects_deltas_compare" class="button" />
 				</form>
 			</td>
 		</tr>

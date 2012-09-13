@@ -50,6 +50,7 @@ $template->assign("langTXT_nickname", "Nickname");
 $template->assign("langTXT_newProject", "New project...");
 $template->assign("langTXT_newProjectCreate", "Create new project");
 $template->assign("langTXT_noProjectsExist", "No projects exist");
+$template->assign("langTXT_ok", "OK");
 $template->assign("langTXT_options", "Options");
 $template->assign("langTXT_password", "Password");
 $template->assign("langTXT_path", "Path");
