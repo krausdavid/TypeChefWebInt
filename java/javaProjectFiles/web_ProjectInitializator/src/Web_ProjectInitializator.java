@@ -13,7 +13,7 @@ import tcwi.tools.Tools;
 import tcwi.xml.Parser;
 
 public class Web_ProjectInitializator {
-	private static final String VERSION = "0.2.6.0";
+	private static final String VERSION = "0.2.6.1";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static ArrayList<ErrorFile> files = new ArrayList<ErrorFile>();
 	private static Check check = new Check();
@@ -196,7 +196,7 @@ public class Web_ProjectInitializator {
 			System.out.println("\n[PROJECTPATH]");
 			System.out.println("     Absolute Path for scan for TypeChef-Files\n");
 			System.out.println("[PROJECTNAME]");
-			System.out.println("     Project shortcut-name. It must be unique!\n");
+			System.out.println("     Project shortcut-name. It must be unique and cannot\n     contain an underscore!\n");
 			System.out.println("[PROJECTFULLNAME]");
 			System.out.println("     Project name\n");
 			System.out.println("[PROJECTVERSION]");
@@ -223,7 +223,7 @@ public class Web_ProjectInitializator {
 			parser = new Parser(settingFile);
 			String projectPath = parser.getSetting_ProjectPath();
 			
-			if(!check.projectExist(projectName, projectPath)||projectHasDeltas.equals("true")){
+			if((!check.projectExist(projectName, projectPath)||projectHasDeltas.equals("true"))&&!projectName.contains("_")){
 				System.out.println("Project name is OK!");
 			}else{
 				Exceptions.throwException(5, null, true, "");
