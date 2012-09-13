@@ -62,8 +62,8 @@
 						</tr>
 						<tr valign="top" class="body_main">
 							<td>
-								<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-									<tr valign="top">
+								<table valign="top" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tr>
 										<td class="body_tree" align="left">{include file="./core/navigation_pane.tpl"}</td>
 									</tr>
 									<tr>
@@ -74,14 +74,14 @@
 								</table>
 							</td>
 							<td>
-								<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-									<tr valign="top" class="body_main">
+								<table align="left" valign="top" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tr class="body_main">
 										<td height="25" class="body_menu">
-											<a href="{$_wud}/" class="menu_link">{$langTXT_homepage}</a> - {$langTXT_hello} {$login_username} - {if $rights neq true}<a href="{$_wud}/login" class="menu_link">{$langTXT_login}</a>{else}{$langTXT_settings} - <a href="{$_wud}/logout" class="menu_link">{$langTXT_logout}</a>{/if}
+											&nbsp;<a href="{$_wud}/" class="menu_link">{$langTXT_homepage}</a> - {$langTXT_hello} {$login_username} - {if $rights neq true}<a href="{$_wud}/login" class="menu_link">{$langTXT_login}</a>{else}{$langTXT_settings} - <a href="{$_wud}/logout" class="menu_link">{$langTXT_logout}</a>{/if}
 										</td>
 									</tr>
 									<tr>
-										<td valign="top" class="body_main_noborder">
+										<td class="content">
 											{if $error_projectDeleted eq true && $rights eq true}
 												<div class="info_message">
 													<b>{$langINF_information}</b><br/><br/>
