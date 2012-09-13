@@ -12,7 +12,7 @@ public class Exceptions {
 		exception.put(2, "ERROR 2: Error during parse the setting-file. Is it malformed?");
 		exception.put(3, "ERROR 3: Can't generate and write the javascript file.");
 		exception.put(4, "ERROR 4: Can't write the setting-file.");
-		exception.put(5, "ERROR 5: Project name already set!");
+		exception.put(5, "ERROR 5: Project name already set or underscore in filename!");
 		exception.put(6, "ERROR 6: Can't access the given path. Maybe you do not have the rights for it?");
 		exception.put(7, "ERROR 7: File / Path doesn't exist.");
 		exception.put(8, "ERROR 8: Can't read / write the given file.");
