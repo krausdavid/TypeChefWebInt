@@ -61,21 +61,38 @@
 							</td>
 						</tr>
 						<tr valign="top" class="body_main">
-							<th rowspan="2" class="body_tree" align="left">{include file="./core/tree.tpl"}</th>
-							<td height="25" class="body_menu">
-								<a href="{$_wud}/" class="menu_link">{$langTXT_homepage}</a> - {$langTXT_hello} {$login_username} - {if $rights neq true}<a href="{$_wud}/login" class="menu_link">{$langTXT_login}</a>{else}{$langTXT_settings} - <a href="{$_wud}/logout" class="menu_link">{$langTXT_logout}</a>{/if}
+							<td>
+								<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tr valign="top">
+										<td class="body_tree" align="left">{include file="./core/navigation_pane.tpl"}</td>
+									</tr>
+									<tr>
+										<td class="body_tree_nobottomborder" align="left">
+											{include file="./core/tree.tpl"}
+										</td>
+									</tr>
+								</table>
 							</td>
-						</tr>
-						<tr>
-							<td valign="top" class="body_main">
-								{if $error_projectDeleted eq true && $rights eq true}
-									<div class="info_message">
-										<b>{$langINF_information}</b><br/><br/>
-										{$langINFTXT_deletedProject_PART1} {$error_projectDeleted_project_old} {$langINFTXT_deletedProject_PART2} {$error_projectDeleted_project_new} {$langINFTXT_deletedProject_PART3}
-									</div>
-									<br/><br/>
-								{/if}
-								{include file=$template}
+							<td>
+								<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tr valign="top" class="body_main">
+										<td height="25" class="body_menu">
+											<a href="{$_wud}/" class="menu_link">{$langTXT_homepage}</a> - {$langTXT_hello} {$login_username} - {if $rights neq true}<a href="{$_wud}/login" class="menu_link">{$langTXT_login}</a>{else}{$langTXT_settings} - <a href="{$_wud}/logout" class="menu_link">{$langTXT_logout}</a>{/if}
+										</td>
+									</tr>
+									<tr>
+										<td valign="top" class="body_main_noborder">
+											{if $error_projectDeleted eq true && $rights eq true}
+												<div class="info_message">
+													<b>{$langINF_information}</b><br/><br/>
+													{$langINFTXT_deletedProject_PART1} {$error_projectDeleted_project_old} {$langINFTXT_deletedProject_PART2} {$error_projectDeleted_project_new} {$langINFTXT_deletedProject_PART3}
+												</div>
+												<br/><br/>
+											{/if}
+											{include file=$template}
+										</td>
+									</tr>
+								</table>
 							</td>
 						</tr>
 						<tr>

@@ -36,6 +36,7 @@ $template->assign("langINFTXT_nicknameAlreadySet", "Der Projekt-Nickname ist ber
 $template->assign("langINFTXT_nicknameContainsBadCharacter", "Der gewählte Projekt-Nickname beinhaltet Zeichen, die nicht erlaubt sind. Erlaubt sind Buchstaben, Zahlen, Punkt, Unterstrich und Bindestrich.");
 
 $template->assign("langTXT_actualProject", "Aktuelles Projekt");
+$template->assign("langTXT_compareItWithDelta", "Mit Delta vergleichen");
 $template->assign("langTXT_compareTwoProjects", "Zwei Projekte vergleichen");
 $template->assign("langTXT_deleteProject", "Projekt löschen");
 $template->assign("langTXT_deltas", "Deltas");

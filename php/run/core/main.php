@@ -203,6 +203,7 @@ if($session->get('login')!=true){
 			}
 		}
 		$template->assign("projects_deltas",$deltaprojects_list);
+		$template->assign("projects_deltas_compare",$deltaprojects_list);
 	}elseif($PROJECT_TYPE=="project"){
 		$j=0;
 		for($i=0;$i<count($deltaprojects_list);$i++){
@@ -221,6 +222,7 @@ if($session->get('login')!=true){
 			}
 		}
 		$template->assign("projects_deltas",$deltaprojects_list_new);
+		$template->assign("projects_deltas_compare",$deltaprojects_list_new);
 	}
 	
 	$template->assign("projects_list", $projects_list);

@@ -30,10 +30,17 @@
 	text-decoration: none;
 	font-family: Verdana,Arial,sans-serif;
 	font-size:12px;
+	border-right: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+}
+.body_tree_nobottomborder{
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
 	background-color: #ffffff;
 	padding:5px;
 	border-right: #000000 1px solid;
-	border-bottom: #000000 1px solid;
 }
 .body_main{
 	color: #000000;
@@ -44,12 +51,28 @@
 	padding:5px;
 	border-bottom: #000000 1px solid;
 }
+.body_main_noborder{
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
+	background-color: #ffffff;
+	padding:5px;
+}
 .teletype{
 	color: #000000;
 	text-decoration: none;
 	font-family: Courier-New,Courier;
 	font-size:12px;
 	background-color: #dddddd;
+	padding:5px;
+}
+.navigation_pane{
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana,Arial,sans-serif;
+	font-size:12px;
+	background-color: #f0eee0;
 	padding:5px;
 }
 .content{
@@ -75,6 +98,7 @@
 	font-size:10px;
 	background-color: #517bab;
 	padding:5px;
+	border-top: #000000 1px solid;
 }
 .error_header{
 	color: #CC0000;
