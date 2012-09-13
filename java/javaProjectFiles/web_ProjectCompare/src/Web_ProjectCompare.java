@@ -17,7 +17,7 @@ import tcwi.xml.Parser;
 import tcwi.xml.ProjectFile;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.1.2.3";
+	private static final String VERSION = "0.1.2.4";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static String folderSeparator = Check.folderSeparator();

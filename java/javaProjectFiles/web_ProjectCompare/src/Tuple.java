@@ -13,7 +13,7 @@ public class Tuple<K,V> implements Comparable<Tuple>{
 	
 	@Override
 	/**
-	 * Comparing filenames
+	 * Comparing Keys
 	 */
 	public int compareTo(Tuple t) {
 		if(t.k instanceof String && t.v instanceof ErrorField){
@@ -21,7 +21,7 @@ public class Tuple<K,V> implements Comparable<Tuple>{
 				return 0;
 			}
 			for(int i=0;i<((String) t.k).length();i++){
-				if(((String) t.k).length()>i){
+				if(((String) this.k).length()>i){
 					if(((String) t.k).charAt(i)!=((String)this.k).charAt(i)){
 						if(((String) t.k).charAt(i)>((String)this.k).charAt(i)){
 							return -1;
