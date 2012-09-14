@@ -17,7 +17,7 @@ import tcwi.xml.Parser;
 import tcwi.xml.ProjectFile;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.1.2.4";
+	private static final String VERSION = "0.1.2.5";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static String folderSeparator = Check.folderSeparator();
@@ -234,13 +234,13 @@ public class Web_ProjectCompare {
 			
 			File f = new File(path+folderSeparator+main.getIdname()+mainProjectType+"_"+compare.getIdname()+compareProjectType+".compare.xml");
 			f.delete();
-			RandomAccessFile file = new RandomAccessFile(path+folderSeparator+main.getIdname()+mainProjectType+"_"+compare.getIdname()+compareProjectType+".compare.xml","rw");
+			RandomAccessFile file = new RandomAccessFile(path+folderSeparator+main.getIdname()+mainProjectType+"__"+compare.getIdname()+compareProjectType+".compare.xml","rw");
 			file.writeBytes("<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\r\n");
 			file.writeBytes("<project>\r\n");
 			file.writeBytes("	<header>\r\n");
 			file.writeBytes("		<project>\r\n");
-			file.writeBytes("			<idname>"+main.getIdname()+mainProjectType+"_"+compare.getIdname()+compareProjectType+"</idname>\r\n");
-			file.writeBytes("			<fullname>"+main.getFullname()+" "+main.getVersion()+"_"+compare.getFullname()+" "+compare.getVersion()+"</fullname>\r\n");
+			file.writeBytes("			<idname>"+main.getIdname()+mainProjectType+"__"+compare.getIdname()+compareProjectType+"</idname>\r\n");
+			file.writeBytes("			<fullname>"+main.getFullname()+" "+main.getVersion()+"__"+compare.getFullname()+" "+compare.getVersion()+"</fullname>\r\n");
 			file.writeBytes("			<path>"+main.getPath()+"</path>\r\n");
 			file.writeBytes("		</project>\r\n");
 			file.writeBytes("		<build>\r\n");
