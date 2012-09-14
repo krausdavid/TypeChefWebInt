@@ -17,7 +17,7 @@ import tcwi.xml.Parser;
 import tcwi.xml.ProjectFile;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.1.2.5";
+	private static final String VERSION = "0.1.2.6";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static String folderSeparator = Check.folderSeparator();
@@ -375,26 +375,16 @@ public class Web_ProjectCompare {
 			
 			try {
 				//Try to find the correct projectnames
-				
-				File mainP = new File(projectPath+folderSeparator+mainProjectName+".project.xml");
-				File mainD = new File(projectPath+folderSeparator+mainProjectName+".deltaproject.xml");
-				File compareP = new File(projectPath+folderSeparator+compareProjectName+".project.xml");
-				File compareD = new File(projectPath+folderSeparator+compareProjectName+".deltaproject.xml");
-				
-				if(mainP.exists()){
+				if(!mainProjectName.contains("_")){
 					mainProject = Parser.getProject(projectPath+folderSeparator+mainProjectName+".project.xml");
-				}else if(mainD.exists()){
-					mainProject = Parser.getProject(projectPath+folderSeparator+mainProjectName+".deltaproject.xml");
 				}else{
-					Exceptions.throwException(1, null, true, "");
+					mainProject = Parser.getProject(projectPath+folderSeparator+mainProjectName+".deltaproject.xml");
 				}
 				
-				if(compareP.exists()){
+				if(!compareProjectName.contains("_")){
 					compareProject = Parser.getProject(projectPath+folderSeparator+compareProjectName+".project.xml");
-				}else if(compareD.exists()){
-					compareProject = Parser.getProject(projectPath+folderSeparator+compareProjectName+".deltaproject.xml");
 				}else{
-					Exceptions.throwException(1, null, true, "");
+					compareProject = Parser.getProject(projectPath+folderSeparator+compareProjectName+".deltaproject.xml");
 				}
 			} catch (IOException e) {
 				Exceptions.throwException(1, e, true, "");
