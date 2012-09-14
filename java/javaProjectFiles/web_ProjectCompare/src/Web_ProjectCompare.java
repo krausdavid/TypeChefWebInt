@@ -17,7 +17,7 @@ import tcwi.xml.Parser;
 import tcwi.xml.ProjectFile;
 
 public class Web_ProjectCompare {
-	private static final String VERSION = "0.1.2.6";
+	private static final String VERSION = "0.1.2.7";
 	private static final String AUTHORS = "EifX & hulllemann";
 	private static Parser parser;
 	private static String folderSeparator = Check.folderSeparator();
@@ -347,9 +347,9 @@ public class Web_ProjectCompare {
 			System.out.println("----------------------------------------------------");
 			System.out.println("\nUsage: Web_ProjectCompare [MAINPROJECT] [COMPAREPROJECT] [GLOBAL_SETTINGS]");
 			System.out.println("\n[MAINPROJECT]");
-			System.out.println("     Base-Project + project-type\n     Ex:example.project OR example.deltaproject\n");
+			System.out.println("     Base-Project id-name\n");
 			System.out.println("[COMPAREPROJECT]");
-			System.out.println("     Compare-Project + project-type\n     Ex:example.project OR example.deltaproject\n");
+			System.out.println("     Compare-Project id-name\n");
 			System.out.println("[PROJECTAUTHOR]");
 			System.out.println("     Project author\n");
 			System.out.println("[GLOBAL_SETTINGS]");
