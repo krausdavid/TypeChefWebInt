@@ -49,6 +49,7 @@ $template->assign("langTXT_name", "Name");
 $template->assign("langTXT_nickname", "Nickname");
 $template->assign("langTXT_newProject", "New project...");
 $template->assign("langTXT_newProjectCreate", "Create new project");
+$template->assign("langTXT_noDeltasExist", "No deltas exist");
 $template->assign("langTXT_noProjectsExist", "No projects exist");
 $template->assign("langTXT_ok", "OK");
 $template->assign("langTXT_options", "Options");

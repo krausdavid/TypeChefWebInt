@@ -2,7 +2,7 @@
 <project>
 	<header>
 		<project>
-			<idname>busybox1185</idname>
+			<idname>busybox1185-alt</idname>
 			<fullname>BusyBox</fullname>
 			<version>1.18.5</version>
 			<path>/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5</path>
@@ -14,7 +14,7 @@
 		<build>
 			<builder>EifX</builder>
 			<date>2012-09-14</date>
-			<time>13:31:28</time>
+			<time>13:32:04</time>
 		</build>
 		<stats>
 			<parsererrors>0</parsererrors>

@@ -6,12 +6,12 @@ USEFRAMES = 0
 PRESERVESTATE = 1
 HIGHLIGHT = 0
 P1 = "http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/project?choice=view&files="
-P2 = "&project=busybox1185_n_1"
+P2 = "&project=busybox1185-alt"
 C1 = "<td valign=middle><input type=checkbox id=\"chkbox"
 C2 = "\"></td>"
 ICONPATH = 'http://www.mathematik.uni-marburg.de/~eifx/TypeChefWebInt/php/include/images/treeview/'
 MAX_LENGTH = 700
-foldersTree = gFld("<i>BusyBox 1.18.5 delta:1</i>", "")
+foldersTree = gFld("<i>BusyBox 1.18.5</i>", "")
 foldersTree.treeID = "Frameset"
 foldersTree.iconSrc = ICONPATH + "folderopenfail.gif"
 foldersTree.iconSrcClosed = ICONPATH + "folderclosedfail.gif"

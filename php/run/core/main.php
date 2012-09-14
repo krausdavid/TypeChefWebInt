@@ -123,14 +123,18 @@ if($session->get('login')!=true){
 	//get all deltas for all projects
 	$handle = opendir($WEBSITE_PROJECT_PATH);
 	$file_exist = false;
+	$is_a_delta_selected = false;
 	$i=0;
 	$j=0;
+	$k=0;
 	while($file = readdir($handle)){
 		if(strlen($file)>12){
-			if(substr($file,-12)==".project.xml"){
-				$projects_list[$i]['name'] = substr($file,0,-12);
+			$file_ending = substr($file,-12);
+			$file_name = substr($file,0,-12);
+			if($file_ending==".project.xml"){
+				$projects_list[$i]['name'] = $file_name;
 				$projects_list[$i]['id'] = $i;
-				if($PROJECT_NAME==substr($file,0,-12)){
+				if($PROJECT_NAME==$file_name){
 					$projects_list[$i]['selected'] = true;
 					$file_exist = true;
 					$PROJECT_TYPE = "project";
@@ -139,21 +143,39 @@ if($session->get('login')!=true){
 				}
 				$i++;
 			}
-			if(substr($file,-17)==".deltaproject.xml"){
-				$deltaprojects_list[$j]['name'] = substr($file,0,-17);
-				$deltaprojects_list[$j]['id'] = $j;
-				if($PROJECT_NAME==substr($file,0,-17)){
-					$deltaprojects_list[$j]['selected'] = true;
-					$file_exist = true;
-					$PROJECT_TYPE = "deltaproject";
-				}else{
-					$deltaprojects_list[$j]['selected'] = false;
+			if($file_ending==".compare.xml"){
+				$compareprojects_list[$j]['name'] = $file_name;
+				$compareprojects_list[$j]['id'] = $j;
+				$compareprojects_list[$j]['selected'] = false;
+				if($PROJECT_NAME==$file_name){
+					$PROJECT_TYPE = "compareproject";
+					$compareprojects_list[$j]['selected'] = true;
 				}
 				$j++;
 			}
 		}
+		if(strlen($file)>17){
+			$file_ending = substr($file,-17);
+			$file_name = substr($file,0,-17);
+			if($file_ending==".deltaproject.xml"){
+				$deltaprojects_list[$k]['name'] = $file_name;
+				$deltaprojects_list[$k]['id'] = $k;
+				if($PROJECT_NAME==$file_name){
+					$deltaprojects_list[$k]['selected'] = true;
+					$file_exist = true;
+					$PROJECT_TYPE = "deltaproject";
+					$is_a_delta_selected = true;
+				}else{
+					$deltaprojects_list[$k]['selected'] = false;
+				}
+				$k++;
+			}
+		}
 	}
-
+	
+	//Check if a delta is selected
+	$template->assign("is_a_delta_selected", $is_a_delta_selected);
+	
 	//Check if the current project were deleted
 	if(!$file_exist){
 		if(count($projects_list)>0){
@@ -222,6 +244,29 @@ if($session->get('login')!=true){
 		}
 		$template->assign("projects_deltas",$deltaprojects_list_new);
 		$template->assign("projects_deltas_compare",$deltaprojects_list_new);
+	}elseif($PROJECT_TYPE=="compareproject"){
+		for($i=0;$i<count($compareprojects_list);$i++){
+			if($compareprojects_list[$i]['selected']==true){
+				$PROJECT_NAME = $compareprojects_list[$i]['name'];
+			}
+		}
+		//Setting all option-boxes to the correct values
+		for($i=0;$i<count($deltaprojects_list);$i++){
+			if($deltaprojects_list[$i]['name']==$_GET['mainproject'] || $deltaprojects_list[$i]['selected']==$_GET['compareproject']){
+				$deltaprojects_list[$i]['selected'] = true;
+			}else{
+				$deltaprojects_list[$i]['selected'] = false;
+			}
+		}
+		for($i=0;$i<count($projects_list);$i++){
+			if($projects_list[$i]['name']==$_GET['mainproject'] || $projects_list[$i]['selected']==$_GET['compareproject']){
+				$projects_list[$i]['selected'] = true;
+			}else{
+				$projects_list[$i]['selected'] = false;
+			}
+		}
+		$template->assign("projects_deltas",$deltaprojects_list_new);
+		$template->assign("projects_deltas_compare",$deltaprojects_list_new);
 	}
 	
 	$template->assign("projects_list", $projects_list);
@@ -240,6 +285,8 @@ if($session->get('login')!=true){
 			$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".project.xml");
 		}elseif($PROJECT_TYPE=="deltaproject"){
 			$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".deltaproject.xml");
+		}elseif($PROJECT_TYPE=="compareproject"){
+			$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".compare.xml");
 		}
 		$xml = simplexml_load_string($string);
 		
@@ -274,15 +321,15 @@ if($session->get('login')!=true){
 		}
 		
 		/* Checks if the compare-file exist already*/
-		$filename_possibility_1 = $WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.$act_pro_type."_".$comp_pro_name.$comp_pro_type.".compare.xml";
-		$filename_possibility_2 = $WEBSITE_PROJECT_PATH."/".$comp_pro_name.$comp_pro_type."_".$PROJECT_NAME.$act_pro_type.".compare.xml";
+		$project_name_compare = $PROJECT_NAME.$act_pro_type."__".$comp_pro_name.$comp_pro_type;
+		$filename_compare = $WEBSITE_PROJECT_PATH."/".$project_name_compare.".compare.xml";
 		
-		if(file_exists($filename_possibility_1) || file_exists($filename_possibility_2)){
-			//Change Project
-		}else{
-			//Generate
-			//Change Project
+		if(!file_exists($filename_compare)){
+			shell_exec("java -jar ../java/Web_ProjectCompare.jar ".$PROJECT_NAME." ".$comp_pro_name." ".$session->get("username")." ".GLOBAL_SETTINGS);
+			shell_exec("java -jar ../java/Web_TreeViewInitializator.jar ".$project_name_compare." ".GLOBAL_SETTINGS);
 		}
+		$session->set('current_project',$project_name_compare);
+		header('Location: '.$WEBSITE_DEFAULT_URI.'/?mainproject='.$PROJECT_NAME.'&compareproject='.$comp_pro_name);
 	}
 
 	//Decide which way the user choose

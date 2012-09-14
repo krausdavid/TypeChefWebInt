@@ -47,9 +47,11 @@
 				<b>{$langTXT_compareItWithDelta}:</b>&nbsp;
 				<form method="post" action="{$_wud}/" style="display:inline">
 					<select name="deltas_compare" size="1">
-						<option value="_{$project_name}">{$langTXT_mainproject}</option>
+						{if $is_a_delta_selected eq true}<option value="_{$project_name}">{$langTXT_mainproject}</option>{/if}
 							{foreach from=$projects_deltas_compare item=projects_deltas_compare name=projects_deltas_compare_name}
-								{if $projects_deltas_compare.selected neq true}<option value="{$projects_deltas_compare.name}" onclick="this.form.submit();">{$projects_deltas_compare.name}</option>{/if}
+								{if $projects_deltas_compare.selected neq true}<option value="{$projects_deltas_compare.name}">{$projects_deltas_compare.name}</option>{/if}
+							{foreachelse}
+								<option value="">{$langTXT_noDeltasExist}</option>
 							{/foreach}
 					</select>
 					<input type="submit" value="{$langTXT_ok}" name="cmd_projects_deltas_compare" class="button" />

@@ -2,19 +2,19 @@
 <project>
 	<header>
 		<project>
-			<idname>busybox1185_n</idname>
+			<idname>busybox1185_1</idname>
 			<fullname>BusyBox</fullname>
-			<version>1.18.5</version>
+			<version>1.18.5 delta:1</version>
 			<path>/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5</path>
 		</project>
 		<delta>
-			<isdelta>false</isdelta>
-			<mainproject></mainproject>
+			<isdelta>true</isdelta>
+			<mainproject>busybox1185</mainproject>
 		</delta>
 		<build>
 			<builder>EifX</builder>
-			<date>2012-07-25</date>
-			<time>14:04:21</time>
+			<date>2012-09-14</date>
+			<time>13:31:42</time>
 		</build>
 		<stats>
 			<parsererrors>0</parsererrors>
@@ -399,6 +399,17 @@
 			</errorlist>
 		</file>
 		<file>
+			<path>archival/libarchive/get_header_tar</path>
+			<excluded>false</excluded>
+			<compileerror>false</compileerror>
+			<summary>
+				<parsererrors>0</parsererrors>
+				<typeerrors>0</typeerrors>
+			</summary>
+			<errorlist>
+			</errorlist>
+		</file>
+		<file>
 			<path>archival/libarchive/get_header_tar_gz</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
@@ -411,17 +422,6 @@
 		</file>
 		<file>
 			<path>archival/libarchive/get_header_tar_lzma</path>
-			<excluded>false</excluded>
-			<compileerror>false</compileerror>
-			<summary>
-				<parsererrors>0</parsererrors>
-				<typeerrors>0</typeerrors>
-			</summary>
-			<errorlist>
-			</errorlist>
-		</file>
-		<file>
-			<path>archival/libarchive/get_header_tar</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -476,7 +476,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>archival/libarchive/lzo1x_1o</path>
+			<path>archival/libarchive/lzo1x_1</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -487,7 +487,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>archival/libarchive/lzo1x_1</path>
+			<path>archival/libarchive/lzo1x_1o</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -850,7 +850,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>coreutils/catv</path>
+			<path>coreutils/cat</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -861,7 +861,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>coreutils/cat</path>
+			<path>coreutils/catv</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -1510,7 +1510,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>coreutils/test_ptr_hack</path>
+			<path>coreutils/test</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -1521,7 +1521,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>coreutils/test</path>
+			<path>coreutils/test_ptr_hack</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -1807,7 +1807,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>e2fsprogs/old_e2fsprogs/blkid/devno</path>
+			<path>e2fsprogs/old_e2fsprogs/blkid/dev</path>
 			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -1818,7 +1818,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>e2fsprogs/old_e2fsprogs/blkid/dev</path>
+			<path>e2fsprogs/old_e2fsprogs/blkid/devno</path>
 			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -2236,7 +2236,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>e2fsprogs/old_e2fsprogs/ext2fs/dblist_dir</path>
+			<path>e2fsprogs/old_e2fsprogs/ext2fs/dblist</path>
 			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -2247,7 +2247,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>e2fsprogs/old_e2fsprogs/ext2fs/dblist</path>
+			<path>e2fsprogs/old_e2fsprogs/ext2fs/dblist_dir</path>
 			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -2610,7 +2610,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>e2fsprogs/old_e2fsprogs/ext2fs/read_bb_file</path>
+			<path>e2fsprogs/old_e2fsprogs/ext2fs/read_bb</path>
 			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -2621,7 +2621,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>e2fsprogs/old_e2fsprogs/ext2fs/read_bb</path>
+			<path>e2fsprogs/old_e2fsprogs/ext2fs/read_bb_file</path>
 			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -2951,8 +2951,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>editors/patch_toybox</path>
-			<excluded>true</excluded>
+			<path>editors/patch</path>
+			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -2962,8 +2962,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>editors/patch</path>
-			<excluded>false</excluded>
+			<path>editors/patch_toybox</path>
+			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -3622,7 +3622,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>libbb/lineedit_ptr_hack</path>
+			<path>libbb/lineedit</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -3633,7 +3633,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>libbb/lineedit</path>
+			<path>libbb/lineedit_ptr_hack</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -3842,7 +3842,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>libbb/printable_string</path>
+			<path>libbb/printable</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -3853,7 +3853,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>libbb/printable</path>
+			<path>libbb/printable_string</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -3919,17 +3919,6 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>libbb/pw_encrypt_md5</path>
-			<excluded>true</excluded>
-			<compileerror>false</compileerror>
-			<summary>
-				<parsererrors>0</parsererrors>
-				<typeerrors>0</typeerrors>
-			</summary>
-			<errorlist>
-			</errorlist>
-		</file>
-		<file>
 			<path>libbb/pw_encrypt_sha</path>
 			<excluded>true</excluded>
 			<compileerror>false</compileerror>
@@ -3952,6 +3941,17 @@
 			</errorlist>
 		</file>
 		<file>
+			<path>libbb/pw_encrypt_md5</path>
+			<excluded>true</excluded>
+			<compileerror>false</compileerror>
+			<summary>
+				<parsererrors>0</parsererrors>
+				<typeerrors>0</typeerrors>
+			</summary>
+			<errorlist>
+			</errorlist>
+		</file>
+		<file>
 			<path>libbb/read_key</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
@@ -3963,7 +3963,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>libbb/read_printf</path>
+			<path>libbb/read</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -3974,7 +3974,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>libbb/read</path>
+			<path>libbb/read_printf</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -4337,8 +4337,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>libbb/xatonum_template</path>
-			<excluded>true</excluded>
+			<path>libbb/xatonum</path>
+			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -4348,8 +4348,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>libbb/xatonum</path>
-			<excluded>false</excluded>
+			<path>libbb/xatonum_template</path>
+			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -5063,7 +5063,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>miscutils/timeout</path>
+			<path>miscutils/time</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -5074,7 +5074,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>miscutils/time</path>
+			<path>miscutils/timeout</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -5206,7 +5206,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>modutils/modutils-24</path>
+			<path>modutils/modutils</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -5217,7 +5217,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>modutils/modutils</path>
+			<path>modutils/modutils-24</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -5239,7 +5239,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/arping</path>
+			<path>networking/arp</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -5250,7 +5250,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/arp</path>
+			<path>networking/arping</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -5338,8 +5338,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/httpd_ssi</path>
-			<excluded>true</excluded>
+			<path>networking/httpd</path>
+			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -5349,8 +5349,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/httpd</path>
-			<excluded>false</excluded>
+			<path>networking/httpd_ssi</path>
+			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -5426,7 +5426,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/ipcalc</path>
+			<path>networking/ip</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -5437,7 +5437,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/ip</path>
+			<path>networking/ipcalc</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -5690,8 +5690,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/ntpd_simple</path>
-			<excluded>true</excluded>
+			<path>networking/ntpd</path>
+			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -5701,8 +5701,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/ntpd</path>
-			<excluded>false</excluded>
+			<path>networking/ntpd_simple</path>
+			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -5756,8 +5756,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/tcpudp_perhost</path>
-			<excluded>false</excluded>
+			<path>networking/tc</path>
+			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -5778,8 +5778,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>networking/tc</path>
-			<excluded>true</excluded>
+			<path>networking/tcpudp_perhost</path>
+			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -6240,7 +6240,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>runit/runsvdir</path>
+			<path>runit/runsv</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -6251,7 +6251,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>runit/runsv</path>
+			<path>runit/runsvdir</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -6702,6 +6702,17 @@
 			</errorlist>
 		</file>
 		<file>
+			<path>shell/ash</path>
+			<excluded>false</excluded>
+			<compileerror>false</compileerror>
+			<summary>
+				<parsererrors>0</parsererrors>
+				<typeerrors>0</typeerrors>
+			</summary>
+			<errorlist>
+			</errorlist>
+		</file>
+		<file>
 			<path>shell/ash_test/printenv</path>
 			<excluded>true</excluded>
 			<compileerror>false</compileerror>
@@ -6726,17 +6737,6 @@
 		<file>
 			<path>shell/ash_test/zecho</path>
 			<excluded>true</excluded>
-			<compileerror>false</compileerror>
-			<summary>
-				<parsererrors>0</parsererrors>
-				<typeerrors>0</typeerrors>
-			</summary>
-			<errorlist>
-			</errorlist>
-		</file>
-		<file>
-			<path>shell/ash</path>
-			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -6845,8 +6845,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>sysklogd/syslogd_and_logger</path>
-			<excluded>false</excluded>
+			<path>sysklogd/syslogd</path>
+			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -6856,8 +6856,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>sysklogd/syslogd</path>
-			<excluded>true</excluded>
+			<path>sysklogd/syslogd_and_logger</path>
+			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -6977,8 +6977,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>util-linux/fdisk_sun</path>
-			<excluded>true</excluded>
+			<path>util-linux/fdisk</path>
+			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -6988,8 +6988,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>util-linux/fdisk</path>
-			<excluded>false</excluded>
+			<path>util-linux/fdisk_sun</path>
+			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -7285,7 +7285,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>util-linux/scriptreplay</path>
+			<path>util-linux/script</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -7296,7 +7296,7 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>util-linux/script</path>
+			<path>util-linux/scriptreplay</path>
 			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
@@ -7340,8 +7340,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>util-linux/umount</path>
-			<excluded>false</excluded>
+			<path>util-linux/um</path>
+			<excluded>true</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
@@ -7351,8 +7351,8 @@
 			</errorlist>
 		</file>
 		<file>
-			<path>util-linux/um</path>
-			<excluded>true</excluded>
+			<path>util-linux/umount</path>
+			<excluded>false</excluded>
 			<compileerror>false</compileerror>
 			<summary>
 				<parsererrors>0</parsererrors>
