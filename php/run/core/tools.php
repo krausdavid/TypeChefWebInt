@@ -24,11 +24,15 @@
 class tools
 {
 	function have_rights(){
-		return $_SESSION["rights"];
+		if(isset($_SESSION["rights"])){
+			return $_SESSION["rights"];
+		}else{
+			return "";
+		}
 	}
 
 	function right_exists(){
-		if($_SESSION["rights"]==false){
+		if(isset($_SESSION["rights"]) && $_SESSION["rights"]==false){
 			header("Location: ".$WUD."403_forbidden");
 		}
 	}

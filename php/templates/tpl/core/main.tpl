@@ -17,18 +17,21 @@
 		<link rel="stylesheet" type="text/css" href="{$_wud}/include/stylesheets/table.css"/>
 		<link rel="stylesheet" type="text/css" href="{$_wud}/include/stylesheets/links.css"/>
 		<link rel="shortcut icon" type="image/ico" href="{$_wud}/include/icons/favicon.ico"/>
-		{if $login eq true}
-			{* Scripts for TreeView *}
-			<script src="{$_wud}/include/javascripts/treeview/ua.js"></script>
-			<script src="{$_wud}/include/javascripts/treeview/ftiens4.js"></script>
+
+		{* Scripts for TreeView *}
+		<script src="{$_wud}/include/javascripts/treeview/ua.js"></script>
+		<script src="{$_wud}/include/javascripts/treeview/ftiens4.js"></script>
+		{if $project_name neq "emptytree/empty"}
 			<script src="{$_wud}/generics/treeview/{$project_name}{if $showOnlyErrors eq true}.err{/if}{if $rights neq true}.nochk{/if}.js"></script>
-			{* Scripts for SyntaxHighlighter *}
-			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shCore.js"></script>
-			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shBrushCpp.js"></script>
-			<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shBrushXml.js"></script>
-			<link type="text/css" rel="stylesheet" href="{$_wud}/include/stylesheets/syntaxhighlighter/shCoreDefault.css"/>
-			<script type="text/javascript">SyntaxHighlighter.all();</script>
+		{else}
+			<script src="{$_wud}/generics/treeview/emptytree/empty.js"></script>
 		{/if}
+		{* Scripts for SyntaxHighlighter *}
+		<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shCore.js"></script>
+		<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shBrushCpp.js"></script>
+		<script type="text/javascript" src="{$_wud}/include/javascripts/syntaxhighlighter/shBrushXml.js"></script>
+		<link type="text/css" rel="stylesheet" href="{$_wud}/include/stylesheets/syntaxhighlighter/shCoreDefault.css"/>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
 			<script>
 				function check_boxes(){literal}{
 					var outStr = "";
@@ -82,7 +85,7 @@
 									</tr>
 									<tr>
 										<td class="content">
-											{if $error_projectDeleted eq true && $rights eq true}
+											{if $error_projectDeleted eq true && $rights eq true && $error_projectDeleted_project_new neq ""}
 												<div class="info_message">
 													<b>{$langINF_information}</b><br/><br/>
 													{$langINFTXT_deletedProject_PART1} {$error_projectDeleted_project_old} {$langINFTXT_deletedProject_PART2} {$error_projectDeleted_project_new} {$langINFTXT_deletedProject_PART3}

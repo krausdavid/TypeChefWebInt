@@ -16,6 +16,9 @@
  * There are currently no notes.
  * =====================================================
  */
+define("langTXT_homepage", "Home");
+define("langTXT_project", "Project");
+
 $template->assign("langERR_403Forbidden", "FORBIDDEN");
 $template->assign("langERR_403NotFound", "NOT FOUND");
 $template->assign("langERR_501NotImplemented", "NOT IMPLEMENTED");
@@ -35,9 +38,11 @@ $template->assign("langINFTXT_nicknameAlreadySet", "The project name is already 
 $template->assign("langINFTXT_nicknameContainsBadCharacter", "The project chosen nickname contains characters that are not allowed. Allowed are letters, digits, dots, underscores and hyphens.");
 
 $template->assign("langTXT_actualProject", "Actual project");
+$template->assign("langTXT_compareProject", "Compare-project");
 $template->assign("langTXT_compareItWithDelta", "Compare it with delta");
 $template->assign("langTXT_compareTwoProjects", "Compare two projects");
 $template->assign("langTXT_deleteProject", "Delete project");
+$template->assign("langTXT_deltaProject", "Delta-project");
 $template->assign("langTXT_deltas", "Deltas");
 $template->assign("langTXT_evaluation", "Evaluation");
 $template->assign("langTXT_hello", "Hello");
@@ -55,10 +60,12 @@ $template->assign("langTXT_ok", "OK");
 $template->assign("langTXT_options", "Options");
 $template->assign("langTXT_password", "Password");
 $template->assign("langTXT_path", "Path");
+$template->assign("langTXT_project", "Project");
 $template->assign("langTXT_projects", "Projects");
 $template->assign("langTXT_pleaseActivateJavaScript", "Please activate JavaScript!");
 $template->assign("langTXT_settings", "Settings");
 $template->assign("langTXT_showOnlyErrors", "Show Errors");
+$template->assign("langTXT_type", "Typ");
 $template->assign("langTXT_version", "Version");
 
 $template->assign("langTXTHOME_topic", "Hello and welcome at TypeChefWebInt");

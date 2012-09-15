@@ -16,11 +16,21 @@
  * There are currently no notes.
  * =====================================================
  *
- * ./run/site/main.php
+ * ./run/site/navigation_pane.php
  *
- * The main-site. It displayes the legend.
+ * This whole methods are needed for the navigation-pane
+ * in the left upper corner
  */
 
-$template->assign("title", langTXT_homepage.", ".langTXT_project.": ".$session->get('current_project'));
-$template->assign("template", "./site/main.tpl"); 
+//Check, if user has switched between "Show Errors" and "Show no Errors"
+if((isset($_POST['chk_showOnlyErrors']) && $_POST['chk_showOnlyErrors']=="checked") && (isset($_POST['showOnlyErrors_val']) && $_POST['showOnlyErrors_val']=="val")){
+	$session->set("showOnlyErrors",true);
+}
+if(!isset($_POST['chk_showOnlyErrors']) && (isset($_POST['showOnlyErrors_val']) && $_POST['showOnlyErrors_val']=="val")){
+	$session->set("showOnlyErrors",false);
+}
+$template->assign("showOnlyErrors", $session->get("showOnlyErrors"));
+
+
+
 ?>

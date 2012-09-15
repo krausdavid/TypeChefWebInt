@@ -1,4 +1,5 @@
-﻿	<table align="left" border="0" cellpadding="0" cellspacing="0" class="navigation_pane" width="100%">
+﻿{strip}
+	<table align="left" border="0" cellpadding="0" cellspacing="0" class="navigation_pane" width="100%">
 		<tr>
 			<td><b>{$langTXT_actualProject}</b></td>
 			<td><b>{$langTXT_deltas}</b></td>
@@ -47,7 +48,7 @@
 				<b>{$langTXT_compareItWithDelta}:</b>&nbsp;
 				<form method="post" action="{$_wud}/" style="display:inline">
 					<select name="deltas_compare" size="1">
-						{if $is_a_delta_selected eq true}<option value="_{$project_name}">{$langTXT_mainproject}</option>{/if}
+						{if $is_a_delta_selected eq true}<option value="{$project_name_origin}">{$langTXT_mainproject}</option>{/if}
 							{foreach from=$projects_deltas_compare item=projects_deltas_compare name=projects_deltas_compare_name}
 								{if $projects_deltas_compare.selected neq true}<option value="{$projects_deltas_compare.name}">{$projects_deltas_compare.name}</option>{/if}
 							{foreachelse}
@@ -66,3 +67,4 @@
 			&nbsp;<input type="submit" value="{$langTXT_deleteProject}" name="cmd_delete_project" class="button" />
 		</form>
 	{/if}
+{/strip}

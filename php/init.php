@@ -45,11 +45,13 @@ foreach($xml->global->website[0]->attributes() as $a => $b) {
 }
 
 $WEBSITE_SESSION_PATH = "";
+$WEBSITE_DIR_PATH = "";
 
 $string = tools::readXMLFile(GLOBAL_SETTINGS);
 $xml = simplexml_load_string($string);
 foreach($xml->global->webint[0]->attributes() as $a => $b) {
     if($a=="path"){
+		$WEBSITE_DIR_PATH = $b;
 		$WEBSITE_SESSION_PATH = $b."/php/tmp";
 	}
 }
@@ -65,7 +67,7 @@ foreach($xml->global->projects[0]->attributes() as $a => $b) {
 }
 
 define("WEBSITE_NAME", "TypeChefWebInt");
-define("WEBSITE_VERSION", "0.2.8.0");
+define("WEBSITE_VERSION", "0.3.0.0");
 define("WEBSITE_AUTOR", "Alexander 'EifX' Eifler, David 'hullleman' Kraus");
 define("WEBSITE_SESSION_NAME", "session");
 

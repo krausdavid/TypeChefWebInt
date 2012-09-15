@@ -2,14 +2,14 @@
 <project>
 	<header>
 		<project>
-			<idname>busybox1185P__busybox1185_1D</idname>
-			<fullname>BusyBox 1.18.5__BusyBox 1.18.5 delta:1</fullname>
+			<idname>busybox1185_1__busybox1185</idname>
+			<fullname>BusyBox 1.18.5 delta:1__BusyBox 1.18.5</fullname>
 			<path>/app/archive/kos/share/TypeChef/busybox/busybox-1.18.5</path>
 		</project>
 		<build>
 			<builder>Guest</builder>
-			<date>2012-09-14</date>
-			<time>13:33:03</time>
+			<date>2012-09-15</date>
+			<time>22:08:09</time>
 		</build>
 		<stats>
 			<parsererrors>0</parsererrors>

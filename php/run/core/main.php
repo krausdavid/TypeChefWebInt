@@ -43,10 +43,27 @@
 require("./run/_lib/smarty/Smarty.class.php");
 require("./run/_lib/textdb/textdb.php");
 require("./run/core/session.php");
+require("./run/core/project_manager.php");
+
+define("TYPE_PROJECT", "project");
+define("TYPE_COMPARE", "compareproject");
+define("TYPE_DELTA", "deltaproject");
+define("FILENAMEENDING_PROJECT", ".project.xml");
+define("FILENAMEENDING_COMPARE", ".compare.xml");
+define("FILENAMEENDING_DELTA", ".deltaproject.xml");
 
 //Set up the connection to the login database
 $textdb_login = new textdb();
 $textdb_login->connect("./db/login.db");
+
+//Setting up the project-manager
+$projectMan = new project_manager();
+$projectMan->TYPE_PROJECT = TYPE_PROJECT;
+$projectMan->TYPE_COMPARE = TYPE_COMPARE;
+$projectMan->TYPE_DELTA = TYPE_DELTA;
+$projectMan->FILENAMEENDING_PROJECT = FILENAMEENDING_PROJECT;
+$projectMan->FILENAMEENDING_COMPARE = FILENAMEENDING_COMPARE;
+$projectMan->FILENAMEENDING_DELTA = FILENAMEENDING_DELTA;
 
 //Create a Session
 $session = new session();
@@ -57,7 +74,7 @@ if(!file_exists($WEBSITE_SESSION_PATH)){
 }
 $session->start($WEBSITE_SESSION_PATH);
 
-//Set up Smarty
+//Setting up Smarty
 $template = new Smarty();
 if(!file_exists("./templates/tpl")){mkdir("./templates/tpl");}
 if(!file_exists("./templates/php")){mkdir("./templates/php");}
@@ -70,24 +87,17 @@ $template->config_dir = "./templates/cfg";
 $template->cache_dir = "./templates/tmp";
 
 //Check website language and set the correct one, if changed
-if($_GET['lang']=="DE-DE" || $_GET['lang']=="EN-US"){
+if(isset($_GET['lang']) && ($_GET['lang']=="DE-DE" || $_GET['lang']=="EN-US")){
 	$session->set("lang",$_GET['lang']);
 }
 
+//The correct language will now be included
 if($session->get("lang")!=""){
 	require("./lang/".$session->get("lang").".php");
 }else{
+	//This is the default-language
 	require("./lang/EN-US.php");
 }
-
-//Check, if user has switched between "Show Errors" and "Show no Errors"
-if($_POST['chk_showOnlyErrors']=="checked" && $_POST['showOnlyErrors_val']=="val"){
-	$session->set("showOnlyErrors",true);
-}
-if($_POST['chk_showOnlyErrors']=="" && $_POST['showOnlyErrors_val']=="val"){
-	$session->set("showOnlyErrors",false);
-}
-$template->assign("showOnlyErrors", $session->get("showOnlyErrors"));
 
 //Read the current URL for language-switch
 if(strpos($_SERVER['REQUEST_URI'],"lang=")>0){
@@ -98,278 +108,187 @@ if(strpos($_SERVER['REQUEST_URI'],"lang=")>0){
 //esp. in the settings or during view a project. The current uri-state will be saved and used
 //for the next website-reload
 $template->assign("redirectURL",urlencode($_SERVER['REQUEST_URI']));
-if($_GET['redirect']!=""){
+if(isset($_GET['redirect'])){
 	header('Location: '.$_GET['redirect']);
 }
 
-//Check if the user is logged in
-if($session->get('login')!=true){
-	$guest_login=true;
-	require("./run/account/login.php");
-}else{
+//Include all needed things for the navigation pane
+require("./run/site/navigation_pane.php");
 
-	//Check if the user change a project
-	if(substr($_POST['project'],0,1)=="_"){
-		$session->set('current_project',substr($_POST['project'],1));
-	}
-	if(substr($_POST['deltas'],0,1)=="_"){
-		$session->set('current_project',substr($_POST['deltas'],1));
-	}
-	
-	$PROJECT_NAME = $session->get('current_project');
-	$PROJECT_TYPE = "project";
+//Gets the current project-type, needs an actual session-object
+function getActualProjectType($session,$projectMan){
+	return $projectMan->getProjectTypeFromGivenProject($session->get('current_project'));
+}
 
-	//List all projects in the treeview-option-box and
-	//get all deltas for all projects
-	$handle = opendir($WEBSITE_PROJECT_PATH);
-	$file_exist = false;
-	$is_a_delta_selected = false;
-	$i=0;
-	$j=0;
-	$k=0;
-	while($file = readdir($handle)){
-		if(strlen($file)>12){
-			$file_ending = substr($file,-12);
-			$file_name = substr($file,0,-12);
-			if($file_ending==".project.xml"){
-				$projects_list[$i]['name'] = $file_name;
-				$projects_list[$i]['id'] = $i;
-				if($PROJECT_NAME==$file_name){
-					$projects_list[$i]['selected'] = true;
-					$file_exist = true;
-					$PROJECT_TYPE = "project";
-				}else{
-					$projects_list[$i]['selected'] = false;
-				}
-				$i++;
-			}
-			if($file_ending==".compare.xml"){
-				$compareprojects_list[$j]['name'] = $file_name;
-				$compareprojects_list[$j]['id'] = $j;
-				$compareprojects_list[$j]['selected'] = false;
-				if($PROJECT_NAME==$file_name){
-					$PROJECT_TYPE = "compareproject";
-					$compareprojects_list[$j]['selected'] = true;
-				}
-				$j++;
-			}
-		}
-		if(strlen($file)>17){
-			$file_ending = substr($file,-17);
-			$file_name = substr($file,0,-17);
-			if($file_ending==".deltaproject.xml"){
-				$deltaprojects_list[$k]['name'] = $file_name;
-				$deltaprojects_list[$k]['id'] = $k;
-				if($PROJECT_NAME==$file_name){
-					$deltaprojects_list[$k]['selected'] = true;
-					$file_exist = true;
-					$PROJECT_TYPE = "deltaproject";
-					$is_a_delta_selected = true;
-				}else{
-					$deltaprojects_list[$k]['selected'] = false;
-				}
-				$k++;
-			}
-		}
-	}
-	
-	//Check if a delta is selected
-	$template->assign("is_a_delta_selected", $is_a_delta_selected);
-	
-	//Check if the current project were deleted
-	if(!$file_exist){
-		if(count($projects_list)>0){
-			$PROJECT_NAME = $projects_list[0]['name'];
-			$projects_list[0]['selected'] = true;
-		}
-	}
-	closedir($handle);
+//Check if the user change a project
+if(isset($_POST['project']) && substr($_POST['project'],0,1)=="_"){
+	$session->set('current_project',substr($_POST['project'],1));
+}
+if(isset($_POST['deltas']) && substr($_POST['deltas'],0,1)=="_"){
+	$session->set('current_project',substr($_POST['deltas'],1));
+}
 
-	//Check if the given project from the database is exist
-	if(count($projects_list)!=0){
-		$isACurrentProject = false;
-		for($i=0;$i<count($projects_list);$i++){
-			if($projects_list[$i]['name']==$session->get('initial_project')){
-				$isACurrentProject = true;
-			}
-		}
-		if($isACurrentProject==false){
-			$template->assign("error_projectDeleted", true);
-			$template->assign("error_projectDeleted_project_old", $session->get('initial_project'));
-			$template->assign("error_projectDeleted_project_new", $projects_list[0]['name']);
-			$session->set('initial_project', $projects_list[0]['name']);
-			$session->set('current_project', $projects_list[0]['name']);
-			$PROJECT_NAME = $projects_list[0]['name'];
-			if($session->get("id")!=0){
-				$textdb_login->update("initial_project",$projects_list[0]['name'],"id",$session->get('id'));
-			}
-		}
-	}
-	
-	//Filter out all deltas, that are not belong to the main
-	//project
-	if($PROJECT_TYPE=="deltaproject"){
-		$proj_name_explode = explode("_",$PROJECT_NAME);
-		for($i=0;$i<count($proj_name_explode)-1;$i++){
-			$orign_project_name .= "_".$proj_name_explode[$i]; 
-		}
-		$orign_project_name = substr($orign_project_name,1);
-		$template->assign("project_name_origin",$orign_project_name);
-		
-		for($i=0;$i<count($projects_list);$i++){
-			if($orign_project_name==$projects_list[$i]['name']){
-				$projects_list[$i]['selected'] = true;
-			}else{
-				$projects_list[$i]['selected'] = false;
-			}
-		}
-		$template->assign("projects_deltas",$deltaprojects_list);
-		$template->assign("projects_deltas_compare",$deltaprojects_list);
-	}elseif($PROJECT_TYPE=="project"){
-		$j=0;
-		for($i=0;$i<count($deltaprojects_list);$i++){
-			$delt_name_explode = explode("_",$deltaprojects_list[$i]['name']);
-			$orign_delta_name="";
-			for($j=0;$j<count($delt_name_explode)-1;$j++){
-				$orign_delta_name .= "_".$delt_name_explode[$j]; 
-			}
-			$orign_delta_name = substr($orign_delta_name,1);
-
-			if($orign_delta_name==$PROJECT_NAME){
-				$deltaprojects_list_new[$j]['id'] = $deltaprojects_list[$i]['id'];
-				$deltaprojects_list_new[$j]['name'] = $deltaprojects_list[$i]['name'];
-				$deltaprojects_list_new[$j]['selected'] = false;
-				$j++;
-			}
-		}
-		$template->assign("projects_deltas",$deltaprojects_list_new);
-		$template->assign("projects_deltas_compare",$deltaprojects_list_new);
-	}elseif($PROJECT_TYPE=="compareproject"){
-		for($i=0;$i<count($compareprojects_list);$i++){
-			if($compareprojects_list[$i]['selected']==true){
-				$PROJECT_NAME = $compareprojects_list[$i]['name'];
-			}
-		}
-		//Setting all option-boxes to the correct values
-		for($i=0;$i<count($deltaprojects_list);$i++){
-			if($deltaprojects_list[$i]['name']==$_GET['mainproject'] || $deltaprojects_list[$i]['selected']==$_GET['compareproject']){
-				$deltaprojects_list[$i]['selected'] = true;
-			}else{
-				$deltaprojects_list[$i]['selected'] = false;
-			}
-		}
-		for($i=0;$i<count($projects_list);$i++){
-			if($projects_list[$i]['name']==$_GET['mainproject'] || $projects_list[$i]['selected']==$_GET['compareproject']){
-				$projects_list[$i]['selected'] = true;
-			}else{
-				$projects_list[$i]['selected'] = false;
-			}
-		}
-		$template->assign("projects_deltas",$deltaprojects_list_new);
-		$template->assign("projects_deltas_compare",$deltaprojects_list_new);
-	}
-	
-	$template->assign("projects_list", $projects_list);
-
-	//Checks whether projects are available
-	if(count($projects_list)==0){
-		$template->assign("project_name", "emptytree/empty");
-		$template->assign("login", true);
-	}else{
-		//Read the current project-settings-file
-		$PROJECT_PATH = "";
-		$template->assign("project_name", $PROJECT_NAME);
-		$template->assign("login", true);
-		
-		if($PROJECT_TYPE=="project"){
-			$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".project.xml");
-		}elseif($PROJECT_TYPE=="deltaproject"){
-			$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".deltaproject.xml");
-		}elseif($PROJECT_TYPE=="compareproject"){
-			$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$PROJECT_NAME.".compare.xml");
-		}
-		$xml = simplexml_load_string($string);
-		
-		$PROJECT_PATH = $xml->header->project->path."/";
-	}
-	
-	//Checks if the user want to delete a project
-	if($_REQUEST['cmd_delete_project']){
-		exec("java -jar ../java/Web_ProjectDelete.jar ".$PROJECT_NAME." ".GLOBAL_SETTINGS);
-		header('Location: '.$WEBSITE_DEFAULT_URI.'/');
-	}
-	
-	$template->assign("rights", $session->get("rights"));
-	
-	//Checks if the user want to compare a project
-	if($_REQUEST['cmd_projects_deltas_compare']){
-		$act_pro_type = "";
-		if($PROJECT_TYPE=="project"){
-			$act_pro_type = "P";
-		}
-		if($PROJECT_TYPE=="deltaproject"){
-			$act_pro_type = "D";
-		}
-		
-		$comp_pro_type = "";
-		$comp_pro_name = $_POST['deltas_compare'];
-		if(substr($_POST['deltas_compare'],0,1)=="_"){
-			$comp_pro_type = "P";
-			$comp_pro_name = substr($_POST['deltas_compare'],1);
+//Read all projects from the project-path and store the information
+//into the project-manager
+$handle = opendir($WEBSITE_PROJECT_PATH);
+$i=0;
+while($file = readdir($handle)){
+	if(strpos($file,FILENAMEENDING_PROJECT)!==false || strpos($file,FILENAMEENDING_DELTA)!==false || strpos($file,FILENAMEENDING_COMPARE)!==false){
+		$file_name = "";
+		if(strpos($file,FILENAMEENDING_PROJECT)!==false){
+			$file_name = substr($file,0,-strlen(FILENAMEENDING_PROJECT));
+		}elseif(strpos($file,FILENAMEENDING_DELTA)!==false){
+			$file_name = substr($file,0,-strlen(FILENAMEENDING_DELTA));
 		}else{
-			$comp_pro_type = "D";
+			$file_name = substr($file,0,-strlen(FILENAMEENDING_COMPARE));
 		}
-		
-		/* Checks if the compare-file exist already*/
-		$project_name_compare = $PROJECT_NAME.$act_pro_type."__".$comp_pro_name.$comp_pro_type;
-		$filename_compare = $WEBSITE_PROJECT_PATH."/".$project_name_compare.".compare.xml";
-		
-		if(!file_exists($filename_compare)){
-			shell_exec("java -jar ../java/Web_ProjectCompare.jar ".$PROJECT_NAME." ".$comp_pro_name." ".$session->get("username")." ".GLOBAL_SETTINGS);
-			shell_exec("java -jar ../java/Web_TreeViewInitializator.jar ".$project_name_compare." ".GLOBAL_SETTINGS);
+	
+		$file_list[$i]['name'] = $file_name;
+		$file_list[$i]['id'] = $i;
+		$file_list[$i]['selected'] = false;
+		if($session->get('current_project')==$file_name){
+			$file_list[$i]['selected'] = true;
 		}
-		$session->set('current_project',$project_name_compare);
-		header('Location: '.$WEBSITE_DEFAULT_URI.'/?mainproject='.$PROJECT_NAME.'&compareproject='.$comp_pro_name);
-	}
-
-	//Decide which way the user choose
-	switch ($_GET['root']) {
-		case "":
-			require("./run/site/main.php");
-			break;
-		case "reload_tree":
-			echo tools::reload_tree();
-			require("./run/site/main.php");
-			break;
-		case "execute":
-			require("./run/execute/main.php");
-			break;
-		case "file":
-			require("./run/site/permalink.php");
-			break;
-		case "login":
-			require("./run/account/login.php");
-			break;
-		case "logout":
-			require("./run/account/logout.php");
-			break;
-		case "project":
-			require("./run/project/main.php");
-			break;
-		case "403_forbidden":
-			require("./run/pages/403_forbidden.php");
-			break;
-		case "404_not_found":
-			require("./run/pages/404_not_found.php");
-			break;
-		case "501_not_implemented":
-			require("./run/pages/501_not_implemented.php");
-			break;
-		default:
-			require("./run/pages/404_not_found.php");
-			break;
+		$i++;
 	}
 }
+$projectMan->addFilesArr($file_list);
+
+//Check if a delta is selected
+$template->assign("is_a_delta_selected", $projectMan->isGivenTypeSelected(TYPE_DELTA));
+
+//Check if the current project is deleted
+if(!$projectMan->isExistAGivenProject($session->get('current_project'))){
+	$session->set('current_project', $projectMan->getFirstProjectFromAGivenType(TYPE_PROJECT));
+	$projectMan->selectAProjectWithGivenProjectName($session->get('current_project'));
+}
+closedir($handle);
+
+
+//Check if the given project from the database is exist
+if(!$projectMan->isExistAGivenProject($session->get('initial_project'))){
+	$new_project = $projectMan->getFirstProjectFromAGivenType(TYPE_PROJECT);
+	$template->assign("error_projectDeleted", true);
+	$template->assign("error_projectDeleted_project_old", $session->get('initial_project'));
+	$template->assign("error_projectDeleted_project_new", $new_project);
+	$session->set('initial_project', $new_project);
+	$session->set('current_project',$new_project);
+	if($session->get("id")!=0 && $session->get("rights")){ //Only active, if an user has logged in
+		$textdb_login->update("initial_project",$new_project,"id",$session->get('id'));
+	}
+}
+
+//Generates the lists for output
+$projectMan->projectList_generate();
+$projectMan->deltaList_generate();
+$projectMan->compareList_generate();
+
+//Filter out all deltas, that are not belong to the main
+//project
+$orign_project_name = $projectMan->getProjectThatBelongsToAGivenDelta($session->get('current_project'));
+$template->assign("project_name_origin",$orign_project_name);
+
+if(getActualProjectType($session,$projectMan)==TYPE_DELTA){
+	$projectMan->projectList_selectAnProject($orign_project_name);
+}elseif(getActualProjectType($session,$projectMan)==TYPE_COMPARE){
+	$projectMan->compareList_selectCorrectEntriesInProjectListAndDeltaList($session->get('current_project'));
+}
+
+//Get the correct delta-list
+$delt_list = $projectMan->deltaList_getAllDeltasToAGivenProject($session->get('current_project'));
+$template->assign("projects_deltas",$delt_list);
+$template->assign("projects_deltas_compare",$delt_list);
+
+//Get the project-list
+$template->assign("projects_list", $projectMan->projectList_getProjectList());
+
+//Checks whether projects are available 
+if($projectMan->projectList_countProjectList()==0){
+	$template->assign("project_name", "emptytree/empty");
+	$template->assign("login", true);
+}else{
+	//Read the current project-settings-file
+	$PROJECT_PATH = "";
+	$template->assign("project_name", $session->get('current_project'));
+	$template->assign("login", true);
+	
+	if(getActualProjectType($session,$projectMan)==TYPE_PROJECT){
+		$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$session->get('current_project').FILENAMEENDING_PROJECT);
+	}elseif(getActualProjectType($session,$projectMan)==TYPE_DELTA){
+		$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$session->get('current_project').FILENAMEENDING_DELTA);
+	}elseif(getActualProjectType($session,$projectMan)==TYPE_COMPARE){
+		$string = tools::readXMLFile($WEBSITE_PROJECT_PATH."/".$session->get('current_project').FILENAMEENDING_COMPARE);
+	}
+	$xml = simplexml_load_string($string);
+	
+	$PROJECT_PATH = $xml->header->project->path."/";
+}
+
+//Checks if the user want to delete a project
+if(isset($_REQUEST['cmd_delete_project']) && $_REQUEST['cmd_delete_project']){
+	exec("java -jar ../java/Web_ProjectDelete.jar ".$session->get('current_project')." ".GLOBAL_SETTINGS);
+	header('Location: '.$WEBSITE_DEFAULT_URI.'/');
+}
+
+//Checks if the user want to compare a project
+if(isset($_REQUEST['cmd_projects_deltas_compare'])){
+	$comp_pro_name = $_POST['deltas_compare'];
+	
+	/* Checks if the compare-file exist already*/
+	$project_name_compare = $session->get('current_project')."__".$comp_pro_name;
+	$filename_compare = $WEBSITE_PROJECT_PATH."/".$project_name_compare.FILENAMEENDING_COMPARE;
+
+	if(!file_exists($filename_compare)){
+		shell_exec("java -jar ".$WEBSITE_DIR_PATH."/java/Web_ProjectCompare.jar ".$session->get('current_project')." ".$comp_pro_name." ".$session->get("username")." ".GLOBAL_SETTINGS);
+		shell_exec("java -jar ".$WEBSITE_DIR_PATH."/java/Web_TreeViewInitializator.jar ".$project_name_compare." ".GLOBAL_SETTINGS);
+	}
+
+	$session->set('current_project',$project_name_compare);
+	header('Location: '.$WEBSITE_DEFAULT_URI.'/?mainproject='.$session->get('current_project').'&compareproject='.$comp_pro_name);
+}
+
+//Decide which way the user choose
+$root = "";
+if(isset($_GET['root'])){
+	$root = $_GET['root'];
+}
+switch ($root) {
+	case "":
+		require("./run/site/main.php");
+		break;
+	case "reload_tree":
+		echo tools::reload_tree();
+		require("./run/site/main.php");
+		break;
+	case "execute":
+		require("./run/execute/main.php");
+		break;
+	case "file":
+		require("./run/site/permalink.php");
+		break;
+	case "login":
+		require("./run/account/login.php");
+		break;
+	case "logout":
+		require("./run/account/logout.php");
+		break;
+	case "project":
+		require("./run/project/main.php");
+		break;
+	case "403_forbidden":
+		require("./run/pages/403_forbidden.php");
+		break;
+	case "404_not_found":
+		require("./run/pages/404_not_found.php");
+		break;
+	case "501_not_implemented":
+		require("./run/pages/501_not_implemented.php");
+		break;
+	default:
+		require("./run/pages/404_not_found.php");
+		break;
+}
+
 $textdb_login->close();
 
 //Defines some variables for Smarty
@@ -381,5 +300,11 @@ $template->assign("login", $session->get('login'));
 $template->assign("login_username", $session->get('username'));
 $template->assign("rights", tools::have_rights());
 $template->assign("_wud", $WEBSITE_DEFAULT_URI);
+$template->assign("rights", $session->get("rights"));
+$template->assign("actual_project_name", $session->get("current_project"));
+$template->assign("actual_project_type", $projectMan->getProjectTypeFromGivenProject($session->get("current_project")));
+$template->assign("TYPE_PROJECT", TYPE_PROJECT);
+$template->assign("TYPE_DELTA", TYPE_DELTA);
+$template->assign("TYPE_COMPARE", TYPE_COMPARE);
 $template->display("./core/main.tpl");
 ?>
